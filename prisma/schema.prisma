@@ -80,6 +80,37 @@ model User {
   practiceProposalsReviewed   PracticeMasteryProposal[] @relation("PracticeProposalReviewedBy")
   dailyStandardFocusesSet     DailyStandardFocus[]
   studentsCreated             Student[]                 @relation("StudentCreatedBy")
+
+  // If this account's email matched a preloaded roster row, the row it claimed.
+  claimedAllowedEmail AllowedEmail? @relation("AllowedEmailClaimedBy")
+  allowedEmailsAdded  AllowedEmail[] @relation("AllowedEmailAddedBy")
+}
+
+// A preloaded, school-verified roster of email addresses allowed to sign up
+// (STAFF, via /signup) or be auto-provisioned a student portal login via
+// Google Sign-In (STUDENT, via provisionStudentFromGoogle in src/lib/auth.ts).
+// Closes two related risks: open signup letting anyone create a teacher
+// account, and a rogue teacher pre-claiming a real student's email (see
+// TODO.md's security section and CONTEXT.md for the incident this addresses).
+// Bootstrap-friendly: enforcement of each role only activates once at least
+// one row of that role exists — an empty table doesn't lock anyone out
+// before an admin has had a chance to preload it (see src/lib/allowed-email.ts).
+model AllowedEmail {
+  id    String @id @default(cuid())
+  email String @unique
+  role  String // STAFF | STUDENT
+
+  // Which account ended up claiming this row (informational/audit only — the
+  // real gate is the row's existence + role, checked at signup/provisioning
+  // time, not this field).
+  claimedByUserId String? @unique
+  claimedBy       User?   @relation("AllowedEmailClaimedBy", fields: [claimedByUserId], references: [id], onDelete: SetNull)
+
+  addedById String?
+  addedBy   User?    @relation("AllowedEmailAddedBy", fields: [addedById], references: [id], onDelete: SetNull)
+  createdAt DateTime @default(now())
+
+  @@index([role])
 }
 
 // The student a teacher tracks — a FIRST-CLASS entity. Everything (tasks,

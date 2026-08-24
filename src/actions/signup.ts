@@ -10,6 +10,8 @@ import { prisma } from "@/lib/prisma";
 import { createSession, hashPassword } from "@/lib/auth";
 import { logActivity } from "@/lib/activity-log";
 import { signupSchema } from "@/lib/validations";
+import { checkRateLimit } from "@/lib/rate-limit";
+import { checkStaffSignupAllowed, markAllowedEmailClaimed } from "@/lib/allowed-email";
 import type { ActionResult } from "./types";
 
 function formToObject(fd: FormData): Record<string, unknown> {
@@ -17,6 +19,12 @@ function formToObject(fd: FormData): Record<string, unknown> {
   for (const [k, v] of fd.entries()) obj[k] = v;
   return obj;
 }
+
+// Coarse, IP-agnostic cap on new-workspace creation overall — signup has no
+// natural per-identity key to rate-limit before an account exists, so this
+// just blunts a scripted mass-account-creation run against the endpoint.
+const SIGNUP_MAX = 30;
+const SIGNUP_WINDOW_MS = 10 * 60 * 1000;
 
 export async function signupAction(_prev: ActionResult, formData: FormData): Promise<ActionResult> {
   const parsed = signupSchema.safeParse(formToObject(formData));
@@ -26,7 +34,14 @@ export async function signupAction(_prev: ActionResult, formData: FormData): Pro
     return { ok: false, error: "Please fix the highlighted fields.", fieldErrors };
   }
 
+  if (!checkRateLimit("signup:global", SIGNUP_MAX, SIGNUP_WINDOW_MS).ok) {
+    return { ok: false, error: "Too many sign-up attempts right now. Please try again in a few minutes." };
+  }
+
   const email = parsed.data.email.toLowerCase().trim();
+  const gateError = await checkStaffSignupAllowed(email);
+  if (gateError) return { ok: false, error: gateError };
+
   const existing = await prisma.user.findUnique({ where: { email }, select: { id: true } });
   if (existing) return { ok: false, error: "An account with that email already exists." };
 
@@ -38,6 +53,7 @@ export async function signupAction(_prev: ActionResult, formData: FormData): Pro
       role: "OWNER",
     },
   });
+  await markAllowedEmailClaimed(email, created.id);
   await logActivity({ userId: created.id, actionType: "WORKSPACE_CREATED", description: `${created.name} created a new workspace via signup` });
 
   await createSession({

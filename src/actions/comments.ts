@@ -6,6 +6,7 @@ import { logActivity } from "@/lib/activity-log";
 import { getCommentsPrompt } from "@/lib/settings";
 import { buildStudentTermSummary } from "@/lib/comments/summary";
 import { buildCommentsPrompt } from "@/lib/comments/format";
+import { restoreStudentName } from "@/lib/comments/anonymize";
 import { runModel } from "@/lib/ai/run-model";
 import { validateAiModel, aiErrorMessage } from "@/lib/ai/model-guard";
 import { estimateCostUsd, type TokenUsage } from "@/lib/ai/engines";
@@ -62,9 +63,14 @@ export async function generateStudentComment(
     description: `Generated an end-of-term comment draft (${from} to ${to})`,
   });
 
+  // The prompt sent the AI "the student" (see buildCommentsPrompt) — restore
+  // the real name locally now that the draft is back, never round-tripping
+  // it through the provider.
+  const restored = restoreStudentName(result.text.trim(), summary.studentName);
+
   return {
     ok: true,
-    text: result.text.trim(),
+    text: restored,
     usage: result.usage,
     estCostUsd: result.usage ? estimateCostUsd(model, result.usage) : null,
   };

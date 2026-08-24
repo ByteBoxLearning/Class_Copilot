@@ -4,7 +4,7 @@ import { callGemini } from "./gemini-call";
 import { callOpenAI } from "./openai-call";
 import { callClaude } from "./claude-call";
 import { callOpenRouter } from "./openrouter-call";
-import { getAiTemperatureFor } from "@/lib/settings";
+import { getAiTemperatureFor, getAiDisclosureAck } from "@/lib/settings";
 
 // Route any prompt to the chosen model's provider and return its raw text
 // plus the token usage the API reported. Shared by every AI feature in this
@@ -14,6 +14,14 @@ import { getAiTemperatureFor } from "@/lib/settings";
 // caller's job (e.g. comments/prompt.ts just trims the text; a future
 // Assignment Builder would JSON-parse it).
 export async function runModel(prompt: string, modelValue: string, opts: LlmCallOptions = {}): Promise<LlmResult> {
+  // Hard gate: no prompt — which may carry real student names/notes/work —
+  // reaches a third-party provider until an admin has explicitly
+  // acknowledged that data-sharing in Admin -> Settings. Every AI feature
+  // funnels through here, so this is the one place this needs enforcing.
+  if (!(await getAiDisclosureAck())) {
+    throw new Error("AI features aren't enabled yet — an administrator must acknowledge the data-sharing disclosure in Admin → Settings first.");
+  }
+
   const m = findAiModel(modelValue);
   if (!m) throw new Error("Unknown AI model.");
 

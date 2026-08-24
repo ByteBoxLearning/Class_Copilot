@@ -64,6 +64,18 @@ async function setPlainSetting(key: string, value: string, userId?: string): Pro
 export const getCommentsPrompt = () => getPlainSetting(COMMENTS_PROMPT_KEY, DEFAULT_COMMENTS_PROMPT);
 export const setCommentsPrompt = (v: string, userId?: string) => setPlainSetting(COMMENTS_PROMPT_KEY, v, userId);
 
+// --- FERPA data-sharing disclosure acknowledgment ---------------------------
+// Every AI feature sends some student data (a comment draft's aggregated term
+// summary, a daily-check note, a practice-session response) to a third-party
+// provider's API. That's real off-site sharing of student data an admin needs
+// to knowingly accept before ANY AI feature is allowed to actually run — see
+// src/lib/ai/run-model.ts, the single choke point that enforces this, and
+// model-guard.ts's validateAiModel, which surfaces a friendly version of the
+// same check to the teacher-facing engine picker.
+const AI_DISCLOSURE_ACK_KEY = "AI_DATA_DISCLOSURE_ACK";
+export const getAiDisclosureAck = async (): Promise<boolean> => (await getPlainSetting(AI_DISCLOSURE_ACK_KEY, "")) === "true";
+export const setAiDisclosureAck = (v: boolean, userId?: string) => setPlainSetting(AI_DISCLOSURE_ACK_KEY, v ? "true" : "false", userId);
+
 // --- Assignment Builder prompts (admin-editable, stored plain) --------------
 // Two prompts, not one — generate-from-scratch and improve-existing-material
 // have materially different rules (see assignments/prompt-defaults.ts).

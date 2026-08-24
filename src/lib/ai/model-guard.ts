@@ -1,11 +1,15 @@
 import "server-only";
 import { findAiModel, AI_PROVIDER_META } from "./engines";
-import { getApiKey, getAiEnabledSet } from "@/lib/settings";
+import { getApiKey, getAiEnabledSet, getAiDisclosureAck } from "@/lib/settings";
 
-// Validate a chosen AI model: it must exist, be enabled by the admin, and
-// have its provider key configured. Returns a user-facing error, or null
-// when OK. Adapted from src/lib/cv/model-guard.ts.
+// Validate a chosen AI model: the data-sharing disclosure must be
+// acknowledged, it must exist, be enabled by the admin, and have its
+// provider key configured. Returns a user-facing error, or null when OK.
+// Adapted from src/lib/cv/model-guard.ts.
 export async function validateAiModel(model: string): Promise<string | null> {
+  if (!(await getAiDisclosureAck())) {
+    return "AI features aren't enabled yet. An administrator needs to acknowledge the data-sharing disclosure in Admin → Settings.";
+  }
   const m = findAiModel(model);
   if (!m) return "Unknown AI model. Please pick another engine.";
   const enabled = await getAiEnabledSet();

@@ -1,5 +1,6 @@
 import "server-only";
 import { prisma } from "@/lib/prisma";
+import { checkStudentEmailAllowed } from "@/lib/allowed-email";
 import type { ImportSheet, ColumnMapping, ImportPreviewRow } from "./types";
 
 function cell(row: string[], mapping: ColumnMapping, key: string): string | null {
@@ -101,7 +102,16 @@ export async function buildPreview(
     } else if (matchedStudentId) {
       results.push({ rowIndex, status: "MATCH_EXISTING", displayName, email, gradeLevel, externalId, matchedStudentId, matchReason, error: null });
     } else {
-      results.push({ rowIndex, status: "NEW", displayName, email, gradeLevel, externalId, matchedStudentId: null, matchReason: null, error: null });
+      // A brand-new Student row is about to be created with this email — gate
+      // it against the preloaded roster/domain the same way a manual
+      // create/edit is (see src/actions/students.ts), so a CSV import can't
+      // be used to attach an unapproved email to a new student record.
+      const emailError = email ? await checkStudentEmailAllowed(email) : null;
+      if (emailError) {
+        results.push({ rowIndex, status: "ERROR", displayName, email, gradeLevel, externalId, matchedStudentId: null, matchReason: null, error: emailError });
+      } else {
+        results.push({ rowIndex, status: "NEW", displayName, email, gradeLevel, externalId, matchedStudentId: null, matchReason: null, error: null });
+      }
     }
   }
 

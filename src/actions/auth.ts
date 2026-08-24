@@ -4,8 +4,15 @@ import { redirect } from "next/navigation";
 import { authenticate, createSession, destroySession, getSessionUser, dashboardPathFor } from "@/lib/auth";
 import { logActivity } from "@/lib/activity-log";
 import { loginSchema } from "@/lib/validations";
+import { checkRateLimit } from "@/lib/rate-limit";
 
 export type LoginState = { error?: string };
+
+// Per-email login attempt cap — generous enough that a real user mistyping
+// their password a few times never notices, but enough to blunt a scripted
+// password-guessing run against one account.
+const LOGIN_MAX_ATTEMPTS = 10;
+const LOGIN_WINDOW_MS = 10 * 60 * 1000;
 
 export async function loginAction(_prev: LoginState, formData: FormData): Promise<LoginState> {
   const parsed = loginSchema.safeParse({
@@ -14,6 +21,11 @@ export async function loginAction(_prev: LoginState, formData: FormData): Promis
   });
   if (!parsed.success) {
     return { error: parsed.error.errors[0]?.message ?? "Invalid input" };
+  }
+
+  const limit = checkRateLimit(`login:${parsed.data.email.toLowerCase().trim()}`, LOGIN_MAX_ATTEMPTS, LOGIN_WINDOW_MS);
+  if (!limit.ok) {
+    return { error: `Too many login attempts for this account. Try again in a few minutes.` };
   }
 
   const result = await authenticate(parsed.data.email, parsed.data.password);
