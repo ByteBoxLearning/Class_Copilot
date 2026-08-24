@@ -1,0 +1,410 @@
+[
+  {
+    "id": "ic5-short-1",
+    "unitId": 5,
+    "kind": "short",
+    "points": 4,
+    "stem": "Consider two compounds: (1) K2SO4, and (2) N2O5.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Name compound (1), K2SO4, identify whether it is ionic or molecular (covalent), and explain how you know based on the elements/ions present.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Name compound (2), N2O5, using appropriate molecular (prefix) nomenclature, and explain how you know it is molecular rather than ionic.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(1) K2SO4 is potassium sulfate. It is ionic: it is composed of a metal cation (K^+) and a polyatomic anion (SO4^2-), and compounds formed between a metal and a nonmetal/polyatomic ion are ionic.\n\n(2) N2O5 is dinitrogen pentoxide, using the prefixes di- (2) and penta- (5). It is molecular (covalent): it is composed of two nonmetals (nitrogen and oxygen) bonded together, and combinations of two nonmetals form molecular compounds, which are named using numerical prefixes rather than charge-balancing.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for the correct name, potassium sulfate; 1 point for correctly identifying it as ionic with valid reasoning (metal cation + polyatomic anion).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for the correct name, dinitrogen pentoxide; 1 point for correctly identifying it as molecular with valid reasoning (two nonmetals bonded together).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": [
+      "Look at whether each compound is built from a metal + nonmetal/polyatomic ion, or from two nonmetals, before naming it.",
+      "Remember that molecular compound names use numerical prefixes (di-, tri-, tetra-, penta-), while ionic compound names generally do not."
+    ]
+  },
+  {
+    "id": "ic5-short-2",
+    "unitId": 5,
+    "kind": "short",
+    "points": 4,
+    "stem": "Write the correct chemical formula for each of the following ionic compounds, showing how you balanced the charges: (1) aluminum oxide, formed from Al^3+ and O^2-; (2) calcium nitrate, formed from Ca^2+ and NO3^-.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Determine the formula for aluminum oxide, showing the charge-balancing work.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Determine the formula for calcium nitrate, showing the charge-balancing work.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(1) Al^3+ and O^2- require a common multiple of 3 and 2, which is 6: two Al^3+ ions give a total of +6, and three O^2- ions give a total of -6, balancing exactly. Formula: Al2O3.\n\n(2) Ca^2+ (+2) and NO3^- (-1) require two NO3^- ions to balance the charge of one Ca^2+ ion (2 × -1 = -2, matching +2). Because more than one polyatomic ion is needed, the NO3^- group is enclosed in parentheses with a subscript of 2. Formula: Ca(NO3)2.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for showing correct charge-balancing reasoning (using the least common multiple of the charges, 2 Al^3+ to 3 O^2-); 1 point for the correct final formula, Al2O3.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for showing correct charge-balancing reasoning (2 NO3^- needed per 1 Ca^2+) and correctly enclosing the polyatomic ion in parentheses; 1 point for the correct final formula, Ca(NO3)2.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Find the least common multiple of the two ions' charge magnitudes to figure out how many of each ion you need.",
+      "If more than one polyatomic ion is needed in the formula, enclose it in parentheses before adding the subscript."
+    ]
+  },
+  {
+    "id": "ic5-long-1",
+    "unitId": 5,
+    "kind": "long",
+    "points": 10,
+    "stem": "A chemistry class is given four unlabeled compounds to identify: Compound W = MgCl2; Compound X = CO2; Compound Y = Fe2(SO4)3; Compound Z = PCl3.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "For each of the four compounds, classify it as ionic or molecular (covalent), based on the types of elements/ions present.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Give the correct chemical name for each of the four compounds.",
+        "maxPoints": 4
+      },
+      {
+        "label": "(c)",
+        "prompt": "Compound Y, Fe2(SO4)3, contains iron in a specific charge state. Determine the charge on the iron ion in this compound, showing your reasoning using the known charge of the sulfate ion (SO4^2-) and the requirement of overall electrical neutrality.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(d)",
+        "prompt": "Calculate the formula mass (in amu) of compound W, MgCl2, using these approximate atomic masses: Mg = 24.31 amu, Cl = 35.45 amu.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) W (MgCl2): metal (Mg) + nonmetal (Cl) -> ionic. X (CO2): nonmetal + nonmetal -> molecular. Y (Fe2(SO4)3): metal (Fe) + polyatomic ion (SO4^2-) -> ionic. Z (PCl3): nonmetal + nonmetal -> molecular.\n\n(b) W = magnesium chloride. X = carbon dioxide. Y = iron(III) sulfate. Z = phosphorus trichloride.\n\n(c) Each sulfate ion carries a charge of -2, and there are three of them, giving a total negative charge of 3 × (-2) = -6. For the compound to be electrically neutral, the two iron ions must together contribute a total charge of +6, so each individual iron ion has a charge of +6 / 2 = +3, i.e., Fe^3+ — confirming the name iron(III) sulfate.\n\n(d) Formula mass of MgCl2 = 24.31 amu + 2(35.45 amu) = 24.31 + 70.90 = 95.21 amu.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "2 points if all four compounds are correctly classified (W ionic, X molecular, Y ionic, Z molecular); 1 point if exactly two or three of the four are correct.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point each for the correct name of W (magnesium chloride), X (carbon dioxide), Y (iron(III) sulfate), and Z (phosphorus trichloride).",
+        "points": 4,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly calculating the total negative charge from the three sulfate ions (-6); 1 point for the correct final charge on the iron ion, +3 (Fe^3+).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for the correct setup, 24.31 + 2(35.45); 1 point for the correct final sum, 95.21 amu, with correct units.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Classify each compound as ionic or molecular first — that will guide both how you name it and how you think about charges.",
+      "For compound Y, use the known charge of sulfate (SO4^2-) and the fact that the whole compound must be neutral to work backward to iron's charge."
+    ]
+  },
+  {
+    "id": "ic5-long-2",
+    "unitId": 5,
+    "kind": "long",
+    "points": 10,
+    "stem": "Consider the compound ammonium phosphate, which contains the ammonium ion (NH4^+) and the phosphate ion (PO4^3-).",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Explain, in general terms, the difference between how atoms are held together in an ionic bond versus a covalent bond — specifically, what happens to electrons in each case.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Determine the correct chemical formula for ammonium phosphate, showing your charge-balancing work, including correct use of parentheses.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(c)",
+        "prompt": "State whether the bonding WITHIN each polyatomic ion (NH4^+ and PO4^3-) itself is ionic or covalent, and briefly justify your answer. (This is different from the bonding between the ammonium ions and phosphate ions overall.)",
+        "maxPoints": 2
+      },
+      {
+        "label": "(d)",
+        "prompt": "Explain why, even though the compound as a whole is classified as an ionic compound, it still correctly contains covalent bonds within it. Use the ammonium and phosphate ions to support your explanation.",
+        "maxPoints": 3
+      }
+    ],
+    "workedSolution": "(a) In an ionic bond, electrons are essentially transferred from one atom to another, forming oppositely charged ions (a cation and an anion) that are then held together by electrostatic attraction between the opposite charges. In a covalent bond, atoms instead share one or more pairs of electrons between them, and it is that shared electron pair (or pairs) that holds the atoms together, without forming ions with net charges.\n\n(b) NH4^+ carries a +1 charge and PO4^3- carries a -3 charge; three NH4^+ ions (3 × +1 = +3) are needed to balance one PO4^3- ion (-3). Because more than one polyatomic ion (NH4^+) is needed, it is enclosed in parentheses with a subscript of 3: (NH4)3PO4.\n\n(c) Within NH4^+, the bonding is covalent: nitrogen and hydrogen are both nonmetals that share electron pairs to form N–H covalent bonds, with the ion as a whole carrying a leftover +1 charge. Within PO4^3-, the bonding is also covalent: phosphorus and oxygen are both nonmetals that share electron pairs to form P–O covalent bonds, with the ion as a whole carrying a leftover -3 charge.\n\n(d) The compound as a whole, (NH4)3PO4, is classified as ionic because it is built from a cation (NH4^+) and an anion (PO4^3-) held together by ionic (electrostatic) attraction between those oppositely charged polyatomic ions. However, within each of those polyatomic ions individually, the atoms are joined by covalent bonds (shared electron pairs between nonmetal atoms: N–H within ammonium, P–O within phosphate). So the compound genuinely contains both bonding types at once: covalent bonds inside each polyatomic ion, and an ionic bond/attraction holding the overall cation and anion together.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for a correct description of an ionic bond (electron transfer, resulting opposite-charge attraction); 1 point for a correct description of a covalent bond (electron sharing between atoms).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly determining that 3 NH4^+ ions are needed per 1 PO4^3- ion via charge-balancing; 1 point for correctly enclosing NH4 in parentheses with the subscript 3 outside; 1 point for the correct final formula, (NH4)3PO4.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly identifying the bonding within NH4^+ as covalent, with valid reasoning (nonmetals sharing electrons); 1 point for correctly identifying the bonding within PO4^3- as covalent, with valid reasoning (nonmetals sharing electrons).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly explaining that the overall ionic classification comes from the electrostatic attraction between the ammonium cation and phosphate anion; 1 point for correctly explaining that covalent bonds exist within each polyatomic ion individually; 1 point for correctly tying both ideas together to explain how one compound can be ionic overall while still containing covalent bonds.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Think about bonding at two different scales: the bonding between the two polyatomic ions, and the bonding between the individual atoms within each ion.",
+      "A compound can be classified as ionic overall even if it contains covalent bonds somewhere inside it — figure out where each type of bonding shows up."
+    ]
+  },
+  {
+    "id": "ic5-short-3",
+    "unitId": 5,
+    "kind": "short",
+    "points": 4,
+    "stem": "Consider two compounds: (1) CuCl2, and (2) SF6.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Determine the charge on the copper ion in CuCl2 (recall chlorine is present as Cl-), and give the correct name of the compound, including a Roman numeral where appropriate.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Name compound (2), SF6, using appropriate molecular (prefix) nomenclature.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(1) Each Cl- contributes a charge of -1, and there are two of them, for a total negative charge of -2. For CuCl2 to be neutral, the copper ion must contribute +2, i.e., Cu^2+. Because copper can form more than one common ion charge, a Roman numeral is required: copper(II) chloride.\n\n(2) SF6 is named using prefixes for the number of atoms of each element: sulfur (no prefix needed for the first element when there is only one atom) hexafluoride (hexa- = 6). The compound is sulfur hexafluoride.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly determining the charge on copper as +2 (Cu^2+) from the two Cl- ions; 1 point for the correct name, copper(II) chloride.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly applying the prefix hexa- for six fluorine atoms; 1 point for the correct final name, sulfur hexafluoride.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "For part (1), start by adding up the total negative charge from both chloride ions before figuring out copper's charge.",
+      "For part (2), remember that a prefix is not used on the first element's name when there is only one atom of it."
+    ]
+  },
+  {
+    "id": "ic5-short-4",
+    "unitId": 5,
+    "kind": "short",
+    "points": 4,
+    "stem": "A student weighs out a 21.00 g sample of pure sodium bicarbonate (baking soda), NaHCO3. (Molar masses: Na = 22.99 g/mol, H = 1.008 g/mol, C = 12.01 g/mol, O = 16.00 g/mol.)",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Calculate the molar mass of NaHCO3.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Using your answer to part (a), calculate the number of moles of NaHCO3 in the 21.00 g sample.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) NaHCO3 contains 1 Na, 1 H, 1 C, and 3 O atoms. Molar mass = 22.99 + 1.008 + 12.01 + 3(16.00) = 22.99 + 1.008 + 12.01 + 48.00 = 84.01 g/mol.\n\n(b) Moles of NaHCO3 = 21.00 g / 84.01 g/mol = 0.2500 mol.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly identifying 3 oxygen atoms in the formula; 1 point for the correct molar mass of 84.01 g/mol (accept 84.0-84.1).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly dividing the given mass by the student's own molar mass from part (a); 1 point for the correct final answer of 0.2500 mol.",
+        "points": 2,
+        "allowsErrorCarriedForward": true
+      }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": [
+      "Count the atoms in NaHCO3 carefully — there are three oxygen atoms, not just one.",
+      "Once you have the molar mass, moles = mass / molar mass."
+    ]
+  },
+  {
+    "id": "ic5-long-3",
+    "unitId": 5,
+    "kind": "long",
+    "points": 10,
+    "stem": "A group of students investigates four compounds built from common ions and elements: Compound P = Ca3(PO4)2; Compound Q = SO3; Compound R = CuSO4; Compound S = NCl3.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "For each of the four compounds, classify it as ionic or molecular (covalent), based on the types of elements/ions present.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Give the correct chemical name for each of the four compounds.",
+        "maxPoints": 4
+      },
+      {
+        "label": "(c)",
+        "prompt": "Compound R, CuSO4, contains copper in a specific charge state. Determine the charge on the copper ion, showing your reasoning using the known charge of the sulfate ion (SO4^2-) and the requirement of overall electrical neutrality.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(d)",
+        "prompt": "Calculate the formula mass (in amu) of compound P, Ca3(PO4)2, using these approximate atomic masses: Ca = 40.08 amu, P = 30.97 amu, O = 16.00 amu.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) P (Ca3(PO4)2): metal (Ca) + polyatomic ion (PO4^3-) -> ionic. Q (SO3): nonmetal + nonmetal -> molecular. R (CuSO4): metal (Cu) + polyatomic ion (SO4^2-) -> ionic. S (NCl3): nonmetal + nonmetal -> molecular.\n\n(b) P = calcium phosphate. Q = sulfur trioxide. R = copper(II) sulfate. S = nitrogen trichloride.\n\n(c) The sulfate ion carries a charge of -2, and there is one sulfate ion per formula unit. For the compound to be electrically neutral, the single copper ion must contribute a charge of +2, i.e., Cu^2+ — confirming the name copper(II) sulfate.\n\n(d) Formula mass of Ca3(PO4)2 = 3(40.08) + 2[30.97 + 4(16.00)] = 120.24 + 2(30.97 + 64.00) = 120.24 + 2(94.97) = 120.24 + 189.94 = 310.18 amu.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "2 points if all four compounds are correctly classified (P ionic, Q molecular, R ionic, S molecular); 1 point if exactly two or three of the four are correct.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point each for the correct name of P (calcium phosphate), Q (sulfur trioxide), R (copper(II) sulfate), and S (nitrogen trichloride).",
+        "points": 4,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly identifying the -2 charge contributed by the single sulfate ion; 1 point for the correct final charge on copper, +2 (Cu^2+).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for the correct setup, 3(40.08) + 2[30.97 + 4(16.00)]; 1 point for the correct final sum, 310.18 amu.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Decide whether each compound is built from a metal/polyatomic-ion combination or from two nonmetals before you try to name it.",
+      "For part (d), work inside the parentheses first — find the mass of one whole phosphate group before multiplying by its subscript."
+    ]
+  },
+  {
+    "id": "ic5-long-4",
+    "unitId": 5,
+    "kind": "long",
+    "points": 10,
+    "stem": "Consider the ionic compound calcium hydroxide, formed from Ca^2+ and OH^- ions. (Molar masses: Ca = 40.08 g/mol, O = 16.00 g/mol, H = 1.008 g/mol.)",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Determine the correct chemical formula for calcium hydroxide, showing your charge-balancing work.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "State whether the bonding BETWEEN the Ca^2+ ion and the OH^- ion(s) is ionic or covalent, and whether the bonding WITHIN each OH^- ion (between the O and H atoms) is ionic or covalent. Briefly justify both answers.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(c)",
+        "prompt": "Calculate the molar mass of calcium hydroxide, and use it to determine the number of moles present in an 18.5 g sample.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(d)",
+        "prompt": "Using your answer to part (c) and Avogadro's number, calculate the total number of individual OH^- ions present in the 18.5 g sample. (Note that each formula unit of calcium hydroxide contains 2 OH^- ions.)",
+        "maxPoints": 3
+      }
+    ],
+    "workedSolution": "(a) Ca^2+ contributes +2 and each OH^- contributes -1, so two OH^- ions are needed to balance one Ca^2+ ion (2 x -1 = -2). Formula: Ca(OH)2.\n\n(b) The bonding between the Ca^2+ ion and the OH^- ions is ionic: it is an electrostatic attraction between oppositely charged ions. The bonding within each OH^- ion, between the oxygen and hydrogen atoms, is covalent: oxygen and hydrogen are both nonmetals that share an electron pair to form the O-H bond, with the ion as a whole carrying a leftover -1 charge.\n\n(c) Molar mass of Ca(OH)2 = 40.08 + 2(16.00 + 1.008) = 40.08 + 34.02 = 74.10 g/mol. Moles = 18.5 g / 74.10 g/mol = 0.2497 mol, which rounds to 0.250 mol.\n\n(d) Formula units = 0.250 mol x 6.022 x 10^23 formula units/mol = 1.51 x 10^23 formula units. Since each formula unit contains 2 OH^- ions, total OH^- ions = 2 x 1.51 x 10^23 = 3.01 x 10^23 ions.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly determining that 2 OH^- ions are needed per 1 Ca^2+ ion via charge balancing; 1 point for the correct final formula, Ca(OH)2.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly identifying the bonding between Ca^2+ and OH^- as ionic with valid reasoning; 1 point for correctly identifying the bonding within OH^- as covalent with valid reasoning; 1 point for a clear, correct distinction between the two bonding environments.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for the correct molar mass of Ca(OH)2 (74.10 g/mol, accept 74.0-74.2); 1 point for correctly dividing to get approximately 0.250 mol.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly multiplying the student's own moles from part (c) by Avogadro's number to get formula units; 1 point for correctly recognizing that each formula unit contains 2 OH^- ions; 1 point for the correct final answer of approximately 3.01 x 10^23 OH^- ions, consistent with the student's own earlier values.",
+        "points": 3,
+        "allowsErrorCarriedForward": true
+      }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Charge-balance Ca^2+ and OH^- the same way you would for any ionic compound to find the formula first.",
+      "For part (d), first find the number of formula units using Avogadro's number, then think about how many hydroxide ions come from each individual formula unit."
+    ]
+  }
+]

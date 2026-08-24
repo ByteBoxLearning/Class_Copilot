@@ -1,0 +1,194 @@
+[
+  {
+    "id": "ic10-short-1",
+    "unitId": 10,
+    "kind": "short",
+    "points": 4,
+    "stem": "Consider the two compounds potassium chloride (KCl) and carbon dioxide (CO2).",
+    "parts": [
+      { "label": "(a)", "prompt": "State whether the bonding in KCl is primarily ionic or covalent, and justify your answer using the positions of K and Cl on the periodic table.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "State whether the bonding in CO2 is primarily ionic or covalent, and justify your answer using the positions of C and O on the periodic table.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) The bonding in KCl is ionic. Potassium (K) is an alkali metal, and chlorine (Cl) is a nonmetal (a halogen). Bonds between a metal and a nonmetal are generally ionic, formed when the metal (K) transfers an electron to the nonmetal (Cl), producing K+ and Cl- ions that attract each other electrostatically.\n\n(b) The bonding in CO2 is covalent. Both carbon (C) and oxygen (O) are nonmetals. Bonds between two nonmetals involve the sharing of electron pairs (covalent bonding) rather than a full transfer of electrons.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly identifying the bonding as ionic; 1 point for a correct justification based on K being a metal and Cl being a nonmetal (electron transfer).", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly identifying the bonding as covalent; 1 point for a correct justification based on both C and O being nonmetals (electron sharing).", "points": 2, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": [
+      "Locate K, Cl, C, and O on the periodic table -- are they metals or nonmetals?",
+      "Remember: metal + nonmetal generally forms ionic bonds; nonmetal + nonmetal generally forms covalent bonds."
+    ]
+  },
+  {
+    "id": "ic10-short-2",
+    "unitId": 10,
+    "kind": "short",
+    "points": 4,
+    "stem": "Consider the ammonia molecule, NH3. Nitrogen has 5 valence electrons, and each hydrogen atom contributes 1 valence electron.",
+    "parts": [
+      { "label": "(a)", "prompt": "Describe the Lewis (electron-dot) structure of NH3: identify the central atom, the number of bonding pairs, and the number of lone pairs, and confirm that the total number of valence electrons used is correct.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Using VSEPR theory and your answer to part (a), predict the molecular (not electron-group) geometry of NH3.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) Total valence electrons = 5 (N) + 3(1) (H) = 8. Nitrogen is the central atom, bonded to each of the 3 hydrogen atoms by a single covalent bond (3 bonding pairs = 6 electrons), with 1 lone pair (2 electrons) remaining on nitrogen. Total electrons used = 6 + 2 = 8, which matches the total valence electron count.\n\n(b) Nitrogen has 4 total electron groups around it (3 bonding pairs + 1 lone pair), so the electron-group geometry is tetrahedral. Because one of those four positions is a lone pair rather than a bonded atom, the molecular geometry (the shape defined by the atoms only) is trigonal pyramidal.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly identifying N as the central atom with 3 bonding pairs and 1 lone pair; 1 point for correctly totaling 8 valence electrons and confirming this matches the structure described.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly identifying the electron-group geometry as tetrahedral (4 electron groups), consistent with the student's own structure from part (a); 1 point for correctly identifying the molecular geometry as trigonal pyramidal.", "points": 2, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Total the valence electrons first: nitrogen's 5 plus one from each hydrogen.",
+      "Remember that a lone pair on the central atom is counted when finding electron-group geometry, but not when naming the final molecular geometry."
+    ]
+  },
+  {
+    "id": "ic10-long-1",
+    "unitId": 10,
+    "kind": "long",
+    "points": 10,
+    "stem": "Consider the following four ions: Na+, Mg^2+, Cl-, and O^2-.",
+    "parts": [
+      { "label": "(a)", "prompt": "Write the correct empirical (formula-unit) chemical formula, in lowest whole-number ratio, for the ionic compound formed between each of the following ion pairs: (i) Na+ and Cl-; (ii) Mg^2+ and O^2-; (iii) Mg^2+ and Cl-; (iv) Na+ and O^2-.", "maxPoints": 4 },
+      { "label": "(b)", "prompt": "Give the correct name of each of the four compounds from part (a).", "maxPoints": 2 },
+      { "label": "(c)", "prompt": "MgO has a much higher melting point (2852 degrees C) than NaCl (801 degrees C), even though both are ionic solids. Using the charges of the ions involved, explain this difference in terms of the strength of the ionic attractions in each lattice.", "maxPoints": 2 },
+      { "label": "(d)", "prompt": "Predict whether solid NaCl conducts electricity, and whether molten (liquid) NaCl conducts electricity. Explain the difference between the two cases.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) (i) NaCl (ii) MgO (iii) MgCl2 (iv) Na2O.\n\n(b) NaCl = sodium chloride; MgO = magnesium oxide; MgCl2 = magnesium chloride; Na2O = sodium oxide.\n\n(c) MgO is composed of Mg^2+ and O^2- ions, each with a charge magnitude of 2, while NaCl is composed of Na+ and Cl- ions, each with a charge magnitude of only 1. The strength of the electrostatic (Coulombic) attraction between oppositely charged ions increases with the product of their charge magnitudes, so the 2+/2- attraction in MgO is much stronger than the 1+/1- attraction in NaCl. Overcoming this stronger attraction to melt the solid requires much more thermal energy, giving MgO a far higher melting point than NaCl.\n\n(d) Solid NaCl does not conduct electricity because its Na+ and Cl- ions are locked in fixed positions within the rigid crystal lattice and cannot move to carry an electric current. Molten NaCl does conduct electricity because melting breaks down the rigid lattice, freeing the Na+ and Cl- ions to move throughout the liquid and carry charge.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point each for the correct empirical formula for (i) NaCl, (ii) MgO, (iii) MgCl2, and (iv) Na2O.", "points": 4, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "0.5 point each (2 points total) for correctly naming all four compounds from the student's own formulas in part (a): sodium chloride, magnesium oxide, magnesium chloride, sodium oxide.", "points": 2, "allowsErrorCarriedForward": true },
+      { "partLabel": "(c)", "criterion": "1 point for correctly noting that MgO's ions each carry a greater charge magnitude (2) than NaCl's ions (1); 1 point for correctly connecting greater ion charge to stronger electrostatic attraction and therefore a higher melting point.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(d)", "criterion": "1 point for correctly stating solid NaCl does not conduct (ions fixed in the lattice) while molten NaCl does conduct (ions free to move); 1 point for a correct explanation of why mobility of ions determines conductivity.", "points": 2, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "For part (a), use the crisscross method: the numerical charge of one ion becomes the subscript of the other, then reduce to lowest terms.",
+      "For part (c), remember that the strength of ionic attraction depends on the product of the ion charges, not just the number of ions."
+    ]
+  },
+  {
+    "id": "ic10-long-2",
+    "unitId": 10,
+    "kind": "long",
+    "points": 10,
+    "stem": "Carbon tetrachloride (CCl4) and water (H2O) are both covalent compounds, but they behave very differently in terms of overall molecular polarity. (Approximate electronegativities: C = 2.5, Cl = 3.0, O = 3.5, H = 2.1.)",
+    "parts": [
+      { "label": "(a)", "prompt": "Describe the Lewis structure of CCl4, including the total number of valence electrons used, and state its electron-group and molecular geometry according to VSEPR theory.", "maxPoints": 3 },
+      { "label": "(b)", "prompt": "Using the given electronegativities, determine whether each individual C-Cl bond is polar or nonpolar, and explain why.", "maxPoints": 2 },
+      { "label": "(c)", "prompt": "Despite having polar individual bonds, explain why the CCl4 molecule as a whole is nonpolar overall, referring to its molecular geometry and the symmetry of the bond dipoles.", "maxPoints": 2 },
+      { "label": "(d)", "prompt": "Water also has polar O-H bonds, but unlike CCl4 it IS an overall polar molecule. Using VSEPR theory and the presence of lone pairs on the central oxygen atom, explain why water's bond dipoles do not cancel the way CCl4's do.", "maxPoints": 3 }
+    ],
+    "workedSolution": "(a) Total valence electrons = 4 (C) + 4(7) (Cl) = 4 + 28 = 32. Carbon is the central atom, single-bonded to each of the four chlorine atoms (4 bonding pairs = 8 electrons), and each chlorine atom carries 3 lone pairs (3 x 2 x 4 = 24 electrons). Total = 8 + 24 = 32 electrons, matching the count. With 4 bonding pairs and no lone pairs on carbon, both the electron-group geometry and the molecular geometry are tetrahedral.\n\n(b) Each C-Cl bond is polar. Chlorine (electronegativity 3.0) is noticeably more electronegative than carbon (electronegativity 2.5), so the shared electron pair in each C-Cl bond is pulled unevenly toward chlorine, creating a bond dipole pointing from C toward Cl.\n\n(c) Although each individual C-Cl bond is polar, the CCl4 molecule's symmetric tetrahedral geometry places all four identical, equally polar bonds pointing symmetrically outward from the central carbon in a balanced, three-dimensional arrangement. The four equal bond dipoles point in directions that cancel each other out exactly, so their vector sum is zero, giving the overall molecule no net dipole moment (nonpolar overall).\n\n(d) In water, the central oxygen atom has only 2 bonding pairs (to the 2 H atoms) and 2 lone pairs, giving it a bent (angular) molecular geometry rather than a symmetric shape like CCl4's tetrahedral arrangement. Because the two O-H bond dipoles are not oriented symmetrically opposite one another (they meet at a bond angle of about 104.5 degrees, and the two lone pairs, which are not paired with an opposing bond dipole of equal strength, break the symmetry), the two O-H bond dipoles do not cancel; instead they add together, giving the overall water molecule a net dipole moment and making it polar overall.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly totaling 32 valence electrons; 1 point for correctly describing 4 bonding pairs to Cl and 3 lone pairs on each Cl consistent with that total; 1 point for correctly stating both the electron-group and molecular geometry are tetrahedral.", "points": 3, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly identifying each C-Cl bond as polar; 1 point for a correct explanation based on the electronegativity difference between C and Cl.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(c)", "criterion": "1 point for correctly stating that CCl4's symmetric tetrahedral geometry (from part (a)) causes the bond dipoles to point in directions that cancel; 1 point for correctly concluding the molecule has no net dipole moment and is nonpolar overall.", "points": 2, "allowsErrorCarriedForward": true },
+      { "partLabel": "(d)", "criterion": "1 point for correctly identifying water's bent/angular molecular geometry with 2 lone pairs on oxygen; 1 point for correctly explaining that this asymmetric arrangement prevents the two O-H bond dipoles from canceling; 1 point for correctly concluding water has a net dipole moment and is polar overall.", "points": 3, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Start by finding the total valence electrons and drawing out the full Lewis structure for CCl4 before considering shape.",
+      "Compare the number of lone pairs on the central atom in CCl4 (zero) to the number on the central atom in H2O (two) -- that's the key difference driving the different overall polarities."
+    ]
+  },
+  {
+    "id": "ic10-short-3",
+    "unitId": 10,
+    "kind": "short",
+    "points": 4,
+    "stem": "Consider the nitrogen molecule, N2. Each nitrogen atom contributes 5 valence electrons.",
+    "parts": [
+      { "label": "(a)", "prompt": "Determine the total number of valence electrons in N2, and describe the Lewis structure, including the number of bonding pairs between the two nitrogen atoms and the number of lone pairs on each nitrogen atom.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "State the type of bond (single, double, or triple) between the two nitrogen atoms based on your Lewis structure, and briefly explain what a triple bond means in terms of shared electron pairs.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) Total valence electrons = 2 x 5 = 10. For each nitrogen atom to achieve a full octet using only 10 electrons shared between two atoms, the two nitrogens must share three electron pairs (a triple bond, 6 electrons) between them, with one lone pair (2 electrons) remaining on each nitrogen. Check: 6 (triple bond) + 2 (lone pair on left N) + 2 (lone pair on right N) = 10, matching the total.\n\n(b) The two nitrogen atoms are joined by a triple bond. A triple bond means three electron pairs (6 electrons total) are shared between the two atoms, rather than the single shared pair (2 electrons) of a single bond. This makes the N-N bond in N2 considerably stronger and shorter than a typical single bond.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly totaling 10 valence electrons; 1 point for correctly describing a triple bond between the nitrogens with one lone pair remaining on each nitrogen, consistent with that total.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly stating the bond is a triple bond, consistent with the student's own structure from part (a); 1 point for correctly explaining that a triple bond involves three shared electron pairs and is stronger/shorter than a single bond.", "points": 2, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Start by finding the total valence electrons: multiply each atom's valence electron count by how many atoms are present.",
+      "For nitrogen to satisfy the octet rule with only 10 total electrons shared between just two atoms, more than one electron pair must be shared between them."
+    ]
+  },
+  {
+    "id": "ic10-short-4",
+    "unitId": 10,
+    "kind": "short",
+    "points": 4,
+    "stem": "Consider the compounds hydrogen chloride (HCl) and sodium fluoride (NaF). Approximate electronegativities: H = 2.1, Cl = 3.0, Na = 0.9, F = 4.0.",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the electronegativity difference for the H-Cl bond and for the Na-F bond.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Using the guideline that a difference of 0-0.4 indicates nonpolar covalent, 0.4-1.7 indicates polar covalent, and greater than 1.7 indicates ionic, classify each bond, and state which compound, HCl or NaF, is best described as an ionic compound.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) H-Cl difference = |3.0 - 2.1| = 0.9. Na-F difference = |4.0 - 0.9| = 3.1.\n\n(b) The H-Cl difference of 0.9 falls in the 0.4-1.7 range, so the H-Cl bond is classified as polar covalent. The Na-F difference of 3.1 exceeds 1.7, so the Na-F bond is classified as ionic. Therefore, NaF is best described as an ionic compound, while HCl is a polar covalent (molecular) compound.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for the correct H-Cl electronegativity difference (0.9); 1 point for the correct Na-F electronegativity difference (3.1).", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly classifying each bond using the guideline and the student's own differences from part (a); 1 point for correctly identifying NaF as the ionic compound.", "points": 2, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": [
+      "Subtract the smaller electronegativity value from the larger one for each bond.",
+      "Compare each calculated difference to the given ranges to determine the bond classification."
+    ]
+  },
+  {
+    "id": "ic10-long-3",
+    "unitId": 10,
+    "kind": "long",
+    "points": 10,
+    "stem": "Sulfur dioxide (SO2) is a bent (angular) molecule, unlike its linear relative carbon dioxide (CO2), even though both have a central atom bonded to two oxygen atoms. Sulfur has 6 valence electrons; each oxygen has 6 valence electrons.",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the total number of valence electrons in SO2, and describe a Lewis structure consistent with that total, including the number of bonding electron domains and the number of lone pairs on the central sulfur atom.", "maxPoints": 3 },
+      { "label": "(b)", "prompt": "Using VSEPR theory and your structure from part (a), determine the electron-group geometry and the molecular geometry of SO2, and explain why they differ.", "maxPoints": 3 },
+      { "label": "(c)", "prompt": "Determine whether the individual sulfur-oxygen bonds are polar or nonpolar (approximate electronegativities: S = 2.5, O = 3.5), and explain why.", "maxPoints": 2 },
+      { "label": "(d)", "prompt": "Predict whether SO2 is polar or nonpolar overall, and justify your answer using both the bond polarity from part (c) and the molecular geometry from part (b).", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) Total valence electrons = 6 (S) + 2(6) (O) = 6 + 12 = 18. One valid Lewis structure places sulfur in the center, double-bonded to one oxygen and single-bonded to the other, with one lone pair on sulfur, two lone pairs on the doubly-bonded oxygen, and three lone pairs on the singly-bonded oxygen. Electron check: bonds = 4 (double) + 2 (single) = 6; lone pairs = 2 (on S) + 4 (on doubly-bonded O) + 6 (on singly-bonded O) = 12; total = 6 + 12 = 18, matching the count. Around the central sulfur, there are 2 bonding domains (one to each oxygen) and 1 lone pair.\n\n(b) With 3 total electron domains around sulfur (2 bonding domains + 1 lone pair), the electron-group geometry is trigonal planar. Because one of those three domains is a lone pair rather than a bonded atom, the molecular geometry (the shape defined only by the atoms) is bent. The two geometries differ because electron-group geometry accounts for all electron domains (including lone pairs), while molecular geometry describes only the positions of the atoms.\n\n(c) Each S-O bond is polar. Oxygen (electronegativity 3.5) is more electronegative than sulfur (electronegativity 2.5), an electronegativity difference of 1.0, so the shared electrons in each S-O bond are pulled unevenly toward oxygen, creating a bond dipole.\n\n(d) SO2 is polar overall. Although both S-O bonds are polar, the bent molecular geometry from part (b) means the two bond dipoles point in different, non-opposite directions rather than being arranged symmetrically (as in linear CO2). Because the arrangement is not symmetric, the two bond dipoles do not cancel; they add together to give the molecule a net dipole moment, making SO2 polar overall.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly totaling 18 valence electrons; 1 point for correctly describing 2 bonding domains and 1 lone pair on the central sulfur; 1 point for a structure whose total electron count correctly matches 18.", "points": 3, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly identifying the electron-group geometry as trigonal planar; 1 point for correctly identifying the molecular geometry as bent; 1 point for correctly explaining that the lone pair (from part (a)) is the reason the two geometries differ.", "points": 3, "allowsErrorCarriedForward": true },
+      { "partLabel": "(c)", "criterion": "1 point for correctly identifying the S-O bonds as polar; 1 point for a correct explanation based on the electronegativity difference between S and O.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(d)", "criterion": "1 point for correctly predicting SO2 is polar overall; 1 point for a correct justification combining bond polarity from part (c) with the asymmetric bent geometry from part (b).", "points": 2, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Start by finding the total valence electrons for the whole molecule, the same way you would for CO2.",
+      "Remember that lone pairs on the central atom count as electron domains for determining shape, even though they aren't drawn as bonds between atoms."
+    ]
+  },
+  {
+    "id": "ic10-long-4",
+    "unitId": 10,
+    "kind": "long",
+    "points": 10,
+    "stem": "The polyatomic ion ammonium (NH4+) commonly forms ionic compounds with a variety of monatomic and polyatomic anions. Consider the ions NH4+, Cl-, and SO4^2-.",
+    "parts": [
+      { "label": "(a)", "prompt": "Write the correct empirical formula, in lowest whole-number ratio, for the ionic compound formed between (i) NH4+ and Cl-, and (ii) NH4+ and SO4^2-.", "maxPoints": 3 },
+      { "label": "(b)", "prompt": "Explain why two ammonium ions (not just one) are needed to balance the charge of a single sulfate ion in the compound from part (a)(ii).", "maxPoints": 2 },
+      { "label": "(c)", "prompt": "The nitrogen-to-hydrogen bonds within the ammonium ion itself are covalent bonds, even though the ammonium ion as a whole participates in ionic bonding with Cl- or SO4^2-. Explain how a single compound like ammonium chloride can contain both covalent and ionic bonding.", "maxPoints": 3 },
+      { "label": "(d)", "prompt": "Predict whether solid ammonium chloride (NH4Cl) is expected to conduct electricity, and explain your reasoning based on the mobility of its ions.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) (i) NH4Cl (the +1 charge of NH4+ balances the -1 charge of Cl- directly). (ii) (NH4)2SO4 (two NH4+ ions are needed to balance the 2- charge of one SO4^2- ion).\n\n(b) Sulfate carries a 2- charge, while each ammonium ion carries only a 1+ charge. For the overall compound to be electrically neutral, the total positive charge must equal the total negative charge. Since one NH4+ supplies only +1, two NH4+ ions (total +2) are required to exactly balance the -2 charge of a single sulfate ion.\n\n(c) Within the ammonium ion, NH4+, the nitrogen atom and the four hydrogen atoms are all nonmetals held together by shared electron pairs -- genuine covalent bonds -- forming a discrete polyatomic ion with an overall +1 charge. This polyatomic ion, treated as a single unit, then interacts with chloride (Cl-) through an ionic bond: the electrostatic attraction between the overall positively charged ammonium ion and the overall negatively charged chloride ion. So the covalent bonding exists internally within the ammonium ion itself, while the ionic bonding occurs between that polyatomic ion (as a whole) and the oppositely charged ion.\n\n(d) Solid NH4Cl is not expected to conduct electricity. Even though NH4Cl is an ionic compound, in the solid state its NH4+ and Cl- ions are held in fixed positions within a rigid crystal lattice and cannot move freely to carry an electric current. Conduction requires mobile charge carriers, which are not available in a rigid solid lattice.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for the correct formula NH4Cl in part (i); 2 points for the correct formula (NH4)2SO4 in part (ii).", "points": 3, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly stating that the total positive and negative charge must balance to zero for a neutral compound; 1 point for correctly connecting sulfate's 2- charge to needing two 1+ ammonium ions, consistent with part (a).", "points": 2, "allowsErrorCarriedForward": true },
+      { "partLabel": "(c)", "criterion": "1 point for correctly identifying the N-H bonds within ammonium as covalent bonds between nonmetals; 1 point for correctly identifying the bond between the ammonium ion as a whole and Cl- as ionic (electrostatic attraction between charged units); 1 point for correctly synthesizing that covalent bonding is internal to the polyatomic ion while ionic bonding occurs between the ion and its counterion.", "points": 3, "allowsErrorCarriedForward": false },
+      { "partLabel": "(d)", "criterion": "1 point for correctly predicting that solid NH4Cl does not conduct electricity; 1 point for a correct explanation based on the ions being fixed in place within the rigid lattice.", "points": 2, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Treat the ammonium ion, NH4+, as a single unit with an overall +1 charge when balancing it against an anion.",
+      "Look separately at what holds the atoms together inside the ammonium ion versus what holds the ammonium ion together with the anion."
+    ]
+  }
+]

@@ -1,0 +1,223 @@
+[
+  {
+    "id": "ic-c8-mc-1",
+    "unitId": 8,
+    "stem": "For the reaction N2 + 3H2 -> 2NH3, how many moles of NH3 form from 2.0 mol of N2, assuming excess H2?",
+    "choices": ["1.0 mol", "2.0 mol", "4.0 mol", "6.0 mol"],
+    "correctIndex": 2,
+    "topicTag": "8.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c8-mc-2",
+    "unitId": 8,
+    "stem": "For 2H2 + O2 -> 2H2O, how many moles of O2 are required to react completely with 6.0 mol of H2?",
+    "choices": ["2.0 mol", "3.0 mol", "6.0 mol", "12 mol"],
+    "correctIndex": 1,
+    "topicTag": "8.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c8-mc-3",
+    "unitId": 8,
+    "stem": "In a balanced chemical equation, the mole ratio between any two substances is given directly by their coefficients.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "8.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c8-mc-4",
+    "unitId": 8,
+    "stem": "For 2Al + 3CuCl2 -> 2AlCl3 + 3Cu, how many moles of Cu form from 4.0 mol of Al, assuming excess CuCl2?",
+    "choices": ["2.0 mol", "4.0 mol", "6.0 mol", "8.0 mol"],
+    "correctIndex": 2,
+    "topicTag": "8.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c8-mc-5",
+    "unitId": 8,
+    "stem": "For 2H2 + O2 -> 2H2O, how many grams of H2O form from 4.03 g of H2 (molar mass 2.02 g/mol), assuming excess O2?",
+    "choices": ["18.0 g", "24.0 g", "36.0 g", "44.0 g"],
+    "correctIndex": 2,
+    "topicTag": "8.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c8-mc-6",
+    "unitId": 8,
+    "stem": "How many grams of CO2 are produced when 16.0 g of CH4 (molar mass 16.0 g/mol) undergoes complete combustion, CH4 + 2O2 -> CO2 + 2H2O?",
+    "choices": ["22.0 g", "44.0 g", "64.0 g", "88.0 g"],
+    "correctIndex": 1,
+    "topicTag": "8.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c8-mc-7",
+    "unitId": 8,
+    "stem": "Mass-to-mass stoichiometry problems require converting the given mass to moles before applying the mole ratio from the balanced equation.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "8.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c8-mc-8",
+    "unitId": 8,
+    "stem": "In the reaction 2H2 + O2 -> 2H2O, 4.0 mol of H2 and 1.0 mol of O2 are combined. Which reactant is limiting?",
+    "choices": ["H2", "O2", "Both are used up completely at the same time", "Neither, no reaction occurs"],
+    "correctIndex": 1,
+    "topicTag": "8.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c8-mc-9",
+    "unitId": 8,
+    "stem": "Using the same reaction, 2H2 + O2 -> 2H2O, with 4.0 mol H2 and 1.0 mol O2 combined, how many moles of H2O form?",
+    "choices": ["1.0 mol", "2.0 mol", "3.0 mol", "4.0 mol"],
+    "correctIndex": 1,
+    "topicTag": "8.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c8-mc-10",
+    "unitId": 8,
+    "stem": "For N2 + 3H2 -> 2NH3, if 2.0 mol of N2 and 3.0 mol of H2 are mixed, which reactant is limiting?",
+    "choices": ["N2", "H2", "Both react completely with none left over", "Neither reacts"],
+    "correctIndex": 1,
+    "topicTag": "8.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c8-mc-11",
+    "unitId": 8,
+    "stem": "The limiting reactant is completely consumed in a reaction, while some of the other reactant(s) may remain unreacted.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "8.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c8-mc-12",
+    "unitId": 8,
+    "stem": "A student calculates a theoretical yield of 25.0 g for a product but actually collects 21.3 g. What is the percent yield?",
+    "choices": ["73.8%", "85.2%", "91.5%", "117%"],
+    "correctIndex": 1,
+    "topicTag": "8.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c8-mc-13",
+    "unitId": 8,
+    "stem": "Which expression correctly defines percent yield?",
+    "choices": [
+      "(theoretical yield / actual yield) x 100%",
+      "(actual yield / theoretical yield) x 100%",
+      "(actual yield - theoretical yield) x 100%",
+      "(actual yield x theoretical yield) x 100%"
+    ],
+    "correctIndex": 1,
+    "topicTag": "8.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c8-mc-14",
+    "unitId": 8,
+    "stem": "Percent yield can sometimes be reported as greater than 100% due to experimental error, such as collecting an impure or wet product.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "8.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c8-mc-15",
+    "unitId": 8,
+    "stem": "For the reaction 2NO + O2 -> 2NO2, how many moles of NO2 form from 5.0 mol of NO, assuming excess O2?",
+    "choices": ["2.5 mol", "5.0 mol", "7.5 mol", "10.0 mol"],
+    "correctIndex": 1,
+    "topicTag": "8.1",
+    "source": "original",
+    "explanation": "The balanced equation shows a 2:2, or 1:1, mole ratio between NO and NO2. So 5.0 mol of NO produces 5.0 mol of NO2. Choosing 2.5 mol mistakenly divides by 2 as if the ratio were 2:1. Choosing 7.5 mol or 10.0 mol multiplies instead of recognizing the simplified 1:1 ratio.",
+    "difficulty": "beginner",
+    "hints": [
+      "Compare the coefficients of NO and NO2 in the balanced equation.",
+      "A 2:2 ratio is the same as a 1:1 ratio."
+    ]
+  },
+  {
+    "id": "ic-c8-mc-16",
+    "unitId": 8,
+    "stem": "For H2 + Cl2 -> 2HCl, how many grams of HCl form from 2.02 g of H2 (molar mass 2.02 g/mol), assuming excess Cl2? (Molar mass of HCl = 36.46 g/mol.)",
+    "choices": ["36.5 g", "72.9 g", "109 g", "146 g"],
+    "correctIndex": 1,
+    "topicTag": "8.2",
+    "source": "original",
+    "explanation": "Moles of H2 = 2.02 g / 2.02 g/mol = 1.00 mol. The mole ratio of H2 to HCl is 1:2, so moles of HCl = 2.00 mol. Mass of HCl = 2.00 mol x 36.46 g/mol = 72.9 g. Choosing 36.5 g forgets to apply the 1:2 mole ratio and treats it as 1:1. Choosing 109 g or 146 g overshoots by using too large a mole ratio.",
+    "difficulty": "beginner",
+    "hints": [
+      "First convert the given mass of H2 into moles.",
+      "Remember the mole ratio between H2 and HCl is 1:2, not 1:1."
+    ]
+  },
+  {
+    "id": "ic-c8-mc-17",
+    "unitId": 8,
+    "stem": "For N2 + 3H2 -> 2NH3, 28.0 g of N2 (molar mass 28.02 g/mol) is combined with 6.00 g of H2 (molar mass 2.02 g/mol). Which reactant is limiting?",
+    "choices": ["N2", "H2", "Both react completely with none left over", "Neither reacts"],
+    "correctIndex": 1,
+    "topicTag": "8.3",
+    "source": "original",
+    "explanation": "Moles of N2 = 28.0/28.02 = 1.00 mol. Moles of H2 = 6.00/2.02 = 2.97 mol. The balanced equation requires 3 mol of H2 for every 1 mol of N2, so fully reacting 1.00 mol of N2 would require 3.00 mol of H2 — but only 2.97 mol is available. Since there isn't quite enough H2 to react with all the N2, H2 is the limiting reactant. Choosing N2 reverses which reactant runs out first. The other choices ignore that the mole ratio isn't exactly satisfied by the given masses.",
+    "difficulty": "intermediate",
+    "hints": [
+      "Convert both given masses to moles before comparing anything.",
+      "Check how much H2 would be needed to react with all of the available N2, using the 3:1 mole ratio, and compare that to how much H2 is actually present."
+    ]
+  },
+  {
+    "id": "ic-c8-mc-18",
+    "unitId": 8,
+    "stem": "For 2Al + 3Br2 -> 2AlBr3, 5.00 g of aluminum (molar mass 26.98 g/mol) reacts completely with excess bromine to produce AlBr3 (molar mass 266.69 g/mol). If the actual yield collected is 40.0 g, what is the percent yield?",
+    "choices": ["71.0%", "81.0%", "91.0%", "111%"],
+    "correctIndex": 1,
+    "topicTag": "8.4",
+    "source": "original",
+    "explanation": "Moles of Al = 5.00/26.98 = 0.185 mol. The mole ratio of Al to AlBr3 is 2:2, or 1:1, so moles of AlBr3 = 0.185 mol. Theoretical yield = 0.185 mol x 266.69 g/mol = 49.4 g. Percent yield = (40.0/49.4) x 100% = 81.0%. Choosing 71.0% or 91.0% comes from an arithmetic slip in the theoretical yield calculation. Choosing 111% incorrectly divides theoretical by actual instead of actual by theoretical.",
+    "difficulty": "intermediate",
+    "hints": [
+      "This is a two-step problem: find the theoretical yield first using stoichiometry, then compare it to the actual yield.",
+      "Percent yield is always actual yield divided by theoretical yield, not the other way around."
+    ]
+  },
+  {
+    "id": "ic-c8-mc-19",
+    "unitId": 8,
+    "stem": "For 2H2 + O2 -> 2H2O, 10.0 g of H2 (molar mass 2.02 g/mol) and 10.0 g of O2 (molar mass 32.00 g/mol) are combined and allowed to react completely. How many grams of water form (molar mass H2O = 18.02 g/mol)?",
+    "choices": ["10.0 g", "11.3 g", "20.0 g", "44.6 g"],
+    "correctIndex": 1,
+    "topicTag": "8.3",
+    "source": "original",
+    "explanation": "Moles of H2 = 10.0/2.02 = 4.95 mol. Moles of O2 = 10.0/32.00 = 0.3125 mol. The balanced equation needs 2 mol H2 per 1 mol O2, so fully reacting 0.3125 mol O2 would require only 0.625 mol H2 — far less than the 4.95 mol available. So O2 is limiting. Moles of H2O = 2 x 0.3125 = 0.625 mol. Mass of H2O = 0.625 mol x 18.02 g/mol = 11.3 g. Choosing 10.0 g or 20.0 g mistakenly assumes H2 is limiting instead of O2. Choosing 44.6 g mistakenly uses the moles of H2 instead of the correctly identified limiting reactant.",
+    "difficulty": "advanced",
+    "hints": [
+      "Convert both masses to moles, then figure out which reactant is actually limiting before doing any further calculation.",
+      "Once you know the limiting reactant, use only its moles (with the correct mole ratio) to find the moles of water produced."
+    ]
+  },
+  {
+    "id": "ic-c8-mc-20",
+    "unitId": 8,
+    "stem": "For 2Al2O3 -> 4Al + 3O2, 50.0 g of Al2O3 (molar mass 101.96 g/mol) is decomposed, producing aluminum metal (molar mass 26.98 g/mol) with a percent yield of 78.0%. What is the actual mass of Al obtained?",
+    "choices": ["20.6 g", "26.5 g", "33.9 g", "41.3 g"],
+    "correctIndex": 0,
+    "topicTag": "8.4",
+    "source": "original",
+    "explanation": "Moles of Al2O3 = 50.0/101.96 = 0.490 mol. The mole ratio of Al2O3 to Al is 2:4, or 1:2, so theoretical moles of Al = 0.981 mol. Theoretical mass of Al = 0.981 mol x 26.98 g/mol = 26.5 g. Applying the percent yield: actual mass = 0.780 x 26.5 g = 20.6 g. Choosing 26.5 g stops at the theoretical yield and forgets to apply the percent yield. Choosing 33.9 g or 41.3 g comes from misapplying the mole ratio or the percent yield calculation.",
+    "difficulty": "advanced",
+    "hints": [
+      "This problem has three stages: convert mass to moles, use stoichiometry to find the theoretical yield, then apply the percent yield.",
+      "The mole ratio of Al2O3 to Al is 1:2, not 1:1 — double-check this before calculating the theoretical mass."
+    ]
+  }
+]

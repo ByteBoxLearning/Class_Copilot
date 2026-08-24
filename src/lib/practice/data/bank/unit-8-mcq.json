@@ -1,0 +1,66 @@
+[
+  {
+    "id": "u8-mcq-1",
+    "unitId": 8,
+    "stem": "Which of the following best explains why HClO4 (perchloric acid) is a significantly stronger acid than HClO (hypochlorous acid) in aqueous solution?",
+    "choices": [
+      "HClO4 has additional oxygen atoms bonded to the central chlorine atom that withdraw electron density inductively and delocalize the negative charge on the conjugate base, stabilizing ClO4^- relative to ClO^-",
+      "HClO4 has a larger molar mass than HClO, and acid strength increases as the molar mass of an oxoacid increases",
+      "HClO4 has more ionizable hydrogen atoms than HClO, so it releases more H+ ions per formula unit",
+      "The Cl-O bonds in HClO4 are longer and weaker than the Cl-O bond in HClO, so they break apart more readily in water"
+    ],
+    "correctIndex": 0,
+    "workedSolution": "For oxoacids with the same central atom, acid strength increases with the number of oxygen atoms bonded to that central atom. Each additional highly electronegative O atom inductively withdraws electron density from the O-H bond (making the H more easily released as H+) and, once the proton is removed, delocalizes the resulting negative charge over more oxygens through resonance, stabilizing the conjugate base. HClO4 has 4 oxygens around Cl versus only 1 for HClO, so ClO4^- is much more stable than ClO^-, making HClO4 a very strong acid (essentially complete ionization) while HClO is only a weak acid (Ka approx 3x10^-8).",
+    "explanation": "Choice A is correct: the number of oxygens on the central atom, and the resulting inductive withdrawal and charge delocalization in the conjugate base, is the key structural factor governing oxoacid strength. Choice B confuses molar mass with acidity; mass itself has no direct bearing on the O-H bond polarity or conjugate-base stability. Choice C is factually incorrect and a common misreading of the formula: both acids have only one ionizable (acidic) hydrogen, bonded to an O atom; the extra oxygens in HClO4 are not additional acidic hydrogens. Choice D reverses the correct reasoning; the relevant effect is stabilization of the conjugate base through the extra Cl-O (double) bonds, not a weakening/lengthening of Cl-O bonds that makes them easier to break.",
+    "topicTag": "Molecular Structure of Acids and Bases",
+    "source": "bank"
+  },
+  {
+    "id": "u8-mcq-2",
+    "unitId": 8,
+    "stem": "A student dissolves 0.250 mol of Ba(OH)2 in enough water to make 2.00 L of solution. Assuming complete dissociation, what is the pH of the resulting solution at 25 degrees C?",
+    "choices": [
+      "13.10",
+      "13.40",
+      "13.60",
+      "0.60"
+    ],
+    "correctIndex": 1,
+    "workedSolution": "Ba(OH)2 -> Ba^2+(aq) + 2OH-(aq), so each mole of Ba(OH)2 releases 2 mol of OH-. Moles OH- = 2 x 0.250 mol = 0.500 mol. [OH-] = 0.500 mol / 2.00 L = 0.250 M. pOH = -log(0.250) = 0.602. pH = 14.00 - 0.602 = 13.40.",
+    "explanation": "The correct answer is 13.40, obtained by correctly doubling the moles of OH- from the 2:1 stoichiometry of Ba(OH)2 before dividing by volume and converting pOH to pH. The choice 13.10 results from forgetting the factor of 2 (treating the dissociation as 1:1), giving [OH-] = 0.125 M instead of 0.250 M. The choice 13.60 results from a small arithmetic/log-evaluation slip when computing -log(0.250). The choice 0.60 results from reporting the calculated pOH (0.60) directly as the pH and forgetting the final step of subtracting from 14.00 -- a value that should also raise suspicion since a strong base solution cannot have pH below 7.",
+    "topicTag": "pH and pOH of Strong Acids and Bases",
+    "source": "bank"
+  },
+  {
+    "id": "u8-mcq-3",
+    "unitId": 8,
+    "stem": "A 0.150 M aqueous solution of a monoprotic weak acid HA has a measured pH of 2.80 at 25 degrees C. What is the value of Ka for HA?",
+    "choices": [
+      "1.6x10^-3",
+      "1.7x10^-5",
+      "2.5x10^-6",
+      "1.1x10^-2"
+    ],
+    "correctIndex": 1,
+    "workedSolution": "[H+] = 10^-2.80 = 1.58x10^-3 M. Since HA is monoprotic, [A-] = [H+] = 1.58x10^-3 M at equilibrium, and [HA]eq = 0.150 - 1.58x10^-3 = 0.1484 M. Ka = [H+][A-]/[HA] = (1.58x10^-3)^2 / 0.1484 = 2.51x10^-6 / 0.1484 = 1.7x10^-5.",
+    "explanation": "The correct value is 1.7x10^-5, found by squaring [H+] and dividing by the equilibrium (not initial, though the difference is small here) concentration of HA. The choice 1.6x10^-3 comes from the common misconception that pH = pKa for any weak-acid solution (that relationship only holds at the half-equivalence point of a titration), giving Ka = 10^-2.80 directly. The choice 2.5x10^-6 comes from computing only the numerator, [H+]^2, and forgetting to divide by [HA]. The choice 1.1x10^-2 comes from forgetting to square [H+] in the Ka expression and instead calculating [H+]/[HA].",
+    "topicTag": "Weak Acid and Base Equilibria",
+    "source": "bank"
+  },
+  {
+    "id": "u8-mcq-4",
+    "unitId": 8,
+    "stem": "A buffer solution is prepared by combining 0.400 mol of acetic acid, CH3COOH (Ka = 1.8x10^-5), with 0.600 mol of sodium acetate, CH3COONa, in enough water to make 1.00 L of solution. What is the pH of this buffer at 25 degrees C?",
+    "choices": [
+      "0.18",
+      "4.57",
+      "4.74",
+      "4.92"
+    ],
+    "correctIndex": 3,
+    "workedSolution": "pKa = -log(1.8x10^-5) = 4.74. Using the Henderson-Hasselbalch equation: pH = pKa + log([CH3COO-]/[CH3COOH]) = 4.74 + log(0.600/0.400) = 4.74 + log(1.5) = 4.74 + 0.18 = 4.92.",
+    "explanation": "The correct answer is 4.92. The choice 4.57 results from inverting the concentration ratio inside the log term (using [acid]/[base] instead of [base]/[acid]), giving 4.74 - 0.18 = 4.57. The choice 4.74 comes from omitting the log correction term entirely and reporting only pKa, as if the acid and conjugate base were present in equal amounts. The choice 0.18 results from confusing Ka with pKa and adding the log term directly to the Ka value (1.8x10^-5 + log(1.5)) instead of to pKa.",
+    "topicTag": "Henderson-Hasselbalch Equation",
+    "source": "bank"
+  }
+]

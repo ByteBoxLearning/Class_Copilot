@@ -1,0 +1,257 @@
+[
+  {
+    "id": "ic-c13-mc-1",
+    "unitId": 13,
+    "stem": "The general rule 'like dissolves like' means that polar solvents tend to dissolve polar or ionic solutes well.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "13.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c13-mc-2",
+    "unitId": 13,
+    "stem": "Which of the following would most likely be soluble in water, a polar solvent?",
+    "choices": ["Table salt (NaCl)", "Vegetable oil", "Motor oil", "Paraffin wax"],
+    "correctIndex": 0,
+    "topicTag": "13.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c13-mc-3",
+    "unitId": 13,
+    "stem": "Nonpolar solutes generally dissolve well in polar solvents such as water.",
+    "choices": ["True", "False"],
+    "correctIndex": 1,
+    "topicTag": "13.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c13-mc-4",
+    "unitId": 13,
+    "stem": "A solution that contains as much dissolved solute as it can hold at a given temperature is called:",
+    "choices": ["Saturated", "Unsaturated", "Supersaturated", "Dilute"],
+    "correctIndex": 0,
+    "topicTag": "13.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c13-mc-5",
+    "unitId": 13,
+    "stem": "Molarity is defined as:",
+    "choices": [
+      "Moles of solute per liter of solution",
+      "Grams of solute per liter of solution",
+      "Moles of solute per kilogram of solvent",
+      "Liters of solute per liter of solvent"
+    ],
+    "correctIndex": 0,
+    "topicTag": "13.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c13-mc-6",
+    "unitId": 13,
+    "stem": "What is the molarity of a solution made by dissolving 2.0 moles of NaCl in enough water to make 4.0 L of solution?",
+    "choices": ["0.5 M", "2.0 M", "8.0 M", "4.0 M"],
+    "correctIndex": 0,
+    "topicTag": "13.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c13-mc-7",
+    "unitId": 13,
+    "stem": "Molality is defined as:",
+    "choices": [
+      "Moles of solute per kilogram of solvent",
+      "Moles of solute per liter of solution",
+      "Grams of solute per 100 g of solution",
+      "Liters of solute per liter of solvent"
+    ],
+    "correctIndex": 0,
+    "topicTag": "13.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c13-mc-8",
+    "unitId": 13,
+    "stem": "Unlike molarity, molality does not change with temperature because it is based on mass rather than volume.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "13.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c13-mc-9",
+    "unitId": 13,
+    "stem": "A solution is described as 5% NaCl by mass. This means:",
+    "choices": [
+      "There are 5 g of NaCl per 100 g of solution",
+      "There are 5 g of NaCl per liter of solution",
+      "There are 5 moles of NaCl per liter of solution",
+      "There are 5 g of NaCl per gram of water"
+    ],
+    "correctIndex": 0,
+    "topicTag": "13.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c13-mc-10",
+    "unitId": 13,
+    "stem": "When a stock solution is diluted by adding more solvent, which of the following stays constant?",
+    "choices": ["Moles of solute", "Molarity", "Volume of solution", "Concentration"],
+    "correctIndex": 0,
+    "topicTag": "13.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c13-mc-11",
+    "unitId": 13,
+    "stem": "Using C1V1 = C2V2, if 100 mL of a 6.0 M solution is diluted to a final volume of 600 mL, what is the new concentration?",
+    "choices": ["1.0 M", "6.0 M", "0.6 M", "3.6 M"],
+    "correctIndex": 0,
+    "topicTag": "13.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c13-mc-12",
+    "unitId": 13,
+    "stem": "Colligative properties of a solution depend primarily on:",
+    "choices": [
+      "The number of dissolved solute particles, not their chemical identity",
+      "The specific chemical identity of the solute",
+      "The color of the solute",
+      "The molar mass of the solvent only"
+    ],
+    "correctIndex": 0,
+    "topicTag": "13.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c13-mc-13",
+    "unitId": 13,
+    "stem": "Adding a solute to a solvent generally raises the boiling point of the resulting solution compared to the pure solvent.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "13.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c13-mc-14",
+    "unitId": 13,
+    "stem": "Adding a solute to a solvent generally raises the freezing point of the resulting solution compared to the pure solvent.",
+    "choices": ["True", "False"],
+    "correctIndex": 1,
+    "topicTag": "13.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c13-mc-15",
+    "unitId": 13,
+    "stem": "Which of the following is an example of a colligative property?",
+    "choices": [
+      "Freezing point depression",
+      "Density",
+      "Color",
+      "Viscosity, independent of concentration"
+    ],
+    "correctIndex": 0,
+    "topicTag": "13.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c13-mc-16",
+    "unitId": 13,
+    "stem": "Based on the principle 'like dissolves like,' which pair of substances would NOT be expected to form a solution?",
+    "choices": [
+      "Water and ethanol (both polar)",
+      "Water and table salt (ionic)",
+      "Water and motor oil (nonpolar)",
+      "Water and table sugar (polar covalent)"
+    ],
+    "correctIndex": 2,
+    "topicTag": "13.1",
+    "source": "original",
+    "explanation": "Water is polar, and motor oil is nonpolar, so the two do not interact favorably and remain separate (oil floats on water rather than dissolving). The other three pairs are all polar or ionic substances paired with polar water, so they dissolve readily.",
+    "difficulty": "beginner",
+    "hints": [
+      "Think about whether each substance listed is polar/ionic or nonpolar.",
+      "Nonpolar substances do not mix well with polar solvents like water."
+    ]
+  },
+  {
+    "id": "ic-c13-mc-17",
+    "unitId": 13,
+    "stem": "What is the molarity of a solution prepared by dissolving 1.5 moles of KBr in enough water to make 3.0 L of solution?",
+    "choices": ["0.50 M", "1.5 M", "4.5 M", "2.0 M"],
+    "correctIndex": 0,
+    "topicTag": "13.2",
+    "source": "original",
+    "explanation": "Molarity = moles of solute / liters of solution = 1.5 mol / 3.0 L = 0.50 M. Choosing 1.5 M mistakenly reports the moles as if they were already the molarity. Choosing 4.5 M results from multiplying instead of dividing. Choosing 2.0 M comes from a simple division error.",
+    "difficulty": "beginner",
+    "hints": [
+      "Molarity = moles of solute / liters of solution.",
+      "Divide 1.5 by 3.0."
+    ]
+  },
+  {
+    "id": "ic-c13-mc-18",
+    "unitId": 13,
+    "stem": "A solution is prepared by dissolving 25.0 g of glucose (C6H12O6, molar mass = 180.0 g/mol) in 250.0 g of water. What is the molality of the solution?",
+    "choices": ["0.556 m", "0.139 m", "5.56 m", "0.505 m"],
+    "correctIndex": 0,
+    "topicTag": "13.3",
+    "source": "original",
+    "explanation": "Moles of glucose = 25.0 g / 180.0 g/mol = 0.139 mol. Molality = 0.139 mol / 0.250 kg = 0.556 m. Choosing 0.139 m mistakenly reports the moles of solute directly as the molality, forgetting to divide by the mass of water. Choosing 5.56 m results from treating 250.0 g of water as 0.0250 kg instead of 0.250 kg (a misplaced decimal). Choosing 0.505 m results from dividing by the total mass of the solution (275 g) instead of the mass of the solvent alone.",
+    "difficulty": "intermediate",
+    "hints": [
+      "First find moles of glucose using its molar mass, then convert the water's mass to kilograms.",
+      "Molality uses kilograms of solvent only, not the total mass of the solution."
+    ]
+  },
+  {
+    "id": "ic-c13-mc-19",
+    "unitId": 13,
+    "stem": "A student dilutes 50.0 mL of a 4.00 M stock solution to a final concentration of 0.500 M by adding water. What volume of water must be added?",
+    "choices": ["350 mL", "400 mL", "6.25 mL", "50.0 mL"],
+    "correctIndex": 0,
+    "topicTag": "13.4",
+    "source": "original",
+    "explanation": "Using M1V1 = M2V2, the final total volume is (4.00 M)(50.0 mL)/(0.500 M) = 400 mL. Since the water added equals the final volume minus the initial volume, 400 mL - 50.0 mL = 350 mL of water must be added. Choosing 400 mL mistakes the total final volume for the volume of water added. Choosing 6.25 mL results from inverting the dilution ratio (using C2/C1 instead of C1/C2). Choosing 50.0 mL simply restates the initial volume without doing any calculation.",
+    "difficulty": "intermediate",
+    "hints": [
+      "First solve for the total final volume using M1V1 = M2V2.",
+      "The question asks for water added, not the total final volume, so subtract the initial volume from the total."
+    ]
+  },
+  {
+    "id": "ic-c13-mc-20",
+    "unitId": 13,
+    "stem": "A 0.200 m aqueous solution of CaCl2, which fully dissociates into 3 ions per formula unit, is prepared. Using Kf = 1.86 degrees C/m for water, what is the freezing point of this solution?",
+    "choices": ["-1.12 degrees C", "-0.372 degrees C", "-1.86 degrees C", "-3.35 degrees C"],
+    "correctIndex": 0,
+    "topicTag": "13.5",
+    "source": "original",
+    "explanation": "For an electrolyte, Delta Tf = i x Kf x m = 3 x 1.86 x 0.200 = 1.12 degrees C, so the freezing point is 0.00 - 1.12 = -1.12 degrees C. Choosing -0.372 degrees C forgets the van't Hoff factor i entirely (treating CaCl2 as a non-electrolyte). Choosing -1.86 degrees C simply restates the Kf constant without incorporating m or i at all. Choosing -3.35 degrees C results from mistakenly applying the van't Hoff factor twice (using i^2 instead of i).",
+    "difficulty": "advanced",
+    "hints": [
+      "CaCl2 is an ionic compound that dissociates into ions. How many ions does each formula unit produce?",
+      "Use Delta Tf = i x Kf x m, where i is the number of dissolved particles per formula unit."
+    ]
+  },
+  {
+    "id": "ic-c13-mc-21",
+    "unitId": 13,
+    "stem": "A solution of sulfuric acid (H2SO4, molar mass = 98.0 g/mol) is 40.0% H2SO4 by mass and has a density of 1.30 g/mL. What is the molarity of this solution?",
+    "choices": ["5.31 M", "4.08 M", "13.3 M", "0.400 M"],
+    "correctIndex": 0,
+    "topicTag": "13.2",
+    "source": "original",
+    "explanation": "In 1.00 L (1000 mL) of solution, the total mass is 1000 mL x 1.30 g/mL = 1300 g. The mass of H2SO4 is 40.0% of that, or 520 g, which is 520 g / 98.0 g/mol = 5.31 mol. Since this is the amount in 1.00 L, the molarity is 5.31 M. Choosing 4.08 M results from ignoring the given density (assuming 1.00 g/mL) and using 400 g of H2SO4 in 1000 g of solution. Choosing 13.3 M results from ignoring the mass percent and treating the entire solution mass as if it were all H2SO4. Choosing 0.400 M mistakes the mass percent itself for the molarity.",
+    "difficulty": "advanced",
+    "hints": [
+      "Assume a convenient volume of solution, such as 1.00 L, and use the density to find the total mass of that volume.",
+      "Only 40.0% of that total mass is actual H2SO4. Use that to find grams of solute, then convert to moles."
+    ]
+  }
+]

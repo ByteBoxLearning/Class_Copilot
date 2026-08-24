@@ -1,0 +1,194 @@
+[
+  {
+    "id": "ic7-short-1",
+    "unitId": 7,
+    "kind": "short",
+    "points": 4,
+    "stem": "Consider the unbalanced chemical equation: Al(s) + O2(g) -> Al2O3(s)",
+    "parts": [
+      { "label": "(a)", "prompt": "Balance the equation using the smallest possible whole-number coefficients.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Identify the general reaction type (combination/synthesis, decomposition, single-replacement, double-replacement, or combustion) and briefly justify your classification.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) Balanced equation: 4Al(s) + 3O2(g) -> 2Al2O3(s). Check: Al atoms 4 = 4; O atoms 3(2) = 6 = 2(3) = 6.\n\n(b) This is a combination (synthesis) reaction because two elements (Al and O2) combine to form a single compound (Al2O3).",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correct coefficients (4, 3, 2) in the smallest whole-number ratio; 1 point for the equation being fully balanced (equal atoms of Al and O on both sides).", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly identifying the reaction as combination/synthesis; 1 point for a correct justification (two elements/simpler substances combining into one compound).", "points": 2, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": [
+      "Balance aluminum and oxygen atoms separately, adjusting coefficients until both sides match.",
+      "Two elements combining to form one compound is a specific, well-known reaction category."
+    ]
+  },
+  {
+    "id": "ic7-short-2",
+    "unitId": 7,
+    "kind": "short",
+    "points": 4,
+    "stem": "Aqueous solutions of sodium sulfate (Na2SO4) and barium chloride (BaCl2) are mixed together in a beaker, and a white solid immediately forms.",
+    "parts": [
+      { "label": "(a)", "prompt": "Write the balanced molecular equation for this reaction, including the correct physical state for every substance.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Identify the white precipitate that forms, and briefly explain (using solubility rules) why this product, but not the other product, comes out of solution.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) Na2SO4(aq) + BaCl2(aq) -> BaSO4(s) + 2NaCl(aq).\n\n(b) The white precipitate is barium sulfate, BaSO4. Most sulfate compounds are soluble in water, but BaSO4 is a well-known exception and is insoluble, so it separates out of solution as a solid. The other product, NaCl, is a soluble sodium salt (compounds of Group 1 metals and essentially all common sodium salts are soluble), so it remains dissolved as Na+ and Cl- ions in solution.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correct products (BaSO4 and NaCl) with correct formulas; 1 point for correct balancing (coefficient of 2 on NaCl) and correct physical states (aq, aq -> s, aq).", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly identifying BaSO4 as the precipitate; 1 point for a correct solubility-rules-based explanation (sulfates are generally soluble except with certain cations like Ba^2+, while NaCl/sodium salts remain soluble).", "points": 2, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Figure out the two new possible ionic products by swapping the cations and anions from the two reactants.",
+      "Use solubility guidelines to decide which of the two new compounds stays dissolved and which one comes out of solution."
+    ]
+  },
+  {
+    "id": "ic7-long-1",
+    "unitId": 7,
+    "kind": "long",
+    "points": 10,
+    "stem": "Three unbalanced chemical reactions are shown below:\n\nReaction 1: Mg(s) + HCl(aq) -> MgCl2(aq) + H2(g)\nReaction 2: CaCO3(s) -> CaO(s) + CO2(g)\nReaction 3: C3H8(g) + O2(g) -> CO2(g) + H2O(g)",
+    "parts": [
+      { "label": "(a)", "prompt": "Balance Reaction 1 and identify its general reaction type.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Balance Reaction 2 and identify its general reaction type.", "maxPoints": 2 },
+      { "label": "(c)", "prompt": "Balance Reaction 3 and identify its general reaction type.", "maxPoints": 3 },
+      { "label": "(d)", "prompt": "Using your balanced version of Reaction 1, write the net ionic equation for the reaction (assume HCl and MgCl2 are fully dissociated in aqueous solution), and identify any spectator ion(s).", "maxPoints": 3 }
+    ],
+    "workedSolution": "(a) Balanced: Mg(s) + 2HCl(aq) -> MgCl2(aq) + H2(g). This is a single-replacement reaction: Mg replaces the H in HCl.\n\n(b) Balanced (already balanced as written): CaCO3(s) -> CaO(s) + CO2(g). This is a decomposition reaction: one compound breaks down into two simpler substances.\n\n(c) Balanced: C3H8(g) + 5O2(g) -> 3CO2(g) + 4H2O(g). This is a combustion reaction: a hydrocarbon reacts with O2 to produce CO2 and H2O.\n\n(d) Full ionic equation using the balanced Reaction 1 (Mg(s) + 2HCl(aq) -> MgCl2(aq) + H2(g)): Mg(s) + 2H+(aq) + 2Cl-(aq) -> Mg^2+(aq) + 2Cl-(aq) + H2(g). Cl- appears unchanged on both sides, so it is a spectator ion and is removed. Net ionic equation: Mg(s) + 2H+(aq) -> Mg^2+(aq) + H2(g). Spectator ion: Cl-.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for the correct balanced equation (coefficient of 2 on HCl); 1 point for correctly identifying single-replacement.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for recognizing the equation is already balanced as written; 1 point for correctly identifying decomposition.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(c)", "criterion": "1 point for correct coefficient of 5 on O2; 1 point for correct coefficients of 3 (CO2) and 4 (H2O); 1 point for correctly identifying combustion.", "points": 3, "allowsErrorCarriedForward": false },
+      { "partLabel": "(d)", "criterion": "1 point for correctly writing the full ionic equation showing HCl and MgCl2 dissociated into ions, consistent with the student's balanced equation from part (a); 1 point for correctly identifying Cl- as the spectator ion; 1 point for the correct net ionic equation Mg(s) + 2H+(aq) -> Mg^2+(aq) + H2(g) (with coefficients consistent with the student's own part (a) answer).", "points": 3, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Balance each of the three reactions independently first — they don't depend on each other.",
+      "For part (d), rewrite the balanced Reaction 1 with its aqueous compounds split into ions, then cancel any ion that appears unchanged on both sides."
+    ]
+  },
+  {
+    "id": "ic7-long-2",
+    "unitId": 7,
+    "kind": "long",
+    "points": 10,
+    "stem": "In the lab, a student combines an aqueous potassium iodide (KI) solution with an aqueous lead(II) nitrate (Pb(NO3)2) solution inside a sealed flask. A bright yellow solid forms immediately. Before mixing, the sealed flask and its contents have a total mass of 152.40 g.",
+    "parts": [
+      { "label": "(a)", "prompt": "Write the balanced molecular equation for this double-replacement reaction, including physical states, and name the yellow solid that forms.", "maxPoints": 3 },
+      { "label": "(b)", "prompt": "Predict the total mass of the sealed flask and its contents immediately after the reaction, and explain your reasoning using the law of conservation of mass.", "maxPoints": 2 },
+      { "label": "(c)", "prompt": "Write the full (total) ionic equation and the net ionic equation for this reaction, identifying the spectator ion(s).", "maxPoints": 3 },
+      { "label": "(d)", "prompt": "Suppose the same reaction were instead carried out in an open (unsealed) flask. Given that none of the substances involved are gases, explain whether you would expect the measured mass after the reaction to differ noticeably from the initial mass.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) 2KI(aq) + Pb(NO3)2(aq) -> PbI2(s) + 2KNO3(aq). The yellow solid is lead(II) iodide, PbI2.\n\n(b) By the law of conservation of mass, mass is neither created nor destroyed in a chemical reaction in a closed (sealed) system; the total mass of products must equal the total mass of reactants. Therefore the sealed flask and its contents should still have a mass of 152.40 g after the reaction.\n\n(c) Full ionic equation: 2K+(aq) + 2I-(aq) + Pb^2+(aq) + 2NO3-(aq) -> PbI2(s) + 2K+(aq) + 2NO3-(aq). K+ and NO3- appear unchanged on both sides and are spectator ions. Net ionic equation: Pb^2+(aq) + 2I-(aq) -> PbI2(s).\n\n(d) Since all reactants and products in this reaction are solids or dissolved (aqueous) species (no gas is produced or consumed), essentially no mass would escape into or from the surrounding air. Whether the flask is sealed or open, the measured mass after the reaction should be essentially unchanged from the initial mass (aside from possibly negligible water evaporation over time in the open case), consistent with conservation of mass.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correct products PbI2(s) and KNO3(aq); 1 point for correct balancing (coefficients 2, 1, 1, 2) with correct states; 1 point for correctly naming the precipitate as lead(II) iodide.", "points": 3, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly predicting the mass remains 152.40 g; 1 point for citing/explaining the law of conservation of mass as the reasoning.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(c)", "criterion": "1 point for a correct full ionic equation consistent with the student's molecular equation from part (a); 1 point for correctly identifying K+ and NO3- as spectator ions; 1 point for the correct net ionic equation Pb^2+(aq) + 2I-(aq) -> PbI2(s).", "points": 3, "allowsErrorCarriedForward": true },
+      { "partLabel": "(d)", "criterion": "1 point for correctly noting that no gas is involved in this reaction; 1 point for correctly concluding the measured mass would not differ noticeably between the sealed and open cases.", "points": 2, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Conservation of mass applies to a sealed system regardless of what precipitate forms inside it.",
+      "For part (d), think specifically about whether any gas is produced or consumed in this reaction — that's what would let mass escape from an open container."
+    ]
+  },
+  {
+    "id": "ic7-short-3",
+    "unitId": 7,
+    "kind": "short",
+    "points": 4,
+    "stem": "Hydrogen peroxide decomposes over time according to the unbalanced equation: H2O2(aq) -> H2O(l) + O2(g)",
+    "parts": [
+      { "label": "(a)", "prompt": "Balance the equation using the smallest possible whole-number coefficients.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Identify the general reaction type and briefly justify your classification.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) Balanced equation: 2H2O2(aq) -> 2H2O(l) + O2(g). Check: H atoms 4 = 4; O atoms 4 = 2 + 2 = 4.\n\n(b) This is a decomposition reaction because a single compound (H2O2) breaks down into two simpler substances (H2O and O2).",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correct coefficients (2, 2, 1) in the smallest whole-number ratio; 1 point for the equation being fully balanced (equal atoms of H and O on both sides).", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly identifying the reaction as decomposition; 1 point for a correct justification (one compound breaking into two or more simpler substances).", "points": 2, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": [
+      "Balance oxygen last, since it appears in two different products.",
+      "One reactant breaking apart into two different products is the hallmark of a specific reaction type."
+    ]
+  },
+  {
+    "id": "ic7-short-4",
+    "unitId": 7,
+    "kind": "short",
+    "points": 4,
+    "stem": "Aqueous solutions of potassium carbonate (K2CO3) and magnesium chloride (MgCl2) are mixed together in a beaker, and a white solid immediately forms.",
+    "parts": [
+      { "label": "(a)", "prompt": "Write the balanced molecular equation for this reaction, including the correct physical state for every substance.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Identify the white precipitate that forms, and briefly explain (using solubility rules) why this product, but not the other product, comes out of solution.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) K2CO3(aq) + MgCl2(aq) -> MgCO3(s) + 2KCl(aq).\n\n(b) The white precipitate is magnesium carbonate, MgCO3. Carbonate compounds are generally insoluble except with Group 1 metal ions and the ammonium ion, and magnesium (a Group 2 metal) is not an exception, so MgCO3 separates out of solution as a solid. The other product, KCl, is a soluble potassium salt (Group 1 metal salts are essentially always soluble), so it remains dissolved as K+ and Cl- ions in solution.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correct products (MgCO3 and KCl) with correct formulas; 1 point for correct balancing (coefficient of 2 on KCl) and correct physical states (aq, aq -> s, aq).", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly identifying MgCO3 as the precipitate; 1 point for a correct solubility-rules-based explanation (carbonates are generally insoluble except with Group 1/ammonium, while KCl/potassium salts remain soluble).", "points": 2, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Swap the cations and anions from the two reactants to find the two new possible products before balancing.",
+      "Carbonate is one of the polyatomic ions that is generally insoluble, with Group 1 metals and ammonium as the main exceptions."
+    ]
+  },
+  {
+    "id": "ic7-long-3",
+    "unitId": 7,
+    "kind": "long",
+    "points": 10,
+    "stem": "Three unbalanced chemical reactions are shown below:\n\nReaction 1: Mg(s) + O2(g) -> MgO(s)\nReaction 2: Zn(s) + CuSO4(aq) -> ZnSO4(aq) + Cu(s)\nReaction 3: C2H6(g) + O2(g) -> CO2(g) + H2O(g)",
+    "parts": [
+      { "label": "(a)", "prompt": "Balance Reaction 1 and identify its general reaction type.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Balance Reaction 2 and identify its general reaction type.", "maxPoints": 2 },
+      { "label": "(c)", "prompt": "Balance Reaction 3 and identify its general reaction type.", "maxPoints": 3 },
+      { "label": "(d)", "prompt": "Using your balanced version of Reaction 2, write the net ionic equation for the reaction (assume CuSO4 and ZnSO4 are fully dissociated in aqueous solution), and identify the spectator ion.", "maxPoints": 3 }
+    ],
+    "workedSolution": "(a) Balanced: 2Mg(s) + O2(g) -> 2MgO(s). This is a synthesis (combination) reaction: two elements combine to form a single compound.\n\n(b) Balanced (already balanced as written): Zn(s) + CuSO4(aq) -> ZnSO4(aq) + Cu(s). This is a single-displacement (single-replacement) reaction: zinc displaces copper from the sulfate compound.\n\n(c) Balanced: 2C2H6(g) + 7O2(g) -> 4CO2(g) + 6H2O(g). This is a combustion reaction: a hydrocarbon reacts with O2 to produce CO2 and H2O.\n\n(d) Full ionic equation using the balanced Reaction 2: Zn(s) + Cu^2+(aq) + SO4^2-(aq) -> Zn^2+(aq) + SO4^2-(aq) + Cu(s). SO4^2- appears unchanged on both sides, so it is a spectator ion and is removed. Net ionic equation: Zn(s) + Cu^2+(aq) -> Zn^2+(aq) + Cu(s). Spectator ion: SO4^2-.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for the correct balanced equation (coefficients 2, 1, 2); 1 point for correctly identifying synthesis/combination.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for recognizing the equation is already balanced as written; 1 point for correctly identifying single-displacement.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(c)", "criterion": "1 point for correct coefficient of 7 on O2; 1 point for correct coefficients of 4 (CO2) and 6 (H2O); 1 point for correctly identifying combustion.", "points": 3, "allowsErrorCarriedForward": false },
+      { "partLabel": "(d)", "criterion": "1 point for correctly writing the full ionic equation showing CuSO4 and ZnSO4 dissociated into ions, consistent with the student's balanced equation from part (b); 1 point for correctly identifying SO4^2- as the spectator ion; 1 point for the correct net ionic equation Zn(s) + Cu^2+(aq) -> Zn^2+(aq) + Cu(s).", "points": 3, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Balance each of the three reactions independently before worrying about reaction types.",
+      "For part (d), split every aqueous ionic compound into its individual ions first, then cross out whatever ion appears unchanged on both sides."
+    ]
+  },
+  {
+    "id": "ic7-long-4",
+    "unitId": 7,
+    "kind": "long",
+    "points": 10,
+    "stem": "In the lab, a student combines an aqueous silver nitrate (AgNO3) solution with an aqueous potassium chromate (K2CrO4) solution inside a sealed flask. A red solid forms immediately. Before mixing, the sealed flask and its contents have a total mass of 158.20 g.",
+    "parts": [
+      { "label": "(a)", "prompt": "Write the balanced molecular equation for this double-replacement reaction, including physical states, and name the red solid that forms.", "maxPoints": 3 },
+      { "label": "(b)", "prompt": "Predict the total mass of the sealed flask and its contents immediately after the reaction, and explain your reasoning using the law of conservation of mass.", "maxPoints": 2 },
+      { "label": "(c)", "prompt": "Write the full (total) ionic equation and the net ionic equation for this reaction, identifying the spectator ion(s).", "maxPoints": 3 },
+      { "label": "(d)", "prompt": "Suppose instead a student mixed aqueous sodium nitrate (NaNO3) with aqueous potassium chromate (K2CrO4). Using solubility guidelines, explain whether a precipitate would be expected to form in this case.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) 2AgNO3(aq) + K2CrO4(aq) -> Ag2CrO4(s) + 2KNO3(aq). The red solid is silver chromate, Ag2CrO4.\n\n(b) By the law of conservation of mass, mass is neither created nor destroyed in a chemical reaction in a closed (sealed) system; the total mass of products must equal the total mass of reactants. Therefore the sealed flask and its contents should still have a mass of 158.20 g after the reaction.\n\n(c) Full ionic equation: 2Ag+(aq) + 2NO3-(aq) + 2K+(aq) + CrO4^2-(aq) -> Ag2CrO4(s) + 2K+(aq) + 2NO3-(aq). K+ and NO3- appear unchanged on both sides and are spectator ions. Net ionic equation: 2Ag+(aq) + CrO4^2-(aq) -> Ag2CrO4(s).\n\n(d) The possible new combinations from mixing NaNO3 and K2CrO4 are Na2CrO4 and KNO3. Both sodium salts and nitrate salts are generally soluble in water, so both possible products (Na2CrO4 and KNO3) would remain dissolved. No precipitate would be expected to form.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correct products Ag2CrO4(s) and KNO3(aq); 1 point for correct balancing (coefficients 2, 1, 1, 2) with correct states; 1 point for correctly naming the precipitate as silver chromate.", "points": 3, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly predicting the mass remains 158.20 g; 1 point for citing/explaining the law of conservation of mass as the reasoning.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(c)", "criterion": "1 point for a correct full ionic equation consistent with the student's molecular equation from part (a); 1 point for correctly identifying K+ and NO3- as spectator ions; 1 point for the correct net ionic equation 2Ag+(aq) + CrO4^2-(aq) -> Ag2CrO4(s).", "points": 3, "allowsErrorCarriedForward": true },
+      { "partLabel": "(d)", "criterion": "1 point for correctly identifying the two possible new products (Na2CrO4 and KNO3); 1 point for correctly concluding no precipitate forms because both are soluble.", "points": 2, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Conservation of mass applies to any sealed system, regardless of what precipitate forms inside it.",
+      "For part (d), swap the cations and anions from NaNO3 and K2CrO4 the same way you did for the original reaction, then check solubility guidelines for both new combinations."
+    ]
+  }
+]

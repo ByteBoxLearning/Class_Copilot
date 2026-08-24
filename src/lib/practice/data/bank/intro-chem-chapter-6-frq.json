@@ -1,0 +1,192 @@
+[
+  {
+    "id": "ic6-short-1",
+    "unitId": 6,
+    "kind": "short",
+    "points": 4,
+    "stem": "A student obtains a 15.0 g sample of pure magnesium oxide (MgO) powder. (Molar masses: Mg = 24.31 g/mol, O = 16.00 g/mol.)",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the molar mass of MgO and use it to determine the number of moles of MgO in the 15.0 g sample.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Using your answer to part (a) and Avogadro's number, calculate the number of MgO formula units present in the sample.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) Molar mass of MgO = 24.31 g/mol (Mg) + 16.00 g/mol (O) = 40.31 g/mol. Moles of MgO = 15.0 g / 40.31 g/mol = 0.372 mol.\n\n(b) Number of formula units = 0.372 mol x 6.022 x 10^23 formula units/mol = 2.24 x 10^23 formula units of MgO.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for the correct molar mass of MgO (40.31 g/mol, accept 40.3-40.32); 1 point for correctly dividing the given mass by the molar mass to get 0.372 mol (accept 0.371-0.373).", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly multiplying moles by Avogadro's number (6.022 x 10^23); 1 point for the correct final answer of approximately 2.24 x 10^23 formula units, using the student's own moles value from part (a) if it differs from the correct value (error carried forward).", "points": 2, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Start by finding the molar mass of MgO before converting the given mass into moles.",
+      "Once you have moles, multiplying by Avogadro's number gets you to the number of formula units."
+    ]
+  },
+  {
+    "id": "ic6-short-2",
+    "unitId": 6,
+    "kind": "short",
+    "points": 4,
+    "stem": "Glucose, a simple sugar, has the molecular formula C6H12O6. (Molar masses: C = 12.01 g/mol, H = 1.008 g/mol, O = 16.00 g/mol; molar mass of C6H12O6 = 180.16 g/mol.)",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the percent composition by mass of carbon in glucose.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Using your answer to part (a), calculate the mass of carbon present in a 45.0 g sample of pure glucose.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) Mass of C in one mole of glucose = 6 x 12.01 g/mol = 72.06 g/mol. Percent C = (72.06 g/mol / 180.16 g/mol) x 100% = 40.0%.\n\n(b) Mass of C in 45.0 g sample = 0.400 x 45.0 g = 18.0 g.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly finding the mass of carbon per mole of glucose (72.06 g); 1 point for the correct percent composition of 40.0% (accept 39.5-40.5%).", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly setting up mass of C = percent C (as a decimal) x 45.0 g; 1 point for the correct final answer of 18.0 g, using the student's own percent from part (a) if it differs from the correct value (error carried forward).", "points": 2, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Find the mass contributed by carbon in one mole of glucose before dividing by the molar mass.",
+      "Once you know the percent by mass, apply that same percentage to the new sample mass in part (b)."
+    ]
+  },
+  {
+    "id": "ic6-long-1",
+    "unitId": 6,
+    "kind": "long",
+    "points": 10,
+    "stem": "An unknown organic liquid X is analyzed in the lab. Combustion analysis shows that X is composed of 54.5% carbon, 9.1% hydrogen, and 36.4% oxygen by mass. A separate measurement finds the molar mass of X to be approximately 88.0 g/mol. (Molar masses: C = 12.01 g/mol, H = 1.008 g/mol, O = 16.00 g/mol.)",
+    "parts": [
+      { "label": "(a)", "prompt": "Assuming a 100.0 g sample of X, calculate the number of moles of C, H, and O present.", "maxPoints": 3 },
+      { "label": "(b)", "prompt": "Divide each mole value from part (a) by the smallest of the three to find the simplest whole-number mole ratio, and write the empirical formula of X.", "maxPoints": 3 },
+      { "label": "(c)", "prompt": "Calculate the empirical formula mass, then use the given molar mass of X (88.0 g/mol) to determine the molecular formula of X.", "maxPoints": 4 }
+    ],
+    "workedSolution": "(a) In a 100.0 g sample: mol C = 54.5 g / 12.01 g/mol = 4.54 mol; mol H = 9.1 g / 1.008 g/mol = 9.03 mol; mol O = 36.4 g / 16.00 g/mol = 2.28 mol.\n\n(b) Dividing each by the smallest value (2.28 mol): C = 4.54/2.28 = 1.99 ≈ 2; H = 9.03/2.28 = 3.96 ≈ 4; O = 2.28/2.28 = 1.00. Simplest whole-number ratio is C2H4O1, so the empirical formula is C2H4O.\n\n(c) Empirical formula mass of C2H4O = 2(12.01) + 4(1.008) + 16.00 = 24.02 + 4.032 + 16.00 = 44.05 g/mol. Dividing the given molar mass by the empirical formula mass: 88.0 g/mol / 44.05 g/mol = 2.00. Multiplying every subscript in the empirical formula by 2 gives the molecular formula: C4H8O2.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point each for correctly calculated moles of C (~4.54 mol), H (~9.03 mol), and O (~2.28 mol), accepting reasonable rounding.", "points": 3, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for dividing all three mole values by the smallest one; 1 point for correctly rounding to whole numbers 2:4:1; 1 point for writing the empirical formula C2H4O. Full credit if internally consistent with the student's own (possibly incorrect) mole values from part (a).", "points": 3, "allowsErrorCarriedForward": true },
+      { "partLabel": "(c)", "criterion": "1 point for correctly calculating the empirical formula mass from the student's own empirical formula; 1 point for correctly dividing the given molar mass (88.0) by that empirical formula mass; 1 point for obtaining a whole-number multiplier of approximately 2; 1 point for correctly writing the molecular formula C4H8O2 (or the formula consistent with the student's own empirical formula and multiplier).", "points": 4, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Assume a 100.0 g sample so each percentage converts directly into grams, then convert each element's grams into moles.",
+      "After finding the empirical formula, compare its formula mass to the given molar mass to see whether (and how much) the subscripts need to be scaled up."
+    ]
+  },
+  {
+    "id": "ic6-long-2",
+    "unitId": 6,
+    "kind": "long",
+    "points": 10,
+    "stem": "A 25.0 g sample of pure calcium carbonate (CaCO3), the main component of limestone, is analyzed in the laboratory. (Molar masses: Ca = 40.08 g/mol, C = 12.01 g/mol, O = 16.00 g/mol.)",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the molar mass of CaCO3 and the number of moles of CaCO3 in the 25.0 g sample.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Calculate the number of CaCO3 formula units present in the sample.", "maxPoints": 2 },
+      { "label": "(c)", "prompt": "Calculate the total number of individual oxygen atoms present in the sample (note that each CaCO3 formula unit contains 3 oxygen atoms).", "maxPoints": 3 },
+      { "label": "(d)", "prompt": "Calculate the percent composition by mass of calcium in CaCO3, and use it to determine the mass of calcium present in the 25.0 g sample.", "maxPoints": 3 }
+    ],
+    "workedSolution": "(a) Molar mass of CaCO3 = 40.08 + 12.01 + 3(16.00) = 40.08 + 12.01 + 48.00 = 100.09 g/mol. Moles of CaCO3 = 25.0 g / 100.09 g/mol = 0.250 mol.\n\n(b) Formula units = 0.250 mol x 6.022 x 10^23 = 1.50 x 10^23 formula units.\n\n(c) Moles of O atoms = 0.250 mol CaCO3 x 3 mol O/mol CaCO3 = 0.749 mol O. Number of O atoms = 0.749 mol x 6.022 x 10^23 = 4.51 x 10^23 oxygen atoms.\n\n(d) Percent Ca = (40.08 g/mol / 100.09 g/mol) x 100% = 40.0%. Mass of Ca in sample = 0.400 x 25.0 g = 10.0 g.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for the correct molar mass of CaCO3 (100.09 g/mol, accept 100.0-100.2); 1 point for correctly dividing to get 0.250 mol.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "2 points for correctly multiplying the student's own moles from part (a) by Avogadro's number to get approximately 1.50 x 10^23 formula units.", "points": 2, "allowsErrorCarriedForward": true },
+      { "partLabel": "(c)", "criterion": "1 point for recognizing 3 mol O per mol CaCO3 and multiplying the student's own moles of CaCO3 from part (a) by 3; 1 point for converting to atoms using Avogadro's number; 1 point for the correct final answer of approximately 4.51 x 10^23 oxygen atoms, consistent with the student's own earlier values.", "points": 3, "allowsErrorCarriedForward": true },
+      { "partLabel": "(d)", "criterion": "1 point for correctly calculating percent Ca as 40.0% (accept 39.5-40.5%); 1 point for correctly multiplying that percentage by 25.0 g; 1 point for the correct final answer of 10.0 g of calcium.", "points": 3, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Work through the parts in order — each later part builds on a mole value you already calculated earlier in the problem.",
+      "Remember that each CaCO3 formula unit contributes 3 oxygen atoms when you get to part (c)."
+    ]
+  },
+  {
+    "id": "ic6-short-3",
+    "unitId": 6,
+    "kind": "short",
+    "points": 4,
+    "stem": "Sulfuric acid, H2SO4, is a major industrial acid. (Molar masses: H = 1.008 g/mol, S = 32.07 g/mol, O = 16.00 g/mol; molar mass of H2SO4 = 98.09 g/mol.)",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the percent composition by mass of sulfur in H2SO4.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Using your answer to part (a), calculate the mass of sulfur present in a 50.0 g sample of pure H2SO4.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) Percent S = (32.07 g/mol / 98.09 g/mol) x 100% = 32.7%.\n\n(b) Mass of S in 50.0 g sample = 0.327 x 50.0 g = 16.4 g.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly setting up percent S = (32.07/98.09) x 100%; 1 point for the correct percent composition of 32.7% (accept 32.5-32.9%).", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly multiplying the student's own percent from part (a) (as a decimal) by 50.0 g; 1 point for the correct final answer of approximately 16.4 g.", "points": 2, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Divide the mass contributed by sulfur alone by the total molar mass of the compound, then convert to a percentage.",
+      "Apply the percentage from part (a) directly to the new sample mass to find the mass of sulfur."
+    ]
+  },
+  {
+    "id": "ic6-short-4",
+    "unitId": 6,
+    "kind": "short",
+    "points": 4,
+    "stem": "An unknown copper oxide is analyzed and found to be 79.9% copper and 20.1% oxygen by mass. (Molar masses: Cu = 63.55 g/mol, O = 16.00 g/mol.)",
+    "parts": [
+      { "label": "(a)", "prompt": "Assuming a 100.0 g sample, calculate the number of moles of Cu and the number of moles of O present.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Divide each mole value from part (a) by the smaller of the two to find the simplest whole-number mole ratio, and write the empirical formula of the compound.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) In a 100.0 g sample: mol Cu = 79.9 g / 63.55 g/mol = 1.257 mol; mol O = 20.1 g / 16.00 g/mol = 1.256 mol.\n\n(b) Dividing each by the smaller value (1.256 mol): Cu = 1.257/1.256 = 1.00; O = 1.256/1.256 = 1.00. The simplest whole-number ratio is 1:1, so the empirical formula is CuO.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point each for correctly calculated moles of Cu (~1.26 mol) and O (~1.26 mol), accepting reasonable rounding.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for dividing both mole values by the smaller one; 1 point for correctly identifying the 1:1 ratio and writing the empirical formula CuO.", "points": 2, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Convert each percentage directly into grams (out of a 100.0 g sample), then into moles using each element's molar mass.",
+      "Compare your two mole values carefully — they should come out very close to each other."
+    ]
+  },
+  {
+    "id": "ic6-long-3",
+    "unitId": 6,
+    "kind": "long",
+    "points": 10,
+    "stem": "An unknown liquid hydrocarbon Y is analyzed and found to be 92.3% carbon and 7.7% hydrogen by mass. A separate measurement finds the molar mass of Y to be approximately 78.1 g/mol. (Molar masses: C = 12.01 g/mol, H = 1.008 g/mol.)",
+    "parts": [
+      { "label": "(a)", "prompt": "Assuming a 100.0 g sample of Y, calculate the number of moles of C and H present.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Divide each mole value from part (a) by the smaller of the two to find the simplest whole-number mole ratio, and write the empirical formula of Y.", "maxPoints": 2 },
+      { "label": "(c)", "prompt": "Calculate the empirical formula mass, then use the given molar mass of Y (78.1 g/mol) to determine the molecular formula of Y.", "maxPoints": 3 },
+      { "label": "(d)", "prompt": "Calculate the number of individual molecules of Y present in a 15.6 g sample, using the molar mass of Y.", "maxPoints": 3 }
+    ],
+    "workedSolution": "(a) In a 100.0 g sample: mol C = 92.3 g / 12.01 g/mol = 7.69 mol; mol H = 7.7 g / 1.008 g/mol = 7.64 mol.\n\n(b) Dividing each by the smaller value (7.64 mol): C = 7.69/7.64 = 1.01 ≈ 1; H = 7.64/7.64 = 1.00. Simplest whole-number ratio is 1:1, so the empirical formula is CH.\n\n(c) Empirical formula mass of CH = 12.01 + 1.008 = 13.02 g/mol. Dividing the given molar mass by the empirical formula mass: 78.1 g/mol / 13.02 g/mol = 6.00. Multiplying every subscript in the empirical formula by 6 gives the molecular formula: C6H6.\n\n(d) Moles of Y in 15.6 g sample = 15.6 g / 78.1 g/mol = 0.200 mol. Number of molecules = 0.200 mol x 6.022 x 10^23 molecules/mol = 1.20 x 10^23 molecules.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point each for correctly calculated moles of C (~7.69 mol) and H (~7.64 mol), accepting reasonable rounding.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for dividing both values by the smaller one; 1 point for correctly identifying the 1:1 ratio and writing the empirical formula CH.", "points": 2, "allowsErrorCarriedForward": true },
+      { "partLabel": "(c)", "criterion": "1 point for correctly calculating the empirical formula mass from the student's own empirical formula; 1 point for correctly dividing the given molar mass by that empirical formula mass to get a whole-number multiplier of approximately 6; 1 point for the correct molecular formula, C6H6 (or the formula consistent with the student's own empirical formula and multiplier).", "points": 3, "allowsErrorCarriedForward": true },
+      { "partLabel": "(d)", "criterion": "1 point for correctly converting the 15.6 g sample to moles using the molar mass of Y; 1 point for correctly multiplying by Avogadro's number; 1 point for the correct final answer of approximately 1.20 x 10^23 molecules.", "points": 3, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Work through the empirical formula the same way as any percent-composition problem, then compare its formula mass to the actual molar mass to see how much bigger the real molecule is.",
+      "For part (d), you'll need the actual molar mass of Y (not the empirical formula mass) to convert the 15.6 g sample into moles."
+    ]
+  },
+  {
+    "id": "ic6-long-4",
+    "unitId": 6,
+    "kind": "long",
+    "points": 10,
+    "stem": "Ammonium sulfate, (NH4)2SO4, is a common nitrogen-based fertilizer. (Molar masses: N = 14.01 g/mol, H = 1.008 g/mol, S = 32.07 g/mol, O = 16.00 g/mol.)",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the molar mass of (NH4)2SO4.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Calculate the percent composition by mass of nitrogen in (NH4)2SO4.", "maxPoints": 2 },
+      { "label": "(c)", "prompt": "A farmer applies 250 g of pure ammonium sulfate fertilizer to a field. Using your answer to part (b), calculate the mass of nitrogen delivered to the field.", "maxPoints": 3 },
+      { "label": "(d)", "prompt": "Calculate the number of individual ammonium ions (NH4+) present in the 250 g sample. (Note that each formula unit of (NH4)2SO4 contains 2 ammonium ions.)", "maxPoints": 3 }
+    ],
+    "workedSolution": "(a) (NH4)2SO4 contains 2 N, 8 H, 1 S, and 4 O atoms. Molar mass = 2(14.01) + 8(1.008) + 32.07 + 4(16.00) = 28.02 + 8.064 + 32.07 + 64.00 = 132.15 g/mol.\n\n(b) Percent N = (28.02 g/mol / 132.15 g/mol) x 100% = 21.2%.\n\n(c) Mass of N in 250 g sample = 0.212 x 250 g = 53.0 g.\n\n(d) Moles of (NH4)2SO4 in the sample = 250 g / 132.15 g/mol = 1.89 mol. Formula units = 1.89 mol x 6.022 x 10^23 = 1.14 x 10^24 formula units. Since each formula unit contains 2 NH4+ ions, total NH4+ ions = 2 x 1.14 x 10^24 = 2.28 x 10^24 ions.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly counting all atoms in the formula (2 N, 8 H, 1 S, 4 O); 1 point for the correct molar mass, 132.15 g/mol (accept 132.0-132.3).", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly setting up percent N = (28.02/132.15) x 100%; 1 point for the correct percent composition of 21.2% (accept 21.0-21.4%).", "points": 2, "allowsErrorCarriedForward": true },
+      { "partLabel": "(c)", "criterion": "1 point for correctly applying the student's own percent from part (b) to the 250 g sample; 1 point for correct arithmetic; 1 point for the correct final answer of approximately 53.0 g.", "points": 3, "allowsErrorCarriedForward": true },
+      { "partLabel": "(d)", "criterion": "1 point for correctly converting the 250 g sample to moles using the student's own molar mass from part (a); 1 point for converting moles to formula units using Avogadro's number; 1 point for correctly doubling to account for 2 NH4+ ions per formula unit, giving approximately 2.28 x 10^24 ions.", "points": 3, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Work part by part — each later calculation reuses a number you found earlier in the problem (molar mass, then percent, then mass, then moles).",
+      "Don't forget the factor of 2 in part (d): each formula unit of ammonium sulfate contains two separate ammonium ions."
+    ]
+  }
+]

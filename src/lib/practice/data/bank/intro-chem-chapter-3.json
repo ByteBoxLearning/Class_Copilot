@@ -1,0 +1,219 @@
+[
+  {
+    "id": "ic-c3-mc-1",
+    "unitId": 3,
+    "stem": "In which state of matter do particles vibrate in place but hold a fixed shape and fixed volume?",
+    "choices": ["Gas", "Liquid", "Solid", "Plasma"],
+    "correctIndex": 2,
+    "topicTag": "3.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c3-mc-2",
+    "unitId": 3,
+    "stem": "Which state of matter takes the shape of its container but maintains a fixed volume?",
+    "choices": ["Solid", "Liquid", "Gas", "Plasma"],
+    "correctIndex": 1,
+    "topicTag": "3.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c3-mc-3",
+    "unitId": 3,
+    "stem": "In a gas, particles are far apart and move freely, expanding to fill the entire volume of their container.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "3.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c3-mc-4",
+    "unitId": 3,
+    "stem": "Which of the following is a chemical property rather than a physical property?",
+    "choices": ["Melting point", "Color", "Flammability", "Density"],
+    "correctIndex": 2,
+    "topicTag": "3.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c3-mc-5",
+    "unitId": 3,
+    "stem": "Which of the following is an example of a chemical change?",
+    "choices": ["Crushing an aluminum can", "Dissolving sugar in water", "Iron rusting", "Melting a block of wax"],
+    "correctIndex": 2,
+    "topicTag": "3.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c3-mc-6",
+    "unitId": 3,
+    "stem": "Boiling water is a chemical change because a brand-new substance, steam, is created.",
+    "choices": ["True", "False"],
+    "correctIndex": 1,
+    "topicTag": "3.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c3-mc-7",
+    "unitId": 3,
+    "stem": "A pure substance that cannot be broken down into simpler substances by ordinary chemical means is called:",
+    "choices": ["A compound", "A mixture", "An element", "A solution"],
+    "correctIndex": 2,
+    "topicTag": "3.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c3-mc-8",
+    "unitId": 3,
+    "stem": "Which of the following is a compound?",
+    "choices": ["Oxygen gas (O2)", "Table salt (NaCl)", "Air", "A mixture of sand and water"],
+    "correctIndex": 1,
+    "topicTag": "3.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c3-mc-9",
+    "unitId": 3,
+    "stem": "A homogeneous mixture, meaning one with uniform composition throughout, is also called:",
+    "choices": ["A suspension", "A solution", "A compound", "An element"],
+    "correctIndex": 1,
+    "topicTag": "3.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c3-mc-10",
+    "unitId": 3,
+    "stem": "Water freezes at 0°C. What is this temperature in Kelvin?",
+    "choices": ["0 K", "100 K", "273 K", "373 K"],
+    "correctIndex": 2,
+    "topicTag": "3.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c3-mc-11",
+    "unitId": 3,
+    "stem": "Which formula correctly converts a Celsius temperature to Fahrenheit?",
+    "choices": ["F = C + 32", "F = (9/5)C + 32", "F = (5/9)(C - 32)", "F = C × 9/5"],
+    "correctIndex": 1,
+    "topicTag": "3.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c3-mc-12",
+    "unitId": 3,
+    "stem": "Normal human body temperature, about 37°C, is higher than the boiling point of water on the Celsius scale.",
+    "choices": ["True", "False"],
+    "correctIndex": 1,
+    "topicTag": "3.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c3-mc-13",
+    "unitId": 3,
+    "stem": "Specific heat capacity is best defined as:",
+    "choices": [
+      "The heat required to melt 1 g of a substance",
+      "The heat required to raise the temperature of 1 g of a substance by 1°C",
+      "The total heat energy stored in an object",
+      "The temperature at which a substance boils"
+    ],
+    "correctIndex": 1,
+    "topicTag": "3.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c3-mc-14",
+    "unitId": 3,
+    "stem": "Substances with a high specific heat capacity, such as water, tend to:",
+    "choices": ["Heat up and cool down quickly", "Heat up and cool down slowly", "Never absorb heat", "Always have a very low density"],
+    "correctIndex": 1,
+    "topicTag": "3.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c3-mc-15",
+    "unitId": 3,
+    "stem": "According to the law of conservation of energy, energy can be created or destroyed during a chemical or physical change, as long as mass stays constant.",
+    "choices": ["True", "False"],
+    "correctIndex": 1,
+    "topicTag": "3.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c3-mc-16",
+    "unitId": 3,
+    "stem": "Which property of a gas explains why it will completely fill any container it is placed in, regardless of the container's shape?",
+    "choices": ["Gas particles are held in fixed positions", "Gas particles are far apart and move freely in all directions", "Gas particles are arranged in a regular repeating pattern", "Gas particles have no kinetic energy"],
+    "correctIndex": 1,
+    "topicTag": "3.1",
+    "source": "original",
+    "explanation": "Gas particles are spread far apart with weak attractive forces between them and move rapidly and randomly in all directions, allowing them to spread out and fill the entire available volume of any container. Fixed positions and repeating patterns describe solids, not gases, and all particles above absolute zero possess kinetic energy.",
+    "difficulty": "beginner",
+    "hints": ["Think about how far apart gas particles are compared to liquids and solids, and how much they interact with each other.", "Consider what would prevent particles from spreading out to fill a container — a lack of freedom of motion, or strong attractive forces."]
+  },
+  {
+    "id": "ic-c3-mc-17",
+    "unitId": 3,
+    "stem": "Which of the following is a physical property (rather than a chemical property) of a substance?",
+    "choices": ["Reactivity with acid", "Flammability", "Boiling point", "Tendency to rust"],
+    "correctIndex": 2,
+    "topicTag": "3.2",
+    "source": "original",
+    "explanation": "Boiling point can be observed and measured without changing the substance's chemical identity (the substance is still the same substance before and after boiling, just in a different physical state), making it a physical property. Reactivity with acid, flammability, and rusting all describe how a substance changes into a new substance under certain conditions, which are chemical properties.",
+    "difficulty": "beginner",
+    "hints": ["A physical property can be observed without turning the substance into something new.", "Ask whether measuring the property requires the substance to react and become a different substance."]
+  },
+  {
+    "id": "ic-c3-mc-18",
+    "unitId": 3,
+    "stem": "A sample of a clear, colorless liquid is found to boil at exactly 100°C at sea level and cannot be separated into simpler substances by filtration, distillation, or any other physical method. Based on this information, the sample is most likely:",
+    "choices": ["A heterogeneous mixture", "A homogeneous mixture (solution)", "A pure substance (element or compound)", "An alloy"],
+    "correctIndex": 2,
+    "topicTag": "3.3",
+    "source": "original",
+    "explanation": "A sample that boils at one exact, sharp, defined temperature and cannot be physically separated into other substances is behaving as a pure substance, since mixtures typically boil over a range of temperatures and can, at least in principle, be separated by physical means. Homogeneous mixtures and alloys are still mixtures and would generally show variable boiling behavior and be physically separable; heterogeneous mixtures would be visibly non-uniform, which contradicts the clues given.",
+    "difficulty": "intermediate",
+    "hints": ["Mixtures usually boil over a range of temperatures and can be separated into components using physical methods — think about what a single sharp boiling point suggests instead.", "Focus on the clue that no physical separation method works on this sample."]
+  },
+  {
+    "id": "ic-c3-mc-19",
+    "unitId": 3,
+    "stem": "A weather report states the outdoor temperature is 98.6°F. What is this temperature in kelvin? (Use F to C: C = (5/9)(F - 32); C to K: K = C + 273.)",
+    "choices": ["37.0 K", "310 K", "329 K", "363 K"],
+    "correctIndex": 1,
+    "topicTag": "3.4",
+    "source": "original",
+    "explanation": "First convert Fahrenheit to Celsius: C = (5/9)(98.6 - 32) = (5/9)(66.6) = 37.0°C. Then convert Celsius to kelvin: K = 37.0 + 273 = 310 K. Choice A mistakenly reports the Celsius value as if it were already in kelvin. Choices C and D result from arithmetic errors in the two-step conversion.",
+    "difficulty": "intermediate",
+    "hints": ["This requires two conversion steps: first Fahrenheit to Celsius, then Celsius to kelvin.", "Double check your Fahrenheit-to-Celsius subtraction and multiplication before adding 273."]
+  },
+  {
+    "id": "ic-c3-mc-20",
+    "unitId": 3,
+    "stem": "A temperature increases by exactly 18 Fahrenheit degrees. By how many Celsius degrees (or kelvins) did the temperature increase?",
+    "choices": ["10 Celsius degrees (or 10 kelvins)", "18 Celsius degrees (or 18 kelvins)", "32.4 Celsius degrees (or 32.4 kelvins)", "4.4 Celsius degrees (or 4.4 kelvins)"],
+    "correctIndex": 0,
+    "topicTag": "3.4",
+    "source": "original",
+    "explanation": "When converting a temperature CHANGE (rather than an absolute reading) between Fahrenheit and Celsius, the +32 offset is not used, because it cancels out in a subtraction — only the 5/9 scaling factor applies: ΔC = (5/9) × ΔF = (5/9)(18) = 10 Celsius degrees, which also equals a 10 kelvin change, since the kelvin and Celsius scales have equally sized degree increments. Choice B mistakenly assumes Fahrenheit and Celsius degree sizes are equal. Choice C incorrectly still applies the 32-degree offset to a temperature difference. Choice D inverts the 5/9 conversion factor.",
+    "difficulty": "advanced",
+    "hints": ["This question asks about a CHANGE in temperature, not an absolute temperature reading — think about whether the +32 offset applies to differences.", "Multiply the Fahrenheit change by 5/9 to find the equivalent Celsius (or kelvin) change."]
+  },
+  {
+    "id": "ic-c3-mc-21",
+    "unitId": 3,
+    "stem": "Equal masses of two different metals, aluminum (specific heat = 0.900 J/(g·°C)) and lead (specific heat = 0.129 J/(g·°C)), start at the same initial temperature and each absorbs the same amount of heat energy. Which metal will reach a higher final temperature, and why?",
+    "choices": [
+      "Aluminum, because it has a higher specific heat capacity and therefore heats up more per joule absorbed",
+      "Lead, because its lower specific heat capacity means the same amount of heat produces a larger temperature change",
+      "Both metals will reach the same final temperature, since they absorbed the same amount of heat",
+      "Aluminum, because metals with higher specific heat capacities always end up hotter"
+    ],
+    "correctIndex": 1,
+    "topicTag": "3.5",
+    "source": "original",
+    "explanation": "Since q = m·c·ΔT, for the same mass (m) and the same heat energy absorbed (q), temperature change (ΔT) is inversely proportional to specific heat capacity (c). Lead's much smaller specific heat capacity means it requires far less energy per gram to raise its temperature by a given amount, so absorbing the same heat energy produces a much larger temperature change in lead than in aluminum, which has a higher specific heat and therefore resists temperature change more. Choices A and D incorrectly claim a higher specific heat leads to a greater temperature increase, which is backwards.",
+    "difficulty": "advanced",
+    "hints": ["Recall that q = m·c·ΔT — rearrange to see how ΔT depends on specific heat capacity when q and m are fixed.", "A lower specific heat capacity means a substance's temperature changes more easily for a given amount of heat."]
+  }
+]

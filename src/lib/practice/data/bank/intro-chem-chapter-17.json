@@ -1,0 +1,246 @@
+[
+  {
+    "id": "ic-c17-mc-1",
+    "unitId": 17,
+    "stem": "An alpha particle is equivalent to the nucleus of a(n):",
+    "choices": ["hydrogen-1 atom", "helium-4 atom", "electron", "neutron"],
+    "correctIndex": 1,
+    "topicTag": "17.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c17-mc-2",
+    "unitId": 17,
+    "stem": "What is the overall electric charge of an alpha particle?",
+    "choices": ["0", "-1", "+1", "+2"],
+    "correctIndex": 3,
+    "topicTag": "17.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c17-mc-3",
+    "unitId": 17,
+    "stem": "A beta particle emitted during radioactive decay is essentially a high-speed:",
+    "choices": ["proton", "electron", "neutron", "positron"],
+    "correctIndex": 1,
+    "topicTag": "17.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c17-mc-4",
+    "unitId": 17,
+    "stem": "Gamma radiation consists of:",
+    "choices": ["helium nuclei", "high-speed electrons", "high-energy photons", "free neutrons"],
+    "correctIndex": 2,
+    "topicTag": "17.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c17-mc-5",
+    "unitId": 17,
+    "stem": "Of the three common types of radioactive emission, alpha particles have the greatest penetrating power and are the hardest to stop.",
+    "choices": ["True", "False"],
+    "correctIndex": 1,
+    "topicTag": "17.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c17-mc-6",
+    "unitId": 17,
+    "stem": "During beta-minus decay, a neutron in the nucleus is converted into a proton and an emitted:",
+    "choices": ["alpha particle", "electron", "positron", "gamma ray only"],
+    "correctIndex": 1,
+    "topicTag": "17.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c17-mc-7",
+    "unitId": 17,
+    "stem": "During alpha decay, the atomic number of the parent nucleus decreases by:",
+    "choices": ["1", "2", "4", "0"],
+    "correctIndex": 1,
+    "topicTag": "17.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c17-mc-8",
+    "unitId": 17,
+    "stem": "During beta-minus decay, the atomic number of the nucleus:",
+    "choices": ["increases by 1", "decreases by 1", "decreases by 2", "stays the same"],
+    "correctIndex": 0,
+    "topicTag": "17.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c17-mc-9",
+    "unitId": 17,
+    "stem": "Emission of a gamma ray from an excited nucleus changes:",
+    "choices": ["only the mass number", "only the atomic number", "both the mass number and atomic number", "neither the mass number nor the atomic number"],
+    "correctIndex": 3,
+    "topicTag": "17.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c17-mc-10",
+    "unitId": 17,
+    "stem": "The half-life of a radioactive isotope is defined as the time required for:",
+    "choices": [
+      "the entire radioactive sample to decay completely",
+      "half of the atoms in a radioactive sample to decay",
+      "the sample's mass number to double",
+      "the nucleus to become permanently stable through fusion"
+    ],
+    "correctIndex": 1,
+    "topicTag": "17.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c17-mc-11",
+    "unitId": 17,
+    "stem": "A radioactive isotope has a half-life of 10 days. Starting with an 80 g sample, how much of the isotope remains after 30 days?",
+    "choices": ["40 g", "20 g", "10 g", "5 g"],
+    "correctIndex": 2,
+    "topicTag": "17.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c17-mc-12",
+    "unitId": 17,
+    "stem": "A 100 g sample of a radioisotope decays until only 25 g remains. How many half-lives have elapsed?",
+    "choices": ["1", "2", "3", "4"],
+    "correctIndex": 1,
+    "topicTag": "17.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c17-mc-13",
+    "unitId": 17,
+    "stem": "The half-life of a given radioactive isotope depends on how much of the sample is present, so a 1 kg sample decays at a different rate (percent per day) than a 1 g sample.",
+    "choices": ["True", "False"],
+    "correctIndex": 1,
+    "topicTag": "17.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c17-mc-14",
+    "unitId": 17,
+    "stem": "Nuclear fission is the process in which:",
+    "choices": [
+      "two light nuclei combine to form a single heavier nucleus",
+      "a heavy nucleus splits into two lighter nuclei",
+      "a nucleus emits only gamma rays with no change in mass",
+      "electrons are captured by the nucleus"
+    ],
+    "correctIndex": 1,
+    "topicTag": "17.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c17-mc-15",
+    "unitId": 17,
+    "stem": "Nuclear fusion is the process that primarily powers:",
+    "choices": ["conventional nuclear power reactors on Earth", "the Sun and other stars", "battery cells", "combustion engines"],
+    "correctIndex": 1,
+    "topicTag": "17.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c17-mc-16",
+    "unitId": 17,
+    "stem": "Nuclear fusion reactions release energy because the resulting nucleus has slightly less mass than the total mass of the original separate nuclei.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "17.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c17-mc-17",
+    "unitId": 17,
+    "stem": "Which type of radioactive emission has essentially no mass and no electric charge?",
+    "choices": ["Alpha particle", "Beta particle", "Gamma ray", "Neutron"],
+    "correctIndex": 2,
+    "topicTag": "17.1",
+    "source": "original",
+    "explanation": "A gamma ray is a high-energy photon (a form of electromagnetic radiation), so it carries no mass and no charge. An alpha particle has a mass of about 4 amu and a charge of +2, so choice A is wrong. A beta particle is a fast electron; it has essentially negligible mass but does carry a charge of -1, so choice B is wrong. A neutron has a mass of about 1 amu but no charge, so choice D is wrong because it is not massless.",
+    "difficulty": "beginner",
+    "hints": [
+      "Ask yourself whether each option is actually a particle made of protons/neutrons/electrons, or something else entirely.",
+      "The correct answer is a form of light, not a particle with mass."
+    ]
+  },
+  {
+    "id": "ic-c17-mc-18",
+    "unitId": 17,
+    "stem": "A radioactive sample undergoes exactly 3 half-lives. What fraction of the original sample remains?",
+    "choices": ["1/2", "1/4", "1/8", "1/16"],
+    "correctIndex": 2,
+    "topicTag": "17.3",
+    "source": "original",
+    "explanation": "After each half-life, the remaining amount is cut in half: after 1 half-life, 1/2 remains; after 2 half-lives, 1/2 x 1/2 = 1/4 remains; after 3 half-lives, 1/2 x 1/2 x 1/2 = 1/8 remains. Choice A (1/2) is only correct after 1 half-life. Choice B (1/4) is only correct after 2 half-lives. Choice D (1/16) would be correct after 4 half-lives, one too many.",
+    "difficulty": "beginner",
+    "hints": [
+      "Remember that the fraction remaining after n half-lives is (1/2) raised to the nth power.",
+      "Multiply 1/2 by itself three times."
+    ]
+  },
+  {
+    "id": "ic-c17-mc-19",
+    "unitId": 17,
+    "stem": "Thorium-234 (^234_90Th) undergoes beta-minus decay. What is the resulting daughter nuclide?",
+    "choices": ["^234_91Pa", "^230_88Ra", "^234_89Ac", "^238_92U"],
+    "correctIndex": 0,
+    "topicTag": "17.2",
+    "source": "original",
+    "explanation": "In beta-minus decay, a neutron converts into a proton and an emitted electron, so the mass number stays the same (234) while the atomic number increases by 1, from 90 to 91. Atomic number 91 corresponds to protactinium (Pa), giving ^234_91Pa. Choice B applies the changes for alpha decay (A-4, Z-2) instead of beta decay. Choice C keeps the correct mass number but incorrectly decreases the atomic number to 89 (actinium) instead of increasing it. Choice D reverses the direction of decay entirely, increasing both the mass and atomic number as if a particle were absorbed rather than emitted.",
+    "difficulty": "intermediate",
+    "hints": [
+      "First decide how beta-minus decay changes the mass number and the atomic number separately.",
+      "The atomic number should go up by exactly 1; then match that new atomic number to its element on the periodic table."
+    ]
+  },
+  {
+    "id": "ic-c17-mc-20",
+    "unitId": 17,
+    "stem": "A 12.0 g sample of a radioisotope has a half-life of 4.0 days. How many grams of the isotope remain after 12 days?",
+    "choices": ["6.0 g", "3.0 g", "1.5 g", "0.75 g"],
+    "correctIndex": 2,
+    "topicTag": "17.3",
+    "source": "original",
+    "explanation": "12 days corresponds to 12/4.0 = 3 half-lives. Starting from 12.0 g, after each half-life the mass is halved: 12.0 g -> 6.0 g (1 half-life) -> 3.0 g (2 half-lives) -> 1.5 g (3 half-lives). Choice A (6.0 g) stops after only 1 half-life. Choice B (3.0 g) stops after only 2 half-lives. Choice D (0.75 g) is the result after 4 half-lives (16 days), one half-life too many.",
+    "difficulty": "intermediate",
+    "hints": [
+      "Start by figuring out how many half-lives fit into the 12-day period.",
+      "Apply that number of halvings to the original 12.0 g, one half-life at a time."
+    ]
+  },
+  {
+    "id": "ic-c17-mc-21",
+    "unitId": 17,
+    "stem": "A sample of uranium-238 (^238_92U) first undergoes alpha decay, and the resulting daughter nuclide then undergoes beta-minus decay. What is the identity of the final nuclide produced after both decays?",
+    "choices": ["^234_91Pa", "^234_90Th", "^230_90Th", "^238_93Np"],
+    "correctIndex": 0,
+    "topicTag": "17.2",
+    "source": "original",
+    "explanation": "Alpha decay lowers the mass number by 4 and the atomic number by 2: ^238_92U becomes ^234_90Th (thorium-234). Beta-minus decay then leaves the mass number unchanged but raises the atomic number by 1: ^234_90Th becomes ^234_91Pa (protactinium-234). Choice B is only the intermediate thorium-234 nuclide, before the beta decay is applied. Choice C incorrectly applies a second alpha-type change to the mass number instead of a beta-type change. Choice D incorrectly increases the mass number, which no combination of alpha and beta decay can do.",
+    "difficulty": "advanced",
+    "hints": [
+      "Work through the two decay steps one at a time rather than trying to combine them at once.",
+      "After the alpha decay, identify the intermediate nuclide first, then apply the beta decay rule to that intermediate nuclide."
+    ]
+  },
+  {
+    "id": "ic-c17-mc-22",
+    "unitId": 17,
+    "stem": "In a fission reaction, a neutron is absorbed by ^235_92U, which then splits into ^140_54Xe, ^94_38Sr, and a number of free neutrons. How many neutrons are released in this reaction?",
+    "choices": ["1", "2", "3", "4"],
+    "correctIndex": 1,
+    "topicTag": "17.4",
+    "source": "original",
+    "explanation": "Total mass number before the reaction = 235 (from U-235) + 1 (from the absorbed neutron) = 236. Total mass number in the two named products = 140 + 94 = 234. The difference, 236 - 234 = 2, must be carried by the released neutrons (each with mass number 1), so 2 neutrons are released. Checking atomic number confirms this is consistent: 92 (U) + 0 (neutron) = 92 total in, and 54 (Xe) + 38 (Sr) + 0 (neutrons, which are neutral) = 92 total out. Choice A (1 neutron) would leave the mass numbers off by one. Choices C and D (3 or 4 neutrons) overcount the neutrons and would make the total mass number on the product side exceed 236.",
+    "difficulty": "advanced",
+    "hints": [
+      "Use conservation of mass number: total mass number of reactants must equal total mass number of products.",
+      "Add up 235 + 1 for the reactant side, then subtract the mass numbers of the two named product nuclides to see how much mass number is left over for the neutrons."
+    ]
+  }
+]

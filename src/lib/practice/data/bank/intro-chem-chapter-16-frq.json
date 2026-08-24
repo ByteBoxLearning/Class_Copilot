@@ -1,0 +1,399 @@
+[
+  {
+    "id": "ic16-short-1",
+    "unitId": 16,
+    "kind": "short",
+    "points": 4,
+    "stem": "A student drops a small piece of solid zinc metal into a beaker containing copper(II) sulfate solution. A reddish-brown solid begins to coat the zinc, and the blue color of the solution slowly fades. The reaction is:\n\nZn(s) + CuSO4(aq) -> ZnSO4(aq) + Cu(s)",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Determine the oxidation number of zinc and of copper before the reaction (in the reactants) and after the reaction (in the products).",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Identify which element is oxidized and which is reduced, and identify the oxidizing agent in this reaction.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "Before reaction: Zn in Zn(s) has an oxidation number of 0 (element in its pure form); Cu in CuSO4 has an oxidation number of +2 (as Cu^2+ in solution). After reaction: Zn in ZnSO4 has an oxidation number of +2 (as Zn^2+); Cu in Cu(s) has an oxidation number of 0 (element in its pure form).\n\nZinc goes from 0 to +2, so zinc is oxidized (loses 2 electrons). Copper goes from +2 to 0, so copper is reduced (gains 2 electrons). Since CuSO4 contains the species (Cu^2+) that is reduced, CuSO4 (specifically the Cu^2+ ion) is the oxidizing agent.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly identifying Zn = 0 and Cu = +2 before the reaction; 1 point for correctly identifying Zn = +2 and Cu = 0 after the reaction.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly identifying zinc as oxidized and copper as reduced; 1 point for correctly identifying CuSO4 (or Cu^2+) as the oxidizing agent. Credit should be based on the oxidation numbers the student gave in part (a); if those values were incorrect, award credit for oxidized/reduced/oxidizing agent identifications that are consistent with the student's own part (a) values.",
+        "points": 2,
+        "allowsErrorCarriedForward": true
+      }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": [
+      "Zn(s) and Cu(s) as pure elements both start at an oxidation number of 0.",
+      "The oxidizing agent is whichever species gets reduced (gains electrons)."
+    ]
+  },
+  {
+    "id": "ic16-short-2",
+    "unitId": 16,
+    "kind": "short",
+    "points": 4,
+    "stem": "Using the simplified activity series of metals below, in which metals higher on the list are more easily oxidized (more reactive) than metals lower on the list:\n\nMg > Zn > Fe > Cu > Ag\n\nA copper strip is placed in a solution of silver nitrate (AgNO3), and separately, a silver strip is placed in a solution of copper(II) nitrate (Cu(NO3)2).",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Using the activity series, predict which of the two setups (copper in AgNO3, or silver in Cu(NO3)2) results in a spontaneous chemical reaction, and explain your prediction.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "For the setup that does react, write the balanced net ionic equation for the reaction that occurs.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "Copper is higher on the activity series than silver, meaning copper is more easily oxidized than silver. Therefore, copper metal can displace silver ions from solution, so the copper-in-AgNO3 setup reacts spontaneously. Silver is lower on the activity series than copper, so silver metal cannot displace copper ions from solution; the silver-in-Cu(NO3)2 setup does not react.\n\nFor the reacting setup, copper is oxidized (Cu -> Cu^2+ + 2e^-) and silver ions are reduced (Ag^+ + e^- -> Ag). Balancing electrons (multiply the silver half-reaction by 2):\n\nCu(s) + 2 Ag^+(aq) -> Cu^2+(aq) + 2 Ag(s)",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly predicting that copper in AgNO3 reacts (and silver in Cu(NO3)2 does not); 1 point for explaining the prediction in terms of copper being more reactive/more easily oxidized than silver according to the activity series.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correct species and charges (Cu(s), Ag^+(aq), Cu^2+(aq), Ag(s)); 1 point for correct balancing of atoms and charge (coefficient of 2 on Ag^+ and Ag). If the student identified the wrong setup as reactive in part (a), award full credit here if the net ionic equation is properly balanced and chemically consistent with their chosen setup.",
+        "points": 2,
+        "allowsErrorCarriedForward": true
+      }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Compare where copper and silver each fall on the activity series.",
+      "Balance electrons between the two half-reactions before combining them into the net ionic equation."
+    ]
+  },
+  {
+    "id": "ic16-long-1",
+    "unitId": 16,
+    "kind": "long",
+    "points": 10,
+    "stem": "A student constructs a simple galvanic (voltaic) cell using a strip of zinc metal placed in a 1.0 M ZnSO4 solution, and a strip of lead metal placed in a 1.0 M Pb(NO3)2 solution. The two half-cells are connected by a wire (through a voltmeter) and by a salt bridge. According to the activity series, zinc is more reactive (more easily oxidized) than lead.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Identify which electrode (zinc or lead) is the anode and which is the cathode, and briefly explain your reasoning based on relative reactivity.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Write the balanced oxidation half-reaction occurring at the anode and the balanced reduction half-reaction occurring at the cathode.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(c)",
+        "prompt": "Write the overall balanced equation for the cell reaction.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(d)",
+        "prompt": "State the direction of electron flow through the external wire (from which electrode to which), and state the direction cations flow through the salt bridge (toward which electrode).",
+        "maxPoints": 3
+      }
+    ],
+    "workedSolution": "(a) Zinc is more reactive (more easily oxidized) than lead, so zinc loses electrons and is oxidized; oxidation always occurs at the anode, so the zinc electrode is the anode. Lead(II) ions gain electrons and are reduced at the lead electrode, so the lead electrode is the cathode.\n\n(b) Oxidation (anode): Zn(s) -> Zn^2+(aq) + 2e^-\nReduction (cathode): Pb^2+(aq) + 2e^- -> Pb(s)\n\n(c) Both half-reactions already involve 2 electrons, so they combine directly:\nZn(s) + Pb^2+(aq) -> Zn^2+(aq) + Pb(s)\n\n(d) Electrons flow through the external wire from the anode (zinc) to the cathode (lead), since electrons are released by oxidation at the zinc electrode and travel through the wire to the lead electrode where they are consumed by reduction. In the salt bridge, cations flow toward the cathode (lead) compartment, to replace the Pb^2+ cations being consumed there and maintain charge balance; anions in the salt bridge flow toward the anode (zinc) compartment, to balance the Zn^2+ cations building up there.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly identifying zinc as the anode; 1 point for correctly identifying lead as the cathode, with reasoning based on zinc being more reactive/more easily oxidized.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for the correct oxidation half-reaction Zn(s) -> Zn^2+(aq) + 2e^-; 1 point for the correct reduction half-reaction Pb^2+(aq) + 2e^- -> Pb(s); 1 point for correctly assigning oxidation to the anode and reduction to the cathode consistent with part (a). If the student reversed the anode/cathode identification in part (a), award credit for half-reactions that are internally consistent with that identification (i.e., oxidation written at whichever electrode they called the anode).",
+        "points": 3,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly combining the two half-reactions (electrons already balanced, no multiplication needed); 1 point for the correct overall equation Zn(s) + Pb^2+(aq) -> Zn^2+(aq) + Pb(s). Award credit for an overall equation that correctly follows from the student's own half-reactions in part (b), even if those half-reactions contained an error.",
+        "points": 2,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly stating electron flow through the wire from the anode to the cathode (zinc to lead); 1 point for correctly stating that cations in the salt bridge flow toward the cathode (lead) compartment; 1 point for correctly stating that anions flow toward the anode (zinc) compartment. Award credit based on whichever electrode the student identified as the anode/cathode in part (a), provided the electron and ion flow directions are internally consistent with that identification.",
+        "points": 3,
+        "allowsErrorCarriedForward": true
+      }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Whichever metal is more easily oxidized (more reactive) becomes the anode.",
+      "Electrons flow through the wire from anode to cathode; in the salt bridge, cations move toward the cathode and anions move toward the anode."
+    ]
+  },
+  {
+    "id": "ic16-long-2",
+    "unitId": 16,
+    "kind": "long",
+    "points": 10,
+    "stem": "When iron is exposed to oxygen gas, it slowly corrodes (rusts) according to the simplified equation:\n\n4 Fe(s) + 3 O2(g) -> 2 Fe2O3(s)",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Assign the oxidation number of iron and of oxygen in the reactants and in the products, and state the change in oxidation number for each element.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(b)",
+        "prompt": "Identify which element is oxidized and which is reduced, and identify the reducing agent and the oxidizing agent in this reaction.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(c)",
+        "prompt": "If 5.585 g of iron (molar mass = 55.85 g/mol) reacts completely with excess oxygen gas, calculate the total number of moles of electrons transferred from iron atoms to oxygen atoms.",
+        "maxPoints": 4
+      }
+    ],
+    "workedSolution": "(a) In Fe(s), iron has an oxidation number of 0 (pure element). In O2(g), oxygen has an oxidation number of 0 (pure element). In Fe2O3(s), oxygen is assigned -2 (its usual value), so each Fe must be +3 for the compound to be neutral: 2(+3) + 3(-2) = +6 - 6 = 0. So iron changes from 0 to +3 (an increase of 3), and oxygen changes from 0 to -2 (a decrease of 2).\n\n(b) Iron's oxidation number increases (0 -> +3), so iron is oxidized. Oxygen's oxidation number decreases (0 -> -2), so oxygen is reduced. The reducing agent is the substance that is oxidized, so Fe(s) is the reducing agent. The oxidizing agent is the substance that is reduced, so O2(g) is the oxidizing agent.\n\n(c) Moles of Fe reacting = 5.585 g / 55.85 g/mol = 0.1000 mol Fe.\nEach Fe atom loses 3 electrons (going from 0 to +3), so:\nTotal moles of electrons transferred = 0.1000 mol Fe x 3 mol e-/mol Fe = 0.300 mol electrons.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly identifying Fe = 0 and O = 0 in the reactants; 1 point for correctly identifying Fe = +3 and O = -2 in Fe2O3; 1 point for correctly stating the changes (Fe increases by 3, O decreases by 2).",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly identifying iron as oxidized and oxygen as reduced; 1 point for correctly identifying Fe(s) as the reducing agent; 1 point for correctly identifying O2(g) as the oxidizing agent. Base credit on the oxidation number values and changes the student gave in part (a), even if those values were incorrect, as long as the identifications are internally consistent.",
+        "points": 3,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly calculating moles of Fe = 0.1000 mol; 1 point for correctly identifying that each Fe atom loses 3 electrons; 1 point for correctly setting up moles Fe x 3; 1 point for the correct final answer of 0.300 mol electrons. If the student's oxidation number change for iron in part (a) was not 3, award credit for a calculation that correctly applies moles of Fe times that (incorrect) number of electrons per atom.",
+        "points": 4,
+        "allowsErrorCarriedForward": true
+      }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "In Fe2O3, use the fact that oxygen is -2 and the compound is neutral to solve for iron's oxidation number.",
+      "For part (c), find moles of Fe first, then multiply by the number of electrons lost per Fe atom (from the oxidation number change in part (a))."
+    ]
+  },
+  {
+    "id": "ic16-short-3",
+    "unitId": 16,
+    "kind": "short",
+    "points": 4,
+    "stem": "Consider the reaction: 2 Mg(s) + O2(g) -> 2 MgO(s)",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Assign oxidation numbers to Mg and O in both the reactants and the product MgO, and state the change in oxidation number for each.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Identify the reducing agent and the oxidizing agent in this reaction.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "In Mg(s), Mg has an oxidation number of 0 (pure element). In O2(g), O has an oxidation number of 0 (pure element). In MgO, oxygen is assigned -2 (its usual value), so Mg must be +2 for the compound to be neutral. Mg changes from 0 to +2 (an increase of 2). O changes from 0 to -2 (a decrease of 2).\n\nMg is oxidized (loses electrons), so Mg is the reducing agent. O2 is reduced (gains electrons), so O2 is the oxidizing agent.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly identifying Mg = 0 and O = 0 in the reactants; 1 point for correctly identifying Mg = +2 and O = -2 in MgO, with the correct stated changes.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly identifying Mg as the reducing agent; 1 point for correctly identifying O2 as the oxidizing agent, consistent with the student's own part (a) values.",
+        "points": 2,
+        "allowsErrorCarriedForward": true
+      }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": [
+      "Oxygen is normally -2 in compounds (not a peroxide here), and elements in their pure form are 0.",
+      "The reducing agent is the substance that gets oxidized (loses electrons); the oxidizing agent is the substance that gets reduced."
+    ]
+  },
+  {
+    "id": "ic16-short-4",
+    "unitId": 16,
+    "kind": "short",
+    "points": 4,
+    "stem": "Using the activity series Mg > Zn > Fe > Cu > Ag (metals higher on the list are more easily oxidized than metals lower on the list), a student places an iron nail into a beaker of 1.0 M MgSO4 solution.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Predict whether a spontaneous reaction will occur, and explain your reasoning using the activity series.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "The student repeats the experiment with a strip of magnesium metal placed into 1.0 M FeSO4 solution instead. Predict whether a reaction occurs in this case, and if so, write the balanced net ionic equation.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) No reaction occurs. Iron is lower on the activity series than magnesium, meaning iron is less easily oxidized than magnesium. Solid iron cannot displace Mg^2+ ions from solution.\n\n(b) Yes, a reaction occurs. Magnesium is higher on the activity series (more easily oxidized) than iron, so magnesium metal can displace Fe^2+ ions from solution. Mg is oxidized (Mg -> Mg^2+ + 2e-) and Fe^2+ is reduced (Fe^2+ + 2e- -> Fe). Net ionic equation: Mg(s) + Fe^2+(aq) -> Mg^2+(aq) + Fe(s).",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly predicting no reaction occurs; 1 point for correct reasoning that iron is less reactive/lower on the activity series than magnesium.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly predicting a reaction occurs; 1 point for a correctly balanced net ionic equation with correct species and charges.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Compare the positions of iron and magnesium on the activity series. Which one is more easily oxidized?",
+      "A reaction only occurs if the solid metal is HIGHER (more reactive) on the activity series than the metal ion already in solution."
+    ]
+  },
+  {
+    "id": "ic16-long-3",
+    "unitId": 16,
+    "kind": "long",
+    "points": 10,
+    "stem": "A galvanic cell is constructed with a nickel electrode in 1.0 M NiSO4 solution and a silver electrode in 1.0 M AgNO3 solution. Nickel is more easily oxidized than silver. The relevant half-reactions are: Ni(s) -> Ni^2+(aq) + 2e- and Ag+(aq) + e- -> Ag(s).",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Identify the anode and cathode, and write the overall balanced cell reaction (balancing electrons between the two half-reactions).",
+        "maxPoints": 3
+      },
+      {
+        "label": "(b)",
+        "prompt": "As the cell operates, 0.0500 mol of Ni is oxidized at the anode. Calculate the number of moles of electrons released by this amount of nickel.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(c)",
+        "prompt": "Using your answer to part (b) and the balanced overall equation from part (a), calculate the number of moles of Ag(s) deposited at the cathode.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(d)",
+        "prompt": "Calculate the mass, in grams, of silver deposited (molar mass of Ag = 107.9 g/mol).",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) Nickel is more easily oxidized, so it is the anode, and silver is the cathode. To balance electrons, multiply the silver half-reaction by 2: 2 Ag^+(aq) + 2e- -> 2 Ag(s). Overall equation: Ni(s) + 2 Ag^+(aq) -> Ni^2+(aq) + 2 Ag(s).\n\n(b) moles of electrons = 0.0500 mol Ni x 2 mol e-/mol Ni = 0.100 mol e-.\n\n(c) From the electron-balanced silver half-reaction, each mole of Ag deposited requires 1 mole of electrons, so moles Ag = 0.100 mol e- x (1 mol Ag / 1 mol e-) = 0.100 mol Ag. (This also matches the 1 Ni : 2 Ag ratio in the overall equation: 0.0500 mol Ni x 2 = 0.100 mol Ag.)\n\n(d) mass of Ag = 0.100 mol x 107.9 g/mol = 10.8 g.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly identifying Ni as the anode and Ag as the cathode; 1 point for correctly balancing electrons (2 Ag^+ + 2e- -> 2 Ag); 1 point for the correct overall equation Ni(s) + 2 Ag^+(aq) -> Ni^2+(aq) + 2 Ag(s).",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly applying the 2 mol e-/mol Ni ratio from the given half-reaction; 1 point for the correct value of 0.100 mol e-.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly recognizing the 1:1 mole ratio between electrons and Ag deposited (from the electron-balanced silver half-reaction); 1 point for correctly applying this using the student's own moles of electrons from part (b); 1 point for the correct final value of 0.100 mol Ag.",
+        "points": 3,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for the correct formula (mass = moles x molar mass); 1 point for a final mass consistent with the student's own moles from part (c) (10.8 g if part (c) was correct).",
+        "points": 2,
+        "allowsErrorCarriedForward": true
+      }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Balance electrons between the two half-reactions before writing the overall equation. Nickel loses 2 electrons, but silver only gains 1.",
+      "Once you know moles of electrons transferred, use the coefficients in the (electron-balanced) silver half-reaction to find moles of Ag deposited, then convert to grams using molar mass."
+    ]
+  },
+  {
+    "id": "ic16-long-4",
+    "unitId": 16,
+    "kind": "long",
+    "points": 10,
+    "stem": "Potassium permanganate solution is used to oxidize iron(II) ions in an acidic solution according to the balanced equation: MnO4^-(aq) + 5 Fe^2+(aq) + 8 H+(aq) -> Mn^2+(aq) + 5 Fe^3+(aq) + 4 H2O(l)",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Determine the oxidation number of manganese in MnO4^- and in Mn^2+, and state whether manganese is oxidized or reduced in this reaction.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(b)",
+        "prompt": "Determine the oxidation number of iron in Fe^2+ and in Fe^3+, and state whether iron is oxidized or reduced.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(c)",
+        "prompt": "If a solution contains 0.0250 mol of Fe^2+, calculate the number of moles of MnO4^- required to completely oxidize all of the Fe^2+, based on the mole ratio in the balanced equation.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(d)",
+        "prompt": "Identify the oxidizing agent and the reducing agent in this reaction.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) In MnO4^-, oxygen is -2 each (4 oxygens = -8), and the ion's overall charge is -1, so Mn + (-8) = -1, giving Mn = +7. In Mn^2+, Mn = +2 (matching the ion's charge). Manganese goes from +7 to +2, a decrease, so manganese is reduced.\n\n(b) In Fe^2+, Fe = +2. In Fe^3+, Fe = +3. Iron goes from +2 to +3, an increase, so iron is oxidized.\n\n(c) The balanced equation shows a 1:5 mole ratio between MnO4^- and Fe^2+. moles MnO4^- = 0.0250 mol Fe^2+ x (1 mol MnO4^- / 5 mol Fe^2+) = 0.00500 mol.\n\n(d) The oxidizing agent is the species that is reduced, so MnO4^- is the oxidizing agent. The reducing agent is the species that is oxidized, so Fe^2+ is the reducing agent.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for the correct oxidation number of Mn in MnO4^- (+7); 1 point for the correct oxidation number of Mn in Mn^2+ (+2); 1 point for correctly identifying manganese as reduced.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for the correct oxidation numbers of Fe (+2 and +3); 1 point for correctly identifying iron as oxidized.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly identifying the 1:5 mole ratio from the balanced equation; 1 point for correct dimensional-analysis setup; 1 point for the correct final value of 0.00500 mol.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly identifying MnO4^- as the oxidizing agent, consistent with part (a); 1 point for correctly identifying Fe^2+ as the reducing agent, consistent with part (b).",
+        "points": 2,
+        "allowsErrorCarriedForward": true
+      }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "For MnO4^-, remember the sum of oxidation numbers must equal the ion's overall charge (-1), with oxygen at its usual -2.",
+      "For part (c), use the coefficients directly in front of MnO4^- and Fe^2+ in the balanced equation as your mole ratio."
+    ]
+  }
+]

@@ -1,0 +1,704 @@
+// Prisma schema for the Classroom Engagement + Standards-Mastery Tracker.
+//
+// Forked from the recruitment-agency CRM scaffold (see ../CONTEXT.md). Client
+// ->Student, ClientAssistant->ClassCoTeacher (class-level), Category->
+// StandardCategory, Class/Enrollment, Standard/DailyCheck, MasteryEvent, and
+// GradingPolicy are all in place. Assignment lands in a later milestone. See
+// TODO.md for status.
+//
+// NOTE ON ENUMS: SQLite (the local dev database) does not support Prisma
+// `enum` types. To keep the local prototype friction-free while staying
+// PostgreSQL-ready, all "enum" fields are modelled as `String`. The set of
+// allowed values for each is defined and validated in `src/lib/enums.ts`.
+// When migrating to PostgreSQL you can promote these to real enums.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  // LOCAL-FIRST: SQLite for local development/review (no online services needed).
+  // To go online later, switch provider back to "postgresql" and restore the
+  // pooled url + directUrl below (the enums-as-String pattern keeps the schema
+  // portable, so this is the only change needed — then `prisma db push`).
+  provider = "sqlite"
+  url      = env("DATABASE_URL") // e.g. file:./dev.db locally
+  // provider  = "postgresql"
+  // url       = env("DATABASE_URL") // pooled connection (runtime on Vercel)
+  // directUrl = env("DIRECT_URL")   // direct connection (migrations / db push)
+}
+
+model User {
+  id                 String   @id @default(cuid())
+  name               String
+  email              String   @unique
+  passwordHash       String
+  role               String   @default("ASSISTANT") // OWNER (Teacher) | ASSISTANT (Co-Teacher) | CLIENT (Student)
+  active             Boolean  @default(true) // deactivated users cannot log in
+  mustChangePassword Boolean  @default(false) // forces a reset on next login
+  // Bumped whenever the account's access changes (role/deactivation/etc.) so a
+  // stale short-lived JWT can be invalidated on the next request (see auth.ts).
+  sessionVersion     Int      @default(0)
+  // ASSISTANT (Co-Teacher) flag: grant access to ALL classes/students without
+  // per-class ClassCoTeacher rows.
+  allClientsAccess   Boolean  @default(false)
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  // Workspace this account belongs to. Null for OWNER — an OWNER IS a
+  // workspace root, not a member of one. Set on ASSISTANT rows to the OWNER
+  // who created them (src/actions/users.ts::createUser). Not used for CLIENT
+  // (a Student login) — those are scoped via Student.createdByUserId/
+  // enrollment instead. See src/lib/access.ts for how this is used.
+  ownerId String?
+  owner   User?   @relation("WorkspaceOwner", fields: [ownerId], references: [id], onDelete: SetNull)
+  assistants User[] @relation("WorkspaceOwner")
+
+  // If role = CLIENT, this is the login account for exactly one Student record.
+  studentAccount Student? @relation("StudentLogin")
+
+  // If role = ASSISTANT, the classes this co-teacher is assigned to.
+  coTeacherAssignments ClassCoTeacher[] @relation("CoTeacherAssignments")
+
+  // Classes this user owns as the teacher (role = OWNER in practice).
+  classesTaught Class[] @relation("ClassTeacher")
+
+  tasksAssigned               Task[]                    @relation("TaskAssignedTo")
+  tasksCreated                Task[]                    @relation("TaskCreatedBy")
+  feedbackGiven               Feedback[]
+  feedbackDeleted             Feedback[]                @relation("FeedbackDeletedBy")
+  activityLogs                ActivityLog[]
+  notifications               Notification[]
+  checklistItems              ChecklistCompletion[]
+  preferences                 UserPreference[]
+  dailyChecksLogged           DailyCheck[]
+  masteryEventsRecorded       MasteryEvent[]
+  gradingPoliciesUpdated      GradingPolicy[]
+  settingsUpdated             Setting[]
+  assignmentsCreated          Assignment[]              @relation("AssignmentCreatedBy")
+  assignmentMaterialsUploaded AssignmentMaterial[]      @relation("AssignmentMaterialUploadedBy")
+  practiceProposalsReviewed   PracticeMasteryProposal[] @relation("PracticeProposalReviewedBy")
+  dailyStandardFocusesSet     DailyStandardFocus[]
+  studentsCreated             Student[]                 @relation("StudentCreatedBy")
+}
+
+// The student a teacher tracks — a FIRST-CLASS entity. Everything (tasks,
+// comments, activity, enrollments) is scoped to a Student. `gradeLevel` is
+// free text (not an enum) so the app isn't tied to any one grading system.
+model Student {
+  id          String  @id @default(cuid())
+  displayName String
+  gradeLevel  String? // free text, e.g. "Grade 6", "9th"
+  status      String  @default("ACTIVE") // ACTIVE | INACTIVE | ARCHIVED (enrollment lifecycle)
+  // Manual teacher-set at-a-glance roster indicator (distinct from `status`).
+  flag        String  @default("ON_TRACK") // EXCELLING | ON_TRACK | NEEDS_SUPPORT
+  notes       String? // teacher-only private notes
+
+  // The login account for this student (nullable — a student can exist before
+  // you invite them to the portal). One User <-> one Student.
+  linkedUserId String? @unique
+  linkedUser   User?   @relation("StudentLogin", fields: [linkedUserId], references: [id], onDelete: SetNull)
+
+  // Which teacher's workspace this roster row belongs to (the OWNER who
+  // created it). Required — lets a not-yet-enrolled student still be visible
+  // to whoever created them, not just students already tied to a Class via
+  // Enrollment. See src/lib/access.ts::accessibleStudentIds.
+  createdByUserId String
+  createdBy       User   @relation("StudentCreatedBy", fields: [createdByUserId], references: [id])
+
+  // Bulk-import / dedupe keys (see roster CSV/Google Sheets import).
+  email      String? @unique
+  externalId String? // SIS/school student number
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  enrollments              Enrollment[]
+  tasks                    Task[]
+  feedback                 Feedback[]
+  activityLogs             ActivityLog[]
+  notifications            Notification[]
+  dailyChecks              DailyCheck[]
+  masteryEvents            MasteryEvent[]
+  practiceAttempts         PracticeAttempt[]
+  practiceMasteryProposals PracticeMasteryProposal[]
+
+  // Pending self-service portal invite (see StudentInvite below). Null once
+  // accepted (the invite row is deleted) or if none was ever generated.
+  invite StudentInvite?
+
+  @@index([status])
+  @@index([email])
+}
+
+// A one-time, expiring link a teacher generates so a student can create their
+// OWN portal login (choose their own email + password) instead of the
+// teacher setting a temp password by hand. At most one live invite per
+// Student — generating a new one replaces the old token. Deleted on accept.
+model StudentInvite {
+  id        String   @id @default(cuid())
+  studentId String   @unique
+  student   Student  @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  token     String   @unique
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+}
+
+// A section/period a teacher runs, e.g. "Algebra I — Period 3".
+model Class {
+  id           String   @id @default(cuid())
+  name         String
+  subject      String?
+  academicYear String? // e.g. "2026-2027"
+  period       String? // free text/label, e.g. "P3" or "Block B"
+  teacherId    String
+  teacher      User     @relation("ClassTeacher", fields: [teacherId], references: [id])
+  archived     Boolean  @default(false)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  enrollments              Enrollment[]
+  coTeachers               ClassCoTeacher[]
+  tasks                    Task[]
+  standards                Standard[]
+  dailyChecks              DailyCheck[]
+  gradingPolicy            GradingPolicy?
+  assignments              Assignment[]
+  assignmentMaterials      AssignmentMaterial[]
+  practiceAttempts         PracticeAttempt[]
+  practiceMasteryProposals PracticeMasteryProposal[]
+  dailyStandardFocuses     DailyStandardFocus[]
+
+  @@index([teacherId])
+}
+
+// A class's grading policy: how mastery (and optionally engagement) combine
+// into a computed grade. No row = falls back to a sensible default (see
+// src/lib/grading.ts's defaultPolicy()), so grading works with zero setup.
+// `configJson`'s shape depends on `type` — unlike AssignmentDoc parsing
+// (planned, lenient), this IS validated strictly on write (zod, in
+// src/lib/validations.ts) since it's teacher-authored and drives a real
+// grade — see CONTEXT.md for the "who authored it" principle behind that
+// contrast.
+model GradingPolicy {
+  id                String   @id @default(cuid())
+  classId           String   @unique
+  class             Class    @relation(fields: [classId], references: [id], onDelete: Cascade)
+  type              String   @default("STANDARDS_ONLY") // STANDARDS_ONLY | WEIGHTED | POINTS (declared, not yet built)
+  configJson        String
+  // How "current mastery" is derived from a standard's MasteryEvent history —
+  // orthogonal to `type` (which decides how mastery combines with engagement
+  // into a grade). RECENCY_WEIGHTED | DECAYING_AVERAGE | MOST_RECENT_N |
+  // HIGHEST_RECENT_N — see src/lib/mastery-math.ts for the formulas.
+  masteryStrategy   String   @default("RECENCY_WEIGHTED")
+  // { decayRate, windowSize, evidenceWeights } — which fields matter depends
+  // on masteryStrategy. Same "teacher-authored, validate strictly" posture as
+  // configJson.
+  masteryConfigJson String?
+  updatedById       String?
+  updatedBy         User?    @relation(fields: [updatedById], references: [id], onDelete: SetNull)
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+}
+
+// An AI-generated (or manually authored) piece of classroom material tied to
+// one or more Standards — worksheet, quiz, homework set, etc. `contentJson`
+// is a serialized AssignmentDoc (src/lib/assignments/types.ts): a header plus
+// an ordered list of typed sections (instructions/questions/activity/
+// materials/rubric/answer_key/notes). Parsed LENIENTLY (JSON.parse + shallow
+// shape check, invalid sections dropped) — the opposite of GradingPolicy's
+// strict validation, per the "who authored it" principle (see CONTEXT.md):
+// this is AI output a teacher reviews and can freely edit/regenerate, not a
+// formula that silently drives a grade. No per-student score row — v1 has no
+// "submit/grade this assignment" flow, which is also why the POINTS grading
+// preset stays stubbed (see GradingPolicy.type's comment).
+model Assignment {
+  id             String   @id @default(cuid())
+  classId        String
+  class          Class    @relation(fields: [classId], references: [id], onDelete: Cascade)
+  title          String
+  assignmentType String // WORKSHEET | QUIZ | HOMEWORK | PROJECT | WARM_UP | EXIT_TICKET | OTHER
+  summary        String?
+  contentJson    String // serialized AssignmentDoc
+  status         String   @default("DRAFT") // DRAFT | READY | ARCHIVED
+  source         String   @default("MANUAL") // AI | AI_IMPROVED | MANUAL
+  createdById    String
+  createdBy      User     @relation("AssignmentCreatedBy", fields: [createdById], references: [id])
+  // Usage/cost of the LAST generation call that produced the saved content —
+  // null if the assignment has only ever been authored/edited manually.
+  engine         String?
+  inputTokens    Int?
+  outputTokens   Int?
+  totalTokens    Int?
+  estCostUsd     Float?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  standards AssignmentStandard[]
+  materials AssignmentMaterial[]
+
+  @@index([classId])
+}
+
+// Explicit join — which Standards an Assignment targets. A plain many-to-many
+// would hide this list from `select`; kept explicit so the builder UI can
+// query/update it directly without Prisma's implicit-join limitations.
+model AssignmentStandard {
+  id           String     @id @default(cuid())
+  assignmentId String
+  assignment   Assignment @relation(fields: [assignmentId], references: [id], onDelete: Cascade)
+  standardId   String
+  standard     Standard   @relation(fields: [standardId], references: [id], onDelete: Cascade)
+
+  @@unique([assignmentId, standardId])
+  @@index([standardId])
+}
+
+// A file attached to an Assignment — teacher-uploaded original source
+// material, a reference file, or a polished final version. Modelled on the
+// source CRM's JobFile (not a revival of it — genuinely new here).
+// `classId` is DENORMALIZED from the Assignment for the same reason
+// JobFile.clientId was: it lets the download route do a single-table IDOR
+// check (`assertCanAccessClass`) without an extra join. `extractedText` is
+// populated for .txt/.md/.docx uploads (via mammoth) so it can seed an
+// "Improve with AI" generation; PDFs are stored but never text-extracted —
+// the UI asks the teacher to paste the text instead (see
+// src/lib/assignments/extract-upload.ts).
+model AssignmentMaterial {
+  id            String     @id @default(cuid())
+  assignmentId  String
+  assignment    Assignment @relation(fields: [assignmentId], references: [id], onDelete: Cascade)
+  classId       String
+  class         Class      @relation(fields: [classId], references: [id], onDelete: Cascade)
+  kind          String // ORIGINAL | AI_IMPROVED | FINAL | REFERENCE
+  fileName      String
+  filePath      String // object key within src/lib/storage.ts's local-disk backend
+  mimeType      String?
+  sizeBytes     Int?
+  extractedText String?
+  uploadedById  String
+  uploadedBy    User       @relation("AssignmentMaterialUploadedBy", fields: [uploadedById], references: [id])
+  versionNotes  String?
+  createdAt     DateTime   @default(now())
+
+  @@index([assignmentId])
+  @@index([classId])
+}
+
+// A teacher-defined learning goal / standard, scoped to a Class (different
+// classes may cover different standards). `code` is a free-text short label
+// the teacher supplies (e.g. "RL.9-10.2") — never validated against an
+// external framework, per the confirmed "teacher-authored only" decision.
+model Standard {
+  id                      String            @id @default(cuid())
+  classId                 String
+  class                   Class             @relation(fields: [classId], references: [id], onDelete: Cascade)
+  categoryId              String?
+  category                StandardCategory? @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  code                    String?
+  title                   String
+  description             String?
+  order                   Int               @default(0)
+  active                  Boolean           @default(true)
+  // Optional link to a unit/chapter in an external practice-content taxonomy
+  // (Practice Mode, Milestone K) — e.g. externalUnitSource "AP_CHEM",
+  // externalUnitId "3". A string source (not an enum) so a second subject's
+  // question bank is cheap to add later without a schema change. Both null
+  // is the common case (most standards aren't linked to external content).
+  // Opt-in per standard, same "teacher-authored only" posture as `code`.
+  externalUnitSource      String?
+  externalUnitId          String?
+  // JSON string array of bank question ids (e.g. ["u1-mcq-3","u1-mcq-7"]),
+  // narrowing this Standard's practice evidence to just those questions
+  // within externalUnitId instead of the whole unit. Null/empty = whole-unit
+  // (the original Milestone K behavior, unchanged). Lets several Standards
+  // share one chapter/unit without double-counting evidence — see
+  // resolveStandardsForUnit in src/lib/practice/mastery-map.ts. A unit is
+  // either claimed whole by exactly one Standard, or split into
+  // non-overlapping question-id subsets across several — enforced in
+  // src/actions/standards.ts (checkUnitOverlap), not by a DB constraint,
+  // since "unique unless partial" isn't expressible portably in Prisma/
+  // SQLite (see the removed @@unique this replaced, below).
+  externalQuestionIdsJson String?
+  createdAt               DateTime          @default(now())
+  updatedAt               DateTime          @updatedAt
+
+  masteryEvents            MasteryEvent[]
+  assignments              AssignmentStandard[]
+  practiceMasteryProposals PracticeMasteryProposal[]
+  dailyChecks              DailyCheck[]
+  dailyStandardFocuses     DailyStandardFocus[]
+
+  @@index([classId])
+  @@index([categoryId])
+}
+
+// A single point-in-time assessment of a student's level on a Standard.
+// APPEND-ONLY — never edited or overwritten, so the full evidence history is
+// preserved. "Current mastery" is a computed value (see src/lib/mastery.ts),
+// not a stored field: a recency-weighted average of all events for that
+// (student, standard) pair, so the most recent assessment counts for more
+// but the student's whole history still contributes (confirmed with Jordi
+// 2026-08-07 — a middle ground between "most-recent-only" and
+// "highest-ever-only", see CONTEXT.md).
+model MasteryEvent {
+  id           String   @id @default(cuid())
+  studentId    String
+  student      Student  @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  standardId   String
+  standard     Standard @relation(fields: [standardId], references: [id], onDelete: Cascade)
+  level        Int // 1-4: Beginning | Developing | Proficient | Advanced
+  evidenceType String   @default("OBSERVATION") // QUIZ | HOMEWORK | PROJECT | OBSERVATION | CONVERSATION | RETAKE | OTHER
+  evidenceNote String?
+  recordedById String
+  recordedBy   User     @relation(fields: [recordedById], references: [id])
+  recordedAt   DateTime @default(now())
+
+  feedback Feedback[]
+
+  @@index([studentId, standardId, recordedAt])
+}
+
+// Student <-> Class join (a student can be enrolled in more than one class).
+model Enrollment {
+  id         String   @id @default(cuid())
+  studentId  String
+  student    Student  @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  classId    String
+  class      Class    @relation(fields: [classId], references: [id], onDelete: Cascade)
+  status     String   @default("ACTIVE") // ACTIVE | DROPPED | COMPLETED
+  enrolledAt DateTime @default(now())
+
+  @@unique([studentId, classId])
+  @@index([classId])
+  @@index([studentId])
+}
+
+// Many-to-many assignment linking an ASSISTANT (co-teacher) to a CLASS — not
+// to individual students. Student-level access for a co-teacher is derived
+// via Enrollment (see src/lib/access.ts's 2-hop accessibleStudentIds). This is
+// a deliberate re-point, not a literal rename of the source CRM's
+// ClientAssistant (which assigned an assistant directly to a client).
+model ClassCoTeacher {
+  id              String   @id @default(cuid())
+  classId         String
+  class           Class    @relation(fields: [classId], references: [id], onDelete: Cascade)
+  coTeacherUserId String
+  coTeacher       User     @relation("CoTeacherAssignments", fields: [coTeacherUserId], references: [id], onDelete: Cascade)
+  createdAt       DateTime @default(now())
+
+  @@unique([classId, coTeacherUserId])
+  @@index([coTeacherUserId])
+}
+
+model Task {
+  id           String    @id @default(cuid())
+  title        String
+  description  String?
+  // Tasks can be student-specific, class-wide, or general (all nullable).
+  studentId    String?
+  student      Student?  @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  classId      String?
+  class        Class?    @relation(fields: [classId], references: [id], onDelete: Cascade)
+  assignedToId String?
+  assignedTo   User?     @relation("TaskAssignedTo", fields: [assignedToId], references: [id])
+  createdById  String
+  createdBy    User      @relation("TaskCreatedBy", fields: [createdById], references: [id])
+  date         DateTime  @default(now())
+  recurring    Boolean   @default(false)
+  completed    Boolean   @default(false)
+  completedAt  DateTime?
+  notes        String?
+  evidenceUrl  String?
+  priority     String    @default("MEDIUM")
+  archived     Boolean   @default(false)
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  @@index([studentId])
+  @@index([classId])
+}
+
+// Still 3-tier visibility and student-scoped only; the 2-tier
+// TEACHER_ONLY/STUDENT_VISIBLE reshape + attachment to MasteryEvent/
+// EngagementLog lands with the student portal milestone.
+// Teacher/co-teacher feedback for a student — either general, or attached to
+// one specific piece of evidence (a MasteryEvent or a DailyCheck day).
+// Renamed from the source CRM's `Comment` (Milestone H, 2026-08-16): nothing
+// referenced the old name or its 3-tier visibility yet (dropped in Milestone
+// A's minimal port, never built on since), so this is a clean reshape, not a
+// migration. "Comment" was also newly ambiguous by this point — the
+// End-of-Term Comments AI feature (Milestone G) already owns that word in
+// this codebase, so "Feedback" avoids the collision going forward.
+//
+// Deliberately separate from MasteryEvent.evidenceNote and DailyCheck.note:
+// those are the teacher's own private record-keeping (always internal,
+// never shown to a student), while Feedback is an explicit message a teacher
+// chooses to send, with its own TEACHER_ONLY/STUDENT_VISIBLE toggle.
+model Feedback {
+  id             String        @id @default(cuid())
+  studentId      String
+  student        Student       @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  userId         String
+  user           User          @relation(fields: [userId], references: [id])
+  message        String
+  // TEACHER_ONLY (staff only, the default) | STUDENT_VISIBLE (explicitly
+  // shown to the student in their portal).
+  visibility     String        @default("TEACHER_ONLY")
+  // Optional attachment — at most one of these is set. Null on both = a
+  // general note about the student, not tied to a specific piece of
+  // evidence.
+  masteryEventId String?
+  masteryEvent   MasteryEvent? @relation(fields: [masteryEventId], references: [id], onDelete: Cascade)
+  dailyCheckId   String?
+  dailyCheck     DailyCheck?   @relation(fields: [dailyCheckId], references: [id], onDelete: Cascade)
+  createdAt      DateTime      @default(now())
+  // Edit / soft-delete audit trail. Deleted feedback is kept (not removed) so
+  // staff retain visibility of what was said and by whom.
+  editedAt       DateTime?
+  deletedAt      DateTime?
+  deletedById    String?
+  deletedBy      User?         @relation("FeedbackDeletedBy", fields: [deletedById], references: [id])
+
+  @@index([studentId])
+  @@index([masteryEventId])
+  @@index([dailyCheckId])
+}
+
+model ActivityLog {
+  id           String   @id @default(cuid())
+  userId       String
+  user         User     @relation(fields: [userId], references: [id])
+  // Student scope (nullable — some actions are general, e.g. user mgmt).
+  studentId    String?
+  student      Student? @relation(fields: [studentId], references: [id], onDelete: SetNull)
+  actionType   String
+  fieldChanged String?
+  oldValue     String?
+  newValue     String?
+  description  String?
+  createdAt    DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([studentId])
+}
+
+model Notification {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  // Student this notification relates to (nullable for general pings).
+  studentId String?
+  student   Student? @relation(fields: [studentId], references: [id], onDelete: SetNull)
+  title     String
+  message   String
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@index([userId, read])
+}
+
+// Global lookup/strand grouping for Standards.
+model StandardCategory {
+  id          String   @id @default(cuid())
+  name        String   @unique
+  description String?
+  active      Boolean  @default(true)
+  createdAt   DateTime @default(now())
+
+  standards Standard[]
+}
+
+// A teacher's quick daily read on a student, for a specific class: were they
+// engaged or distracting, plus (see `understanding` below) a per-standard
+// comprehension check. Upserted on tap: one row per (student, class, day),
+// blank by default so a teacher only touches cells for students who stood
+// out that day.
+model DailyCheck {
+  id            String    @id @default(cuid())
+  studentId     String
+  student       Student   @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  classId       String
+  class         Class     @relation(fields: [classId], references: [id], onDelete: Cascade)
+  date          String // YYYY-MM-DD (local day)
+  engagement    String? // ENGAGED | DISTRACTING
+  // Per-standard understanding check, tied to whichever Standard is set as
+  // the day's focus (see DailyStandardFocus below). Unlike the other
+  // quick-tap dimensions on this model, setting this ALSO writes a real
+  // MasteryEvent (evidenceType OBSERVATION) — see setDailyUnderstandingCheck
+  // in src/actions/daily-checks.ts. `standardId` is denormalized onto this
+  // row at the moment of the tap (not read live from DailyStandardFocus) so
+  // a later change to the day's focus doesn't rewrite what this check was
+  // actually evidence for. Replaces the original context-free
+  // UNDERSTANDS/NEEDS_REINFORCEMENT flag (Milestone F) now that a Standard
+  // link exists to attach real mastery evidence to.
+  understanding String? // MASTERY_LEVELS value: "1" | "2" | "3" | "4"
+  standardId    String?
+  standard      Standard? @relation(fields: [standardId], references: [id], onDelete: SetNull)
+  // The original Milestone F vision, added back 2026-08-08 after a dogfooding
+  // check-in confirmed Jordi wants the fuller character/behavior read, not
+  // just engagement+understanding. Same blank-by-default, tap-to-cycle
+  // +/-1 shape as the other two dimensions — additive, not a replacement
+  // (engagement still drives grading's WEIGHTED preset).
+  empathy       String? // SHOWED_EMPATHY | LACKED_EMPATHY
+  discipline    String? // DISCIPLINED | UNDISCIPLINED
+  collaboration String? // COLLABORATIVE | UNCOOPERATIVE
+  citizenship   String? // GOOD_CITIZENSHIP | POOR_CITIZENSHIP
+  note          String?
+  loggedById    String
+  loggedBy      User      @relation(fields: [loggedById], references: [id])
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  feedback Feedback[]
+
+  @@unique([studentId, classId, date])
+  @@index([classId, date])
+}
+
+// Which Standard a class is working on for a given day — the missing link
+// that lets DailyCheck.understanding (above) attach its per-student check to
+// a real Standard instead of floating free. One row per (class, day); a
+// teacher sets it once at the top of the Monitor roster and every student's
+// Understanding check that day denormalizes this standardId onto their
+// DailyCheck row.
+model DailyStandardFocus {
+  id         String   @id @default(cuid())
+  classId    String
+  class      Class    @relation(fields: [classId], references: [id], onDelete: Cascade)
+  date       String // YYYY-MM-DD (local day)
+  standardId String
+  standard   Standard @relation(fields: [standardId], references: [id], onDelete: Cascade)
+  setById    String
+  setBy      User     @relation(fields: [setById], references: [id])
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@unique([classId, date])
+}
+
+// Admin-managed app-wide settings: encrypted AI provider keys, which AI
+// engines are enabled, per-provider generation temperature, and the
+// End-of-Term Comments prompt template. Revived from the source CRM's
+// Settings subsystem (Milestone G), trimmed to what this domain needs — see
+// CONTEXT.md. `value` is encrypted ciphertext for API keys, plain text/JSON
+// for everything else (see src/lib/settings.ts for which is which per key).
+model Setting {
+  key         String   @id // e.g. "GEMINI_API_KEY"
+  value       String
+  updatedById String?
+  updatedBy   User?    @relation(fields: [updatedById], references: [id], onDelete: SetNull)
+  updatedAt   DateTime @updatedAt
+}
+
+// Per-user UI preferences (e.g. which table columns are visible, or the
+// current-class selection). Stored as a key/value pair per user so settings
+// follow the user across devices/browsers. Value is a JSON string interpreted
+// by the relevant client component.
+model UserPreference {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  key    String // e.g. "currentClassId"
+  value  String // JSON string
+
+  @@unique([userId, key])
+}
+
+// A student's practice session (Practice Mode, Milestone K) — AP Chem or
+// Intro Chem unit-based MCQ practice, optionally AI-scored. One row per
+// attempt, created as soon as question prep finishes so a page refresh
+// mid-session resumes from here, not a lost client-only state (the ported
+// standalone tool's original failure mode). Item-level content
+// (config/generated set/answers/scores/chat) is stored as JSON blobs, not
+// normalized rows — mirrors Assignment.contentJson's precedent: variable-
+// length, heterogeneous, AI-touched content that nothing else joins against
+// at the item level in v1. The outer row IS normalized (studentId, classId,
+// status) because a teacher/roster view filters by those columns.
+model PracticeAttempt {
+  id        String  @id @default(cuid())
+  studentId String
+  student   Student @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  classId   String
+  class     Class   @relation(fields: [classId], references: [id], onDelete: Cascade)
+
+  configJson           String // PracticeConfig: { source, unitIds, mcqCount, timerEnabled }
+  practiceSetJson      String? // generated/pulled MCQItem[] once question prep finishes
+  answersJson          String  @default("{}") // MCQAnswer[] keyed by itemId, autosaved as the student works
+  scoresJson           String  @default("{}") // reserved for future free-response AI scoring
+  chatHistoriesJson    String  @default("{}") // ChatMessage[] keyed by itemId
+  // AI-generated { whatToImprove, strategies } coaching feedback, computed once
+  // on submit (src/lib/practice/coaching.ts) and cached here so revisiting
+  // Review (or the idempotent resubmit path) doesn't re-call the AI. Purely
+  // advisory — never affects the official grade, unlike suggestedLevel on
+  // PracticeMasteryProposal, which still requires teacher approval. Null if
+  // generation failed or the session had nothing to flag (e.g. a perfect
+  // score).
+  coachingFeedbackJson String?
+
+  status       String    @default("IN_PROGRESS") // IN_PROGRESS | SUBMITTED | ABANDONED
+  endTimestamp DateTime? // optional pacing countdown deadline
+  submittedAt  DateTime?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  proposals PracticeMasteryProposal[]
+
+  @@index([studentId, status])
+  @@index([classId])
+}
+
+// One row per (unit practiced x mapped standard) on a submitted
+// PracticeAttempt. Normalized (unlike the attempt's own content) because a
+// teacher needs to list/filter/count these across a whole roster — same
+// reason MasteryEvent itself is normalized. PENDING until a teacher reviews
+// it: practice results never auto-write MasteryEvent (every MasteryEvent
+// ever recorded in this app has a staff recordedById; that invariant is kept,
+// not broken — a student's self-generated practice evidence goes through the
+// same review a teacher would give any other evidence before it counts).
+model PracticeMasteryProposal {
+  id                      String          @id @default(cuid())
+  attemptId               String
+  attempt                 PracticeAttempt @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  studentId               String
+  student                 Student         @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  classId                 String
+  class                   Class           @relation(fields: [classId], references: [id], onDelete: Cascade)
+  // Null if this unit had no mapped Standard at submit time — shown to the
+  // student as "not linked to a standard yet," never silently dropped.
+  standardId              String?
+  standard                Standard?       @relation(fields: [standardId], references: [id], onDelete: SetNull)
+  unitSource              String // "AP_CHEM" | "INTRO_CHEM"
+  unitId                  String
+  scorePercent            Float
+  suggestedLevel          Int // 1-4, via percentToLevel()
+  status                  String          @default("PENDING") // PENDING | APPROVED | REJECTED
+  reviewedById            String?
+  reviewedBy              User?           @relation("PracticeProposalReviewedBy", fields: [reviewedById], references: [id], onDelete: SetNull)
+  reviewedAt              DateTime?
+  reviewNote              String?
+  // Audit pointer only (not a managed relation) — the MasteryEvent this
+  // proposal produced once approved.
+  resultingMasteryEventId String?
+  createdAt               DateTime        @default(now())
+
+  @@index([classId, status])
+  @@index([studentId, status])
+}
+
+// Tracks completion of the user's daily checklist items (per user, per day).
+// Repurposed in the engagement-logging milestone as the auto-derived "did I
+// log engagement for [Class] today?" signal.
+model ChecklistCompletion {
+  id          String    @id @default(cuid())
+  userId      String
+  user        User      @relation(fields: [userId], references: [id])
+  itemKey     String // stable key of the checklist item
+  itemLabel   String
+  date        String // YYYY-MM-DD (local day)
+  completed   Boolean   @default(false)
+  completedAt DateTime?
+
+  @@unique([userId, itemKey, date])
+  @@index([userId, date])
+}

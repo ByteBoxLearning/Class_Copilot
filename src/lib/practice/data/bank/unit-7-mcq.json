@@ -1,0 +1,66 @@
+[
+  {
+    "id": "u7-mcq-1",
+    "unitId": 7,
+    "stem": "At a certain temperature, the reaction N2O4(g) <-> 2NO2(g) has Kc = 4.60x10^-3. A 1.00 L rigid flask is found to contain 0.500 M N2O4(g) and 0.0300 M NO2(g) at a moment before equilibrium is reached. Which statement correctly describes the reaction as it proceeds toward equilibrium?",
+    "choices": [
+      "The reaction proceeds in the forward direction, producing more NO2(g).",
+      "The reaction proceeds in the reverse direction, producing more N2O4(g).",
+      "The system is already at equilibrium, since Q and Kc are both very small numbers.",
+      "The reaction proceeds in the forward direction until all of the N2O4(g) is consumed."
+    ],
+    "correctIndex": 0,
+    "workedSolution": "Qc = [NO2]^2/[N2O4] = (0.0300)^2/(0.500) = 0.000900/0.500 = 1.80x10^-3. Compare to Kc = 4.60x10^-3: Qc < Kc, so the ratio of products to reactants must increase to reach equilibrium. The reaction therefore proceeds in the forward (net) direction, converting some N2O4(g) into NO2(g), until Qc rises to equal Kc.",
+    "explanation": "Because Qc (1.80x10^-3) is less than Kc (4.60x10^-3), the system has too little product relative to reactant, so the net reaction shifts forward to make more NO2(g). Choice B reverses the correct inequality logic (it would be correct only if Qc > Kc). Choice C incorrectly assumes that two small numbers close in order of magnitude must be equal; Qc and Kc differ by more than a factor of 2, so the system is not at equilibrium. Choice D reflects the common misconception that reactions proceeding toward equilibrium go to completion; equilibrium reactions stop adjusting once Qc = Kc, not when a reactant is fully consumed.",
+    "topicTag": "Reaction Quotient and Equilibrium Constant",
+    "source": "bank"
+  },
+  {
+    "id": "u7-mcq-2",
+    "unitId": 7,
+    "stem": "Consider the reaction 2CO(g) + O2(g) <-> 2CO2(g), for which Kc = 2.2x10^22 at 25 degrees C. Which of the following best describes the equilibrium mixture that results when stoichiometric amounts of CO(g) and O2(g) are sealed in a rigid container at 25 degrees C and allowed to reach equilibrium?",
+    "choices": [
+      "The equilibrium mixture consists almost entirely of CO2(g), with only negligible amounts of CO(g) and O2(g) remaining.",
+      "The equilibrium mixture contains mostly CO(g) and O2(g), with only a small amount of CO2(g) formed.",
+      "The equilibrium mixture contains roughly comparable amounts of reactants and products.",
+      "Because Kc is so large, the reaction cannot occur at 25 degrees C without a catalyst to provide activation energy."
+    ],
+    "correctIndex": 0,
+    "workedSolution": "Kc = [CO2]^2/([CO]^2[O2]) = 2.2x10^22 is an extremely large equilibrium constant. A large Kc means that at equilibrium the numerator (products) must be vastly larger than the denominator (reactants), since their ratio equals such a large number. Thus the equilibrium position lies overwhelmingly toward products: essentially all of the CO(g) and O2(g) are converted to CO2(g), leaving only trace concentrations of reactants at equilibrium.",
+    "explanation": "A very large Kc indicates a reaction that is strongly product-favored at equilibrium, so choice A is correct. Choice B describes a reactant-favored system, which corresponds to a small Kc (Kc << 1), the opposite situation. Choice C describes Kc values close to 1, not 10^22. Choice D confuses the thermodynamic magnitude of Kc (which describes the position/extent of equilibrium) with kinetics (the rate at which equilibrium is reached); a reaction can have a huge Kc yet still require a catalyst or higher temperature just to proceed at a measurable rate, but that does not change the fact that Kc itself only describes the equilibrium position.",
+    "topicTag": "Magnitude of the Equilibrium Constant",
+    "source": "bank"
+  },
+  {
+    "id": "u7-mcq-3",
+    "unitId": 7,
+    "stem": "The Ksp of CaF2 is 3.9x10^-11 at 25 degrees C. What is the molar solubility of CaF2(s) in a 0.10 M NaF(aq) solution at 25 degrees C?",
+    "choices": [
+      "3.9x10^-9 M",
+      "2.1x10^-4 M",
+      "3.9x10^-10 M",
+      "2.0x10^-5 M"
+    ],
+    "correctIndex": 0,
+    "workedSolution": "CaF2(s) <-> Ca^2+(aq) + 2F^-(aq), Ksp = [Ca^2+][F^-]^2. Let s = molar solubility of CaF2 in the NaF solution. Since NaF fully dissociates, the common ion F^- is already present at 0.10 M, and the small additional amount from CaF2 (2s) is negligible, so [F^-] ~ 0.10 M and [Ca^2+] = s. Then: s(0.10)^2 = 3.9x10^-11, so s = 3.9x10^-11/0.010 = 3.9x10^-9 M.",
+    "explanation": "Correctly applying the common-ion effect gives s = Ksp/[F^-]^2 = 3.9x10^-9 M, far less soluble than in pure water. Choice B (2.1x10^-4 M) is the solubility of CaF2 in pure water (from s = (Ksp/4)^(1/3)) and ignores the suppressing effect of the common F^- ion entirely. Choice C (3.9x10^-10 M) comes from dividing Ksp by [F^-] without squaring the fluoride concentration, forgetting the stoichiometric exponent of 2 in the Ksp expression. Choice D (2.0x10^-5 M) results from incorrectly taking the square root of Ksp/[F^-] instead of correctly isolating s as Ksp/[F^-]^2.",
+    "topicTag": "Common-Ion Effect",
+    "source": "bank"
+  },
+  {
+    "id": "u7-mcq-4",
+    "unitId": 7,
+    "stem": "At 425 degrees C, Kc = 54.3 for the reaction H2(g) + I2(g) <-> 2HI(g). A 1.00 L rigid flask is filled with 0.200 M H2(g) and 0.200 M I2(g) and no HI(g), then allowed to reach equilibrium at 425 degrees C. What is the equilibrium concentration of HI(g)?",
+    "choices": [
+      "0.315 M",
+      "0.200 M",
+      "0.157 M",
+      "0.400 M"
+    ],
+    "correctIndex": 0,
+    "workedSolution": "ICE table (concentrations in M): Initial: [H2]=0.200, [I2]=0.200, [HI]=0. Change: -x, -x, +2x. Equilibrium: 0.200-x, 0.200-x, 2x. Kc = (2x)^2/(0.200-x)^2 = 54.3. Taking the square root of both sides (valid since both reactant concentrations are equal): (2x)/(0.200-x) = sqrt(54.3) = 7.369. Solving: 2x = 7.369(0.200-x) = 1.474 - 7.369x, so 9.369x = 1.474, x = 0.1573. Then [HI] = 2x = 0.315 M. Check: (0.315)^2/(0.0427)^2 = 0.0992/0.00182 = 54.5, consistent with Kc within rounding.",
+    "explanation": "Solving the ICE table correctly gives [HI] = 0.315 M at equilibrium. Choice B (0.200 M) incorrectly assumes the equilibrium HI concentration simply equals the initial reactant concentration. Choice C (0.157 M) reports x itself rather than 2x, forgetting the stoichiometric coefficient of 2 for HI. Choice D (0.400 M) assumes the reaction goes to completion (all H2 and I2 converted), which is incorrect because Kc, though greater than 1, is finite, so significant amounts of H2(g) and I2(g) remain at equilibrium.",
+    "topicTag": "Calculating Equilibrium Concentrations",
+    "source": "bank"
+  }
+]

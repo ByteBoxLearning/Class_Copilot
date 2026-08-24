@@ -1,0 +1,94 @@
+[
+  {
+    "id": "u3-frq-long-1",
+    "unitId": 3,
+    "kind": "long",
+    "points": 10,
+    "stem": "A rigid 5.00 L cylinder contains 0.500 mol of CO2(g) at 27°C (300. K).",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Calculate the pressure of the gas, assuming ideal gas behavior.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "The measured pressure of the gas is actually 2.35 atm, which is less than the ideal value calculated in part (a). Identify which correction term in the van der Waals equation accounts for this difference, and explain, in terms of intermolecular forces, why the measured pressure is lower than the ideal pressure.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(c)",
+        "prompt": "A sample of He(g) with the same number of moles, volume, and temperature behaves much more ideally than the CO2(g) sample. Explain this difference in terms of the intermolecular forces present in each gas.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(d)",
+        "prompt": "The CO2(g) is now cooled at constant volume until a small amount of it condenses to form a liquid-vapor equilibrium. On a molecular level, describe two changes that occur as the gas is cooled that allow condensation to occur, and explain how these changes relate to the balance between average kinetic energy and intermolecular forces.",
+        "maxPoints": 4
+      }
+    ],
+    "workedSolution": "(a) Using PV = nRT: P = nRT/V = (0.500 mol)(0.08206 L·atm/mol·K)(300. K) / 5.00 L = 12.31 / 5.00 = 2.46 atm.\n\n(b) The van der Waals equation is (P + an^2/V^2)(V - nb) = nRT. The 'an^2/V^2' term is the correction added to the measured pressure to account for intermolecular attractions. Because CO2 molecules attract one another (via London dispersion forces, since CO2 is nonpolar but has a large, polarizable electron cloud), molecules heading toward the container wall are pulled slightly backward by neighboring molecules just before colliding. This reduces both the frequency and force of collisions with the walls, so the measured (real) pressure is lower than the ideal pressure that assumes no such attractions.\n\n(c) He is a monatomic noble gas with a very small, tightly held electron cloud, giving it very weak London dispersion forces and a very small atomic volume compared to CO2, a larger, more polarizable, triatomic molecule. Because He's intermolecular attractions and particle volume are both nearly negligible under typical conditions, its behavior stays very close to the ideal gas law, whereas CO2's stronger dispersion forces (and larger molecular volume) cause it to deviate more noticeably from ideal behavior at the same n, V, and T.\n\n(d) As the gas is cooled at constant volume, (1) the average kinetic energy (and average speed) of the CO2 molecules decreases, in accordance with kinetic molecular theory (KE_avg proportional to T). (2) As kinetic energy drops, the London dispersion forces between CO2 molecules — which were previously overcome by the particles' fast, energetic motion — become relatively more significant. When molecules with sufficiently low kinetic energy approach one another, the attractive dispersion forces are now strong enough to hold them together rather than letting them separate again, so some molecules cluster together and condense into the liquid phase. Condensation therefore occurs when the balance between kinetic energy and intermolecular attraction shifts in favor of the attractive forces as temperature (and average KE) decreases.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly substituting into PV = nRT with T converted to kelvin (300. K) and correct values of n and V; 1 point for the correct final pressure, P = 2.46 atm (accept 2.45–2.47 atm with correct units).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly identifying the 'an^2/V^2' (attractive-force/pressure-correction) term of the van der Waals equation; 1 point for an explanation that attractive intermolecular forces (e.g., London dispersion in CO2) pull molecules toward each other, reducing the frequency and/or force of wall collisions and thus lowering the measured pressure below the ideal value.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for stating that He has much weaker intermolecular (dispersion) forces and/or negligible particle volume compared to CO2; 1 point for connecting this difference to a molecular-level reason (e.g., He is monatomic with a small, less polarizable electron cloud versus CO2's larger, more polarizable, multi-atom structure), explaining why He behaves more ideally.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for identifying that average kinetic energy (or average molecular speed) decreases as the gas is cooled; 1 point for identifying a second relevant change (e.g., molecules spend more time near each other / attractive forces are no longer overcome by kinetic energy / molecules begin to cluster); 1 point for explicitly linking decreased KE to intermolecular (dispersion) forces becoming relatively dominant; 1 point for connecting this shift in balance to the physical outcome of condensation/formation of the liquid phase.",
+        "points": 4,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "bank"
+  },
+  {
+    "id": "u3-frq-short-1",
+    "unitId": 3,
+    "kind": "short",
+    "points": 4,
+    "stem": "A chemist has an aqueous mixture containing dissolved KNO3(aq) and suspended, insoluble particles of sand (SiO2(s)).",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Describe a laboratory procedure the chemist could use to separate the sand from the KNO3 solution, and explain why this method is appropriate based on the physical properties of the mixture.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "After the sand has been removed, describe how the chemist could obtain solid KNO3 from the remaining KNO3(aq) solution, and explain this process in terms of intermolecular/interparticle forces.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) The chemist should perform gravity filtration: pour the mixture through filter paper (e.g., in a funnel). The solid sand particles are insoluble in water and are larger than the pores of the filter paper, so they are retained on the paper, while the KNO3(aq) solution, being a homogeneous mixture of solvated K^+ and NO3^- ions dispersed at the molecular/ionic level, passes freely through as the filtrate. This works because filtration separates mixtures based on particle size, and sand's undissolved solid particles are physically much larger than the dissolved ions in solution.\n\n(b) The filtrate (KNO3(aq)) should be heated gently (e.g., in an evaporating dish) to evaporate the water solvent, a process called evaporation/crystallization. As liquid water molecules gain enough kinetic energy to break the hydrogen bonds holding them to each other and to the solvated ions, they leave the solution as water vapor. As the amount of water decreases, there is no longer enough solvent to maintain ion-dipole attractions stabilizing the dissolved K^+ and NO3^- ions, so the solution becomes saturated and then supersaturated, and the ions come back together, reforming the ionic lattice as solid KNO3(s) crystals.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for describing filtration (e.g., pouring the mixture through filter paper); 1 point for an explanation based on particle size/insolubility (sand is an insoluble solid with particles too large to pass through the filter, while KNO3 is dissolved/dissociated into ions that pass through with the water).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for describing evaporation/crystallization of the filtrate to isolate solid KNO3; 1 point for an explanation referencing intermolecular/interparticle forces (e.g., loss of water reduces ion-dipole attractions stabilizing the dissolved ions, or water molecules overcome hydrogen bonding to escape as vapor, causing the ionic lattice to reform as the solution becomes supersaturated).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "bank"
+  }
+]

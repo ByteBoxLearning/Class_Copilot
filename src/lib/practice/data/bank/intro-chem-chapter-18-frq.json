@@ -1,0 +1,410 @@
+[
+  {
+    "id": "ic18-short-1",
+    "unitId": 18,
+    "kind": "short",
+    "points": 4,
+    "stem": "A hydrocarbon molecule consists of a single straight (unbranched) chain of 5 carbon atoms connected only by single bonds, with every carbon holding as many hydrogen atoms as possible (a fully saturated hydrocarbon).",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Give the molecular formula of this compound and its name.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Classify this compound as an alkane, alkene, or alkyne, and explain your classification based on the type of carbon-carbon bonding present.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "For a saturated (all single-bonded), straight-chain hydrocarbon, the general formula is CnH(2n+2). With n = 5 carbons: number of hydrogens = 2(5) + 2 = 12.\n\nMolecular formula: C5H12. This is the 5-carbon straight-chain alkane, named pentane.\n\nClassification: This compound is an alkane, because it contains only carbon-carbon single bonds (no double or triple bonds between carbons); alkanes are the saturated hydrocarbons, containing the maximum possible number of hydrogen atoms for a given number of carbons.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for the correct molecular formula C5H12; 1 point for the correct name, pentane.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly classifying the compound as an alkane; 1 point for explaining the classification in terms of having only carbon-carbon single bonds (fully saturated). Award credit consistent with whatever formula/name the student gave in part (a), provided the reasoning about single bonds and saturation is chemically sound.",
+        "points": 2,
+        "allowsErrorCarriedForward": true
+      }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": [
+      "Use the general formula for a saturated straight-chain hydrocarbon, CnH(2n+2), plugging in n = 5.",
+      "A hydrocarbon with only single bonds and the maximum number of hydrogens for its carbon count belongs to one specific class."
+    ]
+  },
+  {
+    "id": "ic18-short-2",
+    "unitId": 18,
+    "kind": "short",
+    "points": 4,
+    "stem": "Ethanol has the molecular formula C2H6O and the structure CH3-CH2-OH.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Identify the functional group present in ethanol, and state the class of organic compound that this functional group defines.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Give the name or formula of one other compound that belongs to the same class of organic compound as ethanol, and briefly explain why compounds sharing the same functional group tend to show similar chemical behavior.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) Ethanol contains a hydroxyl group, -OH, attached to a carbon chain. A hydroxyl group attached to a hydrocarbon chain defines the class of compounds called alcohols, so ethanol is classified as an alcohol.\n\n(b) Another example of an alcohol is methanol, CH3OH (or propanol, C3H7OH, or any other compound containing an -OH group attached to a carbon chain). Compounds within the same class of organic compound share the same functional group, and it is primarily the functional group (rather than the rest of the carbon chain) that determines how a molecule reacts chemically. Because all alcohols share the -OH group, they tend to undergo similar types of reactions (such as combustion or reacting with acids), regardless of differences in chain length.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly identifying the hydroxyl group (-OH) as the functional group; 1 point for correctly naming the compound class as alcohols.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for giving a valid example of another alcohol (any compound with an -OH group on a carbon chain, e.g., methanol or propanol); 1 point for a correct explanation that shared functional groups are responsible for similar chemical reactivity/behavior within a class.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": [
+      "Look at the atoms directly attached to the carbon chain in ethanol's structure to spot the functional group.",
+      "Any other compound with that same functional group attached to a carbon chain belongs to the same class."
+    ]
+  },
+  {
+    "id": "ic18-long-1",
+    "unitId": 18,
+    "kind": "long",
+    "points": 10,
+    "stem": "Two different hydrocarbon compounds, X and Y, both have the same molecular formula, C4H10, but different structures.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Explain what it means for X and Y to be structural (constitutional) isomers of one another, and describe (or name) the two possible structures corresponding to the molecular formula C4H10.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "State whether X and Y would be expected to have identical or different physical properties, such as boiling point, and briefly explain why.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(c)",
+        "prompt": "Write the balanced chemical equation for the complete combustion of butane, C4H10, in excess oxygen gas, producing only carbon dioxide and water.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(d)",
+        "prompt": "If 2.32 g of butane (molar mass = 58.0 g/mol) undergoes complete combustion, calculate the mass of carbon dioxide (molar mass = 44.0 g/mol) produced.",
+        "maxPoints": 3
+      }
+    ],
+    "workedSolution": "(a) Structural (constitutional) isomers are compounds that share the exact same molecular formula but differ in how their atoms are connected (their structural arrangement). For C4H10, the two possible structures are: n-butane, a straight (unbranched) chain of four carbons (CH3-CH2-CH2-CH3), and isobutane (2-methylpropane), a branched structure with a three-carbon chain and one methyl branch attached to the middle carbon.\n\n(b) X and Y (n-butane and isobutane) would be expected to have different physical properties, such as different boiling points. Even though both have the same molecular formula, their different shapes (straight-chain versus branched) change how strongly neighboring molecules attract one another (intermolecular forces); more compact, branched molecules generally have less surface-to-surface contact with neighboring molecules and therefore tend to have a lower boiling point than their straight-chain isomer.\n\n(c) Unbalanced skeleton: C4H10 + O2 -> CO2 + H2O. Balancing carbon: 4 CO2. Balancing hydrogen: 5 H2O (10 H atoms). Balancing oxygen: right side has 4(2) + 5(1) = 8 + 5 = 13 oxygen atoms, requiring 13/2 O2. Multiplying every coefficient by 2 to clear the fraction:\n\n2 C4H10(g) + 13 O2(g) -> 8 CO2(g) + 10 H2O(g)\n\n(d) Moles of butane = 2.32 g / 58.0 g/mol = 0.0400 mol C4H10.\nFrom the balanced equation, the mole ratio of C4H10 to CO2 is 2:8, which simplifies to 1:4.\nMoles of CO2 produced = 0.0400 mol C4H10 x 4 = 0.160 mol CO2.\nMass of CO2 = 0.160 mol x 44.0 g/mol = 7.04 g CO2.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for a correct definition of structural isomers (same molecular formula, different atom connectivity/structure); 1 point for correctly describing or naming both isomers of C4H10 (n-butane, straight chain; and isobutane/2-methylpropane, branched).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly stating that X and Y would have different physical properties (e.g., different boiling points); 1 point for an explanation referencing differences in molecular shape/branching affecting intermolecular attractive forces. Award credit consistent with whichever two isomer structures the student described in part (a).",
+        "points": 2,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly balancing carbon (4 CO2) and hydrogen (5 H2O, or 10 H2O with the doubled coefficients); 1 point for correctly balancing oxygen; 1 point for the fully balanced whole-number equation 2 C4H10 + 13 O2 -> 8 CO2 + 10 H2O.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly calculating moles of butane = 0.0400 mol; 1 point for correctly applying the mole ratio from the balanced equation to find 0.160 mol CO2; 1 point for the correct final mass of 7.04 g CO2. Award credit for a mole ratio and final mass that correctly follow from the balanced equation the student wrote in part (c), even if that equation contained an error.",
+        "points": 3,
+        "allowsErrorCarriedForward": true
+      }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "For part (a), remember that isomers share a molecular formula but differ in atom connectivity — try sketching both possible skeletons for 4 carbons.",
+      "For part (d), convert grams of butane to moles first, then use the mole ratio from your balanced equation in part (c) to get moles of CO2 before converting to grams."
+    ]
+  },
+  {
+    "id": "ic18-long-2",
+    "unitId": 18,
+    "kind": "long",
+    "points": 10,
+    "stem": "Propene (C3H6) is an unsaturated hydrocarbon containing one carbon-carbon double bond. Separately, ethanoic acid (acetic acid, CH3COOH) reacts with ethanol (CH3CH2OH) in the presence of an acid catalyst.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Classify propene as an alkane, alkene, or alkyne, and use a comparison to the fully saturated 3-carbon alkane (propane, C3H8) to explain how propene's molecular formula shows that it is unsaturated.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Write the equation for the reaction of propene with hydrogen gas (H2) in the presence of a catalyst, and identify both the type of organic reaction this represents and the type of hydrocarbon product formed.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(c)",
+        "prompt": "Write the balanced equation for the esterification reaction between ethanoic acid (CH3COOH) and ethanol (CH3CH2OH), and name the two products formed.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(d)",
+        "prompt": "Identify the functional group present in ethanoic acid and the functional group present in ethanol, and name the class of organic compound each represents.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) Propene is an alkene. The fully saturated 3-carbon alkane, propane, has the formula C3H8 (using CnH(2n+2): 2(3)+2 = 8). Propene has the formula C3H6, which has two fewer hydrogen atoms than propane. This 'missing' pair of hydrogen atoms corresponds to one degree of unsaturation, which is accounted for by one carbon-carbon double bond, making propene an unsaturated hydrocarbon (an alkene).\n\n(b) C3H6 + H2 --(catalyst)--> C3H8\nThis is an addition reaction (specifically, hydrogenation): the H2 molecule adds directly across the carbon-carbon double bond, converting it into a single bond. The product, C3H8 (propane), is a saturated hydrocarbon, i.e., an alkane.\n\n(c) CH3COOH + CH3CH2OH -> CH3COOCH2CH3 + H2O\nThe organic product, CH3COOCH2CH3, is named ethyl ethanoate (also called ethyl acetate); the other product is water. This type of reaction, in which a carboxylic acid and an alcohol combine to form an ester and water, is called esterification (a condensation reaction).\n\n(d) Ethanoic acid contains a carboxyl group, -COOH, so it is classified as a carboxylic acid. Ethanol contains a hydroxyl group, -OH, so it is classified as an alcohol.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly classifying propene as an alkene; 1 point for correctly comparing to propane (C3H8) and explaining that the 2 fewer hydrogens in C3H6 indicate one degree of unsaturation (a C=C double bond).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for the correctly written equation C3H6 + H2 -> C3H8 (with a catalyst noted); 1 point for correctly identifying this as an addition (hydrogenation) reaction; 1 point for correctly identifying the product, propane, as an alkane.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for the correctly written balanced equation CH3COOH + CH3CH2OH -> CH3COOCH2CH3 + H2O; 1 point for correctly naming the ester product ethyl ethanoate (ethyl acetate); 1 point for correctly identifying water as the other product and/or naming the reaction type as esterification/condensation.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly identifying the carboxyl group (-COOH) in ethanoic acid and naming it a carboxylic acid; 1 point for correctly identifying the hydroxyl group (-OH) in ethanol and naming it an alcohol.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Compare propene's formula to the fully saturated propane to see how many hydrogens are 'missing.'",
+      "For the esterification equation, remember the acid contributes the -CO- part and the alcohol contributes the -O- part of the new ester linkage, releasing water."
+    ]
+  },
+  {
+    "id": "ic18-short-3",
+    "unitId": 18,
+    "kind": "short",
+    "points": 4,
+    "stem": "A hydrocarbon consists of a single straight (unbranched) chain of 4 carbon atoms containing one carbon-carbon triple bond, with every other position holding as many hydrogen atoms as the triple bond allows.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Give the molecular formula of this compound, showing your reasoning from the general formula for a straight-chain alkyne, CnH(2n-2).",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Classify this compound as an alkane, alkene, or alkyne, and state how many fewer hydrogen atoms it has compared to the fully saturated 4-carbon alkane (butane, C4H10).",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "For a straight-chain alkyne (one carbon-carbon triple bond, all other bonds single), the general formula is CnH(2n-2). With n = 4 carbons: number of hydrogens = 2(4) - 2 = 6.\n\nMolecular formula: C4H6. This is the 4-carbon straight-chain alkyne, named 1-butyne (but-1-yne).\n\n(b) This compound is classified as an alkyne, because it contains a carbon-carbon triple bond. The fully saturated 4-carbon alkane, butane, has the formula C4H10 (using CnH(2n+2): 2(4)+2 = 10). Compared to butane, C4H6 has 10 - 6 = 4 fewer hydrogen atoms.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly applying the formula CnH(2n-2) with n = 4; 1 point for the correct molecular formula C4H6.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly classifying the compound as an alkyne; 1 point for correctly calculating 4 fewer hydrogen atoms than butane (C4H10), consistent with whatever formula the student found in part (a).",
+        "points": 2,
+        "allowsErrorCarriedForward": true
+      }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Use the general formula for a straight-chain alkyne, CnH(2n-2), the same way you'd use CnH(2n+2) for an alkane.",
+      "To compare with butane, first write butane's own formula using n = 4, then subtract."
+    ]
+  },
+  {
+    "id": "ic18-short-4",
+    "unitId": 18,
+    "kind": "short",
+    "points": 4,
+    "stem": "Two compounds, ethanol (CH3CH2OH) and dimethyl ether (CH3OCH3), both have the identical molecular formula C2H6O, but ethanol contains a hydroxyl (-OH) functional group while dimethyl ether contains an ether linkage (-O-) between two carbon groups, with no -OH group present.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Explain why ethanol and dimethyl ether are considered structural isomers of one another, even though they belong to entirely different classes of organic compound.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Predict which of the two compounds, ethanol or dimethyl ether, would be expected to have the higher boiling point, and briefly justify your answer in terms of hydrogen bonding.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) Structural isomers are defined only by sharing the same molecular formula while differing in how their atoms are connected; the definition does not require the two compounds to belong to the same functional class. Ethanol and dimethyl ether both have the formula C2H6O, but their atoms are connected differently (one has an O-H bond arranged as an alcohol, the other has two C-O bonds arranged as an ether), so they satisfy the definition of structural isomers despite being different classes of compound.\n\n(b) Ethanol is expected to have the higher boiling point. Ethanol's -OH group allows its molecules to form hydrogen bonds with neighboring ethanol molecules, a relatively strong intermolecular force that requires extra energy to overcome. Dimethyl ether has no hydrogen directly attached to its oxygen, so its molecules cannot hydrogen-bond with one another; its intermolecular forces are limited to weaker dipole-dipole and dispersion forces, giving it a lower boiling point than ethanol.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly stating the definition of structural isomers (same molecular formula, different connectivity); 1 point for correctly noting that this definition applies regardless of the functional class each isomer belongs to.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly predicting ethanol has the higher boiling point; 1 point for correctly justifying this using hydrogen bonding available to ethanol's -OH group but not to dimethyl ether.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Recall that the definition of a structural isomer is based only on molecular formula and atom connectivity, not on functional group class.",
+      "Think about which of the two structures has a hydrogen atom bonded directly to an oxygen atom — only that arrangement allows hydrogen bonding between molecules."
+    ]
+  },
+  {
+    "id": "ic18-long-3",
+    "unitId": 18,
+    "kind": "long",
+    "points": 10,
+    "stem": "Isopropanol (2-propanol, C3H8O, structure CH3-CH(OH)-CH3) is commonly used as rubbing alcohol. It undergoes complete combustion in excess oxygen gas to form carbon dioxide and water.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Identify the functional group present in isopropanol and confirm, using its structure, that its position on the carbon chain matches the '2-' in its name.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Write the balanced chemical equation for the complete combustion of isopropanol, C3H8O(l), in oxygen gas, producing only carbon dioxide and water.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(c)",
+        "prompt": "If 6.00 g of isopropanol (molar mass = 60.0 g/mol) undergoes complete combustion, calculate the number of moles of water produced.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(d)",
+        "prompt": "Isopropanol and 1-propanol (CH3CH2CH2OH) share the same molecular formula, C3H8O. State the relationship between these two compounds and explain, in one or two sentences, why they can undergo the same general type of combustion reaction despite having different structures.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) Isopropanol contains a hydroxyl group (-OH), classifying it as an alcohol. In its structure, CH3-CH(OH)-CH3, the -OH is attached to the middle (second) carbon of the three-carbon chain, matching the '2-' locant in 2-propanol.\n\n(b) Unbalanced skeleton: C3H8O + O2 -> CO2 + H2O. Balancing carbon: 3 CO2. Balancing hydrogen: 4 H2O (8 H atoms). Balancing oxygen: right side has 3(2) + 4(1) = 6 + 4 = 10 oxygen atoms; the left side already supplies 1 oxygen atom from isopropanol itself, so 9 more oxygen atoms are needed from O2, requiring 9/2 O2. Multiplying every coefficient by 2 to clear the fraction:\n\n2 C3H8O(l) + 9 O2(g) -> 6 CO2(g) + 8 H2O(g)\n\n(c) Moles of isopropanol = 6.00 g / 60.0 g/mol = 0.100 mol.\nFrom the balanced equation, the mole ratio of C3H8O to H2O is 2:8, which simplifies to 1:4.\nMoles of H2O = 0.100 mol x 4 = 0.400 mol.\n\n(d) Isopropanol and 1-propanol are structural isomers: they share the identical molecular formula, C3H8O, but differ in the position of the -OH group along the carbon chain. Both are alcohols with the same atoms in the same overall proportions, so both undergo complete combustion the same general way, reacting fully with oxygen to form carbon dioxide and water regardless of exactly where the -OH group sits on the chain.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly identifying the hydroxyl group (-OH) as the functional group, classifying isopropanol as an alcohol; 1 point for correctly explaining that the -OH is attached to the middle (second) carbon of the three-carbon chain, matching the '2-' locant.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly balancing carbon (3 CO2, or 6 with doubled coefficients); 1 point for correctly balancing hydrogen (4 H2O, or 8 with doubled coefficients); 1 point for the fully balanced whole-number equation 2 C3H8O + 9 O2 -> 6 CO2 + 8 H2O, correctly accounting for the oxygen atom already present in isopropanol.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly calculating moles of isopropanol = 0.100 mol; 1 point for correctly applying the mole ratio from the balanced equation (1 mol isopropanol : 4 mol H2O); 1 point for the correct final answer of 0.400 mol H2O, consistent with the balanced equation from part (b) even if that equation contained an error.",
+        "points": 3,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly identifying isopropanol and 1-propanol as structural isomers; 1 point for correctly explaining that sharing the same molecular formula and functional group allows both to undergo the same general combustion reaction.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Work out the combustion equation using an unbalanced skeleton first, balancing carbon, then hydrogen, then oxygen last, remembering isopropanol itself already contributes one oxygen atom.",
+      "For part (c), convert grams to moles of isopropanol first, then use the mole ratio between isopropanol and water directly from your balanced equation."
+    ]
+  },
+  {
+    "id": "ic18-long-4",
+    "unitId": 18,
+    "kind": "long",
+    "points": 10,
+    "stem": "A hydrocarbon compound Z has the molecular formula C4H8.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Determine the number of degrees of unsaturation in compound Z by comparing its formula to the fully saturated 4-carbon alkane, butane (C4H10), and state one possible structural feature (in terms of bonding) that would account for this degree of unsaturation.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(b)",
+        "prompt": "Assuming compound Z is the straight-chain alkene 1-butene (CH2=CH-CH2-CH3), write the equation for its reaction with bromine (Br2), and identify the type of reaction this represents.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(c)",
+        "prompt": "Write the balanced equation for the complete combustion of 1-butene, C4H8(g), in oxygen gas, producing carbon dioxide and water.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(d)",
+        "prompt": "If 4.20 g of 1-butene (molar mass = 56.0 g/mol) undergoes complete combustion, calculate the mass of water produced (molar mass of H2O = 18.0 g/mol).",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) Butane (C4H10) is the fully saturated 4-carbon alkane. Compound Z (C4H8) has 10 - 8 = 2 fewer hydrogen atoms, which corresponds to 1 degree of unsaturation (each degree of unsaturation removes 2 hydrogens). This could be accounted for by a single carbon-carbon double bond (making Z an alkene) or, alternatively, by a ring structure (a cycloalkane) instead of a double bond.\n\n(b) CH2=CH-CH2-CH3 + Br2 -> CH2Br-CHBr-CH2-CH3\nThis is an addition reaction: the Br2 molecule adds directly across the carbon-carbon double bond, converting it to a single bond with a bromine atom attached to each of the two carbons that were previously double-bonded.\n\n(c) Unbalanced skeleton: C4H8 + O2 -> CO2 + H2O. Balancing carbon: 4 CO2. Balancing hydrogen: 4 H2O. Balancing oxygen: right side has 4(2) + 4(1) = 8 + 4 = 12 oxygen atoms, requiring 6 O2.\n\nC4H8(g) + 6 O2(g) -> 4 CO2(g) + 4 H2O(g)\n\n(d) Moles of 1-butene = 4.20 g / 56.0 g/mol = 0.0750 mol.\nFrom the balanced equation, the mole ratio of C4H8 to H2O is 1:4.\nMoles of H2O = 0.0750 mol x 4 = 0.300 mol.\nMass of H2O = 0.300 mol x 18.0 g/mol = 5.40 g.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly calculating the hydrogen difference (10 - 8 = 2); 1 point for correctly determining this corresponds to 1 degree of unsaturation; 1 point for correctly naming a valid structural feature (a double bond or a ring) that would explain this.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for the correctly written addition product equation; 1 point for correctly showing bromine atoms added to both carbons that were previously double-bonded; 1 point for correctly identifying this as an addition reaction.",
+        "points": 3,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly balancing carbon and hydrogen (4 CO2 and 4 H2O); 1 point for the fully balanced equation C4H8 + 6 O2 -> 4 CO2 + 4 H2O with correctly balanced oxygen.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly calculating moles of 1-butene (0.0750 mol) and applying the correct mole ratio to find 0.300 mol H2O; 1 point for the correct final mass of 5.40 g H2O, consistent with the balanced equation from part (c) even if it contained an error.",
+        "points": 2,
+        "allowsErrorCarriedForward": true
+      }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Start part (a) by writing out butane's own formula (C4H10) so you can directly compare hydrogen counts.",
+      "For the stoichiometry parts, balance the equation first, then convert grams to moles before using any mole ratio."
+    ]
+  }
+]

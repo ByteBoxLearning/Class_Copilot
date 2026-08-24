@@ -1,0 +1,188 @@
+[
+  {
+    "id": "ic13-short-1",
+    "unitId": 13,
+    "kind": "short",
+    "points": 4,
+    "stem": "A student dissolves 17.0 g of sodium nitrate (NaNO3, molar mass = 85.0 g/mol) in enough water to make 250.0 mL of solution.",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the number of moles of NaNO3 dissolved.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Calculate the molarity of the resulting solution.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) moles = mass / molar mass = 17.0 g / 85.0 g/mol = 0.200 mol.\n\n(b) Molarity = moles of solute / liters of solution = 0.200 mol / 0.2500 L = 0.800 M.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for the correct formula (moles = mass/molar mass); 1 point for the correct value of 0.200 mol.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly applying M = moles/liters using the student's own moles from part (a); 1 point for a final molarity consistent with that value (0.800 M if part (a) was correct).", "points": 2, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": [
+      "Recall that moles = mass / molar mass.",
+      "Once you have moles, molarity = moles of solute / liters of solution (convert mL to L first)."
+    ]
+  },
+  {
+    "id": "ic13-short-2",
+    "unitId": 13,
+    "kind": "short",
+    "points": 4,
+    "stem": "A stock solution of hydrochloric acid (HCl) has a concentration of 6.00 M. A student wants to prepare 500.0 mL of a diluted 1.50 M HCl solution.",
+    "parts": [
+      { "label": "(a)", "prompt": "Using the dilution equation, calculate the volume of the 6.00 M stock solution needed.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Describe, in one or two sentences, how the student would safely prepare this dilute solution in the lab, starting with the volume calculated in part (a) and using a volumetric flask.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) M1V1 = M2V2. V1 = M2V2 / M1 = (1.50 M)(500.0 mL) / 6.00 M = 750/6.00 = 125 mL.\n\n(b) The student would measure out 125 mL of the 6.00 M stock HCl and carefully add it to a 500.0 mL volumetric flask that already contains some water (adding acid to water, never water to concentrated acid, for safety), then add distilled water up to the 500.0 mL calibration mark and mix thoroughly.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly setting up M1V1 = M2V2 with the given values; 1 point for the correct answer of 125 mL.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly describing measuring out the student's own volume of stock solution from part (a) and diluting it to the 500.0 mL mark in a volumetric flask; 1 point for correct safety/technique, specifically adding acid to water (not water to acid).", "points": 2, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Set up M1V1 = M2V2 and solve for V1.",
+      "For part (b), think about the safety rule for handling concentrated acids during dilution."
+    ]
+  },
+  {
+    "id": "ic13-long-1",
+    "unitId": 13,
+    "kind": "long",
+    "points": 10,
+    "stem": "A chemist dissolves 3.16 g of solid potassium permanganate (KMnO4, molar mass = 158.0 g/mol) in enough water to make exactly 200.0 mL of stock solution.",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the number of moles of KMnO4 used and the molarity of the stock solution.", "maxPoints": 4 },
+      { "label": "(b)", "prompt": "A student needs 100.0 mL of a more dilute 0.0400 M KMnO4 solution. Calculate the volume of the stock solution (from part (a)) that must be diluted to 100.0 mL to obtain this concentration.", "maxPoints": 3 },
+      { "label": "(c)", "prompt": "If the student accidentally uses only half of the calculated volume from part (b) but still dilutes it to a total of 100.0 mL, calculate the actual molarity of the resulting solution.", "maxPoints": 3 }
+    ],
+    "workedSolution": "(a) moles KMnO4 = 3.16 g / 158.0 g/mol = 0.0200 mol. Molarity = 0.0200 mol / 0.2000 L = 0.100 M.\n\n(b) M1V1 = M2V2. V1 = M2V2 / M1 = (0.0400 M)(100.0 mL) / 0.100 M = 4.00/0.100 = 40.0 mL of stock solution.\n\n(c) Half of 40.0 mL is 20.0 mL of stock solution, diluted to a total of 100.0 mL. New molarity = M1V1 / V2 = (0.100 M)(20.0 mL) / 100.0 mL = 2.00/100.0 = 0.0200 M.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for the correct moles calculation setup; 1 point for the correct value of 0.0200 mol; 1 point for the correct molarity formula; 1 point for the correct value of 0.100 M.", "points": 4, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly setting up the dilution equation using the student's own stock molarity from part (a); 1 point for correct algebra; 1 point for a final volume consistent with that molarity (40.0 mL if part (a) was correct).", "points": 3, "allowsErrorCarriedForward": true },
+      { "partLabel": "(c)", "criterion": "1 point for correctly identifying that half of the student's own part (b) volume was used; 1 point for correctly setting up the dilution calculation for the new molarity; 1 point for a final molarity consistent with the student's own prior values (0.0200 M if parts (a) and (b) were correct).", "points": 3, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Start by finding moles and molarity of the stock solution in part (a).",
+      "In part (c), remember only half of the calculated volume from part (b) is actually used, but it's still diluted to the same final total volume."
+    ]
+  },
+  {
+    "id": "ic13-long-2",
+    "unitId": 13,
+    "kind": "long",
+    "points": 10,
+    "stem": "A chemist dissolves 0.500 mol of a nonvolatile, non-electrolyte solute in 1.00 kg of water. The freezing-point depression constant for water is Kf = 1.86 degrees C/m, and pure water freezes at 0.00 degrees C.",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the molality of the solution.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Calculate the freezing-point depression (Delta Tf) and the actual freezing point of the solution.", "maxPoints": 3 },
+      { "label": "(c)", "prompt": "Suppose the same number of moles of solute were instead an ionic compound that fully dissociates into 3 ions per formula unit (such as Na2SO4) rather than a non-electrolyte. Explain how the freezing point of that solution would compare to your answer in part (b), and why.", "maxPoints": 2 },
+      { "label": "(d)", "prompt": "A student wants the original non-electrolyte solution to have a greater freezing-point depression without changing the amount or identity of the solute. Suggest one change to how the solution is prepared that would increase the freezing-point depression, and explain why it would work.", "maxPoints": 3 }
+    ],
+    "workedSolution": "(a) molality = mol solute / kg solvent = 0.500 mol / 1.00 kg = 0.500 m.\n\n(b) Delta Tf = Kf x m = (1.86 degrees C/m)(0.500 m) = 0.930 degrees C. Freezing point = 0.00 - 0.930 = -0.930 degrees C.\n\n(c) Freezing-point depression is a colligative property that depends on the total number (and identity's dissociation behavior) of dissolved particles, not on the number of formula units alone. An ionic compound that dissociates into 3 ions per formula unit would produce 3 times as many dissolved particles for the same moles of compound, so Delta Tf would be roughly 3 times as large (about 1.86 x 1.50 = 2.79 degrees C), giving a much lower (more negative) freezing point than the -0.930 degrees C found in part (b).\n\n(d) Dissolving the same 0.500 mol of solute in a smaller mass of water would increase the molality (mol solute / kg solvent). Since Delta Tf = Kf x m, a higher molality directly produces a larger freezing-point depression.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for the correct molality formula; 1 point for the correct value of 0.500 m.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly setting up Delta Tf = Kf x m using the student's own molality from part (a); 1 point for the correct Delta Tf value consistent with that molality; 1 point for correctly subtracting from 0.00 degrees C to get the actual freezing point.", "points": 3, "allowsErrorCarriedForward": true },
+      { "partLabel": "(c)", "criterion": "1 point for recognizing that colligative properties depend on the total number of dissolved particles (so the dissociating ionic compound produces about 3 times as many particles); 1 point for correctly concluding the freezing point would be lower (more negative) than the student's own answer from part (b) by roughly a factor of 3.", "points": 2, "allowsErrorCarriedForward": true },
+      { "partLabel": "(d)", "criterion": "1 point for proposing a valid change, such as using less water (smaller solvent mass); 1 point for correctly reasoning that this increases the molality; 1 point for correctly reasoning that increased molality produces a greater freezing-point depression via Delta Tf = Kf x m.", "points": 3, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Use Delta Tf = Kf x m for parts (a) and (b).",
+      "For part (c), think about how many ions per formula unit a compound like Na2SO4 produces, and how that affects the total number of dissolved particles."
+    ]
+  },
+  {
+    "id": "ic13-short-3",
+    "unitId": 13,
+    "kind": "short",
+    "points": 4,
+    "stem": "A solution is prepared by dissolving 45.0 g of sucrose (C12H22O11, molar mass = 342.0 g/mol) in 500.0 g of water.",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the number of moles of sucrose dissolved.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Calculate the molality of the resulting solution.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) moles = mass / molar mass = 45.0 g / 342.0 g/mol = 0.132 mol.\n\n(b) molality = moles of solute / kg of solvent = 0.132 mol / 0.500 kg = 0.263 m.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for the correct formula (moles = mass/molar mass); 1 point for the correct value of 0.132 mol.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly applying molality = moles/kg solvent using the student's own moles from part (a); 1 point for a final molality consistent with that value (0.263 m if part (a) was correct).", "points": 2, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": [
+      "Divide the mass of sucrose by its molar mass to find moles.",
+      "Molality divides moles of solute by kilograms (not grams) of solvent."
+    ]
+  },
+  {
+    "id": "ic13-short-4",
+    "unitId": 13,
+    "kind": "short",
+    "points": 4,
+    "stem": "A solution is prepared by dissolving 2.00 mol of a nonvolatile, non-electrolyte solute in 4.00 kg of water. The boiling-point elevation constant for water is Kb = 0.512 degrees C/m, and pure water boils at 100.00 degrees C at 1 atm.",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the molality of the solution.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Calculate the boiling-point elevation (Delta Tb) and the actual boiling point of the solution.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) molality = mol solute / kg solvent = 2.00 mol / 4.00 kg = 0.500 m.\n\n(b) Delta Tb = Kb x m = (0.512 degrees C/m)(0.500 m) = 0.256 degrees C. Boiling point = 100.00 + 0.256 = 100.26 degrees C.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for the correct molality formula; 1 point for the correct value of 0.500 m.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly setting up Delta Tb = Kb x m using the student's own molality from part (a); 1 point for a final boiling point consistent with that molality (100.26 degrees C if part (a) was correct).", "points": 2, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "First calculate the molality using the given moles and kilograms of solvent.",
+      "Boiling point elevation: Delta Tb = Kb x m. Add this to water's normal boiling point of 100.00 degrees C."
+    ]
+  },
+  {
+    "id": "ic13-long-3",
+    "unitId": 13,
+    "kind": "long",
+    "points": 10,
+    "stem": "A stock solution of nitric acid (HNO3, molar mass = 63.0 g/mol) is 68.0% HNO3 by mass and has a density of 1.42 g/mL.",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the molarity of the concentrated stock solution.", "maxPoints": 4 },
+      { "label": "(b)", "prompt": "A student wants to prepare 250.0 mL of a 2.00 M dilute HNO3 solution from this stock. Calculate the volume of stock solution required.", "maxPoints": 3 },
+      { "label": "(c)", "prompt": "Explain why, when preparing this dilution, the concentrated acid should be added to water rather than water added to the concentrated acid.", "maxPoints": 3 }
+    ],
+    "workedSolution": "(a) Assume 1.00 L (1000 mL) of stock solution. Total mass = 1000 mL x 1.42 g/mL = 1420 g. Mass of HNO3 = 0.680 x 1420 g = 965.6 g. Moles of HNO3 = 965.6 g / 63.0 g/mol = 15.3 mol. Since this is the amount in 1.00 L, the molarity is 15.3 M.\n\n(b) M1V1 = M2V2. V1 = M2V2 / M1 = (2.00 M)(250.0 mL) / 15.3 M = 500/15.3 = 32.7 mL.\n\n(c) Diluting concentrated acid is highly exothermic. Adding acid to a larger volume of water allows the heat released to be absorbed and dissipated by the water. If water is instead added to concentrated acid, the heat released is concentrated in a small volume of liquid, which can cause the mixture to boil violently and spatter concentrated acid, posing a serious safety hazard.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for assuming a convenient volume (such as 1.00 L) and using the density to find the total mass; 1 point for correctly applying the mass percent to find the mass of HNO3; 1 point for correctly converting to moles; 1 point for the correct final molarity of 15.3 M.", "points": 4, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly setting up M1V1 = M2V2 using the student's own stock molarity from part (a); 1 point for correct algebra; 1 point for a final volume consistent with that molarity (32.7 mL if part (a) was correct).", "points": 3, "allowsErrorCarriedForward": true },
+      { "partLabel": "(c)", "criterion": "1 point for correctly stating the order should be acid added to water (not the reverse); 1 point for explaining that dilution of concentrated acid is exothermic (releases heat); 1 point for explaining the danger of adding water to concentrated acid, namely violent boiling/spattering.", "points": 3, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "To find the stock solution's molarity, assume a convenient volume like 1.00 L and use the density to find the total mass, then apply the mass percent.",
+      "For part (b), use your own calculated stock molarity in the dilution equation M1V1 = M2V2."
+    ]
+  },
+  {
+    "id": "ic13-long-4",
+    "unitId": 13,
+    "kind": "long",
+    "points": 10,
+    "stem": "A chemist dissolves 5.00 g of an unknown nonvolatile, non-electrolyte solute in 100.0 g of water. The resulting solution freezes at -1.395 degrees C. Pure water freezes at 0.000 degrees C, and Kf for water is 1.86 degrees C/m.",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the freezing-point depression, Delta Tf, and use it to calculate the molality of the solution.", "maxPoints": 3 },
+      { "label": "(b)", "prompt": "Use the molality from part (a) to calculate the number of moles of solute dissolved.", "maxPoints": 3 },
+      { "label": "(c)", "prompt": "Calculate the molar mass of the unknown solute.", "maxPoints": 4 }
+    ],
+    "workedSolution": "(a) Delta Tf = 0.000 - (-1.395) = 1.395 degrees C. Molality = Delta Tf / Kf = 1.395 / 1.86 = 0.750 m.\n\n(b) moles of solute = molality x kg of solvent = 0.750 m x 0.1000 kg = 0.0750 mol.\n\n(c) molar mass = mass / moles = 5.00 g / 0.0750 mol = 66.7 g/mol.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly calculating Delta Tf = 1.395 degrees C; 1 point for the correct formula m = Delta Tf / Kf; 1 point for the correct value of 0.750 m.", "points": 3, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for the correct formula (moles = molality x kg solvent); 1 point for correctly converting the water's mass to kilograms; 1 point for a final moles value consistent with the student's own part (a) molality (0.0750 mol if part (a) was correct).", "points": 3, "allowsErrorCarriedForward": true },
+      { "partLabel": "(c)", "criterion": "1 point for the correct formula (molar mass = mass/moles); 1 point for correctly substituting the student's own moles from part (b); 1 point for correct arithmetic; 1 point for a final molar mass consistent with those values (66.7 g/mol if parts (a) and (b) were correct).", "points": 4, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "First find Delta Tf, then use Delta Tf = Kf x m to find molality.",
+      "Chain the formulas together: molality gives moles (using kg of water), and moles combined with the given mass gives molar mass."
+    ]
+  }
+]

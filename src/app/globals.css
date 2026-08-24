@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* A warm iris/violet identity, replacing the unstyled shadcn default
+     navy — chosen to stay clear of the semantic mastery-level colors
+     (red/amber/sky/emerald, see BADGE_COLORS in src/lib/enums.ts) so the
+     brand accent never gets confused with a status signal. */
+  --background: 255 45% 98%;
+  --foreground: 258 30% 14%;
+  --card: 0 0% 100%;
+  --card-foreground: 258 30% 14%;
+  --primary: 258 82% 58%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 255 35% 95%;
+  --secondary-foreground: 258 30% 22%;
+  --muted: 255 30% 96%;
+  --muted-foreground: 255 12% 46%;
+  --accent: 255 55% 96%;
+  --accent-foreground: 258 40% 24%;
+  --border: 255 25% 90%;
+  --input: 255 25% 88%;
+  --ring: 258 82% 58%;
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: 258 30% 9%;
+  --foreground: 255 25% 94%;
+  --card: 258 25% 12%;
+  --card-foreground: 255 25% 94%;
+  --primary: 258 85% 66%;
+  --primary-foreground: 258 40% 10%;
+  --secondary: 258 20% 18%;
+  --secondary-foreground: 255 25% 90%;
+  --muted: 258 20% 16%;
+  --muted-foreground: 255 12% 65%;
+  --accent: 258 25% 20%;
+  --accent-foreground: 255 25% 92%;
+  --border: 258 20% 22%;
+  --input: 258 20% 24%;
+  --ring: 258 85% 66%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Thin, unobtrusive scrollbars for the data tables */
+.scrollbar-thin::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 4px;
+}
+
+/* Digits line up in columns wherever grades/percentages/counts are shown. */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,410 @@
+[
+  {
+    "id": "ic19-short-1",
+    "unitId": 19,
+    "kind": "short",
+    "points": 4,
+    "stem": "Glucose (C6H12O6) is a simple sugar found in many foods and is used by cells as a source of energy.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Identify the class of biomolecule (carbohydrate, lipid, protein, or nucleic acid) that glucose belongs to, and state whether an individual glucose molecule is a monomer or a polymer.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Name the type of large biological polymer formed when many glucose monomers are linked together (as in starch or cellulose), and identify the general type of reaction (condensation/dehydration synthesis, or hydrolysis) used to join glucose monomers together.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) Glucose is a carbohydrate. An individual glucose molecule is a monomer (specifically, a monosaccharide, or single sugar unit); it is not itself a polymer.\n\n(b) When many glucose monomers are linked together into a long chain, the resulting polymer is called a polysaccharide (examples include starch, cellulose, and glycogen). Glucose monomers are joined together through a condensation reaction (also called a dehydration synthesis reaction), in which a water molecule is released each time a new bond is formed between two monomers.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly identifying glucose as a carbohydrate; 1 point for correctly stating that glucose is a monomer (monosaccharide), not a polymer.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly naming the polymer a polysaccharide (or naming a specific valid example, e.g. starch/cellulose/glycogen); 1 point for correctly identifying condensation/dehydration synthesis as the reaction type that joins the monomers.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": [
+      "Think about whether glucose itself is a single building-block unit or a large chain made of many units.",
+      "Recall the general term for a reaction that joins monomers together while releasing water."
+    ]
+  },
+  {
+    "id": "ic19-short-2",
+    "unitId": 19,
+    "kind": "short",
+    "points": 4,
+    "stem": "Proteins are polymers built from monomer units called amino acids, which are joined together end-to-end by peptide bonds to form a single chain.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Describe the general type of chemical reaction that forms a peptide bond between two amino acids, and state what small molecule is released as a byproduct of this reaction.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "A particular protein is a single, unbranched chain made from 150 amino acid monomers joined end-to-end. Determine the number of peptide bonds formed in this chain and the number of small byproduct molecules released in forming it, and explain your reasoning.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) A peptide bond is formed by a condensation reaction (dehydration synthesis), in which the carboxyl group of one amino acid reacts with the amino group of the next amino acid; one water molecule (H2O) is released as a byproduct for every peptide bond formed.\n\n(b) For a single, unbranched chain of n monomers joined end-to-end, only n - 1 bonds are needed to connect them all in a row (each bond connects one pair of adjacent monomers). With n = 150 amino acids, the number of peptide bonds formed = 150 - 1 = 149 peptide bonds. Since one water molecule is released per peptide bond formed (from part (a)), the number of water molecules released = 149.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly identifying peptide bond formation as a condensation/dehydration synthesis reaction; 1 point for correctly identifying water (H2O) as the byproduct released.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly determining 149 peptide bonds (n - 1 for n = 150 monomers in a single chain), with reasoning shown; 1 point for correctly determining 149 water molecules released, consistent with the byproduct identified in part (a) (i.e., one water molecule per bond).",
+        "points": 2,
+        "allowsErrorCarriedForward": true
+      }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Remember that joining two amino acids by a condensation reaction releases one small molecule as a byproduct.",
+      "For part (b), think about how many bonds are needed to connect 150 units into a single unbranched row — it's not the same as the number of units."
+    ]
+  },
+  {
+    "id": "ic19-long-1",
+    "unitId": 19,
+    "kind": "long",
+    "points": 10,
+    "stem": "A double-stranded segment of DNA contains 4,000 total nucleotides. Chemical analysis shows that 30% of the nucleotides in this segment contain the base adenine (A).",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Using the base-pairing rule that adenine (A) always pairs with thymine (T) across the two DNA strands, determine the percentage of nucleotides in this segment that contain thymine, and briefly explain why this percentage must be true.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Determine the percentage of nucleotides that contain guanine (G) and the percentage that contain cytosine (C), showing your reasoning.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(c)",
+        "prompt": "Calculate the actual number of nucleotides in this 4,000-nucleotide segment that contain each of the four bases: adenine, thymine, guanine, and cytosine.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(d)",
+        "prompt": "One strand of this DNA segment has the base sequence A-T-G-C (read in order). Write the base sequence of the complementary strand that pairs with it, base by base, in the same left-to-right order.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) Because adenine (A) on one strand always pairs with thymine (T) on the opposite strand (and vice versa), the total number of A bases in a double-stranded DNA molecule must equal the total number of T bases. Since 30% of the nucleotides are A, the percentage of T must also be 30%.\n\n(b) The four bases must account for 100% of the nucleotides: %A + %T + %G + %C = 100%. Since %A = %T = 30%, together A and T account for 60%, leaving 100% - 60% = 40% for G and C combined. Because guanine (G) always pairs with cytosine (C), the number of G bases must equal the number of C bases, so this remaining 40% is split evenly: %G = 20% and %C = 20%.\n\n(c) Total nucleotides = 4,000.\nNumber of A = 30% x 4,000 = 1,200.\nNumber of T = 30% x 4,000 = 1,200.\nNumber of G = 20% x 4,000 = 800.\nNumber of C = 20% x 4,000 = 800.\nCheck: 1,200 + 1,200 + 800 + 800 = 4,000, which matches the total.\n\n(d) Applying the base-pairing rule (A pairs with T, and G pairs with C) to each base in the given strand, reading directly across:\nA pairs with T\nT pairs with A\nG pairs with C\nC pairs with G\nSo the complementary strand reads: T-A-C-G.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly stating that %T = 30%; 1 point for a correct explanation based on A always pairing with T (so the total amounts of A and T must be equal).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly finding that %G + %C = 40% (using 100% minus %A and %T); 1 point for correctly applying the G-C pairing rule to split this evenly; 1 point for the correct final values %G = 20% and %C = 20%. Award credit consistent with the %T value found in part (a), even if that value was incorrect.",
+        "points": 3,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly calculating 1,200 nucleotides each for A and T; 1 point for correctly calculating 800 nucleotides each for G and C; 1 point for correctly checking/confirming that all four counts sum to 4,000. Award credit consistent with the percentages found in parts (a) and (b), even if those percentages were incorrect.",
+        "points": 3,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly applying the A-T and G-C pairing rules to each base individually; 1 point for the correct complementary sequence T-A-C-G.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Use the fact that %A = %T and %G = %C in double-stranded DNA to fill in the percentages step by step.",
+      "For part (c), convert your percentages to actual counts by multiplying each by the 4,000 total nucleotides."
+    ]
+  },
+  {
+    "id": "ic19-long-2",
+    "unitId": 19,
+    "kind": "long",
+    "points": 10,
+    "stem": "Triglycerides (fats and oils) are lipids formed from one glycerol molecule and three fatty acid molecules joined together by condensation reactions. Separately, enzymes are protein molecules that speed up (catalyze) biochemical reactions occurring in living cells.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "State the type of reaction used to (i) join glycerol and fatty acids together to form a triglyceride, and (ii) break a triglyceride back down into glycerol and fatty acids during digestion. In each case, identify the small molecule (water) involved and whether it is released or consumed.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Describe the structural difference, in terms of carbon-carbon bonding, between a saturated fatty acid and an unsaturated fatty acid, and state which type is generally solid at room temperature.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(c)",
+        "prompt": "Explain, in terms of activation energy, how an enzyme increases the rate of a biochemical reaction without itself being permanently consumed or changed by the reaction.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(d)",
+        "prompt": "A particular digestive enzyme binds to and breaks down starch molecules, but has no effect at all on protein or lipid molecules, even though all three types of molecules are present together in the digestive tract. Use the lock-and-key model of enzyme action to explain this specificity.",
+        "maxPoints": 3
+      }
+    ],
+    "workedSolution": "(a) Forming a triglyceride from glycerol and three fatty acids is a condensation (dehydration synthesis) reaction; one water molecule is released for each of the three bonds formed between glycerol and a fatty acid. Breaking a triglyceride back down into glycerol and fatty acids (digestion) is a hydrolysis reaction; water molecules are consumed (added across each bond) to break the triglyceride apart.\n\n(b) A saturated fatty acid contains only single (C-C) bonds along its hydrocarbon tail, with no carbon-carbon double bonds; this allows the straight chains to pack closely together, so saturated fats are generally solid at room temperature. An unsaturated fatty acid contains one or more carbon-carbon double bonds, which create a bend or kink in the chain; this prevents the molecules from packing as tightly, so unsaturated fats are generally liquid (oils) at room temperature.\n\n(c) Enzymes act as biological catalysts by lowering the activation energy needed for a reaction to proceed — the energy barrier that must be overcome for reactants to be converted into products. By providing an alternative reaction pathway with a lower activation energy (through binding the substrate at its active site in a favorable orientation), the enzyme allows the reaction to occur much more quickly at normal body temperature. The enzyme itself is not permanently changed: it binds the substrate, helps convert it to product, releases the product unchanged, and its own structure is restored so that it can be used again in another reaction cycle.\n\n(d) According to the lock-and-key model, an enzyme's active site has a specific three-dimensional shape that is complementary to (fits like a lock and key with) the shape of only one particular type of substrate molecule — in this case, starch. Protein and lipid molecules have different molecular shapes than starch, so they do not fit into this enzyme's active site and cannot bind to it. Because binding at the active site is required before the enzyme can act on a substrate, the enzyme has no effect on protein or lipid molecules, explaining its specificity for starch alone.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly identifying triglyceride formation as a condensation/dehydration synthesis reaction that releases water; 1 point for correctly identifying triglyceride breakdown (digestion) as a hydrolysis reaction that consumes water.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly describing saturated fatty acids as having only single C-C bonds (no double bonds) that pack tightly and are generally solid at room temperature; 1 point for correctly describing unsaturated fatty acids as having one or more C=C double bonds that create kinks and are generally liquid at room temperature.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly stating that enzymes lower the activation energy of the reaction; 1 point for connecting this lowered activation energy to a faster reaction rate; 1 point for explaining that the enzyme is not consumed/permanently changed, being released unchanged and able to be reused.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly describing the lock-and-key model (an active site with a shape specific to one substrate); 1 point for correctly stating that protein and lipid molecules have shapes that do not fit this enzyme's active site; 1 point for correctly connecting this lack of binding to the observed lack of activity on protein and lipids.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Treat parts (a) and (b) as review of vocabulary you already know for lipids, then focus your effort on the enzyme mechanism questions.",
+      "For part (d), think about what physical property (shape) determines whether a substrate can bind to a given enzyme's active site."
+    ]
+  },
+  {
+    "id": "ic19-short-3",
+    "unitId": 19,
+    "kind": "short",
+    "points": 4,
+    "stem": "RNA (ribonucleic acid) and DNA (deoxyribonucleic acid) are both nucleic acids built from repeating nucleotide monomers, but they differ in several key structural features.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Identify one difference in the type of sugar found in RNA nucleotides compared to DNA nucleotides, and one difference in the nitrogenous bases used by RNA compared to DNA.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "State whether RNA is typically single-stranded or double-stranded, and explain how this differs from the typical structure of DNA.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) RNA nucleotides contain the sugar ribose, while DNA nucleotides contain deoxyribose. In terms of bases, RNA uses uracil in place of the thymine found in DNA (RNA's bases are adenine, guanine, cytosine, and uracil, while DNA's bases are adenine, guanine, cytosine, and thymine).\n\n(b) RNA is typically single-stranded, consisting of just one nucleotide chain. This differs from DNA, which is typically double-stranded, forming a double helix in which two complementary nucleotide strands are wound around each other and held together by base pairing.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly identifying the sugar difference (ribose in RNA vs. deoxyribose in DNA); 1 point for correctly identifying the base difference (uracil in RNA in place of thymine in DNA).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly stating RNA is typically single-stranded; 1 point for correctly contrasting this with DNA's typical double-stranded (double helix) structure.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": [
+      "Think about the two structural features already covered for DNA and RNA: what sugar each contains, and which base replaces which.",
+      "Recall how many strands each type of nucleic acid typically has."
+    ]
+  },
+  {
+    "id": "ic19-short-4",
+    "unitId": 19,
+    "kind": "short",
+    "points": 4,
+    "stem": "A digestive enzyme found in the stomach works optimally at a very low (acidic) pH of about 2. When the same enzyme is placed in a neutral solution at pH 7, its reaction rate drops drastically.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Explain, in terms of enzyme structure, why a change in pH away from an enzyme's optimum can reduce its activity.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Predict what would happen to this stomach enzyme's activity if the pH were raised even further, to a strongly basic pH of 10, and state whether you would expect this change to be reversible or irreversible if the enzyme is exposed only briefly before being returned to pH 2.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) An enzyme's activity depends on maintaining a specific three-dimensional shape, including the precise shape of its active site. Changes in pH alter the ionization (charge) of amino acid side chains throughout the protein, including those that help hold the folded structure together; away from the enzyme's optimum pH, these altered charges can disrupt the interactions maintaining the protein's shape, changing the active site's shape and reducing how well the substrate can bind, which lowers the reaction rate.\n\n(b) At pH 10, far from the enzyme's optimum of pH 2, the enzyme's activity would be expected to drop even further, likely close to zero, since the shape distortion would generally be more severe at a pH further from the optimum. If the exposure to pH 10 is brief and mild enough that the enzyme is not permanently denatured, this loss of activity would be reversible: returning the enzyme to pH 2 could allow it to refold correctly and regain its normal activity.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly connecting pH changes to altered charges/ionization on the protein's amino acid side chains; 1 point for correctly explaining that this can distort the enzyme's shape/active site and reduce substrate binding or activity.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly predicting further reduced (or near-zero) activity at pH 10; 1 point for a reasonable, well-justified statement about reversibility, accepting either reversible-if-brief-and-mild or irreversible-if-severe, provided the reasoning given is chemically sound.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Think about what pH changes do to the charges on amino acid side chains, and how that could affect a folded protein's shape.",
+      "Compare this scenario to what happens to an enzyme exposed to extreme heat — is the shape change always guaranteed to be permanent?"
+    ]
+  },
+  {
+    "id": "ic19-long-3",
+    "unitId": 19,
+    "kind": "long",
+    "points": 10,
+    "stem": "Starch is a polysaccharide formed from many glucose monomers linked together in a long, unbranched chain by glycosidic bonds, formed through condensation reactions. In the human digestive system, the enzyme amylase catalyzes the reverse reaction, hydrolyzing starch back down into individual glucose monomers.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Describe the general type of reaction (condensation or hydrolysis) that occurs when starch is broken down into individual glucose monomers by amylase, and state whether water is consumed or released in this reaction.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "A particular starch molecule is a single, unbranched chain of 500 glucose monomers. Determine the number of glycosidic bonds present in this chain, and the number of water molecules required to completely hydrolyze it into 500 individual glucose monomers.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(c)",
+        "prompt": "Explain why amylase is able to break down starch efficiently but has essentially no effect on a protein molecule present in the same digestive environment, using the lock-and-key model of enzyme specificity.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(d)",
+        "prompt": "State one structural difference between starch and cellulose (both polysaccharides made entirely of glucose monomers) that explains why humans can digest starch using amylase but cannot digest cellulose.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) The breakdown of starch into glucose monomers by amylase is a hydrolysis reaction; water molecules are consumed (added across each glycosidic bond) in order to break the chain apart into individual monomers.\n\n(b) For a single, unbranched chain of n monomers, there are n - 1 bonds connecting them. With n = 500 glucose monomers, the number of glycosidic bonds = 500 - 1 = 499. Since one water molecule is consumed to hydrolyze each glycosidic bond, the number of water molecules required to fully hydrolyze the chain into 500 individual glucose monomers = 499.\n\n(c) According to the lock-and-key model, amylase's active site has a three-dimensional shape that is specifically complementary to the glycosidic bond linkage found between glucose units in starch. A protein molecule, being made of a completely different type of monomer (amino acids) joined by peptide bonds, has a different molecular shape that does not fit into amylase's active site. Because binding at the active site is required before an enzyme can act on a substrate, amylase cannot bind to or break down the protein, explaining its lack of effect there.\n\n(d) Although both starch and cellulose are polysaccharides made entirely of glucose monomers, they differ in the type of glycosidic bond linking the glucose units: starch is held together by alpha-glycosidic bonds, while cellulose is held together by beta-glycosidic bonds. Human digestive enzymes such as amylase are shaped to fit and break only the alpha linkages in starch; they cannot bind to or break the differently shaped beta linkages in cellulose, so humans cannot digest cellulose (it passes through the digestive system as dietary fiber).",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly identifying this as a hydrolysis reaction; 1 point for correctly stating that water is consumed in this reaction.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly determining 499 glycosidic bonds using n - 1 for n = 500 monomers, with reasoning shown; 1 point for correctly recognizing one water molecule is needed per bond broken; 1 point for the correct final answer of 499 water molecules, consistent with the reaction type identified in part (a).",
+        "points": 3,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly describing the lock-and-key model (an active site with a shape specific to one type of substrate/bond); 1 point for correctly noting that a protein's different monomers/shape do not fit amylase's active site; 1 point for correctly connecting this lack of binding to amylase's lack of effect on protein.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly identifying the alpha- versus beta-glycosidic bond difference between starch and cellulose; 1 point for correctly connecting this to why human enzymes can digest starch (alpha linkages) but not cellulose (beta linkages).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "For part (b), remember that a chain of n monomers linked end-to-end has only n - 1 connecting bonds, and hydrolysis breaks one bond per water molecule consumed.",
+      "For parts (c) and (d), think about what physical/structural feature (the shape of the bond or molecule) determines whether an enzyme can bind and act on a given substrate."
+    ]
+  },
+  {
+    "id": "ic19-long-4",
+    "unitId": 19,
+    "kind": "long",
+    "points": 10,
+    "stem": "A protein is built from a specific linear sequence of amino acids joined by peptide bonds. This linear sequence then folds into more complex three-dimensional shapes, which are essential for the protein to function properly.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Name the level of protein structure that refers simply to the linear sequence of amino acids in the chain, and the level of protein structure that refers to the overall, specific three-dimensional shape formed by folding of a single polypeptide chain.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Some proteins are made of two or more separate polypeptide chains that must associate together to form the final, functional protein. Name the level of protein structure that describes this arrangement of multiple polypeptide chains, and explain what distinguishes it from the level of structure described in part (a) for a single chain.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(c)",
+        "prompt": "Explain, using the term 'denaturation,' what happens to a protein's three-dimensional structure when it is exposed to high heat or extreme pH, and state what typically happens to the protein's biological function as a result.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(d)",
+        "prompt": "Changing just one single amino acid in a very long protein chain (out of hundreds of amino acids) can sometimes completely destroy that protein's function, while changing a different single amino acid elsewhere in the same chain might have almost no effect at all. Propose one reasonable explanation for why the position of the changed amino acid matters so much.",
+        "maxPoints": 3
+      }
+    ],
+    "workedSolution": "(a) The linear sequence of amino acids in the chain is called the protein's primary structure. The overall, specific three-dimensional shape formed by the folding of a single polypeptide chain is called its tertiary structure.\n\n(b) The arrangement of two or more separate polypeptide chains associating together to form the final functional protein is called quaternary structure. This differs from tertiary structure because tertiary structure describes the folded shape of a single chain, while quaternary structure describes how multiple already-folded chains (subunits) come together and interact as one larger functional unit.\n\n(c) Denaturation is the loss of a protein's normal three-dimensional shape (its secondary, tertiary, and/or quaternary structure), caused by disruption of the weak interactions that hold the folded structure together, without breaking the primary sequence of peptide bonds itself. High heat or extreme pH can supply enough energy or disrupt enough of these interactions to unfold the protein. As a result, the protein typically loses its normal biological function, because that function depended on the protein's specific folded shape.\n\n(d) One reasonable explanation is that an amino acid located at or near the protein's active site, or another functionally critical region such as a site required for correct folding, is far more important to the protein's shape and function than an amino acid located in a less critical region of the chain. Changing a critical amino acid can directly disrupt the active site's shape or destabilize the protein's overall fold, destroying function, while changing a non-critical amino acid elsewhere may not meaningfully affect the folded shape or function at all.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly naming primary structure for the linear amino acid sequence; 1 point for correctly naming tertiary structure for the overall 3D shape of a single folded chain.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly naming quaternary structure; 1 point for correctly explaining that it specifically involves the association of multiple separate polypeptide chains, as distinct from the single-chain folding described in part (a).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly defining denaturation as the loss/unfolding of a protein's 3D structure without breaking the primary peptide sequence; 1 point for correctly attributing this to disruption of the weak interactions maintaining the folded shape, caused by heat or extreme pH; 1 point for correctly stating that the protein typically loses its biological function as a result.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for identifying that amino acids differ in functional importance depending on their location (e.g., active site/critical region versus non-critical region); 1 point for connecting a change at a critical location to disruption of the active site's shape or protein folding and function; 1 point for a coherent explanation of why a change at a non-critical location would have little effect. Award full credit for other well-reasoned, chemically sound explanations of this location-dependent sensitivity.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Recall the four levels of protein structure in order: primary (sequence), secondary, tertiary (single-chain 3D shape), and quaternary (multiple chains).",
+      "For part (d), think about whether every amino acid in a long chain plays an equally important structural or functional role, or whether some locations matter much more than others."
+    ]
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "id": "u2-frq-long-1",
+    "unitId": 2,
+    "kind": "long",
+    "points": 10,
+    "stem": "A chemist is comparing two compounds: potassium oxide (K2O), an ionic solid, and sulfur dioxide (SO2), a molecular gas at room temperature. K2O has a melting point of about 740 degrees C, while SO2 has a melting point of about -72 degrees C.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Draw the best Lewis structure for SO2, including any resonance structure(s) needed, and calculate the formal charge on each atom. Show your work for the formal charge calculations.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(b)",
+        "prompt": "Use VSEPR theory to determine the electron-domain geometry and molecular geometry around the S atom in SO2, and identify the hybridization of the S atom.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(c)",
+        "prompt": "Using particle-level reasoning about the type(s) of bonding and/or intermolecular forces present in each substance, explain why K2O has a much higher melting point than SO2.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(d)",
+        "prompt": "Predict whether the magnitude of the lattice energy of sodium oxide (Na2O) is greater than, less than, or equal to the magnitude of the lattice energy of K2O. Justify your prediction in terms of the particles present in each compound.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) SO2 has 6 (S) + 6(2) (O) = 18 valence electrons. A Lewis structure obeying the octet rule places S in the center bonded to each O, with one S=O double bond and one S-O single bond, and one lone pair on S. The doubly-bonded O has 2 lone pairs and the singly-bonded O has 3 lone pairs (total electrons: 6 bonding + 12 lone = 18, confirmed). Formal charge = valence electrons - nonbonding electrons - 1/2(bonding electrons). For S: 6 - 2 - 1/2(6) = +1. For the doubly-bonded O: 6 - 4 - 1/2(4) = 0. For the singly-bonded O: 6 - 6 - 1/2(2) = -1. These formal charges sum to 0, consistent with the neutral molecule. Because the double bond could equally well be drawn to either oxygen atom, SO2 is best described as a resonance hybrid of two equivalent structures (double bond swapped between the two O atoms), with both S-O bonds actually equal in length, intermediate between a single and double bond.\n(b) Around the central S atom there are 3 electron domains: 2 bonding domains (one to each O, regardless of bond order, since each connection to an O counts as one domain) and 1 lone pair. Three electron domains give a trigonal planar electron-domain geometry. Because one domain is a lone pair, the molecular geometry (positions of atoms only) is bent/angular, with a bond angle slightly less than 120 degrees (about 119 degrees) due to greater lone pair-bonding pair repulsion. Three electron domains correspond to sp2 hybridization on S.\n(c) K2O is an ionic solid: it consists of a rigid three-dimensional lattice of K^+ and O^2- ions held together by strong electrostatic (ionic) attractions extending throughout the entire crystal. Melting K2O requires disrupting this extensive network of strong ionic bonds throughout the solid, which requires a large amount of energy. SO2, in contrast, exists as discrete, individual covalent molecules; melting (or subliming/boiling) SO2 does not break any covalent S-O bonds, but only requires overcoming the much weaker intermolecular forces between separate SO2 molecules (dipole-dipole attractions and London dispersion forces, since SO2 is a bent, polar molecule). Because intermolecular forces between molecules are far weaker than the ionic bonding holding together an ionic lattice, SO2 melts at a much lower temperature than K2O.\n(d) The magnitude of the lattice energy of Na2O is expected to be greater than that of K2O. Both compounds have ions with the same charges (+1 for the alkali metal cation, -2 for oxide), so the charge product is the same in both cases. However, Na^+ has a smaller ionic radius than K^+, so the Na-O interionic distance in Na2O is shorter than the K-O interionic distance in K2O. By Coulomb's law, a shorter distance between oppositely charged ions produces a stronger electrostatic attraction, so Na2O has the larger lattice energy magnitude of the two.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for a Lewis structure with the correct total of 18 valence electrons, S as the central atom bonded to both O atoms, and all atoms with satisfied (or correctly expanded, if used) octets. 1 point for correctly showing/describing resonance (the double bond can be placed on either O, giving equivalent resonance structures). 1 point for formal charges correctly calculated and consistent with the structure drawn (e.g., S = +1, one O = 0, other O = -1, summing to 0), with work shown using the formal charge formula.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly identifying 3 electron domains around S and a trigonal planar electron-domain geometry. 1 point for correctly identifying a bent/angular molecular geometry (with lone pair reasoning). 1 point for correctly identifying sp2 hybridization. Full credit awarded if answers are consistent with the (possibly nonstandard) Lewis structure/domain count the student produced in part (a), even if that structure differs from the reference structure.",
+        "points": 3,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for identifying that K2O is held together by strong ionic bonding/electrostatic attraction throughout an extended 3-D lattice. 1 point for identifying that SO2 consists of discrete covalent molecules held together only by weak intermolecular forces (dispersion and/or dipole-dipole), and that these forces (not covalent bonds) are what is overcome on melting, correctly linking this contrast to the large melting point difference.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly predicting that Na2O has the greater lattice energy magnitude. 1 point for correct justification based on Na^+ having a smaller ionic radius than K^+, giving a shorter interionic distance and therefore stronger electrostatic attraction (with equal charge products noted or implied).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "bank"
+  },
+  {
+    "id": "u2-frq-short-1",
+    "unitId": 2,
+    "kind": "short",
+    "points": 4,
+    "stem": "Pure titanium (Ti) metal can be alloyed with a small amount of aluminum (Al) to produce a substitutional alloy used in aircraft parts. The atomic radius of Ti is about 147 pm, and the atomic radius of Al is about 143 pm.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Explain, in terms of atomic radii, why aluminum atoms are able to substitute for titanium atoms in the metallic lattice to form a substitutional alloy rather than an interstitial alloy.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Using the electron-sea (delocalized electron) model of metallic bonding, explain why the Ti-Al alloy is expected to be harder and more resistant to deformation than pure titanium metal.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) A substitutional alloy forms when the solute atoms are close in size to the solvent (host) metal atoms, so that they can directly replace host atoms at regular lattice sites without significantly disrupting the regular packing arrangement. Since Al (143 pm) and Ti (147 pm) differ in atomic radius by only about 3 percent, Al atoms are close enough in size to occupy substitutional sites in place of Ti atoms, forming a substitutional alloy rather than fitting into the small interstitial holes between larger host atoms (which would require a much smaller solute atom).\n(b) In pure Ti metal, the cations are arranged in a highly regular, repeating lattice surrounded by a 'sea' of delocalized, mobile valence electrons. Because every atom in the pure metal is the same size, uniform layers/planes of atoms can slide past one another relatively easily under applied stress, allowing the metal to deform (bend or be shaped) with only moderate force. When some Ti atoms are randomly replaced by slightly different-sized Al atoms, the regular lattice becomes locally distorted at those sites. This irregularity disrupts the uniform atomic planes and makes it more difficult for layers of atoms to slide past each other (dislocation motion is impeded), even though the delocalized electron sea still holds all the atoms (Ti and Al) together throughout the solid. As a result, the Ti-Al alloy resists deformation more than pure Ti and is harder.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for stating that substitutional alloys require solute and solvent atoms of comparable/similar atomic (metallic) radius. 1 point for correctly applying this to Ti and Al, noting their radii are very close (143 pm vs 147 pm), which allows Al to occupy regular lattice sites in place of Ti rather than fitting into interstitial spaces.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly describing the electron-sea/delocalized-electron model, including that in a pure metal uniform layers of like-sized cations can slide past each other. 1 point for explaining that the differently sized Al atoms distort/disrupt the regular lattice, impeding the sliding of atomic planes (dislocation motion), which makes the alloy harder/less easily deformed than pure Ti.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "bank"
+  }
+]

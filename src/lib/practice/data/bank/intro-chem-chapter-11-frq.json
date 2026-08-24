@@ -1,0 +1,190 @@
+[
+  {
+    "id": "ic11-short-1",
+    "unitId": 11,
+    "kind": "short",
+    "points": 4,
+    "stem": "A sealed syringe contains 60.0 mL of gas at a pressure of 1.20 atm. The plunger is pushed in, compressing the gas to a volume of 20.0 mL while the temperature stays constant.",
+    "parts": [
+      { "label": "(a)", "prompt": "Use Boyle's law to calculate the new pressure of the gas.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Using kinetic molecular theory, explain why compressing the gas at constant temperature causes its pressure to increase.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) Boyle's law: P1V1 = P2V2. (1.20 atm)(60.0 mL) = P2(20.0 mL). P2 = 72.0 / 20.0 = 3.60 atm.\n\n(b) At constant temperature, the average kinetic energy and speed of the gas particles do not change. However, compressing the gas into a smaller volume packs the same number of particles into a smaller space, so the particles strike the container walls more frequently per unit time (and per unit area). Since pressure results from the frequency and force of these collisions, the pressure increases.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly setting up P1V1 = P2V2 with the given values; 1 point for the correct final pressure of 3.60 atm.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for stating that average kinetic energy/particle speed is unchanged at constant temperature; 1 point for explaining that the smaller volume increases collision frequency with the container walls, which increases pressure.", "points": 2, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": [
+      "Plug the given volumes and pressure directly into P1V1 = P2V2 and solve for the unknown.",
+      "At constant temperature, the particles' average speed doesn't change -- only how often they hit the walls does."
+    ]
+  },
+  {
+    "id": "ic11-short-2",
+    "unitId": 11,
+    "kind": "short",
+    "points": 4,
+    "stem": "A rigid 5.00 L tank contains an unknown quantity of helium gas at a pressure of 2.46 atm and a temperature of 300. K. (R = 0.0821 L*atm/(mol*K))",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the number of moles of helium gas in the tank.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "If the temperature of the tank is increased to 450. K while the volume stays fixed, calculate the new pressure of the gas.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) Using PV = nRT: n = PV / RT = (2.46 atm)(5.00 L) / [(0.0821 L*atm/(mol*K))(300. K)] = 12.3 / 24.63 = 0.500 mol.\n\n(b) Since volume and moles are constant, Gay-Lussac's law applies: P1/T1 = P2/T2. P2 = P1 (T2/T1) = 2.46 atm x (450./300.) = 2.46 x 1.50 = 3.69 atm.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly rearranging PV = nRT to solve for n and substituting values; 1 point for the correct answer of 0.500 mol.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly applying a pressure-temperature relationship at constant V and n (e.g., P1/T1 = P2/T2, or recomputing with PV = nRT using their own n from part (a)); 1 point for a final pressure consistent with that method (3.69 atm using the correct n, or the value obtained using the student's part (a) n).", "points": 2, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Rearrange PV = nRT to isolate n before plugging in numbers.",
+      "For part (b), since volume and moles don't change, you can use P1/T1 = P2/T2 directly."
+    ]
+  },
+  {
+    "id": "ic11-long-1",
+    "unitId": 11,
+    "kind": "long",
+    "points": 10,
+    "stem": "A weather balloon is filled with helium gas at ground level, where the pressure is 1.00 atm, the temperature is 293 K, and the volume is 2.00 x 10^3 L. As the balloon rises, it reaches an altitude where the temperature is 240. K and the pressure is 0.340 atm. Assume no gas escapes the balloon.",
+    "parts": [
+      { "label": "(a)", "prompt": "Use the combined gas law to calculate the volume of the balloon at this altitude.", "maxPoints": 4 },
+      { "label": "(b)", "prompt": "Based on your answer to part (a), explain in terms of gas particle behavior why the balloon's volume increases as it rises, even though the temperature is decreasing.", "maxPoints": 3 },
+      { "label": "(c)", "prompt": "At a higher altitude, the balloon eventually bursts. Using kinetic molecular theory, explain why continued expansion at ever-lower external pressure would eventually cause the balloon to fail.", "maxPoints": 3 }
+    ],
+    "workedSolution": "(a) Combined gas law: (P1 V1)/T1 = (P2 V2)/T2. V2 = P1 V1 T2 / (T1 P2) = (1.00 atm)(2.00 x 10^3 L)(240. K) / [(293 K)(0.340 atm)] = 4.80 x 10^5 / 99.6 = 4.82 x 10^3 L.\n\n(b) The volume increased from 2.00 x 10^3 L to about 4.82 x 10^3 L. Lower temperature alone would tend to reduce the average kinetic energy and speed of the particles, which would tend to lower the pressure they exert on the balloon's inside surface. However, the external atmospheric pressure drops much more sharply with altitude than the gas cools. Because the internal gas pressure must adjust to balance the much lower external pressure, the same number of gas particles spread out over a larger volume, which lowers their collision frequency with the balloon's inner surface. This drop in collision frequency (from more volume) is what allows the internal pressure to fall enough to match the low external pressure, so the net effect is that the balloon expands despite the lower temperature.\n\n(c) As the balloon rises further, the external pressure keeps decreasing, so (by the same reasoning as in part (b)) the internal gas must keep expanding to keep its pressure in balance with the ever-lower external pressure. The same fixed number of helium particles is spread over an increasingly large volume, and the balloon's rubber skin must stretch further and further to contain that volume. Eventually the material is stretched beyond what it can physically withstand, and it ruptures.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for writing the combined gas law correctly; 1 point for correctly substituting the given values; 2 points for the correct final volume of approximately 4.82 x 10^3 L (accept 4700-4900 L) with correct units.", "points": 4, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for noting that lower temperature reduces average kinetic energy/speed, which alone would lower pressure; 1 point for recognizing that external (atmospheric) pressure falls faster than the gas cools; 1 point for connecting this to the gas expanding (consistent with the student's part (a) volume) to keep its internal pressure balanced with the lower external pressure.", "points": 3, "allowsErrorCarriedForward": true },
+      { "partLabel": "(c)", "criterion": "1 point for stating the gas must keep expanding as external pressure keeps dropping; 1 point for connecting this to decreasing collision frequency/particle density as volume grows; 1 point for explaining that the balloon material has a physical stretching limit that is eventually exceeded, causing it to burst.", "points": 3, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Use the combined gas law formula (P1V1)/T1 = (P2V2)/T2 and solve for V2 first.",
+      "For parts (b) and (c), think about how the balloon's volume must respond if the external pressure keeps dropping faster than the internal gas cools."
+    ]
+  },
+  {
+    "id": "ic11-long-2",
+    "unitId": 11,
+    "kind": "long",
+    "points": 10,
+    "stem": "A rigid 10.0 L container at 25 degrees C holds a mixture of 0.500 mol of nitrogen gas (N2) and 0.300 mol of oxygen gas (O2). Assume both gases behave ideally. (R = 0.0821 L*atm/(mol*K))",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the partial pressure of N2 and the partial pressure of O2 in the container.", "maxPoints": 4 },
+      { "label": "(b)", "prompt": "Calculate the total pressure of the gas mixture and the mole fraction of O2.", "maxPoints": 3 },
+      { "label": "(c)", "prompt": "If 0.200 mol of argon gas (Ar) is added to the container at the same temperature and volume, explain what happens to the total pressure and calculate its new value.", "maxPoints": 3 }
+    ],
+    "workedSolution": "T = 25 degrees C = 298 K.\n\n(a) P(N2) = nRT/V = (0.500 mol)(0.0821 L*atm/(mol*K))(298 K) / 10.0 L = 12.23 / 10.0 = 1.22 atm.\nP(O2) = (0.300 mol)(0.0821)(298) / 10.0 = 7.34 / 10.0 = 0.734 atm.\n\n(b) By Dalton's law, P(total) = P(N2) + P(O2) = 1.22 atm + 0.734 atm = 1.96 atm.\nMole fraction of O2 = n(O2) / n(total) = 0.300 / (0.500 + 0.300) = 0.300 / 0.800 = 0.375.\n\n(c) Adding more gas particles at constant T and V increases the total number of moles of gas in the container, so by Dalton's law of partial pressures, the total pressure increases by the partial pressure contributed by the new gas. P(Ar) = (0.200 mol)(0.0821)(298) / 10.0 L = 4.89 / 10.0 = 0.489 atm. New total pressure = 1.96 atm + 0.489 atm = 2.45 atm.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "2 points for a correctly set up and calculated P(N2) of approximately 1.22 atm; 2 points for a correctly set up and calculated P(O2) of approximately 0.734 atm.", "points": 4, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly summing the student's own partial pressures from part (a) to get total pressure; 1 point for the correct mole fraction setup (n(O2)/n(total)); 1 point for the correct mole fraction value of 0.375.", "points": 3, "allowsErrorCarriedForward": true },
+      { "partLabel": "(c)", "criterion": "1 point for stating that total pressure increases because Dalton's law adds the new gas's partial pressure to the total; 1 point for correctly calculating P(Ar) as approximately 0.489 atm; 1 point for the correct new total pressure of approximately 2.45 atm, consistent with the student's total pressure from part (b).", "points": 3, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Calculate each gas's partial pressure separately using PV = nRT before adding them together.",
+      "For part (c), remember Dalton's law just adds each additional gas's own partial pressure onto the running total."
+    ]
+  },
+  {
+    "id": "ic11-short-3",
+    "unitId": 11,
+    "kind": "short",
+    "points": 4,
+    "stem": "A 3.00 L container holds an unknown gas at STP.",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the number of moles of gas present in the container.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "If the gas is determined to be carbon dioxide, CO2 (molar mass 44.01 g/mol), calculate the mass of gas present in the container.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) At STP, 1 mole of any ideal gas occupies 22.4 L. n = V / 22.4 L/mol = 3.00 / 22.4 = 0.134 mol.\n\n(b) mass = n x molar mass = 0.134 mol x 44.01 g/mol = 5.90 g.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly setting up n = V / 22.4 L/mol; 1 point for the correct answer of approximately 0.134 mol.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly setting up mass = n x molar mass using the student's own n from part (a); 1 point for a mass value consistent with that n and the given molar mass (approximately 5.90 g if using the correct n).", "points": 2, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": [
+      "At STP, one mole of any ideal gas occupies 22.4 L -- use this to convert the given volume directly into moles.",
+      "Once you know the moles, multiply by the molar mass to find mass."
+    ]
+  },
+  {
+    "id": "ic11-short-4",
+    "unitId": 11,
+    "kind": "short",
+    "points": 4,
+    "stem": "Two gases, helium (He, molar mass 4.00 g/mol) and argon (Ar, molar mass 39.9 g/mol), are allowed to effuse through a small pinhole under identical conditions of temperature and pressure.",
+    "parts": [
+      { "label": "(a)", "prompt": "Using Graham's law of effusion (rate1/rate2 = square root of (M2/M1)), determine which gas effuses faster, and calculate the ratio of the effusion rate of helium to the effusion rate of argon.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Explain, using kinetic molecular theory, why lighter gas particles effuse faster than heavier gas particles at the same temperature.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) rate(He)/rate(Ar) = square root of (M(Ar)/M(He)) = square root of (39.9/4.00) = square root of 9.975 = 3.16. Helium effuses about 3.16 times faster than argon, since it has the smaller molar mass.\n\n(b) At the same temperature, all gas particles have the same average kinetic energy. Since kinetic energy depends on both mass and velocity (KE = (1/2)mv^2 on average), a lighter particle (He) must have a higher average speed than a heavier particle (Ar) in order to have the same average kinetic energy. Faster-moving particles reach and pass through the pinhole more often per unit time, so the lighter gas effuses faster.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly identifying helium as effusing faster; 1 point for the correct ratio of approximately 3.16.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for stating that average kinetic energy is the same for both gases at the same temperature; 1 point for correctly connecting lower mass to higher average speed (and therefore faster effusion) at equal kinetic energy.", "points": 2, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Graham's law states rate1/rate2 equals the square root of (M2/M1) -- the lighter gas has the faster rate.",
+      "Recall that average kinetic energy depends on both mass and velocity -- if kinetic energy is the same, a smaller mass must be paired with a larger velocity."
+    ]
+  },
+  {
+    "id": "ic11-long-3",
+    "unitId": 11,
+    "kind": "long",
+    "points": 10,
+    "stem": "A 250.0 mL flask is evacuated and then filled with an unknown gas. At a temperature of 300. K and a pressure of 1.10 atm, the mass of gas in the flask is found to be 0.481 g. (R = 0.0821 L*atm/(mol*K))",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the number of moles of gas in the flask.", "maxPoints": 3 },
+      { "label": "(b)", "prompt": "Using your answer to part (a), calculate the molar mass of the unknown gas, and use this value to identify the most likely identity of the gas from this list: H2 (2.02 g/mol), N2 (28.0 g/mol), O2 (32.0 g/mol), CO2 (44.0 g/mol).", "maxPoints": 3 },
+      { "label": "(c)", "prompt": "If the temperature of the flask were increased while keeping the volume and the amount of gas constant, predict what would happen to the pressure inside the flask, and explain why using kinetic molecular theory.", "maxPoints": 2 },
+      { "label": "(d)", "prompt": "If this same 0.481 g sample of gas were instead placed in a 500.0 mL flask (double the original volume) at the same temperature of 300. K, predict whether the resulting pressure would be greater than, less than, or equal to 1.10 atm, and explain your reasoning.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) n = PV/RT = (1.10 atm)(0.2500 L) / [(0.0821 L*atm/(mol*K))(300. K)] = 0.2750 / 24.63 = 0.01117 mol, or approximately 0.0112 mol.\n\n(b) Molar mass = mass/n = 0.481 g / 0.01117 mol = 43.1 g/mol. This is closest to CO2 (44.0 g/mol), so the gas is most likely carbon dioxide.\n\n(c) The pressure would increase. By kinetic molecular theory, increasing temperature increases the average kinetic energy and speed of the gas particles, causing them to collide with the container walls more frequently and with greater force, which increases the pressure.\n\n(d) The pressure would be less than 1.10 atm. Using PV = nRT with the same n and T but a larger V (500.0 mL instead of 250.0 mL, i.e., double the volume), pressure must decrease proportionally, since pressure is inversely proportional to volume at constant n and T. The same number of gas particles spread over twice the volume collide with the walls about half as often, roughly halving the pressure to approximately 0.550 atm.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly rearranging PV = nRT to solve for n; 1 point for correctly substituting the given values; 1 point for the correct final answer of approximately 0.0112 mol.", "points": 3, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly setting up molar mass = mass/n using the student's own n from part (a); 1 point for a molar mass value consistent with that n (approximately 43 g/mol if using the correct n); 1 point for correctly identifying CO2 as the closest match.", "points": 3, "allowsErrorCarriedForward": true },
+      { "partLabel": "(c)", "criterion": "1 point for correctly predicting that pressure increases; 1 point for a correct kinetic-molecular-theory explanation based on increased collision frequency/force from higher particle speed.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(d)", "criterion": "1 point for correctly predicting that pressure would be less than 1.10 atm; 1 point for correct reasoning based on the inverse relationship between pressure and volume at constant n and T.", "points": 2, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Rearrange the ideal gas law to solve for n first, then use n and the given mass to find molar mass.",
+      "For parts (c) and (d), think about which variables are being held constant and which relationship (from PV = nRT) applies to each change."
+    ]
+  },
+  {
+    "id": "ic11-long-4",
+    "unitId": 11,
+    "kind": "long",
+    "points": 10,
+    "stem": "A 12.0 L scuba tank contains a mixture of oxygen (O2), nitrogen (N2), and helium (He) at 20.0 degrees C. The tank holds 0.900 mol O2, 0.300 mol N2, and 1.80 mol He. (R = 0.0821 L*atm/(mol*K))",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the total number of moles of gas in the tank, and the total pressure inside the tank.", "maxPoints": 3 },
+      { "label": "(b)", "prompt": "Calculate the mole fraction of each gas (O2, N2, and He) in the mixture.", "maxPoints": 3 },
+      { "label": "(c)", "prompt": "Using Dalton's law, calculate the partial pressure of oxygen in the tank.", "maxPoints": 2 },
+      { "label": "(d)", "prompt": "Explain, using kinetic molecular theory, why the partial pressure of oxygen depends only on the number of moles of O2 present and the container's volume and temperature, and not on the presence of the other gases (N2 and He) in the tank.", "maxPoints": 2 }
+    ],
+    "workedSolution": "T = 20.0 + 273 = 293 K.\n\n(a) n(total) = 0.900 + 0.300 + 1.80 = 3.00 mol. P(total) = nRT/V = (3.00 mol)(0.0821 L*atm/(mol*K))(293 K) / 12.0 L = 72.17 / 12.0 = 6.01 atm.\n\n(b) Mole fraction O2 = 0.900/3.00 = 0.300. Mole fraction N2 = 0.300/3.00 = 0.100. Mole fraction He = 1.80/3.00 = 0.600. (Check: 0.300 + 0.100 + 0.600 = 1.000.)\n\n(c) P(O2) = mole fraction O2 x P(total) = 0.300 x 6.01 atm = 1.80 atm.\n\n(d) In an ideal gas mixture, kinetic molecular theory assumes gas particles occupy negligible volume and do not meaningfully interact with (attract or repel) one another. As a result, each gas behaves as though it were alone in the container, and each type of particle collides with the walls independently of the other gases present. So the partial pressure of O2 depends only on how many O2 particles are present, the container's volume, and the temperature (through PV = nRT for O2 alone) and is unaffected by how much N2 or He also happens to be present.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for the correct total moles (3.00 mol); 1 point for correctly setting up PV = nRT for the total pressure; 1 point for the correct total pressure of approximately 6.01 atm.", "points": 3, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly setting up the mole fraction method (each gas's moles divided by total moles); 1 point for at least two of the three mole fractions correct; 1 point for all three mole fractions correct and summing to 1.000, consistent with the student's own total from part (a).", "points": 3, "allowsErrorCarriedForward": true },
+      { "partLabel": "(c)", "criterion": "1 point for correctly setting up partial pressure as mole fraction x total pressure (or an equivalent direct nRT/V calculation for O2 alone); 1 point for a partial pressure value consistent with the student's own earlier work (approximately 1.80 atm if using the correct values).", "points": 2, "allowsErrorCarriedForward": true },
+      { "partLabel": "(d)", "criterion": "1 point for referencing the kinetic-molecular-theory assumption of negligible particle volume and interactions; 1 point for correctly concluding that each gas therefore behaves independently, so its partial pressure depends only on its own moles, the volume, and the temperature.", "points": 2, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Add up all the moles of gas present first -- Dalton's law needs the total moles for the total pressure calculation.",
+      "Mole fraction of a gas is just that gas's moles divided by the total moles, and partial pressure is mole fraction times total pressure."
+    ]
+  }
+]

@@ -1,0 +1,386 @@
+[
+  {
+    "id": "ic1-short-1",
+    "unitId": 1,
+    "kind": "short",
+    "points": 4,
+    "stem": "A city water department repeatedly measures that tap water boils at exactly 100°C at sea level, no matter which faucet the sample is taken from. Based on these many repeated measurements, chemists summarize the pattern as: \"Pure water boils at 100°C at sea level.\" Separately, chemists explain why this specific temperature is the boiling point by describing how, at 100°C, the vapor pressure of the water becomes equal to the surrounding atmospheric pressure, allowing bubbles of vapor to form throughout the liquid.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Identify which sentence in the scenario is functioning as a scientific law and which is functioning as a scientific theory. Briefly justify each choice.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain, in general terms, the key difference between what a scientific law does and what a scientific theory does.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "The statement \"Pure water boils at 100°C at sea level\" is a scientific law: it is a concise summary of an observed, repeatable pattern based on many measurements, and it does not explain why the pattern occurs. The vapor-pressure statement is a scientific theory: it is a well-supported explanation for why water boils at that particular temperature, describing an underlying mechanism (vapor pressure rising to match atmospheric pressure). In general, a scientific law describes/summarizes what happens, while a scientific theory explains why it happens; laws are typically concise generalizations of observations, while theories are explanatory models that account for and can predict related observations.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly identifying the boiling-point statement as the law (a summary of a repeated observation with no explanation); 1 point for correctly identifying the vapor-pressure statement as the theory (an explanation of the underlying mechanism).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for stating that a law describes/summarizes an observed pattern without explaining it; 1 point for stating that a theory provides an explanation or mechanism for why the pattern occurs (and can be revised with new evidence).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": ["Recall that a law describes a repeated pattern without explaining it, while a theory explains why the pattern happens.", "Look for the sentence that describes vapor pressure as a mechanism — that's doing the explaining."]
+  },
+  {
+    "id": "ic1-short-2",
+    "unitId": 1,
+    "kind": "short",
+    "points": 4,
+    "stem": "An ice cube is placed on a kitchen counter at room temperature. Over about 20 minutes, it gradually shrinks and turns into a puddle of liquid water.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Describe this melting process at the macroscopic (observable) level — what a person would notice using only their senses, without reference to individual particles.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Describe this melting process at the particulate (atomic/molecular) level — what is happening among the individual water molecules that explains the macroscopic change.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "Macroscopic level: an observer sees a solid, rigid block of ice gradually shrink in size while a puddle of liquid water spreads out around it, until eventually no solid remains and only liquid water is left at room temperature. Particulate level: heat energy from the warmer surroundings transfers into the water molecules, increasing their average kinetic energy (motion); once enough energy has been absorbed, the strong, fixed arrangement of molecules in the solid lattice breaks down, and the molecules become free to move past one another as a liquid, while the total number of water molecules stays the same throughout.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "Full credit for a coherent macroscopic-level description that references only what is directly observable (e.g., a solid shrinking, a liquid puddle forming, no particle language). 1 point for correctly describing the solid decreasing in size/disappearing; 1 point for correctly describing the liquid puddle appearing/growing.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for stating that heat energy is transferred into the water molecules, increasing their motion/kinetic energy; 1 point for stating that this breaks down the fixed/ordered arrangement of the solid, allowing molecules to move freely past each other as a liquid.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": ["Think about what you could observe with just your eyes versus what must be happening to individual particles that you can't directly see.", "At the particulate level, focus on energy transfer and changes in how tightly the molecules are held together."]
+  },
+  {
+    "id": "ic1-long-1",
+    "unitId": 1,
+    "kind": "long",
+    "points": 10,
+    "stem": "A student wants to test the question: \"Does the brand of paper towel affect how much water it can absorb?\" The student plans to cut equal-sized squares from two different brands of paper towel and dip each square into water for the same amount of time, then weigh how much water each square absorbed.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "State an appropriate hypothesis for this investigation, written so that it is testable and clearly relates the paper towel brand to absorbency.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Identify the independent variable and the dependent variable in this experiment.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(c)",
+        "prompt": "Describe one variable in this experiment that should be controlled (held constant) across both brands, and explain why controlling it matters for a fair test.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(d)",
+        "prompt": "Suppose the same result (one brand consistently absorbing more water) is observed across many repeated trials by many different labs. Explain what type of scientific statement (a law or a theory) this reproducible pattern could eventually be summarized as, and explain why it still would not be considered an absolutely \"proven\" fact.",
+        "maxPoints": 4
+      }
+    ],
+    "workedSolution": "(a) A reasonable hypothesis: \"If paper towel brand affects absorbency, then Brand A will absorb more water than Brand B when equal-sized squares are soaked for the same amount of time, because Brand A's fibers are more tightly woven.\" Any testable if/then style statement that relates brand to the amount of water absorbed, with a plausible reason, is acceptable.\n\n(b) Independent variable (what is deliberately changed/tested): the brand of paper towel. Dependent variable (what is measured as a result): the amount/mass of water absorbed by each square.\n\n(c) A variable that should be held constant: the size (area) of each paper towel square, the volume of water each square is dipped into, and/or the amount of time each square soaks. Holding this constant matters because it ensures that any difference observed in absorbency is caused by the brand of towel and not by some other factor that differed between the two trials — only one variable (brand) should change at a time for the comparison to be fair.\n\n(d) If the same pattern is observed consistently and reproducibly across many independent trials and labs, it could eventually be summarized as a scientific law — a general statement describing what consistently happens under given conditions (e.g., \"towels with a tighter weave absorb more water\"), without necessarily explaining why. It would not yet explain the underlying mechanism (that would require a theory, such as one describing capillary action within the fiber structure). Even a law or theory supported by an enormous amount of evidence is never treated as an absolutely \"proven\" fact in science, because scientific claims are always open to revision or refinement if new evidence or observations are found that don't fit the existing pattern — science builds confidence through repeated testing rather than offering mathematical-style proof.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for a genuinely testable, if/then-style hypothesis that relates paper towel brand to absorbency; 1 point for including a plausible supporting reason.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly identifying the independent variable (paper towel brand); 1 point for correctly identifying the dependent variable (amount/mass of water absorbed).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for identifying a genuinely controllable variable relevant to this experiment (e.g., square size, soak time, water volume); 1 point for explaining that holding it constant isolates brand as the only differing factor, making the comparison fair.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "2 points for correctly identifying that a consistently reproduced pattern like this would be classified as a law (a description of what happens, not why); 2 points for correctly explaining that scientific claims remain open to revision with new evidence and are therefore never treated as absolutely, mathematically proven facts.",
+        "points": 4,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": ["Remember that the independent variable is what the experimenter changes on purpose, and the dependent variable is what gets measured as a result.", "For part (d), think about whether a reproducible pattern explains WHY something happens or just describes WHAT happens."]
+  },
+  {
+    "id": "ic1-long-2",
+    "unitId": 1,
+    "kind": "long",
+    "points": 10,
+    "stem": "A sealed glass jar is half filled with liquid water and closed with a lid, then left at room temperature for several days.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Describe what a student would notice happening inside the jar over several days, at the macroscopic (observable) level.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Describe, at the particulate level, what is happening to individual water molecules that explains the macroscopic observations from part (a).",
+        "maxPoints": 3
+      },
+      {
+        "label": "(c)",
+        "prompt": "Describe how the particulate arrangement of water molecules differs between the liquid and the gas (vapor) state, in terms of the spacing and motion of the molecules.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(d)",
+        "prompt": "Explain why the total amount of matter (liquid plus vapor) inside the sealed jar stays the same over time, and name the law of nature this reflects.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) Because the jar is sealed, no water can escape the system; small droplets of condensation appear on the inside of the glass above the waterline, and after some time the liquid water level stops changing noticeably, even though the air space above it now contains water vapor as well as visible condensation on the cooler jar walls.\n\n(b) At the particulate level, water molecules at the surface of the liquid that gain enough kinetic energy escape the attractive forces holding them in the liquid and enter the gas phase (evaporation); at the same time, gas-phase water molecules that collide with the liquid surface or condense on the cooler jar walls return to the liquid (condensation). Initially evaporation happens faster than condensation, but because the jar is sealed, the two rates eventually become equal, a state called dynamic equilibrium.\n\n(c) In the liquid state, water molecules are close together, essentially touching their neighbors, held by attractive intermolecular forces, but still able to slide and move past one another. In the gas (vapor) state, water molecules are spread far apart with large empty spaces between them, and each molecule moves rapidly and independently in a straight line until it collides with another molecule or a surface, with attractive forces between molecules being negligible compared to the liquid state.\n\n(d) Even though individual molecules move back and forth between the liquid and vapor states, no matter enters or leaves the sealed jar — molecules only change physical state, they are not created or destroyed. This reflects the law of conservation of mass: the total mass (and amount) of matter in a closed system remains constant, regardless of what physical changes occur within it.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for noting that condensation droplets form on the inside of the jar above the waterline; 1 point for noting that, because the jar is sealed, the liquid water level eventually stops changing/appears essentially stable.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly describing evaporation (surface molecules gaining enough energy to escape into the vapor phase); 1 point for correctly describing condensation (vapor molecules returning to the liquid, e.g., on the cool walls); 1 point for stating that the two rates eventually become equal (dynamic equilibrium) in the sealed jar.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly describing liquid molecules as closely spaced/touching neighbors while still able to move past one another; 1 point for correctly describing gas molecules as widely/far spaced apart; 1 point for correctly describing gas molecules as moving independently and rapidly in straight lines between collisions, with negligible attraction between them.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly explaining that no matter enters or leaves the sealed jar, so total matter/mass is unchanged even as molecules shift between states; 1 point for correctly naming the law of conservation of mass.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": ["For part (b), consider that molecules can move in both directions between liquid and gas at the same time.", "For part (d), think about what 'sealed' implies for whether any matter can leave the system."]
+  },
+  {
+    "id": "ic1-short-3",
+    "unitId": 1,
+    "kind": "short",
+    "points": 4,
+    "stem": "A sealed, rigid flask contains 8.00 g of hydrogen peroxide solution. When a catalyst is added, the H2O2 decomposes completely according to: 2H2O2(l) -> 2H2O(l) + O2(g). While the flask remains sealed, its total mass is measured and found to be exactly 8.00 g, unchanged from before the reaction. The flask is then opened, and after the O2 gas is allowed to escape, the remaining liquid has a mass of 7.25 g.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Explain why the flask's total mass, measured while it was still sealed, stayed exactly the same as before the reaction, referencing the law of conservation of mass.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the mass of O2 gas that escaped once the flask was opened.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) While the flask is sealed, none of the matter involved in the reaction — including the O2 gas produced — can leave the system. The law of conservation of mass states that in an ordinary chemical reaction, matter is neither created nor destroyed, only rearranged into new substances; since all the reactant and product mass remains trapped inside the sealed flask, the total mass measured is unchanged.\n\n(b) Mass of O2 released = mass before opening - mass of remaining liquid = 8.00 g - 7.25 g = 0.75 g.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for stating that no matter can enter or leave a sealed container; 1 point for correctly connecting this to the law of conservation of mass (matter is neither created nor destroyed in an ordinary chemical reaction).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for the correct subtraction setup (8.00 g - 7.25 g); 1 point for the correct final answer, 0.75 g, with correct units.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": ["Think about what 'sealed' means for whether any of the O2 gas produced can leave the flask before it's opened.", "Once the flask is opened and the gas escapes, whatever mass is missing from the liquid must be the mass of the gas that left."]
+  },
+  {
+    "id": "ic1-short-4",
+    "unitId": 1,
+    "kind": "short",
+    "points": 4,
+    "stem": "A student watches a lit candle burn inside a sealed glass jar. She writes: \"The flame gets dimmer over time and goes out after about 45 seconds.\" She then writes: \"The flame goes out because the burning process uses up the oxygen inside the jar, and once the oxygen runs out, the fire can no longer be sustained.\"",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Identify which of the student's two sentences is functioning as an observation and which is functioning as a hypothesis, briefly justifying each.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Describe one way the student could test her hypothesis experimentally.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) The first sentence (\"The flame gets dimmer... goes out after about 45 seconds\") is an observation — a direct, factual record of what was seen and timed, without explaining why it happened. The second sentence (\"The flame goes out because... uses up the oxygen...\") is a hypothesis — a proposed, testable explanation for why the observed event occurred.\n\n(b) The student could repeat the experiment using jars of different sizes (containing different amounts of air, and therefore different amounts of oxygen) while keeping the candle and everything else the same, and measure how long the flame burns in each jar. If her hypothesis is correct, a larger jar (more oxygen available) should allow the flame to burn for a longer time before going out, while a smaller jar should cause it to go out sooner.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly identifying the first sentence as the observation, with valid reasoning; 1 point for correctly identifying the second sentence as the hypothesis, with valid reasoning.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for describing a genuinely testable experiment that varies oxygen availability (e.g., different jar sizes) while keeping other conditions constant; 1 point for correctly stating the expected result if the hypothesis is true (more available oxygen means a longer burn time).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": ["Ask which sentence is just describing what was seen, and which one is trying to explain why it happened.", "To test the hypothesis, think about how you could change the amount of oxygen available to the flame while keeping everything else the same."]
+  },
+  {
+    "id": "ic1-long-3",
+    "unitId": 1,
+    "kind": "long",
+    "points": 10,
+    "stem": "A sealed, rigid steel container holds 6.0 g of powdered carbon and 20.0 g of oxygen gas. When ignited, the carbon burns completely, reacting with only as much oxygen as is needed, and forms 22.0 g of carbon dioxide gas (CO2) as the only product. Some oxygen gas remains unreacted inside the container.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Calculate the total mass of material (carbon plus oxygen) inside the container before the reaction takes place.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Using conservation of mass, calculate the mass of oxygen gas that reacted with the carbon, given the mass of carbon that reacted and the mass of CO2 produced.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(c)",
+        "prompt": "Calculate the mass of oxygen gas that remains unreacted in the container after the reaction.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(d)",
+        "prompt": "Explain why the total mass inside the sealed container (solid plus gases) is the same before and after the reaction, and state what a scale would show if used to weigh the sealed container both before and after.",
+        "maxPoints": 3
+      }
+    ],
+    "workedSolution": "(a) Total starting mass = mass of carbon + mass of oxygen gas = 6.0 g + 20.0 g = 26.0 g.\n\n(b) By conservation of mass, the mass of oxygen that reacted equals the mass of CO2 produced minus the mass of carbon that reacted: 22.0 g - 6.0 g = 16.0 g of O2 reacted.\n\n(c) Mass of unreacted oxygen = total oxygen originally present - oxygen that reacted = 20.0 g - 16.0 g = 4.0 g.\n\n(d) The container is sealed, so no matter can enter or leave it during the reaction; the atoms present before the reaction (in the carbon and oxygen) are simply rearranged into new substances (CO2 and leftover O2) rather than being created or destroyed. Because of this, a scale would show exactly the same total mass, 26.0 g, both before and after the reaction — the mass of the product (22.0 g CO2) plus the leftover oxygen (4.0 g) equals the original total mass (26.0 g).",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly adding the two given masses; 1 point for the correct total, 26.0 g, with correct units.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly applying conservation of mass to relate reacted O2 to the CO2 and carbon masses; 1 point for the correct subtraction setup (22.0 g - 6.0 g); 1 point for the correct final answer, 16.0 g.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly subtracting the reacted oxygen (from the student's own part b) from the total oxygen (20.0 g); 1 point for the correct final answer, 4.0 g, consistent with the student's own part (b) value.",
+        "points": 2,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for stating that no matter enters or leaves the sealed container; 1 point for connecting this to matter being rearranged rather than created or destroyed; 1 point for correctly stating that the scale would show the same total mass (26.0 g) before and after.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": ["Work through each mass calculation in order — total starting mass, then reacted oxygen, then leftover oxygen — since each step depends on the one before it.", "Remember that in a sealed container, the total mass of everything inside (solids and gases combined) cannot change, no matter how the substances rearrange."]
+  },
+  {
+    "id": "ic1-long-4",
+    "unitId": 1,
+    "kind": "long",
+    "points": 10,
+    "stem": "In a thought experiment resembling Rutherford's original investigation, a beam of tiny, fast-moving particles is fired at a very thin sheet of gold foil. Most particles pass straight through the foil undeflected. A small fraction are deflected at large angles, and a very small number bounce almost straight back toward the source. This experiment was designed to test predictions based on an earlier atomic model, which described the atom as a diffuse, evenly spread-out sphere of positive charge with electrons scattered throughout it.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Based on the earlier 'spread-out sphere of positive charge' model, predict what result this experiment should have produced if that model were correct, and explain why.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain what the actual results (most particles passing through, a few deflected sharply) imply about the true internal structure of the atom.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(c)",
+        "prompt": "Identify which part of the description above is functioning as an observation (experimental data) and which part is functioning as a theoretical model being tested.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(d)",
+        "prompt": "Explain why this new interpretation of the atom represents a revision of, rather than a complete replacement of, the ideas that came before it — specifically, name one earlier idea about atoms that remained intact.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) If the earlier model were correct, essentially all of the particles should have passed straight through the foil with little to no deflection, because a diffuse, evenly spread-out distribution of positive charge (with no concentrated dense region) would not exert a strong enough, localized force on any particle to deflect it sharply or bounce it straight back.\n\n(b) The fact that most particles passed straight through indicates that atoms are mostly empty space. The fact that a small fraction were deflected sharply, and a very small number bounced almost straight back, indicates that a small, extremely dense, positively charged region — the nucleus — is concentrated at the atom's center, occasionally coming close enough to a passing particle to repel it strongly.\n\n(c) The description of the beam's behavior (most particles passing through, some deflected, a few bouncing back) is the observation — the actual experimental data collected. The 'diffuse, evenly spread-out sphere of positive charge' description is the theoretical model being tested (in this case, an earlier model that the data ultimately did not support).\n\n(d) This interpretation revises, rather than completely replaces, earlier ideas: for example, the existence of atoms themselves, and the existence of negatively charged electrons within them (established earlier by Thomson), both remained intact. What changed was the understanding of how the positive charge and mass are arranged within the atom — concentrated in a small nucleus rather than spread out evenly — rather than a rejection of the idea that atoms exist or that they contain electrons.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly predicting that most or all particles should pass through with little/no deflection under the old model; 1 point for reasoning that a diffuse charge distribution could not exert a strong, localized force; 1 point for a coherent connection between the prediction and the described model.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly concluding that atoms are mostly empty space (from particles passing through); 1 point for correctly concluding that a small, dense, positively charged nucleus exists (from the sharp deflections); 1 point for correctly connecting the size of the deflection to the concentration of charge/mass in the nucleus.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly identifying the beam's behavior/results as the observation; 1 point for correctly identifying the spread-out positive charge description as the theoretical model being tested.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly stating that this is a revision rather than a full replacement; 1 point for naming a specific, valid earlier idea that remained intact (e.g., the existence of atoms, or the existence of electrons).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": ["For part (a), think about what kind of deflection a very spread-out, low-density distribution of charge could realistically cause.", "For part (d), consider which ideas from before this experiment (about atoms or their smaller parts) were NOT contradicted by these new results."]
+  }
+]

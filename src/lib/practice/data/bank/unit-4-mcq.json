@@ -1,0 +1,66 @@
+[
+  {
+    "id": "u4-mcq-1",
+    "unitId": 4,
+    "stem": "Aqueous solutions of lead(II) nitrate and potassium iodide are mixed, producing a bright yellow precipitate. Which equation correctly represents the net ionic equation for this reaction?",
+    "choices": [
+      "Pb^2+(aq) + 2I^-(aq) -> PbI2(s)",
+      "Pb(NO3)2(aq) + 2KI(aq) -> PbI2(s) + 2KNO3(aq)",
+      "Pb^2+(aq) + 2NO3^-(aq) -> Pb(NO3)2(s)",
+      "2K^+(aq) + 2I^-(aq) -> 2KI(s)"
+    ],
+    "correctIndex": 0,
+    "workedSolution": "Write the full molecular equation: Pb(NO3)2(aq) + 2KI(aq) -> PbI2(s) + 2KNO3(aq). Both reactants are soluble strong electrolytes, so they are written as dissociated ions: Pb^2+(aq) + 2NO3^-(aq) + 2K^+(aq) + 2I^-(aq) -> PbI2(s) + 2K^+(aq) + 2NO3^-(aq). PbI2 is insoluble (a known exception to the general solubility of iodide salts) and precipitates as a solid, so it is left undissociated. K^+ and NO3^- appear unchanged on both sides and are spectator ions, so they are removed, leaving the net ionic equation: Pb^2+(aq) + 2I^-(aq) -> PbI2(s).",
+    "explanation": "The correct answer removes the spectator ions K^+ and NO3^- and shows only the species that actually form the precipitate. Choice B is the full molecular (overall) equation, not the net ionic equation, since it still includes the spectator ions. Choice C incorrectly assumes Pb(NO3)2 is the insoluble product and pairs Pb^2+ with nitrate, but nitrate salts are always soluble. Choice D mistakenly treats the spectator ions K^+ and I^- as if they combine to precipitate, but KI is a soluble salt and remains dissociated in solution.",
+    "topicTag": "Net Ionic Equations",
+    "source": "bank"
+  },
+  {
+    "id": "u4-mcq-2",
+    "unitId": 4,
+    "stem": "Aluminum metal reacts with excess hydrochloric acid according to the equation:\n2Al(s) + 6HCl(aq) -> 2AlCl3(aq) + 3H2(g)\nIf 2.70 g of Al(s) reacts completely with excess HCl(aq), what volume of H2(g), measured at STP, is produced?",
+    "choices": [
+      "1.49 L",
+      "2.24 L",
+      "3.36 L",
+      "6.73 L"
+    ],
+    "correctIndex": 2,
+    "workedSolution": "Moles of Al = 2.70 g / 26.98 g/mol = 0.1001 mol Al. From the balanced equation, the mole ratio of H2 to Al is 3:2, so moles H2 = 0.1001 mol Al x (3 mol H2 / 2 mol Al) = 0.1501 mol H2. At STP, 1 mol of gas occupies 22.4 L, so V = 0.1501 mol x 22.4 L/mol = 3.36 L H2.",
+    "explanation": "The correct answer applies the 3:2 mole ratio of H2 to Al and the STP molar volume correctly. Choice A results from inverting the mole ratio (using 2/3 instead of 3/2). Choice B results from using an incorrect 1:1 mole ratio between Al and H2, ignoring the actual stoichiometric coefficients. Choice D results from using a 3:1 ratio (multiplying moles of Al by 3 without dividing by 2), effectively tripling instead of properly scaling the moles of H2.",
+    "topicTag": "Stoichiometry",
+    "source": "bank"
+  },
+  {
+    "id": "u4-mcq-3",
+    "unitId": 4,
+    "stem": "Consider the reaction represented below, which occurs in acidic solution:\nMnO4^-(aq) + 5Fe^2+(aq) + 8H^+(aq) -> Mn^2+(aq) + 5Fe^3+(aq) + 4H2O(l)\nWhich species is the oxidizing agent in this reaction?",
+    "choices": [
+      "MnO4^-",
+      "Fe^2+",
+      "H^+",
+      "Fe^3+"
+    ],
+    "correctIndex": 0,
+    "workedSolution": "Assign oxidation numbers: in MnO4^-, Mn is +7 (since O is -2 and the ion has an overall charge of -1: Mn + 4(-2) = -1, so Mn = +7). In the product Mn^2+, manganese is +2. Mn decreases from +7 to +2, so Mn is reduced. The species containing the atom that is reduced (gains electrons) is the oxidizing agent, so MnO4^- is the oxidizing agent. Meanwhile Fe goes from +2 (Fe^2+) to +3 (Fe^3+), losing an electron, so Fe^2+ is oxidized and is the reducing agent.",
+    "explanation": "MnO4^- is reduced (Mn: +7 to +2), causing the oxidation of Fe^2+, which makes MnO4^- the oxidizing agent. Choice B (Fe^2+) is actually the reducing agent, since it is the species that is oxidized, a common point of confusion between the agent and the process it undergoes. Choice C (H^+) is required to balance oxygen and charge but does not change oxidation state (stays +1), so it is neither oxidized nor reduced. Choice D (Fe^3+) is the product of oxidation, not the agent that caused reduction; students sometimes select the oxidized product instead of tracing which reactant was reduced.",
+    "topicTag": "Oxidation-Reduction (Redox) Reactions",
+    "source": "bank"
+  },
+  {
+    "id": "u4-mcq-4",
+    "unitId": 4,
+    "stem": "A 25.00 mL sample of an HCl(aq) solution of unknown concentration is titrated with 0.150 M NaOH(aq). The equivalence point is reached after 32.20 mL of the NaOH solution has been added. What is the molarity of the original HCl solution?",
+    "choices": [
+      "0.116 M",
+      "0.150 M",
+      "0.193 M",
+      "0.0845 M"
+    ],
+    "correctIndex": 2,
+    "workedSolution": "The neutralization reaction is HCl(aq) + NaOH(aq) -> NaCl(aq) + H2O(l), a 1:1 mole ratio. Moles of NaOH used = 0.150 mol/L x 0.03220 L = 4.830 x 10^-3 mol NaOH. Since the mole ratio is 1:1, moles of HCl = 4.830 x 10^-3 mol. Molarity of HCl = moles / volume = 4.830 x 10^-3 mol / 0.02500 L = 0.1932 M, which rounds to 0.193 M.",
+    "explanation": "The correct approach uses M1V1 = M2V2 with the correct acid volume (25.00 mL) as the denominator. Choice A results from swapping the volumes (dividing by 32.20 mL instead of 25.00 mL). Choice B simply restates the NaOH concentration without doing any calculation, a mistake of assuming the titrant and analyte concentrations must be equal. Choice D results from dividing the moles of NaOH by the total combined volume (57.20 mL) instead of by the original 25.00 mL sample volume of HCl.",
+    "topicTag": "Introduction to Titration",
+    "source": "bank"
+  }
+]

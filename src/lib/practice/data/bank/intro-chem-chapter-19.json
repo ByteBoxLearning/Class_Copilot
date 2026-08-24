@@ -1,0 +1,251 @@
+[
+  {
+    "id": "ic-c19-mc-1",
+    "unitId": 19,
+    "stem": "Carbohydrates are composed primarily of the elements:",
+    "choices": ["carbon, hydrogen, and oxygen", "carbon, hydrogen, and nitrogen", "carbon, nitrogen, and phosphorus", "hydrogen, oxygen, and sulfur"],
+    "correctIndex": 0,
+    "topicTag": "19.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c19-mc-2",
+    "unitId": 19,
+    "stem": "Glucose is an example of a:",
+    "choices": ["disaccharide", "monosaccharide", "polysaccharide", "lipid"],
+    "correctIndex": 1,
+    "topicTag": "19.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c19-mc-3",
+    "unitId": 19,
+    "stem": "Starch, glycogen, and cellulose are all examples of:",
+    "choices": ["monosaccharides", "disaccharides", "polysaccharides", "amino acids"],
+    "correctIndex": 2,
+    "topicTag": "19.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c19-mc-4",
+    "unitId": 19,
+    "stem": "Sucrose (table sugar) is a disaccharide formed from glucose and fructose linked together.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "19.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c19-mc-5",
+    "unitId": 19,
+    "stem": "Lipids, as a class of biomolecules, are best characterized by their:",
+    "choices": ["solubility in water", "insolubility in water and solubility in nonpolar solvents", "high nitrogen content", "repeating amino acid units"],
+    "correctIndex": 1,
+    "topicTag": "19.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c19-mc-6",
+    "unitId": 19,
+    "stem": "A triglyceride is formed from one glycerol molecule bonded to three:",
+    "choices": ["amino acids", "fatty acids", "monosaccharides", "nucleotides"],
+    "correctIndex": 1,
+    "topicTag": "19.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c19-mc-7",
+    "unitId": 19,
+    "stem": "Saturated fats have carbon chains with no carbon-carbon double bonds, while unsaturated fats contain one or more carbon-carbon double bonds.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "19.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c19-mc-8",
+    "unitId": 19,
+    "stem": "Proteins are polymers built from repeating monomer units called:",
+    "choices": ["nucleotides", "fatty acids", "amino acids", "monosaccharides"],
+    "correctIndex": 2,
+    "topicTag": "19.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c19-mc-9",
+    "unitId": 19,
+    "stem": "The covalent bond that links amino acids together in a protein chain is called a:",
+    "choices": ["glycosidic bond", "peptide bond", "phosphodiester bond", "hydrogen bond"],
+    "correctIndex": 1,
+    "topicTag": "19.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c19-mc-10",
+    "unitId": 19,
+    "stem": "Every standard amino acid contains at least a(n):",
+    "choices": ["amino group and a carboxyl group", "two amino groups and no carboxyl group", "phosphate group and a sugar", "ring of nitrogen atoms"],
+    "correctIndex": 0,
+    "topicTag": "19.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c19-mc-11",
+    "unitId": 19,
+    "stem": "The nucleic acid that stores an organism's long-term hereditary genetic information is:",
+    "choices": ["RNA", "DNA", "ATP", "a protein"],
+    "correctIndex": 1,
+    "topicTag": "19.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c19-mc-12",
+    "unitId": 19,
+    "stem": "In the DNA double helix, the base adenine always pairs with:",
+    "choices": ["guanine", "cytosine", "thymine", "uracil"],
+    "correctIndex": 2,
+    "topicTag": "19.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c19-mc-13",
+    "unitId": 19,
+    "stem": "Unlike DNA, RNA contains the sugar:",
+    "choices": ["deoxyribose", "ribose", "glucose", "fructose"],
+    "correctIndex": 1,
+    "topicTag": "19.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c19-mc-14",
+    "unitId": 19,
+    "stem": "DNA is typically a double-stranded helix, whereas RNA is typically single-stranded.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "19.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c19-mc-15",
+    "unitId": 19,
+    "stem": "Enzymes function in biochemical reactions primarily as:",
+    "choices": ["energy sources", "structural building blocks", "biological catalysts that speed up reactions", "genetic information carriers"],
+    "correctIndex": 2,
+    "topicTag": "19.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c19-mc-16",
+    "unitId": 19,
+    "stem": "The specific molecule that an enzyme acts upon and converts into product is called its:",
+    "choices": ["substrate", "cofactor", "ligand", "isomer"],
+    "correctIndex": 0,
+    "topicTag": "19.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c19-mc-17",
+    "unitId": 19,
+    "stem": "Which of the following best describes a disaccharide?",
+    "choices": [
+      "A single sugar unit",
+      "Two monosaccharides joined together",
+      "A long chain of many sugar units",
+      "A sugar molecule containing nitrogen"
+    ],
+    "correctIndex": 1,
+    "topicTag": "19.1",
+    "source": "original",
+    "explanation": "A disaccharide, like sucrose or maltose, forms when two monosaccharide units are joined together by a glycosidic bond. Choice A describes a monosaccharide, choice C describes a polysaccharide, and choice D is not a defining feature of carbohydrates at all — carbohydrates are composed of carbon, hydrogen, and oxygen, not nitrogen.",
+    "difficulty": "beginner",
+    "hints": [
+      "Break the word into its parts: 'di-' means two, and '-saccharide' refers to sugar units.",
+      "Compare this to the term monosaccharide, which refers to just one sugar unit."
+    ]
+  },
+  {
+    "id": "ic-c19-mc-18",
+    "unitId": 19,
+    "stem": "Which of the following is the best description of an unsaturated fatty acid?",
+    "choices": [
+      "A fatty acid with no carbon-carbon double bonds",
+      "A fatty acid with one or more carbon-carbon double bonds",
+      "A fatty acid attached to a protein",
+      "A fatty acid that contains nitrogen"
+    ],
+    "correctIndex": 1,
+    "topicTag": "19.2",
+    "source": "original",
+    "explanation": "Unsaturated fatty acids contain one or more carbon-carbon double bonds along their hydrocarbon tail. Saturated fatty acids, described in choice A, contain no such double bonds — this is the opposite of unsaturated. Choices C and D describe features that are unrelated to the saturation of a fatty acid.",
+    "difficulty": "beginner",
+    "hints": [
+      "The word 'unsaturated' refers to a specific kind of carbon-carbon bond, not to what the fatty acid is attached to.",
+      "Think about how unsaturated fats differ structurally from saturated fats."
+    ]
+  },
+  {
+    "id": "ic-c19-mc-19",
+    "unitId": 19,
+    "stem": "A protein chain contains 8 amino acids joined end-to-end in a single unbranched chain. How many peptide bonds are present in this chain?",
+    "choices": ["6", "7", "8", "9"],
+    "correctIndex": 1,
+    "topicTag": "19.3",
+    "source": "original",
+    "explanation": "In a single unbranched chain of n amino acids, only n - 1 peptide bonds are needed to connect every adjacent pair, since the two end amino acids each only need one bond to their single neighbor. With n = 8, the number of bonds = 8 - 1 = 7. Choice A undercounts by one bond. Choices C and D assume a bond count equal to or greater than the number of monomers, which would only apply to a circular (cyclic) chain rather than a linear one.",
+    "difficulty": "intermediate",
+    "hints": [
+      "Try counting the bonds in a much smaller chain first, like 2 or 3 amino acids, to see the pattern.",
+      "Each bond connects exactly two neighboring amino acids — count the gaps between amino acids, not the amino acids themselves."
+    ]
+  },
+  {
+    "id": "ic-c19-mc-20",
+    "unitId": 19,
+    "stem": "A double-stranded DNA sample is found to contain 40% cytosine (C) bases. What percentage of the bases in this sample are adenine (A)?",
+    "choices": ["10%", "20%", "40%", "60%"],
+    "correctIndex": 0,
+    "topicTag": "19.4",
+    "source": "original",
+    "explanation": "Because C pairs with G, %G must also equal 40%, so C and G together account for 80% of bases. The remaining 20% must be A and T combined; because A pairs with T, they must be present in equal amounts, so %A = 20%/2 = 10%. Choice B (20%) is the combined A+T percentage, not A alone. Choice C (40%) incorrectly assumes %A equals %C. Choice D (60%) incorrectly computes 100% - 40% without accounting for the required A = T split.",
+    "difficulty": "intermediate",
+    "hints": [
+      "Remember that G must equal C in amount, and A must equal T in amount, in double-stranded DNA.",
+      "Find the combined percentage left over for A and T first, then divide it evenly between the two."
+    ]
+  },
+  {
+    "id": "ic-c19-mc-21",
+    "unitId": 19,
+    "stem": "An enzyme normally catalyzes a specific reaction efficiently at body temperature (37 degrees C). If the temperature is raised well above this optimum, for example to 80 degrees C, the enzyme's activity drops sharply and does not recover even after the sample is cooled back down. What is the most likely explanation for this irreversible loss of activity?",
+    "choices": [
+      "The enzyme's substrate concentration decreased",
+      "The high temperature permanently denatured the enzyme, disrupting its three-dimensional shape",
+      "The enzyme was consumed as a reactant in the reaction",
+      "The high temperature converted the enzyme into its substrate"
+    ],
+    "correctIndex": 1,
+    "topicTag": "19.5",
+    "source": "original",
+    "explanation": "Excessive heat provides enough energy to disrupt the weak interactions holding an enzyme's three-dimensional folded shape together, including the specific shape of its active site; this permanent unfolding is called denaturation, and once an enzyme's active site is destroyed this way, it generally cannot properly refold and regain function even after cooling. Choice A is unrelated to temperature effects on the enzyme itself. Choice C is incorrect because enzymes are catalysts and are not consumed in the reactions they catalyze. Choice D describes something that does not happen — enzymes and substrates are chemically distinct molecules, and heat does not convert one into the other.",
+    "difficulty": "advanced",
+    "hints": [
+      "Think about what physically holds an enzyme's three-dimensional folded shape together, and what high heat energy could do to those interactions.",
+      "The key clue is that the activity does NOT come back after cooling — this points to a permanent structural change rather than a temporary effect."
+    ]
+  },
+  {
+    "id": "ic-c19-mc-22",
+    "unitId": 19,
+    "stem": "A double-stranded DNA molecule contains 5,000 total nucleotides. If there are 1,000 more adenine (A) nucleotides than guanine (G) nucleotides, how many cytosine (C) nucleotides are present?",
+    "choices": ["625", "750", "875", "1000"],
+    "correctIndex": 1,
+    "topicTag": "19.4",
+    "source": "original",
+    "explanation": "Let G = C = x and A = T = y, using the base-pairing rules. Total nucleotides: 2x + 2y = 5,000, so x + y = 2,500. Given that A is 1,000 more than G: y - x = 1,000. Adding these two equations gives 2y = 3,500, so y = 1,750, and then x = 2,500 - 1,750 = 750. So G = C = 750 and A = T = 1,750, meaning there are 750 cytosine nucleotides. Choice A (625) and choice C (875) come from mis-splitting the totals without correctly combining both equations. Choice D (1000) mistakes the given difference itself for the actual count of cytosine.",
+    "difficulty": "advanced",
+    "hints": [
+      "Set up two unknowns using the base-pairing rules: let G = C = x and A = T = y.",
+      "Use the total nucleotide count to write one equation and the given difference between A and G to write a second equation, then solve them together."
+    ]
+  }
+]

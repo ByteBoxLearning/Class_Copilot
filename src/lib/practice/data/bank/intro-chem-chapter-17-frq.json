@@ -1,0 +1,410 @@
+[
+  {
+    "id": "ic17-short-1",
+    "unitId": 17,
+    "kind": "short",
+    "points": 4,
+    "stem": "Polonium-210 (Po-210, atomic number 84) is a radioactive isotope that undergoes alpha decay, emitting an alpha particle (a helium nucleus, ^4_2He).",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Write the complete, balanced nuclear equation for the alpha decay of polonium-210, showing the mass number and atomic number of every particle.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Identify the name and chemical symbol of the daughter nuclide produced, and state its mass number and atomic number.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "In alpha decay, the nucleus emits an alpha particle (^4_2He), decreasing the mass number by 4 and the atomic number by 2.\n\nStarting nuclide: ^210_84Po (mass number 210, atomic number 84).\nDaughter mass number = 210 - 4 = 206. Daughter atomic number = 84 - 2 = 82.\n\nBalanced nuclear equation: ^210_84Po -> ^4_2He + ^206_82Pb\n\nAtomic number 82 corresponds to the element lead, so the daughter nuclide is lead-206 (Pb-206), with mass number 206 and atomic number 82.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly writing the alpha particle as ^4_2He; 1 point for a fully balanced equation in which mass numbers sum correctly (210 = 4 + 206) and atomic numbers sum correctly (84 = 2 + 82).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly identifying the daughter element as lead (Pb); 1 point for correctly stating mass number 206 and atomic number 82. Award credit for a daughter identification that is arithmetically consistent with the equation the student wrote in part (a), even if that equation contained an error.",
+        "points": 2,
+        "allowsErrorCarriedForward": true
+      }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": [
+      "Alpha decay always changes the mass number by -4 and the atomic number by -2 — apply that directly to polonium-210's numbers.",
+      "Once you have the new atomic number, look it up on the periodic table to name the daughter element."
+    ]
+  },
+  {
+    "id": "ic17-short-2",
+    "unitId": 17,
+    "kind": "short",
+    "points": 4,
+    "stem": "Carbon-14 (C-14, atomic number 6), the isotope used in radiocarbon dating, is unstable and undergoes beta-minus decay. In beta-minus decay, a neutron in the nucleus converts into a proton, and a fast-moving electron (the beta particle, represented as ^0_-1e) is emitted from the nucleus.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Write the complete, balanced nuclear equation for the beta-minus decay of carbon-14.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "State what happens to the mass number and the atomic number of the nuclide during this beta decay, and identify the daughter element produced.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "In beta-minus decay, a neutron converts to a proton and an electron; the emitted electron carries away essentially no mass number but a charge of -1, so mass number is unchanged and atomic number increases by 1.\n\nStarting nuclide: ^14_6C (mass number 14, atomic number 6).\nDaughter mass number = 14 (unchanged). Daughter atomic number = 6 + 1 = 7.\n\nBalanced nuclear equation: ^14_6C -> ^14_7N + ^0_-1e\n\nAtomic number 7 corresponds to nitrogen, so the daughter nuclide is nitrogen-14 (N-14).",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly writing the beta particle as ^0_-1e; 1 point for a fully balanced equation with mass numbers summing correctly (14 = 14 + 0) and atomic numbers summing correctly (6 = 7 + (-1)).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly stating the mass number stays the same (14) while the atomic number increases by 1 (from 6 to 7); 1 point for correctly identifying the daughter element as nitrogen (N-14). Award credit for a daughter identification that is consistent with the equation written in part (a), even if that equation contained an error.",
+        "points": 2,
+        "allowsErrorCarriedForward": true
+      }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": [
+      "Beta-minus decay leaves the mass number unchanged but increases the atomic number by 1 — apply that to carbon-14's numbers.",
+      "Match the new atomic number to its element on the periodic table to name the daughter nuclide."
+    ]
+  },
+  {
+    "id": "ic17-long-1",
+    "unitId": 17,
+    "kind": "long",
+    "points": 10,
+    "stem": "A medical laboratory has a 64.0 mg sample of a radioactive isotope used for diagnostic imaging. This isotope has a half-life of 6.0 hours.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Determine how many half-lives occur in a period of 24 hours, and calculate the mass of the isotope that remains at that time.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the mass of the original sample that has decayed (converted into other products) after 24 hours.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(c)",
+        "prompt": "Hospital safety rules require the leftover sample to decay to a mass of 2.0 mg or less before it can be disposed of as ordinary waste. Determine the minimum number of half-lives, and therefore the minimum number of hours, required to reach this level.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(d)",
+        "prompt": "Explain, in terms of half-life, why isotopes with short half-lives (rather than very long half-lives) are generally preferred for medical imaging procedures performed on patients.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) Number of half-lives in 24 hours = 24 h / 6.0 h per half-life = 4 half-lives.\nRemaining mass = 64.0 mg x (1/2)^4 = 64.0 mg x (1/16) = 4.0 mg.\n\n(b) Mass decayed = original mass - remaining mass = 64.0 mg - 4.0 mg = 60.0 mg.\n\n(c) Need remaining mass <= 2.0 mg: 64.0 mg x (1/2)^n <= 2.0 mg, so (1/2)^n <= 2.0/64.0 = 1/32 = (1/2)^5. So n = 5 half-lives are required.\nTime = 5 half-lives x 6.0 h/half-life = 30 hours.\n\n(d) A short-half-life isotope decays away quickly after it has served its purpose, so it stops emitting significant radiation soon after the imaging procedure, minimizing the patient's total radiation exposure/dose. A long-half-life isotope would continue emitting radiation inside (or excreted from) the patient's body for a much longer time, increasing radiation exposure and health risk, even though it is no longer needed for imaging.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly calculating 4 half-lives; 1 point for correctly applying (1/2)^4; 1 point for the correct final remaining mass of 4.0 mg.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly subtracting remaining mass from the original mass; 1 point for setting up 64.0 mg minus the student's part (a) remaining mass; 1 point for the correct final decayed mass of 60.0 mg, consistent with the remaining mass calculated in part (a) even if that value was incorrect.",
+        "points": 3,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly determining that 5 half-lives are needed to reach 2.0 mg or less; 1 point for correctly converting to 30 hours using the given 6.0 hour half-life.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly explaining that a short half-life means the isotope decays away (its radioactivity drops off) quickly after use; 1 point for connecting this to reduced/minimized radiation exposure or dose to the patient over time.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Work out the number of half-lives elapsed before you calculate any masses.",
+      "For part (c), think about what power of 1/2 is less than or equal to the target fraction 2.0/64.0."
+    ]
+  },
+  {
+    "id": "ic17-long-2",
+    "unitId": 17,
+    "kind": "long",
+    "points": 10,
+    "stem": "In a nuclear reactor, a neutron (^1_0n) strikes a uranium-235 nucleus (^235_92U), causing it to undergo fission. The nucleus splits into a barium-141 nucleus (^141_56Ba), an unknown daughter nuclide X, and three additional neutrons, according to the equation:\n\n^235_92U + ^1_0n -> ^141_56Ba + X + 3 ^1_0n",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Using conservation of mass number and atomic number, determine the mass number and atomic number of nuclide X, and identify the corresponding element by name and chemical symbol.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(b)",
+        "prompt": "State whether this nuclear process is best classified as nuclear fission or nuclear fusion, and justify your classification in one or two sentences.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(c)",
+        "prompt": "Alpha, beta, and gamma radiation differ in how far they can penetrate matter. Rank these three types of radiation from least penetrating to most penetrating, and state one type of shielding material that is minimally sufficient to stop each type.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(d)",
+        "prompt": "Explain why this uranium fission reaction releases an enormous amount of energy, referring to the relationship between mass and energy.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) Conservation of mass number: total mass number in = 235 + 1 = 236. Total mass number out = 141 + A(X) + 3(1) = 144 + A(X). So A(X) = 236 - 144 = 92.\nConservation of atomic number: total atomic number in = 92 + 0 = 92. Total atomic number out = 56 + Z(X) + 3(0) = 56 + Z(X). So Z(X) = 92 - 56 = 36.\nAtomic number 36 corresponds to krypton, so X is krypton-92 (^92_36Kr).\n\n(b) This is nuclear fission: a large, heavy nucleus (uranium-235) splits apart into two smaller nuclei (barium-141 and krypton-92) plus extra neutrons, releasing energy. (Fusion, by contrast, would involve small nuclei combining into a larger one.)\n\n(c) From least to most penetrating: alpha < beta < gamma.\nAlpha particles are stopped by a single sheet of paper or even a few centimeters of air / the outer layer of skin.\nBeta particles are stopped by a thin sheet of aluminum or a similar thickness of plastic.\nGamma rays require thick, dense shielding such as several centimeters of lead or a thick layer of concrete to be significantly reduced.\n\n(d) In this fission reaction, a small amount of mass is 'lost' (the total mass of the products is slightly less than the total mass of the reactants); this lost mass is converted directly into energy according to Einstein's mass-energy equivalence relationship, E = mc^2. Because the speed of light, c, is an extremely large number, even a tiny loss of mass (c^2 multiplied by that mass) corresponds to an enormous release of energy, far greater than the energy released by ordinary chemical reactions.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly finding mass number A(X) = 92 using conservation of mass number; 1 point for correctly finding atomic number Z(X) = 36 using conservation of atomic number; 1 point for correctly identifying the element as krypton (Kr-92).",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly classifying the process as nuclear fission; 1 point for a justification referencing a heavy nucleus splitting into smaller nuclei (as opposed to small nuclei combining).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for the correct penetrating-power ranking (alpha least, then beta, then gamma most); 1 point for correctly matching paper (or skin/short air gap) to alpha and aluminum/plastic to beta; 1 point for correctly matching lead or thick concrete to gamma.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly stating that a small amount of mass is converted into energy (mass is not perfectly conserved, only mass-energy is); 1 point for correctly referencing E = mc^2 and explaining that a large value of c^2 makes even a tiny mass loss correspond to a huge amount of energy.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Handle the two conservation laws (mass number and atomic number) separately when solving for nuclide X.",
+      "For the penetrating-power ranking, recall that particle size and charge determine how easily each type of radiation is absorbed by matter."
+    ]
+  },
+  {
+    "id": "ic17-short-3",
+    "unitId": 17,
+    "kind": "short",
+    "points": 4,
+    "stem": "Iodine-131 (I-131, atomic number 53) is a radioactive isotope used in the treatment of thyroid conditions. It undergoes beta-minus decay, emitting a beta particle (^0_-1e).",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Write the complete, balanced nuclear equation for the beta-minus decay of iodine-131.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "State whether the shielding needed to stop the emitted beta particles would be greater than or less than the shielding needed to stop alpha particles of similar energy, and explain your reasoning in terms of penetrating power.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) In beta-minus decay, a neutron converts to a proton and an electron; the emitted electron carries essentially no mass number but a charge of -1, so mass number is unchanged (131) and atomic number increases by 1 (53 -> 54).\n\nStarting nuclide: ^131_53I. Daughter atomic number = 53 + 1 = 54, which is xenon.\n\nBalanced nuclear equation: ^131_53I -> ^131_54Xe + ^0_-1e\n\n(b) Beta particles penetrate matter more deeply than alpha particles do, because beta particles are much smaller and lighter and interact less strongly with matter as they pass through it. Therefore, more shielding (such as a sheet of aluminum or plastic, rather than just a sheet of paper) is needed to stop beta particles than would be needed to stop alpha particles of similar energy, so the shielding required is greater, not less.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly writing the beta particle as ^0_-1e; 1 point for a fully balanced equation with mass numbers summing correctly (131 = 131 + 0) and atomic numbers summing correctly (53 = 54 + (-1)).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly stating that greater shielding is needed for beta particles than for alpha particles; 1 point for reasoning based on beta particles having greater penetrating power than alpha particles.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Apply the same beta-minus decay rule you use for mass number and atomic number changes to iodine-131's numbers.",
+      "Recall the relative penetrating-power ranking from least to most: alpha, beta, gamma — then think about what that means for how much material each requires to stop it."
+    ]
+  },
+  {
+    "id": "ic17-short-4",
+    "unitId": 17,
+    "kind": "short",
+    "points": 4,
+    "stem": "The Sun produces energy by fusing two isotopes of hydrogen, deuterium (^2_1H) and tritium (^3_1H), into a helium nucleus (^4_2He), releasing one free neutron in the process.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Write the complete, balanced nuclear equation for this fusion reaction, and confirm that both mass number and atomic number are conserved.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "State whether this reaction is best classified as fission or fusion, and explain the key structural difference between fission and fusion in terms of the size of the nuclei involved.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) ^2_1H + ^3_1H -> ^4_2He + ^1_0n\nCheck mass number: reactants 2 + 3 = 5; products 4 + 1 = 5. Conserved.\nCheck atomic number: reactants 1 + 1 = 2; products 2 + 0 = 2. Conserved.\n\n(b) This is nuclear fusion, because two small, light nuclei (deuterium and tritium) combine to form a single larger nucleus (helium), releasing a neutron and energy. This is the opposite of fission, in which a single large, heavy nucleus splits apart into two or more smaller nuclei; fusion combines light nuclei, while fission splits a heavy nucleus.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for the correctly balanced fusion equation ^2_1H + ^3_1H -> ^4_2He + ^1_0n; 1 point for explicitly checking and confirming that both mass number (5 = 5) and atomic number (2 = 2) are conserved.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly classifying the reaction as fusion; 1 point for correctly explaining the size distinction (fusion combines small/light nuclei into a larger one, versus fission splitting a large/heavy nucleus into smaller ones).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": [
+      "Add the mass numbers and atomic numbers on each side separately to see whether the equation balances the way it's written.",
+      "Fusion always involves smaller nuclei coming together; think about which term describes nuclei combining, as opposed to splitting apart."
+    ]
+  },
+  {
+    "id": "ic17-long-3",
+    "unitId": 17,
+    "kind": "long",
+    "points": 10,
+    "stem": "Cobalt-60 (Co-60, atomic number 27) is a radioactive isotope used in radiation therapy machines. It decays by beta-minus emission to nickel (atomic number 28), and has a half-life of 5.3 years. A hospital purchases a therapy source containing 8.00 g of cobalt-60.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Write the complete, balanced nuclear equation for the beta-minus decay of cobalt-60.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the mass of cobalt-60 remaining after 21.2 years (assume this is exactly 4 half-lives).",
+        "maxPoints": 2
+      },
+      {
+        "label": "(c)",
+        "prompt": "Determine the mass of cobalt-60 that has decayed away after 21.2 years.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(d)",
+        "prompt": "A different radiotherapy source uses cesium-137, which has a much longer half-life of about 30 years. Explain one practical advantage and one practical disadvantage of using a longer-half-life isotope like cesium-137 instead of cobalt-60 for a radiation therapy machine meant to remain in service for many years.",
+        "maxPoints": 4
+      }
+    ],
+    "workedSolution": "(a) Beta-minus decay: mass number unchanged (60), atomic number increases by 1 (27 -> 28). ^60_27Co -> ^60_28Ni + ^0_-1e\n\n(b) 21.2 years / 5.3 years per half-life = 4 half-lives. Remaining mass = 8.00 g x (1/2)^4 = 8.00 g x 1/16 = 0.50 g.\n\n(c) Mass decayed = original mass - remaining mass = 8.00 g - 0.50 g = 7.50 g.\n\n(d) Advantage: A longer half-life means the source decays more slowly, so its radioactive output/strength stays higher for longer, meaning the therapy machine's source does not need to be replaced as often, reducing maintenance cost and downtime. Disadvantage: Because it decays more slowly, a longer-half-life source remains radioactive (and hazardous) for a much longer period of time after it is no longer needed, creating a more long-lived radioactive waste disposal problem.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly identifying nickel as the daughter element; 1 point for the fully balanced equation ^60_27Co -> ^60_28Ni + ^0_-1e with correct particle notation.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly determining 4 half-lives have elapsed; 1 point for the correct final remaining mass of 0.50 g using (1/2)^4.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly subtracting remaining mass from the original mass; 1 point for the correct final decayed mass of 7.50 g, consistent with the remaining mass calculated in part (b) even if that value was incorrect.",
+        "points": 2,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "2 points for a valid, well-explained advantage (e.g., slower decay means less frequent source replacement and a longer usable service life); 2 points for a valid, well-explained disadvantage (e.g., the source remains hazardous/radioactive for a much longer time after it is retired, complicating disposal).",
+        "points": 4,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Start with the same beta-decay rule (mass number unchanged, atomic number up by 1) that you'd use for any other beta-minus decay.",
+      "For the half-life parts, first find how many half-lives fit into the given time span before doing any mass arithmetic."
+    ]
+  },
+  {
+    "id": "ic17-long-4",
+    "unitId": 17,
+    "kind": "long",
+    "points": 10,
+    "stem": "In a nuclear reactor, a neutron (^1_0n) is absorbed by a plutonium-239 nucleus (^239_94Pu), causing it to undergo fission. The nucleus splits into a molybdenum-95 nucleus (^95_42Mo), an unknown daughter nuclide Y, and two additional neutrons, according to the equation:\n\n^239_94Pu + ^1_0n -> ^95_42Mo + Y + 2 ^1_0n",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Using conservation of mass number and atomic number, determine the mass number and atomic number of nuclide Y, and identify the corresponding element by name and chemical symbol.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(b)",
+        "prompt": "The plutonium-239 used in this reactor has a half-life of 24,100 years as a free-standing isotope. If a 96.0 mg sample of plutonium-239 were set aside and allowed to decay undisturbed, calculate the mass remaining after 3 half-lives, and state how many years this represents.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(c)",
+        "prompt": "This fission reaction releases far more energy per atom than a typical chemical reaction like combustion does. Explain why, referring to the relationship between mass and energy.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(d)",
+        "prompt": "The two neutrons released in this fission reaction can go on to strike other plutonium-239 nuclei, causing them to undergo fission as well. Explain what term describes this self-sustaining process and what role a 'critical mass' of fissile material plays in sustaining it.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) Conservation of mass number: total in = 239 + 1 = 240. Total out = 95 + A(Y) + 2(1) = 97 + A(Y). So A(Y) = 240 - 97 = 143.\nConservation of atomic number: total in = 94 + 0 = 94. Total out = 42 + Z(Y) + 2(0) = 42 + Z(Y). So Z(Y) = 94 - 42 = 52.\nAtomic number 52 corresponds to tellurium, so Y is tellurium-143, ^143_52Te.\n\n(b) After 3 half-lives, remaining mass = 96.0 mg x (1/2)^3 = 96.0 mg x 1/8 = 12.0 mg.\nTime elapsed = 3 half-lives x 24,100 years/half-life = 72,300 years.\n\n(c) In this fission reaction, the total mass of the products is very slightly less than the total mass of the reactants; this small amount of 'missing' mass is converted directly into energy according to E = mc^2. Because c^2 is an enormous number, even a tiny loss of mass releases a very large amount of energy, far more energy per atom than is released by the rearrangement of chemical bonds in a combustion reaction, which does not involve any measurable loss of mass.\n\n(d) This self-sustaining process, in which the neutrons released by one fission event trigger further fission events, is called a chain reaction. A 'critical mass' is the minimum amount of fissile material (such as plutonium-239) needed so that, on average, at least one neutron from each fission event goes on to cause another fission event, allowing the chain reaction to sustain itself rather than dying out.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly finding A(Y) = 143; 1 point for correctly finding Z(Y) = 52; 1 point for correctly identifying the element as tellurium (Te-143).",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly applying (1/2)^3; 1 point for the correct remaining mass of 12.0 mg; 1 point for correctly converting to 72,300 years using the given half-life.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly stating that a small amount of mass is converted into energy in the reaction; 1 point for correctly referencing E = mc^2 and explaining why a large value of c^2 makes even a tiny mass loss correspond to a large energy release.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly identifying the process as a chain reaction; 1 point for correctly explaining that critical mass is the minimum amount of fissile material needed for the chain reaction to be self-sustaining.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Set up the conservation equations for mass number and atomic number separately, the same way you would balance any other nuclear equation.",
+      "For part (b), figure out how many total half-lives have passed before multiplying out the remaining mass, and note that only one fission neutron needs to trigger a new fission, on average, for the reaction to sustain itself."
+    ]
+  }
+]

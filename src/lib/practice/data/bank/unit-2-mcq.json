@@ -1,0 +1,66 @@
+[
+  {
+    "id": "u2-mcq-1",
+    "unitId": 2,
+    "stem": "The table below lists the average bond length and average bond dissociation energy for four carbon-halogen single bonds.\n\nBond | Bond Length (pm) | Bond Energy (kJ/mol)\nC-F | 135 | 485\nC-Cl | 177 | 327\nC-Br | 194 | 285\nC-I | 214 | 213\n\nBased on the data, which of the following best explains why the C-F bond has a greater bond energy than the C-I bond?",
+    "choices": [
+      "The C-F bond is shorter, allowing greater orbital overlap and placing the shared electron pair closer to both nuclei, increasing the electrostatic attraction that must be overcome to break the bond.",
+      "The C-F bond is longer, holding the atoms farther apart and reducing nucleus-nucleus repulsion, which requires more energy to separate the atoms.",
+      "Fluorine is less electronegative than iodine, so the C-F bond is purely covalent and therefore inherently stronger.",
+      "The C-I bond involves d-orbital hybridization on iodine, which weakens orbital overlap compared to the C-F bond."
+    ],
+    "correctIndex": 0,
+    "workedSolution": "Bond energy depends on how strongly the shared electron pair is attracted to both nuclei, which is governed largely by bond length (interatomic distance) and orbital overlap. Fluorine has a much smaller atomic radius than iodine, so the C-F bond length (135 pm) is much shorter than the C-I bond length (214 pm). The shorter distance allows greater overlap between the carbon orbital and the halogen orbital and places the shared electron density closer to both nuclei, increasing the electrostatic attraction holding the bond together. This matches the data: as bond length increases down the series C-F to C-I, bond energy decreases from 485 to 213 kJ/mol. Choice A correctly identifies this shorter-bond -> greater-overlap -> greater-attraction -> higher-bond-energy relationship.",
+    "explanation": "Choice A is correct: shorter bonds generally correspond to stronger orbital overlap and greater electrostatic attraction between the nuclei and the shared electrons, explaining why bond energy decreases from F to I. Choice B reverses the actual relationship — longer bonds are weaker, not stronger, because the shared electrons sit farther from both nuclei. Choice C contains a factual error: fluorine is more electronegative than iodine, not less, and this reasoning doesn't actually explain the bond-energy trend. Choice D invents an explanation (d-orbital hybridization on iodine) that is not the accepted reason for the halogen bond-energy trend, which is governed by atomic size and orbital overlap, not d-orbitals.",
+    "topicTag": "Intramolecular Force and Potential Energy",
+    "source": "bank"
+  },
+  {
+    "id": "u2-mcq-2",
+    "unitId": 2,
+    "stem": "Which of the following ionic compounds would be expected to have the largest lattice energy (in magnitude)?",
+    "choices": [
+      "NaCl",
+      "KBr",
+      "CaO",
+      "MgO"
+    ],
+    "correctIndex": 3,
+    "workedSolution": "Lattice energy magnitude increases with the product of the ionic charges and decreases with increasing distance between ion centers (Coulomb's law): magnitude of lattice energy is proportional to (Q+ times Q-) divided by r. NaCl and KBr both involve singly charged ions (Na^+, K^+, Cl^-, Br^-), so their charge product is only 1, giving relatively small lattice energies (NaCl approximately 787 kJ/mol, KBr approximately 671 kJ/mol). CaO and MgO both involve doubly charged ions (Ca^2+ or Mg^2+ with O^2-), giving a charge product of 4, which produces much larger lattice energies than either NaCl or KBr regardless of the exact radii involved. Between CaO and MgO, Mg^2+ has a smaller ionic radius than Ca^2+, so the Mg-O interionic distance is shorter than the Ca-O distance, giving MgO the larger lattice energy of the two oxides (MgO approximately 3795 kJ/mol vs CaO approximately 3414 kJ/mol). Therefore MgO has the largest lattice energy among the four choices.",
+    "explanation": "MgO is correct because it combines the largest charge product (2+ and 2-) with the smallest interionic distance among the choices. CaO is a common wrong answer because it also has a 2+/2- charge product, but Ca^2+ is larger than Mg^2+, so CaO's lattice energy, while large, is smaller than MgO's. NaCl and KBr are both incorrect because their ions each carry only a single charge, making their charge product much smaller than in the oxides — a difference that dominates the comparison even though Cl^- and Br^- differ somewhat in size from O^2-.",
+    "topicTag": "Structure of Ionic Solids",
+    "source": "bank"
+  },
+  {
+    "id": "u2-mcq-3",
+    "unitId": 2,
+    "stem": "Xenon tetrafluoride, XeF4, has a central Xe atom bonded to four F atoms, with two lone pairs of electrons remaining on Xe. What are the electron-domain geometry, molecular geometry, and hybridization of the central Xe atom?",
+    "choices": [
+      "Octahedral electron-domain geometry, square planar molecular geometry, sp3d2 hybridization",
+      "Square planar electron-domain geometry, square planar molecular geometry, sp3d hybridization",
+      "Octahedral electron-domain geometry, octahedral molecular geometry, sp3d2 hybridization",
+      "Trigonal bipyramidal electron-domain geometry, seesaw molecular geometry, sp3d hybridization"
+    ],
+    "correctIndex": 0,
+    "workedSolution": "Xe in XeF4 has 4 bonding domains (to the 4 F atoms) plus 2 lone pairs, giving 6 total electron domains around Xe. Six electron domains arrange to minimize repulsion in an octahedral electron-domain geometry, which requires sp3d2 hybridization on Xe. To minimize the stronger lone pair-lone pair repulsion, the two lone pairs occupy positions directly across from each other (180 degrees apart, trans to one another), leaving the four F atoms arranged in a plane around Xe. Since molecular geometry names describe only the positions of atoms (not lone pairs), removing the two mutually trans lone pairs from the octahedral arrangement leaves the observed molecular geometry as square planar, with F-Xe-F bond angles of 90 and 180 degrees.",
+    "explanation": "Choice A is correct: 6 electron domains (4 bonds + 2 lone pairs) give an octahedral electron-domain geometry and sp3d2 hybridization, but since only atom positions count toward molecular geometry, removing the two trans lone pairs leaves a square planar molecular shape. Choice B incorrectly names the electron-domain geometry as if the lone pairs were absent (using the molecular-geometry name for the domain geometry) and assigns the wrong hybridization (sp3d corresponds to 5 domains, not 6). Choice C ignores the effect of the two lone pairs on molecular geometry, incorrectly calling the molecular geometry octahedral instead of square planar. Choice D actually describes SF4 (5 electron domains: 4 bonds + 1 lone pair, trigonal bipyramidal domain geometry, seesaw molecular geometry, sp3d hybridization), a common mix-up with XeF4 that has one fewer electron domain.",
+    "topicTag": "VSEPR and Hybridization",
+    "source": "bank"
+  },
+  {
+    "id": "u2-mcq-4",
+    "unitId": 2,
+    "stem": "The nitrite ion, NO2^-, is well represented by a resonance structure in which the central N atom forms one N=O double bond and one N-O single bond, with one lone pair of electrons remaining on N. What are the formal charges on the N atom and on the singly-bonded O atom, respectively, in this structure?",
+    "choices": [
+      "N = 0, singly-bonded O = -1",
+      "N = -1, singly-bonded O = 0",
+      "N = +1, singly-bonded O = -2",
+      "N = 0, singly-bonded O = 0"
+    ],
+    "correctIndex": 0,
+    "workedSolution": "NO2^- has 5 (N) + 6(2) (O) + 1 (extra electron for the negative charge) = 18 valence electrons. In the structure with one N=O double bond, one N-O single bond, and one lone pair on N: the double-bonded O has 2 lone pairs, the singly-bonded O has 3 lone pairs, and N has 1 lone pair. Checking the total: bonding electrons = 4 (double bond) + 2 (single bond) = 6; lone pair electrons = 4 (double-bonded O) + 6 (single-bonded O) + 2 (N) = 12; total = 18, which matches. Formal charge = (valence electrons) - (nonbonding electrons) - 1/2(bonding electrons). For N: 5 - 2 - 1/2(6) = 5 - 2 - 3 = 0. For the singly-bonded O: 6 - 6 - 1/2(2) = 6 - 6 - 1 = -1. For the doubly-bonded O: 6 - 4 - 1/2(4) = 6 - 4 - 2 = 0. The formal charges (0, 0, -1) sum to -1, matching the overall charge of the ion, confirming this is a valid, formal-charge-minimized Lewis structure.",
+    "explanation": "Choice A is correct and matches the formal charge calculation: N = 0 and the singly-bonded O = -1 (with the doubly-bonded O at 0), consistent with the ion's overall -1 charge. Choice B swaps the charges onto the wrong atoms — placing -1 on N and 0 on O — which does not follow from this bonding pattern, since N here has a full octet from 1 lone pair plus 3 bonding domains, giving it a formal charge of 0, not -1. Choice C overstates the charge separation and does not sum correctly to the ion's -1 overall charge, reflecting a common error of not dividing bonding electrons by two. Choice D fails to place any negative formal charge anywhere in the structure, which cannot be correct since the ion's overall -1 charge must appear somewhere in the formal-charge distribution.",
+    "topicTag": "Resonance and Formal Charge",
+    "source": "bank"
+  }
+]

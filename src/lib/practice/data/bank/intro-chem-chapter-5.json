@@ -1,0 +1,251 @@
+[
+  {
+    "id": "ic-c5-mc-1",
+    "unitId": 5,
+    "stem": "In the chemical formula Al2O3, the subscript \"3\" indicates:",
+    "choices": ["Three atoms of aluminum", "Three molecules of the compound", "Three atoms of oxygen per formula unit", "Three total atoms in the compound"],
+    "correctIndex": 2,
+    "topicTag": "5.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c5-mc-2",
+    "unitId": 5,
+    "stem": "A chemical formula shows only which elements are present in a compound, not the ratio in which their atoms combine.",
+    "choices": ["True", "False"],
+    "correctIndex": 1,
+    "topicTag": "5.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c5-mc-3",
+    "unitId": 5,
+    "stem": "What is the correct name for the ionic compound NaCl?",
+    "choices": ["Sodium chloride", "Sodium(I) chloride", "Sodium dichloride", "Monosodium chloride"],
+    "correctIndex": 0,
+    "topicTag": "5.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c5-mc-4",
+    "unitId": 5,
+    "stem": "Iron can form more than one type of cation. Given the compound FeCl3, which name correctly reflects the charge on the iron ion?",
+    "choices": ["Iron chloride", "Iron(II) chloride", "Iron(III) chloride", "Triiron chloride"],
+    "correctIndex": 2,
+    "topicTag": "5.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c5-mc-5",
+    "unitId": 5,
+    "stem": "When naming a simple binary ionic compound, the ending of the anion's name is changed to \"-ide.\"",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "5.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c5-mc-6",
+    "unitId": 5,
+    "stem": "What is the correct name for the molecular compound CO2?",
+    "choices": ["Carbon oxide", "Carbon dioxide", "Carbon monoxide", "Dicarbon oxide"],
+    "correctIndex": 1,
+    "topicTag": "5.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c5-mc-7",
+    "unitId": 5,
+    "stem": "In molecular (covalent) compound naming, the prefix \"tetra-\" indicates how many atoms?",
+    "choices": ["Two", "Three", "Four", "Five"],
+    "correctIndex": 2,
+    "topicTag": "5.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c5-mc-8",
+    "unitId": 5,
+    "stem": "N2O5 is correctly named dinitrogen pentoxide.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "5.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c5-mc-9",
+    "unitId": 5,
+    "stem": "The molar mass of water, H2O, is closest to:",
+    "choices": ["16 g/mol", "18 g/mol", "20 g/mol", "34 g/mol"],
+    "correctIndex": 1,
+    "topicTag": "5.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c5-mc-10",
+    "unitId": 5,
+    "stem": "One mole of any substance contains approximately how many particles?",
+    "choices": ["6.022 × 10^22 particles", "6.022 × 10^23 particles", "1.000 × 10^23 particles", "3.011 × 10^23 particles"],
+    "correctIndex": 1,
+    "topicTag": "5.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c5-mc-11",
+    "unitId": 5,
+    "stem": "The molar mass of a compound can be found by summing the atomic masses of all the atoms shown in its chemical formula.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "5.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c5-mc-12",
+    "unitId": 5,
+    "stem": "An ionic bond is best described as:",
+    "choices": [
+      "The sharing of electrons between two nonmetal atoms",
+      "The transfer of electrons from a metal to a nonmetal, producing oppositely charged ions that attract",
+      "The sharing of protons between two atoms",
+      "A weak attraction between neutral molecules"
+    ],
+    "correctIndex": 1,
+    "topicTag": "5.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c5-mc-13",
+    "unitId": 5,
+    "stem": "A covalent bond most commonly forms between:",
+    "choices": ["Two metal atoms", "A metal and a nonmetal", "Two nonmetal atoms", "Two noble gas atoms"],
+    "correctIndex": 2,
+    "topicTag": "5.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c5-mc-14",
+    "unitId": 5,
+    "stem": "Ionic compounds are generally formed from a combination of a metal and a nonmetal.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "5.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c5-mc-15",
+    "unitId": 5,
+    "stem": "What is the correct formula for the sulfate polyatomic ion?",
+    "choices": ["SO3^2-", "SO4^2-", "SO4^-", "S2O4^2-"],
+    "correctIndex": 1,
+    "topicTag": "5.6",
+    "source": "original"
+  },
+  {
+    "id": "ic-c5-mc-16",
+    "unitId": 5,
+    "stem": "The polyatomic ion NH4+ is known as:",
+    "choices": ["Nitrate", "Nitrite", "Ammonium", "Amide"],
+    "correctIndex": 2,
+    "topicTag": "5.6",
+    "source": "original"
+  },
+  {
+    "id": "ic-c5-mc-17",
+    "unitId": 5,
+    "stem": "How many total atoms are represented in one formula unit of Ca(OH)2?",
+    "choices": ["3", "4", "5", "7"],
+    "correctIndex": 2,
+    "topicTag": "5.1",
+    "source": "original",
+    "explanation": "A formula unit of Ca(OH)2 contains 1 calcium atom plus the group (OH) taken twice: 2 oxygen atoms and 2 hydrogen atoms, for a total of 1 + 2 + 2 = 5 atoms. Choosing 3 miscounts by treating the parentheses subscript as applying to only one atom in the group instead of the whole (OH) unit. Choosing 4 forgets to count the calcium atom itself. Choosing 7 mistakenly doubles the calcium atom as well as the (OH) group.",
+    "difficulty": "beginner",
+    "hints": [
+      "Remember that a subscript outside a set of parentheses multiplies every atom inside the parentheses.",
+      "Count calcium separately, then count how many oxygen and hydrogen atoms come from two (OH) groups."
+    ]
+  },
+  {
+    "id": "ic-c5-mc-18",
+    "unitId": 5,
+    "stem": "What is the correct formula for the carbonate polyatomic ion?",
+    "choices": ["CO3^2-", "CO2^2-", "C2O3^2-", "CO3^-"],
+    "correctIndex": 0,
+    "topicTag": "5.6",
+    "source": "original",
+    "explanation": "The carbonate ion is CO3^2-: one carbon atom bonded to three oxygen atoms, with an overall charge of -2. CO2^2- confuses carbonate with carbon dioxide's atom count while keeping the wrong charge. C2O3^2- incorrectly doubles the carbon atom. CO3^- has the correct atom count but the wrong (too small) charge.",
+    "difficulty": "beginner",
+    "hints": [
+      "This is one of the most common polyatomic ions and is worth memorizing directly.",
+      "It has three oxygen atoms and an overall charge of negative two."
+    ]
+  },
+  {
+    "id": "ic-c5-mc-19",
+    "unitId": 5,
+    "stem": "The compound CuO contains oxygen in its usual -2 charge state. What is the correct name for CuO, and what does this tell you about the charge on the copper ion?",
+    "choices": [
+      "Copper oxide; the charge on copper cannot be determined from the formula",
+      "Copper(I) oxide; copper is present as Cu^+",
+      "Copper(II) oxide; copper is present as Cu^2+",
+      "Dicopper oxide; the prefix di- is required because copper can have multiple charges"
+    ],
+    "correctIndex": 2,
+    "topicTag": "5.2",
+    "source": "original",
+    "explanation": "Because CuO is a 1:1 ratio of copper to oxygen and oxygen contributes a charge of -2, the compound is only electrically neutral if the copper ion also contributes +2, i.e., Cu^2+. Since copper is a transition metal capable of forming more than one common charge, a Roman numeral is required in the name: copper(II) oxide. \"Copper oxide\" without a Roman numeral is incomplete because copper's charge is variable and must be specified. \"Copper(I) oxide\" would require Cu^+, which would not balance a single O^2-. \"Dicopper oxide\" incorrectly applies molecular (prefix) nomenclature to an ionic compound.",
+    "difficulty": "intermediate",
+    "hints": [
+      "Since oxygen almost always has a charge of -2, work backward from the 1:1 ratio to find the charge copper must have.",
+      "A metal that can form more than one common ion charge needs a Roman numeral in its name, not a numerical prefix."
+    ]
+  },
+  {
+    "id": "ic-c5-mc-20",
+    "unitId": 5,
+    "stem": "What is the molar mass of magnesium hydroxide, Mg(OH)2 (Mg = 24.31 g/mol, O = 16.00 g/mol, H = 1.008 g/mol)?",
+    "choices": ["40.31 g/mol", "58.33 g/mol", "74.33 g/mol", "42.31 g/mol"],
+    "correctIndex": 1,
+    "topicTag": "5.4",
+    "source": "original",
+    "explanation": "The formula Mg(OH)2 contains 1 Mg, 2 O, and 2 H. Molar mass = 24.31 + 2(16.00 + 1.008) = 24.31 + 34.02 = 58.33 g/mol. 40.31 g/mol is the molar mass of MgO and mistakenly ignores that two full (OH) groups are present. 74.33 g/mol overcounts by adding an extra oxygen. 42.31 g/mol only adds one hydrogen instead of two.",
+    "difficulty": "intermediate",
+    "hints": [
+      "Add the atomic masses of everything inside the parentheses first, then multiply that subtotal by the subscript outside the parentheses.",
+      "There are two full OH groups in this formula, not just two oxygen atoms."
+    ]
+  },
+  {
+    "id": "ic-c5-mc-21",
+    "unitId": 5,
+    "stem": "Ammonium chloride, NH4Cl, is classified overall as an ionic compound. Which statement correctly describes the bonding present within it?",
+    "choices": [
+      "Every bond in NH4Cl is ionic, since the compound as a whole is ionic",
+      "Every bond in NH4Cl is covalent, since nitrogen, hydrogen, and chlorine are all nonmetals",
+      "The bond between the NH4+ ion and the Cl- ion is ionic, while the N-H bonds within the ammonium ion are covalent",
+      "NH4Cl contains no true chemical bonds, only weak intermolecular attractions"
+    ],
+    "correctIndex": 2,
+    "topicTag": "5.5",
+    "source": "original",
+    "explanation": "NH4Cl is built from the polyatomic cation NH4+ and the anion Cl-. The attraction between these two oppositely charged ions is ionic, which is why the compound overall is classified as ionic. But within the NH4+ ion itself, nitrogen and hydrogen atoms are joined by covalent bonds (shared electron pairs), since both are nonmetals. The first choice wrongly assumes an overall ionic classification means every internal bond must be ionic. The second choice wrongly ignores the ionic attraction that holds NH4+ and Cl- together. The fourth choice confuses this compound with something held together only by weak intermolecular forces, which is incorrect since real bonds (both ionic and covalent) are present.",
+    "difficulty": "advanced",
+    "hints": [
+      "A compound's overall classification as \"ionic\" or \"molecular\" doesn't mean every bond inside it has to be that same type.",
+      "Look separately at the bonding between NH4+ and Cl-, and the bonding between the individual N and H atoms inside the ammonium ion."
+    ]
+  },
+  {
+    "id": "ic-c5-mc-22",
+    "unitId": 5,
+    "stem": "In the compound Sn3(PO4)4, the phosphate ion carries its usual charge of PO4^3-. What is the charge on each tin ion, and what is the correct name of the compound?",
+    "choices": ["Sn^2+; tin(II) phosphate", "Sn^3+; tin(III) phosphate", "Sn^4+; tin(IV) phosphate", "Sn^6+; tin(VI) phosphate"],
+    "correctIndex": 2,
+    "topicTag": "5.2",
+    "source": "original",
+    "explanation": "The four phosphate ions contribute a total negative charge of 4 x (-3) = -12. For the compound to be neutral, the three tin ions must together contribute +12, so each individual tin ion carries a charge of 12/3 = +4, i.e., Sn^4+, giving the name tin(IV) phosphate. Sn^2+ and Sn^3+ would not produce enough total positive charge to balance -12 across three ions, and Sn^6+ overcorrects by using the total charge needed instead of dividing it among the three ions.",
+    "difficulty": "advanced",
+    "hints": [
+      "First find the total negative charge contributed by all four phosphate ions combined.",
+      "That total negative charge must be balanced by the combined charge of all three tin ions — divide accordingly to get the charge on just one tin ion."
+    ]
+  }
+]

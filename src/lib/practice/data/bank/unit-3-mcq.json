@@ -1,0 +1,66 @@
+[
+  {
+    "id": "u3-mcq-1",
+    "unitId": 3,
+    "stem": "Ammonia, NH3, has a normal boiling point of -33°C, while phosphine, PH3, has a normal boiling point of -88°C, even though PH3 (molar mass 34.00 g/mol) has a greater molar mass than NH3 (molar mass 17.03 g/mol). Which of the following best explains this difference in boiling points?",
+    "choices": [
+      "PH3 is nonpolar, so only NH3 experiences dipole-dipole attractions between its molecules",
+      "NH3 has a higher molar mass than PH3, giving NH3 stronger London dispersion forces",
+      "NH3 molecules experience hydrogen bonding through their N-H bonds and lone pair on nitrogen, while PH3 molecules experience only weaker dipole-dipole attractions",
+      "Nitrogen is a smaller atom than phosphorus, so NH3 molecules are more polarizable and have stronger London dispersion forces than PH3"
+    ],
+    "correctIndex": 2,
+    "workedSolution": "Compare molar masses and boiling points: NH3 (17.03 g/mol) boils at -33°C, PH3 (34.00 g/mol) boils at -88°C. Based on molar mass alone, PH3 should have stronger London dispersion forces and thus a higher boiling point, but the opposite is observed. This signals that a stronger IMF than dispersion is present in one substance. NH3 has N-H bonds where N is small, highly electronegative, and has a lone pair, satisfying all criteria for hydrogen bonding (bonds to N, O, or F). PH3 has P-H bonds, but phosphorus is larger and less electronegative than nitrogen, so PH3 does not hydrogen bond; it relies only on weaker dipole-dipole forces (plus dispersion). The extra energy needed to overcome hydrogen bonding in NH3 raises its boiling point above that of PH3 despite NH3's lower molar mass.",
+    "explanation": "The correct answer identifies hydrogen bonding in NH3 (N-H bonds) as the dominant reason NH3 boils higher than the more massive PH3, which lacks hydrogen bonding. Choice A is wrong because PH3 is polar (trigonal pyramidal with a lone pair) and does have dipole-dipole forces, just weaker ones than hydrogen bonds. Choice B is factually incorrect: NH3 has the lower molar mass of the two, so this reasoning contains a false premise. Choice D misapplies polarizability trends — larger atoms/molecules with more electrons are generally more polarizable and have stronger dispersion forces, not smaller ones, so this reasoning is backwards.",
+    "topicTag": "Intermolecular and Interparticle Forces",
+    "source": "bank"
+  },
+  {
+    "id": "u3-mcq-2",
+    "unitId": 3,
+    "stem": "A 2.50 g sample of CO2(g) is placed in a rigid 1.50 L container at 25°C. Assuming ideal gas behavior, what is the pressure of the gas?",
+    "choices": [
+      "0.0777 atm",
+      "0.926 atm",
+      "1.46 atm",
+      "2.08 atm"
+    ],
+    "correctIndex": 1,
+    "workedSolution": "Convert mass to moles using the molar mass of CO2 (44.01 g/mol): n = 2.50 g / 44.01 g/mol = 0.05680 mol. Convert temperature to kelvin: T = 25 + 273 = 298 K. Apply PV = nRT, solving for P: P = nRT/V = (0.05680 mol)(0.08206 L·atm/mol·K)(298 K) / 1.50 L = 1.389 / 1.50 = 0.926 atm.",
+    "explanation": "The correct pressure, 0.926 atm, comes from correctly converting grams to moles with CO2's molar mass (44.01 g/mol) and converting 25°C to 298 K before applying PV = nRT. Choice A (0.0777 atm) results from forgetting to convert the temperature to kelvin and using T = 25 directly. Choice C (1.46 atm) results from using an incorrect molar mass (28.01 g/mol, the molar mass of CO) instead of CO2's actual molar mass. Choice D (2.08 atm) results from multiplying by V instead of dividing by it when rearranging the ideal gas law.",
+    "topicTag": "Ideal Gas Law",
+    "source": "bank"
+  },
+  {
+    "id": "u3-mcq-3",
+    "unitId": 3,
+    "stem": "A colored aqueous complex ion has a molar absorptivity of 1.25 x 10^3 L mol^-1 cm^-1 at 520 nm. A sample of the solution in a cuvette with a 1.00 cm path length has a measured absorbance of 0.625 at this wavelength. What is the concentration of the complex ion in the solution?",
+    "choices": [
+      "5.00x10^-4 M",
+      "5.00x10^-3 M",
+      "0.500 M",
+      "2.00x10^3 M"
+    ],
+    "correctIndex": 0,
+    "workedSolution": "Apply the Beer-Lambert law, A = ebc, and solve for concentration: c = A / (e x b) = 0.625 / (1.25x10^3 L mol^-1 cm^-1 x 1.00 cm) = 0.625 / 1250 = 5.00x10^-4 M.",
+    "explanation": "The correct concentration, 5.00x10^-4 M, comes from correctly dividing absorbance by the product of molar absorptivity and path length. Choice B (5.00x10^-3 M) results from a decimal/order-of-magnitude slip in dividing by 1.25x10^3 (e.g., treating it as 1.25x10^2). Choice C (0.500 M) results from dropping the x10^3 factor in the molar absorptivity and computing 0.625/1.25. Choice D (2.00x10^3 M) results from inverting the Beer-Lambert equation and multiplying e x b / A instead of dividing A by (e x b).",
+    "topicTag": "Beer-Lambert Law",
+    "source": "bank"
+  },
+  {
+    "id": "u3-mcq-4",
+    "unitId": 3,
+    "stem": "A sample of a real gas is confined at low temperature and moderately high pressure. Under these conditions, the measured pressure of the gas is found to be lower than the pressure predicted by the ideal gas law for the same n, V, and T. Which of the following best accounts for this observation?",
+    "choices": [
+      "The finite volume of the gas particles reduces the space available for molecular motion, causing more frequent collisions with the container walls than the ideal gas law predicts",
+      "Gas particles undergo more inelastic collisions at low temperature, losing kinetic energy upon each wall collision and thereby lowering the measured pressure",
+      "Intermolecular attractive forces pull gas particles toward one another as they move more slowly at low temperature, reducing the frequency and force of their collisions with the container walls",
+      "At low temperatures, intermolecular attractive forces become negligible, allowing gas particles to collide with the container walls more independently and at a higher frequency"
+    ],
+    "correctIndex": 2,
+    "workedSolution": "The ideal gas law assumes no intermolecular attractions and negligible particle volume. At low temperature, gas particles move more slowly and spend more time near one another, so intermolecular attractive forces (dispersion, dipole-dipole, etc.) become significant relative to kinetic energy. These attractions pull particles back and away from the container walls just before collision, decreasing both the frequency and the force of wall collisions. This causes the measured pressure to fall below the value predicted by PV = nRT. (The particle-volume correction, by contrast, tends to raise real pressure above the ideal prediction at very high pressures — a separate effect.)",
+    "explanation": "The correct answer connects slower molecular motion at low temperature to stronger relative intermolecular attractions, which soften wall collisions and lower measured pressure below the ideal prediction. Choice A describes the excluded-volume correction, which actually tends to make real pressure higher than ideal, not lower, so it does not explain this observation. Choice B is incorrect because kinetic molecular theory treats gas collisions as effectively elastic; the deviation is due to intermolecular forces, not energy loss in collisions. Choice D reverses the correct relationship — attractive forces become more significant, not negligible, as temperature decreases.",
+    "topicTag": "Deviation from Ideal Gas Law",
+    "source": "bank"
+  }
+]

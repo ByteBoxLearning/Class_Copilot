@@ -1,0 +1,94 @@
+[
+  {
+    "id": "u9-frq-long-1",
+    "unitId": 9,
+    "kind": "long",
+    "points": 10,
+    "stem": "A student sets up a galvanic cell at 25°C using the following standard reduction potentials: Fe^3+(aq) + e^- -> Fe^2+(aq), E° = +0.77 V; Sn^4+(aq) + 2e^- -> Sn^2+(aq), E° = +0.15 V. Inert platinum electrodes are placed in each half-cell (each containing a mixture of the ions shown in that half-reaction), and the two half-cells are connected by a salt bridge and an external wire.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Identify which half-reaction occurs at the cathode and which occurs at the anode when the cell operates spontaneously, and write the balanced net ionic equation for the overall spontaneous cell reaction.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate E°cell and ΔG° for the reaction at 25°C.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(c)",
+        "prompt": "Calculate Ecell at 25°C if the half-cells are prepared with [Fe^3+] = 0.50 M, [Fe^2+] = 0.010 M, [Sn^4+] = 0.20 M, and [Sn^2+] = 1.5 M.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(d)",
+        "prompt": "Based on your answers to parts (b) and (c), determine whether ΔG for the cell under the nonstandard conditions in part (c) is more negative than, less negative than, or equal to ΔG° from part (b). Justify your answer.",
+        "maxPoints": 1
+      }
+    ],
+    "workedSolution": "(a) The Fe^3+/Fe^2+ couple has the more positive reduction potential (+0.77 V vs. +0.15 V), so Fe^3+ + e- -> Fe^2+ occurs at the cathode (reduction). The Sn couple is therefore reversed and occurs at the anode (oxidation): Sn^2+ -> Sn^4+ + 2e-. To balance electrons, the iron half-reaction is multiplied by 2: 2Fe^3+ + 2e- -> 2Fe^2+. Adding the half-reactions: 2Fe^3+(aq) + Sn^2+(aq) -> 2Fe^2+(aq) + Sn^4+(aq). (b) E°cell = E°cathode - E°anode = 0.77 V - 0.15 V = 0.62 V. From the balanced equation, n = 2 mol electrons. ΔG° = -nFE° = -(2 mol)(96,485 C/mol)(0.62 V) = -119,641 J/mol ≈ -1.2 × 10^2 kJ/mol (-120 kJ/mol). (c) Q = [Fe^2+]^2[Sn^4+] / ([Fe^3+]^2[Sn^2+]) = (0.010)^2(0.20) / [(0.50)^2(1.5)] = (0.0001)(0.20)/(0.375) = 5.33 × 10^-5. Using the Nernst equation at 298 K: Ecell = E°cell - (0.0592/n) log Q = 0.62 V - (0.0296) log(5.33 × 10^-5) = 0.62 V - (0.0296)(-4.27) = 0.62 V + 0.126 V ≈ 0.75 V. (d) Since Q < 1, the reaction is driven even farther toward products than under standard conditions, so Ecell (0.75 V) is greater than E°cell (0.62 V). Because ΔG = -nFEcell, a larger positive Ecell corresponds to a more negative ΔG. Therefore ΔG under these nonstandard conditions is more negative than ΔG° from part (b) (consistent with ΔG = ΔG° + RT ln Q, since ln Q is negative here).",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point: correctly identifies Fe^3+ + e- -> Fe^2+ as the reduction/cathode reaction and Sn^2+ -> Sn^4+ + 2e- as the oxidation/anode reaction, based on Fe^3+/Fe^2+ having the more positive E°. 1 point: multiplies the iron half-reaction by 2 so that electrons are balanced. 1 point: correct overall balanced net ionic equation, 2Fe^3+(aq) + Sn^2+(aq) -> 2Fe^2+(aq) + Sn^4+(aq).",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point: E°cell = E°cathode - E°anode = 0.77 V - 0.15 V = 0.62 V. 1 point: correct setup ΔG° = -nFE° using n consistent with the student's balanced equation from part (a) (n = 2 if correct). 1 point: correct numeric value of ΔG°, approximately -120 kJ/mol (accept -119 to -120 kJ/mol), with a negative sign.",
+        "points": 3,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point: correct reaction quotient expression, Q = [Fe^2+]^2[Sn^4+] / ([Fe^3+]^2[Sn^2+]). 1 point: correct substitution of the given concentrations and the student's E°cell/n values into the Nernst equation (Ecell = E°cell - (0.0592/n) log Q or the RT/nF ln Q form). 1 point: correct final numeric answer, Ecell ≈ 0.75 V (accept 0.74-0.75 V, or the value consistent with the student's own E°cell from part (b)).",
+        "points": 3,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point: correctly states that ΔG under nonstandard conditions is more negative than ΔG°, with justification based on Ecell (part c) being greater than E°cell (part b) and ΔG = -nFEcell (or equivalently ΔG = ΔG° + RT ln Q with ln Q < 0), using the student's own values from parts (b) and (c) for consistency.",
+        "points": 1,
+        "allowsErrorCarriedForward": true
+      }
+    ],
+    "source": "bank"
+  },
+  {
+    "id": "u9-frq-short-1",
+    "unitId": 9,
+    "kind": "short",
+    "points": 4,
+    "stem": "Solid ammonium nitrate dissolves in water according to: NH4NO3(s) -> NH4^+(aq) + NO3^-(aq), ΔH°soln = +25.7 kJ/mol. This dissolution process is known to occur spontaneously (is thermodynamically favorable) at 298 K, which is why instant cold packs use this reaction to absorb heat from their surroundings.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Explain, in terms of entropy, why this dissolution process is thermodynamically favorable at 298 K even though it is endothermic.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the minimum value of ΔS°soln, in J/(mol·K), that is required for this dissolution process to be thermodynamically favorable at 298 K.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) When the ordered NH4NO3(s) lattice breaks apart into separated, mobile NH4^+ and NO3^- ions dispersed throughout the solvent, the number of accessible microstates increases substantially, so ΔS°soln is large and positive. Even though ΔH°soln is positive (energy must be absorbed to separate the ions in the lattice, more than is released by ion-dipole interactions with water), the large positive ΔS° term makes the -TΔS° contribution to ΔG° sufficiently negative at 298 K to outweigh the positive ΔH° term, so ΔG° = ΔH° - TΔS° is negative overall — the process is entropy-driven. (b) For the process to be thermodynamically favorable, ΔG° < 0: ΔH° - TΔS° < 0, so ΔS° > ΔH°/T. ΔS° > (25,700 J/mol) / (298 K) = 86.2 J/(mol·K). So ΔS°soln must be greater than approximately 86.2 J/(mol·K) for the dissolution to be thermodynamically favorable at 298 K.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point: states that dissolution disperses the ordered solid into separated, more randomly distributed (mobile/solvated) ions, so ΔS°soln is large and positive. 1 point: explains that this large positive ΔS° makes -TΔS° negative enough at 298 K to outweigh the positive ΔH°, so ΔG° = ΔH° - TΔS° < 0 overall (the process is entropy-driven, not enthalpy-driven).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point: correctly sets ΔG° = 0 = ΔH° - TΔS° and rearranges to ΔS° = ΔH°/T. 1 point: correct numeric result, ΔS° > 86.2 J/(mol·K) (accept 86-87 J/(mol·K)), with the inequality direction correctly stated (ΔS° must exceed this value).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "bank"
+  }
+]

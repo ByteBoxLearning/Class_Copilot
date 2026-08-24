@@ -1,0 +1,386 @@
+[
+  {
+    "id": "ic4-short-1",
+    "unitId": 4,
+    "kind": "short",
+    "points": 4,
+    "stem": "An atom of a particular element is represented by the symbol Cl-35 (chlorine-35), which has 17 protons. A different isotope of chlorine, Cl-37, also has 17 protons.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Determine the number of neutrons and the number of electrons in a neutral atom of Cl-35.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain what makes Cl-35 and Cl-37 both isotopes of the same element, and what differs between them at the subatomic level.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) Neutrons = mass number - protons = 35 - 17 = 18. Electrons in a neutral atom = number of protons = 17.\n\n(b) Cl-35 and Cl-37 are both isotopes of chlorine because they have the same number of protons (17), i.e., the same atomic number, which is what defines an element's identity. They differ in the number of neutrons: Cl-35 has 18 neutrons (35 - 17), while Cl-37 has 20 neutrons (37 - 17), giving them different mass numbers (different masses) even though their chemical identity and behavior are essentially the same.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for the correct number of neutrons, 18; 1 point for the correct number of electrons, 17.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly stating that the same number of protons (atomic number) defines them as the same element; 1 point for correctly stating that they differ in neutron count (18 vs. 20) and therefore mass number.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": ["Neutrons = mass number minus number of protons.", "The atomic number (proton count) is what defines an element and stays the same across its isotopes."]
+  },
+  {
+    "id": "ic4-short-2",
+    "unitId": 4,
+    "kind": "short",
+    "points": 4,
+    "stem": "A neutral magnesium atom (Mg) has 12 protons and 12 electrons. Magnesium commonly forms a stable ion by losing 2 electrons.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Write the symbol (including charge) for the ion magnesium forms, and state the resulting number of electrons in this ion.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain, in terms of protons and electrons, why this ion has an overall positive charge, and relate this to why metals like magnesium tend to form cations rather than anions.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) Mg^2+; the ion has 12 - 2 = 10 electrons.\n\n(b) The ion still has 12 protons (12 positive charges) but only 10 electrons (10 negative charges) after losing 2 electrons, so protons outnumber electrons by 2, giving the ion a net +2 charge. Metals like magnesium have relatively few valence electrons (2, for magnesium) and tend to lose them to reach a stable, full outer-shell (noble-gas-like) electron arrangement, which is why metals generally form cations (positively charged ions) rather than gaining electrons to form anions.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for the correct ion symbol, Mg^2+; 1 point for the correct number of electrons, 10.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly reasoning that protons (12) now outnumber electrons (10), giving a net +2 charge; 1 point for correctly relating this to metals having few valence electrons and tending to lose them (forming cations) to reach a stable configuration.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": ["A neutral atom's electron count equals its number of protons; losing electrons reduces that count.", "Compare the number of protons to the number of electrons remaining to determine the ion's net charge."]
+  },
+  {
+    "id": "ic4-long-1",
+    "unitId": 4,
+    "kind": "long",
+    "points": 10,
+    "stem": "Element X exists naturally as a mixture of two isotopes: Isotope 1 has a mass of 10.00 amu and makes up 20.0% of all naturally occurring atoms of element X. Isotope 2 has a mass of 11.00 amu and makes up the remaining 80.0% of naturally occurring atoms.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Convert each percent abundance into a decimal fraction.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the average atomic mass of element X, showing your full weighted-average setup.",
+        "maxPoints": 4
+      },
+      {
+        "label": "(c)",
+        "prompt": "Using your calculated average atomic mass and the periodic table, identify which element X most likely is.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(d)",
+        "prompt": "Explain why the average atomic mass listed on the periodic table for an element is generally not a whole number, even though each individual isotope has a mass number that is very close to a whole number.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) 20.0% = 0.200; 80.0% = 0.800.\n\n(b) Average atomic mass = (0.200 × 10.00 amu) + (0.800 × 11.00 amu) = 2.00 amu + 8.80 amu = 10.80 amu.\n\n(c) An average atomic mass of approximately 10.80 amu is closest to boron (B), whose periodic-table atomic mass is approximately 10.81 amu, so element X is most likely boron.\n\n(d) The average atomic mass is a weighted average of the masses of all naturally occurring isotopes of an element, weighted by how abundant each isotope actually is in nature. Because most elements exist as a mixture of two or more isotopes in specific, often unequal proportions, the weighted average of their (individually near-whole-number) masses typically lands on a non-whole-number value that reflects the particular isotope ratio found in nature, rather than matching any single isotope's mass exactly.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly converting 20.0% to 0.200; 1 point for correctly converting 80.0% to 0.800.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for the correct weighted-average setup/formula; 1 point for correctly calculating the first term using the student's own part (a) fraction (0.200 × 10.00 = 2.00, or the analogous product if their fraction differed); 1 point for correctly calculating the second term similarly (0.800 × 11.00 = 8.80); 1 point for the correct final sum, 10.80 amu, with correct units, consistent with the student's own terms.",
+        "points": 4,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly using the student's own calculated mass from part (b) to search the periodic table for the closest match; 1 point for identifying boron (or another element that is the closest reasonable match to the student's own calculated mass, if part (b) contained an error).",
+        "points": 2,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly explaining that average atomic mass is a weighted average of all naturally occurring isotopes' masses; 1 point for correctly connecting this to the differing relative abundances of each isotope producing a non-integer weighted result.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": ["Convert each percentage to a decimal before multiplying by that isotope's mass.", "Add together each isotope's (fraction × mass) contribution to get the weighted average."]
+  },
+  {
+    "id": "ic4-long-2",
+    "unitId": 4,
+    "kind": "long",
+    "points": 10,
+    "stem": "Consider the element sulfur (S), atomic number 16, located in Period 3, Group 16 (6A) of the periodic table.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "State the number of protons and the number of electrons in a neutral atom of sulfur.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Classify sulfur as a metal, nonmetal, or metalloid based on its position on the periodic table, and state one general physical property typical of elements in this category.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(c)",
+        "prompt": "Sulfur commonly forms an ion by gaining 2 electrons to achieve a stable, noble-gas-like electron arrangement. Write the symbol (with charge) for this ion, and state its numbers of protons and electrons.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(d)",
+        "prompt": "An early atomic model (Dalton's atomic theory, early 1800s) proposed that atoms of a given element are all identical and indivisible. Describe one specific discovery from later scientific work that showed this part of Dalton's theory needed to be revised, and briefly explain why.",
+        "maxPoints": 3
+      }
+    ],
+    "workedSolution": "(a) A neutral sulfur atom has 16 protons and 16 electrons.\n\n(b) Sulfur is a nonmetal (it is located on the right-hand side of the periodic table). Nonmetals typically are poor conductors of heat and electricity, and are often brittle solids or gases at room temperature (any one correct, general nonmetal property is acceptable).\n\n(c) S gains 2 electrons to form S^2-. This ion has 16 protons (unchanged) and 16 + 2 = 18 electrons.\n\n(d) The discovery of subatomic particles — for example, J.J. Thomson's discovery of the electron (1897), or the later discovery of isotopes (atoms of the same element with different numbers of neutrons and therefore different masses) — showed that atoms are divisible, being made of smaller charged particles (protons, electrons, and later neutrons), and that not all atoms of the same element are identical in mass. This directly contradicts Dalton's claims that atoms are indivisible and that all atoms of a given element are identical.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for the correct number of protons, 16; 1 point for the correct number of electrons, 16.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly classifying sulfur as a nonmetal; 1 point for stating a valid general physical property typical of nonmetals (e.g., poor conductor of heat/electricity, often brittle or gaseous).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for the correct ion symbol, S^2-; 1 point for the correct number of protons, 16; 1 point for the correct number of electrons, 18.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for naming a specific, valid discovery (e.g., discovery of the electron/subatomic particles, or discovery of isotopes); 1 point for correctly explaining how it shows atoms are divisible or that atoms of the same element are not all identical; 1 point for explicitly tying the discovery back to the specific claim of Dalton's theory (indivisibility, or identical atoms) that it revises.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": ["For part (c), remember that gaining electrons increases the electron count while the proton count stays fixed.", "For part (d), think about a specific historical experiment that revealed atoms have smaller parts inside them or that not all atoms of an element are identical."]
+  },
+  {
+    "id": "ic4-short-3",
+    "unitId": 4,
+    "kind": "short",
+    "points": 4,
+    "stem": "A certain atom has 20 protons, 20 electrons, and 22 neutrons.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Determine the mass number of this atom and identify the element, using its number of protons (atomic number).",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Write this atom's isotope symbol in the form Element-mass number (e.g., X-##), and state whether this isotope is more or less massive than the most common isotope of this element, calcium-40.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) Mass number = protons + neutrons = 20 + 22 = 42. An atomic number of 20 corresponds to calcium (Ca).\n\n(b) This isotope is written as Ca-42. Since 42 is greater than 40, Ca-42 is more massive than the more common isotope, calcium-40, because it contains two additional neutrons.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for the correct mass number, 42; 1 point for correctly identifying the element as calcium.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for the correct isotope symbol, Ca-42; 1 point for correctly stating that Ca-42 is more massive than Ca-40, with reasoning based on the extra neutrons.",
+        "points": 2,
+        "allowsErrorCarriedForward": true
+      }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": ["Mass number equals the number of protons plus the number of neutrons.", "The number of protons alone tells you which element this is — check the periodic table for the element with that atomic number."]
+  },
+  {
+    "id": "ic4-short-4",
+    "unitId": 4,
+    "kind": "short",
+    "points": 4,
+    "stem": "A neutral oxygen atom (O) has 8 protons and 8 electrons. Oxygen commonly forms a stable ion by gaining 2 electrons.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Write the symbol (including charge) for the ion oxygen forms, and state the resulting number of electrons.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain, in terms of protons and electrons, why this ion has an overall negative charge, and relate this to why nonmetals like oxygen tend to form anions rather than cations.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) O^2-; the ion has 8 + 2 = 10 electrons.\n\n(b) The ion still has 8 protons (8 positive charges) but now has 10 electrons (10 negative charges) after gaining 2 electrons, so electrons outnumber protons by 2, giving the ion a net -2 charge. Nonmetals like oxygen have relatively many valence electrons (6, for oxygen) and tend to gain just a few more to reach a stable, full outer-shell (noble-gas-like) electron arrangement, which is why nonmetals generally form anions (negatively charged ions) rather than losing many electrons to form cations.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for the correct ion symbol, O^2-; 1 point for the correct number of electrons, 10.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly reasoning that electrons (10) now outnumber protons (8), giving a net -2 charge; 1 point for correctly relating this to nonmetals having many valence electrons and tending to gain a few more to reach a stable configuration.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": ["A neutral atom's electron count equals its number of protons; gaining electrons increases that count.", "Compare the resulting number of electrons to the number of protons to figure out the ion's net charge, then think about why nonmetals prefer to gain rather than lose electrons."]
+  },
+  {
+    "id": "ic4-long-3",
+    "unitId": 4,
+    "kind": "long",
+    "points": 10,
+    "stem": "Element Z has three naturally occurring isotopes: Isotope A (mass = 24.00 amu, abundance = 78.70%), Isotope B (mass = 25.00 amu, abundance = 10.00%), and Isotope C (mass = 26.00 amu, abundance = 11.30%).",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Convert each percent abundance to a decimal fraction.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the average atomic mass of element Z, showing your full weighted-average setup.",
+        "maxPoints": 4
+      },
+      {
+        "label": "(c)",
+        "prompt": "Identify element Z using your calculated atomic mass and the periodic table.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(d)",
+        "prompt": "Verify that the three given abundances are consistent with representing the entire natural sample of element Z, and explain why this check matters when calculating a weighted average.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) 78.70% = 0.7870; 10.00% = 0.1000; 11.30% = 0.1130.\n\n(b) Average atomic mass = (0.7870 × 24.00) + (0.1000 × 25.00) + (0.1130 × 26.00) = 18.888 + 2.500 + 2.938 = 24.326 amu ≈ 24.33 amu.\n\n(c) An average atomic mass of approximately 24.33 amu is closest to magnesium (Mg), whose periodic-table atomic mass is approximately 24.31 amu, so element Z is most likely magnesium.\n\n(d) The three abundances sum to 78.70% + 10.00% + 11.30% = 100.00%, confirming that they account for the entire natural sample of element Z. This check matters because a weighted average implicitly assumes the weights (fractions) used add up to 1 (100%); if the abundances did not sum to 100%, the calculated weighted average would not correctly represent the true average mass of all naturally occurring atoms of the element.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point if all three percentages are correctly converted to decimals; 1 point if the conversions are then used correctly and consistently in part (b) (partial credit at grader discretion if only some conversions are correct).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for the correct weighted-average setup/formula with three terms; 1 point for correctly calculating each of the three products (18.888, 2.500, 2.938, or the analogous products if the student's own fractions differed); 1 point for correctly summing the three terms; 1 point for the correct final answer, approximately 24.33 amu, with correct units.",
+        "points": 4,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly using the student's own calculated mass from part (b) to search the periodic table for the closest match; 1 point for identifying magnesium (or another element that is the closest reasonable match to the student's own calculated mass, if part (b) contained an error).",
+        "points": 2,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly verifying that the three abundances sum to 100%; 1 point for correctly explaining why this matters for a weighted average to correctly represent the whole natural sample.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": ["Convert all three percentages to decimals before multiplying each by its isotope's mass.", "Add all three abundances together first — this both answers part (d) and confirms you haven't missed an isotope."]
+  },
+  {
+    "id": "ic4-long-4",
+    "unitId": 4,
+    "kind": "long",
+    "points": 10,
+    "stem": "Consider the element bromine (Br), atomic number 35, located in Period 4, Group 17 (7A) of the periodic table.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "State the number of protons and electrons in a neutral atom of bromine.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Classify bromine as a metal, nonmetal, or metalloid, and state one general physical property typical of its category.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(c)",
+        "prompt": "Bromine commonly forms an ion by gaining 1 electron. Write the ion's symbol (with charge), and state its numbers of protons and electrons.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(d)",
+        "prompt": "Compare the expected atomic radius of bromine to that of chlorine (Cl, Period 3, Group 17) and to that of selenium (Se, Period 4, Group 16), explaining your reasoning for each comparison using periodic trends.",
+        "maxPoints": 4
+      }
+    ],
+    "workedSolution": "(a) A neutral bromine atom has 35 protons and 35 electrons.\n\n(b) Bromine is a nonmetal (it is located on the right-hand side of the periodic table). Nonmetals typically are poor conductors of heat and electricity, and often exist as brittle solids, liquids, or gases at room temperature (any one correct, general nonmetal property is acceptable).\n\n(c) Br gains 1 electron to form Br^-. This ion has 35 protons (unchanged) and 35 + 1 = 36 electrons.\n\n(d) Bromine has a larger atomic radius than chlorine: both are in Group 17, but bromine (Period 4) sits below chlorine (Period 3), and atomic radius increases down a group as additional electron shells are added. Bromine has a smaller atomic radius than selenium: both are in Period 4, but selenium (Group 16) sits to the left of bromine (Group 17) in the same period, and atomic radius decreases moving left to right across a period as increasing nuclear charge pulls the valence electrons inward without adding a new shell.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for the correct number of protons, 35; 1 point for the correct number of electrons, 35.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly classifying bromine as a nonmetal; 1 point for stating a valid general physical property typical of nonmetals.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for the correct ion symbol, Br^-, with correct proton count (35); 1 point for the correct number of electrons, 36.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly stating bromine has a larger radius than chlorine; 1 point for correctly explaining this using the group trend (radius increases down a group); 1 point for correctly stating bromine has a smaller radius than selenium; 1 point for correctly explaining this using the period trend (radius decreases across a period).",
+        "points": 4,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": ["Compare bromine to chlorine using the group trend (same column, different rows) and to selenium using the period trend (same row, different columns), one at a time.", "Radius increases moving down a group and decreases moving left to right across a period."]
+  }
+]

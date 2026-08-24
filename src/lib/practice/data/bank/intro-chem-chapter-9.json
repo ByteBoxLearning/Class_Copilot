@@ -1,0 +1,243 @@
+[
+  {
+    "id": "ic-c9-mc-1",
+    "unitId": 9,
+    "stem": "What is the correct ground-state electron configuration for sodium (Na, Z = 11)?",
+    "choices": ["1s2 2s2 2p6", "1s2 2s2 2p6 3s1", "1s2 2s2 2p5 3s2", "1s2 2s2 2p6 3s2"],
+    "correctIndex": 1,
+    "topicTag": "9.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c9-mc-2",
+    "unitId": 9,
+    "stem": "What is the correct ground-state electron configuration for oxygen (O, Z = 8)?",
+    "choices": ["1s2 2s2 2p2", "1s2 2s2 2p4", "1s2 2s2 2p6", "1s2 2s1 2p5"],
+    "correctIndex": 1,
+    "topicTag": "9.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c9-mc-3",
+    "unitId": 9,
+    "stem": "How many electrons are in the outermost occupied shell of chlorine (Cl, Z = 17)?",
+    "choices": ["5", "6", "7", "8"],
+    "correctIndex": 2,
+    "topicTag": "9.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c9-mc-4",
+    "unitId": 9,
+    "stem": "The ground-state electron configuration of calcium (Ca, Z = 20) ends in 4s2, not 3d2.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "9.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c9-mc-5",
+    "unitId": 9,
+    "stem": "What is the maximum number of electrons that can occupy a single atomic orbital?",
+    "choices": ["1", "2", "6", "8"],
+    "correctIndex": 1,
+    "topicTag": "9.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c9-mc-6",
+    "unitId": 9,
+    "stem": "How many individual orbitals are present in a p subshell?",
+    "choices": ["1", "2", "3", "5"],
+    "correctIndex": 2,
+    "topicTag": "9.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c9-mc-7",
+    "unitId": 9,
+    "stem": "An s orbital is spherical in shape, while a p orbital has a dumbbell (two-lobed) shape.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "9.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c9-mc-8",
+    "unitId": 9,
+    "stem": "How does atomic radius generally change as you move from left to right across a period?",
+    "choices": ["It increases", "It decreases", "It stays about the same", "It changes randomly"],
+    "correctIndex": 1,
+    "topicTag": "9.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c9-mc-9",
+    "unitId": 9,
+    "stem": "Which element has the larger atomic radius, lithium (Li) or potassium (K)?",
+    "choices": [
+      "Lithium, because it has fewer protons",
+      "Potassium, because it has more occupied electron shells",
+      "They have essentially the same atomic radius",
+      "Lithium, because it is more electronegative"
+    ],
+    "correctIndex": 1,
+    "topicTag": "9.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c9-mc-10",
+    "unitId": 9,
+    "stem": "How does first ionization energy generally change as you move down a group in the periodic table?",
+    "choices": ["It increases", "It decreases", "It stays constant", "It first increases, then decreases"],
+    "correctIndex": 1,
+    "topicTag": "9.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c9-mc-11",
+    "unitId": 9,
+    "stem": "Ionization energy generally increases from left to right across a period because atoms hold their valence electrons more tightly.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "9.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c9-mc-12",
+    "unitId": 9,
+    "stem": "Which element is generally considered the most electronegative element on the periodic table?",
+    "choices": ["Oxygen", "Chlorine", "Fluorine", "Nitrogen"],
+    "correctIndex": 2,
+    "topicTag": "9.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c9-mc-13",
+    "unitId": 9,
+    "stem": "Comparing sodium (Na) and chlorine (Cl), which element has the higher electronegativity?",
+    "choices": ["Sodium", "Chlorine", "They are equal", "Neither has an electronegativity value"],
+    "correctIndex": 1,
+    "topicTag": "9.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c9-mc-14",
+    "unitId": 9,
+    "stem": "Electronegativity generally decreases as you move down a group on the periodic table.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "9.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c9-mc-15",
+    "unitId": 9,
+    "stem": "What is the correct ground-state electron configuration for nitrogen (N, Z = 7)?",
+    "choices": ["1s2 2s2 2p3", "1s2 2s2 2p2", "1s2 2s2 2p4", "1s2 2s1 2p4"],
+    "correctIndex": 0,
+    "topicTag": "9.1",
+    "source": "original",
+    "explanation": "Nitrogen (Z=7) has 7 electrons total. Filling orbitals in order of increasing energy: 1s2, then 2s2, leaving exactly 3 electrons for the 2p sublevel: 1s2 2s2 2p3. Choice B (1s2 2s2 2p2) totals only 6 electrons, one short of nitrogen's 7. Choice C (1s2 2s2 2p4) totals 8 electrons -- this is actually oxygen's configuration, a common mix-up with its neighbor. Choice D (1s2 2s1 2p4) does total 7 electrons, but it incorrectly leaves the lower-energy 2s sublevel half-empty while placing electrons in the higher-energy 2p sublevel; the 2s sublevel must fill completely before 2p begins to fill in the ground state.",
+    "difficulty": "beginner",
+    "hints": [
+      "Count nitrogen's total electrons from its atomic number, then fill orbitals starting with the lowest energy level.",
+      "The 2s sublevel must be completely filled (2 electrons) before any electrons enter the 2p sublevel in the ground state."
+    ]
+  },
+  {
+    "id": "ic-c9-mc-16",
+    "unitId": 9,
+    "stem": "What is the maximum number of electrons that the entire 2p subshell can hold?",
+    "choices": ["2", "6", "8", "10"],
+    "correctIndex": 1,
+    "topicTag": "9.2",
+    "source": "original",
+    "explanation": "The 2p subshell consists of three individual orbitals (2px, 2py, 2pz), and each orbital can hold a maximum of 2 electrons, giving 3 x 2 = 6 electrons total. Choice A (2) is the capacity of a single orbital, not the whole subshell. Choice C (8) is the total capacity of the entire n=2 principal energy level (2s + 2p combined: 2 + 6), not the 2p subshell alone. Choice D (10) is the capacity of a d subshell (5 orbitals x 2), which students sometimes confuse with p.",
+    "difficulty": "beginner",
+    "hints": [
+      "A p subshell is made up of three separate orbitals.",
+      "Each individual orbital, of any type, holds at most 2 electrons."
+    ]
+  },
+  {
+    "id": "ic-c9-mc-17",
+    "unitId": 9,
+    "stem": "Which of the following elements has the larger atomic radius: sulfur (S, Period 3, Group 16) or calcium (Ca, Period 4, Group 2)?",
+    "choices": [
+      "Calcium, because it is both lower in its group and farther left in its period than sulfur",
+      "Sulfur, because it has a greater number of protons",
+      "They have essentially the same atomic radius",
+      "Calcium, because it has a lower electronegativity value"
+    ],
+    "correctIndex": 0,
+    "topicTag": "9.3",
+    "source": "original",
+    "explanation": "Atomic radius increases moving down a group (added electron shells) and increases moving left across a period (less effective nuclear charge on outer electrons). Calcium is one period lower than sulfur and several groups to the left, so both trends point the same direction: calcium is larger. Choice B is factually backwards (sulfur, Z=16, actually has fewer protons than calcium, Z=20) and also uses flawed logic, since more protons alone does not determine radius without considering shielding and shell number. Choice C ignores the substantial trend differences between the two elements' positions. Choice D uses electronegativity, an unrelated periodic property, as if it directly explained radius.",
+    "difficulty": "intermediate",
+    "hints": [
+      "Compare calcium and sulfur separately: how does radius change going down a group, and how does it change moving left across a period?",
+      "Both the period and group differences point in the same direction here -- check whether they agree or conflict before answering."
+    ]
+  },
+  {
+    "id": "ic-c9-mc-18",
+    "unitId": 9,
+    "stem": "Which element has the higher first ionization energy: chlorine (Cl, Period 3, Group 17) or potassium (K, Period 4, Group 1)?",
+    "choices": [
+      "Chlorine, because it is farther right in its period and higher up in its group than potassium",
+      "Potassium, because it has more total electrons",
+      "They have essentially the same first ionization energy",
+      "Chlorine, because it has a larger atomic radius than potassium"
+    ],
+    "correctIndex": 0,
+    "topicTag": "9.4",
+    "source": "original",
+    "explanation": "First ionization energy increases moving right across a period (greater effective nuclear charge holds valence electrons more tightly) and increases moving up a group (fewer shells, electrons held closer to the nucleus). Chlorine is both farther right in Period 3 and one full period higher than potassium, so both trends predict chlorine has the higher first ionization energy, consistent with real data (Cl is approximately 1251 kJ/mol vs K at approximately 419 kJ/mol). Choice B incorrectly assumes more electrons directly means higher ionization energy, but ionization energy depends on how tightly the outermost electron is held, not on the total electron count. Choice D is factually backwards: chlorine actually has a smaller atomic radius than potassium, and smaller radius generally corresponds to higher, not lower, ionization energy.",
+    "difficulty": "intermediate",
+    "hints": [
+      "Consider the period trend and the group trend separately, then check whether they point the same direction.",
+      "Potassium's lone valence electron is far from the nucleus and poorly held -- compare that to chlorine's tightly-held outer electrons."
+    ]
+  },
+  {
+    "id": "ic-c9-mc-19",
+    "unitId": 9,
+    "stem": "The first ionization energy of oxygen (approximately 1314 kJ/mol) is actually lower than that of nitrogen (approximately 1402 kJ/mol), even though oxygen is to the right of nitrogen on the periodic table. What best explains this exception to the general left-to-right increasing trend?",
+    "choices": [
+      "Nitrogen's half-filled 2p3 subshell is unusually stable, and removing an electron from oxygen's paired 2p4 subshell is made easier by extra electron-electron repulsion",
+      "Oxygen has fewer protons than nitrogen, lowering its nuclear charge",
+      "Oxygen's electrons are farther from the nucleus than nitrogen's electrons",
+      "This is a measurement error, and oxygen's true ionization energy is actually higher than nitrogen's"
+    ],
+    "correctIndex": 0,
+    "topicTag": "9.4",
+    "source": "original",
+    "explanation": "Nitrogen's 2p3 configuration places one electron in each of the three 2p orbitals (a half-filled subshell), which is an unusually stable, lower-energy arrangement that resists having an electron removed. Oxygen's 2p4 configuration forces two electrons into the same 2p orbital, and the extra electron-electron repulsion between that paired set makes one of those electrons easier to remove than expected, lowering oxygen's ionization energy relative to the general trend. Choice B is factually wrong -- oxygen (Z=8) has more protons than nitrogen (Z=7), not fewer. Choice C is incorrect because oxygen and nitrogen are in the same period, so their valence electrons occupy the same principal energy level and are not meaningfully farther from the nucleus. Choice D dismisses a real, well-documented periodic trend exception rather than explaining it.",
+    "difficulty": "advanced",
+    "hints": [
+      "Compare the electron configurations of nitrogen (2p3) and oxygen (2p4) in the 2p sublevel -- one has an electron in every orbital, the other has a pair.",
+      "Electron-electron repulsion within a single orbital can make an electron easier to remove than the general period trend would predict."
+    ]
+  },
+  {
+    "id": "ic-c9-mc-20",
+    "unitId": 9,
+    "stem": "Two atoms form a bond with an electronegativity difference of 1.2 between them. Using the common qualitative guideline that a difference of 0-0.4 indicates a nonpolar covalent bond, 0.4-1.7 indicates a polar covalent bond, and greater than 1.7 indicates an ionic bond, how should this bond be classified?",
+    "choices": [
+      "Nonpolar covalent bond",
+      "Polar covalent bond",
+      "Ionic bond",
+      "It cannot be classified without knowing the specific elements involved"
+    ],
+    "correctIndex": 1,
+    "topicTag": "9.5",
+    "source": "original",
+    "explanation": "An electronegativity difference of 1.2 falls within the 0.4-1.7 range used as the guideline for a polar covalent bond -- large enough that electron density is shared unevenly (creating a bond dipole), but not large enough to be treated as a full electron transfer (ionic bond). Choice A is incorrect because 1.2 is well above the 0-0.4 nonpolar range. Choice C is incorrect because 1.2 does not exceed the 1.7 ionic threshold. Choice D is unnecessary here, since the guideline classification depends only on the numerical difference given, not on which specific elements are involved.",
+    "difficulty": "advanced",
+    "hints": [
+      "Compare 1.2 to each of the three ranges given in the guideline.",
+      "A difference of 1.2 is neither very small nor very large -- which range does it fall into?"
+    ]
+  }
+]

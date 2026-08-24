@@ -1,0 +1,228 @@
+[
+  {
+    "id": "ic-c7-mc-1",
+    "unitId": 7,
+    "stem": "When the equation __C3H8 + __O2 -> __CO2 + __H2O is balanced using the smallest whole-number coefficients (with C3H8 = 1), what coefficient goes in front of O2?",
+    "choices": ["3", "4", "5", "7"],
+    "correctIndex": 2,
+    "topicTag": "7.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c7-mc-2",
+    "unitId": 7,
+    "stem": "Which set of coefficients correctly balances N2 + H2 -> NH3, in the order (N2, H2, NH3)?",
+    "choices": ["1, 1, 1", "1, 3, 2", "2, 3, 2", "1, 3, 1"],
+    "correctIndex": 1,
+    "topicTag": "7.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c7-mc-3",
+    "unitId": 7,
+    "stem": "In a balanced chemical equation, the number of atoms of each element must be equal on both sides of the equation.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "7.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c7-mc-4",
+    "unitId": 7,
+    "stem": "Which set of coefficients correctly balances __Fe + __O2 -> __Fe2O3, in the order (Fe, O2, Fe2O3)?",
+    "choices": ["4, 3, 2", "2, 3, 1", "4, 2, 3", "2, 2, 1"],
+    "correctIndex": 0,
+    "topicTag": "7.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c7-mc-5",
+    "unitId": 7,
+    "stem": "The reaction 2KClO3 -> 2KCl + 3O2 is best classified as a:",
+    "choices": ["Synthesis reaction", "Decomposition reaction", "Single-displacement reaction", "Double-displacement reaction"],
+    "correctIndex": 1,
+    "topicTag": "7.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c7-mc-6",
+    "unitId": 7,
+    "stem": "The reaction CH4 + 2O2 -> CO2 + 2H2O is best classified as a:",
+    "choices": ["Decomposition reaction", "Single-displacement reaction", "Combustion reaction", "Double-displacement reaction"],
+    "correctIndex": 2,
+    "topicTag": "7.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c7-mc-7",
+    "unitId": 7,
+    "stem": "Zn + 2HCl -> ZnCl2 + H2 is an example of a:",
+    "choices": ["Synthesis reaction", "Single-displacement reaction", "Double-displacement reaction", "Decomposition reaction"],
+    "correctIndex": 1,
+    "topicTag": "7.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c7-mc-8",
+    "unitId": 7,
+    "stem": "A synthesis (combination) reaction produces a single product from two or more reactants.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "7.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c7-mc-9",
+    "unitId": 7,
+    "stem": "What are the products when AgNO3(aq) reacts with NaCl(aq) in a double-displacement reaction?",
+    "choices": ["AgCl and NaNO3", "AgNa and ClNO3", "Ag metal and NaClNO3", "No reaction occurs"],
+    "correctIndex": 0,
+    "topicTag": "7.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c7-mc-10",
+    "unitId": 7,
+    "stem": "What are the predicted products of the reaction between magnesium metal and hydrochloric acid?",
+    "choices": ["MgCl2 and H2", "MgH2 and Cl2", "Mg(OH)2 and HCl", "MgCl and H2"],
+    "correctIndex": 0,
+    "topicTag": "7.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c7-mc-11",
+    "unitId": 7,
+    "stem": "Iron metal is added to a solution of copper(II) sulfate. Since iron is more reactive than copper, what happens?",
+    "choices": [
+      "Fe2(SO4)3 forms and copper stays dissolved",
+      "FeSO4 forms and solid copper metal is produced",
+      "The iron remains completely unreacted",
+      "CuFe forms along with SO4 gas"
+    ],
+    "correctIndex": 1,
+    "topicTag": "7.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c7-mc-12",
+    "unitId": 7,
+    "stem": "A precipitate can form in a double-displacement reaction when one of the possible products is insoluble in water.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "7.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c7-mc-13",
+    "unitId": 7,
+    "stem": "Based on common solubility guidelines, which of these compounds is insoluble in water and would form a precipitate?",
+    "choices": ["NaCl", "KNO3", "AgCl", "NH4Br"],
+    "correctIndex": 2,
+    "topicTag": "7.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c7-mc-14",
+    "unitId": 7,
+    "stem": "Mixing BaCl2(aq) and Na2SO4(aq) produces a white precipitate. What is the precipitate?",
+    "choices": ["NaCl", "BaSO4", "BaNa2", "Cl2SO4"],
+    "correctIndex": 1,
+    "topicTag": "7.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c7-mc-15",
+    "unitId": 7,
+    "stem": "When the equation __H2 + __Cl2 -> __HCl is balanced using the smallest whole-number coefficients, what coefficient goes in front of HCl?",
+    "choices": ["1", "2", "3", "4"],
+    "correctIndex": 1,
+    "topicTag": "7.1",
+    "source": "original",
+    "explanation": "Balancing H2 + Cl2 -> 2HCl gives 2 H atoms and 2 Cl atoms on each side. A coefficient of 1 in front of HCl would leave only 1 H and 1 Cl on the product side, not matching the 2 and 2 on the reactant side. Coefficients of 3 or 4 overcorrect and no longer balance the equation with H2 and Cl2 each at a coefficient of 1.",
+    "difficulty": "beginner",
+    "hints": [
+      "Count the H and Cl atoms on the reactant side first — there are 2 of each.",
+      "Whatever coefficient you place on HCl must supply that same number of H atoms and Cl atoms on the product side."
+    ]
+  },
+  {
+    "id": "ic-c7-mc-16",
+    "unitId": 7,
+    "stem": "The reaction 2Na(s) + Cl2(g) -> 2NaCl(s) is best classified as a:",
+    "choices": ["Synthesis (combination) reaction", "Decomposition reaction", "Single-displacement reaction", "Double-displacement reaction"],
+    "correctIndex": 0,
+    "topicTag": "7.2",
+    "source": "original",
+    "explanation": "Two simpler substances, sodium metal and chlorine gas, combine to form a single compound, sodium chloride — the defining pattern of a synthesis (combination) reaction. It is not decomposition, since that would require one compound breaking apart. It is not single- or double-displacement, since those require one compound reacting with an element or another compound to swap partners, which isn't happening here.",
+    "difficulty": "beginner",
+    "hints": [
+      "Look at whether the reactants are combining into one product or a compound is breaking apart.",
+      "Two elements forming one compound is the hallmark of a synthesis reaction."
+    ]
+  },
+  {
+    "id": "ic-c7-mc-17",
+    "unitId": 7,
+    "stem": "When the equation __C2H6 + __O2 -> __CO2 + __H2O is balanced using the smallest whole-number coefficients (with C2H6 = 2), what is the coefficient of H2O, and what type of reaction is this?",
+    "choices": ["4; combustion", "6; combustion", "6; synthesis", "3; combustion"],
+    "correctIndex": 1,
+    "topicTag": "7.2",
+    "source": "original",
+    "explanation": "Balancing gives 2C2H6 + 7O2 -> 4CO2 + 6H2O. Checking: 4 C = 4 C; 12 H = 12 H; 14 O on the left (7 x 2) equals 8 + 6 = 14 O on the right. So the coefficient of H2O is 6. This is a combustion reaction because a hydrocarbon (C2H6) reacts with O2 to produce CO2 and H2O. Choosing 4 confuses the CO2 coefficient with the H2O coefficient. \"Synthesis\" is incorrect because two separate products (CO2 and H2O) form, not a single compound. Choosing 3 doesn't actually balance the hydrogen atoms.",
+    "difficulty": "intermediate",
+    "hints": [
+      "Balance carbon and hydrogen first using the given coefficient of 2 for C2H6, then balance oxygen last since it appears in two different products.",
+      "A hydrocarbon reacting with O2 to form CO2 and H2O is always a specific, well-known reaction category."
+    ]
+  },
+  {
+    "id": "ic-c7-mc-18",
+    "unitId": 7,
+    "stem": "Aluminum metal is added to a solution of copper(II) sulfate, CuSO4(aq). Based on the charges of Al^3+ and SO4^2-, what are the predicted products of this single-displacement reaction?",
+    "choices": ["AlSO4 and Cu", "Al2(SO4)3 and Cu", "Al3(SO4)2 and Cu", "AlCu and SO4"],
+    "correctIndex": 1,
+    "topicTag": "7.3",
+    "source": "original",
+    "explanation": "Aluminum displaces copper from the sulfate compound, so the products are an aluminum sulfate salt and copper metal. Combining Al^3+ with SO4^2- requires charge-balancing: the least common multiple of 3 and 2 is 6, so 2 Al^3+ ions (total +6) pair with 3 SO4^2- ions (total -6), giving Al2(SO4)3. AlSO4 ignores charge balancing entirely and assumes a 1:1 ratio. Al3(SO4)2 has the subscripts reversed. AlCu and SO4 incorrectly assumes the two metals combine directly with each other.",
+    "difficulty": "intermediate",
+    "hints": [
+      "Aluminum takes the place of copper in the compound, so the new ionic compound is formed from Al^3+ and SO4^2-.",
+      "Balance the charges of Al^3+ and SO4^2- the same way you would for any new ionic compound, using their least common multiple."
+    ]
+  },
+  {
+    "id": "ic-c7-mc-19",
+    "unitId": 7,
+    "stem": "Aqueous sodium carbonate (Na2CO3) is mixed with aqueous calcium chloride (CaCl2). Based on common solubility guidelines, what is predicted to happen?",
+    "choices": [
+      "No precipitate forms, since both possible products are soluble",
+      "CaCO3 precipitates, because carbonates of most metal ions (other than Group 1 and ammonium) are generally insoluble",
+      "NaCl precipitates, because sodium salts are generally insoluble",
+      "Both possible products precipitate together as a single solid"
+    ],
+    "correctIndex": 1,
+    "topicTag": "7.4",
+    "source": "original",
+    "explanation": "The possible double-displacement products are CaCO3 and NaCl. Carbonate compounds are generally insoluble except with Group 1 metal ions (like Na+) and the ammonium ion, so CaCO3 (calcium, a Group 2 metal) is expected to precipitate. NaCl, on the other hand, is a soluble sodium salt and remains dissolved. The first choice wrongly assumes carbonates follow the same broad solubility as nitrates or Group 1 salts. The third choice reverses which product is actually insoluble. The fourth choice misunderstands that only one of the two possible products is insoluble here.",
+    "difficulty": "advanced",
+    "hints": [
+      "Identify the two possible new combinations of ions first: calcium with carbonate, and sodium with chloride.",
+      "Carbonate is one of the polyatomic ions with an important solubility exception — it is NOT generally soluble the way nitrates and Group 1 salts are."
+    ]
+  },
+  {
+    "id": "ic-c7-mc-20",
+    "unitId": 7,
+    "stem": "Solid ammonium nitrate, NH4NO3, decomposes upon strong heating to produce two gaseous products, N2O and H2O. Which set of coefficients correctly balances __NH4NO3 -> __N2O + __H2O, in the order (NH4NO3, N2O, H2O)?",
+    "choices": ["1, 1, 2", "1, 2, 1", "2, 1, 4", "1, 1, 4"],
+    "correctIndex": 0,
+    "topicTag": "7.1",
+    "source": "original",
+    "explanation": "NH4NO3 contains 2 N atoms (one in the ammonium part, one in the nitrate part), 4 H atoms, and 3 O atoms. With coefficients 1, 1, 2: N atoms = 2 on the left, and 2 (from N2O) on the right; H atoms = 4 on the left, and 2 x 2 = 4 (from 2 H2O) on the right; O atoms = 3 on the left, and 1 (from N2O) + 2 (from 2 H2O) = 3 on the right. Every element balances. The other coefficient sets fail to balance either the hydrogen or the oxygen atoms once checked carefully.",
+    "difficulty": "advanced",
+    "hints": [
+      "Remember that NH4NO3 has two separate nitrogen atoms in its formula — one from the ammonium part, one from the nitrate part — so both must be tracked.",
+      "Balance nitrogen and hydrogen first, then check that oxygen also comes out equal on both sides."
+    ]
+  }
+]

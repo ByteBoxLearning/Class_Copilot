@@ -1,0 +1,256 @@
+[
+  {
+    "id": "ic-c11-mc-1",
+    "unitId": 11,
+    "stem": "According to the kinetic molecular theory, gas particles are in constant, random motion.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "11.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c11-mc-2",
+    "unitId": 11,
+    "stem": "Which of the following is a core assumption of the kinetic molecular theory of gases?",
+    "choices": [
+      "Gas particles strongly attract one another",
+      "The volume of individual gas particles is negligible compared to the volume of their container",
+      "Gas particles travel in fixed, circular paths",
+      "Gas particles slow down steadily over time even at constant temperature"
+    ],
+    "correctIndex": 1,
+    "topicTag": "11.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c11-mc-3",
+    "unitId": 11,
+    "stem": "As the temperature of a gas increases, the average kinetic energy of its particles decreases.",
+    "choices": ["True", "False"],
+    "correctIndex": 1,
+    "topicTag": "11.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c11-mc-4",
+    "unitId": 11,
+    "stem": "Boyle's law states that, at constant temperature and amount of gas, pressure and volume are:",
+    "choices": ["Directly proportional", "Inversely proportional", "Independent of each other", "Equal in value"],
+    "correctIndex": 1,
+    "topicTag": "11.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c11-mc-5",
+    "unitId": 11,
+    "stem": "If the volume of a gas is decreased at constant temperature, its pressure will decrease.",
+    "choices": ["True", "False"],
+    "correctIndex": 1,
+    "topicTag": "11.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c11-mc-6",
+    "unitId": 11,
+    "stem": "A gas occupies 4.0 L at a pressure of 2.0 atm. If the pressure is increased to 4.0 atm at constant temperature, what is the new volume?",
+    "choices": ["8.0 L", "2.0 L", "4.0 L", "1.0 L"],
+    "correctIndex": 1,
+    "topicTag": "11.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c11-mc-7",
+    "unitId": 11,
+    "stem": "Charles's law states that, at constant pressure, the volume of a gas is directly proportional to its:",
+    "choices": ["Kelvin temperature", "Celsius temperature only", "Molar mass", "Density"],
+    "correctIndex": 0,
+    "topicTag": "11.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c11-mc-8",
+    "unitId": 11,
+    "stem": "According to Charles's law, cooling a gas at constant pressure causes its volume to decrease.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "11.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c11-mc-9",
+    "unitId": 11,
+    "stem": "A balloon has a volume of 2.0 L at 300 K. Assuming constant pressure, what will its volume be at 600 K?",
+    "choices": ["1.0 L", "4.0 L", "2.0 L", "6.0 L"],
+    "correctIndex": 1,
+    "topicTag": "11.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c11-mc-10",
+    "unitId": 11,
+    "stem": "Gay-Lussac's law states that, at constant volume, the pressure of a gas and its Kelvin temperature are directly proportional.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "11.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c11-mc-11",
+    "unitId": 11,
+    "stem": "The combined gas law is formed by combining which three gas laws?",
+    "choices": [
+      "Boyle's, Charles's, and Gay-Lussac's laws",
+      "Avogadro's, Boyle's, and Charles's laws",
+      "Dalton's, Boyle's, and Charles's laws",
+      "Graham's, Charles's, and Gay-Lussac's laws"
+    ],
+    "correctIndex": 0,
+    "topicTag": "11.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c11-mc-12",
+    "unitId": 11,
+    "stem": "Standard temperature and pressure (STP) is commonly defined as:",
+    "choices": ["0 °C and 1 atm", "25 °C and 1 atm", "0 °C and 2 atm", "100 °C and 1 atm"],
+    "correctIndex": 0,
+    "topicTag": "11.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c11-mc-13",
+    "unitId": 11,
+    "stem": "One mole of an ideal gas at STP occupies approximately 22.4 L.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "11.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c11-mc-14",
+    "unitId": 11,
+    "stem": "Which equation correctly represents the ideal gas law?",
+    "choices": ["PV = nRT", "PT = nRV", "VT = nRP", "PVT = nR"],
+    "correctIndex": 0,
+    "topicTag": "11.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c11-mc-15",
+    "unitId": 11,
+    "stem": "Dalton's law of partial pressures states that the total pressure of a gas mixture equals:",
+    "choices": [
+      "The sum of the partial pressures of each gas present",
+      "The average of the partial pressures of each gas present",
+      "The product of the partial pressures of each gas present",
+      "The partial pressure of only the most abundant gas"
+    ],
+    "correctIndex": 0,
+    "topicTag": "11.6",
+    "source": "original"
+  },
+  {
+    "id": "ic-c11-mc-16",
+    "unitId": 11,
+    "stem": "A rigid container holds a mixture of two gases with partial pressures of 2.0 atm and 3.0 atm. What is the total pressure inside the container?",
+    "choices": ["5.0 atm", "1.0 atm", "6.0 atm", "2.5 atm"],
+    "correctIndex": 0,
+    "topicTag": "11.6",
+    "source": "original"
+  },
+  {
+    "id": "ic-c11-mc-17",
+    "unitId": 11,
+    "stem": "According to kinetic molecular theory, which statement about collisions in an ideal gas is correct?",
+    "choices": [
+      "Collisions between gas particles result in a net loss of total kinetic energy over time",
+      "Collisions between gas particles and the container walls are perfectly elastic, so total kinetic energy is conserved",
+      "Gas particles are assumed to collide only with the container walls, never with each other",
+      "Collisions between gas particles occur only when the gas is heated above room temperature"
+    ],
+    "correctIndex": 1,
+    "topicTag": "11.1",
+    "source": "original",
+    "explanation": "Kinetic molecular theory assumes that all collisions between gas particles (and between particles and the container walls) are perfectly elastic, meaning no kinetic energy is lost overall, even though energy can be transferred between individual particles during a collision. Choice A incorrectly describes inelastic collisions, which is not the KMT assumption. Choice C is incorrect because KMT explicitly includes particle-particle collisions, not just particle-wall collisions. Choice D is incorrect because gas particles are in constant random motion and colliding at any temperature, not only above room temperature.",
+    "difficulty": "beginner",
+    "hints": [
+      "'Elastic' collisions are ones where total kinetic energy is conserved overall.",
+      "Kinetic molecular theory applies to gas particles colliding with each other as well as with the container walls."
+    ]
+  },
+  {
+    "id": "ic-c11-mc-18",
+    "unitId": 11,
+    "stem": "A gas occupies 6.00 L at a pressure of 1.50 atm. At constant temperature, what is the new volume if the pressure is changed to 3.00 atm?",
+    "choices": ["12.0 L", "3.00 L", "1.50 L", "9.00 L"],
+    "correctIndex": 1,
+    "topicTag": "11.2",
+    "source": "original",
+    "explanation": "By Boyle's law, P1V1 = P2V2: (1.50 atm)(6.00 L) = (3.00 atm)(V2), so V2 = 9.00 / 3.00 = 3.00 L. Choice A (12.0 L) results from incorrectly manipulating the pressure ratio instead of solving the proportion correctly. Choice C (1.50 L) results from dividing volume by the wrong factor. Choice D (9.00 L) is simply the value of P1V1 left uncombined, mistaken for the final volume.",
+    "difficulty": "beginner",
+    "hints": [
+      "Use P1V1 = P2V2 and solve for the unknown volume.",
+      "Since pressure doubled, volume should be cut in half at constant temperature."
+    ]
+  },
+  {
+    "id": "ic-c11-mc-19",
+    "unitId": 11,
+    "stem": "A gas has a volume of 3.00 L at 27 degrees C. At constant pressure, what will its volume be at 127 degrees C?",
+    "choices": ["4.00 L", "3.00 L", "2.25 L", "1.00 L"],
+    "correctIndex": 0,
+    "topicTag": "11.3",
+    "source": "original",
+    "explanation": "Charles's law requires Kelvin temperatures: T1 = 27 + 273 = 300. K, T2 = 127 + 273 = 400. K. V1/T1 = V2/T2, so V2 = V1(T2/T1) = 3.00 L x (400./300.) = 4.00 L. Choice B (3.00 L) incorrectly assumes volume doesn't change. Choice C (2.25 L) results from inverting the temperature ratio (300/400) instead of using (400/300). Choice D (1.00 L) could result from mistakenly using the Celsius temperatures directly in the ratio without converting to Kelvin.",
+    "difficulty": "intermediate",
+    "hints": [
+      "Convert both temperatures to Kelvin before setting up the Charles's law ratio.",
+      "Since temperature increases at constant pressure, volume should also increase."
+    ]
+  },
+  {
+    "id": "ic-c11-mc-20",
+    "unitId": 11,
+    "stem": "A gas has a volume of 2.00 L at 1.00 atm and 200. K. If the pressure is increased to 2.00 atm and the temperature is simultaneously increased to 400. K, what is the new volume?",
+    "choices": ["1.00 L", "2.00 L", "4.00 L", "8.00 L"],
+    "correctIndex": 1,
+    "topicTag": "11.4",
+    "source": "original",
+    "explanation": "Using the combined gas law, P1V1/T1 = P2V2/T2: V2 = V1 x (P1/P2) x (T2/T1) = 2.00 L x (1.00/2.00) x (400./200.) = 2.00 x 0.500 x 2.00 = 2.00 L. Doubling the pressure alone would have halved the volume, but doubling the temperature alone would have doubled it -- these two effects exactly cancel, leaving the volume unchanged. Choice A (1.00 L) accounts only for the pressure increase and ignores the temperature increase. Choice C (4.00 L) accounts only for the temperature increase and ignores the pressure increase. Choice D (8.00 L) incorrectly compounds both factors in the same direction instead of letting them cancel.",
+    "difficulty": "intermediate",
+    "hints": [
+      "Apply the combined gas law with both the pressure change and the temperature change at once.",
+      "Think about each change separately first: what would doubling pressure alone do to volume, and what would doubling temperature alone do? Do these two effects work in the same direction or opposite directions?"
+    ]
+  },
+  {
+    "id": "ic-c11-mc-21",
+    "unitId": 11,
+    "stem": "A 2.00 g sample of an unknown gas occupies 1.12 L at STP. What is the molar mass of this gas?",
+    "choices": ["20.0 g/mol", "40.0 g/mol", "44.8 g/mol", "2.00 g/mol"],
+    "correctIndex": 1,
+    "topicTag": "11.5",
+    "source": "original",
+    "explanation": "At STP, one mole of any ideal gas occupies 22.4 L, so moles of gas = 1.12 L / 22.4 L/mol = 0.0500 mol. Molar mass = mass/moles = 2.00 g / 0.0500 mol = 40.0 g/mol. Choice A (20.0 g/mol) results from a factor-of-2 error in the mole or mass calculation. Choice C (44.8 g/mol) confuses the given volume with double the molar volume of a gas rather than using it to calculate moles first. Choice D (2.00 g/mol) simply restates the given mass without completing the molar mass calculation.",
+    "difficulty": "advanced",
+    "hints": [
+      "First convert the given volume to moles using the fact that 1 mole of gas occupies 22.4 L at STP.",
+      "Once you have moles, molar mass is just mass divided by moles."
+    ]
+  },
+  {
+    "id": "ic-c11-mc-22",
+    "unitId": 11,
+    "stem": "A rigid container holds only two gases, A and B, at a total pressure of 4.00 atm. The container has 0.600 mol of gas A and 0.400 mol of gas B. What is the partial pressure of gas A?",
+    "choices": ["1.60 atm", "2.40 atm", "4.00 atm", "0.600 atm"],
+    "correctIndex": 1,
+    "topicTag": "11.6",
+    "source": "original",
+    "explanation": "The mole fraction of gas A is n(A) / n(total) = 0.600 / (0.600 + 0.400) = 0.600. Partial pressure of A = mole fraction of A x total pressure = 0.600 x 4.00 atm = 2.40 atm. Choice A (1.60 atm) is actually the partial pressure of gas B (0.400 x 4.00 atm), not gas A. Choice C (4.00 atm) mistakenly assigns the entire total pressure to gas A alone. Choice D (0.600 atm) mistakes the mole fraction itself for a pressure value, without multiplying by the total pressure.",
+    "difficulty": "advanced",
+    "hints": [
+      "First find gas A's mole fraction: its moles divided by the total moles of gas present.",
+      "Multiply the mole fraction by the total pressure to get the partial pressure."
+    ]
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "id": "u1-frq-long-1",
+    "unitId": 1,
+    "kind": "long",
+    "points": 10,
+    "stem": "The table below gives photoelectron spectroscopy (PES) data for a neutral, ground-state atom of an unknown main-group element Q. Each peak lists its binding energy and the relative number of electrons associated with it.\n\nPeak 1: binding energy = 25 MJ/mol, relative electrons = 2\nPeak 2: binding energy = 2.5 MJ/mol, relative electrons = 2\nPeak 3: binding energy = 1.8 MJ/mol, relative electrons = 6\nPeak 4: binding energy = 0.28 MJ/mol, relative electrons = 2\nPeak 5: binding energy = 0.17 MJ/mol, relative electrons = 3\n\nElement M is calcium (Ca), a Group 2, Period 4 metal.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Using the PES data, determine the total number of electrons in a neutral atom of Q, write its complete ground-state electron configuration, and identify element Q by name or symbol.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(b)",
+        "prompt": "Peak 4 (binding energy = 0.28 MJ/mol) and Peak 5 (binding energy = 0.17 MJ/mol) both correspond to electrons with principal quantum number n = 3, yet Peak 4 has a higher binding energy than Peak 5. Identify the subshell each peak corresponds to and explain, in terms of orbital penetration and/or shielding, why the electrons in Peak 4 are held more tightly than those in Peak 5.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(c)",
+        "prompt": "The element immediately following Q in Period 3 (one more proton than Q) has a lower first ionization energy than Q, even though it has a smaller atomic radius and greater nuclear charge. Explain this observation in terms of the electron configurations of the two elements.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(d)",
+        "prompt": "State the charge of the ion that element Q is most likely to form and justify it using Q's valence electron configuration. Then determine the empirical formula of the ionic compound formed between Q and element M, showing that the compound is electrically neutral.",
+        "maxPoints": 3
+      }
+    ],
+    "workedSolution": "(a) Total electrons = 2 + 2 + 6 + 2 + 3 = 15. Ground-state configuration: 1s2 2s2 2p6 3s2 3p3. Atomic number 15 corresponds to phosphorus, Q = P.\n\n(b) Binding energy decreases as n increases, and within the same principal energy level, s orbitals bind more tightly than p orbitals. Peak 4 (0.28 MJ/mol, 2 e-) corresponds to the 3s subshell, and Peak 5 (0.17 MJ/mol, 3 e-) corresponds to the 3p subshell. The 3s orbital has greater penetration toward the nucleus (higher electron density near the nucleus) than the 3p orbital, so 3s electrons experience a greater effective nuclear charge and less shielding from inner-shell electrons. As a result, 3s electrons (Peak 4) are held more tightly and have a higher binding energy than the 3p electrons (Peak 5), even though both are in the n = 3 level.\n\n(c) Q is phosphorus, 1s2 2s2 2p6 3s2 3p3; the element immediately following it in Period 3 is sulfur, 1s2 2s2 2p6 3s2 3p4. Phosphorus has a half-filled 3p subshell (3p3), with one electron in each of the three 3p orbitals; this symmetric, half-filled arrangement is an especially stable, lower-energy configuration, so removing an electron from it requires extra energy. Sulfur's 3p4 configuration places two electrons in the same 3p orbital; the electron-electron repulsion between this paired set of electrons raises their energy and makes one of them easier to remove. This repulsion effect outweighs sulfur's greater nuclear charge and smaller radius, so sulfur's first ionization energy is lower than phosphorus's.\n\n(d) Phosphorus (Q), with configuration ...3s2 3p3, has 5 valence electrons and needs 3 more electrons to achieve the stable noble-gas (argon) configuration, so it most commonly forms the P^3- ion. Calcium (M), a Group 2 metal, forms Ca^2+ by losing its 2 valence electrons. To balance charge: let a = number of Ca^2+ and b = number of P^3-; a(+2) + b(-3) = 0, giving the smallest whole-number ratio a:b = 3:2. Empirical formula: Ca3P2. Check: 3(+2) + 2(-3) = +6 - 6 = 0, confirming the compound is electrically neutral.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly summing the relative electron counts to get 15 total electrons; 1 point for the correct complete ground-state electron configuration 1s2 2s2 2p6 3s2 3p3; 1 point for correctly identifying the element as phosphorus (P), consistent with 15 electrons.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly assigning Peak 4 to the 3s subshell and Peak 5 to the 3p subshell; 1 point for an explanation based on penetration/shielding (3s electrons penetrate closer to the nucleus and are less shielded than 3p electrons, giving 3s a higher binding energy). If the student's electron configuration in part (a) was incorrect, award credit for peak assignments and reasoning that are internally consistent with their own configuration.",
+        "points": 2,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for identifying that Q (phosphorus) has a stable, half-filled 3p3 subshell while the next element (sulfur) has a 3p4 configuration; 1 point for explaining that the paired electrons in sulfur's doubly-occupied 3p orbital experience increased electron-electron repulsion, raising their energy and lowering the ionization energy relative to phosphorus's half-filled stability. Credit should be based on the student's identification of Q from part (a); if a different element was identified, award credit for a chemically sound comparison consistent with that identification.",
+        "points": 2,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly stating the ion charge P^3- with valid reasoning based on valence electrons (5 valence electrons, needs 3 more for a noble-gas configuration); 1 point for the correct empirical formula Ca3P2; 1 point for explicitly showing the charge balance (e.g., 3(+2) + 2(-3) = 0) demonstrating electrical neutrality. If the student identified a different element in part (a), award credit for a charge, formula, and neutrality check that are correctly derived from that element's actual valence electron count.",
+        "points": 3,
+        "allowsErrorCarriedForward": true
+      }
+    ],
+    "source": "bank"
+  },
+  {
+    "id": "u1-frq-short-1",
+    "unitId": 1,
+    "kind": "short",
+    "points": 4,
+    "stem": "A 5.00 g sample of a hydrated copper(II) sulfate compound, CuSO4·xH2O, is heated strongly until all of the water of hydration has been driven off. The mass of the remaining anhydrous CuSO4 is 3.20 g. (Molar masses: CuSO4 = 159.62 g/mol, H2O = 18.02 g/mol)",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Calculate the number of moles of water lost upon heating and the number of moles of anhydrous CuSO4 remaining.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Determine the whole-number value of x in the formula CuSO4·xH2O, and write the complete formula of the hydrate.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "Mass of water lost = 5.00 g - 3.20 g = 1.80 g.\nMoles of H2O = 1.80 g / 18.02 g/mol = 0.0999 mol.\nMoles of CuSO4 = 3.20 g / 159.62 g/mol = 0.0200 mol.\n\nRatio x = (moles H2O) / (moles CuSO4) = 0.0999 / 0.0200 = 5.00 ≈ 5.\n\nFormula of the hydrate: CuSO4·5H2O.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly finding the mass of water lost (1.80 g) and converting it to moles of H2O (≈ 0.0999 mol); 1 point for correctly calculating moles of anhydrous CuSO4 from its mass and molar mass (≈ 0.0200 mol).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly dividing moles of H2O by moles of CuSO4 to obtain a ratio close to 5 (using the student's own mole values from part (a) if part (a) contains an error); 1 point for correctly rounding to the nearest whole number and writing the complete formula CuSO4·5H2O (or the formula consistent with the student's calculated ratio).",
+        "points": 2,
+        "allowsErrorCarriedForward": true
+      }
+    ],
+    "source": "bank"
+  }
+]

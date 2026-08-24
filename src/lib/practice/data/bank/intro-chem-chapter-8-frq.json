@@ -1,0 +1,194 @@
+[
+  {
+    "id": "ic8-short-1",
+    "unitId": 8,
+    "kind": "short",
+    "points": 4,
+    "stem": "Consider the balanced equation for the formation of water: 2H2(g) + O2(g) -> 2H2O(g). Suppose 5.00 mol of H2 reacts completely with excess oxygen gas. (Molar mass of H2O = 18.02 g/mol.)",
+    "parts": [
+      { "label": "(a)", "prompt": "Using the mole ratio from the balanced equation, calculate the number of moles of H2O produced.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Calculate the mass, in grams, of H2O produced.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) From the balanced equation, the mole ratio of H2 to H2O is 2:2, or 1:1. Moles of H2O = 5.00 mol H2 x (2 mol H2O / 2 mol H2) = 5.00 mol H2O.\n\n(b) Mass of H2O = 5.00 mol x 18.02 g/mol = 90.1 g.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly identifying the 1:1 mole ratio between H2 and H2O from the balanced equation; 1 point for the correct answer of 5.00 mol H2O.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly multiplying the student's own moles of H2O from part (a) by the molar mass of water (18.02 g/mol); 1 point for the correct final answer of 90.1 g.", "points": 2, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": [
+      "Use the mole ratio between H2 and H2O directly from the balanced equation.",
+      "Once you have moles of H2O, multiply by its molar mass to get grams."
+    ]
+  },
+  {
+    "id": "ic8-short-2",
+    "unitId": 8,
+    "kind": "short",
+    "points": 4,
+    "stem": "In a lab experiment, a student reacts 10.0 g of zinc metal with excess hydrochloric acid: Zn(s) + 2HCl(aq) -> ZnCl2(aq) + H2(g). (Molar masses: Zn = 65.38 g/mol, ZnCl2 = 136.28 g/mol.)",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the theoretical yield of ZnCl2, in grams, from 10.0 g of zinc reacting completely.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "If the student actually collects and dries 17.2 g of ZnCl2, calculate the percent yield of the reaction.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) Moles of Zn = 10.0 g / 65.38 g/mol = 0.153 mol. Mole ratio of Zn to ZnCl2 is 1:1, so moles of ZnCl2 = 0.153 mol. Theoretical yield = 0.153 mol x 136.28 g/mol = 20.8 g (using the unrounded value, 20.85 g).\n\n(b) Percent yield = (actual yield / theoretical yield) x 100% = (17.2 g / 20.85 g) x 100% = 82.5%.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly converting 10.0 g Zn to moles (0.153 mol) and applying the 1:1 mole ratio to ZnCl2; 1 point for the correct theoretical yield of approximately 20.8 g.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly setting up percent yield = (actual/theoretical) x 100%, using the student's own theoretical yield from part (a); 1 point for the correct final answer of approximately 82.5% (or the value consistent with the student's own part (a) answer).", "points": 2, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Find the theoretical yield first by converting grams of Zn to moles, then applying the mole ratio to ZnCl2.",
+      "Percent yield compares the actual amount collected to the theoretical amount you just calculated."
+    ]
+  },
+  {
+    "id": "ic8-long-1",
+    "unitId": 8,
+    "kind": "long",
+    "points": 10,
+    "stem": "Aluminum reacts with copper(II) sulfate solution according to the equation: 2Al(s) + 3CuSO4(aq) -> Al2(SO4)3(aq) + 3Cu(s). In an experiment, 5.40 g of aluminum is combined with 19.2 g of copper(II) sulfate. (Molar masses: Al = 26.98 g/mol, CuSO4 = 159.62 g/mol, Cu = 63.55 g/mol.)",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the number of moles of Al and the number of moles of CuSO4 initially available.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Determine which reactant is the limiting reactant. Show the reasoning/calculation that supports your answer.", "maxPoints": 2 },
+      { "label": "(c)", "prompt": "Calculate the theoretical yield of copper metal (Cu), in grams, produced by this reaction.", "maxPoints": 3 },
+      { "label": "(d)", "prompt": "If the student actually collects 6.50 g of copper metal, calculate the percent yield of the reaction.", "maxPoints": 3 }
+    ],
+    "workedSolution": "(a) Moles of Al = 5.40 g / 26.98 g/mol = 0.200 mol. Moles of CuSO4 = 19.2 g / 159.62 g/mol = 0.120 mol.\n\n(b) The balanced equation requires a 2:3 mole ratio of Al to CuSO4. For all 0.200 mol of Al to react, (3/2)(0.200) = 0.300 mol of CuSO4 would be needed, but only 0.120 mol is available. Since there is not enough CuSO4 to react with all the Al, CuSO4 is the limiting reactant (equivalently: 0.120 mol CuSO4 only requires (2/3)(0.120) = 0.0800 mol Al, and 0.200 mol Al is available, confirming Al is in excess).\n\n(c) Using the limiting reactant, CuSO4: moles of Cu produced = 0.120 mol CuSO4 x (3 mol Cu / 3 mol CuSO4) = 0.120 mol Cu. Mass of Cu = 0.120 mol x 63.55 g/mol = 7.65 g (theoretical yield).\n\n(d) Percent yield = (actual yield / theoretical yield) x 100% = (6.50 g / 7.65 g) x 100% = 85.0%.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correct moles of Al (~0.200 mol); 1 point for correct moles of CuSO4 (~0.120 mol).", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly applying the 2:3 mole ratio to compare the amount of one reactant needed versus available, using the student's own mole values from part (a); 1 point for correctly identifying CuSO4 as the limiting reactant with reasoning consistent with those mole values.", "points": 2, "allowsErrorCarriedForward": true },
+      { "partLabel": "(c)", "criterion": "1 point for using the moles of the limiting reactant identified in part (b) (student's own answer); 1 point for correctly applying the mole ratio to Cu; 1 point for the correct final mass of approximately 7.65 g (or the value consistent with the student's own limiting reactant and mole values).", "points": 3, "allowsErrorCarriedForward": true },
+      { "partLabel": "(d)", "criterion": "1 point for correctly setting up percent yield using the student's own theoretical yield from part (c); 1 point for correct division and multiplication by 100%; 1 point for the correct final answer of approximately 85.0% (or the value consistent with the student's own part (c) answer).", "points": 3, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Convert both given masses to moles first, then compare how much of one reactant is needed to fully react with the other before deciding which is limiting.",
+      "Every later part of this problem depends on correctly identifying the limiting reactant in part (b)."
+    ]
+  },
+  {
+    "id": "ic8-long-2",
+    "unitId": 8,
+    "kind": "long",
+    "points": 10,
+    "stem": "Propane gas burns completely in excess oxygen according to the equation: C3H8(g) + 5O2(g) -> 3CO2(g) + 4H2O(g). A camping stove burns 22.0 g of propane completely. (Molar masses: C3H8 = 44.09 g/mol, CO2 = 44.01 g/mol, O2 = 32.00 g/mol. Assume 1 mol of any gas occupies 22.4 L at STP.)",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the number of moles of propane burned and the number of moles of CO2 produced.", "maxPoints": 3 },
+      { "label": "(b)", "prompt": "Calculate the mass, in grams, of CO2 produced.", "maxPoints": 2 },
+      { "label": "(c)", "prompt": "Calculate the volume, in liters, that the CO2 produced would occupy at STP.", "maxPoints": 3 },
+      { "label": "(d)", "prompt": "Calculate the mass, in grams, of O2 required to burn the 22.0 g of propane completely.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) Moles of C3H8 = 22.0 g / 44.09 g/mol = 0.499 mol. Moles of CO2 = 0.499 mol C3H8 x (3 mol CO2 / 1 mol C3H8) = 1.50 mol CO2.\n\n(b) Mass of CO2 = 1.50 mol x 44.01 g/mol = 66.0 g.\n\n(c) Volume of CO2 at STP = 1.50 mol x 22.4 L/mol = 33.6 L.\n\n(d) Moles of O2 = 0.499 mol C3H8 x (5 mol O2 / 1 mol C3H8) = 2.49 mol O2. Mass of O2 = 2.49 mol x 32.00 g/mol = 79.8 g.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly converting 22.0 g propane to moles (~0.499 mol); 1 point for correctly applying the 1:3 mole ratio of C3H8 to CO2; 1 point for the correct moles of CO2 (~1.50 mol).", "points": 3, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "2 points for correctly multiplying the student's own moles of CO2 from part (a) by the molar mass of CO2 to get approximately 66.0 g.", "points": 2, "allowsErrorCarriedForward": true },
+      { "partLabel": "(c)", "criterion": "1 point for correctly using 22.4 L/mol as the molar volume at STP; 1 point for applying it to the student's own moles of CO2 from part (a); 1 point for the correct final answer of approximately 33.6 L.", "points": 3, "allowsErrorCarriedForward": true },
+      { "partLabel": "(d)", "criterion": "1 point for correctly applying the 1:5 mole ratio of C3H8 to O2 using the student's own moles of propane from part (a); 1 point for the correct final mass of approximately 79.8 g.", "points": 2, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Work through the mole ratios one step at a time — moles of propane to moles of CO2, then moles of CO2 to grams or liters.",
+      "For part (d), you'll need a different mole ratio (propane to O2) than the one you used for CO2."
+    ]
+  },
+  {
+    "id": "ic8-short-3",
+    "unitId": 8,
+    "kind": "short",
+    "points": 4,
+    "stem": "Methane burns completely in excess oxygen according to the balanced equation: CH4(g) + 2O2(g) -> CO2(g) + 2H2O(g). Suppose 0.500 mol of CH4 reacts completely. (Molar mass of H2O = 18.02 g/mol.)",
+    "parts": [
+      { "label": "(a)", "prompt": "Using the mole ratio from the balanced equation, calculate the number of moles of CO2 produced.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Calculate the mass, in grams, of H2O produced.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) The mole ratio of CH4 to CO2 is 1:1. Moles of CO2 = 0.500 mol CH4 x (1 mol CO2 / 1 mol CH4) = 0.500 mol CO2.\n\n(b) The mole ratio of CH4 to H2O is 1:2. Moles of H2O = 0.500 mol CH4 x (2 mol H2O / 1 mol CH4) = 1.00 mol H2O. Mass of H2O = 1.00 mol x 18.02 g/mol = 18.0 g.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly identifying the 1:1 mole ratio between CH4 and CO2; 1 point for the correct answer of 0.500 mol CO2.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly applying the 1:2 mole ratio between CH4 and H2O; 1 point for the correct final mass of 18.0 g.", "points": 2, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": [
+      "Read the mole ratio for each product directly from the coefficients in the balanced equation.",
+      "For part (b), convert moles of H2O to grams only after applying the correct mole ratio."
+    ]
+  },
+  {
+    "id": "ic8-short-4",
+    "unitId": 8,
+    "kind": "short",
+    "points": 4,
+    "stem": "Magnesium metal burns in oxygen gas according to the balanced equation: 2Mg(s) + O2(g) -> 2MgO(s). In a container, 3.00 mol of Mg is combined with 1.00 mol of O2.",
+    "parts": [
+      { "label": "(a)", "prompt": "Determine which reactant is limiting. Show the reasoning that supports your answer.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Calculate the number of moles of MgO produced.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) The balanced equation requires a 2:1 mole ratio of Mg to O2. For all 3.00 mol of Mg to react, (1/2)(3.00) = 1.50 mol of O2 would be needed, but only 1.00 mol is available. Since there is not enough O2 to react with all the Mg, O2 is the limiting reactant.\n\n(b) Using the limiting reactant, O2: moles of MgO produced = 1.00 mol O2 x (2 mol MgO / 1 mol O2) = 2.00 mol MgO.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly comparing the amount of O2 needed to react with all the Mg versus the amount available; 1 point for correctly identifying O2 as the limiting reactant with reasoning.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for using the moles of the limiting reactant identified in part (a); 1 point for correctly applying the 1:2 mole ratio between O2 and MgO to get 2.00 mol MgO.", "points": 2, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Compare how much O2 would be needed to fully react with all the available Mg to how much O2 you actually have.",
+      "Once you know the limiting reactant, use its moles (not the other reactant's) to find moles of product."
+    ]
+  },
+  {
+    "id": "ic8-long-3",
+    "unitId": 8,
+    "kind": "long",
+    "points": 10,
+    "stem": "Iron reacts with oxygen gas to form iron(III) oxide according to the equation: 4Fe(s) + 3O2(g) -> 2Fe2O3(s). In an experiment, 20.0 g of iron is combined with 10.0 g of oxygen gas. (Molar masses: Fe = 55.85 g/mol, O2 = 32.00 g/mol, Fe2O3 = 159.70 g/mol.)",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the number of moles of Fe and the number of moles of O2 initially available.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Determine which reactant is the limiting reactant. Show the reasoning/calculation that supports your answer.", "maxPoints": 2 },
+      { "label": "(c)", "prompt": "Calculate the theoretical yield of iron(III) oxide (Fe2O3), in grams, produced by this reaction.", "maxPoints": 3 },
+      { "label": "(d)", "prompt": "If the student actually collects 24.5 g of Fe2O3, calculate the percent yield of the reaction.", "maxPoints": 3 }
+    ],
+    "workedSolution": "(a) Moles of Fe = 20.0 g / 55.85 g/mol = 0.358 mol. Moles of O2 = 10.0 g / 32.00 g/mol = 0.313 mol.\n\n(b) The balanced equation requires a 4:3 mole ratio of Fe to O2. For all 0.358 mol of Fe to react, (3/4)(0.358) = 0.269 mol of O2 would be needed, and 0.313 mol is available — more than enough. Since there is enough O2 to react with all the Fe, Fe is the limiting reactant (equivalently: 0.313 mol O2 would require (4/3)(0.313) = 0.417 mol Fe, but only 0.358 mol is available, confirming Fe runs out first).\n\n(c) Using the limiting reactant, Fe: moles of Fe2O3 produced = 0.358 mol Fe x (2 mol Fe2O3 / 4 mol Fe) = 0.179 mol Fe2O3. Mass of Fe2O3 = 0.179 mol x 159.70 g/mol = 28.6 g (theoretical yield).\n\n(d) Percent yield = (actual yield / theoretical yield) x 100% = (24.5 g / 28.6 g) x 100% = 85.7%.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correct moles of Fe (~0.358 mol); 1 point for correct moles of O2 (~0.313 mol).", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly applying the 4:3 mole ratio to compare the amount of one reactant needed versus available, using the student's own mole values from part (a); 1 point for correctly identifying Fe as the limiting reactant with reasoning consistent with those mole values.", "points": 2, "allowsErrorCarriedForward": true },
+      { "partLabel": "(c)", "criterion": "1 point for using the moles of the limiting reactant identified in part (b) (student's own answer); 1 point for correctly applying the 4:2 mole ratio to Fe2O3; 1 point for the correct final mass of approximately 28.6 g (or the value consistent with the student's own limiting reactant and mole values).", "points": 3, "allowsErrorCarriedForward": true },
+      { "partLabel": "(d)", "criterion": "1 point for correctly setting up percent yield using the student's own theoretical yield from part (c); 1 point for correct division and multiplication by 100%; 1 point for the correct final answer of approximately 85.7% (or the value consistent with the student's own part (c) answer).", "points": 3, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Convert both given masses to moles first, then check how much O2 would be needed to react with all of the given Fe (or vice versa) before deciding which reactant is limiting.",
+      "Every later part builds on correctly identifying the limiting reactant in part (b) — double check that step before moving on."
+    ]
+  },
+  {
+    "id": "ic8-long-4",
+    "unitId": 8,
+    "kind": "long",
+    "points": 10,
+    "stem": "In the Haber process, nitrogen and hydrogen gases combine to form ammonia: N2(g) + 3H2(g) -> 2NH3(g). A reaction vessel contains 14.0 g of N2 reacting with excess H2. (Molar masses: N2 = 28.02 g/mol, NH3 = 17.03 g/mol. Assume 1 mol of any gas occupies 22.4 L at STP.)",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the number of moles of N2 available and the theoretical number of moles of NH3 that could be produced.", "maxPoints": 3 },
+      { "label": "(b)", "prompt": "Calculate the theoretical yield of NH3, in grams.", "maxPoints": 2 },
+      { "label": "(c)", "prompt": "If the actual yield collected is 14.8 g of NH3, calculate the percent yield of the reaction.", "maxPoints": 2 },
+      { "label": "(d)", "prompt": "Calculate the volume, in liters, that the theoretical amount of NH3 from part (a) would occupy at STP.", "maxPoints": 3 }
+    ],
+    "workedSolution": "(a) Moles of N2 = 14.0 g / 28.02 g/mol = 0.500 mol. The mole ratio of N2 to NH3 is 1:2, so theoretical moles of NH3 = 0.500 mol N2 x (2 mol NH3 / 1 mol N2) = 1.00 mol NH3.\n\n(b) Theoretical mass of NH3 = 1.00 mol x 17.03 g/mol = 17.0 g.\n\n(c) Percent yield = (actual yield / theoretical yield) x 100% = (14.8 g / 17.0 g) x 100% = 87.1%.\n\n(d) Volume of NH3 at STP = 1.00 mol x 22.4 L/mol = 22.4 L.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly converting 14.0 g N2 to moles (~0.500 mol); 1 point for correctly applying the 1:2 mole ratio of N2 to NH3; 1 point for the correct theoretical moles of NH3 (~1.00 mol).", "points": 3, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "2 points for correctly multiplying the student's own moles of NH3 from part (a) by the molar mass of NH3 to get approximately 17.0 g.", "points": 2, "allowsErrorCarriedForward": true },
+      { "partLabel": "(c)", "criterion": "1 point for correctly setting up percent yield using the student's own theoretical yield from part (b); 1 point for the correct final answer of approximately 87.1% (or the value consistent with the student's own part (b) answer).", "points": 2, "allowsErrorCarriedForward": true },
+      { "partLabel": "(d)", "criterion": "1 point for correctly using 22.4 L/mol as the molar volume at STP; 1 point for applying it to the student's own theoretical moles of NH3 from part (a); 1 point for the correct final answer of 22.4 L.", "points": 3, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Work through the parts in order — the theoretical moles from part (a) feed directly into both the mass and volume calculations later.",
+      "Note that part (d) asks for the volume of the theoretical amount, not the amount actually collected."
+    ]
+  }
+]

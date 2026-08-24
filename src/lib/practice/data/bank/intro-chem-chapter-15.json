@@ -1,0 +1,292 @@
+[
+  {
+    "id": "ic-c15-mc-1",
+    "unitId": 15,
+    "stem": "Dynamic equilibrium in a reversible reaction occurs when:",
+    "choices": [
+      "The forward and reverse reaction rates are equal",
+      "The forward reaction has stopped completely",
+      "Only the forward reaction occurs",
+      "All reactants have been converted to products"
+    ],
+    "correctIndex": 0,
+    "topicTag": "15.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c15-mc-2",
+    "unitId": 15,
+    "stem": "At equilibrium, the concentrations of reactants and products remain constant over time, even though the forward and reverse reactions continue to occur.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "15.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c15-mc-3",
+    "unitId": 15,
+    "stem": "At equilibrium, the forward and reverse reactions have both completely stopped.",
+    "choices": ["True", "False"],
+    "correctIndex": 1,
+    "topicTag": "15.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c15-mc-4",
+    "unitId": 15,
+    "stem": "For the reaction aA + bB ⇌ cC + dD, the equilibrium constant expression Keq is written as:",
+    "choices": [
+      "[C]^c[D]^d / [A]^a[B]^b",
+      "[A]^a[B]^b / [C]^c[D]^d",
+      "([A] + [B]) / ([C] + [D])",
+      "[C][D] - [A][B]"
+    ],
+    "correctIndex": 0,
+    "topicTag": "15.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c15-mc-5",
+    "unitId": 15,
+    "stem": "The value of the equilibrium constant, K, changes with temperature.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "15.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c15-mc-6",
+    "unitId": 15,
+    "stem": "A very large value of Keq (Keq >> 1) indicates that at equilibrium:",
+    "choices": [
+      "Products are strongly favored",
+      "Reactants are strongly favored",
+      "The reaction has not yet started",
+      "Products and reactants are present in equal amounts"
+    ],
+    "correctIndex": 0,
+    "topicTag": "15.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c15-mc-7",
+    "unitId": 15,
+    "stem": "A very small value of Keq (Keq << 1) indicates that at equilibrium:",
+    "choices": [
+      "Reactants are strongly favored",
+      "Products are strongly favored",
+      "The reaction has gone to completion",
+      "No reactant remains"
+    ],
+    "correctIndex": 0,
+    "topicTag": "15.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c15-mc-8",
+    "unitId": 15,
+    "stem": "According to Le Chatelier's principle, if additional reactant is added to a system at equilibrium, the equilibrium will shift:",
+    "choices": [
+      "Toward the products (forward)",
+      "Toward the reactants (reverse)",
+      "It will not shift at all",
+      "Toward whichever side has more moles of gas, regardless of what was added"
+    ],
+    "correctIndex": 0,
+    "topicTag": "15.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c15-mc-9",
+    "unitId": 15,
+    "stem": "According to Le Chatelier's principle, removing a product from an equilibrium mixture shifts the reaction forward to produce more product.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "15.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c15-mc-10",
+    "unitId": 15,
+    "stem": "Adding a catalyst to a reaction at equilibrium shifts the equilibrium position toward the products.",
+    "choices": ["True", "False"],
+    "correctIndex": 1,
+    "topicTag": "15.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c15-mc-11",
+    "unitId": 15,
+    "stem": "For an exothermic reaction at equilibrium, increasing the temperature will shift the equilibrium:",
+    "choices": [
+      "Toward the reactants (reverse direction)",
+      "Toward the products (forward direction)",
+      "It will not shift",
+      "Toward whichever side has fewer moles"
+    ],
+    "correctIndex": 0,
+    "topicTag": "15.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c15-mc-12",
+    "unitId": 15,
+    "stem": "For a gas-phase equilibrium, increasing the pressure by decreasing the container's volume shifts the equilibrium toward the side with:",
+    "choices": [
+      "Fewer moles of gas",
+      "More moles of gas",
+      "Equal moles of gas only",
+      "No shift ever occurs due to pressure changes"
+    ],
+    "correctIndex": 0,
+    "topicTag": "15.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c15-mc-13",
+    "unitId": 15,
+    "stem": "For an endothermic reaction at equilibrium, increasing the temperature shifts the equilibrium toward the products.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "15.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c15-mc-14",
+    "unitId": 15,
+    "stem": "Le Chatelier's principle states that a system at equilibrium, when disturbed, will shift in the direction that partially counteracts the disturbance.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "15.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c15-mc-15",
+    "unitId": 15,
+    "stem": "Which of the following changes to a system at equilibrium does NOT shift the position of equilibrium?",
+    "choices": [
+      "Adding a catalyst",
+      "Changing the temperature",
+      "Changing the concentration of a reactant",
+      "Changing the pressure or volume of a gaseous system"
+    ],
+    "correctIndex": 0,
+    "topicTag": "15.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c15-mc-16",
+    "unitId": 15,
+    "stem": "In a reversible reaction that has reached equilibrium, which statement is correct?",
+    "choices": [
+      "Both the forward and reverse reactions continue to occur, but at equal rates",
+      "The reaction has completely stopped",
+      "Only the reverse reaction continues to occur",
+      "All reactants have been fully converted into products"
+    ],
+    "correctIndex": 0,
+    "topicTag": "15.1",
+    "source": "original",
+    "explanation": "Equilibrium is dynamic: both the forward and reverse reactions keep occurring, but at equal rates, so concentrations no longer change. The reaction has not stopped, only one direction is not occurring alone, and reactants are not fully converted (some of each species remains).",
+    "difficulty": "beginner",
+    "hints": [
+      "Equilibrium is 'dynamic,' not static.",
+      "Think about whether reactions actually stop at equilibrium, or just reach equal rates."
+    ]
+  },
+  {
+    "id": "ic-c15-mc-17",
+    "unitId": 15,
+    "stem": "For the reaction 2 NO(g) + O2(g) <-> 2 NO2(g), what is the correct equilibrium constant expression, Kc?",
+    "choices": [
+      "[NO2]^2 / ([NO]^2[O2])",
+      "[NO]^2[O2] / [NO2]^2",
+      "[NO2] / ([NO][O2])",
+      "[NO2]^2 / ([NO][O2])"
+    ],
+    "correctIndex": 0,
+    "topicTag": "15.2",
+    "source": "original",
+    "explanation": "The correct expression places products over reactants with exponents matching the coefficients: [NO2]^2 in the numerator over [NO]^2[O2] in the denominator. The second choice inverts the ratio (reactants over products). The third choice omits the exponent of 2 on both NO and NO2. The fourth choice omits the exponent of 2 only on NO in the denominator.",
+    "difficulty": "beginner",
+    "hints": [
+      "Products go in the numerator, reactants in the denominator.",
+      "Each concentration is raised to the power of its coefficient in the balanced equation."
+    ]
+  },
+  {
+    "id": "ic-c15-mc-18",
+    "unitId": 15,
+    "stem": "A reaction at equilibrium has additional reactant added, causing the equilibrium to shift toward products, as predicted by Le Chatelier's principle. Once the system reaches a new equilibrium, how does the numerical value of Keq compare to its value before the reactant was added (assuming temperature is unchanged)?",
+    "choices": [
+      "Keq is unchanged, since only temperature changes the value of Keq",
+      "Keq increases, because more product was formed",
+      "Keq decreases, because the extra reactant was consumed",
+      "Keq becomes undefined once a shift occurs"
+    ],
+    "correctIndex": 0,
+    "topicTag": "15.3",
+    "source": "original",
+    "explanation": "Keq is a constant that only changes with temperature. Adding more reactant shifts the position of equilibrium (the concentrations present), but at the new equilibrium the same ratio of concentrations still equals the same Keq value. The second and third choices confuse a shift in equilibrium position with a change in the constant K itself.",
+    "difficulty": "intermediate",
+    "hints": [
+      "Distinguish between the position of equilibrium (which concentrations are present) and the value of the equilibrium constant K.",
+      "What is the one variable that changes the numerical value of Keq?"
+    ]
+  },
+  {
+    "id": "ic-c15-mc-19",
+    "unitId": 15,
+    "stem": "For the equilibrium reaction H2(g) + I2(g) <-> 2 HI(g), what effect does decreasing the container volume (increasing pressure) have on the position of equilibrium?",
+    "choices": [
+      "No shift occurs, since there are equal moles of gas (2 mol) on both sides",
+      "The equilibrium shifts toward products",
+      "The equilibrium shifts toward reactants",
+      "The reaction stops entirely"
+    ],
+    "correctIndex": 0,
+    "topicTag": "15.4",
+    "source": "original",
+    "explanation": "There are 2 moles of gas on the reactant side (1 H2 + 1 I2) and 2 moles of gas on the product side (2 HI). Since a pressure/volume change only favors the side with fewer moles of gas, and both sides have equal moles here, no shift occurs.",
+    "difficulty": "intermediate",
+    "hints": [
+      "Count the total moles of gas on each side of the balanced equation.",
+      "A change in pressure/volume only shifts equilibrium if the two sides have different numbers of moles of gas."
+    ]
+  },
+  {
+    "id": "ic-c15-mc-20",
+    "unitId": 15,
+    "stem": "At a certain temperature, the equilibrium concentrations for the reaction N2(g) + 3 H2(g) <-> 2 NH3(g) are found to be [N2] = 0.50 M, [H2] = 0.30 M, and [NH3] = 0.20 M. What is the value of Kc for this reaction at this temperature?",
+    "choices": ["2.96", "0.338", "1.33", "0.0400"],
+    "correctIndex": 0,
+    "topicTag": "15.2",
+    "source": "original",
+    "explanation": "Kc = [NH3]^2 / ([N2][H2]^3) = (0.20)^2 / (0.50 x 0.30^3) = 0.0400 / 0.0135 = 2.96. Choosing 0.338 results from inverting the correct ratio (reactants over products). Choosing 1.33 results from forgetting the exponents entirely and using [NH3]/([N2][H2]) = 0.20/0.15. Choosing 0.0400 reports only the numerator, forgetting to divide by the denominator.",
+    "difficulty": "advanced",
+    "hints": [
+      "Write the correct Kc expression first: products over reactants, each raised to its coefficient.",
+      "Remember [H2] must be cubed since its coefficient is 3."
+    ]
+  },
+  {
+    "id": "ic-c15-mc-21",
+    "unitId": 15,
+    "stem": "For a reaction at a certain temperature, Kc = 4.0 x 10^-3. At a particular moment, the reaction quotient Qc is calculated to be 2.5 x 10^-5. Which direction will the reaction proceed to reach equilibrium?",
+    "choices": [
+      "Forward, toward products, because Qc is less than Kc",
+      "Reverse, toward reactants, because Qc is less than Kc",
+      "No net reaction will occur, because both values are very small",
+      "Forward, toward products, because Qc is greater than Kc"
+    ],
+    "correctIndex": 0,
+    "topicTag": "15.5",
+    "source": "original",
+    "explanation": "When Qc is less than Kc, there is currently too little product (or too much reactant) relative to equilibrium, so the reaction shifts forward to produce more product until Qc rises to equal Kc. The second choice has the correct comparison but the wrong direction. The third choice wrongly assumes small numbers mean no reaction occurs. The fourth choice has the correct direction but the wrong (reversed) comparison.",
+    "difficulty": "advanced",
+    "hints": [
+      "Compare the numerical values: is Qc less than or greater than Kc?",
+      "If Q is less than K, the system hasn't made enough product yet. Which direction will it shift to fix that?"
+    ]
+  }
+]

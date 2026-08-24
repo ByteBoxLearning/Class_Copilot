@@ -1,0 +1,66 @@
+[
+  {
+    "id": "u5-mcq-1",
+    "unitId": 5,
+    "stem": "A chemist studies the reaction A(g) + 2 B(g) -> C(g) + D(g) at constant temperature. Three trials give the following initial concentrations and initial rates:\n\nTrial 1: [A] = 0.10 M, [B] = 0.10 M, initial rate = 5.0 x 10^-3 M/s\nTrial 2: [A] = 0.20 M, [B] = 0.10 M, initial rate = 1.0 x 10^-2 M/s\nTrial 3: [A] = 0.10 M, [B] = 0.20 M, initial rate = 2.0 x 10^-2 M/s\n\nWhat is the rate law for this reaction?",
+    "choices": [
+      "rate = k[A][B]^2",
+      "rate = k[A]^2[B]",
+      "rate = k[A][B]",
+      "rate = k[A]^2[B]^2"
+    ],
+    "correctIndex": 0,
+    "workedSolution": "Compare Trials 1 and 2 (B held constant, A doubled): rate ratio = (1.0x10^-2)/(5.0x10^-3) = 2.0, and [A] ratio = 2.0, so 2.0 = 2.0^m, giving m = 1 (first order in A). Compare Trials 1 and 3 (A held constant, B doubled): rate ratio = (2.0x10^-2)/(5.0x10^-3) = 4.0, and [B] ratio = 2.0, so 4.0 = 2.0^n, giving n = 2 (second order in B). Therefore rate = k[A][B]^2. Solving for k using Trial 1: k = (5.0x10^-3 M/s) / [(0.10 M)(0.10 M)^2] = (5.0x10^-3)/(1.0x10^-3) = 5.0 M^-2 s^-1.",
+    "explanation": "The correct rate law, rate = k[A][B]^2, comes directly from comparing pairs of trials where only one concentration changes at a time: doubling [A] doubles the rate (order 1), while doubling [B] quadruples the rate (order 2). Choice B swaps the orders of A and B, a common error from misreading which trials isolate which reactant. Choice C assumes both reactants are first order without actually checking the Trial 1-to-3 comparison, incorrectly stopping after finding the order in A. Choice D incorrectly assumes the reaction is second order in both species, perhaps by confusing the stoichiometric coefficient of B (2) in the balanced equation with its kinetic order, which is a common but invalid assumption since rate laws must be determined experimentally, not from stoichiometry.",
+    "topicTag": "Introduction to Rate Law",
+    "source": "bank"
+  },
+  {
+    "id": "u5-mcq-2",
+    "unitId": 5,
+    "stem": "The decomposition of a reactant J is monitored over time, giving the data below:\n\nTime (s): 0, 20, 40, 60\n[J] (M): 0.800, 0.400, 0.200, 0.100\n\nBased on this data, which best describes the reaction order with respect to J and the plot that would produce a straight line?",
+    "choices": [
+      "First order; a plot of ln[J] vs. time is linear",
+      "Zero order; a plot of [J] vs. time is linear",
+      "Second order; a plot of 1/[J] vs. time is linear",
+      "First order; a plot of 1/[J] vs. time is linear"
+    ],
+    "correctIndex": 0,
+    "workedSolution": "Examine successive half-lives: [J] falls from 0.800 to 0.400 M in the first 20 s, from 0.400 to 0.200 M in the next 20 s, and from 0.200 to 0.100 M in the next 20 s. The half-life is constant (20 s) even though the concentration is decreasing. A constant half-life that is independent of concentration is the defining signature of a first-order reaction (t1/2 = ln2/k, which does not depend on [J]0). For a first-order reaction, the integrated rate law ln[J] = -kt + ln[J]0 means a plot of ln[J] vs. t is linear with slope -k.",
+    "explanation": "The constant 20 s half-life regardless of how much J has reacted is the hallmark of a first-order process, and the correct linearizing plot for first order is ln[J] vs. t, making choice A correct. Choice B is wrong because zero-order reactions have a half-life that decreases as the reaction proceeds (t1/2 = [J]0/2k depends on concentration), which does not match the constant half-life observed here. Choice C is wrong because second-order reactions have a half-life that increases as concentration drops (t1/2 = 1/(k[J]0)), the opposite of the constant pattern shown. Choice D correctly identifies the order as first but pairs it with the wrong plot (1/[J] vs. t is the linearizing plot for second-order kinetics, not first-order), a common mix-up between order and the correct diagnostic graph.",
+    "topicTag": "Concentration Changes Over Time",
+    "source": "bank"
+  },
+  {
+    "id": "u5-mcq-3",
+    "unitId": 5,
+    "stem": "According to the collision model, increasing the temperature of a reaction mixture increases the rate constant primarily because",
+    "choices": [
+      "a larger fraction of molecular collisions occur with combined kinetic energy equal to or greater than the activation energy",
+      "the activation energy of the reaction decreases as the temperature increases",
+      "the equilibrium constant increases, which shifts the reaction toward products",
+      "the frequency factor becomes larger because more molecules are present in the container at higher temperature"
+    ],
+    "correctIndex": 0,
+    "workedSolution": "The Arrhenius equation, k = A*e^(-Ea/RT), shows that k depends on temperature through the exponential term e^(-Ea/RT), which represents the fraction of collisions possessing kinetic energy at or above Ea. As T increases, the Maxwell-Boltzmann distribution shifts so a larger fraction of molecules have sufficient energy to react upon collision, increasing k. The activation energy Ea and frequency factor A are treated as essentially temperature-independent constants for a given reaction/mechanism, so neither of those changing is the explanation.",
+    "explanation": "Choice A correctly identifies that a greater fraction of collisions clear the energy barrier at higher T, which is exactly what the exponential term in the Arrhenius equation captures. Choice B is a common misconception: activation energy is a property of the reaction pathway (the height of the energy barrier) and does not change with temperature. Choice C incorrectly imports equilibrium reasoning into a kinetics question; the rate constant and the equilibrium constant are related but distinct quantities, and a faster rate does not mean the position of equilibrium shifts. Choice D misattributes the effect to the number of molecules or the frequency factor A (which reflects collision frequency and orientation, not particle count), when in fact the number of moles of gas in a sealed container does not change with temperature and A is treated as roughly constant.",
+    "topicTag": "Collision Model",
+    "source": "bank"
+  },
+  {
+    "id": "u5-mcq-4",
+    "unitId": 5,
+    "stem": "A proposed two-step mechanism for the overall reaction A2(g) + 2 B(g) -> 2 AB(g) is:\n\nStep 1 (slow): A2(g) -> 2 A(g)\nStep 2 (fast): A(g) + B(g) -> AB(g)  [occurs twice]\n\nBased on this mechanism, what is the predicted rate law for the overall reaction, and which species is a reaction intermediate?",
+    "choices": [
+      "rate = k[A2]; A is an intermediate",
+      "rate = k[A2][B]; B is an intermediate",
+      "rate = k[A2][B]^2; no intermediates are present in this mechanism",
+      "rate = k[A]; A2 is an intermediate"
+    ],
+    "correctIndex": 0,
+    "workedSolution": "The rate law for a multistep mechanism is determined by the slow (rate-determining) step. Step 1, A2(g) -> 2 A(g), is the slow step and involves only A2 as a reactant, so rate = k[A2]. Species A is produced in Step 1 and completely consumed in Step 2, never appearing in the overall balanced equation (A2 + 2B -> 2AB), which is the defining property of a reaction intermediate.",
+    "explanation": "Choice A is correct: the rate law comes only from the rate-determining (slow) step, giving rate = k[A2], and A is the intermediate because it is generated and then consumed within the mechanism. Choice B incorrectly folds B into the rate law even though B only appears in the fast step, and it also misidentifies B (an actual overall reactant that appears in the final balanced equation) as an intermediate. Choice C makes the common error of writing a rate law directly from the coefficients of the overall balanced equation, which is only valid for a single elementary step, not a multistep mechanism. Choice D reverses the roles of A and A2, treating the intermediate as the rate-determining reactant and mislabeling the actual reactant A2 as the intermediate.",
+    "topicTag": "Reaction Mechanism and Rate Law",
+    "source": "bank"
+  }
+]

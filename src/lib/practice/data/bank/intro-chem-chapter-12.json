@@ -1,0 +1,257 @@
+[
+  {
+    "id": "ic-c12-mc-1",
+    "unitId": 12,
+    "stem": "Dispersion (London) forces are present in all molecules, including nonpolar ones.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "12.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c12-mc-2",
+    "unitId": 12,
+    "stem": "Dispersion forces generally increase in strength as:",
+    "choices": [
+      "Molar mass and number of electrons increase",
+      "Molecular polarity increases",
+      "Temperature decreases",
+      "Molecules become smaller"
+    ],
+    "correctIndex": 0,
+    "topicTag": "12.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c12-mc-3",
+    "unitId": 12,
+    "stem": "Dispersion forces are typically stronger than hydrogen bonds between molecules of similar size.",
+    "choices": ["True", "False"],
+    "correctIndex": 1,
+    "topicTag": "12.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c12-mc-4",
+    "unitId": 12,
+    "stem": "Dipole-dipole forces occur between:",
+    "choices": [
+      "Polar molecules that have permanent dipoles",
+      "Nonpolar molecules only",
+      "Ions and metals in a crystal lattice",
+      "Atoms joined by the same covalent bond"
+    ],
+    "correctIndex": 0,
+    "topicTag": "12.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c12-mc-5",
+    "unitId": 12,
+    "stem": "A molecule must be polar to experience dipole-dipole interactions.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "12.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c12-mc-6",
+    "unitId": 12,
+    "stem": "Hydrogen bonding occurs when a hydrogen atom is directly bonded to which group of highly electronegative elements?",
+    "choices": ["N, O, or F", "C, H, or S", "Na, K, or Ca", "Cl, Br, or I"],
+    "correctIndex": 0,
+    "topicTag": "12.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c12-mc-7",
+    "unitId": 12,
+    "stem": "Hydrogen bonding is a major reason water has an unusually high boiling point compared to similarly sized molecules.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "12.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c12-mc-8",
+    "unitId": 12,
+    "stem": "The process in which a liquid changes into a gas at its surface, below the liquid's boiling point, is called:",
+    "choices": ["Evaporation", "Condensation", "Sublimation", "Deposition"],
+    "correctIndex": 0,
+    "topicTag": "12.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c12-mc-9",
+    "unitId": 12,
+    "stem": "Condensation is the phase change in which a gas becomes a liquid.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "12.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c12-mc-10",
+    "unitId": 12,
+    "stem": "The direct conversion of a solid into a gas, without passing through the liquid state, is called:",
+    "choices": ["Sublimation", "Fusion", "Deposition", "Evaporation"],
+    "correctIndex": 0,
+    "topicTag": "12.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c12-mc-11",
+    "unitId": 12,
+    "stem": "The vapor pressure of a liquid generally:",
+    "choices": [
+      "Increases as temperature increases",
+      "Decreases as temperature increases",
+      "Stays constant regardless of temperature",
+      "Is unrelated to intermolecular forces"
+    ],
+    "correctIndex": 0,
+    "topicTag": "12.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c12-mc-12",
+    "unitId": 12,
+    "stem": "At the same temperature, liquids with strong intermolecular forces tend to have lower vapor pressures than liquids with weak intermolecular forces.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "12.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c12-mc-13",
+    "unitId": 12,
+    "stem": "On a phase diagram, the point at which the solid, liquid, and gas phases all coexist in equilibrium is called the:",
+    "choices": ["Triple point", "Critical point", "Boiling point", "Freezing point"],
+    "correctIndex": 0,
+    "topicTag": "12.6",
+    "source": "original"
+  },
+  {
+    "id": "ic-c12-mc-14",
+    "unitId": 12,
+    "stem": "Which type of solid is typically held together by a repeating lattice of positive and negative ions?",
+    "choices": ["Ionic solid", "Molecular solid", "Metallic solid", "Covalent network solid"],
+    "correctIndex": 0,
+    "topicTag": "12.6",
+    "source": "original"
+  },
+  {
+    "id": "ic-c12-mc-15",
+    "unitId": 12,
+    "stem": "In a crystalline solid, particles are arranged in a highly ordered, repeating pattern.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "12.6",
+    "source": "original"
+  },
+  {
+    "id": "ic-c12-mc-16",
+    "unitId": 12,
+    "stem": "Which of the following molecules would be expected to have the strongest London dispersion forces, based on molar mass alone?",
+    "choices": ["F2 (38.0 g/mol)", "Cl2 (70.9 g/mol)", "Br2 (159.8 g/mol)", "I2 (253.8 g/mol)"],
+    "correctIndex": 3,
+    "topicTag": "12.1",
+    "source": "original",
+    "explanation": "London dispersion forces generally increase in strength as molar mass (and the number of electrons) increases, because larger electron clouds are more easily polarized into temporary dipoles. Among these four nonpolar diatomic halogens, I2 has by far the largest molar mass and electron count, so it experiences the strongest dispersion forces. F2, Cl2, and Br2 all have smaller molar masses than I2 and therefore weaker dispersion forces, consistent with the actual trend in their physical states at room temperature (F2 and Cl2 are gases, Br2 is a liquid, and I2 is a solid).",
+    "difficulty": "beginner",
+    "hints": [
+      "Dispersion forces get stronger as the number of electrons (and molar mass) in a molecule increases.",
+      "Compare the molar masses given for each of the four molecules."
+    ]
+  },
+  {
+    "id": "ic-c12-mc-17",
+    "unitId": 12,
+    "stem": "Which of the following molecules would be expected to experience dipole-dipole forces, in addition to dispersion forces?",
+    "choices": ["CO2", "CH4", "HCl", "N2"],
+    "correctIndex": 2,
+    "topicTag": "12.2",
+    "source": "original",
+    "explanation": "HCl is a polar molecule due to the electronegativity difference between H and Cl, giving it a permanent dipole and allowing dipole-dipole forces between HCl molecules, in addition to the dispersion forces present in all molecules. CO2 and CH4 are both symmetric, nonpolar molecules whose individual bond dipoles cancel, so they experience only dispersion forces. N2 is a nonpolar diatomic molecule made of two identical atoms with no electronegativity difference, so it also experiences only dispersion forces.",
+    "difficulty": "beginner",
+    "hints": [
+      "Dipole-dipole forces require the molecule to have a permanent (overall) dipole moment -- check which of these molecules is polar.",
+      "CO2, CH4, and N2 are all symmetric, nonpolar molecules."
+    ]
+  },
+  {
+    "id": "ic-c12-mc-18",
+    "unitId": 12,
+    "stem": "Which of the following molecules is capable of hydrogen bonding between its own molecules?",
+    "choices": ["CH3OCH3 (dimethyl ether)", "CH3F (fluoromethane)", "CH3NH2 (methylamine)", "CH3Cl (chloromethane)"],
+    "correctIndex": 2,
+    "topicTag": "12.3",
+    "source": "original",
+    "explanation": "Hydrogen bonding requires a hydrogen atom directly bonded to a highly electronegative N, O, or F atom in one molecule, which then interacts with a lone pair on an N, O, or F atom of a neighboring molecule. In CH3NH2, hydrogen atoms are directly bonded to the nitrogen atom (N-H bonds), allowing hydrogen bonding between molecules. In CH3OCH3, although oxygen is present, every hydrogen atom is bonded only to carbon rather than to oxygen, so no hydrogen bonding is possible between its own molecules. Similarly, in CH3F, fluorine is bonded only to carbon, not to any hydrogen, so no hydrogen bonding is possible. CH3Cl contains none of N, O, or F at all, so it cannot hydrogen bond.",
+    "difficulty": "intermediate",
+    "hints": [
+      "Hydrogen bonding requires an H atom directly bonded to N, O, or F -- just having one of those elements somewhere in the molecule is not enough.",
+      "Look specifically at which atom each hydrogen is bonded to in each structure."
+    ]
+  },
+  {
+    "id": "ic-c12-mc-19",
+    "unitId": 12,
+    "stem": "During condensation, is energy released or absorbed by the substance, and how does the average distance between particles change?",
+    "choices": [
+      "Energy is released, and particles move closer together on average",
+      "Energy is absorbed, and particles move farther apart on average",
+      "Energy is released, and particles move farther apart on average",
+      "Energy is absorbed, and particles move closer together on average"
+    ],
+    "correctIndex": 0,
+    "topicTag": "12.4",
+    "source": "original",
+    "explanation": "Condensation is the phase change from gas to liquid. As gas particles slow down and come together to form a liquid, intermolecular forces pull them closer together, decreasing the average distance between particles, and this process releases energy to the surroundings (it is exothermic) -- the reverse of vaporization, which absorbs energy to pull particles apart. Choices B, C, and D each pair the wrong direction for either the energy change, the particle-distance change, or both.",
+    "difficulty": "intermediate",
+    "hints": [
+      "Condensation is the reverse of evaporation/vaporization -- if vaporization absorbs energy, what does that tell you about condensation?",
+      "Think about whether particles end up closer together or farther apart when a gas becomes a liquid."
+    ]
+  },
+  {
+    "id": "ic-c12-mc-20",
+    "unitId": 12,
+    "stem": "A liquid has weaker intermolecular forces than water and therefore a higher vapor pressure than water at every temperature. Compared to water, this liquid's normal boiling point (at 1 atm) is expected to be:",
+    "choices": [
+      "Higher, because a higher vapor pressure indicates stronger intermolecular forces",
+      "Lower, because the liquid's vapor pressure reaches 1 atm (760 mmHg) at a lower temperature",
+      "The same, because boiling point does not depend on vapor pressure",
+      "Impossible to determine without knowing the liquid's molar mass"
+    ],
+    "correctIndex": 1,
+    "topicTag": "12.5",
+    "source": "original",
+    "explanation": "A liquid with weaker intermolecular forces has a higher vapor pressure at any given temperature, because its molecules escape into the vapor phase more easily. Since boiling occurs when a liquid's vapor pressure equals the surrounding atmospheric pressure (1 atm at the normal boiling point), a liquid whose vapor pressure is already higher at any given temperature will reach that 1 atm threshold at a lower temperature, giving it a lower normal boiling point than water. Choice A reverses the actual relationship -- higher vapor pressure corresponds to weaker, not stronger, intermolecular forces. Choice C is incorrect because boiling point is directly defined in terms of vapor pressure reaching atmospheric pressure. Choice D introduces an irrelevant variable, since the vapor pressure/intermolecular force relationship alone is sufficient to answer the question.",
+    "difficulty": "advanced",
+    "hints": [
+      "Boiling occurs when a liquid's vapor pressure becomes equal to the surrounding atmospheric pressure.",
+      "Weaker intermolecular forces mean molecules escape into the vapor phase more easily at any given temperature -- think about what that implies for reaching the boiling threshold."
+    ]
+  },
+  {
+    "id": "ic-c12-mc-21",
+    "unitId": 12,
+    "stem": "On a phase diagram, the solid-liquid boundary line for most substances slopes so that increasing pressure slightly raises the melting point. Water is a notable exception: increasing pressure slightly lowers its melting point, which helps explain why applying pressure (such as from a skate blade) can melt ice. What is different about water that causes this reversed behavior?",
+    "choices": [
+      "Water's solid-liquid boundary is reversed for most substances too, so water is not actually unusual",
+      "Ice is less dense than liquid water, so applying pressure favors the more compact liquid phase, lowering the melting point",
+      "Water molecules have no hydrogen bonds in the liquid phase, unlike in ice",
+      "Water simply does not have a well-defined solid-liquid boundary on its phase diagram"
+    ],
+    "correctIndex": 1,
+    "topicTag": "12.6",
+    "source": "original",
+    "explanation": "For most substances, the solid phase is denser than the liquid phase, so increasing pressure favors (and slightly raises the melting point of) the more compact solid. Water is unusual because hydrogen bonding locks ice into an open, hexagonal lattice that is actually less dense than liquid water. Applying pressure favors whichever phase is more compact, and for water that is the liquid phase, so increasing pressure shifts the equilibrium toward melting, slightly lowering the melting point instead of raising it. Choice A is factually incorrect; the described behavior for 'most substances' is the normal, non-reversed case, and water is the genuine exception. Choice C is incorrect because liquid water still has extensive, dynamically rearranging hydrogen bonding -- hydrogen bonds do not disappear upon melting, they simply become less rigidly ordered. Choice D is incorrect; water does have a well-defined solid-liquid boundary line, it is simply sloped in the opposite direction from most substances.",
+    "difficulty": "advanced",
+    "hints": [
+      "Think about which phase of water -- ice or liquid -- takes up more volume for the same mass.",
+      "Increasing pressure pushes a system toward whichever phase is more compact (denser, smaller volume)."
+    ]
+  }
+]

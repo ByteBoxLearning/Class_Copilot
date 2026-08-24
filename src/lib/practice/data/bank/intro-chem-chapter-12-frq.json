@@ -1,0 +1,188 @@
+[
+  {
+    "id": "ic12-short-1",
+    "unitId": 12,
+    "kind": "short",
+    "points": 4,
+    "stem": "Consider three small molecules being compared at 1 atm: CH4 (methane), CH3Cl (chloromethane), and CH3OH (methanol).",
+    "parts": [
+      { "label": "(a)", "prompt": "Identify the strongest type of intermolecular force present between molecules of each substance: CH4, CH3Cl, and CH3OH.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Rank the three substances from lowest to highest boiling point, and briefly justify the order using your answer to part (a).", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) CH4 is nonpolar and symmetric, so it experiences only London dispersion forces. CH3Cl has a polar C-Cl bond, giving it dipole-dipole forces (in addition to dispersion). CH3OH has an O-H bond, so it can form hydrogen bonds (in addition to dipole-dipole and dispersion forces), which is its strongest IMF.\n\n(b) Boiling point order, lowest to highest: CH4 < CH3Cl < CH3OH. London dispersion forces (present in CH4) are the weakest of the three IMFs, dipole-dipole forces (in CH3Cl) are stronger than dispersion alone, and hydrogen bonding (in CH3OH) is the strongest of the three. Since boiling requires overcoming the intermolecular forces between molecules, the substance with the strongest IMF requires the most energy (and thus the highest temperature) to boil.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly identifying dispersion forces only for CH4 and dipole-dipole forces for CH3Cl; 1 point for correctly identifying hydrogen bonding for CH3OH.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for the correct order CH4 < CH3Cl < CH3OH, consistent with the student's own IMF identifications from part (a) even if those were incorrect; 1 point for a justification that correctly links relative IMF strength to boiling point.", "points": 2, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Look at each molecule's structure: is it symmetric and nonpolar, does it have a polar bond, or does it have an O-H, N-H, or F-H bond?",
+      "The strongest IMF present in a substance is usually the one that determines its relative boiling point compared to similar-sized molecules."
+    ]
+  },
+  {
+    "id": "ic12-short-2",
+    "unitId": 12,
+    "kind": "short",
+    "points": 4,
+    "stem": "A 150.0 g sample of liquid water at 15.0 degrees C is heated on a hot plate. The specific heat capacity of liquid water is 4.184 J/(g*degrees C). Assume no water evaporates during heating.",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the amount of heat, in joules, required to raise the temperature of the water to 65.0 degrees C.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "If the hot plate supplies energy at a constant rate of 250.0 J/s, calculate how many seconds it takes to heat the water to 65.0 degrees C.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) DeltaT = 65.0 - 15.0 = 50.0 degrees C. q = m c DeltaT = (150.0 g)(4.184 J/(g*degrees C))(50.0 degrees C) = 31,380 J (about 3.14 x 10^4 J).\n\n(b) time = q / power = 31,380 J / 250.0 J/s = 125.5 s, or about 126 s.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly setting up q = m c DeltaT with the given values; 1 point for the correct answer of approximately 31,400 J (accept 31,000-31,600 J).", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly setting up time = q / power using the student's own q from part (a); 1 point for a final time value consistent with that q and the given power (approximately 126 s if using the correct q).", "points": 2, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": [
+      "Use q = m c (delta T) directly with the given specific heat and temperature change.",
+      "Divide your heat value by the power (rate of energy delivery) to get time."
+    ]
+  },
+  {
+    "id": "ic12-long-1",
+    "unitId": 12,
+    "kind": "long",
+    "points": 10,
+    "stem": "A 25.0 g sample of ice at -20.0 degrees C is heated at constant pressure until it becomes steam at 120.0 degrees C. Data: specific heat of ice = 2.09 J/(g*degrees C); specific heat of liquid water = 4.184 J/(g*degrees C); specific heat of steam = 2.01 J/(g*degrees C); heat of fusion of water = 334 J/g; heat of vaporization of water = 2260 J/g. Melting point = 0.0 degrees C; boiling point = 100.0 degrees C.",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the heat required to warm the ice from -20.0 degrees C to 0.0 degrees C.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Calculate the heat required to melt the ice completely at 0.0 degrees C.", "maxPoints": 2 },
+      { "label": "(c)", "prompt": "Calculate the heat required to warm the resulting liquid water from 0.0 degrees C to 100.0 degrees C, and then the additional heat required to vaporize it completely at 100.0 degrees C. Report the combined total for these two steps.", "maxPoints": 3 },
+      { "label": "(d)", "prompt": "Calculate the heat required to warm the steam from 100.0 degrees C to 120.0 degrees C, and then determine the total heat required for the entire process, from -20.0 degrees C ice to 120.0 degrees C steam.", "maxPoints": 3 }
+    ],
+    "workedSolution": "(a) q1 = m c DeltaT = (25.0 g)(2.09 J/(g*degrees C))(20.0 degrees C) = 1045 J.\n\n(b) q2 = m x H(fus) = (25.0 g)(334 J/g) = 8350 J.\n\n(c) Warming the liquid: q3a = (25.0 g)(4.184 J/(g*degrees C))(100.0 degrees C) = 10,460 J. Vaporizing: q3b = (25.0 g)(2260 J/g) = 56,500 J. Combined: q3 = 10,460 + 56,500 = 66,960 J.\n\n(d) Warming the steam: q4 = (25.0 g)(2.01 J/(g*degrees C))(20.0 degrees C) = 1005 J. Total heat = q1 + q2 + q3 + q4 = 1045 + 8350 + 66,960 + 1005 = 77,360 J, or about 77.4 kJ.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly setting up q = m c DeltaT for the solid-heating stage; 1 point for the correct value of 1045 J.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly setting up q = m x H(fus); 1 point for the correct value of 8350 J.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(c)", "criterion": "1 point for correctly calculating the liquid-warming heat (10,460 J); 1 point for correctly calculating the vaporization heat (56,500 J); 1 point for correctly adding these two sub-steps to get 66,960 J.", "points": 3, "allowsErrorCarriedForward": true },
+      { "partLabel": "(d)", "criterion": "1 point for correctly calculating the steam-warming heat (1005 J); 1 point for correctly identifying that the overall total is the sum of all four stages; 1 point for a final total consistent with the student's own values from parts (a) through (d) (77,360 J, accept 77,000-77,700 J, if all prior values were correct).", "points": 3, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Break the problem into the four separate stages (heating ice, melting, heating liquid, vaporizing, heating steam) and calculate each one separately before summing.",
+      "Remember that the specific heat formula (q = mc(delta T)) applies only while temperature is changing, while the latent heat formula (q = m x H) applies only during a phase change at constant temperature."
+    ]
+  },
+  {
+    "id": "ic12-long-2",
+    "unitId": 12,
+    "kind": "long",
+    "points": 10,
+    "stem": "Water (H2O) has a normal boiling point of 100 degrees C. Hydrogen sulfide (H2S), a molecule with a similar shape and a larger molar mass than water, has a normal boiling point of only -60 degrees C.",
+    "parts": [
+      { "label": "(a)", "prompt": "Identify the strongest intermolecular force present in liquid H2O and in liquid H2S, and explain the difference between them in terms of the electronegativity and size of the central atom.", "maxPoints": 3 },
+      { "label": "(b)", "prompt": "Using your answer to part (a), explain why H2O has a much higher boiling point than H2S, even though the H2S molecule has a larger molar mass (and therefore generally stronger dispersion forces).", "maxPoints": 3 },
+      { "label": "(c)", "prompt": "At a high-altitude research station, water boils at only 92 degrees C because atmospheric pressure there is lower than at sea level. In terms of vapor pressure, explain why water boils at a lower temperature when atmospheric pressure is reduced.", "maxPoints": 4 }
+    ],
+    "workedSolution": "(a) In H2O, oxygen is small and highly electronegative, making the O-H bonds highly polar; this allows water molecules to form strong hydrogen bonds with each other. In H2S, sulfur is larger and considerably less electronegative than oxygen, so the S-H bonds are much less polar; H2S molecules experience only dipole-dipole forces (plus dispersion), not hydrogen bonding, since sulfur lacks the small size and high electronegativity needed to support hydrogen bonding.\n\n(b) Even though H2S (molar mass 34.1 g/mol) is more massive than H2O (18.02 g/mol) and therefore has somewhat stronger London dispersion forces, hydrogen bonding is a much stronger intermolecular force overall than the dipole-dipole and dispersion forces present in H2S. Boiling requires overcoming the intermolecular forces holding molecules together in the liquid, and breaking hydrogen bonds requires much more energy than overcoming H2S's weaker forces. This is why water's boiling point (100 degrees C) is far higher than H2S's boiling point (-60 degrees C), despite H2S's larger size.\n\n(c) A liquid boils when its vapor pressure becomes equal to the surrounding (external) atmospheric pressure. At high altitude, the atmospheric pressure is lower, so a lower vapor pressure is enough to equal it. Because vapor pressure increases as temperature increases, a lower vapor pressure corresponds to a lower temperature. Therefore, at the reduced atmospheric pressure of the research station, water's vapor pressure reaches equality with the (lower) external pressure at a temperature below 100 degrees C, so it boils at only 92 degrees C.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for identifying hydrogen bonding as the strongest IMF in H2O; 1 point for identifying dipole-dipole forces (with dispersion) as the strongest IMF in H2S; 1 point for correctly explaining the difference using oxygen's small size and high electronegativity versus sulfur's larger size and lower electronegativity.", "points": 3, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for acknowledging that H2S has stronger dispersion forces due to its larger molar mass; 1 point for stating that hydrogen bonding in water is nonetheless the stronger overall IMF; 1 point for correctly connecting this to water's much higher boiling point, using the student's own IMF identification from part (a).", "points": 3, "allowsErrorCarriedForward": true },
+      { "partLabel": "(c)", "criterion": "1 point for stating that boiling occurs when vapor pressure equals external (atmospheric) pressure; 1 point for stating that vapor pressure increases with temperature; 1 point for connecting a lower external pressure to needing a lower vapor pressure to boil; 1 point for concluding this corresponds to a lower boiling temperature.", "points": 4, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Compare the size and electronegativity of the central atom (O vs S) to determine which one can form hydrogen bonds.",
+      "For part (c), remember boiling happens when vapor pressure equals the surrounding atmospheric pressure -- think about what changes when that surrounding pressure is lower."
+    ]
+  },
+  {
+    "id": "ic12-short-3",
+    "unitId": 12,
+    "kind": "short",
+    "points": 4,
+    "stem": "At 25 degrees C, diethyl ether has a vapor pressure of about 537 mmHg, while water has a vapor pressure of only about 24 mmHg at the same temperature.",
+    "parts": [
+      { "label": "(a)", "prompt": "Based on these vapor pressures, state which liquid has weaker intermolecular forces, and explain your reasoning.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Predict which liquid has the lower normal boiling point, and explain why, referencing vapor pressure and intermolecular forces.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) Diethyl ether has the higher vapor pressure (537 mmHg vs. 24 mmHg) at the same temperature, meaning a larger fraction of its molecules have enough energy to escape into the vapor phase. This indicates that diethyl ether has weaker intermolecular forces than water, since weaker IMFs are more easily overcome by molecules trying to escape the liquid surface.\n\n(b) Diethyl ether has the lower normal boiling point. Because it already has a much higher vapor pressure at 25 degrees C, it needs only a little more heating before its vapor pressure reaches 760 mmHg (1 atm), the condition for boiling at normal atmospheric pressure. Water, with its much lower vapor pressure at 25 degrees C (due to its stronger hydrogen-bonding intermolecular forces), requires much more heating to reach a vapor pressure of 760 mmHg, giving it a higher normal boiling point.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly identifying diethyl ether as having the weaker intermolecular forces; 1 point for correct reasoning linking higher vapor pressure to weaker intermolecular forces.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly predicting that diethyl ether has the lower boiling point, consistent with part (a); 1 point for correct reasoning connecting the vapor pressure comparison to the definition of boiling point.", "points": 2, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": [
+      "Remember that a higher vapor pressure at the same temperature means the liquid's intermolecular forces are easier to overcome.",
+      "Boiling occurs when vapor pressure equals atmospheric pressure -- which liquid needs less additional heating to get there?"
+    ]
+  },
+  {
+    "id": "ic12-short-4",
+    "unitId": 12,
+    "kind": "short",
+    "points": 4,
+    "stem": "A 40.0 g sample of solid ethanol at its melting point of -114.1 degrees C is melted completely into liquid ethanol at the same temperature. The heat of fusion of ethanol is 108 J/g.",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the amount of heat required to melt the sample completely.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Explain why the temperature of the ethanol sample remains constant at -114.1 degrees C throughout the entire melting process, even though heat is continuously being added.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) q = m x H(fus) = 40.0 g x 108 J/g = 4320 J.\n\n(b) During a phase change, the added heat energy is used to overcome (weaken) the intermolecular forces holding the particles in their fixed solid-state positions, allowing the substance to transition to the more disordered liquid state, rather than to increase the particles' average kinetic energy. Since temperature is a measure of average kinetic energy, and the added energy is going into overcoming intermolecular forces (potential energy) rather than increasing kinetic energy, the temperature does not change until the phase change is complete.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly setting up q = m x H(fus); 1 point for the correct value of 4320 J.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly stating that the added energy goes into overcoming intermolecular forces rather than increasing kinetic energy; 1 point for correctly connecting temperature to average kinetic energy remaining constant during the phase change.", "points": 2, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Multiply the mass by the heat of fusion, similar to a q = mc(delta T) calculation but without a temperature change.",
+      "Think about where the added energy is going if it's not increasing the temperature -- what is being broken apart?"
+    ]
+  },
+  {
+    "id": "ic12-long-3",
+    "unitId": 12,
+    "kind": "long",
+    "points": 10,
+    "stem": "Four solid samples are examined in the lab: table salt (NaCl), diamond (a form of pure carbon, C), dry ice (solid CO2), and copper metal (Cu).",
+    "parts": [
+      { "label": "(a)", "prompt": "For each of the four solids, classify it as an ionic solid, a molecular solid, a covalent network solid, or a metallic solid.", "maxPoints": 4 },
+      { "label": "(b)", "prompt": "Explain, in terms of the type of particles and the forces holding them together, why diamond has an extremely high melting point (over 3500 degrees C), while dry ice sublimes at a very low temperature (-78.5 degrees C at 1 atm).", "maxPoints": 3 },
+      { "label": "(c)", "prompt": "Explain why copper metal, unlike table salt, is able to conduct electricity even in the solid state, referring to the nature of the particles/electrons in each type of solid.", "maxPoints": 3 }
+    ],
+    "workedSolution": "(a) NaCl = ionic solid (a lattice of Na+ and Cl- ions). Diamond = covalent network solid (carbon atoms covalently bonded to four neighbors in a continuous three-dimensional network). Dry ice (solid CO2) = molecular solid (discrete CO2 molecules held together by weak London dispersion forces). Copper = metallic solid (metal cations in a lattice surrounded by a 'sea' of delocalized electrons).\n\n(b) Diamond's extremely high melting point results from its covalent network structure, in which every carbon atom is joined to its neighbors by strong covalent bonds extending throughout the entire crystal; melting diamond would require breaking a huge number of these strong covalent bonds. In contrast, dry ice is a molecular solid made of individual CO2 molecules; within each CO2 molecule the C=O bonds are strong covalent bonds, but the CO2 molecules themselves are held to each other only by weak London dispersion forces. Sublimation of dry ice requires overcoming only these weak intermolecular forces between molecules (no covalent bonds need to be broken), so it occurs at a very low temperature.\n\n(c) In copper, a metallic solid, the valence electrons are delocalized (a 'sea of electrons') and free to move throughout the entire metallic lattice, even in the solid state; when a voltage is applied, these mobile electrons can flow, allowing copper to conduct electricity as a solid. In table salt, an ionic solid, the Na+ and Cl- ions are charged, but they are locked in fixed positions within the rigid crystal lattice and cannot move. There are no mobile charge carriers in the solid state, so solid NaCl does not conduct electricity (it conducts only once melted or dissolved, when the ions become free to move).",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point each for correctly classifying NaCl as ionic, diamond as covalent network, dry ice/CO2 as molecular, and copper as metallic (4 points total).", "points": 4, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly describing diamond's covalent network structure with strong bonding throughout the crystal; 1 point for correctly describing dry ice as discrete molecules held together by weak dispersion forces; 1 point for correctly contrasting the two to explain the melting/sublimation temperature difference.", "points": 3, "allowsErrorCarriedForward": true },
+      { "partLabel": "(c)", "criterion": "1 point for correctly describing copper's delocalized, mobile sea of electrons; 1 point for correctly describing NaCl's ions as fixed/immobile within the solid lattice; 1 point for correctly connecting electron/ion mobility to the difference in conductivity.", "points": 3, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Think about what kind of particle is at each lattice point (ions, atoms in a covalent network, individual molecules, or metal atoms/electrons) for each of the four solids.",
+      "For part (c), ask yourself: in each type of solid, are there any charged particles free to move through the material?"
+    ]
+  },
+  {
+    "id": "ic12-long-4",
+    "unitId": 12,
+    "kind": "long",
+    "points": 10,
+    "stem": "Unlike most substances, solid water (ice) is less dense than liquid water at 0 degrees C, which is why ice floats. The density of ice at 0 degrees C is about 0.917 g/mL, while liquid water at 0 degrees C has a density of about 1.00 g/mL.",
+    "parts": [
+      { "label": "(a)", "prompt": "Explain, in terms of hydrogen bonding, why ice has a less densely packed (more open) structure than liquid water.", "maxPoints": 3 },
+      { "label": "(b)", "prompt": "A 36.0 g sample of ice at 0 degrees C completely melts into liquid water at 0 degrees C. Using the given densities, calculate the volume of the ice sample and the volume of the resulting liquid water, and state whether the volume increased or decreased upon melting.", "maxPoints": 4 },
+      { "label": "(c)", "prompt": "Based on your answer to part (b), predict what would happen to the water level in a glass of ice water as fully submerged ice cubes melt, and briefly explain your reasoning in terms of density and volume.", "maxPoints": 3 }
+    ],
+    "workedSolution": "(a) In ice, each water molecule forms hydrogen bonds with up to four neighboring water molecules, and these hydrogen bonds hold the molecules in a rigid, open, hexagonal lattice-like arrangement that maximizes the number and geometry of hydrogen bonds. This open crystalline structure leaves relatively large empty spaces between molecules. In liquid water, the hydrogen-bonded network is constantly breaking and re-forming, allowing molecules to pack more closely together on average than in the fixed lattice of ice, which is why liquid water is denser than ice.\n\n(b) Volume of ice = mass/density = 36.0 g / 0.917 g/mL = 39.3 mL. Volume of the resulting liquid water = 36.0 g / 1.00 g/mL = 36.0 mL. Since 36.0 mL is less than 39.3 mL, the volume decreased upon melting.\n\n(c) The water level stays the same (does not rise or fall) as the submerged ice melts. Floating ice displaces a volume of liquid water equal to the volume that its melted mass would occupy as liquid; since the melted ice becomes liquid water occupying exactly the volume it displaced, and part (b) shows that the melted volume is actually slightly less than the ice's own volume, no additional space needs to be made in the glass, so the overall water level does not change once the ice fully melts.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly describing hydrogen bonding forming a rigid, open lattice in ice; 1 point for correctly noting this creates open/empty space between molecules; 1 point for correctly contrasting this with the more closely packed, dynamically rearranging structure of liquid water.", "points": 3, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for the correct volume of ice (approximately 39.3 mL); 1 point for the correct volume of liquid water (36.0 mL); 1 point for correctly using density = mass/volume (rearranged) for each calculation; 1 point for correctly concluding the volume decreased upon melting.", "points": 4, "allowsErrorCarriedForward": false },
+      { "partLabel": "(c)", "criterion": "1 point for correctly predicting the water level stays the same; 1 point for reasoning referencing displaced volume equaling the volume the melted ice occupies as liquid, consistent with part (b); 1 point for a clear, correct connection between the density/volume relationship and the observed lack of level change.", "points": 3, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "For part (a), think about how many hydrogen bonds each water molecule can form and how that number is maximized in a fixed, open lattice versus a flowing liquid.",
+      "For part (b), use density = mass/volume, rearranged to solve for volume, for both the ice and the liquid water separately."
+    ]
+  }
+]

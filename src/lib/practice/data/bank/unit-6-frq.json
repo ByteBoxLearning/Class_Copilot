@@ -1,0 +1,94 @@
+[
+  {
+    "id": "u6-frq-long-1",
+    "unitId": 6,
+    "kind": "long",
+    "points": 10,
+    "stem": "A student investigates the dissolution of a hypothetical ionic salt, MX(s), where M^+ and X^- represent generic monatomic ions. The student dissolves 5.00 g of MX(s) (molar mass = 80.0 g/mol) into 100.0 g of water in an insulated coffee-cup calorimeter. The water's initial temperature is 23.5°C, and after the solid fully dissolves, the final temperature of the solution is 19.2°C. Assume the resulting solution has a mass of 105.0 g and a specific heat equal to that of pure water, c = 4.18 J/(g·°C), and that no heat is exchanged with the calorimeter or the surroundings.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Calculate the heat absorbed or released by the solution, q_solution, and use it to determine the experimental molar enthalpy of dissolution, ΔH_dissolution, for MX(s) in kJ/mol. Be sure to include the correct sign.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(b)",
+        "prompt": "Based on your result in part (a), explain at the particle level why the dissolution process caused the solution's temperature to decrease. Your explanation should refer to the relative energy of interactions being broken versus formed.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(c)",
+        "prompt": "Given the standard enthalpies of formation ΔHf°[MX(s)] = -410 kJ/mol, ΔHf°[M^+(aq)] = -200 kJ/mol, and ΔHf°[X^-(aq)] = -190 kJ/mol, use Hess's law (ΔH°rxn = ΣΔHf°(products) - ΣΔHf°(reactants)) to calculate the theoretical ΔH° for the reaction MX(s) -> M^+(aq) + X^-(aq). Compare this theoretical value to your experimental value from part (a), and identify one reasonable source of the discrepancy between them.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(d)",
+        "prompt": "Separately, the student wants to know the total energy required to take the original 100.0 g of water — starting from the final solution temperature of 19.2°C — and completely vaporize it at its normal boiling point of 100.0°C. Using c_water = 4.18 J/(g·°C), ΔHvap(water) = 40.7 kJ/mol, and a molar mass of water of 18.02 g/mol, calculate the total energy (in kJ) required for this process.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) q_solution = m c ΔT = (105.0 g)(4.18 J/g°C)(19.2 - 23.5)°C = (105.0)(4.18)(-4.3) = -1887 J ≈ -1.89 × 10^3 J.\nSince the solution lost this heat to the dissolution process, q_dissolution = -q_solution = +1887 J for the 5.00 g sample.\nmoles MX = 5.00 g / 80.0 g/mol = 0.0625 mol.\nΔH_dissolution = 1887 J / 0.0625 mol = 30,192 J/mol ≈ +30.2 kJ/mol (endothermic).\n\n(b) The solution's temperature dropped, meaning the dissolution process absorbed thermal energy from the solution — it is endothermic. At the particle level, this means the energy required to separate the M^+ and X^- ions from the solid lattice (break ionic attractions) and/or separate water molecules from each other is greater than the energy released when new ion-dipole attractions form between the ions and surrounding water molecules. Because more energy is absorbed (breaking/separating) than is released (forming new interactions), the surroundings (the solution) cool down.\n\n(c) ΔH°rxn = [ΔHf°(M^+(aq)) + ΔHf°(X^-(aq))] - ΔHf°(MX(s))\n= [(-200 kJ/mol) + (-190 kJ/mol)] - (-410 kJ/mol)\n= -390 kJ/mol + 410 kJ/mol = +20 kJ/mol.\nThis theoretical value (+20 kJ/mol) is reasonably close to the experimental value from part (a) (+30.2 kJ/mol) — both are positive (endothermic), and of similar magnitude. The discrepancy can be attributed to heat exchanged with the calorimeter itself (its heat capacity was not accounted for), heat lost to the surroundings through imperfect insulation, or the assumption that the solution's density/specific heat exactly equal those of pure water.\n\n(d) Step 1 (heating liquid water from 19.2°C to 100.0°C):\nq1 = m c ΔT = (100.0 g)(4.18 J/g°C)(100.0 - 19.2)°C = (100.0)(4.18)(80.8) = 33,774 J ≈ 33.8 kJ.\nStep 2 (vaporizing the water at 100.0°C):\nmoles water = 100.0 g / 18.02 g/mol = 5.55 mol.\nq2 = n × ΔHvap = (5.55 mol)(40.7 kJ/mol) ≈ 226 kJ.\nTotal energy = q1 + q2 = 33.8 kJ + 226 kJ ≈ 260. kJ.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly calculating q_solution = (105.0)(4.18)(-4.3) ≈ -1.89 × 10^3 J with correct sign; 1 point for correctly finding moles of MX = 0.0625 mol and recognizing q_dissolution = -q_solution (+1887 J); 1 point for the correct final ΔH_dissolution ≈ +30.2 kJ/mol with correct (positive/endothermic) sign and units.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for stating that energy is absorbed to break/separate the ionic (solute-solute) and/or solvent-solvent interactions; 1 point for correctly reasoning that this energy absorbed exceeds the energy released when new ion-dipole (solute-solvent) attractions form, consistent with the observed temperature decrease and the positive ΔH found in part (a).",
+        "points": 2,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for the correct Hess's law setup (products' ΔHf° sum minus reactant's ΔHf°); 1 point for the correct numerical answer, +20 kJ/mol, with correct sign; 1 point for a valid comparison to the student's own part (a) value that correctly notes the same sign/similar magnitude and cites a reasonable, chemically valid source of experimental error (e.g., heat capacity of calorimeter not included, heat lost to surroundings, or density/specific heat assumptions).",
+        "points": 3,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly calculating the heating step, q1 = (100.0)(4.18)(80.8) ≈ 33.8 kJ; 1 point for correctly calculating the vaporization step using moles of water and ΔHvap (q2 ≈ 226 kJ) AND reporting a correct total energy ≈ 260 kJ.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "bank"
+  },
+  {
+    "id": "u6-frq-short-1",
+    "unitId": 6,
+    "kind": "short",
+    "points": 4,
+    "stem": "A 25.0 g solid sample of substance Z is heated at a constant, steady rate starting well below its melting point, continuing until it becomes a gas well above its boiling point. A graph of temperature versus time (a heating curve) for this process shows a flat plateau at Z's melting point (10.0°C) and a second, noticeably longer flat plateau at Z's boiling point (80.0°C).",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Explain, in terms of the kinetic and potential energy of the particles of substance Z, why the temperature remains constant during the melting plateau even though heat is continuously being added to the sample.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "The boiling-point plateau lasts noticeably longer in time than the melting-point plateau, even though heat is added at the same constant rate throughout. Explain what this indicates about the relative magnitude of ΔHvap compared to ΔHfus for substance Z, and justify your reasoning.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) During melting, added energy is used to overcome/weaken the intermolecular (or interparticle) attractive forces holding the particles in the fixed solid lattice, increasing the potential energy of the particles as the solid converts to liquid. Temperature is a measure of average kinetic energy only, and while both the solid and liquid phases coexist, the added heat goes entirely into this potential energy change rather than increasing particle speed, so the average kinetic energy — and thus the temperature — stays constant until melting is complete.\n\n(b) Since the sample is heated at the same constant rate (constant energy per unit time) throughout, the amount of time spent on a plateau is directly proportional to the total energy absorbed during that phase change. Because the boiling plateau lasts longer than the melting plateau, more total energy per gram (or per mole) must be absorbed during vaporization than during fusion. Therefore, ΔHvap > ΔHfus for substance Z. This makes physical sense because vaporization requires completely overcoming the intermolecular attractions between particles to separate them into a gas, whereas melting only requires enough energy to let particles move past one another while many attractive interactions are still retained in the liquid.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for stating that the added energy increases the potential energy of the particles by overcoming/weakening intermolecular (interparticle) attractive forces during the solid-to-liquid transition; 1 point for correctly explaining that temperature reflects only average kinetic energy, which does not change during the phase change because the added energy is directed entirely into this potential energy change rather than particle speed.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for reasoning that because the heating rate (energy per time) is constant, a longer plateau duration means more total energy was absorbed during vaporization than during fusion; 1 point for the correct conclusion that ΔHvap > ΔHfus, with valid reasoning that vaporization requires fully separating particles (overcoming essentially all intermolecular attractions) while fusion only requires enough energy to allow particles to move past each other while remaining close together.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "bank"
+  }
+]

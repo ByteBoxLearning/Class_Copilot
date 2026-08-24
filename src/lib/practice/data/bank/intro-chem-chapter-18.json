@@ -1,0 +1,236 @@
+[
+  {
+    "id": "ic-c18-mc-1",
+    "unitId": 18,
+    "stem": "Alkanes are hydrocarbons characterized by having:",
+    "choices": ["only single carbon-carbon bonds", "at least one carbon-carbon double bond", "at least one carbon-carbon triple bond", "a benzene ring"],
+    "correctIndex": 0,
+    "topicTag": "18.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c18-mc-2",
+    "unitId": 18,
+    "stem": "Alkenes are hydrocarbons that contain at least one:",
+    "choices": ["carbon-carbon single bond only", "carbon-carbon double bond", "carbon-carbon triple bond", "carbon-oxygen double bond"],
+    "correctIndex": 1,
+    "topicTag": "18.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c18-mc-3",
+    "unitId": 18,
+    "stem": "Alkynes are hydrocarbons that contain at least one:",
+    "choices": ["carbon-carbon double bond", "carbon-oxygen single bond", "carbon-carbon triple bond", "carbon-nitrogen bond"],
+    "correctIndex": 2,
+    "topicTag": "18.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c18-mc-4",
+    "unitId": 18,
+    "stem": "What is the molecular formula of methane, the simplest alkane?",
+    "choices": ["CH4", "C2H6", "CH2", "C2H4"],
+    "correctIndex": 0,
+    "topicTag": "18.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c18-mc-5",
+    "unitId": 18,
+    "stem": "Alkanes are also called saturated hydrocarbons because each carbon is bonded to the maximum possible number of hydrogen atoms.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "18.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c18-mc-6",
+    "unitId": 18,
+    "stem": "Which functional group is characteristic of an alcohol?",
+    "choices": ["-COOH", "-OH", "-NH2", "-CHO"],
+    "correctIndex": 1,
+    "topicTag": "18.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c18-mc-7",
+    "unitId": 18,
+    "stem": "Which functional group defines a carboxylic acid?",
+    "choices": ["-OH", "-COOH", "-NH2", "-O-"],
+    "correctIndex": 1,
+    "topicTag": "18.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c18-mc-8",
+    "unitId": 18,
+    "stem": "Esters are typically formed by reacting a carboxylic acid with a(n):",
+    "choices": ["amine", "alcohol", "alkane", "aldehyde"],
+    "correctIndex": 1,
+    "topicTag": "18.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c18-mc-9",
+    "unitId": 18,
+    "stem": "Amines are organic compounds that can be thought of as derived structurally from:",
+    "choices": ["ammonia (NH3)", "water (H2O)", "methane (CH4)", "carbon dioxide (CO2)"],
+    "correctIndex": 0,
+    "topicTag": "18.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c18-mc-10",
+    "unitId": 18,
+    "stem": "Carboxylic acids are generally acidic and turn blue litmus paper red.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "18.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c18-mc-11",
+    "unitId": 18,
+    "stem": "In IUPAC naming, the suffix \"-ol\" at the end of an organic compound's name indicates that it is a(n):",
+    "choices": ["alkane", "alcohol", "carboxylic acid", "amine"],
+    "correctIndex": 1,
+    "topicTag": "18.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c18-mc-12",
+    "unitId": 18,
+    "stem": "What is the IUPAC name for the simplest alcohol, CH3OH?",
+    "choices": ["ethanol", "methanol", "propanol", "methanal"],
+    "correctIndex": 1,
+    "topicTag": "18.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c18-mc-13",
+    "unitId": 18,
+    "stem": "The prefix \"but-\" in an organic compound's IUPAC name indicates a longest continuous carbon chain of:",
+    "choices": ["2 carbons", "3 carbons", "4 carbons", "5 carbons"],
+    "correctIndex": 2,
+    "topicTag": "18.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c18-mc-14",
+    "unitId": 18,
+    "stem": "Structural (constitutional) isomers share the same molecular formula but differ in:",
+    "choices": ["the number of electrons they contain", "the order in which their atoms are connected", "the number of protons they contain", "their overall electric charge"],
+    "correctIndex": 1,
+    "topicTag": "18.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c18-mc-15",
+    "unitId": 18,
+    "stem": "Which pair of compounds represents structural isomers of one another, both having the formula C4H10?",
+    "choices": ["butane and isobutane (2-methylpropane)", "ethane and propane", "methane and ethane", "butane and 1-butene"],
+    "correctIndex": 0,
+    "topicTag": "18.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c18-mc-16",
+    "unitId": 18,
+    "stem": "Two molecules can be considered isomers of each other even if they have different molecular formulas, as long as they contain the same elements.",
+    "choices": ["True", "False"],
+    "correctIndex": 1,
+    "topicTag": "18.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c18-mc-17",
+    "unitId": 18,
+    "stem": "What is the molecular formula of ethene, the simplest alkene?",
+    "choices": ["C2H4", "C2H6", "C2H2", "CH4"],
+    "correctIndex": 0,
+    "topicTag": "18.1",
+    "source": "original",
+    "explanation": "Alkenes follow the general formula CnH2n; with n = 2, this gives C2H4, the formula of ethene. Choice B, C2H6, is the formula of ethane, the saturated alkane with the same number of carbons — a common mix-up. Choice C, C2H2, is the formula of ethyne, the corresponding alkyne, which has one fewer pair of hydrogens than the alkene. Choice D, CH4, is methane, which has the wrong number of carbon atoms entirely.",
+    "difficulty": "beginner",
+    "hints": [
+      "Alkenes follow the general formula CnH2n — plug in n = 2.",
+      "Don't confuse this with ethane (the alkane) or ethyne (the alkyne), which have the same number of carbons but different hydrogen counts."
+    ]
+  },
+  {
+    "id": "ic-c18-mc-18",
+    "unitId": 18,
+    "stem": "Which functional group is characteristic of an aldehyde?",
+    "choices": ["-COOH", "-CHO", "-OH", "-NH2"],
+    "correctIndex": 1,
+    "topicTag": "18.2",
+    "source": "original",
+    "explanation": "The aldehyde functional group is -CHO: a carbonyl carbon (double-bonded to oxygen) that also bears a hydrogen, located at the end of a carbon chain. Choice A, -COOH, is the carboxylic acid group, which has an extra -OH attached to that same carbonyl carbon. Choice C, -OH, is the alcohol (hydroxyl) group. Choice D, -NH2, is the amine group.",
+    "difficulty": "beginner",
+    "hints": [
+      "The aldehyde group contains a carbon double-bonded to oxygen with a hydrogen also attached, at the end of a carbon chain.",
+      "Don't confuse it with the carboxylic acid group, which has an extra -OH attached to that same carbon."
+    ]
+  },
+  {
+    "id": "ic-c18-mc-19",
+    "unitId": 18,
+    "stem": "Which IUPAC name correctly describes the compound CH3-CH(OH)-CH3?",
+    "choices": ["1-propanol", "2-propanol", "1-propanal", "propanoic acid"],
+    "correctIndex": 1,
+    "topicTag": "18.3",
+    "source": "original",
+    "explanation": "The compound has a 3-carbon chain (prop-) with a hydroxyl group (-OH) attached to the middle carbon, giving the suffix -ol at position 2, so it is named 2-propanol (also called isopropanol). '1-propanol' would place the -OH group on an end carbon instead of the middle one. '1-propanal' incorrectly uses the aldehyde suffix (-al) rather than the alcohol suffix (-ol). 'Propanoic acid' is a carboxylic acid with a -COOH group at the end of the chain, an entirely different functional group.",
+    "difficulty": "intermediate",
+    "hints": [
+      "First find the length of the carbon chain to get the base name, then find which functional group is present to choose the suffix.",
+      "Count carbons from whichever end gives the -OH group the lowest possible position number."
+    ]
+  },
+  {
+    "id": "ic-c18-mc-20",
+    "unitId": 18,
+    "stem": "How many structural isomers exist for the molecular formula C3H8?",
+    "choices": ["1", "2", "3", "4"],
+    "correctIndex": 0,
+    "topicTag": "18.4",
+    "source": "original",
+    "explanation": "With only 3 carbons, there is only one way to arrange them into a chain, since branching an alkane requires at least 4 carbons (one carbon must be able to attach to three other carbon-containing groups). So C3H8 (propane) has exactly one possible structure. Choice B (2) matches the isomer count for C4H10, not C3H8, a common mix-up. Choices C and D overcount the possibilities for a chain this short.",
+    "difficulty": "intermediate",
+    "hints": [
+      "Try physically drawing out every possible way to connect 3 carbon atoms into a branching or straight structure.",
+      "Branching requires a carbon atom bonded to at least three other carbons — check whether that's even possible with only 3 carbons total."
+    ]
+  },
+  {
+    "id": "ic-c18-mc-21",
+    "unitId": 18,
+    "stem": "A hydrocarbon has the molecular formula C5H8. Compared to the fully saturated 5-carbon alkane (pentane, C5H12), how many degrees of unsaturation (double bonds, triple bonds, or rings, combined) does this compound contain?",
+    "choices": ["1", "2", "3", "4"],
+    "correctIndex": 1,
+    "topicTag": "18.1",
+    "source": "original",
+    "explanation": "Pentane (C5H12) is the fully saturated alkane, using CnH(2n+2) with n = 5: 2(5)+2 = 12. Compound C5H8 has 12 - 8 = 4 fewer hydrogen atoms. Each degree of unsaturation (one double bond, one ring, or one 'half' of a triple bond) accounts for a loss of exactly 2 hydrogens, so this compound has 4/2 = 2 degrees of unsaturation. Choice A undercounts by assuming the full 4-hydrogen difference is only 1 degree. Choices C and D overcount the degrees of unsaturation implied by the hydrogen deficiency.",
+    "difficulty": "advanced",
+    "hints": [
+      "First determine the molecular formula of the fully saturated alkane with the same number of carbons, using CnH(2n+2).",
+      "Each degree of unsaturation (one double bond, one ring, or half of a triple bond) accounts for a loss of exactly 2 hydrogen atoms compared to the saturated formula."
+    ]
+  },
+  {
+    "id": "ic-c18-mc-22",
+    "unitId": 18,
+    "stem": "Methanol (CH3OH) reacts with propanoic acid (CH3CH2COOH) in the presence of an acid catalyst to form an ester and water. What is the correct name of the ester product?",
+    "choices": ["methyl propanoate", "propyl methanoate", "methyl propanal", "propanoic methanol"],
+    "correctIndex": 0,
+    "topicTag": "18.2",
+    "source": "original",
+    "explanation": "In ester naming, the alkyl group name comes from the alcohol (methanol becomes 'methyl') and the acid portion is renamed using the suffix -oate (propanoic acid becomes 'propanoate'), giving methyl propanoate. 'Propyl methanoate' reverses which reactant contributes the alkyl part and which contributes the acid part. 'Methyl propanal' incorrectly uses the aldehyde suffix (-al) instead of the ester suffix (-oate). 'Propanoic methanol' is not a valid way to name an ester at all.",
+    "difficulty": "advanced",
+    "hints": [
+      "Recall that esterification combines a carboxylic acid and an alcohol: figure out which reactant contributes the alkyl-group part of the name and which contributes the acid-stem part.",
+      "The acid portion of an ester name always ends in the suffix -oate."
+    ]
+  }
+]

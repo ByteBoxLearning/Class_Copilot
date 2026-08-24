@@ -1,0 +1,190 @@
+[
+  {
+    "id": "ic15-short-1",
+    "unitId": 15,
+    "kind": "short",
+    "points": 4,
+    "stem": "Consider the reversible reaction at equilibrium: 2 SO2(g) + O2(g) <-> 2 SO3(g)",
+    "parts": [
+      { "label": "(a)", "prompt": "Write the equilibrium constant expression, Kc, for this reaction.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Explain, at the particle level, what it means for this reaction to have reached 'dynamic equilibrium,' even though the concentrations of SO2, O2, and SO3 are no longer changing.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) Kc = [SO3]^2 / ([SO2]^2 [O2]).\n\n(b) At dynamic equilibrium, the forward reaction (SO2 and O2 forming SO3) and the reverse reaction (SO3 decomposing back to SO2 and O2) are both still occurring continuously. However, they occur at equal rates, so the rate at which each species is formed equals the rate at which it is consumed. As a result, the overall (macroscopic) concentrations of SO2, O2, and SO3 stay constant over time, even though individual molecules continue reacting in both directions.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for placing products over reactants in the correct ratio form; 1 point for correct exponents matching the coefficients ([SO3]^2 over [SO2]^2[O2]).", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for stating that both the forward and reverse reactions continue to occur; 1 point for stating that they occur at equal rates, so concentrations remain constant even though the reaction has not stopped.", "points": 2, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": [
+      "Products go on top, reactants on the bottom, each raised to the power of its coefficient.",
+      "Dynamic equilibrium doesn't mean the reaction stopped. Think about what happens to reaction RATES."
+    ]
+  },
+  {
+    "id": "ic15-short-2",
+    "unitId": 15,
+    "kind": "short",
+    "points": 4,
+    "stem": "Consider the exothermic equilibrium reaction: N2(g) + 3 H2(g) <-> 2 NH3(g) + heat",
+    "parts": [
+      { "label": "(a)", "prompt": "Predict the direction the equilibrium will shift (toward products, toward reactants, or no shift) if the concentration of H2 gas is increased at constant temperature and volume.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Predict the direction the equilibrium will shift if the temperature of the system is decreased.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) Increasing [H2] adds more of a reactant. By Le Chatelier's principle, the equilibrium shifts toward products (to the right) to consume some of the added H2 and partially counteract the stress.\n\n(b) Because the reaction is exothermic, heat can be thought of as a 'product' of the forward reaction. Decreasing the temperature removes heat/energy from the system, which is treated as removing a product. By Le Chatelier's principle, the equilibrium shifts toward products (to the right, producing more NH3 and heat) to help replace the removed heat.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly predicting a shift toward products; 1 point for correct Le Chatelier reasoning (adding a reactant causes the system to shift to consume it).", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly predicting a shift toward products; 1 point for correct reasoning treating heat as a product being removed by cooling, favoring the exothermic (forward) direction.", "points": 2, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "For part (a), remember: adding more of a reactant shifts equilibrium to consume it.",
+      "For part (b), treat heat as if it were a product of this exothermic reaction."
+    ]
+  },
+  {
+    "id": "ic15-long-1",
+    "unitId": 15,
+    "kind": "long",
+    "points": 10,
+    "stem": "A 2.00 L rigid container initially holds 1.00 mol of PCl5(g) and no PCl3 or Cl2. At a certain temperature, PCl5 decomposes according to: PCl5(g) <-> PCl3(g) + Cl2(g). At equilibrium, the container is found to contain 0.60 mol of PCl5.",
+    "parts": [
+      { "label": "(a)", "prompt": "Determine the initial concentration of PCl5. Then use an ICE table to determine the change in moles of PCl5, and the equilibrium moles of PCl3 and Cl2.", "maxPoints": 4 },
+      { "label": "(b)", "prompt": "Convert all three equilibrium mole amounts to equilibrium molar concentrations (using the 2.00 L container volume).", "maxPoints": 3 },
+      { "label": "(c)", "prompt": "Write the equilibrium constant expression Kc for this reaction, and calculate its numerical value using your equilibrium concentrations from part (b).", "maxPoints": 3 }
+    ],
+    "workedSolution": "(a) Initial [PCl5] = 1.00 mol / 2.00 L = 0.500 M. ICE table (in moles): PCl5 goes from 1.00 mol (initial) by -x to 1.00 - x (equilibrium); since equilibrium PCl5 = 0.60 mol, x = 1.00 - 0.60 = 0.40 mol. PCl3 and Cl2 each start at 0 mol and increase by +x = +0.40 mol, so equilibrium PCl3 = 0.40 mol and equilibrium Cl2 = 0.40 mol.\n\n(b) [PCl5] = 0.60 mol / 2.00 L = 0.30 M. [PCl3] = 0.40 mol / 2.00 L = 0.20 M. [Cl2] = 0.40 mol / 2.00 L = 0.20 M.\n\n(c) Kc = [PCl3][Cl2] / [PCl5] = (0.20)(0.20) / 0.30 = 0.0400/0.30 = 0.13 (to two significant figures).",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for the correct initial concentration of 0.500 M; 1 point for correctly determining x = 0.40 mol reacted from the ICE table; 1 point for the correct equilibrium moles of PCl3 (0.40 mol); 1 point for the correct equilibrium moles of Cl2 (0.40 mol).", "points": 4, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for a [PCl5] value consistent with the student's own equilibrium moles from part (a) divided by 2.00 L; 1 point for a consistent [PCl3] value; 1 point for a consistent [Cl2] value.", "points": 3, "allowsErrorCarriedForward": true },
+      { "partLabel": "(c)", "criterion": "1 point for the correct Kc expression form ([PCl3][Cl2]/[PCl5]); 1 point for correctly substituting the student's own equilibrium concentrations from part (b); 1 point for a final Kc value consistent with those concentrations (approximately 0.13 if parts (a) and (b) were correct).", "points": 3, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Set up an ICE table in moles first, using the given equilibrium amount of PCl5 to find x.",
+      "Convert everything to molarity (using the 2.00 L volume) before writing the Kc expression."
+    ]
+  },
+  {
+    "id": "ic15-long-2",
+    "unitId": 15,
+    "kind": "long",
+    "points": 10,
+    "stem": "Consider the equilibrium system in a rigid, sealed flask: 2 NO2(g) <-> N2O4(g), where the forward reaction is exothermic.",
+    "parts": [
+      { "label": "(a)", "prompt": "At a certain instant, the reaction quotient Q is calculated to be greater than Kc for this system. Explain what this tells you about the relative amounts of reactants and products present compared to equilibrium, and predict which direction the reaction will shift to reach equilibrium.", "maxPoints": 3 },
+      { "label": "(b)", "prompt": "Predict the direction the equilibrium will shift if additional NO2(g) is injected into the flask at constant temperature and volume, and briefly justify your prediction using Le Chatelier's principle.", "maxPoints": 3 },
+      { "label": "(c)", "prompt": "Predict the direction the equilibrium will shift if the volume of the container is suddenly decreased (increasing the total pressure) at constant temperature, and justify your prediction in terms of moles of gas particles on each side of the equation.", "maxPoints": 2 },
+      { "label": "(d)", "prompt": "Predict the direction the equilibrium will shift if the temperature of the flask is increased, and briefly justify your prediction.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) Q > Kc means that, relative to equilibrium, there is currently too much product (N2O4) and/or too little reactant (NO2) present compared to the equilibrium ratio. To reach equilibrium, the reaction must shift toward the reactants (to the left), consuming N2O4 and forming NO2, until Q decreases back down to equal Kc.\n\n(b) Adding more NO2 increases the concentration of a reactant. By Le Chatelier's principle, the equilibrium shifts toward products (to the right, forming more N2O4) to partially consume the added NO2.\n\n(c) Decreasing the volume increases the total pressure and concentration of all gases present. The reactant side has 2 moles of gas (2 NO2) while the product side has only 1 mole of gas (N2O4). By Le Chatelier's principle, the equilibrium shifts toward the side with fewer moles of gas, which is the product side, to partially reduce the increase in pressure. So the equilibrium shifts toward products (to the right).\n\n(d) Since the forward reaction is exothermic, heat can be treated as a product. Increasing the temperature adds heat/energy, which is treated as adding a product; by Le Chatelier's principle, the equilibrium shifts toward the reactants (to the left, favoring the endothermic reverse reaction) to absorb the added heat.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly interpreting Q > Kc as indicating relatively too much product / too little reactant compared to equilibrium; 1 point for correctly predicting a shift toward reactants; 1 point for reasoning tied to Q needing to decrease to equal Kc.", "points": 3, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly predicting a shift toward products; 1 point for correctly identifying NO2 as a reactant being added as the stress; 1 point for correct Le Chatelier reasoning that the system shifts to consume the added reactant.", "points": 3, "allowsErrorCarriedForward": false },
+      { "partLabel": "(c)", "criterion": "1 point for correctly predicting a shift toward products (fewer moles of gas); 1 point for correct reasoning comparing moles of gas on each side (2 mol reactant side vs. 1 mol product side).", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(d)", "criterion": "1 point for correctly predicting a shift toward reactants; 1 point for correct reasoning treating heat as a product being added (since the forward reaction is exothermic), favoring the endothermic reverse direction.", "points": 2, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "For part (a), compare the numeric relationship between Q and K directly to decide which direction restores equilibrium.",
+      "For parts (c) and (d), count moles of gas on each side for the pressure question, and treat heat as a product for the temperature question since the reaction is exothermic."
+    ]
+  },
+  {
+    "id": "ic15-short-3",
+    "unitId": 15,
+    "kind": "short",
+    "points": 4,
+    "stem": "For a certain reaction at a given temperature, Kc = 0.150. At a particular instant, Qc is calculated to be 0.400.",
+    "parts": [
+      { "label": "(a)", "prompt": "State whether the reaction will proceed in the forward or reverse direction to reach equilibrium, and explain why.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Predict whether the concentration of reactants will increase or decrease as the system moves toward equilibrium.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) Since Qc (0.400) is greater than Kc (0.150), there is more product present relative to reactant than at equilibrium, so the reaction shifts in the reverse direction (toward reactants) to decrease Q back down to Kc.\n\n(b) Since the reaction proceeds in reverse, reactant concentrations will increase as some product converts back to reactant.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly comparing Qc to Kc (Qc > Kc); 1 point for correctly predicting a reverse shift.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly predicting reactant concentrations will increase; 1 point for reasoning tied to the reverse direction identified in part (a).", "points": 2, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Compare Qc to Kc directly: which one is larger?",
+      "If Qc is greater than Kc, there's too much product currently. Which way must the reaction shift to fix that?"
+    ]
+  },
+  {
+    "id": "ic15-short-4",
+    "unitId": 15,
+    "kind": "short",
+    "points": 4,
+    "stem": "Consider the heterogeneous equilibrium: CaCO3(s) <-> CaO(s) + CO2(g)",
+    "parts": [
+      { "label": "(a)", "prompt": "Write the equilibrium constant expression, Kc, for this reaction, given that pure solids are not included in equilibrium expressions.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Predict what will happen to the equilibrium position if additional solid CaCO3 is added to the container, and briefly explain why.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) Since CaCO3(s) and CaO(s) are both pure solids, they are omitted from the equilibrium expression. Only CO2(g) appears: Kc = [CO2].\n\n(b) Adding more solid CaCO3 does not shift the equilibrium at all, because the effective 'concentration' of a pure solid does not change no matter how much of it is present. Since solids do not appear in the K expression, changing the amount of a solid has no effect on the equilibrium position.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly stating that solids are omitted; 1 point for the correct final expression Kc = [CO2].", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly predicting no shift occurs; 1 point for correct reasoning about pure solids having a constant activity/concentration independent of amount.", "points": 2, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Pure solids and pure liquids are left out of equilibrium constant expressions entirely.",
+      "Think about whether the 'concentration' of a solid changes when you add more of it."
+    ]
+  },
+  {
+    "id": "ic15-long-3",
+    "unitId": 15,
+    "kind": "long",
+    "points": 10,
+    "stem": "A 1.00 L rigid container is filled with 2.00 mol of HI gas at a certain temperature and allowed to reach equilibrium according to: 2 HI(g) <-> H2(g) + I2(g). At equilibrium, chemists determine that 0.44 mol of HI has decomposed.",
+    "parts": [
+      { "label": "(a)", "prompt": "Use an ICE table (in moles, since the volume is 1.00 L) to determine the equilibrium moles of HI, H2, and I2.", "maxPoints": 4 },
+      { "label": "(b)", "prompt": "Convert the equilibrium moles to equilibrium molar concentrations.", "maxPoints": 2 },
+      { "label": "(c)", "prompt": "Write the equilibrium expression Kc and calculate its numerical value.", "maxPoints": 4 }
+    ],
+    "workedSolution": "(a) Since 2 mol of HI decompose to form 1 mol H2 and 1 mol I2, if 0.44 mol of HI decomposes, then moles of H2 formed = 0.44/2 = 0.22 mol, and moles of I2 formed = 0.22 mol. Equilibrium moles of HI = 2.00 - 0.44 = 1.56 mol.\n\n(b) Since the volume is 1.00 L: [HI] = 1.56 mol / 1.00 L = 1.56 M. [H2] = 0.22 mol / 1.00 L = 0.22 M. [I2] = 0.22 mol / 1.00 L = 0.22 M.\n\n(c) Kc = [H2][I2] / [HI]^2 = (0.22)(0.22) / (1.56)^2 = 0.0484 / 2.4336 = 0.0199.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly recognizing that the moles of H2 and I2 formed equal half of the 0.44 mol of HI that decomposed; 1 point for the correct equilibrium moles of HI (1.56 mol); 1 point for the correct equilibrium moles of H2 (0.22 mol); 1 point for the correct equilibrium moles of I2 (0.22 mol).", "points": 4, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for a [HI] value consistent with the student's own equilibrium moles from part (a); 1 point for consistent [H2] and [I2] values.", "points": 2, "allowsErrorCarriedForward": true },
+      { "partLabel": "(c)", "criterion": "1 point for the correct Kc expression form ([H2][I2]/[HI]^2); 1 point for correctly substituting the student's own equilibrium concentrations from part (b); 1 point for correct arithmetic; 1 point for a final Kc value consistent with those concentrations (approximately 0.0199 if parts (a) and (b) were correct).", "points": 4, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Since the coefficient of HI is 2, but H2 and I2 each have a coefficient of 1, the moles of H2 and I2 formed equal HALF of the moles of HI that decomposed.",
+      "Because the volume is exactly 1.00 L, moles and molarity have the same numeric value here, but you still need to show the conversion."
+    ]
+  },
+  {
+    "id": "ic15-long-4",
+    "unitId": 15,
+    "kind": "long",
+    "points": 10,
+    "stem": "Consider the exothermic equilibrium reaction used industrially to produce sulfur trioxide: 2 SO2(g) + O2(g) <-> 2 SO3(g), Delta H < 0.",
+    "parts": [
+      { "label": "(a)", "prompt": "Predict the direction the equilibrium will shift if the temperature of the system is increased, and briefly justify your prediction.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "State how the numerical value of Kc changes (increases, decreases, or stays the same) when the temperature is increased, and explain why this differs from the effect of adding more O2 gas, which does NOT change the value of Kc.", "maxPoints": 3 },
+      { "label": "(c)", "prompt": "Predict the direction the equilibrium will shift if the total volume of the container is increased at constant temperature, and justify your answer in terms of moles of gas.", "maxPoints": 3 },
+      { "label": "(d)", "prompt": "A catalyst is added to the system at constant temperature. State the effect, if any, this has on (i) the value of Kc and (ii) the time required to reach equilibrium.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) Since the forward reaction is exothermic, heat can be treated as a product. Increasing the temperature adds heat/energy, which is treated as adding a product; by Le Chatelier's principle, the equilibrium shifts toward the reactants (reverse direction, favoring the endothermic reverse reaction) to absorb the added heat.\n\n(b) Kc decreases as temperature increases. Because the equilibrium shifts toward reactants at higher temperature, the new equilibrium ratio of products to reactants is smaller, which is an actual change in the value of K itself. This differs from adding more O2: that stress shifts the position of equilibrium (the concentrations present), but the ratio at the new equilibrium still equals the same Kc value, because only temperature changes K itself.\n\n(c) Increasing the volume decreases the concentration and partial pressure of all gases. The reactant side has 3 mol of gas (2 SO2 + 1 O2) while the product side has only 2 mol of gas (2 SO3). By Le Chatelier's principle, the equilibrium shifts toward the side with more moles of gas to partially counteract the decrease in pressure, so it shifts toward the reactants (reverse direction).\n\n(d) (i) A catalyst has no effect on the value of Kc. (ii) A catalyst decreases the time required to reach equilibrium, because it speeds up both the forward and reverse reaction rates equally without changing the equilibrium position.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly predicting a shift toward reactants (reverse); 1 point for correct reasoning treating heat as a product of the exothermic forward reaction.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly stating that Kc decreases; 1 point for correctly explaining that the shift toward reactants at higher temperature reflects an actual new (smaller) K value; 1 point for correctly contrasting this with concentration changes (like adding O2), which shift position but do not change K.", "points": 3, "allowsErrorCarriedForward": false },
+      { "partLabel": "(c)", "criterion": "1 point for correctly predicting a shift toward reactants (reverse); 1 point for correctly identifying the mole counts (3 mol gas on the reactant side versus 2 mol on the product side); 1 point for correct Le Chatelier reasoning connecting increased volume/decreased pressure to favoring the side with more moles of gas.", "points": 3, "allowsErrorCarriedForward": false },
+      { "partLabel": "(d)", "criterion": "1 point for correctly stating a catalyst has no effect on Kc; 1 point for correctly stating a catalyst decreases the time to reach equilibrium.", "points": 2, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Treat heat as a 'product' for this exothermic reaction when applying Le Chatelier's principle to a temperature change.",
+      "Recall the general rule: changing concentration, pressure, or volume only shifts the position of equilibrium (not the value of K), while a catalyst affects neither K nor position, only the speed of reaching equilibrium. Only a temperature change actually changes K itself."
+    ]
+  }
+]

@@ -1,0 +1,239 @@
+[
+  {
+    "id": "ic-c1-mc-1",
+    "unitId": 1,
+    "stem": "Chemistry is best defined as the study of:",
+    "choices": ["living organisms and their life cycles", "matter and the changes it undergoes", "celestial bodies and their motion", "forces, motion, and energy in machines"],
+    "correctIndex": 1,
+    "topicTag": "1.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c1-mc-2",
+    "unitId": 1,
+    "stem": "Matter is anything that has mass and takes up space (volume).",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "1.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c1-mc-3",
+    "unitId": 1,
+    "stem": "Which of the following is NOT an example of matter?",
+    "choices": ["Air", "Water", "Light", "Iron"],
+    "correctIndex": 2,
+    "topicTag": "1.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c1-mc-4",
+    "unitId": 1,
+    "stem": "An observation is a tentative explanation for why something in nature behaves as it does, while a hypothesis is simply a direct record of what was measured.",
+    "choices": ["True", "False"],
+    "correctIndex": 1,
+    "topicTag": "1.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c1-mc-5",
+    "unitId": 1,
+    "stem": "Which statement best describes a scientific hypothesis?",
+    "choices": ["A proven fact that all scientists accept", "A tentative, testable explanation for an observation", "A mathematical description of a recurring pattern in nature", "An unchanging rule that has no exceptions"],
+    "correctIndex": 1,
+    "topicTag": "1.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c1-mc-6",
+    "unitId": 1,
+    "stem": "Which sequence best represents the typical flow of the scientific method?",
+    "choices": ["Theory, then law, then observation", "Observation, then hypothesis, then experiment, then theory or law", "Law, then hypothesis, then theory", "Experiment, then law, then observation"],
+    "correctIndex": 1,
+    "topicTag": "1.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c1-mc-7",
+    "unitId": 1,
+    "stem": "How does a scientific law differ from a scientific theory?",
+    "choices": [
+      "A law explains why something happens, while a theory only describes what happens",
+      "A law describes a consistent pattern observed in nature without explaining why, while a theory attempts to explain the underlying reason for the pattern",
+      "A law is always expressed as a mathematical equation, while a theory never is",
+      "A law is less trustworthy than a theory because it has not been tested as thoroughly"
+    ],
+    "correctIndex": 1,
+    "topicTag": "1.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c1-mc-8",
+    "unitId": 1,
+    "stem": "A well-supported scientific theory eventually becomes a scientific law once enough evidence has accumulated.",
+    "choices": ["True", "False"],
+    "correctIndex": 1,
+    "topicTag": "1.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c1-mc-9",
+    "unitId": 1,
+    "stem": "The law of conservation of mass states that:",
+    "choices": [
+      "Mass can be created but never destroyed",
+      "In an ordinary chemical reaction, matter is neither created nor destroyed",
+      "Mass and energy are always numerically equal",
+      "The total mass of the products always exceeds the total mass of the reactants"
+    ],
+    "correctIndex": 1,
+    "topicTag": "1.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c1-mc-10",
+    "unitId": 1,
+    "stem": "If 10 g of wood is burned completely in a closed container and only 2 g of solid ash remains, the missing 8 g of mass proves that the law of conservation of mass has been violated.",
+    "choices": ["True", "False"],
+    "correctIndex": 1,
+    "topicTag": "1.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c1-mc-11",
+    "unitId": 1,
+    "stem": "If 12 g of carbon reacts completely with 32 g of oxygen gas to form carbon dioxide, what mass of carbon dioxide is produced?",
+    "choices": ["12 g", "32 g", "44 g", "20 g"],
+    "correctIndex": 2,
+    "topicTag": "1.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c1-mc-12",
+    "unitId": 1,
+    "stem": "Which early Greek thinker proposed, purely through philosophical reasoning rather than experiment, that matter is made of small, indivisible particles?",
+    "choices": ["John Dalton", "Democritus", "J.J. Thomson", "Ernest Rutherford"],
+    "correctIndex": 1,
+    "topicTag": "1.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c1-mc-13",
+    "unitId": 1,
+    "stem": "John Dalton's atomic theory proposed that:",
+    "choices": [
+      "Atoms of different elements are identical to one another",
+      "Atoms can be created or destroyed during chemical reactions",
+      "All matter is composed of atoms, and atoms of a given element share the same properties",
+      "Atoms contain a dense, positively charged nucleus"
+    ],
+    "correctIndex": 2,
+    "topicTag": "1.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c1-mc-14",
+    "unitId": 1,
+    "stem": "J.J. Thomson's cathode ray tube experiments led to the discovery of the electron.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "1.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c1-mc-15",
+    "unitId": 1,
+    "stem": "Rutherford's gold foil experiment led him to conclude that:",
+    "choices": [
+      "Atoms have no internal structure at all",
+      "Most of an atom's mass and positive charge is concentrated in a tiny, dense nucleus",
+      "Electrons are located inside the nucleus alongside protons",
+      "Atoms are essentially solid spheres of uniform density"
+    ],
+    "correctIndex": 1,
+    "topicTag": "1.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c1-mc-16",
+    "unitId": 1,
+    "stem": "Which of the following is an example of matter, since it has both mass and volume?",
+    "choices": ["Sound", "Heat", "A block of aluminum", "Light"],
+    "correctIndex": 2,
+    "topicTag": "1.1",
+    "source": "original",
+    "explanation": "A block of aluminum occupies space and has a measurable mass, so it fits the definition of matter. Sound, heat, and light are all forms of energy transmitted as waves, not physical substances with their own mass and volume.",
+    "difficulty": "beginner",
+    "hints": ["Recall the two properties something must have to be classified as matter.", "Ask which choice, if placed on a scale and in a container, would give a nonzero mass and volume reading."]
+  },
+  {
+    "id": "ic-c1-mc-17",
+    "unitId": 1,
+    "stem": "A student records that a plant's leaves turned yellow after being watered less frequently. This recorded statement is an example of:",
+    "choices": ["A hypothesis", "An observation", "A law", "A theory"],
+    "correctIndex": 1,
+    "topicTag": "1.2",
+    "source": "original",
+    "explanation": "Recording what was directly observed (the leaves turning yellow) is an observation — a factual record of what occurred, without yet explaining why. A hypothesis would instead propose a testable reason for the color change, a law would summarize a pattern from many repeated observations, and a theory would offer a broader explanatory model, none of which apply to this single recorded fact.",
+    "difficulty": "beginner",
+    "hints": ["Ask whether the student is just describing what happened or trying to explain why it happened.", "An observation records data; a hypothesis proposes a testable explanation for it."]
+  },
+  {
+    "id": "ic-c1-mc-18",
+    "unitId": 1,
+    "stem": "A biologist notices that every sample of a particular plant she measures always has leaves arranged in a spiral pattern. She proposes that this pattern occurs because it lets each leaf capture sunlight with minimal overlap from other leaves. Which part of her work is functioning as a scientific theory?",
+    "choices": ["The repeated observation of the spiral pattern", "The proposed explanation involving sunlight exposure", "The act of measuring the plants", "The spiral pattern itself"],
+    "correctIndex": 1,
+    "topicTag": "1.3",
+    "source": "original",
+    "explanation": "The proposed explanation for why the spiral pattern exists (to maximize sunlight exposure) is functioning as a theory, since it attempts to account for the underlying reason behind an observed pattern. The repeated observation of the pattern itself would instead be summarized as a law — a description of what consistently happens — since it does not explain why it happens.",
+    "difficulty": "intermediate",
+    "hints": ["Distinguish between the part of the passage that just describes a repeated pattern and the part that tries to explain why it exists.", "A law states what happens; a theory explains why."]
+  },
+  {
+    "id": "ic-c1-mc-19",
+    "unitId": 1,
+    "stem": "When 5.0 g of hydrogen gas reacts completely with 40.0 g of oxygen gas, water is formed with no leftover reactants. According to the law of conservation of mass, what total mass of water is produced, and what percentage of that mass came from the oxygen?",
+    "choices": ["45.0 g of water; 88.9% from oxygen", "45.0 g of water; 11.1% from oxygen", "40.0 g of water; 100% from oxygen", "35.0 g of water; 80.0% from oxygen"],
+    "correctIndex": 0,
+    "topicTag": "1.4",
+    "source": "original",
+    "explanation": "By conservation of mass, the total product mass equals the sum of the reactant masses: 5.0 g + 40.0 g = 45.0 g of water. Oxygen's percentage of that total is 40.0/45.0 x 100% ≈ 88.9%. Choice B reports hydrogen's share instead of oxygen's. Choice C wrongly assumes only the larger reactant's mass carries into the product. Choice D uses a total mass not supported by the given values.",
+    "difficulty": "intermediate",
+    "hints": ["First add the two reactant masses to find the total mass of product formed.", "Then divide oxygen's individual mass by that total mass, not by hydrogen's mass, to get its percentage contribution."]
+  },
+  {
+    "id": "ic-c1-mc-20",
+    "unitId": 1,
+    "stem": "A 3.0 g strip of magnesium ribbon is burned completely in open air, forming solid magnesium oxide (MgO). After burning, the solid product has a mass of 5.0 g. A student claims this result violates the law of conservation of mass because the product is heavier than the original magnesium. Which explanation correctly resolves the student's claim?",
+    "choices": [
+      "The claim is correct; magnesium reactions are an exception to conservation of mass",
+      "The extra 2.0 g of mass came from oxygen gas in the air combining with the magnesium, so the total mass of all reactants (magnesium and oxygen) still equals the total mass of the product formed",
+      "The extra mass is due to a measurement error and should be ignored",
+      "Mass was created during the chemical reaction because burning is a highly exothermic process"
+    ],
+    "correctIndex": 1,
+    "topicTag": "1.4",
+    "source": "original",
+    "explanation": "Because the system is open to the surrounding air, oxygen gas (about 2.0 g) from the atmosphere reacted with the magnesium and became incorporated into the solid MgO product. The law of conservation of mass still holds once this unweighed reactant is accounted for: total reactant mass (3.0 g Mg + 2.0 g O2) equals total product mass (5.0 g MgO). Choice A wrongly treats this as an exception, choice C dismisses explainable data as error, and choice D confuses energy release with mass creation, which never occurs in ordinary chemical reactions.",
+    "difficulty": "advanced",
+    "hints": ["Consider whether every reactant involved in this burning reaction was actually included in the original 3.0 g starting mass.", "Burning in open air often involves a gas from the atmosphere as a second, unweighed reactant."]
+  },
+  {
+    "id": "ic-c1-mc-21",
+    "unitId": 1,
+    "stem": "Which of the following correctly places these historical discoveries in chronological order and correctly identifies what each contributed to atomic theory: (1) discovery of the electron, (2) proposal that atoms are indivisible, (3) discovery of the dense, positively charged nucleus?",
+    "choices": [
+      "(2) Dalton proposed indivisible atoms; (1) Thomson later discovered the electron, showing atoms have internal parts; (3) Rutherford later discovered the nucleus, showing that positive charge and most mass are concentrated centrally",
+      "(1) Thomson discovered the electron first; (2) Dalton then proposed atoms were indivisible in response; (3) Rutherford's nucleus discovery came last",
+      "(3) Rutherford discovered the nucleus first; (2) Dalton then proposed indivisible atoms; (1) Thomson discovered the electron last",
+      "All three discoveries occurred simultaneously and independently confirmed one another"
+    ],
+    "correctIndex": 0,
+    "topicTag": "1.5",
+    "source": "original",
+    "explanation": "The correct historical and conceptual order is: Dalton (early 1800s) proposed atoms were indivisible; Thomson (1897) discovered the electron via cathode ray tube experiments, showing atoms contain smaller charged particles and are therefore divisible; Rutherford (1911) then discovered the dense, positively charged nucleus via the gold foil experiment, revealing that positive charge and most mass are concentrated in a tiny central region. Each incorrect choice scrambles this chronology, contradicting the sequence in which each discovery built on and revised the previous model.",
+    "difficulty": "advanced",
+    "hints": ["Think about which model came first historically — the one that assumed atoms had no internal parts at all.", "The electron's discovery had to come before the nucleus's discovery, since the nucleus was inferred by studying how particles interacted with an atom already known to contain charged particles."]
+  }
+]

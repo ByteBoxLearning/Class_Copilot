@@ -1,0 +1,94 @@
+[
+  {
+    "id": "u5-frq-long-1",
+    "unitId": 5,
+    "kind": "long",
+    "points": 10,
+    "stem": "A chemist studies the gas-phase decomposition of compound J according to the equation 2 J(g) -> 2 L(g) + M(g). The reaction is carried out in a rigid, sealed container held at a constant temperature of 450 K, and [J] is monitored over time, giving the data below:\n\nTime (s): 0, 30, 60, 90\n[J] (M): 0.500, 0.250, 0.125, 0.0625\n\nThe forward reaction has an activation energy of Ea = 100. kJ/mol. The overall reaction is exothermic, releasing 65 kJ/mol (ΔH = -65 kJ/mol).",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Using the data table, determine the order of the reaction with respect to J. Justify your answer using the numerical pattern in the data (do not simply assume the order).",
+        "maxPoints": 3
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the value of the rate constant k for this reaction at 450 K. Include correct units.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(c)",
+        "prompt": "Calculate the activation energy of the reverse reaction, Ea,reverse. Then describe how the relative energies of J, (L + M), and the transition state would appear on a reaction energy (potential energy) diagram for this process.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(d)",
+        "prompt": "A catalyst is added that provides an alternate reaction pathway with a lower activation energy. Using the collision model, explain why this increases the rate of the reaction, and explain why the value of ΔH for the overall reaction is unaffected by the presence of the catalyst.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) The concentration of J falls from 0.500 to 0.250 M in the first 30 s, from 0.250 to 0.125 M in the next 30 s, and from 0.125 to 0.0625 M in the next 30 s. Each interval represents exactly one half-life (30 s), and this half-life is constant even as [J] decreases. Because the half-life of a first-order reaction is independent of concentration (t1/2 = ln2/k), while zero-order half-lives decrease and second-order half-lives increase as the reaction proceeds, this constant-half-life pattern shows the reaction is first order in J.\n\n(b) For a first-order reaction, k = ln(2)/t1/2 = 0.693/30 s = 0.0231 s^-1. (Units of s^-1 are required for a first-order rate constant.)\n\n(c) Using Ea,forward - Ea,reverse = ΔH: Ea,reverse = Ea,forward - ΔH = 100. kJ/mol - (-65 kJ/mol) = 165 kJ/mol. On a reaction energy diagram, the y-axis (potential energy) would show J (reactants) starting at some energy, rising to a single transition-state peak that is 100. kJ/mol above J, then dropping to the products L + M, which sit 65 kJ/mol below J (since the reaction is exothermic). Consistent with part (c), the peak is 165 kJ/mol above the lower-energy products, confirming Ea,reverse = 165 kJ/mol.\n\n(d) A catalyst provides an alternate mechanism with a lower activation energy barrier. By the collision model, at a given temperature the fraction of collisions possessing kinetic energy equal to or greater than Ea increases sharply as Ea is lowered (per the Arrhenius exponential term e^(-Ea/RT)), so a greater fraction of collisions are now effective, increasing the rate. However, ΔH is a state function that depends only on the energies of the initial reactants (J) and final products (L + M), which are unchanged by the catalyst; the catalyst only lowers the energy of the transition state/barrier along the pathway, so ΔH for the overall reaction remains -65 kJ/mol.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly identifying that the half-life is constant at 30 s across all three intervals; 1 point for stating the reaction is first order in J; 1 point for correct justification that a concentration-independent (constant) half-life is uniquely characteristic of first-order kinetics.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for using the correct first-order relationship k = ln2/t1/2 (or equivalent correct method, consistent with the order determined in part (a)); 1 point for the correct numerical value (k = 0.0231 s^-1, or the value consistent with the student's part (a) order and calculation); 1 point for correct units matching the order used (s^-1 for first order).",
+        "points": 3,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly calculating Ea,reverse = 165 kJ/mol using Ea,forward - ΔH (or equivalent valid method); 1 point for a correct qualitative description of the diagram showing products 65 kJ/mol below reactants and the transition-state peak 100. kJ/mol above reactants (equivalently 165 kJ/mol above products).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly explaining, via the collision model/Arrhenius reasoning, that a lower Ea increases the fraction of collisions with sufficient energy to react, increasing the rate; 1 point for correctly explaining that ΔH depends only on the energies of reactants and products (unaffected by the catalyst), since the catalyst only alters the pathway/transition state, not the initial or final states.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "bank"
+  },
+  {
+    "id": "u5-frq-short-1",
+    "unitId": 5,
+    "kind": "short",
+    "points": 4,
+    "stem": "Consider the overall gas-phase reaction 2 X(g) + Y(g) -> 2 Z(g). Kinetics experiments support the following two-step mechanism:\n\nStep 1 (fast, reversible): 2 X(g) <-> X2(g); forward rate constant k1, reverse rate constant k-1\nStep 2 (slow): X2(g) + Y(g) -> 2 Z(g); rate constant k2\n\nX2 is a reactive intermediate that does not accumulate in the reaction vessel.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Identify which elementary step is rate-determining, and write the rate law implied by that step in terms of the intermediate X2 and Y.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Using the pre-equilibrium approximation applied to Step 1, derive the overall experimental rate law in terms of only X and Y (eliminating [X2]), and state the overall order of the reaction.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) Step 2 is the slow step, so it is rate-determining. The rate law implied directly by this elementary step is rate = k2[X2][Y].\n\n(b) Because Step 1 is fast and reversible, it is treated as reaching a rapid pre-equilibrium relative to the slower Step 2: the forward and reverse rates of Step 1 are set equal, k1[X]^2 = k-1[X2], giving [X2] = (k1/k-1)[X]^2. Substituting into the Step 2 rate law: rate = k2(k1/k-1)[X]^2[Y] = k[X]^2[Y], where k = k2*k1/k-1 is the observed rate constant. This rate law is second order in X and first order in Y, for an overall reaction order of 3.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly identifying Step 2 (the slow step) as rate-determining; 1 point for the correct rate law rate = k2[X2][Y] expressed in terms of the intermediate X2 and reactant Y.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly applying the pre-equilibrium approximation to Step 1 (setting forward and reverse rates equal and solving for [X2] = (k1/k-1)[X]^2); 1 point for correctly substituting to obtain rate = k[X]^2[Y] (with k = k2k1/k-1) and correctly stating the overall reaction order is 3, consistent with the student's step 2 rate law from part (a).",
+        "points": 2,
+        "allowsErrorCarriedForward": true
+      }
+    ],
+    "source": "bank"
+  }
+]

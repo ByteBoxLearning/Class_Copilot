@@ -1,0 +1,386 @@
+[
+  {
+    "id": "ic3-short-1",
+    "unitId": 3,
+    "kind": "short",
+    "points": 4,
+    "stem": "Classify each of the following samples as an element, a compound, a homogeneous mixture, or a heterogeneous mixture: (1) a glass of orange juice with visible pulp floating in it; (2) pure oxygen gas, O2, in a tank; (3) a stainless-steel spoon (an alloy made of iron, chromium, and nickel atoms mixed together, not chemically combined in a fixed ratio); (4) table salt, NaCl.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Classify samples (1) and (2), briefly justifying each classification.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Classify samples (3) and (4), briefly justifying each classification.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(1) Orange juice with visible pulp is a heterogeneous mixture — it is visibly non-uniform, and the pulp is a distinguishable, separable component.\n(2) Pure oxygen gas, O2, is an element — even though it exists as diatomic molecules, only one type of atom (oxygen) is present.\n(3) Stainless steel is a homogeneous mixture (specifically, an alloy) — it is uniform throughout at the visible scale even though it contains several kinds of metal atoms, because those atoms are physically mixed rather than chemically combined in one fixed ratio.\n(4) Table salt, NaCl, is a compound — two different elements (sodium and chlorine) are chemically combined in a fixed, definite ratio.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly classifying orange juice with pulp as a heterogeneous mixture with valid reasoning (visibly non-uniform/separable pulp); 1 point for correctly classifying O2 gas as an element with valid reasoning (only one type of atom present).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly classifying stainless steel as a homogeneous mixture (alloy) with valid reasoning (uniform but not chemically combined in a fixed ratio); 1 point for correctly classifying NaCl as a compound with valid reasoning (two elements chemically combined in a fixed ratio).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": ["Ask whether the sample looks uniform throughout, and whether it involves one type of atom, multiple atoms chemically bonded in a fixed ratio, or atoms just physically mixed together.", "An alloy like stainless steel is a mixture, not a compound, because its component atoms aren't combined in one fixed chemical ratio."]
+  },
+  {
+    "id": "ic3-short-2",
+    "unitId": 3,
+    "kind": "short",
+    "points": 4,
+    "stem": "A student performs two tests using iron nails. Test 1: the student bends an iron nail into a hook shape using pliers. Test 2: the student leaves an identical iron nail outside in the rain for two weeks, and it becomes coated with a reddish-brown, flaky substance (rust, Fe2O3).",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Identify whether Test 1 represents a physical change or a chemical change, and explain your reasoning.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Identify whether Test 2 represents a physical change or a chemical change, and explain your reasoning, including what evidence supports your classification.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) Test 1 is a physical change: bending the nail changes only its shape/form. The substance is still iron (the same chemical composition and identity), and no new substance is formed.\n\n(b) Test 2 is a chemical change: a new substance, iron(III) oxide (rust, Fe2O3), forms from the reaction of iron with oxygen and water. The evidence is that the rust has clearly different properties from the original iron (reddish-brown color, flaky/brittle texture, versus the original shiny, solid gray metal) — the formation of a new substance with different properties is evidence of a chemical change.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly identifying Test 1 as a physical change; 1 point for reasoning that the substance's identity/composition (iron) is unchanged, only its shape.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly identifying Test 2 as a chemical change; 1 point for reasoning that a new substance (rust, Fe2O3) with different properties than iron has formed.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": ["Ask whether a new substance with different properties was formed, or whether only the shape/form changed.", "Look for evidence like a color or texture change, which often signals a chemical change."]
+  },
+  {
+    "id": "ic3-long-1",
+    "unitId": 3,
+    "kind": "long",
+    "points": 10,
+    "stem": "A student heats a 50.0 g sample of liquid water from 20.0°C to 64.0°C in an insulated container using an electric heater. The specific heat capacity of liquid water is 4.18 J/(g·°C).",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Calculate the amount of heat energy, q, absorbed by the water, showing your setup with units.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(b)",
+        "prompt": "Is this process endothermic or exothermic, from the water's point of view? Explain your reasoning.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(c)",
+        "prompt": "The student repeats the experiment with a second, 100.0 g sample of water (twice the mass), starting at the same 20.0°C, and supplies it with the exact same amount of heat energy you calculated in part (a). Calculate the temperature change (ΔT) this second sample would undergo.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(d)",
+        "prompt": "Based on your answers to parts (a) and (c), explain in general terms how the mass of a substance affects the temperature change produced by a fixed amount of heat energy, all else being equal.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) ΔT = 64.0°C - 20.0°C = 44.0°C. q = m·c·ΔT = 50.0 g × 4.18 J/(g·°C) × 44.0°C = 9196 J ≈ 9.20 × 10^3 J (3 significant figures).\n\n(b) Endothermic, from the water's point of view — the water is absorbing/gaining heat energy from the heater, which is why its temperature increases.\n\n(c) Using the same heat energy, q = 9196 J, with the new mass: ΔT = q / (m·c) = 9196 J / (100.0 g × 4.18 J/(g·°C)) = 9196 J / 418 J/°C = 22.0°C.\n\n(d) Since q = m·c·ΔT, for a fixed amount of heat energy (q) and a fixed specific heat (c), the temperature change (ΔT) is inversely proportional to mass: doubling the mass (from 50.0 g to 100.0 g) exactly halved the temperature change (from 44.0°C to 22.0°C). In general, a fixed amount of energy produces a smaller temperature change in a larger mass of the same substance than in a smaller mass.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly calculating ΔT = 44.0°C; 1 point for the correct setup, q = m·c·ΔT, with correct substitution; 1 point for the correct final answer, approximately 9.20 × 10^3 J (9196 J unrounded), with correct units.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly identifying the process as endothermic; 1 point for reasoning that the water is gaining/absorbing energy, causing its temperature to rise.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly rearranging q = m·c·ΔT to solve for ΔT, using the same q value computed in the student's own part (a); 1 point for correctly substituting the new mass, 100.0 g; 1 point for the correct final ΔT, consistent with the student's own part (a) q value divided by (100.0 g × 4.18 J/(g·°C)).",
+        "points": 3,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly stating the inverse relationship between mass and ΔT for a fixed heat energy; 1 point for a correct general explanation that is numerically consistent with the student's own part (a) and part (c) results (e.g., noting that mass doubling led to ΔT halving, or an equivalent correct pattern based on their own numbers).",
+        "points": 2,
+        "allowsErrorCarriedForward": true
+      }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": ["Use q = m·c·ΔT for both parts (a) and (c), just solving for different variables.", "For part (d), compare how the mass changed between the two trials to how the temperature change responded."]
+  },
+  {
+    "id": "ic3-long-2",
+    "unitId": 3,
+    "kind": "long",
+    "points": 10,
+    "stem": "A 25.0 g ice cube at -10.0°C is heated slowly and steadily on a hot plate until it becomes steam at 110°C, while its temperature is recorded every 10 seconds and graphed against time (a heating curve). Separately, in a different experiment, 10.0 g of solid calcium carbonate (CaCO3) is heated strongly in an open container and decomposes completely: CaCO3(s) -> CaO(s) + CO2(g), with the CO2 gas escaping into the air. After the reaction, the solid residue (CaO) remaining in the container has a mass of 5.6 g.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Describe what happens to the shape of the heating curve (temperature vs. time graph) while the ice is melting at 0°C — specifically, does the temperature rise steadily, stay flat, or drop, during this portion? Why?",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain, at the particulate level, why the temperature does not change while the ice is melting, even though the hot plate is continuously supplying heat energy to the sample.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(c)",
+        "prompt": "Using the law of conservation of mass, calculate the mass of CO2 gas that escaped during the decomposition of the calcium carbonate.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(d)",
+        "prompt": "Explain why this decomposition, if performed in a sealed, rigid container instead of an open one, would still obey the law of conservation of mass even though no gas could escape — describe what a scale would show before and after heating in the sealed case.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) The temperature stays flat (constant) at 0°C during the melting phase change — it does not rise — even though heat is continuously being added.\n\n(b) During melting, the added heat energy is being used to overcome the intermolecular attractive forces holding water molecules in the fixed, ordered arrangement of the solid (ice) lattice, allowing the molecules to move more freely as a liquid, rather than increasing the molecules' average kinetic energy (speed). Since temperature is a measure of average kinetic energy, and that is not increasing during the phase change, the temperature stays constant even while energy is still being absorbed.\n\n(c) By conservation of mass, mass of CaCO3 (reactant) = mass of CaO (solid product) + mass of CO2 (gas product). Mass of CO2 = 10.0 g - 5.6 g = 4.4 g.\n\n(d) In a sealed, rigid container, the CO2 gas produced cannot escape, so it stays trapped inside along with the solid CaO. A scale would show the exact same total mass before and after heating (mass of container + contents unchanged), because no matter enters or leaves the system — the total mass of the CaCO3 reactant still equals the total mass of the CaO and CO2 products, it's just that in the sealed case, all of that mass stays together in one container instead of the CO2 mass leaving.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly stating that the temperature stays flat/constant (does not rise) during melting; 1 point for correctly noting this constant-temperature plateau is the expected behavior during a phase change at the melting point.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for stating that the energy goes into overcoming intermolecular forces/breaking down the ordered solid structure rather than increasing kinetic energy; 1 point for correctly connecting temperature to the average kinetic energy of the particles; 1 point for explaining that because average kinetic energy is not increasing, temperature does not rise even though energy is still being absorbed.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly applying conservation of mass (mass of CaCO3 = mass of CaO + mass of CO2); 1 point for the correct subtraction setup (10.0 g - 5.6 g); 1 point for the correct final answer, 4.4 g, with correct units.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly stating that the scale reading would be unchanged (same total mass) before and after heating in the sealed container; 1 point for correct reasoning that no matter enters or leaves the system, so the trapped products' total mass equals the original reactant's mass.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": ["During a phase change, added energy affects intermolecular forces, not average kinetic energy — think about what that means for temperature.", "For part (c), apply conservation of mass: whatever mass doesn't remain as solid must have left as gas."]
+  },
+  {
+    "id": "ic3-short-3",
+    "unitId": 3,
+    "kind": "short",
+    "points": 4,
+    "stem": "A cup of coffee has an initial temperature of 85.0°C.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Convert this temperature to Fahrenheit, showing your calculation.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Convert this same temperature to kelvin.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) F = (9/5)C + 32 = (9/5)(85.0) + 32 = 153 + 32 = 185°F.\n\n(b) K = C + 273 = 85.0 + 273 = 358 K (358.15 K if using the more precise K = C + 273.15).",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for using the correct formula, F = (9/5)C + 32; 1 point for the correct final answer, 185°F.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for using the correct formula, K = C + 273 (or K = C + 273.15); 1 point for the correct final answer, 358 K (358.15 K also acceptable).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": ["Plug 85.0 directly into the Celsius-to-Fahrenheit formula, being careful with order of operations.", "Converting Celsius to kelvin only requires adding a constant offset, not multiplying."]
+  },
+  {
+    "id": "ic3-short-4",
+    "unitId": 3,
+    "kind": "short",
+    "points": 4,
+    "stem": "A 20.0 g sample of aluminum absorbs 450 J of heat energy, causing its temperature to rise from an initial temperature of 25.0°C to a higher final temperature. The specific heat capacity of aluminum is 0.900 J/(g·°C).",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Calculate the temperature change (ΔT) of the aluminum sample.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the final temperature of the aluminum sample.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) ΔT = q / (m·c) = 450 J / (20.0 g × 0.900 J/(g·°C)) = 450 J / 18.0 J/°C = 25.0°C.\n\n(b) Final temperature = initial temperature + ΔT = 25.0°C + 25.0°C = 50.0°C.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly rearranging q = m·c·ΔT to solve for ΔT; 1 point for the correct final answer, 25.0°C.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly adding the student's own part (a) ΔT to the initial temperature; 1 point for the correct final answer, 50.0°C, consistent with the student's own part (a) value.",
+        "points": 2,
+        "allowsErrorCarriedForward": true
+      }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": ["Rearrange q = m·c·ΔT to solve for ΔT before plugging in the numbers.", "The final temperature is just the initial temperature plus the temperature change you find in part (a)."]
+  },
+  {
+    "id": "ic3-long-3",
+    "unitId": 3,
+    "kind": "long",
+    "points": 10,
+    "stem": "A 40.0 g sample of liquid wax is initially at 85.0°C, which is above its melting point of 65.0°C. The wax is cooled slowly and steadily, releasing heat to its surroundings. The specific heat capacity of liquid wax is 2.30 J/(g·°C).",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Calculate the amount of heat energy released as the liquid wax cools from 85.0°C down to its melting point, 65.0°C (before any solidification begins).",
+        "maxPoints": 3
+      },
+      {
+        "label": "(b)",
+        "prompt": "While the wax is solidifying at exactly 65.0°C, does its temperature rise, fall, or stay constant? Explain why, using ideas about intermolecular forces and kinetic energy.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(c)",
+        "prompt": "Is this cooling and solidifying process, from the wax's point of view, endothermic or exothermic? Explain your reasoning.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(d)",
+        "prompt": "Explain how the law of conservation of energy applies to this scenario overall — specifically, where does the heat energy released by the wax go?",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) ΔT = 85.0°C - 65.0°C = 20.0°C. q = m·c·ΔT = 40.0 g × 2.30 J/(g·°C) × 20.0°C = 1840 J released.\n\n(b) The temperature stays constant at 65.0°C during solidification. As the wax solidifies, its molecules move closer together and settle into a more ordered arrangement with stronger intermolecular attractions, which releases energy — but this change corresponds to a decrease in potential energy from the changing arrangement, not a decrease in average kinetic energy. Since temperature depends on average kinetic energy, and that is not changing during the phase change, the temperature remains constant even as energy continues to leave the wax.\n\n(c) Exothermic, from the wax's point of view — heat energy is flowing out of the wax and into the surroundings, which is why the wax's temperature is falling and it is solidifying.\n\n(d) By the law of conservation of energy, the heat energy released by the wax is not destroyed — it is transferred to the wax's surroundings (such as the surrounding air), increasing their thermal energy. The total energy of the entire system (wax plus surroundings) remains constant throughout the process; energy only moves from one part of the system to another.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly calculating ΔT = 20.0°C; 1 point for the correct setup, q = m·c·ΔT, with correct substitution; 1 point for the correct final answer, 1840 J, with correct units.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly stating the temperature stays constant during solidification; 1 point for explaining that released energy corresponds to molecules forming a more ordered arrangement with stronger attractions (a change in potential energy/arrangement); 1 point for correctly explaining that average kinetic energy (and therefore temperature) is not changing during the phase change.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly identifying the process as exothermic; 1 point for reasoning that heat is flowing out of the wax into the surroundings.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly stating that the heat energy is transferred to the surroundings rather than destroyed; 1 point for correctly stating that the total energy of the wax-plus-surroundings system remains constant.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": ["Use q = m·c·ΔT for part (a), just as you would for warming a substance.", "For part (b), separate what happens to the molecules' arrangement (intermolecular forces) from what happens to their average speed (kinetic energy/temperature)."]
+  },
+  {
+    "id": "ic3-long-4",
+    "unitId": 3,
+    "kind": "long",
+    "points": 10,
+    "stem": "A student dissolves 20.0 g of ammonium nitrate (NH4NO3) into 100.0 g of water in a foam cup calorimeter. The water's temperature drops from 24.0°C to 16.0°C as the solid dissolves completely, forming a clear, uniform solution. The specific heat capacity of the resulting solution is approximately 4.18 J/(g·°C), and its total mass (solute + water) is 120.0 g.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Classify the resulting solution as an element, compound, homogeneous mixture, or heterogeneous mixture, and justify your classification.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Is dissolving the ammonium nitrate in this case a physical change or a chemical change? Justify your answer.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(c)",
+        "prompt": "Calculate the magnitude of the heat energy involved in this temperature change, using q = m·c·ΔT with the total solution mass.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(d)",
+        "prompt": "Based on the temperature change observed, is the dissolving process endothermic or exothermic overall? Explain your reasoning, and describe where the heat energy involved came from, consistent with the law of conservation of energy.",
+        "maxPoints": 3
+      }
+    ],
+    "workedSolution": "(a) The resulting solution is a homogeneous mixture: it has uniform composition throughout (a solute distributed evenly in a solvent), but it is not a compound, since the NH4NO3 and water are physically mixed rather than chemically combined in one single new fixed-ratio substance.\n\n(b) Dissolving is a physical change: no new substance is formed — the ammonium nitrate is still chemically NH4NO3 (dispersed as ions among the water molecules), and it could in principle be recovered in its original chemical form by evaporating the water away.\n\n(c) ΔT = 24.0°C - 16.0°C = 8.0°C. q = m·c·ΔT = 120.0 g × 4.18 J/(g·°C) × 8.0°C = 4012.8 J ≈ 4.0 × 10^3 J.\n\n(d) The process is endothermic: the solution's temperature dropped, meaning the dissolving process absorbed heat energy from the surrounding solution itself. The energy required to break apart the ionic lattice of NH4NO3 and separate its ions comes from the thermal (kinetic) energy of the water molecules, which is why the solution's temperature falls. Consistent with the law of conservation of energy, this energy is not destroyed — it is transferred from the thermal energy of the water into the energy needed to separate and disperse the ions in solution.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly classifying the solution as a homogeneous mixture; 1 point for valid reasoning (uniform composition, but physically mixed rather than chemically combined in one fixed-ratio compound).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly identifying dissolving as a physical change; 1 point for reasoning that the NH4NO3 retains its chemical identity and could be recovered unchanged.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly calculating ΔT = 8.0°C; 1 point for the correct setup, q = m·c·ΔT, using the total mass of 120.0 g; 1 point for the correct final answer, approximately 4.0 × 10^3 J (4012.8 J unrounded).",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly identifying the process as endothermic; 1 point for reasoning that the dissolving process absorbs heat from the surrounding water/solution, lowering its temperature; 1 point for correctly connecting this to conservation of energy (energy transferred, not created or destroyed).",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": ["For part (a), think about whether the components are chemically combined in one fixed ratio or just evenly mixed together.", "For part (d), a temperature drop in the solution means the dissolving process is taking energy from somewhere — think about where that energy could be coming from."]
+  }
+]

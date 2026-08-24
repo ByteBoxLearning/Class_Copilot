@@ -1,0 +1,66 @@
+[
+  {
+    "id": "u1-mcq-1",
+    "unitId": 1,
+    "stem": "A 34.2 g sample of aluminum sulfate, Al2(SO4)3, is dissolved completely in water. How many moles of sulfate ion, SO4^2-, are present in the resulting solution? (Molar masses: Al = 26.98 g/mol, S = 32.07 g/mol, O = 16.00 g/mol)",
+    "choices": [
+      "0.0999 mol",
+      "0.200 mol",
+      "0.300 mol",
+      "0.400 mol"
+    ],
+    "correctIndex": 2,
+    "workedSolution": "Molar mass of Al2(SO4)3 = 2(26.98) + 3(32.07) + 12(16.00) = 53.96 + 96.21 + 192.00 = 342.17 g/mol.\nMoles of Al2(SO4)3 = 34.2 g / 342.17 g/mol = 0.0999 mol ≈ 0.100 mol.\nEach formula unit of Al2(SO4)3 contains 3 SO4^2- ions, so:\nmoles SO4^2- = 3 × 0.100 mol = 0.300 mol.",
+    "explanation": "The correct approach requires two steps: first find moles of the compound using its full molar mass, then multiply by the subscript on the sulfate ion (3) to get moles of sulfate ion. 0.0999 mol is a common mistake because it stops after finding moles of compound and forgets to apply the 1:3 mole ratio between compound and sulfate ion. 0.200 mol results from mistakenly multiplying by the subscript on aluminum (2) instead of the subscript on sulfate (3) — mixing up which part of the formula the question is asking about. 0.400 mol typically comes from a small error in computing the molar mass of Al2(SO4)3 (e.g., miscounting the oxygens), which shifts the mole calculation enough to produce this value after multiplying by 3.",
+    "topicTag": "Moles and Molar Mass",
+    "source": "bank"
+  },
+  {
+    "id": "u1-mcq-2",
+    "unitId": 1,
+    "stem": "An unknown element Q consists of three naturally occurring isotopes. Mass spectrometry data show: mass 84.0 amu at 55.0% relative abundance, mass 86.0 amu at 25.0% relative abundance, and mass 87.0 amu at 20.0% relative abundance. What is the average atomic mass of element Q?",
+    "choices": [
+      "84.6 amu",
+      "85.1 amu",
+      "85.7 amu",
+      "86.2 amu"
+    ],
+    "correctIndex": 1,
+    "workedSolution": "Average atomic mass = Σ(isotope mass × fractional abundance)\n= (84.0)(0.550) + (86.0)(0.250) + (87.0)(0.200)\n= 46.2 + 21.5 + 17.4\n= 85.1 amu.",
+    "explanation": "The correct method weights each isotope's mass by its fractional (not percent) abundance and sums the results, giving 85.1 amu. 85.7 amu comes from taking a simple, unweighted average of the three masses [(84.0+86.0+87.0)/3], ignoring that the isotopes are not equally abundant. 86.2 amu results from mismatching the abundances to the wrong masses (swapping the abundances of the lightest and heaviest isotopes). 84.6 amu comes from ignoring the least abundant isotope (87.0 amu, 20.0%) entirely and renormalizing the other two abundances, which improperly discards real isotopic data.",
+    "topicTag": "Mass Spectra of Elements",
+    "source": "bank"
+  },
+  {
+    "id": "u1-mcq-3",
+    "unitId": 1,
+    "stem": "The photoelectron spectrum (PES) of a neutral, ground-state atom of a period 3 element shows exactly four peaks. The relative binding energies and the relative number of electrons per peak are: 40 MJ/mol (2 e-), 4.0 MJ/mol (2 e-), 3.0 MJ/mol (6 e-), and 0.40 MJ/mol (2 e-). Which choice correctly identifies the element and the number of valence electrons in one atom of it?",
+    "choices": [
+      "Silicon (Si); 4 valence electrons",
+      "Magnesium (Mg); 2 valence electrons",
+      "Magnesium (Mg); 8 valence electrons",
+      "Neon (Ne); 8 valence electrons"
+    ],
+    "correctIndex": 1,
+    "workedSolution": "Total electrons = 2 + 2 + 6 + 2 = 12, so the element has atomic number 12, which is magnesium (Mg).\nBinding energy decreases as principal quantum number n increases (and, within the same n, s < p in energy but s has higher binding energy), so the peaks in order of decreasing binding energy correspond to: 1s (40 MJ/mol, 2 e-), 2s (4.0 MJ/mol, 2 e-), 2p (3.0 MJ/mol, 6 e-), 3s (0.40 MJ/mol, 2 e-).\nGround-state configuration: 1s2 2s2 2p6 3s2.\nValence electrons are those in the highest (outermost) principal energy level, n = 3: the 3s2 electrons only, so Mg has 2 valence electrons.",
+    "explanation": "Summing the relative electron counts (2+2+6+2 = 12) identifies the element as magnesium, and only the outermost 3s2 electrons count as valence electrons, giving 2. The 'Mg; 8 valence electrons' choice is a common mistake that incorrectly includes the 2p6 electrons as valence electrons because they are close in energy to 3s, rather than recognizing that valence electrons are defined by principal quantum number n, not by orbital energy alone. 'Neon; 8 valence electrons' results from only summing the first three peaks (2+2+6 = 10, misread as Ne) and ignoring the fourth peak entirely, then treating 2p6 as the valence shell. 'Silicon; 4 valence electrons' would require 5 peaks (1s, 2s, 2p, 3s, 3p) for a total of 14 electrons, so it is inconsistent with the four peaks and 12 total electrons actually given.",
+    "topicTag": "Photoelectron Spectroscopy",
+    "source": "bank"
+  },
+  {
+    "id": "u1-mcq-4",
+    "unitId": 1,
+    "stem": "The ions Cl^-, K^+, and Ca^2+ are isoelectronic (each has 18 electrons, the same electron configuration as argon). Which lists these three ions in order of increasing ionic radius (smallest to largest)?",
+    "choices": [
+      "Cl^- < K^+ < Ca^2+",
+      "K^+ < Ca^2+ < Cl^-",
+      "Ca^2+ < Cl^- < K^+",
+      "Ca^2+ < K^+ < Cl^-"
+    ],
+    "correctIndex": 3,
+    "workedSolution": "All three ions have the same number of electrons (18) and the same electron configuration, so their relative sizes are determined entirely by nuclear charge (number of protons): Cl has 17 protons, K has 19 protons, Ca has 20 protons.\nFor a fixed number of electrons, a larger nuclear charge pulls the electron cloud in more tightly, producing a smaller radius. So more protons → smaller ion.\nOrder of protons (increasing): Cl (17) < K (19) < Ca (20).\nOrder of radius is therefore the reverse of proton count: Ca^2+ (20 protons, smallest) < K^+ (19 protons) < Cl^- (17 protons, largest).",
+    "explanation": "Because the three species are isoelectronic, radius depends only on effective nuclear charge, which increases with proton number: Ca^2+ (20 p+) is smallest, K^+ (19 p+) is intermediate, and Cl^- (17 p+) is largest, giving Ca^2+ < K^+ < Cl^-. The choice 'Cl^- < K^+ < Ca^2+' is the exact reverse, a common error from assuming more protons means a larger ion instead of a smaller one. The other two choices are scrambled orderings that would only be correct if a student remembered the general isoelectronic-series trend but placed one ion out of order relative to its actual proton count.",
+    "topicTag": "Periodic Trends",
+    "source": "bank"
+  }
+]

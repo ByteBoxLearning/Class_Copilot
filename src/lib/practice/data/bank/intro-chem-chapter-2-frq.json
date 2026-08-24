@@ -1,0 +1,386 @@
+[
+  {
+    "id": "ic2-short-1",
+    "unitId": 2,
+    "kind": "short",
+    "points": 4,
+    "stem": "A chemistry student records three measurements: 0.0070 g, 4.020 × 10^3 mL, and 90.0 mm.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "State the number of significant figures in each of the three measurements.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "The mass measurement 0.0070 g is rounded to 1 significant figure. Write the correctly rounded value, and explain why this rounding changes how precisely the measurement is being reported.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) 0.0070 g has 2 significant figures (the leading zeros before the 7 are not significant; the 7 and the trailing zero after it, both after the decimal point, are significant). 4.020 × 10^3 mL has 4 significant figures (in scientific notation, every digit in the coefficient — 4, 0, 2, 0 — is significant). 90.0 mm has 3 significant figures (the decimal point shown after the trailing zero makes that zero significant, along with the 9 and the 0 before the decimal).\n\n(b) Rounded to 1 significant figure, 0.0070 g becomes 0.007 g. Dropping the trailing zero removes one significant figure (from 2 sig figs down to 1 sig fig), so the rounded value now claims certainty only down to the thousandths place, rather than the ten-thousandths place implied by the original 2-sig-fig value — the measurement is now being reported with less precision than before.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "2 points if all three significant-figure counts are correct (2, 4, and 3, respectively); 1 point if exactly two of the three are correct; 0 points otherwise.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for the correctly rounded value, 0.007 g; 1 point for correctly explaining that removing the trailing zero reduces the number of significant figures (from 2 to 1) and therefore reports the measurement less precisely.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": ["Remember that leading zeros are never significant, but zeros between or after other significant digits often are.", "For scientific notation, every digit in the coefficient counts as significant."]
+  },
+  {
+    "id": "ic2-short-2",
+    "unitId": 2,
+    "kind": "short",
+    "points": 4,
+    "stem": "A recipe calls for 250 mL of vinegar, and a thermometer reads 37°C for a chemistry experiment.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Convert 250 mL to liters, showing the conversion factor you used.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Convert 37°C to kelvin, showing your calculation.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) 250 mL × (1 L / 1000 mL) = 0.250 L.\n\n(b) K = °C + 273.15, so K = 37 + 273.15 = 310.15 K (many intro-level courses simplify this to K = °C + 273, giving the equivalent rounded answer of 310 K).",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for using the correct conversion factor (1 L / 1000 mL); 1 point for the correct final answer, 0.250 L (0.25 L is also acceptable).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for using the correct formula, K = °C + 273.15 (or the simplified K = °C + 273); 1 point for the correct final answer, 310.15 K (310 K is also acceptable if the simplified formula was used).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": ["Set up your conversion factor so that milliliters cancel out, leaving liters.", "Remember the formula relating Celsius and kelvin differs only by a constant offset, not a multiplication factor."]
+  },
+  {
+    "id": "ic2-long-1",
+    "unitId": 2,
+    "kind": "long",
+    "points": 10,
+    "stem": "A student wants to determine whether a small silver-colored ring is made of pure silver (density = 10.5 g/mL) or a silver-colored alloy of some less dense metal. Using a balance, the student measures the ring's mass as 15.75 g. The student then places the ring in a graduated cylinder that initially contains 20.00 mL of water; after the ring is fully submerged, the water level rises to 21.50 mL.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Calculate the volume of the ring using the water-displacement data.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the density of the ring, showing your setup and reporting your answer with correct units and an appropriate number of significant figures.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(c)",
+        "prompt": "Based on your calculated density, determine whether the ring is likely pure silver or a less dense alloy. Justify your conclusion by comparing to the given density of pure silver.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(d)",
+        "prompt": "The student repeats the measurement using a different graduated cylinder marked only in whole milliliters (no finer markings). Explain how using this less precise cylinder would affect the number of significant figures that could be justified in the final density calculation, even though the mass measurement stays the same.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) Volume of ring = final volume - initial volume = 21.50 mL - 20.00 mL = 1.50 mL.\n\n(b) Density = mass / volume = 15.75 g / 1.50 mL = 10.5 g/mL (3 significant figures, limited by the 1.50 mL volume).\n\n(c) The calculated density (10.5 g/mL) matches the given density of pure silver (10.5 g/mL), so the ring is most likely pure silver rather than an alloy. If the ring were an alloy mixed with a less dense metal, its overall density would be expected to be noticeably lower than pure silver's density.\n\n(d) A cylinder marked only in whole milliliters can typically only be read to about ±1 mL (or, at best, estimated to the nearest 0.5 mL), instead of the finer ±0.01 mL precision implied by the original readings (20.00 mL and 21.50 mL). This means the displaced volume would only be known to about 1–2 significant figures instead of 3, and since a calculated result can only be as precise as the least precise measurement used to find it, the final density would then also only be justified to about 1–2 significant figures, even though the mass measurement itself is unaffected.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for the correct subtraction setup (21.50 mL - 20.00 mL); 1 point for the correct answer, 1.50 mL, with correct units.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly identifying density = mass / volume; 1 point for correctly dividing the given mass by the student's own volume from part (a); 1 point for the correct final numeric answer with correct units and 3 significant figures, consistent with the student's own part (a) value.",
+        "points": 3,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly comparing the calculated density to the reference density of 10.5 g/mL for pure silver; 1 point for a conclusion (pure silver) that logically follows from that comparison; 1 point for reasoning that an alloy with a less dense metal would be expected to lower the overall density. If the student's part (b) density differed from 10.5 g/mL due to an earlier arithmetic error, award credit for a conclusion that is logically consistent with their own calculated density.",
+        "points": 3,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly explaining that a coarser cylinder gives a less precise volume reading (larger uncertainty); 1 point for correctly connecting this reduced volume precision to a reduction in the number of significant figures justified in the final density.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": ["Find the volume of the ring first using the change in water level before calculating density.", "For part (d), think about how the precision of a volume reading affects how many significant figures are justified in a calculated density."]
+  },
+  {
+    "id": "ic2-long-2",
+    "unitId": 2,
+    "kind": "long",
+    "points": 10,
+    "stem": "A pharmacist is preparing a saline solution and needs to convert between units as part of quality control. A bottle contains 1.50 L of saline solution, formulated so that each liter contains 9.00 g of dissolved sodium chloride (NaCl).",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Calculate the total mass, in grams, of NaCl dissolved in the entire 1.50 L bottle. Show your dimensional-analysis setup, including units.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(b)",
+        "prompt": "Convert your answer from part (a) into milligrams (mg).",
+        "maxPoints": 2
+      },
+      {
+        "label": "(c)",
+        "prompt": "Two students each weigh a sample of NaCl believed to be 5.00 g, using different balances, and repeat the measurement 3 times. Student 1 gets: 5.01 g, 4.99 g, 5.00 g. Student 2 gets: 4.50 g, 5.60 g, 4.90 g. Identify which student's data set shows better precision, and explain your reasoning.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(d)",
+        "prompt": "Explain the general difference between accuracy and precision, and state whether Student 1's data set (from part c) also appears to be accurate. Justify your answer using the given target value of 5.00 g.",
+        "maxPoints": 3
+      }
+    ],
+    "workedSolution": "(a) 9.00 g NaCl/L × 1.50 L = 13.5 g NaCl (3 significant figures).\n\n(b) 13.5 g × (1000 mg / 1 g) = 13,500 mg (1.35 × 10^4 mg).\n\n(c) Student 1's values (5.01, 4.99, 5.00 g) are clustered tightly together, within a range of only 0.02 g. Student 2's values (4.50, 5.60, 4.90 g) are spread out over a much wider range of 1.10 g. Because precision refers to how close repeated measurements are to one another, Student 1's data set shows better precision.\n\n(d) Accuracy describes how close a measurement is to the true or accepted value, while precision describes how close repeated measurements are to each other (their reproducibility), regardless of whether they are close to the true value. Student 1's average is (5.01 + 4.99 + 5.00) / 3 = 5.00 g, which matches the target value of 5.00 g exactly, so Student 1's data set is both precise (tightly clustered) and accurate (centered on the true value).",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for setting up the conversion using the given concentration (9.00 g/L) as a conversion factor; 1 point for correctly multiplying 9.00 × 1.50; 1 point for the correct final answer, 13.5 g, with correct units and significant figures.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for using the correct conversion factor (1000 mg / 1 g); 1 point for a final answer in mg that is exactly the student's own part (a) answer multiplied by 1000, even if part (a) contained an arithmetic error.",
+        "points": 2,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly identifying Student 1 as having better precision; 1 point for reasoning based on Student 1's tightly clustered values (small range) versus Student 2's widely spread values (large range).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for a correct general definition of accuracy (closeness to the true/accepted value); 1 point for a correct general definition of precision (closeness among repeated measurements); 1 point for correctly concluding that Student 1's data is also accurate, with reasoning tied to the average (5.00 g) matching the target value.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": ["Use the given concentration (grams per liter) as your conversion factor in part (a).", "For precision, look at how spread out or clustered a data set is; for accuracy, compare the average to the known target value."]
+  },
+  {
+    "id": "ic2-short-3",
+    "unitId": 2,
+    "kind": "short",
+    "points": 4,
+    "stem": "A student measures the length of a rectangular sample as 12.34 cm and its width as 5.2 cm.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Calculate the area of the rectangle (length × width), reporting your answer with the correct number of significant figures.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain which of the two measurements limited the number of significant figures allowed in your answer to part (a), and why.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) Area = 12.34 cm × 5.2 cm = 64.168 cm^2, which rounds to 64 cm^2 (2 significant figures, matching the least precise measurement).\n\n(b) The width measurement (5.2 cm) has only 2 significant figures, fewer than the length's 4 significant figures. Since a multiplication answer is limited by the factor with the fewest significant figures, the width determines the allowed precision of the final answer.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly multiplying to get 64.168 cm^2 (or an unrounded equivalent); 1 point for correctly rounding to 2 significant figures, 64 cm^2, with correct units.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly identifying the width (5.2 cm) as the limiting measurement; 1 point for correctly explaining the rule that a multiplication/division result is limited by the factor with the fewest significant figures.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": ["Count the significant figures in each of the two given measurements before you round your final answer.", "The measurement with fewer significant figures sets the limit for the whole calculation."]
+  },
+  {
+    "id": "ic2-short-4",
+    "unitId": 2,
+    "kind": "short",
+    "points": 4,
+    "stem": "A graduated cylinder measures 45.0 mL of a liquid.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Convert this volume to liters (L), showing your conversion factor.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "State the equivalent volume in cubic centimeters (cm^3), and briefly explain the relationship between the milliliter and the cubic centimeter as units.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) 45.0 mL × (1 L / 1000 mL) = 0.0450 L.\n\n(b) 45.0 cm^3. One milliliter is defined to be exactly equal to one cubic centimeter (1 mL = 1 cm^3), so converting between them requires no numeric scaling — the number stays the same, only the unit label changes.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for using the correct conversion factor (1 L / 1000 mL); 1 point for the correct final answer, 0.0450 L (0.045 L also acceptable).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly stating the equivalent volume, 45.0 cm^3; 1 point for correctly explaining that 1 mL and 1 cm^3 are defined to be exactly equal (a 1:1 relationship).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": ["For part (a), set up the conversion factor so that milliliters cancel, leaving liters.", "For part (b), recall that this particular pair of units doesn't require any multiplication to convert between them."]
+  },
+  {
+    "id": "ic2-long-3",
+    "unitId": 2,
+    "kind": "long",
+    "points": 10,
+    "stem": "A geology student is trying to identify an unknown mineral sample. The mass of the sample is measured as 2840 mg. The sample is placed in a graduated cylinder initially containing 15.00 mL of water; after the sample is fully submerged, the water level rises to 16.05 mL. Reference densities: quartz ≈ 2.65 g/mL, feldspar ≈ 2.70 g/mL, calcite ≈ 2.71 g/mL.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Convert the sample's mass from milligrams to grams.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the volume of the sample using the water-displacement data.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(c)",
+        "prompt": "Calculate the density of the sample, reporting your answer with correct units and an appropriate number of significant figures.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(d)",
+        "prompt": "Based on your calculated density, which mineral listed above does the sample most likely match? Explain why this water-displacement method might not reliably distinguish between feldspar and calcite, given the precision of the measurements used.",
+        "maxPoints": 3
+      }
+    ],
+    "workedSolution": "(a) 2840 mg × (1 g / 1000 mg) = 2.840 g.\n\n(b) Volume = 16.05 mL - 15.00 mL = 1.05 mL.\n\n(c) Density = mass / volume = 2.840 g / 1.05 mL ≈ 2.70 g/mL (3 significant figures, limited by the 1.05 mL volume).\n\n(d) The calculated density, 2.70 g/mL, matches feldspar's listed density exactly, but it is only 0.01 g/mL away from calcite's listed value (2.71 g/mL) — a difference smaller than the uncertainty inherent in reading a graduated cylinder to the nearest 0.05 mL or so. Because the volume measurement isn't precise enough to reliably tell apart densities this close together, this method cannot confidently rule out calcite; a more precise instrument (such as a burette or a cylinder with finer graduations) would be needed to reliably distinguish between minerals with such similar densities.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for using the correct conversion factor (1 g / 1000 mg); 1 point for the correct answer, 2.840 g.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for the correct subtraction setup (16.05 mL - 15.00 mL); 1 point for the correct answer, 1.05 mL.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly identifying density = mass / volume; 1 point for correctly dividing the student's own part (a) mass by their own part (b) volume; 1 point for the correct final numeric answer with correct units and appropriate significant figures.",
+        "points": 3,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly identifying feldspar as the closest match, consistent with the student's own part (c) value; 1 point for explaining that the density difference between feldspar and calcite is smaller than the uncertainty in the volume measurement; 1 point for reasoning that a more precise instrument would be needed to reliably distinguish between the two.",
+        "points": 3,
+        "allowsErrorCarriedForward": true
+      }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": ["Work through the unit conversion and the volume calculation before finding the density, since each step feeds into the next.", "Compare the size of the gap between the two closest reference densities to how precisely the volume was actually measured."]
+  },
+  {
+    "id": "ic2-long-4",
+    "unitId": 2,
+    "kind": "long",
+    "points": 10,
+    "stem": "A student experimentally determines the density of a sample of copper metal to be 8.75 g/mL. The accepted (literature) density of copper is 8.96 g/mL.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Calculate the student's percent error, using the formula: percent error = |experimental value - accepted value| / accepted value × 100%. Show your full calculation.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain what a percent error value close to 0% would indicate about the student's measurement, in terms of accuracy.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(c)",
+        "prompt": "The student repeats the measurement 4 more times, obtaining: 8.74, 8.76, 8.75, 8.77 g/mL (in addition to the original 8.75 g/mL trial). Describe whether this new set of 5 trials indicates good precision, good accuracy, both, or neither, using the accepted value and the spread of the data to justify your answer.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(d)",
+        "prompt": "Explain, in general, why it is possible for a data set to have low percent error (good accuracy on average) even if individual trials are not perfectly identical to each other.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) Percent error = |8.75 - 8.96| / 8.96 × 100% = 0.21 / 8.96 × 100% ≈ 2.34%.\n\n(b) A percent error close to 0% would indicate that the experimental value is very close to the accepted value, meaning the measurement is highly accurate.\n\n(c) The five trials (8.75, 8.74, 8.76, 8.75, 8.77 g/mL) are all tightly clustered within a range of only 0.03 g/mL, indicating good precision. Their average, (8.75 + 8.74 + 8.76 + 8.75 + 8.77) / 5 = 8.754 g/mL ≈ 8.75 g/mL, is still about 0.21 g/mL (roughly 2.3%) lower than the accepted value of 8.96 g/mL, indicating the data is precise but not highly accurate — consistent with a small systematic error rather than random scatter.\n\n(d) A data set can have low overall percent error (based on the average of many trials) even if no single trial exactly matches the accepted value, because small random variations among individual trials tend to cancel out when averaged together, so the average can land very close to the true value even though individual measurements scatter slightly above and below it. Accuracy describes how close the typical (average) result is to the true value, not whether every single measurement is identical to it.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly setting up the percent error formula; 1 point for the correct subtraction and division (0.21 / 8.96); 1 point for the correct final answer, approximately 2.34%.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly stating that a low percent error means the experimental value is close to the accepted value; 1 point for correctly connecting this to high accuracy.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly identifying the data as precise (tightly clustered, small range); 1 point for correctly identifying the data as not highly accurate (average still off from the accepted value by roughly 2%); 1 point for supporting reasoning that correctly uses the average and the accepted value.",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for explaining that random variations among trials can cancel out when averaged; 1 point for correctly stating that accuracy depends on the average/typical result matching the true value, not on every individual trial matching it.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": ["Plug the experimental and accepted values directly into the percent error formula, taking the absolute value of the difference.", "For part (c), calculate the average of all five trials before comparing it to the accepted value."]
+  }
+]

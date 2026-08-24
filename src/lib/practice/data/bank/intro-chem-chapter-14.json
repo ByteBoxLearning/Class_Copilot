@@ -1,0 +1,271 @@
+[
+  {
+    "id": "ic-c14-mc-1",
+    "unitId": 14,
+    "stem": "According to the Arrhenius definition, an acid is a substance that:",
+    "choices": [
+      "Produces H+ (H3O+) ions in aqueous solution",
+      "Produces OH- ions in aqueous solution",
+      "Accepts a proton",
+      "Donates a pair of electrons"
+    ],
+    "correctIndex": 0,
+    "topicTag": "14.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c14-mc-2",
+    "unitId": 14,
+    "stem": "According to the Arrhenius definition, a base produces hydroxide ions (OH-) when dissolved in water.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "14.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c14-mc-3",
+    "unitId": 14,
+    "stem": "According to the Bronsted-Lowry definition, an acid is defined as a substance that:",
+    "choices": [
+      "Donates a proton (H+)",
+      "Accepts a proton (H+)",
+      "Produces hydroxide ions in water",
+      "Donates a pair of electrons"
+    ],
+    "correctIndex": 0,
+    "topicTag": "14.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c14-mc-4",
+    "unitId": 14,
+    "stem": "A Bronsted-Lowry base is defined as a proton acceptor.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "14.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c14-mc-5",
+    "unitId": 14,
+    "stem": "In the reaction NH3 + H2O ⇌ NH4+ + OH-, which species acts as the Bronsted-Lowry acid?",
+    "choices": ["H2O", "NH3", "NH4+", "OH-"],
+    "correctIndex": 0,
+    "topicTag": "14.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c14-mc-6",
+    "unitId": 14,
+    "stem": "The pH of a solution is calculated as:",
+    "choices": ["pH = -log[H+]", "pH = log[H+]", "pH = -log[OH-]", "pH = [H+]/[OH-]"],
+    "correctIndex": 0,
+    "topicTag": "14.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c14-mc-7",
+    "unitId": 14,
+    "stem": "A solution with a pH of 3 is more acidic than a solution with a pH of 5.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "14.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c14-mc-8",
+    "unitId": 14,
+    "stem": "A solution with a pH of 3 is considered:",
+    "choices": ["Strongly basic", "Weakly basic", "Neutral", "Acidic"],
+    "correctIndex": 3,
+    "topicTag": "14.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c14-mc-9",
+    "unitId": 14,
+    "stem": "Pure water at 25°C has a pH of 7, which is considered neutral.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "14.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c14-mc-10",
+    "unitId": 14,
+    "stem": "A strong acid is one that:",
+    "choices": [
+      "Ionizes completely in water",
+      "Ionizes only partially in water",
+      "Does not dissolve in water",
+      "Always has a pH above 7"
+    ],
+    "correctIndex": 0,
+    "topicTag": "14.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c14-mc-11",
+    "unitId": 14,
+    "stem": "Acetic acid (found in vinegar) is classified as a strong acid because it is so commonly used.",
+    "choices": ["True", "False"],
+    "correctIndex": 1,
+    "topicTag": "14.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c14-mc-12",
+    "unitId": 14,
+    "stem": "Which of the following is classified as a strong acid?",
+    "choices": ["Hydrochloric acid (HCl)", "Acetic acid (CH3COOH)", "Carbonic acid (H2CO3)", "Citric acid"],
+    "correctIndex": 0,
+    "topicTag": "14.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c14-mc-13",
+    "unitId": 14,
+    "stem": "A neutralization reaction between an acid and a base typically produces:",
+    "choices": ["A salt and water", "Only a gas", "Only a precipitate", "A stronger acid"],
+    "correctIndex": 0,
+    "topicTag": "14.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c14-mc-14",
+    "unitId": 14,
+    "stem": "In a complete neutralization reaction, the moles of H+ supplied by the acid exactly equal the moles of OH- supplied by the base.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "14.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c14-mc-15",
+    "unitId": 14,
+    "stem": "In an acid-base titration, the point at which the indicator changes color, signaling the reaction is essentially complete, is called the:",
+    "choices": ["Endpoint", "Starting point", "Half-equivalence point", "Buffer point"],
+    "correctIndex": 0,
+    "topicTag": "14.6",
+    "source": "original"
+  },
+  {
+    "id": "ic-c14-mc-16",
+    "unitId": 14,
+    "stem": "During a titration, a burette is typically used to:",
+    "choices": [
+      "Deliver a precisely measured, variable volume of titrant",
+      "Measure the temperature of the solution",
+      "Filter the solution",
+      "Store the final product"
+    ],
+    "correctIndex": 0,
+    "topicTag": "14.6",
+    "source": "original"
+  },
+  {
+    "id": "ic-c14-mc-17",
+    "unitId": 14,
+    "stem": "Which of the following is an example of an Arrhenius base?",
+    "choices": [
+      "NaOH, because it produces OH- ions in water",
+      "HNO3, because it produces H+ ions in water",
+      "NH3, because it is a gas at room temperature",
+      "NaCl, because it is a salt"
+    ],
+    "correctIndex": 0,
+    "topicTag": "14.1",
+    "source": "original",
+    "explanation": "NaOH dissociates in water to release OH- ions, fitting the Arrhenius base definition. HNO3 produces H+ ions, which makes it an acid, not a base. The reasoning given for NH3 (that it is a gas) has nothing to do with the Arrhenius definition. NaCl is a neutral salt, neither an acid nor a base.",
+    "difficulty": "beginner",
+    "hints": [
+      "An Arrhenius base is defined by what ion it produces in water.",
+      "Look for the compound that releases OH- ions when dissolved."
+    ]
+  },
+  {
+    "id": "ic-c14-mc-18",
+    "unitId": 14,
+    "stem": "What is the pH of a solution with [H+] = 1.0 x 10^-9 M?",
+    "choices": ["9.00", "5.00", "-9.00", "1.0 x 10^-9"],
+    "correctIndex": 0,
+    "topicTag": "14.3",
+    "source": "original",
+    "explanation": "pH = -log[H+] = -log(1.0 x 10^-9) = 9.00. Choosing -9.00 forgets to apply the negative sign in the pH formula. Choosing 1.0 x 10^-9 mistakes the concentration itself for the pH value. Choosing 5.00 is unrelated to the given concentration.",
+    "difficulty": "beginner",
+    "hints": [
+      "pH = -log[H+].",
+      "log(1.0 x 10^-9) = -9, so don't forget to apply the negative sign in the formula."
+    ]
+  },
+  {
+    "id": "ic-c14-mc-19",
+    "unitId": 14,
+    "stem": "A 0.10 M solution of a strong acid, HX, is compared to a 0.10 M solution of a weak acid, HY, which is only 2.0% ionized. Which solution has the higher [H+]?",
+    "choices": [
+      "The HX solution, because strong acids ionize completely",
+      "The HY solution, because weak acids ionize less and therefore concentrate more H+",
+      "Both solutions have identical [H+] since both started at 0.10 M",
+      "Neither solution contains any H+ until an indicator is added"
+    ],
+    "correctIndex": 0,
+    "topicTag": "14.4",
+    "source": "original",
+    "explanation": "HX, being a strong acid, is essentially 100% ionized, so its [H+] is close to the full 0.10 M. HY is only 2.0% ionized, giving [H+] of about 0.0020 M, much lower than HX. The second choice reverses the logic of what 'weak' means. The third choice ignores that ionization extent (not just initial concentration) determines actual [H+]. The fourth choice is nonsensical; indicators do not create H+ ions.",
+    "difficulty": "intermediate",
+    "hints": [
+      "Strong acids ionize (nearly) completely in water, while weak acids only partially ionize.",
+      "Compare actual [H+] using percent ionization: 100% of 0.10 M versus 2.0% of 0.10 M."
+    ]
+  },
+  {
+    "id": "ic-c14-mc-20",
+    "unitId": 14,
+    "stem": "How many moles of HCl are required to completely neutralize 0.250 mol of Ca(OH)2, according to: 2 HCl(aq) + Ca(OH)2(aq) -> CaCl2(aq) + 2 H2O(l)?",
+    "choices": ["0.500 mol", "0.250 mol", "0.125 mol", "1.00 mol"],
+    "correctIndex": 0,
+    "topicTag": "14.5",
+    "source": "original",
+    "explanation": "From the balanced equation, 2 mol of HCl react per 1 mol of Ca(OH)2, so 0.250 mol Ca(OH)2 x (2 mol HCl / 1 mol Ca(OH)2) = 0.500 mol HCl. Choosing 0.250 mol assumes a 1:1 mole ratio, ignoring the coefficient of 2 on HCl. Choosing 0.125 mol incorrectly divides by 2 instead of multiplying. Choosing 1.00 mol applies the wrong ratio entirely.",
+    "difficulty": "intermediate",
+    "hints": [
+      "Use the mole ratio from the balanced chemical equation, not a 1:1 assumption.",
+      "Ca(OH)2 supplies 2 moles of OH- per mole, so it takes 2 moles of HCl to neutralize each mole of Ca(OH)2."
+    ]
+  },
+  {
+    "id": "ic-c14-mc-21",
+    "unitId": 14,
+    "stem": "A 20.00 mL sample of a weak monoprotic acid, HA, of unknown concentration is titrated with 0.100 M NaOH. The equivalence point is reached after adding 24.00 mL of NaOH. Which of the following best describes the pH at the equivalence point of this titration?",
+    "choices": [
+      "Greater than 7, because the conjugate base A- formed reacts with water to produce OH-",
+      "Exactly 7, because equal moles of acid and base have reacted",
+      "Less than 7, because excess H+ remains in solution",
+      "Equal to the pKa of the weak acid"
+    ],
+    "correctIndex": 0,
+    "topicTag": "14.6",
+    "source": "original",
+    "explanation": "At the equivalence point of a weak acid/strong base titration, the solution contains the conjugate base A-, which reacts with water (A- + H2O <-> HA + OH-) to produce excess OH-, making the equivalence point basic (pH greater than 7). 'Exactly 7' only holds for strong acid/strong base titrations. 'Less than 7' has the wrong direction. 'Equal to the pKa' actually describes the half-equivalence point, not the equivalence point.",
+    "difficulty": "advanced",
+    "hints": [
+      "Think about what species is present in solution at the equivalence point, after all the HA has reacted with NaOH.",
+      "The conjugate base of a weak acid can react with water. Is that reaction acidic or basic?"
+    ]
+  },
+  {
+    "id": "ic-c14-mc-22",
+    "unitId": 14,
+    "stem": "In the reaction HCO3-(aq) + H2O(l) <-> H2CO3(aq) + OH-(aq), the bicarbonate ion HCO3- is acting as a Bronsted-Lowry base. In a different reaction, HCO3-(aq) + H2O(l) <-> CO3^2-(aq) + H3O+(aq), it acts as a Bronsted-Lowry acid. This dual behavior makes HCO3- an example of a(n):",
+    "choices": ["Amphoteric (amphiprotic) species", "Strong electrolyte", "Spectator ion", "Nonelectrolyte"],
+    "correctIndex": 0,
+    "topicTag": "14.2",
+    "source": "original",
+    "explanation": "A species that can act as either a Bronsted-Lowry acid or base depending on the reaction is called amphoteric (or amphiprotic); HCO3- is a classic example since it can both donate and accept a proton. 'Strong electrolyte' refers to complete dissociation, not acid-base duality. 'Spectator ion' describes an ion that does not participate in a reaction, but HCO3- clearly does react here. 'Nonelectrolyte' refers to a substance that does not ionize in water at all, the opposite of what is shown.",
+    "difficulty": "advanced",
+    "hints": [
+      "A species that can donate a proton in one reaction and accept one in another has a special name.",
+      "Think of the prefix 'amphi-,' meaning 'both.'"
+    ]
+  }
+]

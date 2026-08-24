@@ -1,0 +1,243 @@
+[
+  {
+    "id": "ic-c10-mc-1",
+    "unitId": 10,
+    "stem": "An ionic bond typically forms between:",
+    "choices": ["Two nonmetals", "A metal and a nonmetal", "Two metals", "Two noble gases"],
+    "correctIndex": 1,
+    "topicTag": "10.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c10-mc-2",
+    "unitId": 10,
+    "stem": "Which of these compounds is best classified as ionic?",
+    "choices": ["CO2", "NaCl", "H2O", "CH4"],
+    "correctIndex": 1,
+    "topicTag": "10.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c10-mc-3",
+    "unitId": 10,
+    "stem": "Covalent bonds form when atoms share one or more pairs of electrons.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "10.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c10-mc-4",
+    "unitId": 10,
+    "stem": "Two chlorine atoms bond to form Cl2. Since both atoms have identical electronegativities, what type of bond forms between them?",
+    "choices": ["Ionic bond", "Polar covalent bond", "Nonpolar covalent bond", "Metallic bond"],
+    "correctIndex": 2,
+    "topicTag": "10.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c10-mc-5",
+    "unitId": 10,
+    "stem": "How many total valence electrons must be shown in the Lewis structure of CO2 (carbon contributes 4, each oxygen contributes 6)?",
+    "choices": ["8", "12", "16", "24"],
+    "correctIndex": 2,
+    "topicTag": "10.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c10-mc-6",
+    "unitId": 10,
+    "stem": "In the correct Lewis structure of water (H2O), how many lone pairs of electrons are shown on the oxygen atom?",
+    "choices": ["0", "1", "2", "3"],
+    "correctIndex": 2,
+    "topicTag": "10.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c10-mc-7",
+    "unitId": 10,
+    "stem": "In the Lewis structure of methane (CH4), the central carbon atom has no lone pairs of electrons.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "10.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c10-mc-8",
+    "unitId": 10,
+    "stem": "According to VSEPR theory, what is the molecular geometry of methane (CH4)?",
+    "choices": ["Trigonal planar", "Bent", "Tetrahedral", "Linear"],
+    "correctIndex": 2,
+    "topicTag": "10.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c10-mc-9",
+    "unitId": 10,
+    "stem": "Ammonia (NH3) has three bonding pairs and one lone pair on nitrogen. What is its molecular geometry?",
+    "choices": ["Tetrahedral", "Trigonal pyramidal", "Trigonal planar", "Bent"],
+    "correctIndex": 1,
+    "topicTag": "10.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c10-mc-10",
+    "unitId": 10,
+    "stem": "What is the molecular geometry of carbon dioxide (CO2)?",
+    "choices": ["Bent", "Trigonal planar", "Linear", "Tetrahedral"],
+    "correctIndex": 2,
+    "topicTag": "10.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c10-mc-11",
+    "unitId": 10,
+    "stem": "The bent molecular shape of water results from the two lone pairs on oxygen pushing the two bonding pairs closer together.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "10.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c10-mc-12",
+    "unitId": 10,
+    "stem": "Why is the CO2 molecule nonpolar overall even though each individual C=O bond is polar?",
+    "choices": [
+      "Carbon and oxygen have identical electronegativities",
+      "The molecule's linear, symmetric shape causes the bond dipoles to cancel",
+      "CO2 has no lone pairs on carbon",
+      "CO2 does not contain any polar bonds"
+    ],
+    "correctIndex": 1,
+    "topicTag": "10.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c10-mc-13",
+    "unitId": 10,
+    "stem": "Water (H2O) is a polar molecule primarily because:",
+    "choices": [
+      "Its bent shape prevents the O-H bond dipoles from canceling",
+      "Oxygen and hydrogen have the same electronegativity",
+      "It is a very small molecule",
+      "It contains an ionic bond"
+    ],
+    "correctIndex": 0,
+    "topicTag": "10.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c10-mc-14",
+    "unitId": 10,
+    "stem": "A molecule can contain polar bonds yet still be nonpolar overall if its symmetric shape causes the bond dipoles to cancel.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "10.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c10-mc-15",
+    "unitId": 10,
+    "stem": "Which of the following best describes how a covalent bond forms?",
+    "choices": [
+      "One atom completely transfers an electron to another atom",
+      "Two atoms share one or more pairs of electrons",
+      "Metal cations are surrounded by a sea of delocalized electrons",
+      "Oppositely charged ions attract each other electrostatically"
+    ],
+    "correctIndex": 1,
+    "topicTag": "10.1",
+    "source": "original",
+    "explanation": "A covalent bond forms when two atoms share one or more electron pairs, allowing both atoms to attain a more stable, often noble-gas-like electron arrangement. Choice A describes ionic bonding (electron transfer), not covalent bonding. Choice C describes metallic bonding. Choice D describes the electrostatic attraction that holds ions together in an ionic bond, not the bond-forming process itself.",
+    "difficulty": "beginner",
+    "hints": [
+      "Think about what happens to the electrons themselves -- are they given away, or divided between the two atoms?",
+      "Rule out the answer choices that describe ionic or metallic bonding instead."
+    ]
+  },
+  {
+    "id": "ic-c10-mc-16",
+    "unitId": 10,
+    "stem": "How many total valence electrons must be shown in the Lewis structure of NH3 (nitrogen contributes 5, each hydrogen contributes 1)?",
+    "choices": ["5", "8", "10", "3"],
+    "correctIndex": 1,
+    "topicTag": "10.2",
+    "source": "original",
+    "explanation": "Total valence electrons = nitrogen's 5 + three hydrogens x 1 each = 5 + 3 = 8. Choice A (5) only counts nitrogen's valence electrons and forgets the three hydrogens entirely. Choice C (10) overcounts, as if hydrogen contributed 2 electrons each. Choice D (3) only counts the hydrogens' contribution and leaves out nitrogen's 5 valence electrons.",
+    "difficulty": "beginner",
+    "hints": [
+      "Add up the valence electrons contributed by every atom in the formula, not just the central atom.",
+      "Each hydrogen atom contributes exactly 1 valence electron."
+    ]
+  },
+  {
+    "id": "ic-c10-mc-17",
+    "unitId": 10,
+    "stem": "Hydrogen sulfide (H2S) has a central sulfur atom with 2 bonding pairs (to the two H atoms) and 2 lone pairs, similar to the electron arrangement in water. What is the molecular geometry of H2S?",
+    "choices": ["Linear", "Bent", "Tetrahedral", "Trigonal pyramidal"],
+    "correctIndex": 1,
+    "topicTag": "10.3",
+    "source": "original",
+    "explanation": "With 4 total electron groups around the central atom (2 bonding pairs + 2 lone pairs), the electron-group geometry is tetrahedral, but because 2 of those 4 positions are lone pairs rather than bonded atoms, the molecular geometry (defined by atom positions only) is bent -- the same shape as water. Choice A (linear) would only apply if there were 2 electron groups with no lone pairs. Choice C (tetrahedral) describes the electron-group geometry, not the molecular geometry, since it ignores that 2 of the 4 positions are lone pairs. Choice D (trigonal pyramidal) is the shape that results from 3 bonding pairs and 1 lone pair (like NH3), not 2 bonding pairs and 2 lone pairs.",
+    "difficulty": "intermediate",
+    "hints": [
+      "Count the total number of electron groups (bonding pairs plus lone pairs) around sulfur first.",
+      "This is the same lone-pair-and-bonding-pair combination found in water -- what shape does water have?"
+    ]
+  },
+  {
+    "id": "ic-c10-mc-18",
+    "unitId": 10,
+    "stem": "Boron trifluoride (BF3) has three polar B-F bonds arranged symmetrically around boron in a trigonal planar shape, with no lone pairs on boron. Is BF3 polar or nonpolar overall?",
+    "choices": [
+      "Polar, because it contains polar bonds",
+      "Nonpolar, because the symmetric trigonal planar arrangement causes the three bond dipoles to cancel",
+      "Polar, because boron is more electronegative than fluorine",
+      "Nonpolar, because the B-F bonds themselves are nonpolar"
+    ],
+    "correctIndex": 1,
+    "topicTag": "10.4",
+    "source": "original",
+    "explanation": "Even though each individual B-F bond is polar, the three bond dipoles are arranged symmetrically (120 degrees apart) around boron in the trigonal planar shape, so their vector sum cancels to zero, making the overall molecule nonpolar. Choice A incorrectly assumes that having polar bonds automatically makes the whole molecule polar -- molecular polarity also depends on geometry. Choice C is factually backwards: fluorine, not boron, is the more electronegative atom in this bond. Choice D is incorrect because the B-F bonds are, in fact, individually polar due to the electronegativity difference between B and F.",
+    "difficulty": "intermediate",
+    "hints": [
+      "Having polar bonds does not automatically make a molecule polar overall -- the molecule's shape matters too.",
+      "Consider whether the three identical, symmetrically-arranged bond dipoles point in directions that add up or cancel out."
+    ]
+  },
+  {
+    "id": "ic-c10-mc-19",
+    "unitId": 10,
+    "stem": "Ozone (O3) cannot be accurately described by a single Lewis structure with fixed single and double bonds, because both oxygen-oxygen bonds in the real molecule are experimentally found to be identical in length. Which concept explains why chemists instead draw two (or more) equivalent Lewis structures and treat the true molecule as a blend of them?",
+    "choices": ["Isomerism", "Resonance", "Hybridization", "Ionic bonding"],
+    "correctIndex": 1,
+    "topicTag": "10.2",
+    "source": "original",
+    "explanation": "Resonance describes situations where a single Lewis structure cannot adequately represent a molecule, because the true electron distribution is a blend (average) of two or more valid Lewis structures that differ only in the placement of electrons, not atoms. For ozone, one resonance structure places the double bond on the left O-O bond and the other places it on the right; the real molecule's bonds are actually intermediate in length between a single and a double bond, consistent with resonance. Choice A (isomerism) describes different compounds with the same molecular formula but different atom connectivity, not different electron placements within one fixed connectivity. Choice C (hybridization) refers to the mixing of atomic orbitals within a single atom and does not by itself explain why multiple Lewis structures are needed. Choice D (ionic bonding) is unrelated, since ozone is a covalently bonded, nonionic molecule.",
+    "difficulty": "advanced",
+    "hints": [
+      "This concept applies specifically when a single Lewis structure with fixed single/double bonds doesn't match experimental bond-length data.",
+      "The two structures differ only in where the electrons (specifically, the double bond) are placed -- not in which atoms are connected to which."
+    ]
+  },
+  {
+    "id": "ic-c10-mc-20",
+    "unitId": 10,
+    "stem": "Chloromethane (CH3Cl) has a tetrahedral molecular geometry, the same overall shape as methane (CH4). However, unlike CH4, CH3Cl is a polar molecule overall. What best explains this difference?",
+    "choices": [
+      "CH3Cl's bonds are shorter than CH4's bonds",
+      "One hydrogen in CH4 has been replaced by a more electronegative chlorine atom, so the bond dipoles around the central carbon are no longer identical and do not fully cancel",
+      "Chlorine is a nonpolar element, so it does not affect the molecule's overall polarity",
+      "CH4 has more total valence electrons than CH3Cl, which is why it is nonpolar"
+    ],
+    "correctIndex": 1,
+    "topicTag": "10.4",
+    "source": "original",
+    "explanation": "In CH4, all four C-H bond dipoles are identical in strength and arranged symmetrically, so they cancel exactly, giving a nonpolar molecule. In CH3Cl, replacing one hydrogen with a more electronegative chlorine atom creates one bond dipole (C-Cl) that is different in magnitude and direction from the other three (C-H) bond dipoles; even though the overall geometry is still tetrahedral, this mismatch means the bond dipoles no longer cancel exactly, leaving a net dipole moment. This shows that molecular symmetry requires not just the correct geometric shape but also identical bonded atoms in each direction. Choice A is irrelevant to polarity -- bond length differences do not by themselves cause a net dipole. Choice C is incorrect because chlorine's higher electronegativity relative to carbon is exactly what creates the polar C-Cl bond. Choice D incorrectly attributes polarity to electron count rather than to the symmetry (or asymmetry) of the bond dipoles.",
+    "difficulty": "advanced",
+    "hints": [
+      "Tetrahedral shape alone does not guarantee a nonpolar molecule -- compare CH4's four identical C-H bonds to CH3Cl's mixed set of bonds.",
+      "For bond dipoles to cancel completely, all the bonded atoms (not just the shape) generally need to be identical."
+    ]
+  }
+]

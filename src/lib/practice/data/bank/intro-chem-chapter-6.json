@@ -1,0 +1,228 @@
+[
+  {
+    "id": "ic-c6-mc-1",
+    "unitId": 6,
+    "stem": "One mole of any substance contains exactly 6.022 x 10^23 particles.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "6.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c6-mc-2",
+    "unitId": 6,
+    "stem": "How many molecules are present in 2.00 mol of CO2?",
+    "choices": ["3.01 x 10^23", "6.02 x 10^23", "1.20 x 10^24", "2.41 x 10^24"],
+    "correctIndex": 2,
+    "topicTag": "6.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c6-mc-3",
+    "unitId": 6,
+    "stem": "Avogadro's number is best described as:",
+    "choices": [
+      "The number of grams in one mole of any element",
+      "The number of particles (atoms, molecules, or ions) in one mole of a substance",
+      "The number of moles in one gram of a substance",
+      "The number of electrons in one atom of hydrogen"
+    ],
+    "correctIndex": 1,
+    "topicTag": "6.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c6-mc-4",
+    "unitId": 6,
+    "stem": "What is the molar mass of water (H2O), to the nearest 0.1 g/mol?",
+    "choices": ["16.0 g/mol", "17.0 g/mol", "18.0 g/mol", "20.0 g/mol"],
+    "correctIndex": 2,
+    "topicTag": "6.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c6-mc-5",
+    "unitId": 6,
+    "stem": "What is the molar mass of carbon dioxide (CO2), to the nearest 0.1 g/mol?",
+    "choices": ["28.0 g/mol", "32.0 g/mol", "44.0 g/mol", "46.0 g/mol"],
+    "correctIndex": 2,
+    "topicTag": "6.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c6-mc-6",
+    "unitId": 6,
+    "stem": "What is the molar mass of sodium chloride (NaCl), to the nearest 0.1 g/mol?",
+    "choices": ["40.0 g/mol", "58.4 g/mol", "74.5 g/mol", "95.0 g/mol"],
+    "correctIndex": 1,
+    "topicTag": "6.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c6-mc-7",
+    "unitId": 6,
+    "stem": "How many moles are contained in 36.0 g of water (molar mass 18.0 g/mol)?",
+    "choices": ["0.50 mol", "1.00 mol", "2.00 mol", "4.00 mol"],
+    "correctIndex": 2,
+    "topicTag": "6.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c6-mc-8",
+    "unitId": 6,
+    "stem": "Percent composition of an element in a compound is found by dividing the mass of that element in one mole of the compound by the molar mass of the compound, then multiplying by 100.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "6.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c6-mc-9",
+    "unitId": 6,
+    "stem": "What is the percent composition by mass of oxygen in carbon dioxide, CO2 (molar mass 44.0 g/mol)?",
+    "choices": ["27.3%", "36.4%", "54.5%", "72.7%"],
+    "correctIndex": 3,
+    "topicTag": "6.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c6-mc-10",
+    "unitId": 6,
+    "stem": "What is the approximate percent composition by mass of iron in Fe2O3?",
+    "choices": ["30.1%", "48.0%", "69.9%", "85.0%"],
+    "correctIndex": 2,
+    "topicTag": "6.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c6-mc-11",
+    "unitId": 6,
+    "stem": "A compound is found to be 40.0% carbon, 6.7% hydrogen, and 53.3% oxygen by mass. What is its empirical formula?",
+    "choices": ["CHO", "CH2O", "C2H4O2", "C6H12O6"],
+    "correctIndex": 1,
+    "topicTag": "6.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c6-mc-12",
+    "unitId": 6,
+    "stem": "Which statement best describes an empirical formula?",
+    "choices": [
+      "It shows the exact number of atoms of each element in a single molecule",
+      "It shows the smallest whole-number ratio of atoms of each element in a compound",
+      "It shows only the elements present, without any ratio information",
+      "It is always identical to the molecular formula for every compound"
+    ],
+    "correctIndex": 1,
+    "topicTag": "6.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c6-mc-13",
+    "unitId": 6,
+    "stem": "A compound has the empirical formula CH2O (empirical formula mass ~30.0 g/mol) and a molar mass of about 180 g/mol. What is its molecular formula?",
+    "choices": ["CH2O", "C2H4O2", "C3H6O3", "C6H12O6"],
+    "correctIndex": 3,
+    "topicTag": "6.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c6-mc-14",
+    "unitId": 6,
+    "stem": "The molecular formula of a compound can never be the same as its empirical formula.",
+    "choices": ["True", "False"],
+    "correctIndex": 1,
+    "topicTag": "6.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c6-mc-15",
+    "unitId": 6,
+    "stem": "How many individual carbon atoms are present in 1.00 mol of pure carbon?",
+    "choices": ["6.022 x 10^22 atoms", "6.022 x 10^23 atoms", "1.000 x 10^23 atoms", "3.011 x 10^23 atoms"],
+    "correctIndex": 1,
+    "topicTag": "6.1",
+    "source": "original",
+    "explanation": "By definition, one mole of any substance contains Avogadro's number of particles, 6.022 x 10^23. Since carbon atoms are the particles here, 1.00 mol of carbon contains 6.022 x 10^23 atoms. The other choices either shift the exponent by a factor of ten or use an incorrect coefficient that doesn't match Avogadro's number.",
+    "difficulty": "beginner",
+    "hints": [
+      "One mole always corresponds to the same fixed number of particles, no matter what the substance is.",
+      "That fixed number is Avogadro's number, 6.022 x 10^23."
+    ]
+  },
+  {
+    "id": "ic-c6-mc-16",
+    "unitId": 6,
+    "stem": "What is the molar mass of ammonia (NH3), to the nearest 0.01 g/mol (N = 14.01 g/mol, H = 1.008 g/mol)?",
+    "choices": ["14.01 g/mol", "17.03 g/mol", "16.02 g/mol", "18.04 g/mol"],
+    "correctIndex": 1,
+    "topicTag": "6.2",
+    "source": "original",
+    "explanation": "Molar mass of NH3 = 14.01 (N) + 3(1.008) (H) = 14.01 + 3.024 = 17.03 g/mol. 14.01 g/mol only accounts for nitrogen and ignores hydrogen entirely. 16.02 g/mol and 18.04 g/mol both come from using the wrong number of hydrogen atoms (2 or 4 instead of 3).",
+    "difficulty": "beginner",
+    "hints": [
+      "Add up the atomic mass of nitrogen plus three times the atomic mass of hydrogen.",
+      "Double-check the subscript on hydrogen in NH3 before multiplying."
+    ]
+  },
+  {
+    "id": "ic-c6-mc-17",
+    "unitId": 6,
+    "stem": "How many individual molecules of ammonia (NH3, molar mass 17.03 g/mol) are present in an 8.52 g sample?",
+    "choices": ["3.01 x 10^23", "6.02 x 10^23", "1.20 x 10^23", "1.50 x 10^23"],
+    "correctIndex": 0,
+    "topicTag": "6.1",
+    "source": "original",
+    "explanation": "First convert mass to moles: 8.52 g / 17.03 g/mol = 0.500 mol. Then convert moles to molecules using Avogadro's number: 0.500 mol x 6.022 x 10^23 molecules/mol = 3.01 x 10^23 molecules. 6.02 x 10^23 skips the mass-to-mole conversion and treats the sample as if it were exactly 1 mol. The other choices come from arithmetic slips in either step.",
+    "difficulty": "intermediate",
+    "hints": [
+      "This is a two-step conversion: first find moles from the given mass, then convert moles to molecules.",
+      "Divide the given mass by the molar mass before multiplying by Avogadro's number."
+    ]
+  },
+  {
+    "id": "ic-c6-mc-18",
+    "unitId": 6,
+    "stem": "Ammonium nitrate, NH4NO3, contains nitrogen in two different places in its formula. What is the percent composition by mass of nitrogen in NH4NO3 (molar mass 80.05 g/mol; N = 14.01 g/mol)?",
+    "choices": ["17.5%", "35.0%", "50.0%", "60.0%"],
+    "correctIndex": 1,
+    "topicTag": "6.3",
+    "source": "original",
+    "explanation": "NH4NO3 contains 2 nitrogen atoms total (one in the ammonium part, one in the nitrate part). Mass of N per mole = 2(14.01) = 28.02 g. Percent N = (28.02 / 80.05) x 100% = 35.0%. 17.5% comes from counting only 1 nitrogen atom instead of 2. 50.0% and 60.0% overestimate nitrogen's share by not dividing by the full molar mass correctly.",
+    "difficulty": "intermediate",
+    "hints": [
+      "Count every nitrogen atom in the formula, including the one hidden inside the ammonium group and the one inside the nitrate group.",
+      "Multiply nitrogen's atomic mass by the total number of N atoms before dividing by the molar mass."
+    ]
+  },
+  {
+    "id": "ic-c6-mc-19",
+    "unitId": 6,
+    "stem": "A phosphorus oxide is found to be 43.6% phosphorus and 56.4% oxygen by mass (P = 30.97 g/mol, O = 16.00 g/mol). What is its empirical formula?",
+    "choices": ["PO2", "P2O5", "PO3", "P2O3"],
+    "correctIndex": 1,
+    "topicTag": "6.4",
+    "source": "original",
+    "explanation": "In a 100.0 g sample: mol P = 43.6/30.97 = 1.41 mol, mol O = 56.4/16.00 = 3.53 mol. Dividing both by the smaller value (1.41): P = 1.00, O = 2.50. Since 2.50 is not close to a whole number, every subscript must be multiplied by 2 to clear the fraction, giving P2O5. Choosing PO2 stops after rounding 2.50 down to 2 instead of recognizing the .5 needs clearing. PO3 and P2O3 come from misreading which element has the larger mole ratio.",
+    "difficulty": "advanced",
+    "hints": [
+      "After dividing by the smallest mole value, check whether your ratio lands on a whole number or on something like x.5 that needs a further step.",
+      "A ratio ending in .5 usually means every subscript needs to be doubled before you have the true empirical formula."
+    ]
+  },
+  {
+    "id": "ic-c6-mc-20",
+    "unitId": 6,
+    "stem": "A compound is found to be 40.9% C, 4.58% H, and 54.5% O by mass, with a molar mass of approximately 176 g/mol (C = 12.01, H = 1.008, O = 16.00 g/mol). What is its molecular formula?",
+    "choices": ["C3H4O3", "C6H8O6", "C3H4O6", "C6H8O3"],
+    "correctIndex": 1,
+    "topicTag": "6.5",
+    "source": "original",
+    "explanation": "In 100.0 g: mol C = 40.9/12.01 = 3.41, mol H = 4.58/1.008 = 4.54, mol O = 54.5/16.00 = 3.41. Dividing by the smallest (3.41): C = 1.00, H = 1.33, O = 1.00. Since 1.33 is close to 4/3, multiplying every value by 3 gives C3H4O3, the empirical formula (mass 88.06 g/mol). Dividing the given molar mass by the empirical formula mass, 176/88.06 = 2.00, so every subscript in C3H4O3 is doubled to get the molecular formula, C6H8O6. C3H4O3 stops at the empirical formula and forgets to scale up to match the given molar mass. C3H4O6 and C6H8O3 come from doubling only one of the two elements instead of the whole formula.",
+    "difficulty": "advanced",
+    "hints": [
+      "This is a two-stage problem: find the empirical formula first, then compare its mass to the given molar mass to see if scaling is needed.",
+      "A mole ratio like 1.33 is a strong hint that you'll need to multiply by 3, not just round it."
+    ]
+  }
+]

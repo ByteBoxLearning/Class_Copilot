@@ -1,0 +1,234 @@
+[
+  {
+    "id": "ic-c2-mc-1",
+    "unitId": 2,
+    "stem": "Which of the following is the SI base unit for mass?",
+    "choices": ["Pound", "Gram", "Kilogram", "Ounce"],
+    "correctIndex": 2,
+    "topicTag": "2.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c2-mc-2",
+    "unitId": 2,
+    "stem": "The SI base unit of length is the:",
+    "choices": ["Inch", "Meter", "Foot", "Centimeter"],
+    "correctIndex": 1,
+    "topicTag": "2.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c2-mc-3",
+    "unitId": 2,
+    "stem": "The SI base unit for temperature is degrees Celsius.",
+    "choices": ["True", "False"],
+    "correctIndex": 1,
+    "topicTag": "2.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c2-mc-4",
+    "unitId": 2,
+    "stem": "How many significant figures are in the measurement 0.00420 g?",
+    "choices": ["2", "3", "5", "6"],
+    "correctIndex": 1,
+    "topicTag": "2.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c2-mc-5",
+    "unitId": 2,
+    "stem": "When multiplying or dividing measured values, the result should be rounded to match:",
+    "choices": [
+      "The measurement with the most significant figures",
+      "The measurement with the fewest significant figures",
+      "Always exactly 3 significant figures",
+      "The sum of all significant figures involved"
+    ],
+    "correctIndex": 1,
+    "topicTag": "2.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c2-mc-6",
+    "unitId": 2,
+    "stem": "The measurement 3.200 g has four significant figures.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "2.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c2-mc-7",
+    "unitId": 2,
+    "stem": "Which conversion factor would correctly convert 5.0 km into meters?",
+    "choices": [
+      "5.0 km × (1 m / 1000 km)",
+      "5.0 km × (1000 m / 1 km)",
+      "5.0 km × (1 km / 1000 m)",
+      "5.0 km ÷ (1000 m / 1 km)"
+    ],
+    "correctIndex": 1,
+    "topicTag": "2.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c2-mc-8",
+    "unitId": 2,
+    "stem": "How many centimeters are there in 2.5 meters?",
+    "choices": ["0.025 cm", "25 cm", "250 cm", "2500 cm"],
+    "correctIndex": 2,
+    "topicTag": "2.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c2-mc-9",
+    "unitId": 2,
+    "stem": "Dimensional analysis works by multiplying a quantity by one or more conversion factors, each of which is mathematically equal to 1.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "2.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c2-mc-10",
+    "unitId": 2,
+    "stem": "Density is defined as:",
+    "choices": ["Mass divided by volume", "Volume divided by mass", "Mass multiplied by volume", "Weight divided by surface area"],
+    "correctIndex": 0,
+    "topicTag": "2.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c2-mc-11",
+    "unitId": 2,
+    "stem": "A block of material has a mass of 24 g and a volume of 8 cm^3. What is its density?",
+    "choices": ["0.33 g/cm^3", "3 g/cm^3", "32 g/cm^3", "192 g/cm^3"],
+    "correctIndex": 1,
+    "topicTag": "2.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c2-mc-12",
+    "unitId": 2,
+    "stem": "An object with a density less than that of water will float when placed in water.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "2.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c2-mc-13",
+    "unitId": 2,
+    "stem": "Accuracy refers to:",
+    "choices": [
+      "How closely repeated measurements agree with one another",
+      "How close a measurement is to the true or accepted value",
+      "The number of significant figures reported in a measurement",
+      "The brand or precision rating of the measuring instrument"
+    ],
+    "correctIndex": 1,
+    "topicTag": "2.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c2-mc-14",
+    "unitId": 2,
+    "stem": "A set of repeated measurements that are clustered tightly together but far from the true value is best described as:",
+    "choices": ["Accurate but not precise", "Precise but not accurate", "Both accurate and precise", "Neither accurate nor precise"],
+    "correctIndex": 1,
+    "topicTag": "2.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c2-mc-15",
+    "unitId": 2,
+    "stem": "High precision in a set of measurements guarantees that those measurements are also accurate.",
+    "choices": ["True", "False"],
+    "correctIndex": 1,
+    "topicTag": "2.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c2-mc-16",
+    "unitId": 2,
+    "stem": "Which of these is a derived SI unit (built from combining base units) rather than a base unit itself?",
+    "choices": ["Meter", "Second", "Kilogram", "Cubic centimeter (cm^3)"],
+    "correctIndex": 3,
+    "topicTag": "2.1",
+    "source": "original",
+    "explanation": "A cubic centimeter is a unit of volume, obtained by multiplying three length measurements together (cm × cm × cm), making it a derived unit built from a base unit. Meter, second, and kilogram are each themselves SI base units (for length, time, and mass respectively), not combinations of other units.",
+    "difficulty": "beginner",
+    "hints": ["Base units are the fundamental building blocks of the SI system, defined independently of one another.", "A derived unit is created by multiplying or dividing base units together — look for the option built from repeated length units."]
+  },
+  {
+    "id": "ic-c2-mc-17",
+    "unitId": 2,
+    "stem": "How many significant figures are in the measurement 3.0 x 10^2 g?",
+    "choices": ["1", "2", "3", "4"],
+    "correctIndex": 1,
+    "topicTag": "2.2",
+    "source": "original",
+    "explanation": "In scientific notation, every digit shown in the coefficient is significant; here, the coefficient 3.0 has two significant figures (the 3 and the trailing zero after the decimal point). The power of ten does not add or remove significant figures.",
+    "difficulty": "beginner",
+    "hints": ["Focus only on the digits in the coefficient before the '×10^n' part.", "A zero that appears after a decimal point in the coefficient is always counted as significant."]
+  },
+  {
+    "id": "ic-c2-mc-18",
+    "unitId": 2,
+    "stem": "A runner completes a race in a time of 5400 seconds. Using dimensional analysis, how many hours did the race take?",
+    "choices": ["0.667 hour", "1.5 hours", "15 hours", "90 hours"],
+    "correctIndex": 1,
+    "topicTag": "2.3",
+    "source": "original",
+    "explanation": "Converting seconds to hours requires two conversion factors chained together: 5400 s × (1 min / 60 s) × (1 hour / 60 min) = 5400 / 3600 = 1.5 hours. Choice A inverts the conversion factor, choice C misplaces a decimal, and choice D confuses hours with minutes.",
+    "difficulty": "intermediate",
+    "hints": ["Think of this as two conversion steps chained together: seconds to minutes, then minutes to hours.", "Divide 5400 by 60 twice (or equivalently, by 3600 once) rather than multiplying."]
+  },
+  {
+    "id": "ic-c2-mc-19",
+    "unitId": 2,
+    "stem": "A rectangular block of an unknown metal measures 2.0 cm x 3.0 cm x 5.0 cm and has a mass of 210 g. What is its density?",
+    "choices": ["0.143 g/cm^3", "7.0 g/cm^3", "30 g/cm^3", "70 g/cm^3"],
+    "correctIndex": 1,
+    "topicTag": "2.4",
+    "source": "original",
+    "explanation": "The volume of the block is length × width × height = 2.0 × 3.0 × 5.0 = 30 cm^3. Dividing mass by volume gives density = 210 g / 30 cm^3 = 7.0 g/cm^3. Choice A inverts the density formula, choice C reports the volume instead of the density, and choice D results from an arithmetic slip in the division.",
+    "difficulty": "intermediate",
+    "hints": ["First calculate the volume of the block by multiplying its three dimensions together.", "Density equals mass divided by volume — make sure you're dividing in the correct order."]
+  },
+  {
+    "id": "ic-c2-mc-20",
+    "unitId": 2,
+    "stem": "A liquid sample has a mass of 47.4 g and occupies a volume of 60.0 mL. A chemist wants to know whether this liquid could be pure ethanol (density = 0.789 g/mL) or pure water (density = 1.00 g/mL). Which conclusion is correctly supported by the calculated density?",
+    "choices": [
+      "The liquid is most likely water, since 0.790 g/mL is closer to 1.00 g/mL",
+      "The liquid is most likely ethanol, since the calculated density of 0.790 g/mL closely matches ethanol's density",
+      "The liquid cannot be either substance because the calculated density (0.790 g/mL) does not exactly match either reference value",
+      "The liquid is definitely a 50/50 mixture of ethanol and water because the density falls between the two reference values"
+    ],
+    "correctIndex": 1,
+    "topicTag": "2.4",
+    "source": "original",
+    "explanation": "Density = mass / volume = 47.4 g / 60.0 mL = 0.790 g/mL, which is very close to ethanol's known density of 0.789 g/mL, so the liquid is most likely ethanol. Choice A misreads which reference value is closer. Choice C incorrectly assumes an exact match is required, ignoring normal experimental uncertainty. Choice D over-interprets a small difference as proof of a mixture, when it is well within the expected agreement for a measurement of pure ethanol.",
+    "difficulty": "advanced",
+    "hints": ["Calculate the sample's density first, then compare it to both reference densities to see which one it's closer to.", "A small difference between a calculated and reference value is expected from ordinary measurement uncertainty — it doesn't necessarily mean the substance is impure or mixed."]
+  },
+  {
+    "id": "ic-c2-mc-21",
+    "unitId": 2,
+    "stem": "A student measures the boiling point of a liquid five times, obtaining: 78.1°C, 78.3°C, 78.0°C, 78.2°C, 78.1°C. The liquid's accepted boiling point is 80.1°C. Which statement correctly describes this data set?",
+    "choices": [
+      "The data is both accurate and precise, since the values are close to each other",
+      "The data is precise but not accurate, since the values cluster tightly together but are consistently about 2°C below the accepted value",
+      "The data is accurate but not precise, since the average is close to the accepted value",
+      "The data is neither accurate nor precise, since none of the trials exactly equal 80.1°C"
+    ],
+    "correctIndex": 1,
+    "topicTag": "2.5",
+    "source": "original",
+    "explanation": "The five measurements are tightly clustered together (all within 0.3°C of each other), indicating good precision. However, their average (about 78.1°C) is consistently about 2.0°C lower than the accepted value of 80.1°C, indicating poor accuracy — likely due to a systematic error rather than random scatter. Choice A wrongly assumes tight clustering guarantees accuracy. Choice C incorrectly claims the average is close to the accepted value, when a 2°C gap is significant. Choice D wrongly assumes any deviation from the literature value means neither precision nor accuracy exist.",
+    "difficulty": "advanced",
+    "hints": ["Precision only asks whether the repeated trials agree with each other, not whether they match the true value.", "Calculate the average of the five trials and compare it directly to 80.1°C to judge accuracy."]
+  }
+]

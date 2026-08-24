@@ -1,0 +1,66 @@
+[
+  {
+    "id": "u6-mcq-1",
+    "unitId": 6,
+    "stem": "A 50.0 g sample of an unknown metal, initially at 95.0°C, is placed into 100.0 g of water at 22.0°C in an insulated coffee-cup calorimeter. The mixture reaches a final temperature of 25.0°C. Assuming no heat is lost to the calorimeter or surroundings, and using the specific heat of water c = 4.18 J/(g·°C), what is the specific heat capacity of the metal?",
+    "choices": [
+      "0.264 J/(g·°C)",
+      "1.00 J/(g·°C)",
+      "0.358 J/(g·°C)",
+      "0.344 J/(g·°C)"
+    ],
+    "correctIndex": 2,
+    "workedSolution": "Heat gained by the water equals heat lost by the metal (magnitude), since the system is insulated: q_water = -q_metal.\nq_water = m_water × c_water × ΔT_water = (100.0 g)(4.18 J/g°C)(25.0 − 22.0)°C = (100.0)(4.18)(3.00) = 1254 J.\nSo q_metal = -1254 J.\nFor the metal, ΔT_metal = T_final − T_initial = 25.0 − 95.0 = -70.0°C.\nq_metal = m_metal × c_metal × ΔT_metal → -1254 J = (50.0 g)(c_metal)(-70.0°C)\nc_metal = 1254 / (50.0 × 70.0) = 1254 / 3500 = 0.358 J/(g·°C).",
+    "explanation": "The correct approach sets heat lost by the hot metal equal to heat gained by the cooler water, then solves for c_metal using the metal's own ΔT (T_final − T_initial,metal = -70.0°C). The distractor 0.344 J/(g·°C) comes from mistakenly using 95.0 − 22.0 = 73.0°C (subtracting the water's initial temperature instead of the common final temperature) as the metal's ΔT. The distractor 1.00 J/(g·°C) results from forgetting to compute a ΔT at all and dividing by the final temperature (25.0°C) instead of the actual 70.0°C change. The distractor 0.264 J/(g·°C) comes from dividing by the metal's initial temperature (95.0°C) rather than its temperature change.",
+    "topicTag": "Heat Capacity and Calorimetry",
+    "source": "bank"
+  },
+  {
+    "id": "u6-mcq-2",
+    "unitId": 6,
+    "stem": "The potential energy diagram for a one-step (single elementary step) reaction shows the reactants at a potential energy of 150 kJ/mol, the products at 100 kJ/mol, and the transition state (the highest point on the curve) at 220 kJ/mol. Based on this diagram, what is the activation energy for the reverse reaction?",
+    "choices": [
+      "70 kJ/mol",
+      "120 kJ/mol",
+      "50 kJ/mol",
+      "320 kJ/mol"
+    ],
+    "correctIndex": 1,
+    "workedSolution": "Activation energy is measured from a species' own energy level up to the transition state (peak).\nEa,reverse = E(transition state) − E(products) = 220 kJ/mol − 100 kJ/mol = 120 kJ/mol.\n(For reference: Ea,forward = 220 − 150 = 70 kJ/mol, and ΔH = E(products) − E(reactants) = 100 − 150 = -50 kJ/mol, confirming the reaction is exothermic.)",
+    "explanation": "The reverse activation energy is the gap between the transition-state peak and the products' energy level (120 kJ/mol), not the products-to-reactants difference. The distractor 70 kJ/mol is actually Ea for the forward reaction (peak minus reactants), a common mix-up between forward and reverse activation energies. The distractor 50 kJ/mol is |ΔH|, confusing the overall reaction enthalpy with an activation energy. The distractor 320 kJ/mol comes from adding the peak and product energies (220 + 100) instead of subtracting.",
+    "topicTag": "Energy Diagrams",
+    "source": "bank"
+  },
+  {
+    "id": "u6-mcq-3",
+    "unitId": 6,
+    "stem": "Given the following thermochemical equations for hypothetical substances X, Y2, XY2, and XY4:\n(1) X(s) + Y2(g) -> XY2(g)   ΔH1 = -210 kJ/mol\n(2) XY2(g) + Y2(g) -> XY4(g)   ΔH2 = -95 kJ/mol\nUse Hess's law to determine ΔH for the reaction: X(s) + 2 Y2(g) -> XY4(g)",
+    "choices": [
+      "-115 kJ/mol",
+      "+305 kJ/mol",
+      "-305 kJ/mol",
+      "-152.5 kJ/mol"
+    ],
+    "correctIndex": 2,
+    "workedSolution": "Add reaction (1) and reaction (2) as written (no reversal or scaling needed):\nX(s) + Y2(g) + XY2(g) + Y2(g) -> XY2(g) + XY4(g)\nThe XY2(g) cancels (one produced in (1), one consumed in (2)), and the two Y2(g) combine to give 2 Y2(g):\nNet: X(s) + 2 Y2(g) -> XY4(g), which matches the target equation exactly.\nΔH = ΔH1 + ΔH2 = (-210 kJ/mol) + (-95 kJ/mol) = -305 kJ/mol.",
+    "explanation": "Because the given equations already add up directly to the target equation (with XY2 canceling as a common intermediate), Hess's law just requires summing ΔH1 and ΔH2: -305 kJ/mol. The distractor -115 kJ/mol comes from incorrectly reversing reaction (2) and subtracting (-210 − (-95)). The distractor +305 kJ/mol comes from adding the magnitudes of both enthalpies while dropping the negative (exothermic) signs. The distractor -152.5 kJ/mol comes from averaging the two ΔH values instead of summing them.",
+    "topicTag": "Hess's Law",
+    "source": "bank"
+  },
+  {
+    "id": "u6-mcq-4",
+    "unitId": 6,
+    "stem": "Consider the gas-phase reaction between two hypothetical diatomic elements: A2(g) + B2(g) -> 2 AB(g). Using the average bond enthalpies given — A-A = 160 kJ/mol, B-B = 240 kJ/mol, A-B = 290 kJ/mol — calculate ΔH for this reaction.",
+    "choices": [
+      "+180 kJ/mol",
+      "-340 kJ/mol",
+      "110 kJ/mol",
+      "-180 kJ/mol"
+    ],
+    "correctIndex": 3,
+    "workedSolution": "ΔH = Σ(bond enthalpies broken, reactants) − Σ(bond enthalpies formed, products).\nBonds broken: one A-A bond + one B-B bond = 160 + 240 = 400 kJ/mol.\nBonds formed: two A-B bonds = 2 × 290 = 580 kJ/mol.\nΔH = 400 − 580 = -180 kJ/mol.",
+    "explanation": "Breaking the reactant bonds (A-A and B-B) requires 400 kJ/mol, while forming the two new A-B bonds releases 580 kJ/mol; since more energy is released forming bonds than is required breaking them, the reaction is exothermic: ΔH = -180 kJ/mol. The distractor +180 kJ/mol comes from reversing the formula (bonds formed minus bonds broken). The distractor 110 kJ/mol comes from forgetting the coefficient of 2 on the product AB bond (using only one A-B bond formed: 400 − 290). The distractor -340 kJ/mol comes from omitting the A-A bond broken and using only the B-B bond (240 − 580).",
+    "topicTag": "Bond Enthalpies",
+    "source": "bank"
+  }
+]

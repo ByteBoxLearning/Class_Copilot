@@ -1,0 +1,190 @@
+[
+  {
+    "id": "ic14-short-1",
+    "unitId": 14,
+    "kind": "short",
+    "points": 4,
+    "stem": "A solution has a hydrogen ion concentration, [H+], of 1.0 x 10^-3 M.",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the pH of the solution.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "State whether the solution is acidic, basic, or neutral, and justify your answer.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) pH = -log[H+] = -log(1.0 x 10^-3) = 3.00.\n\n(b) Since the pH is 3.00, which is less than 7, the solution is acidic. A pH below 7 indicates that [H+] is greater than [OH-], which defines an acidic solution.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for the correct formula pH = -log[H+]; 1 point for the correct value of 3.00.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly classifying the solution as acidic, consistent with the student's own pH value from part (a); 1 point for justification referencing pH being less than 7 (or [H+] > [OH-]).", "points": 2, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": [
+      "pH = -log[H+].",
+      "Compare your pH value to 7 to decide acidic versus basic."
+    ]
+  },
+  {
+    "id": "ic14-short-2",
+    "unitId": 14,
+    "kind": "short",
+    "points": 4,
+    "stem": "Consider the reaction: HF(aq) + H2O(l) <-> H3O+(aq) + F-(aq)",
+    "parts": [
+      { "label": "(a)", "prompt": "Identify the conjugate acid-base pair(s) in this reaction, clearly labeling which species in each pair is the conjugate acid and which is the conjugate base.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "HF is a weak acid, unlike HCl, which is a strong acid. State what this tells you about the extent to which HF ionizes in water, and explain the difference between a 'weak acid' and a 'dilute acid.'", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) HF and F- form one conjugate pair: HF is the acid, and F- is its conjugate base. H2O and H3O+ form the other conjugate pair: H2O is the base, and H3O+ is its conjugate acid.\n\n(b) A weak acid such as HF ionizes only partially (incompletely) in water; most HF molecules remain un-ionized, and an equilibrium is established between HF and its ions, unlike HCl, which ionizes essentially completely. 'Weak' describes the extent of ionization, an inherent property of the acid, while 'dilute' describes how much acid is dissolved per volume of solution (a concentration), which is independent of whether the acid is weak or strong. A weak acid solution can still be concentrated, and a strong acid solution can still be dilute.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly identifying the HF/F- pair with HF labeled as the acid and F- as the conjugate base; 1 point for correctly identifying the H2O/H3O+ pair with H2O labeled as the base and H3O+ as the conjugate acid.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly stating that HF ionizes only partially/incompletely (an equilibrium, not complete dissociation); 1 point for correctly distinguishing 'weak' (extent of ionization) from 'dilute' (concentration).", "points": 2, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "In each conjugate pair, the acid has one more H+ than its conjugate base.",
+      "Weak refers to the extent of ionization (an inherent property); dilute refers to concentration (how much is dissolved)."
+    ]
+  },
+  {
+    "id": "ic14-long-1",
+    "unitId": 14,
+    "kind": "long",
+    "points": 10,
+    "stem": "A student titrates 25.00 mL of an HCl solution of unknown concentration with 0.150 M NaOH solution: HCl(aq) + NaOH(aq) -> NaCl(aq) + H2O(l). It takes 32.50 mL of the NaOH solution to reach the equivalence point.",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the number of moles of NaOH used to reach the equivalence point.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Using the balanced equation, determine the number of moles of HCl that reacted, and calculate the original molarity of the HCl solution.", "maxPoints": 4 },
+      { "label": "(c)", "prompt": "Explain, in terms of moles of H+ and OH-, why the equivalence point of this titration occurs at pH = 7 (neutral) rather than some other pH.", "maxPoints": 2 },
+      { "label": "(d)", "prompt": "If the student had instead used 0.0150 mol of the diprotic acid H2SO4 in place of the same number of moles of HCl in this titration, would the volume of 0.150 M NaOH needed to reach the equivalence point be the same, greater, or smaller than for the HCl case? Explain briefly.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) moles NaOH = M x V = (0.150 mol/L)(0.03250 L) = 0.004875 mol.\n\n(b) The balanced equation shows a 1:1 mole ratio between HCl and NaOH, so moles HCl = moles NaOH = 0.004875 mol. Molarity of HCl = moles/volume = 0.004875 mol / 0.02500 L = 0.195 M.\n\n(c) At the equivalence point, the moles of OH- added exactly equal the moles of H+ originally present, since HCl and NaOH react in a 1:1 ratio. Because HCl and NaOH are both strong (fully ionized), their spectator ions (Cl- and Na+) do not react with water, so the resulting solution contains neither excess H+ nor excess OH-, giving a neutral solution at pH 7.\n\n(d) H2SO4 is diprotic, so each mole of H2SO4 supplies 2 moles of H+, compared to 1 mole of H+ per mole of HCl. So 0.0150 mol H2SO4 supplies 2 x 0.0150 = 0.0300 mol of H+, twice as many acidic protons as 0.0150 mol of HCl. Reaching the equivalence point therefore requires twice as many moles of OH-, so a greater volume of the 0.150 M NaOH solution would be needed than for the same molar amount of HCl.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for the correct formula (moles = M x V); 1 point for the correct value of 0.004875 mol (accept 0.00488 mol).", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly identifying the 1:1 mole ratio between HCl and NaOH; 1 point for a moles-HCl value consistent with the student's own part (a) answer; 1 point for the correct molarity formula; 1 point for a final molarity consistent with the student's own moles value (0.195 M if part (a) was correct).", "points": 4, "allowsErrorCarriedForward": true },
+      { "partLabel": "(c)", "criterion": "1 point for stating that moles of H+ equal moles of OH- at the equivalence point (complete neutralization); 1 point for explaining that because both HCl and NaOH are strong and fully dissociated, the resulting salt does not hydrolyze, giving a neutral solution.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(d)", "criterion": "1 point for correctly stating that a greater volume of NaOH would be needed; 1 point for correct reasoning based on H2SO4 supplying 2 moles of H+ per mole of acid, twice that of HCl.", "points": 2, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Use moles = M x V to find moles of NaOH, then use the 1:1 mole ratio with HCl for part (b).",
+      "For part (d), remember that H2SO4 supplies two acidic protons per molecule, not one."
+    ]
+  },
+  {
+    "id": "ic14-long-2",
+    "unitId": 14,
+    "kind": "long",
+    "points": 10,
+    "stem": "A student prepares two solutions. Solution A is a strong acid solution with [H+] = 4.0 x 10^-2 M. Solution B is a weak acid solution (acetic acid) prepared at the same initial concentration of acid, 0.040 M, but only 4.0% of the acetic acid molecules actually ionize in water.",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the pH of Solution A.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Calculate the actual [H+] present in Solution B, given that only 4.0% of the 0.040 M acetic acid ionizes, and use it to calculate the pH of Solution B.", "maxPoints": 3 },
+      { "label": "(c)", "prompt": "Using your answers to parts (a) and (b), calculate the pOH of each solution.", "maxPoints": 3 },
+      { "label": "(d)", "prompt": "Explain why Solution A and Solution B have different pH values even though both were prepared starting from the same initial molar concentration of acid (0.040 M).", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) pH = -log[H+] = -log(4.0 x 10^-2) = 1.40.\n\n(b) [H+] in Solution B = 4.0% of 0.040 M = (0.040)(0.040) = 0.0016 M = 1.6 x 10^-3 M. pH = -log(1.6 x 10^-3) = 2.80.\n\n(c) pOH = 14.00 - pH. pOH of Solution A = 14.00 - 1.40 = 12.60. pOH of Solution B = 14.00 - 2.80 = 11.20.\n\n(d) Solution A is a strong acid, which ionizes essentially completely (100%) in water, so its actual [H+] is close to the full initial concentration of 0.040 M. Solution B is a weak acid, which ionizes only partially (4.0%), establishing an equilibrium between the un-ionized acid and its ions, so its actual [H+] (0.0016 M) is much smaller than the initial concentration. Because pH depends on the actual [H+] present, not the initial concentration of acid added, Solution A (with more H+) has a lower (more acidic) pH than Solution B, even though both started with the same initial acid concentration.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for the correct formula pH = -log[H+]; 1 point for the correct value of 1.40.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly calculating the actual [H+] in Solution B as 1.6 x 10^-3 M; 1 point for correctly applying the pH formula; 1 point for a final pH value consistent with the student's own [H+] value (2.80 if the [H+] calculation was correct).", "points": 3, "allowsErrorCarriedForward": true },
+      { "partLabel": "(c)", "criterion": "1 point for correctly using pOH = 14.00 - pH; 1 point for a pOH for Solution A consistent with the student's own part (a) pH; 1 point for a pOH for Solution B consistent with the student's own part (b) pH.", "points": 3, "allowsErrorCarriedForward": true },
+      { "partLabel": "(d)", "criterion": "1 point for recognizing that the strong acid ionizes completely while the weak acid ionizes only partially; 1 point for correctly connecting this difference in ionization to the difference in actual [H+] and therefore pH, despite the same initial concentration.", "points": 2, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "For Solution B, first find the actual [H+] using the percent ionization given (4.0% of 0.040 M), then apply the pH formula.",
+      "pOH = 14.00 - pH for each solution."
+    ]
+  },
+  {
+    "id": "ic14-short-3",
+    "unitId": 14,
+    "kind": "short",
+    "points": 4,
+    "stem": "A solution has a hydroxide ion concentration, [OH-], of 2.0 x 10^-5 M.",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the pOH of the solution.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Calculate the pH of the solution using the relationship pH + pOH = 14.00.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) pOH = -log[OH-] = -log(2.0 x 10^-5) = 4.70.\n\n(b) pH = 14.00 - pOH = 14.00 - 4.70 = 9.30.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for the correct formula pOH = -log[OH-]; 1 point for the correct value of 4.70.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly applying pH = 14.00 - pOH using the student's own pOH from part (a); 1 point for a final pH consistent with that value (9.30 if part (a) was correct).", "points": 2, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": [
+      "pOH = -log[OH-], analogous to the pH formula.",
+      "Once you have pOH, use pH + pOH = 14.00 to find pH."
+    ]
+  },
+  {
+    "id": "ic14-short-4",
+    "unitId": 14,
+    "kind": "short",
+    "points": 4,
+    "stem": "Two weak acids are compared: acid HA has Ka = 1.8 x 10^-5, and acid HB has Ka = 4.9 x 10^-10.",
+    "parts": [
+      { "label": "(a)", "prompt": "Identify which acid, HA or HB, is the stronger acid, and explain your reasoning based on the Ka values.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Write the Ka expression (equilibrium constant expression) for the generic ionization of a weak acid HA in water: HA(aq) + H2O(l) <-> H3O+(aq) + A-(aq).", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) HA is the stronger acid because it has the larger Ka value (1.8 x 10^-5 is greater than 4.9 x 10^-10). A larger Ka indicates that the acid ionizes to a greater extent at equilibrium, producing more H3O+.\n\n(b) Ka = [H3O+][A-] / [HA]. Water is the solvent and is left out of the expression, just as pure solids and liquids are left out of Kc expressions.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly identifying HA as the stronger acid; 1 point for reasoning that a larger Ka means greater ionization.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for the correct expression form (products over reactant); 1 point for correctly including H3O+ and A- in the numerator and HA (not water) in the denominator.", "points": 2, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "A larger Ka value means the acid ionizes more, i.e. it's a stronger acid (among weak acids).",
+      "Water is the solvent and is left out of the Ka expression, similar to how pure solids/liquids are left out of Kc expressions."
+    ]
+  },
+  {
+    "id": "ic14-long-3",
+    "unitId": 14,
+    "kind": "long",
+    "points": 10,
+    "stem": "A student mixes 40.0 mL of 0.200 M HCl with 60.0 mL of 0.100 M NaOH.",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the initial moles of H+ (from HCl) and OH- (from NaOH) before any reaction occurs.", "maxPoints": 3 },
+      { "label": "(b)", "prompt": "Determine which reactant is in excess and calculate the moles of that reactant remaining after the neutralization reaction goes to completion.", "maxPoints": 3 },
+      { "label": "(c)", "prompt": "Calculate the [H+] or [OH-] of the excess reactant in the final combined solution (total volume = 100.0 mL), and use it to calculate the pH of the resulting solution.", "maxPoints": 4 }
+    ],
+    "workedSolution": "(a) moles H+ = M x V = (0.200 mol/L)(0.0400 L) = 0.00800 mol. moles OH- = M x V = (0.100 mol/L)(0.0600 L) = 0.00600 mol.\n\n(b) Since moles H+ (0.00800 mol) exceed moles OH- (0.00600 mol), HCl (H+) is in excess. Excess moles H+ = 0.00800 - 0.00600 = 0.00200 mol.\n\n(c) Total volume = 40.0 mL + 60.0 mL = 100.0 mL = 0.1000 L. [H+] = 0.00200 mol / 0.1000 L = 0.0200 M. pH = -log(0.0200) = 1.70.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for the correct formula (moles = M x V) applied to both; 1 point for the correct moles H+ of 0.00800 mol; 1 point for the correct moles OH- of 0.00600 mol.", "points": 3, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly identifying H+ (from HCl) as in excess, using the student's own part (a) values; 1 point for correctly subtracting moles OH- from moles H+; 1 point for the correct value of 0.00200 mol.", "points": 3, "allowsErrorCarriedForward": true },
+      { "partLabel": "(c)", "criterion": "1 point for the correct total volume of 0.1000 L; 1 point for a final [H+] consistent with the student's own excess moles from part (b) (0.0200 M if part (b) was correct); 1 point for correctly applying the pH formula; 1 point for a final pH consistent with that [H+] (1.70 if prior parts were correct).", "points": 4, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Calculate moles of H+ and OH- separately using moles = M x V before mixing.",
+      "Since HCl and NaOH react 1:1, subtract to find which is left over, then divide by the TOTAL combined volume (100.0 mL) to get its concentration."
+    ]
+  },
+  {
+    "id": "ic14-long-4",
+    "unitId": 14,
+    "kind": "long",
+    "points": 10,
+    "stem": "A 1.00 L sample of a strong acid solution has a pH of 2.00.",
+    "parts": [
+      { "label": "(a)", "prompt": "Calculate the [H+] and the number of moles of H+ present in the original 1.00 L sample.", "maxPoints": 3 },
+      { "label": "(b)", "prompt": "If the solution is diluted with water to a new total volume of 10.0 L, calculate the new [H+] and the new pH. (Assume the moles of H+ do not change during dilution.)", "maxPoints": 4 },
+      { "label": "(c)", "prompt": "A second, independent 1.00 L sample of the same original solution (pH = 2.00) is instead diluted by adding exactly 1.00 L of water (making 2.00 L total). Without doing a full calculation, predict whether the resulting pH will be closer to 2.00 or closer to 2.30, and briefly justify your reasoning.", "maxPoints": 3 }
+    ],
+    "workedSolution": "(a) [H+] = 10^-pH = 10^-2.00 = 0.0100 M. moles H+ = [H+] x volume = 0.0100 mol/L x 1.00 L = 0.0100 mol.\n\n(b) Moles of H+ remain 0.0100 mol after dilution. New [H+] = 0.0100 mol / 10.0 L = 1.00 x 10^-3 M. pH = -log(1.00 x 10^-3) = 3.00.\n\n(c) Diluting from 1.00 L to 2.00 L only halves the concentration, a much smaller dilution than the 10-fold dilution in part (b). Halving [H+] changes pH by log(2) = 0.30 units, so the new pH is about 2.00 + 0.30 = 2.30. Since a true 10-fold dilution (part b) produced a full 1.00-unit increase (pH 2.00 to 3.00), this smaller 2-fold dilution produces a smaller increase, so the resulting pH is closer to 2.30 than to 2.00 or 3.00.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly converting pH to [H+] using [H+] = 10^-pH; 1 point for the correct formula moles = [H+] x volume; 1 point for the correct final moles of 0.0100 mol.", "points": 3, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for recognizing that moles of H+ stay constant upon dilution; 1 point for a new [H+] consistent with the student's own part (a) moles (1.00 x 10^-3 M if part (a) was correct); 1 point for correctly applying the pH formula; 1 point for a final pH consistent with that [H+] (3.00 if prior parts were correct).", "points": 4, "allowsErrorCarriedForward": true },
+      { "partLabel": "(c)", "criterion": "1 point for correctly predicting the new pH is closer to 2.30; 1 point for reasoning that a 2-fold dilution is a much smaller change than the 10-fold dilution in part (b), which changed pH by a full unit; 1 point for connecting this to log(2) being about 0.3, giving an increase of roughly 0.3 pH units.", "points": 3, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Since moles of H+ don't change, [H+] is halved (not divided by 10) when going from 1.00 L to 2.00 L. This is a much smaller dilution than in part (b).",
+      "Recall from part (b) that a 10-fold dilution changed pH by exactly 1.00 unit (from 2.00 to 3.00). A 2-fold dilution should produce a smaller pH change than that."
+    ]
+  }
+]

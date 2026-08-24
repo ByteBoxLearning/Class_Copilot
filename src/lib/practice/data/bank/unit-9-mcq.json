@@ -1,0 +1,66 @@
+[
+  {
+    "id": "u9-mcq-1",
+    "unitId": 9,
+    "stem": "Consider the following reaction at 298 K: 2NO2(g) -> N2O4(g). Which of the following correctly predicts the sign of ΔS° for this reaction and gives a valid justification?",
+    "choices": [
+      "ΔS° > 0, because the two NO2 molecules form a new N-N bond in N2O4, and bond formation always increases the entropy of a system.",
+      "ΔS° < 0, because the number of moles of gas decreases from 2 mol to 1 mol, decreasing the number of accessible microstates for the system.",
+      "ΔS° ≈ 0, because both the reactant and the product are gases, so the change in entropy for a gas-phase reaction is always negligible.",
+      "ΔS° > 0, because N2O4 is a larger, more complex molecule than NO2, and increasing molecular complexity always increases the entropy of a substance."
+    ],
+    "correctIndex": 1,
+    "workedSolution": "Entropy depends strongly on the number of independently moving gas particles (moles of gas), because each additional gas particle contributes many more accessible translational and rotational microstates. Here, 2 mol of gaseous NO2 combine to form 1 mol of gaseous N2O4, so the number of moles of gas decreases (2 -> 1). Fewer independent gas particles means fewer accessible microstates, so ΔS° for the system is negative. (Experimentally, ΔS° for this reaction is about -176 J/(mol·K), confirming the prediction.)",
+    "explanation": "The dominant factor controlling ΔS° for a gas-phase reaction is the change in moles of gas, not bond formation or molecular size considered alone. Since 2 mol of gas particles become 1 mol of gas particles, the system becomes more ordered (fewer microstates), so ΔS° < 0, making B correct. Choice A incorrectly assumes any bond formation increases entropy — bond formation lowers a molecule's internal entropy, and here it also reduces the number of gas particles, which dominates. Choice C incorrectly assumes gas-phase reactions never have a significant ΔS°, ignoring the mole-of-gas effect. Choice D incorrectly applies a 'bigger molecule = more entropy' rule that only holds when comparing substances with the same number of moles of gas particles; it ignores that moles of gas decreased, which outweighs the added complexity of the single N2O4 molecule.",
+    "topicTag": "Introduction to Entropy",
+    "source": "bank"
+  },
+  {
+    "id": "u9-mcq-2",
+    "unitId": 9,
+    "stem": "The decomposition of a metal carbonate is represented below: CaCO3(s) -> CaO(s) + CO2(g), ΔH° = +178 kJ/mol, ΔS° = +161 J/(mol·K). Assuming ΔH° and ΔS° are independent of temperature, above approximately what temperature does this reaction become thermodynamically favorable (ΔG° < 0)?",
+    "choices": [
+      "555 K",
+      "1110 K",
+      "1.11 K",
+      "2220 K"
+    ],
+    "correctIndex": 1,
+    "workedSolution": "At the temperature where the reaction switches from unfavorable to favorable, ΔG° = 0: 0 = ΔH° - TΔS°, so T = ΔH°/ΔS°. Converting ΔH° to joules: 178 kJ/mol × 1000 J/kJ = 178,000 J/mol. T = 178,000 J/mol ÷ 161 J/(mol·K) = 1105.6 K ≈ 1110 K (3 sig figs). Since ΔS° > 0, the -TΔS° term becomes more negative as T increases, so for T above 1110 K, ΔG° = ΔH° - TΔS° becomes negative and the reaction is thermodynamically favorable.",
+    "explanation": "Setting ΔG° = 0 and solving T = ΔH°/ΔS° (with both quantities converted to consistent units) gives T ≈ 1110 K, choice B. Choice A (555 K) is half the correct value, consistent with a factor-of-two arithmetic slip. Choice C (1.11 K) results from forgetting to convert ΔH° from kJ to J before dividing by ΔS° in J/(mol·K), a very common unit-consistency error. Choice D (2220 K) is double the correct value, consistent with a factor-of-two error in the opposite direction (e.g., mistakenly multiplying instead of dividing).",
+    "topicTag": "Gibbs Free Energy and Thermodynamic Favorability",
+    "source": "bank"
+  },
+  {
+    "id": "u9-mcq-3",
+    "unitId": 9,
+    "stem": "A galvanic cell is constructed using the following standard reduction potentials: Ag^+(aq) + e^- -> Ag(s), E° = +0.80 V; Cd^2+(aq) + 2e^- -> Cd(s), E° = -0.40 V. The overall cell reaction is: Cd(s) + 2Ag^+(aq) -> Cd^2+(aq) + 2Ag(s). What is ΔG° for this reaction at 298 K?",
+    "choices": [
+      "-232 kJ/mol",
+      "-116 kJ/mol",
+      "+232 kJ/mol",
+      "-77.2 kJ/mol"
+    ],
+    "correctIndex": 0,
+    "workedSolution": "Cd is oxidized (anode) and Ag^+ is reduced (cathode), since the Ag^+/Ag couple has the more positive reduction potential. E°cell = E°cathode - E°anode = 0.80 V - (-0.40 V) = 1.20 V. The balanced equation transfers n = 2 mol of electrons (Cd loses 2 e-, matching 2 Ag^+ each gaining 1 e-). ΔG° = -nFE° = -(2 mol)(96,485 C/mol)(1.20 V) = -231,564 J/mol ≈ -232 kJ/mol.",
+    "explanation": "Using the correct n = 2, E°cell = 1.20 V, and ΔG° = -nFE° gives -232 kJ/mol, choice A. Choice B (-116 kJ/mol) results from using n = 1 instead of the correct n = 2 mol of electrons transferred. Choice C (+232 kJ/mol) has the correct magnitude but the wrong sign, from forgetting the negative sign in ΔG° = -nFE° (a spontaneous cell with positive E°cell must have negative ΔG°). Choice D (-77.2 kJ/mol) results from incorrectly combining the electrode potentials as E°cathode + E°anode using the tabulated (unflipped) anode value, giving 0.80 + (-0.40) = 0.40 V instead of correctly subtracting to get 1.20 V.",
+    "topicTag": "Cell Potential and Free Energy",
+    "source": "bank"
+  },
+  {
+    "id": "u9-mcq-4",
+    "unitId": 9,
+    "stem": "An electrolytic cell is used to electroplate chromium metal from a solution containing Cr^3+ ions, via the half-reaction Cr^3+(aq) + 3e^- -> Cr(s). A constant current of 4.50 A is passed through the cell for 2.00 hours. What mass of chromium metal (molar mass = 52.00 g/mol) is deposited?",
+    "choices": [
+      "5.82 g",
+      "17.5 g",
+      "52.4 g",
+      "2.91 g"
+    ],
+    "correctIndex": 0,
+    "workedSolution": "Charge passed: Q = I × t = 4.50 A × (2.00 h × 3600 s/h) = 4.50 A × 7200 s = 32,400 C. Moles of electrons: n(e-) = Q/F = 32,400 C ÷ 96,485 C/mol = 0.3358 mol e-. Since Cr^3+ requires 3 mol e- per mol Cr deposited: mol Cr = 0.3358 mol e- ÷ 3 = 0.1119 mol Cr. Mass = 0.1119 mol × 52.00 g/mol = 5.82 g.",
+    "explanation": "Correctly dividing moles of electrons by 3 (the number of electrons needed per Cr^3+ ion) gives 5.82 g, choice A. Choice B (17.5 g) results from treating the process as a 1-electron reduction (forgetting to divide by 3 at all). Choice C (52.4 g) results from multiplying by 3 instead of dividing by 3, inverting the mole-ratio stoichiometry. Choice D (2.91 g) results from using 6 electrons per Cr (e.g., mistakenly doubling the charge on the ion), dividing moles of electrons by 6 instead of 3.",
+    "topicTag": "Electrolysis and Faraday's Law",
+    "source": "bank"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Atomic Structure and Properties",
+    "examWeighting": [7, 9]
+  },
+  {
+    "id": 2,
+    "title": "Compound Structure and Properties",
+    "examWeighting": [7, 9]
+  },
+  {
+    "id": 3,
+    "title": "Properties of Substances and Mixtures",
+    "examWeighting": [18, 22]
+  },
+  {
+    "id": 4,
+    "title": "Chemical Reactions",
+    "examWeighting": [7, 9]
+  },
+  {
+    "id": 5,
+    "title": "Kinetics",
+    "examWeighting": [7, 9]
+  },
+  {
+    "id": 6,
+    "title": "Thermochemistry",
+    "examWeighting": [7, 9]
+  },
+  {
+    "id": 7,
+    "title": "Equilibrium",
+    "examWeighting": [7, 9]
+  },
+  {
+    "id": 8,
+    "title": "Acids and Bases",
+    "examWeighting": [11, 15]
+  },
+  {
+    "id": 9,
+    "title": "Thermodynamics and Electrochemistry",
+    "examWeighting": [7, 9]
+  }
+]

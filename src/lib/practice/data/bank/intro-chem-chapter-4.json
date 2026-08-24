@@ -1,0 +1,233 @@
+[
+  {
+    "id": "ic-c4-mc-1",
+    "unitId": 4,
+    "stem": "Which of the following was NOT part of Dalton's original atomic theory?",
+    "choices": [
+      "All matter is made of atoms",
+      "Atoms of the same element are identical to one another",
+      "Atoms can be subdivided into smaller charged particles",
+      "Atoms combine in simple, whole-number ratios to form compounds"
+    ],
+    "correctIndex": 2,
+    "topicTag": "4.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c4-mc-2",
+    "unitId": 4,
+    "stem": "Dalton's original atomic theory correctly predicted the existence of protons, neutrons, and electrons inside the atom.",
+    "choices": ["True", "False"],
+    "correctIndex": 1,
+    "topicTag": "4.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c4-mc-3",
+    "unitId": 4,
+    "stem": "Which subatomic particle carries a negative electric charge?",
+    "choices": ["Proton", "Neutron", "Electron", "Positron"],
+    "correctIndex": 2,
+    "topicTag": "4.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c4-mc-4",
+    "unitId": 4,
+    "stem": "Protons and neutrons are located:",
+    "choices": ["Orbiting the nucleus in shells", "In the nucleus at the center of the atom", "In a diffuse cloud around the atom", "Outside the atom entirely"],
+    "correctIndex": 1,
+    "topicTag": "4.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c4-mc-5",
+    "unitId": 4,
+    "stem": "A proton and a neutron have approximately the same mass, while an electron has a much smaller mass.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "4.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c4-mc-6",
+    "unitId": 4,
+    "stem": "Isotopes of a given element have the same number of protons but different numbers of:",
+    "choices": ["Electrons", "Neutrons", "Valence shells", "Positive charges"],
+    "correctIndex": 1,
+    "topicTag": "4.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c4-mc-7",
+    "unitId": 4,
+    "stem": "Carbon-14 differs from carbon-12 in that carbon-14 has:",
+    "choices": ["Two more protons", "Two more electrons", "Two more neutrons", "Two fewer neutrons"],
+    "correctIndex": 2,
+    "topicTag": "4.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c4-mc-8",
+    "unitId": 4,
+    "stem": "Because isotopes of an element have different numbers of neutrons, they also have different atomic numbers.",
+    "choices": ["True", "False"],
+    "correctIndex": 1,
+    "topicTag": "4.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c4-mc-9",
+    "unitId": 4,
+    "stem": "The atomic number of an element equals the number of:",
+    "choices": ["Neutrons in the nucleus", "Protons in the nucleus", "Protons plus neutrons in the nucleus", "Electrons plus neutrons combined"],
+    "correctIndex": 1,
+    "topicTag": "4.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c4-mc-10",
+    "unitId": 4,
+    "stem": "A neutral atom of fluorine has atomic number 9 and mass number 19. How many neutrons does it have?",
+    "choices": ["9", "10", "19", "28"],
+    "correctIndex": 1,
+    "topicTag": "4.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c4-mc-11",
+    "unitId": 4,
+    "stem": "In a neutral atom, the number of electrons equals the number of protons.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "4.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c4-mc-12",
+    "unitId": 4,
+    "stem": "Elements in the modern periodic table are arranged in order of increasing:",
+    "choices": ["Atomic mass only", "Atomic number", "Number of neutrons", "Melting point"],
+    "correctIndex": 1,
+    "topicTag": "4.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c4-mc-13",
+    "unitId": 4,
+    "stem": "A vertical column of elements on the periodic table is called a:",
+    "choices": ["Period", "Group (or family)", "Series", "Block"],
+    "correctIndex": 1,
+    "topicTag": "4.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c4-mc-14",
+    "unitId": 4,
+    "stem": "Elements within the same group of the periodic table tend to share similar chemical properties because they have the same number of valence electrons.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "4.5",
+    "source": "original"
+  },
+  {
+    "id": "ic-c4-mc-15",
+    "unitId": 4,
+    "stem": "Moving left to right across a period of the periodic table, atomic radius generally:",
+    "choices": ["Increases", "Decreases", "Stays about the same", "Increases then sharply decreases"],
+    "correctIndex": 1,
+    "topicTag": "4.6",
+    "source": "original"
+  },
+  {
+    "id": "ic-c4-mc-16",
+    "unitId": 4,
+    "stem": "Which of the following Group 1 elements has the largest atomic radius?",
+    "choices": ["Li", "Na", "K", "Rb"],
+    "correctIndex": 3,
+    "topicTag": "4.6",
+    "source": "original"
+  },
+  {
+    "id": "ic-c4-mc-17",
+    "unitId": 4,
+    "stem": "According to Dalton's atomic theory, atoms of different elements combine in simple, whole-number ratios to form:",
+    "choices": ["Isotopes", "Compounds", "Ions", "Subatomic particles"],
+    "correctIndex": 1,
+    "topicTag": "4.1",
+    "source": "original",
+    "explanation": "Dalton's atomic theory proposed that atoms of different elements combine in fixed, simple whole-number ratios to form compounds (e.g., two hydrogen atoms and one oxygen atom combining to form water). Isotopes involve atoms of the SAME element with differing neutron counts, ions involve gain or loss of electrons, and subatomic particles are components within atoms rather than a product of atoms combining.",
+    "difficulty": "beginner",
+    "hints": ["Think about what forms when different kinds of atoms join together in fixed proportions — this is one of Dalton's core postulates.", "This term describes substances like water (H2O) or table salt (NaCl), not variations within a single element."]
+  },
+  {
+    "id": "ic-c4-mc-18",
+    "unitId": 4,
+    "stem": "Which two subatomic particles are found inside the nucleus of an atom?",
+    "choices": ["Protons and electrons", "Neutrons and electrons", "Protons and neutrons", "Electrons only"],
+    "correctIndex": 2,
+    "topicTag": "4.2",
+    "source": "original",
+    "explanation": "The nucleus, the dense central core of the atom, contains protons (positively charged) and neutrons (neutral, no charge). Electrons are negatively charged particles that exist outside the nucleus, in the surrounding electron cloud/shells, not within it.",
+    "difficulty": "beginner",
+    "hints": ["Recall which particle type is missing from the dense, central part of the atom, and which two are found there together.", "Electrons are located outside the nucleus, not inside it."]
+  },
+  {
+    "id": "ic-c4-mc-19",
+    "unitId": 4,
+    "stem": "An atom of silicon has 14 protons. One isotope of silicon has a mass number of 28, and another has a mass number of 30. How many more neutrons does the heavier isotope have compared to the lighter one?",
+    "choices": ["0", "2", "4", "16"],
+    "correctIndex": 1,
+    "topicTag": "4.3",
+    "source": "original",
+    "explanation": "The lighter isotope (mass number 28) has 28 - 14 = 14 neutrons, while the heavier isotope (mass number 30) has 30 - 14 = 16 neutrons. The difference between them is 16 - 14 = 2 more neutrons in the heavier isotope. Since both isotopes have the identical proton count (14, defining them as silicon), the entire difference in mass number is due to neutrons.",
+    "difficulty": "intermediate",
+    "hints": ["Calculate the number of neutrons in each isotope separately first, using neutrons = mass number - protons.", "Since both isotopes have the same number of protons, any difference in mass number is caused entirely by a difference in neutrons."]
+  },
+  {
+    "id": "ic-c4-mc-20",
+    "unitId": 4,
+    "stem": "An ion is represented as Al^3+, where aluminum has an atomic number of 13. How many electrons does this ion contain?",
+    "choices": ["10", "13", "16", "3"],
+    "correctIndex": 0,
+    "topicTag": "4.4",
+    "source": "original",
+    "explanation": "A neutral aluminum atom has 13 electrons (equal to its 13 protons). The 3+ charge indicates the atom has lost 3 electrons, leaving 13 - 3 = 10 electrons. Choice B gives the neutral atom's electron count, before losing electrons. Choice C incorrectly adds instead of subtracting. Choice D confuses the ion's charge value with its electron count.",
+    "difficulty": "intermediate",
+    "hints": ["Start with the number of electrons in the neutral atom, which equals its atomic number.", "A positive charge means electrons were lost — subtract, don't add, the charge number from the neutral electron count."]
+  },
+  {
+    "id": "ic-c4-mc-21",
+    "unitId": 4,
+    "stem": "Element Q is a nonmetal located in Period 3 that has 7 valence electrons and readily gains 1 electron to form a stable, noble-gas-like -1 ion. Based on this description, in which group of the periodic table is element Q most likely located, and which specific Period 3 element does this best describe?",
+    "choices": [
+      "Group 1 (alkali metals); sodium (Na)",
+      "Group 17 (halogens); chlorine (Cl)",
+      "Group 2 (alkaline earth metals); magnesium (Mg)",
+      "Group 18 (noble gases); argon (Ar)"
+    ],
+    "correctIndex": 1,
+    "topicTag": "4.5",
+    "source": "original",
+    "explanation": "Elements with 7 valence electrons that readily gain 1 electron to achieve a full outer shell (8 valence electrons, a noble-gas configuration) are the halogens, Group 17; the Period 3 halogen is chlorine (Cl). Group 1 elements have only 1 valence electron and tend to lose it rather than gain 7 more, Group 2 elements have 2 valence electrons, and Group 18 (noble gases) elements already have a full outer shell and do not readily gain or lose electrons at all.",
+    "difficulty": "advanced",
+    "hints": ["Think about which group's elements are just one electron short of a full, stable outer shell.", "The group number for main-group nonmetals is often directly related to the number of valence electrons they have."]
+  },
+  {
+    "id": "ic-c4-mc-22",
+    "unitId": 4,
+    "stem": "Rank the following three elements in order of INCREASING atomic radius, and identify the trend(s) responsible: sodium (Na, Period 3, Group 1), chlorine (Cl, Period 3, Group 17), and potassium (K, Period 4, Group 1).",
+    "choices": [
+      "Cl < Na < K, because atomic radius decreases left-to-right across a period (making Cl smaller than Na) and increases down a group (making K larger than Na)",
+      "K < Na < Cl, because atomic radius increases across a period and decreases down a group",
+      "Na < Cl < K, because group trends dominate over period trends in every case",
+      "All three have approximately the same atomic radius, since they are all located close together on the periodic table"
+    ],
+    "correctIndex": 0,
+    "topicTag": "4.6",
+    "source": "original",
+    "explanation": "Atomic radius decreases from left to right across a period (increasing nuclear charge pulls valence electrons inward without adding a new shell), so within Period 3, chlorine (far right, Group 17) has a smaller radius than sodium (far left, Group 1). Atomic radius increases down a group (added electron shells), so potassium (Group 1, Period 4) has a larger radius than sodium (Group 1, Period 3), which sits directly above it. Combining both trends: Cl < Na < K. Choice B reverses both trends, choice C incorrectly claims group trends always dominate universally, and choice D ignores well-established periodic trends entirely.",
+    "difficulty": "advanced",
+    "hints": ["Compare Na and Cl using the period trend first (same row), then compare Na and K using the group trend (same column).", "Radius decreases moving right across a period and increases moving down a group — figure out how Cl, Na, and K relate to each other along both directions."]
+  }
+]

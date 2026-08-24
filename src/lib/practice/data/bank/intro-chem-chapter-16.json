@@ -1,0 +1,252 @@
+[
+  {
+    "id": "ic-c16-mc-1",
+    "unitId": 16,
+    "stem": "In most compounds, oxygen is assigned an oxidation number of:",
+    "choices": ["-1", "-2", "+2", "0"],
+    "correctIndex": 1,
+    "topicTag": "16.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c16-mc-2",
+    "unitId": 16,
+    "stem": "The oxidation number of any atom in its pure elemental form (for example, Fe(s) or O2(g)) is always zero.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "16.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c16-mc-3",
+    "unitId": 16,
+    "stem": "What is the oxidation number of hydrogen in the compound HCl?",
+    "choices": ["-1", "0", "+1", "+2"],
+    "correctIndex": 2,
+    "topicTag": "16.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c16-mc-4",
+    "unitId": 16,
+    "stem": "For a neutral (uncharged) compound, the sum of the oxidation numbers of all the atoms must equal:",
+    "choices": ["+1", "-1", "0", "the molar mass"],
+    "correctIndex": 2,
+    "topicTag": "16.1",
+    "source": "original"
+  },
+  {
+    "id": "ic-c16-mc-5",
+    "unitId": 16,
+    "stem": "Oxidation is best defined as the:",
+    "choices": ["gain of electrons", "loss of electrons", "gain of protons", "loss of neutrons"],
+    "correctIndex": 1,
+    "topicTag": "16.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c16-mc-6",
+    "unitId": 16,
+    "stem": "Reduction is best defined as the:",
+    "choices": ["loss of electrons", "gain of neutrons", "gain of electrons", "loss of protons"],
+    "correctIndex": 2,
+    "topicTag": "16.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c16-mc-7",
+    "unitId": 16,
+    "stem": "The substance that is itself reduced while causing another substance to be oxidized is called the:",
+    "choices": ["reducing agent", "catalyst", "buffer", "oxidizing agent"],
+    "correctIndex": 3,
+    "topicTag": "16.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c16-mc-8",
+    "unitId": 16,
+    "stem": "The reducing agent in a redox reaction is the substance that itself gets oxidized.",
+    "choices": ["True", "False"],
+    "correctIndex": 0,
+    "topicTag": "16.2",
+    "source": "original"
+  },
+  {
+    "id": "ic-c16-mc-9",
+    "unitId": 16,
+    "stem": "In the reaction Zn(s) + Cu2+(aq) -> Zn2+(aq) + Cu(s), the zinc metal is:",
+    "choices": ["reduced", "oxidized", "acting as a catalyst", "unchanged"],
+    "correctIndex": 1,
+    "topicTag": "16.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c16-mc-10",
+    "unitId": 16,
+    "stem": "In the reaction Zn(s) + Cu2+(aq) -> Zn2+(aq) + Cu(s), the Cu2+ ion is:",
+    "choices": ["oxidized", "unchanged", "reduced", "a spectator ion"],
+    "correctIndex": 2,
+    "topicTag": "16.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c16-mc-11",
+    "unitId": 16,
+    "stem": "When the equation Mg(s) + O2(g) -> MgO(s) is balanced, what coefficient is needed in front of MgO?",
+    "choices": ["1", "2", "3", "4"],
+    "correctIndex": 1,
+    "topicTag": "16.3",
+    "source": "original"
+  },
+  {
+    "id": "ic-c16-mc-12",
+    "unitId": 16,
+    "stem": "In a galvanic (voltaic) cell, oxidation takes place at the:",
+    "choices": ["cathode", "salt bridge", "anode", "electrolyte reservoir"],
+    "correctIndex": 2,
+    "topicTag": "16.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c16-mc-13",
+    "unitId": 16,
+    "stem": "In a galvanic cell, reduction takes place at the:",
+    "choices": ["anode", "cathode", "salt bridge", "wire"],
+    "correctIndex": 1,
+    "topicTag": "16.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c16-mc-14",
+    "unitId": 16,
+    "stem": "In an operating galvanic cell, electrons in the external circuit flow from the cathode to the anode.",
+    "choices": ["True", "False"],
+    "correctIndex": 1,
+    "topicTag": "16.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c16-mc-15",
+    "unitId": 16,
+    "stem": "The main purpose of the salt bridge in a galvanic cell is to:",
+    "choices": [
+      "supply electrons directly to the cathode",
+      "maintain electrical neutrality by allowing ion flow between the two half-cells",
+      "increase the voltage produced by the cell",
+      "dissolve the metal electrodes"
+    ],
+    "correctIndex": 1,
+    "topicTag": "16.4",
+    "source": "original"
+  },
+  {
+    "id": "ic-c16-mc-16",
+    "unitId": 16,
+    "stem": "What is the oxidation number of sulfur in the sulfate ion, SO4^2-?",
+    "choices": ["+6", "+8", "+2", "-2"],
+    "correctIndex": 0,
+    "topicTag": "16.1",
+    "source": "original",
+    "explanation": "The sum of oxidation numbers must equal the overall charge of the ion (-2 here). With oxygen at its usual -2: S + 4(-2) = -2, so S = +6. Choosing +8 comes from incorrectly setting the sum equal to 0, as if this were a neutral compound instead of a -2 ion. Choosing +2 comes from mistakenly using -1 (a peroxide oxidation state) for oxygen instead of the standard -2. Choosing -2 simply copies the ion's overall charge instead of solving for sulfur's individual oxidation number.",
+    "difficulty": "beginner",
+    "hints": [
+      "The sum of oxidation numbers must equal the overall charge of the ion, which is -2 here, not zero.",
+      "Oxygen is -2 in this ion (not a peroxide), and there are 4 oxygen atoms."
+    ]
+  },
+  {
+    "id": "ic-c16-mc-17",
+    "unitId": 16,
+    "stem": "The mnemonic 'OIL RIG' is often used to remember that:",
+    "choices": [
+      "Oxidation Is Loss (of electrons), Reduction Is Gain (of electrons)",
+      "Oxidation Is Loss (of protons), Reduction Is Gain (of protons)",
+      "Oxidation Involves Ligands, Reduction Involves Gases",
+      "Oxidation Is Large, Reduction Is Grand"
+    ],
+    "correctIndex": 0,
+    "topicTag": "16.2",
+    "source": "original",
+    "explanation": "OIL RIG stands for Oxidation Is Loss (of electrons), Reduction Is Gain (of electrons). Choosing the proton version reflects a common confusion, since oxidation and reduction involve electron transfer, not proton transfer. The other two options are nonsensical distortions of the mnemonic.",
+    "difficulty": "beginner",
+    "hints": [
+      "This is a classic memory device involving electrons, not protons.",
+      "Recall the definitions of oxidation and reduction in terms of electron transfer."
+    ]
+  },
+  {
+    "id": "ic-c16-mc-18",
+    "unitId": 16,
+    "stem": "In the reaction 2 Al(s) + 3 Cu(NO3)2(aq) -> 2 Al(NO3)3(aq) + 3 Cu(s), which statement correctly identifies the oxidizing agent?",
+    "choices": [
+      "Cu(NO3)2, because the Cu^2+ ion is reduced from +2 to 0",
+      "Al, because it loses electrons",
+      "Cu(NO3)2, because nitrate ions are reduced",
+      "Al(NO3)3, because it is the product containing aluminum"
+    ],
+    "correctIndex": 0,
+    "topicTag": "16.3",
+    "source": "original",
+    "explanation": "The oxidizing agent is the species that is itself reduced while causing another substance to be oxidized. Here Cu^2+ is reduced from +2 to 0, so Cu(NO3)2 is the oxidizing agent. Choosing Al describes the reducing agent (Al is oxidized/loses electrons), not the oxidizing agent. Choosing 'nitrate ions are reduced' is factually wrong; NO3- is a spectator ion here and does not change oxidation state. Al(NO3)3 is a product, and being a product does not make it an oxidizing or reducing agent.",
+    "difficulty": "intermediate",
+    "hints": [
+      "First determine which element's oxidation number decreases (gains electrons). That species is being reduced.",
+      "The oxidizing agent is whatever gets reduced, not whatever gets oxidized."
+    ]
+  },
+  {
+    "id": "ic-c16-mc-19",
+    "unitId": 16,
+    "stem": "A galvanic cell is built from a magnesium electrode in Mg(NO3)2 solution and a silver electrode in AgNO3 solution, connected by a salt bridge. Magnesium is more easily oxidized than silver. In which direction do electrons flow through the external wire?",
+    "choices": [
+      "From the magnesium electrode to the silver electrode",
+      "From the silver electrode to the magnesium electrode",
+      "Electrons do not flow through the external wire in a galvanic cell",
+      "Electrons flow through the salt bridge, not the wire"
+    ],
+    "correctIndex": 0,
+    "topicTag": "16.4",
+    "source": "original",
+    "explanation": "Magnesium, being more easily oxidized, serves as the anode where it loses electrons (Mg -> Mg^2+ + 2e-); those electrons travel through the external wire to the silver cathode, where Ag+ ions are reduced. Choosing the reverse direction is incorrect. The third choice is false, since generating electron flow through the wire is the entire purpose of the cell. The fourth choice confuses the salt bridge's role (ion flow to maintain neutrality) with the wire's role (electron flow).",
+    "difficulty": "intermediate",
+    "hints": [
+      "Electrons are released at the anode (where oxidation occurs) and flow through the wire to the cathode (where reduction occurs).",
+      "Which metal is being oxidized here, magnesium or silver?"
+    ]
+  },
+  {
+    "id": "ic-c16-mc-20",
+    "unitId": 16,
+    "stem": "Consider the unbalanced redox reaction: Al(s) + Cu^2+(aq) -> Al^3+(aq) + Cu(s). Aluminum is oxidized (Al -> Al^3+ + 3e-) and copper(II) is reduced (Cu^2+ + 2e- -> Cu). When the overall equation is balanced so that electrons lost equal electrons gained, what is the coefficient of Al^3+ in the fully balanced equation?",
+    "choices": ["2", "3", "6", "1"],
+    "correctIndex": 0,
+    "topicTag": "16.3",
+    "source": "original",
+    "explanation": "To balance electrons, find the least common multiple of 3 and 2, which is 6. Multiplying the Al half-reaction by 2 gives 2 Al -> 2 Al^3+ + 6e-, and multiplying the Cu half-reaction by 3 gives 3 Cu^2+ + 6e- -> 3 Cu. The balanced equation is 2 Al + 3 Cu^2+ -> 2 Al^3+ + 3 Cu, so the coefficient of Al^3+ is 2. Choosing 3 mistakenly uses the multiplier meant for copper instead of aluminum. Choosing 6 mistakenly uses the total number of electrons transferred as the coefficient. Choosing 1 assumes no balancing multiplier is needed, which would not conserve electrons.",
+    "difficulty": "advanced",
+    "hints": [
+      "Find the least common multiple of the electrons lost (3) and electrons gained (2). That tells you how many electrons must be transferred overall.",
+      "Multiply each half-reaction by whatever factor makes its electron count equal to that common multiple, then read off the coefficient in front of Al^3+."
+    ]
+  },
+  {
+    "id": "ic-c16-mc-21",
+    "unitId": 16,
+    "stem": "As a galvanic cell operates, reactants are consumed and products accumulate in each half-cell. Which of the following describes what happens to the cell's voltage as it continues to operate over time, and why?",
+    "choices": [
+      "The voltage gradually decreases toward zero as the cell approaches equilibrium",
+      "The voltage stays exactly constant no matter how long the cell operates",
+      "The voltage gradually increases as more product accumulates",
+      "The voltage immediately drops to zero the moment the switch is closed"
+    ],
+    "correctIndex": 0,
+    "topicTag": "16.4",
+    "source": "original",
+    "explanation": "As the redox reaction proceeds, reactant concentrations decrease and product concentrations increase, driving the system toward equilibrium. Since a cell's voltage reflects how far the reaction is from equilibrium, the voltage gradually decreases and reaches zero once equilibrium is reached (a 'dead' battery). The voltage does not stay constant, since concentrations keep changing. It does not increase, since approaching equilibrium reduces the driving force. It does not drop to zero instantly, since plenty of reactant remains when the switch first closes.",
+    "difficulty": "advanced",
+    "hints": [
+      "Think about what a galvanic cell reaction has in common with any reaction approaching chemical equilibrium.",
+      "As reactant is used up and product builds up, is there more or less 'driving force' left to push electrons through the wire?"
+    ]
+  }
+]

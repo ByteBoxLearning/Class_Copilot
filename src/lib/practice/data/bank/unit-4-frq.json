@@ -1,0 +1,94 @@
+[
+  {
+    "id": "u4-frq-long-1",
+    "unitId": 4,
+    "kind": "long",
+    "points": 10,
+    "stem": "A student is given a 0.850 g sample of an impure solid mixture that contains calcium carbonate, CaCO3(s), along with an inert, non-reactive solid that does not react with acid. The student places the sample in a flask fitted with a gas-collection apparatus and adds excess 6.00 M HCl(aq). The following reaction occurs:\nCaCO3(s) + 2HCl(aq) -> CaCl2(aq) + H2O(l) + CO2(g)\nAll of the CO2(g) produced is collected over water and its volume is measured at a temperature of 25 degrees C and a pressure of 1.00 atm. The volume of CO2(g) collected is 176 mL.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Write the balanced net ionic equation for the reaction between CaCO3(s) and HCl(aq).",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the number of moles of CO2(g) produced.",
+        "maxPoints": 2
+      },
+      {
+        "label": "(c)",
+        "prompt": "Calculate the mass of CaCO3(s) that reacted, and determine the percent by mass of CaCO3 in the original 0.850 g sample.",
+        "maxPoints": 3
+      },
+      {
+        "label": "(d)",
+        "prompt": "A student claims that this reaction must be an oxidation-reduction reaction because a gas is produced. Using oxidation numbers, determine whether the student's claim is correct. Justify your answer.",
+        "maxPoints": 3
+      }
+    ],
+    "workedSolution": "(a) CaCO3(s) is a solid and does not dissociate. HCl(aq) is a strong acid and dissociates fully: H^+(aq) + Cl^-(aq). Of the products, CaCl2(aq) dissociates into Ca^2+(aq) and 2Cl^-(aq); H2O(l) and CO2(g) remain molecular. Full ionic equation: CaCO3(s) + 2H^+(aq) + 2Cl^-(aq) -> Ca^2+(aq) + 2Cl^-(aq) + H2O(l) + CO2(g). Cl^-(aq) is a spectator ion on both sides and is removed, giving the net ionic equation: CaCO3(s) + 2H^+(aq) -> Ca^2+(aq) + H2O(l) + CO2(g).\n\n(b) Using the ideal gas law, PV = nRT, with T converted to Kelvin (25 degrees C + 273 = 298 K), P = 1.00 atm, V = 0.176 L, and R = 0.08206 L atm / (mol K): n(CO2) = PV / RT = (1.00 atm x 0.176 L) / (0.08206 L atm/mol K x 298 K) = 0.176 / 24.45 = 7.20 x 10^-3 mol CO2.\n\n(c) From the balanced equation, the mole ratio of CaCO3 to CO2 is 1:1, so moles CaCO3 reacted = 7.20 x 10^-3 mol. Mass of CaCO3 = 7.20 x 10^-3 mol x 100.09 g/mol = 0.721 g. Percent by mass of CaCO3 in the sample = (0.721 g / 0.850 g) x 100% = 84.8%.\n\n(d) Assign oxidation numbers to each element in reactants and products: Ca is +2 in CaCO3 and remains +2 in CaCl2 (unchanged); C is +4 in CaCO3 and remains +4 in CO2 (unchanged, since O is -2 in both carbonate and CO2 and the totals balance); O is -2 throughout; H is +1 in HCl and remains +1 in H2O (unchanged); Cl is -1 in HCl and remains -1 in CaCl2 (unchanged). Since no element undergoes a change in oxidation number, no electrons are transferred, so this is NOT a redox reaction. It is better classified as an acid-base (gas-forming/double-replacement) reaction; the gas is simply a molecular product released from solution, not evidence of electron transfer. The student's claim is incorrect.",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for writing the correct reactant and product species with correct coefficients: CaCO3(s) + 2H^+(aq) -> Ca^2+(aq) + H2O(l) + CO2(g) (or the equivalent full ionic form before cancellation). 1 point for correctly omitting the spectator ion Cl^-(aq) and showing correct physical states for all species.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correctly setting up the ideal gas law with T properly converted to Kelvin (298 K) and consistent units (L, atm). 1 point for the correct final answer, n(CO2) = 7.20 x 10^-3 mol (or equivalent, e.g., 0.00720 mol), with correct units.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(c)",
+        "criterion": "1 point for correctly applying the 1:1 mole ratio between CaCO3 and CO2 to obtain moles of CaCO3 (using the student's value of moles CO2 from part (b), error carried forward). 1 point for correctly converting moles of CaCO3 to mass using the molar mass of CaCO3 (100.09 g/mol). 1 point for correctly calculating percent by mass as (mass CaCO3 / 0.850 g) x 100%. Full credit given for correct method and arithmetic even if part (b)'s value was incorrect.",
+        "points": 3,
+        "allowsErrorCarriedForward": true
+      },
+      {
+        "partLabel": "(d)",
+        "criterion": "1 point for correctly stating that the claim is incorrect (this is not a redox reaction). 1 point for correctly assigning oxidation numbers to at least two elements (e.g., C and Ca, or C and Cl) on both sides of the equation and showing they do not change. 1 point for a valid overall justification connecting the unchanged oxidation numbers to the conclusion that no electron transfer occurs (and/or correctly identifying the reaction as acid-base/double-replacement rather than redox).",
+        "points": 3,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "bank"
+  },
+  {
+    "id": "u4-frq-short-1",
+    "unitId": 4,
+    "kind": "short",
+    "points": 4,
+    "stem": "A strip of zinc metal is placed into an aqueous solution of silver nitrate, AgNO3(aq). A reaction occurs, and shiny crystals of silver metal form on the surface of the zinc strip. The overall reaction is represented by the equation:\nZn(s) + 2AgNO3(aq) -> Zn(NO3)2(aq) + 2Ag(s)",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Identify the oxidizing agent and the reducing agent in this reaction. Justify your answer by referring to the change in oxidation number of the relevant element(s).",
+        "maxPoints": 2
+      },
+      {
+        "label": "(b)",
+        "prompt": "Write the net ionic equation for this reaction.",
+        "maxPoints": 2
+      }
+    ],
+    "workedSolution": "(a) Assign oxidation numbers: Zn(s) has an oxidation number of 0, and in Zn(NO3)2 it is +2; Zn increases from 0 to +2, losing electrons, so Zn is oxidized and is the reducing agent. Ag in AgNO3 has an oxidation number of +1, and in Ag(s) it is 0; Ag decreases from +1 to 0, gaining electrons, so Ag^+ is reduced and AgNO3 (or Ag^+) is the oxidizing agent.\n\n(b) NO3^- is present as a spectator ion in solution both before and after reaction (it does not change and is not part of any solid). Full ionic equation: Zn(s) + 2Ag^+(aq) + 2NO3^-(aq) -> Zn^2+(aq) + 2NO3^-(aq) + 2Ag(s). Removing the spectator ion NO3^- gives the net ionic equation: Zn(s) + 2Ag^+(aq) -> Zn^2+(aq) + 2Ag(s).",
+    "rubric": [
+      {
+        "partLabel": "(a)",
+        "criterion": "1 point for correctly identifying Zn(s) as the reducing agent and Ag^+ (or AgNO3) as the oxidizing agent. 1 point for correct justification citing the oxidation number changes: Zn goes from 0 to +2 (oxidized); Ag goes from +1 to 0 (reduced).",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      },
+      {
+        "partLabel": "(b)",
+        "criterion": "1 point for correct species and coefficients: Zn(s), 2Ag^+(aq), Zn^2+(aq), 2Ag(s). 1 point for correctly omitting the spectator ion NO3^-(aq) and showing correct physical states for all remaining species.",
+        "points": 2,
+        "allowsErrorCarriedForward": false
+      }
+    ],
+    "source": "bank"
+  }
+]

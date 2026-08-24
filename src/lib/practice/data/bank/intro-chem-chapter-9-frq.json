@@ -1,0 +1,194 @@
+[
+  {
+    "id": "ic9-short-1",
+    "unitId": 9,
+    "kind": "short",
+    "points": 4,
+    "stem": "Consider a neutral, ground-state atom of phosphorus (P, atomic number 15).",
+    "parts": [
+      { "label": "(a)", "prompt": "Write the complete ground-state electron configuration for phosphorus.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Describe how the electrons are arranged among the three 3p orbitals (using arrows-in-boxes/orbital-diagram notation, described in words), and state the number of unpaired electrons in a phosphorus atom, citing Hund's rule.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) Phosphorus has 15 electrons. Ground-state electron configuration: 1s2 2s2 2p6 3s2 3p3.\n\n(b) The 3p sublevel consists of three orbitals of equal energy. Hund's rule states that electrons fill degenerate (equal-energy) orbitals singly, with parallel spins, before any orbital receives a second electron. With 3 electrons in the 3p sublevel, each of the three 3p orbitals receives exactly one electron: (up arrow) (up arrow) (up arrow), one in each box. This gives phosphorus 3 unpaired electrons.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "2 points for the fully correct ground-state configuration 1s2 2s2 2p6 3s2 3p3 (1 point deducted for one incorrect sublevel/exponent, 0 points if the total electron count or overall order is substantially wrong).", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly describing one electron placed in each of the three 3p orbitals with parallel spin, citing Hund's rule, consistent with the student's own 3p electron count from part (a); 1 point for correctly stating 3 unpaired electrons (or the number consistent with the student's own part (a) configuration).", "points": 2, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "beginner",
+    "hints": [
+      "Count phosphorus's total electrons first, then fill orbitals in order of increasing energy.",
+      "Remember Hund's rule: electrons fill empty orbitals of equal energy one at a time before pairing up."
+    ]
+  },
+  {
+    "id": "ic9-short-2",
+    "unitId": 9,
+    "kind": "short",
+    "points": 4,
+    "stem": "Consider the three elements potassium (K), calcium (Ca), and rubidium (Rb). Potassium and calcium are both in Period 4; rubidium is directly below potassium in Period 5.",
+    "parts": [
+      { "label": "(a)", "prompt": "Using only their positions on the periodic table, rank the three elements in order of increasing atomic radius.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Explain the trend you gave in part (a), referring to effective nuclear charge and/or electron shielding.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) Increasing atomic radius: Ca < K < Rb.\n\n(b) Moving across Period 4 from K to Ca, one proton and one electron are added to the same outermost shell (4s); the added proton increases the effective nuclear charge felt by the outer electrons without adding any new shielding, pulling the electron cloud in more tightly, so Ca is smaller than K. Moving down a group from K to Rb, an entire additional principal energy level (shell) is added; this greatly increases electron shielding of the outer electron from the nucleus, so despite Rb having a larger nuclear charge, its outer electron is farther from the nucleus and Rb is larger than K.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "2 points for the fully correct order Ca < K < Rb; partial credit of 1 point if only one of the two pairwise comparisons is correct.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for a correct explanation of the K-to-Ca (across-period) comparison using effective nuclear charge/shielding, consistent with the order given in part (a); 1 point for a correct explanation of the K-to-Rb (down-group) comparison using added shell/shielding, consistent with the order given in part (a).", "points": 2, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Compare K and Ca first -- they're in the same period.",
+      "Then compare K and Rb -- they're in the same group, differing by one full shell."
+    ]
+  },
+  {
+    "id": "ic9-long-1",
+    "unitId": 9,
+    "kind": "long",
+    "points": 10,
+    "stem": "A neutral, ground-state atom of an unknown element X has the electron configuration: 1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p3",
+    "parts": [
+      { "label": "(a)", "prompt": "Determine the total number of electrons in a neutral atom of X, identify element X by name and symbol, and state its period and group (family) number on the periodic table.", "maxPoints": 3 },
+      { "label": "(b)", "prompt": "Write the noble-gas (core) abbreviated electron configuration for element X.", "maxPoints": 2 },
+      { "label": "(c)", "prompt": "State whether element X is classified as a metal, nonmetal, or metalloid, and identify the charge of the ion it would most commonly be expected to form, based on its valence electron configuration.", "maxPoints": 3 },
+      { "label": "(d)", "prompt": "Selenium (Se) is the element immediately to the right of X in Period 4 (one more proton than X). Predict whether X or Se has the higher first ionization energy, and explain your reasoning in terms of their electron configurations.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) Total electrons = 2+2+6+2+6+2+10+3 = 33. Element with atomic number 33 is arsenic, symbol As. It is located in Period 4 (highest principal energy level occupied is n=4) and Group 15 (5 valence electrons: 4s2 4p3, plus the (n-1)d10 which is not counted as valence).\n\n(b) Abbreviated configuration: [Ar] 4s2 3d10 4p3.\n\n(c) Arsenic is classified as a metalloid (it lies along the metal/nonmetal 'staircase' of the periodic table). Its valence configuration is 4s2 4p3 (5 valence electrons); to reach a stable noble-gas-like octet it would need to gain 3 electrons, so it is most commonly expected to form the As^3- ion.\n\n(d) Arsenic (X) is expected to have a higher first ionization energy than selenium (Se), even though Se has one additional proton. Arsenic's 4p3 configuration is a half-filled subshell (one electron in each of the three 4p orbitals), which is an especially stable, lower-energy arrangement, making its electrons harder to remove. Selenium's 4p4 configuration has two electrons paired in one 4p orbital; the extra electron-electron repulsion in that paired orbital makes it easier to remove one of those electrons. This repulsion effect outweighs selenium's slightly greater nuclear charge, so arsenic's first ionization energy is higher.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly summing to 33 total electrons; 1 point for correctly identifying arsenic (As); 1 point for correctly stating Period 4 and Group 15.", "points": 3, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "2 points for the correct abbreviated configuration [Ar] 4s2 3d10 4p3, consistent with the student's own element identification from part (a) if it differs from arsenic.", "points": 2, "allowsErrorCarriedForward": true },
+      { "partLabel": "(c)", "criterion": "1 point for correctly classifying the element as a metalloid, consistent with the student's own identification from part (a); 1 point for correctly identifying 5 valence electrons and the tendency to gain electrons; 1 point for correctly stating the resulting ion charge (3-), consistent with the student's own reasoning.", "points": 3, "allowsErrorCarriedForward": true },
+      { "partLabel": "(d)", "criterion": "1 point for correctly predicting that X (arsenic) has the higher first ionization energy; 1 point for a correct explanation referencing the extra stability of the half-filled 4p3 subshell versus the electron-electron repulsion in Se's paired 4p4 subshell.", "points": 2, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Add up all the superscript numbers in the configuration to find the total electron count -- that tells you the atomic number.",
+      "For part (d), consider that a half-filled 4p3 subshell has extra stability, similar to how a half-filled d subshell does."
+    ]
+  },
+  {
+    "id": "ic9-long-2",
+    "unitId": 9,
+    "kind": "long",
+    "points": 10,
+    "stem": "When a sample of hydrogen gas is excited by an electrical discharge, the atoms emit light only at certain distinct wavelengths (a line spectrum) rather than a continuous rainbow of colors. In one such transition, an electron falls from the n = 4 energy level to the n = 2 energy level, emitting a photon of visible light.",
+    "parts": [
+      { "label": "(a)", "prompt": "Explain, using the quantum mechanical (Bohr) model of the atom, why excited atoms emit light only at specific, discrete wavelengths rather than a continuous range of colors.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "The n = 4 to n = 2 transition described above belongs to a named series of hydrogen emission lines. Name this series, and state whether a transition ending at n = 1 releases more or less energy than one ending at n = 2, explaining why.", "maxPoints": 3 },
+      { "label": "(c)", "prompt": "Sodium (Na) and magnesium (Mg) are both Period 3 elements. Write the complete ground-state electron configuration for each, and use them to predict which element has the lower first ionization energy, explaining your reasoning.", "maxPoints": 3 },
+      { "label": "(d)", "prompt": "Using only periodic trends, predict which element, sodium or magnesium, has the larger atomic radius, and justify your answer in one or two sentences.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) In the quantum mechanical model, electrons in an atom can only occupy specific, quantized energy levels rather than any arbitrary energy. When an electron in an excited atom drops from a higher energy level to a lower one, it emits a photon whose energy exactly equals the difference in energy between those two levels. Since only certain energy gaps are allowed between the atom's quantized levels, only photons of certain specific energies (and therefore specific wavelengths/colors) can be emitted, producing a line spectrum rather than a continuous spectrum.\n\n(b) This transition (ending at n=2) belongs to the Balmer series, which produces lines in the visible region of the spectrum for hydrogen. A transition ending at n=1 (the Lyman series) releases more energy than one ending at n=2. This is because the hydrogen atom's energy levels are spaced farther apart at lower n (closer to the nucleus) and closer together at higher n, so dropping all the way down to the ground state (n=1) corresponds to a larger energy gap than dropping only to n=2.\n\n(c) Sodium: 1s2 2s2 2p6 3s1. Magnesium: 1s2 2s2 2p6 3s2. Sodium has the lower first ionization energy. Sodium's single 3s electron is the lone occupant of that sublevel and is relatively easy to remove, and removing it leaves Na+ with a full, stable noble-gas (neon) configuration. Magnesium's outer electron is one of a filled, extra-stable 3s2 pair, which is harder to disturb, so more energy is required to remove an electron from Mg than from Na.\n\n(d) Sodium has the larger atomic radius. Moving left to right across the same period (from Na to Mg), one more proton is added while the added electron still enters the same outermost shell (n=3), so effective nuclear charge increases without any new shielding. This pulls Mg's outer electrons closer to the nucleus, making Mg's atomic radius smaller than Na's.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for stating that electron energy levels are quantized; 1 point for correctly explaining that emitted photon energy equals the fixed energy gap between two allowed levels, producing only specific wavelengths.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly naming the Balmer series; 1 point for correctly stating that a transition to n=1 releases more energy than one to n=2; 1 point for a correct explanation based on the energy level spacing being larger at lower n.", "points": 3, "allowsErrorCarriedForward": false },
+      { "partLabel": "(c)", "criterion": "1 point for both correct electron configurations (Na: 1s2 2s2 2p6 3s1; Mg: 1s2 2s2 2p6 3s2); 1 point for correctly identifying sodium as having the lower first ionization energy; 1 point for a correct explanation referencing sodium's single, easily-removed 3s electron versus magnesium's more stable filled 3s2 pair.", "points": 3, "allowsErrorCarriedForward": false },
+      { "partLabel": "(d)", "criterion": "1 point for correctly identifying sodium as having the larger atomic radius; 1 point for a correct explanation based on increasing effective nuclear charge across the period without added shielding.", "points": 2, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "For part (b), recall that hydrogen's energy levels get closer together as n increases, so drops to lower n release more energy.",
+      "For parts (c) and (d), write out the full electron configurations of Na and Mg first -- the differences will reveal both trends."
+    ]
+  },
+  {
+    "id": "ic9-short-3",
+    "unitId": 9,
+    "kind": "short",
+    "points": 4,
+    "stem": "Consider the fourth principal energy level (n = 4) of an atom.",
+    "parts": [
+      { "label": "(a)", "prompt": "List the sublevels (subshells) present in the n = 4 level, and state how many individual orbitals each sublevel contains.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Calculate the maximum number of electrons that the entire n = 4 level can hold, showing your work as a sum over each sublevel.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) The n = 4 level contains four sublevels: 4s (1 orbital), 4p (3 orbitals), 4d (5 orbitals), and 4f (7 orbitals).\n\n(b) Maximum electrons per sublevel (2 electrons per orbital): 4s = 2, 4p = 6, 4d = 10, 4f = 14. Total = 2 + 6 + 10 + 14 = 32 electrons.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "2 points for correctly listing all four sublevels (4s, 4p, 4d, 4f) with the correct number of orbitals in each (1 point deducted for each missing or incorrect sublevel/orbital count).", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly converting each sublevel's orbital count into a maximum electron count (2 electrons per orbital), consistent with the student's own sublevel list from part (a); 1 point for the correct total of 32 electrons.", "points": 2, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "intermediate",
+    "hints": [
+      "Recall that s, p, d, and f subshells contain 1, 3, 5, and 7 orbitals respectively.",
+      "Each orbital, regardless of type, can hold a maximum of 2 electrons."
+    ]
+  },
+  {
+    "id": "ic9-short-4",
+    "unitId": 9,
+    "kind": "short",
+    "points": 4,
+    "stem": "The first ionization energies of beryllium (Be) and boron (B) are approximately 899 kJ/mol and 801 kJ/mol respectively, even though boron is one element to the right of beryllium on the periodic table.",
+    "parts": [
+      { "label": "(a)", "prompt": "Explain why the general left-to-right periodic trend would normally predict that boron has a higher first ionization energy than beryllium.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Using the electron configurations of Be (1s2 2s2) and B (1s2 2s2 2p1), explain why boron's first ionization energy is actually lower than beryllium's.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) Moving left to right across a period, protons are added to the nucleus while electrons are added to the same outer shell, increasing the effective nuclear charge felt by the valence electrons without adding new shielding. This normally makes valence electrons harder to remove, so ionization energy is generally expected to increase from Be to B.\n\n(b) Beryllium's valence electrons occupy a completely filled 2s2 subshell, which is an especially stable, lower-energy arrangement that resists having an electron removed. Boron's highest-energy electron instead occupies the 2p1 subshell, which is higher in energy than the filled 2s2 subshell and holds only a single electron with no extra filled-subshell stability. As a result, it is actually easier to remove boron's lone 2p electron than to remove one of beryllium's paired, stable 2s2 electrons, making boron's first ionization energy lower than beryllium's despite the general trend.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly describing increasing effective nuclear charge across a period without added shielding; 1 point for correctly connecting this to the general expectation of increasing ionization energy from Be to B.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for correctly identifying beryllium's filled, stable 2s2 subshell as harder to remove an electron from; 1 point for correctly identifying boron's higher-energy, singly-occupied 2p1 electron as easier to remove, explaining the lower ionization energy.", "points": 2, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Start with the general rule: moving left to right across a period, ionization energy increases due to greater effective nuclear charge.",
+      "Look at the electron each atom must remove -- is it coming from a filled, stable subshell or a subshell that just started filling?"
+    ]
+  },
+  {
+    "id": "ic9-long-3",
+    "unitId": 9,
+    "kind": "long",
+    "points": 10,
+    "stem": "The elements sulfur (S, Z = 16) and potassium (K, Z = 19) each commonly form monatomic ions that are isoelectronic with argon (Ar, Z = 18).",
+    "parts": [
+      { "label": "(a)", "prompt": "Write the ground-state electron configuration for a neutral sulfur atom and for a neutral potassium atom.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Write the electron configuration for the ion that each element commonly forms (S^2- and K+), and confirm that both ions are isoelectronic with argon.", "maxPoints": 3 },
+      { "label": "(c)", "prompt": "Explain, in terms of valence electrons and stability, why sulfur gains electrons to form an anion while potassium loses an electron to form a cation.", "maxPoints": 2 },
+      { "label": "(d)", "prompt": "Predict which ion, S^2- or K+, has the larger ionic radius, and explain your reasoning using the fact that both ions have the same number of electrons but different nuclear charges.", "maxPoints": 3 }
+    ],
+    "workedSolution": "(a) Sulfur: 1s2 2s2 2p6 3s2 3p4. Potassium: 1s2 2s2 2p6 3s2 3p6 4s1.\n\n(b) Sulfur gains 2 electrons to form S^2-: 1s2 2s2 2p6 3s2 3p6 (18 electrons). Potassium loses 1 electron to form K+: 1s2 2s2 2p6 3s2 3p6 (18 electrons). Both ions have exactly 18 electrons, matching the electron configuration and electron count of neutral argon (Z = 18), so both are isoelectronic with Ar.\n\n(c) Sulfur has 6 valence electrons (3s2 3p4); gaining 2 more electrons completes a full octet (a stable, noble-gas-like configuration matching Ar), which is more stable than the neutral atom. Potassium has only 1 valence electron (4s1); losing that single electron empties the 4s orbital entirely, revealing the already-stable, filled argon-like core underneath, which is more stable than keeping the lone, loosely-held valence electron.\n\n(d) S^2- has the larger ionic radius. Both ions have exactly 18 electrons, but K+ has 19 protons while S^2- has only 16 protons. Since S^2- has fewer protons attracting the same number of electrons, its electron cloud experiences a lower effective nuclear charge per electron and is held less tightly, spreading out farther. K+, with more protons pulling on the same 18 electrons, holds its electron cloud in more tightly, making it the smaller ion.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for the correct sulfur configuration (1s2 2s2 2p6 3s2 3p4); 1 point for the correct potassium configuration (1s2 2s2 2p6 3s2 3p6 4s1).", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for the correct S^2- configuration; 1 point for the correct K+ configuration; 1 point for correctly confirming both ions have 18 electrons, matching argon.", "points": 3, "allowsErrorCarriedForward": true },
+      { "partLabel": "(c)", "criterion": "1 point for correctly explaining that sulfur gains 2 electrons to reach a stable octet/noble-gas configuration; 1 point for correctly explaining that potassium loses its single valence electron to reveal a stable, filled argon-like core.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(d)", "criterion": "1 point for correctly identifying S^2- as the larger ion; 1 point for correctly noting both ions have the same number of electrons (18); 1 point for correctly explaining that S^2-'s fewer protons result in a lower effective nuclear charge and a larger radius, consistent with the student's own identification.", "points": 3, "allowsErrorCarriedForward": true }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Think about how many electrons S needs to gain, and how many K needs to lose, to match argon's electron count.",
+      "For part (d), remember that isoelectronic ions all have the same number of electrons -- the difference in size comes only from the number of protons in the nucleus."
+    ]
+  },
+  {
+    "id": "ic9-long-4",
+    "unitId": 9,
+    "kind": "long",
+    "points": 10,
+    "stem": "The expected electron configuration for chromium (Cr, Z = 24), based on strict application of the Aufbau principle, would be [Ar] 4s2 3d4. However, the experimentally observed ground-state configuration of chromium is actually [Ar] 4s1 3d5.",
+    "parts": [
+      { "label": "(a)", "prompt": "State the total number of electrons in a neutral chromium atom, and confirm that both the expected ([Ar] 4s2 3d4) and observed ([Ar] 4s1 3d5) configurations account for this same total.", "maxPoints": 2 },
+      { "label": "(b)", "prompt": "Explain why the observed [Ar] 4s1 3d5 configuration is actually lower in energy (more stable) than the 'expected' [Ar] 4s2 3d4 configuration, referring to the special stability of half-filled subshells.", "maxPoints": 3 },
+      { "label": "(c)", "prompt": "Describe, in words, the arrangement of electrons among the 3d and 4s orbitals in the observed ground-state configuration of chromium, and state the total number of unpaired electrons in a chromium atom.", "maxPoints": 3 },
+      { "label": "(d)", "prompt": "Copper (Cu, Z = 29) shows a similar exception, with an observed configuration of [Ar] 4s1 3d10 rather than the 'expected' [Ar] 4s2 3d9. Identify which subshell in copper's observed configuration is completely filled, and explain why this contributes extra stability.", "maxPoints": 2 }
+    ],
+    "workedSolution": "(a) Chromium has 24 electrons (Z = 24). [Ar] accounts for 18 electrons. Expected: 4s2 (2) + 3d4 (4) = 6, so 18 + 6 = 24. Observed: 4s1 (1) + 3d5 (5) = 6, so 18 + 6 = 24. Both configurations correctly total 24 electrons; they differ only in how the 6 outer electrons are distributed between the 4s and 3d sublevels.\n\n(b) A half-filled d subshell (3d5, one electron in each of the five d orbitals with parallel spins, per Hund's rule) is an especially stable, lower-energy arrangement because the symmetric, evenly-spread electron distribution reduces electron-electron repulsion compared to a less symmetric arrangement. Promoting one electron from 4s into 3d to achieve this half-filled 3d5 configuration lowers the overall energy of the atom by more than enough to offset emptying the 4s sublevel, so [Ar] 4s1 3d5 is the true, lower-energy ground state rather than [Ar] 4s2 3d4.\n\n(c) In the observed ground state, the single 4s electron occupies the 4s orbital alone (unpaired). Each of the five 3d orbitals holds exactly one electron, all with parallel spins according to Hund's rule, so none of the 3d electrons are paired with each other either. In total, chromium has 6 unpaired electrons: 1 from the 4s orbital plus 5 from the five singly-occupied 3d orbitals.\n\n(d) In copper's observed configuration, [Ar] 4s1 3d10, the 3d subshell is completely filled (all 10 electrons, with 2 electrons in each of the five 3d orbitals). A fully-filled d subshell, like a half-filled one, is an especially stable, symmetric, lower-energy arrangement. Promoting an electron from 4s into 3d to complete this filled 3d10 configuration lowers the atom's overall energy, which is why copper's true ground state is [Ar] 4s1 3d10 rather than the 'expected' [Ar] 4s2 3d9.",
+    "rubric": [
+      { "partLabel": "(a)", "criterion": "1 point for correctly stating 24 total electrons; 1 point for correctly confirming both configurations sum to 24 electrons.", "points": 2, "allowsErrorCarriedForward": false },
+      { "partLabel": "(b)", "criterion": "1 point for identifying 3d5 as a half-filled subshell; 1 point for referencing Hund's rule/reduced electron-electron repulsion from the symmetric distribution; 1 point for concluding this extra stability favors the observed configuration over the expected one.", "points": 3, "allowsErrorCarriedForward": false },
+      { "partLabel": "(c)", "criterion": "1 point for correctly describing the single 4s electron as unpaired; 1 point for correctly describing each of the five 3d orbitals as holding one unpaired electron with parallel spins; 1 point for the correct total of 6 unpaired electrons.", "points": 3, "allowsErrorCarriedForward": false },
+      { "partLabel": "(d)", "criterion": "1 point for correctly identifying the 3d10 subshell as completely filled; 1 point for correctly explaining that a fully-filled, symmetric subshell provides extra stability, analogous to the half-filled case in chromium.", "points": 2, "allowsErrorCarriedForward": false }
+    ],
+    "source": "original",
+    "difficulty": "advanced",
+    "hints": [
+      "Compare how many total valence-region electrons (4s + 3d combined) each configuration has -- the exception doesn't change the total, only the arrangement.",
+      "Half-filled and completely-filled subshells (s, p, d, or f) are both unusually stable due to how evenly the electron density is spread out."
+    ]
+  }
+]
