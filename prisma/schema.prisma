@@ -17,15 +17,19 @@ generator client {
 }
 
 datasource db {
-  // LOCAL-FIRST: SQLite for local development/review (no online services needed).
-  // To go online later, switch provider back to "postgresql" and restore the
-  // pooled url + directUrl below (the enums-as-String pattern keeps the schema
-  // portable, so this is the only change needed — then `prisma db push`).
-  provider = "sqlite"
-  url      = env("DATABASE_URL") // e.g. file:./dev.db locally
-  // provider  = "postgresql"
-  // url       = env("DATABASE_URL") // pooled connection (runtime on Vercel)
-  // directUrl = env("DIRECT_URL")   // direct connection (migrations / db push)
+  // Render-hosted Postgres — the enums-as-String pattern (see above) means
+  // switching providers was the only schema change needed. Unlike Supabase,
+  // Render's managed Postgres hands out a single connection string (no
+  // separate pooled/pgbouncer + direct split), so DATABASE_URL alone covers
+  // both runtime queries and `prisma db push`/migrations. If a pooler
+  // (PgBouncer, Prisma Accelerate) is ever added in front of it, add a
+  // `directUrl = env("DIRECT_URL")` line pointing at the unpooled connection
+  // for migrations, same as the old Supabase setup this replaced.
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  // Local dev previously used SQLite (provider = "sqlite", url = "file:./dev.db").
+  // That's still fine for offline/local-only work, but requires reverting this
+  // block — Prisma doesn't support switching provider per-environment.
 }
 
 model User {
