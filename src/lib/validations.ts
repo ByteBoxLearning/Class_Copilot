@@ -11,11 +11,25 @@ export const loginSchema = z.object({
 // bcrypt's own cost factor. Not applied to loginSchema.password above,
 // which just needs to be non-empty (an existing password may predate this
 // rule).
-const newPassword = z
+export const newPassword = z
   .string()
   .min(8, "Password must be at least 8 characters")
   .regex(/[0-9]/, "Password must include at least one number")
   .regex(/[^A-Za-z0-9]/, "Password must include at least one special character");
+
+// A self-service guest account (src/lib/guest-auth.ts) — Practice Mode only,
+// no roster/domain gate, deliberately not a signupSchema/User at all.
+export const guestSignupSchema = z
+  .object({
+    name: z.string().min(1, "Name is required"),
+    email: z.string().email("Enter a valid email address"),
+    password: newPassword,
+    confirmPassword: z.string().min(1, "Please confirm your password"),
+  })
+  .refine((d) => d.password === d.confirmPassword, {
+    message: "Passwords do not match",
+    path: ["confirmPassword"],
+  });
 
 // A brand-new teacher creating their own independent workspace (OWNER
 // account) — see actions/signup.ts. Same password-choice shape as

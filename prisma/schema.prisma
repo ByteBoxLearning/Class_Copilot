@@ -721,6 +721,52 @@ model PracticeMasteryProposal {
   @@index([studentId, status])
 }
 
+// A self-service practice-only account — deliberately NOT a User/Student.
+// No teacher created it, no roster/domain gate applies, and it never appears
+// in any teacher-facing query (a separate table, not just a new User role,
+// so a bug in a teacher-facing `prisma.user.findMany()` can't ever surface
+// one). Exists purely so someone outside any of this app's classes/rosters
+// can practice on their own, with progress that persists across visits —
+// see GuestPracticeAttempt below, which mirrors PracticeAttempt but with no
+// classId/Standard linkage at all (no class, no teacher, nothing to link to).
+model GuestUser {
+  id             String   @id @default(cuid())
+  name           String
+  email          String   @unique
+  passwordHash   String
+  active         Boolean  @default(true)
+  sessionVersion Int      @default(0)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  attempts GuestPracticeAttempt[]
+}
+
+// Same shape as PracticeAttempt's content columns, but no classId/studentId —
+// a guest isn't enrolled in anything. No PracticeMasteryProposal either:
+// there's no teacher to review one, so scores/coaching are shown directly,
+// with no "pending review" step.
+model GuestPracticeAttempt {
+  id          String    @id @default(cuid())
+  guestUserId String
+  guestUser   GuestUser @relation(fields: [guestUserId], references: [id], onDelete: Cascade)
+
+  configJson           String
+  practiceSetJson      String?
+  answersJson          String  @default("{}")
+  scoresJson           String  @default("{}")
+  chatHistoriesJson    String  @default("{}")
+  coachingFeedbackJson String?
+
+  status       String    @default("IN_PROGRESS") // IN_PROGRESS | SUBMITTED | ABANDONED
+  endTimestamp DateTime?
+  submittedAt  DateTime?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  @@index([guestUserId, status])
+}
+
 // Tracks completion of the user's daily checklist items (per user, per day).
 // Repurposed in the engagement-logging milestone as the auto-derived "did I
 // log engagement for [Class] today?" signal.
