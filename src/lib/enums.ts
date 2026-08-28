@@ -96,6 +96,7 @@ export const MASTERY_EVIDENCE_TYPES = opts([
   ["CONVERSATION", "Conversation"],
   ["RETAKE", "Retake"],
   ["PRACTICE", "AI Practice"],
+  ["CANVAS_IMPORT", "Canvas import"],
   ["OTHER", "Other"],
 ]);
 

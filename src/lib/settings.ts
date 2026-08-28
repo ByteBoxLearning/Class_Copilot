@@ -37,6 +37,7 @@ export const MANAGED_KEYS = [
   { name: "OPENROUTER_API_KEY", label: "OpenRouter", hint: "Optional free backup engine. openrouter.ai" },
   { name: "GOOGLE_CLIENT_ID", label: "Google OAuth — Client ID", hint: "Powers 'Continue with Google' on the login page. Also reserved for the still-unbuilt Google Sheets roster import." },
   { name: "GOOGLE_CLIENT_SECRET", label: "Google OAuth — Client Secret", hint: "Powers 'Continue with Google' on the login page. Also reserved for the still-unbuilt Google Sheets roster import." },
+  { name: "CANVAS_API_TOKEN", label: "Canvas — API Access Token", hint: "Account → Settings → New Access Token in Canvas. Powers Outcomes sync (src/lib/canvas)." },
 ] as const;
 
 export type ManagedKeyName = (typeof MANAGED_KEYS)[number]["name"];
@@ -75,6 +76,12 @@ export const setCommentsPrompt = (v: string, userId?: string) => setPlainSetting
 const AI_DISCLOSURE_ACK_KEY = "AI_DATA_DISCLOSURE_ACK";
 export const getAiDisclosureAck = async (): Promise<boolean> => (await getPlainSetting(AI_DISCLOSURE_ACK_KEY, "")) === "true";
 export const setAiDisclosureAck = (v: boolean, userId?: string) => setPlainSetting(AI_DISCLOSURE_ACK_KEY, v ? "true" : "false", userId);
+
+// --- Canvas base URL (plain — not a secret, unlike CANVAS_API_TOKEN above) --
+// e.g. "https://peddie.instructure.com" — no trailing slash.
+const CANVAS_BASE_URL_KEY = "CANVAS_BASE_URL";
+export const getCanvasBaseUrl = () => getPlainSetting(CANVAS_BASE_URL_KEY, "");
+export const setCanvasBaseUrl = (v: string, userId?: string) => setPlainSetting(CANVAS_BASE_URL_KEY, v.trim().replace(/\/+$/, ""), userId);
 
 // --- Assignment Builder prompts (admin-editable, stored plain) --------------
 // Two prompts, not one — generate-from-scratch and improve-existing-material

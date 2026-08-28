@@ -192,6 +192,11 @@ model Class {
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 
+  // Which Canvas course this class corresponds to, if any (Canvas Outcomes
+  // sync — see src/lib/canvas/). Opt-in per class, same posture as Standard's
+  // externalUnitSource/externalUnitId below: null unless a teacher sets it.
+  canvasCourseId Int?
+
   enrollments              Enrollment[]
   coTeachers               ClassCoTeacher[]
   tasks                    Task[]
@@ -355,6 +360,11 @@ model Standard {
   // since "unique unless partial" isn't expressible portably in Prisma/
   // SQLite (see the removed @@unique this replaced, below).
   externalQuestionIdsJson String?
+  // Canvas Learning Outcome this Standard was imported from/is kept in sync
+  // with (src/lib/canvas/outcomes.ts) — null for a teacher-authored Standard
+  // with no Canvas counterpart. Canvas outcome ids are globally unique on a
+  // given Canvas instance, so this alone is enough to match on re-sync.
+  canvasOutcomeId         Int?              @unique
   createdAt               DateTime          @default(now())
   updatedAt               DateTime          @updatedAt
 
@@ -383,11 +393,17 @@ model MasteryEvent {
   standardId   String
   standard     Standard @relation(fields: [standardId], references: [id], onDelete: Cascade)
   level        Int // 1-4: Beginning | Developing | Proficient | Advanced
-  evidenceType String   @default("OBSERVATION") // QUIZ | HOMEWORK | PROJECT | OBSERVATION | CONVERSATION | RETAKE | OTHER
+  evidenceType String   @default("OBSERVATION") // QUIZ | HOMEWORK | PROJECT | OBSERVATION | CONVERSATION | RETAKE | CANVAS_IMPORT | OTHER
   evidenceNote String?
   recordedById String
   recordedBy   User     @relation(fields: [recordedById], references: [id])
   recordedAt   DateTime @default(now())
+
+  // Set only for evidenceType CANVAS_IMPORT — the Canvas OutcomeResult id
+  // this event was imported from (src/lib/canvas/outcome-results.ts), so a
+  // re-sync updates/skips rather than duplicating. Null for every other
+  // evidence type.
+  canvasResultId Int? @unique
 
   feedback Feedback[]
 

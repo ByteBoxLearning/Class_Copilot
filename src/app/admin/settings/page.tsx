@@ -2,7 +2,7 @@ import { Settings as SettingsIcon, ShieldCheck, SlidersHorizontal, Wand2, BarCha
 import { requireOwner } from "@/lib/auth";
 import {
   getKeyStatuses, getAiModelChoices, getAiTemps, getCommentsPrompt,
-  getAssignmentGeneratePrompt, getAssignmentImprovePrompt, getAiDisclosureAck,
+  getAssignmentGeneratePrompt, getAssignmentImprovePrompt, getAiDisclosureAck, getCanvasBaseUrl,
 } from "@/lib/settings";
 import { getAssignmentUsageStats } from "@/lib/assignments/usage";
 import { allowedEmailDomain } from "@/lib/allowed-email";
@@ -17,12 +17,13 @@ import { AssignmentGeneratePromptForm, AssignmentImprovePromptForm } from "@/com
 import { AiUsagePanel } from "@/components/settings/ai-usage-panel";
 import { RosterAllowlistForm } from "@/components/settings/roster-allowlist-form";
 import { AiDisclosureAck } from "@/components/settings/ai-disclosure-ack";
+import { CanvasBaseUrlForm } from "@/components/settings/canvas-base-url-form";
 
 export default async function AdminSettingsPage() {
   await requireOwner();
-  const [statuses, aiModels, aiTemps, commentsPrompt, assignmentGeneratePrompt, assignmentImprovePrompt, usageStats, allowedEmails, aiAck] = await Promise.all([
+  const [statuses, aiModels, aiTemps, commentsPrompt, assignmentGeneratePrompt, assignmentImprovePrompt, usageStats, allowedEmails, aiAck, canvasBaseUrl] = await Promise.all([
     getKeyStatuses(), getAiModelChoices(), getAiTemps(), getCommentsPrompt(),
-    getAssignmentGeneratePrompt(), getAssignmentImprovePrompt(), getAssignmentUsageStats(), listAllowedEmails(), getAiDisclosureAck(),
+    getAssignmentGeneratePrompt(), getAssignmentImprovePrompt(), getAssignmentUsageStats(), listAllowedEmails(), getAiDisclosureAck(), getCanvasBaseUrl(),
   ]);
 
   return (
@@ -63,8 +64,11 @@ export default async function AdminSettingsPage() {
             <SettingsIcon className="h-4 w-4" /> API keys
           </CardTitle>
         </CardHeader>
-        <CardContent>
-          <ApiKeysForm statuses={statuses} />
+        <CardContent className="space-y-4">
+          <CanvasBaseUrlForm baseUrl={canvasBaseUrl} />
+          <div className="border-t border-border pt-4">
+            <ApiKeysForm statuses={statuses} />
+          </div>
         </CardContent>
       </Card>
 

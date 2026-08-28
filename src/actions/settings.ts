@@ -5,7 +5,7 @@ import { requireOwner } from "@/lib/auth";
 import { logActivity } from "@/lib/activity-log";
 import {
   setApiKey, clearApiKey, MANAGED_KEYS, setAiEnabled, setAiTemps, setCommentsPrompt,
-  setAssignmentGeneratePrompt, setAssignmentImprovePrompt, setAiDisclosureAck,
+  setAssignmentGeneratePrompt, setAssignmentImprovePrompt, setAiDisclosureAck, setCanvasBaseUrl,
 } from "@/lib/settings";
 import { AI_MODELS, AI_PROVIDER_ORDER } from "@/lib/ai/engines";
 import { COMMENTS_PROMPT_PLACEHOLDERS } from "@/lib/comments/prompt-defaults";
@@ -48,6 +48,21 @@ export async function saveAiDisclosureAck(ack: boolean): Promise<ActionResult> {
     actionType: "SETTING_UPDATED",
     description: ack ? "Acknowledged AI data-sharing disclosure" : "Revoked AI data-sharing disclosure acknowledgment",
   });
+  revalidatePath("/admin/settings");
+  return { ok: true };
+}
+
+// Owner-only: where to reach this school's Canvas instance (e.g.
+// "https://peddie.instructure.com") — paired with the CANVAS_API_TOKEN
+// managed key above to power Outcomes sync (src/lib/canvas).
+export async function saveCanvasBaseUrl(url: string): Promise<ActionResult> {
+  const admin = await requireOwner();
+  const trimmed = url.trim();
+  if (trimmed && !/^https:\/\/[^/]+$/.test(trimmed.replace(/\/+$/, ""))) {
+    return { ok: false, error: "Enter just the base URL, e.g. https://yourschool.instructure.com (no trailing path)." };
+  }
+  await setCanvasBaseUrl(trimmed, admin.id);
+  await logActivity({ userId: admin.id, actionType: "SETTING_UPDATED", description: "Updated Canvas base URL" });
   revalidatePath("/admin/settings");
   return { ok: true };
 }
