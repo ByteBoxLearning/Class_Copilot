@@ -12,6 +12,7 @@ import { prisma } from "@/lib/prisma";
 import { requireClient } from "@/lib/auth";
 import { canAccessClass } from "@/lib/access";
 import { logActivity } from "@/lib/activity-log";
+import { checkRateLimit } from "@/lib/rate-limit";
 import { generatePracticeSet } from "@/lib/practice/generate";
 import { scoreFrqResponse } from "@/lib/practice/score";
 import { sendPracticeChatMessage as callChat } from "@/lib/practice/chat";
@@ -21,6 +22,18 @@ import { getUnit } from "@/lib/practice/bank";
 import type { PracticeConfig, MCQAnswer, FRQAnswer, FRQScoreResult, ChatMessage, PracticeSet, MCQItem, FRQItem, UnitResult, CoachingFeedback } from "@/lib/practice/types";
 
 type Result<T> = { ok: true; data: T } | { ok: false; error: string };
+
+// Guardrail against scripted abuse racking up real AI provider cost — every
+// action below that can trigger an AI call (session generation, FRQ
+// scoring, tutor chat, coaching feedback) is gated by this. Generous enough
+// that a real practice session (a handful of FRQs + a few chat turns) never
+// comes close to it.
+const AI_ACTION_MAX = 40;
+const AI_ACTION_WINDOW_MS = 5 * 60 * 1000;
+function aiRateLimitError(studentId: string): string | null {
+  const limit = checkRateLimit(`practice-ai:${studentId}`, AI_ACTION_MAX, AI_ACTION_WINDOW_MS);
+  return limit.ok ? null : "You're going a bit fast — please wait a minute and try again.";
+}
 
 async function loadOwnAttempt(attemptId: string) {
   const user = await requireClient();
@@ -120,6 +133,8 @@ export async function startPracticeAttempt(classId: string, config: PracticeConf
   const user = await requireClient();
   if (!(await canAccessClass(user, classId))) return { ok: false, error: "You're not enrolled in this class." };
   if (config.unitIds.length === 0) return { ok: false, error: "Pick at least one unit to practice." };
+  const rateError = aiRateLimitError(user.studentId);
+  if (rateError) return { ok: false, error: rateError };
 
   const seenItemIds = seenItemIdsFrom(await getPriorAttempts(user.studentId, config.source));
   const practiceSet = await generatePracticeSet(config, seenItemIds);
@@ -164,6 +179,8 @@ export async function savePracticeProgress(
 export async function scorePracticeFrq(attemptId: string, itemId: string, responses: string[]): Promise<Result<FRQScoreResult>> {
   const found = await loadOwnAttempt(attemptId);
   if (!found) return { ok: false, error: "Attempt not found." };
+  const rateError = aiRateLimitError(found.user.studentId);
+  if (rateError) return { ok: false, error: rateError };
   const set = parseSet(found.attempt.practiceSetJson);
   const item = set?.frqItems.find((f) => f.id === itemId);
   if (!item) return { ok: false, error: "Question not found in this attempt." };
@@ -183,6 +200,8 @@ export async function sendPracticeChatMessage(
 ): Promise<Result<{ reply: string }>> {
   const found = await loadOwnAttempt(attemptId);
   if (!found) return { ok: false, error: "Attempt not found." };
+  const rateError = aiRateLimitError(found.user.studentId);
+  if (rateError) return { ok: false, error: rateError };
   const set = parseSet(found.attempt.practiceSetJson);
   const mcqItem = set?.mcqItems.find((m) => m.id === itemId);
   const frqItem = set?.frqItems.find((f) => f.id === itemId);
@@ -213,6 +232,10 @@ export async function submitPracticeAttempt(
   const found = await loadOwnAttempt(attemptId);
   if (!found) return { ok: false, error: "Attempt not found." };
   const { user, attempt } = found;
+  if (attempt.status === "IN_PROGRESS") {
+    const rateError = aiRateLimitError(user.studentId);
+    if (rateError) return { ok: false, error: rateError };
+  }
   if (attempt.status === "SUBMITTED") {
     // Idempotent re-submit: return the already-computed proposals instead of duplicating them.
     const existing = await prisma.practiceMasteryProposal.findMany({ where: { attemptId }, orderBy: { createdAt: "asc" } });

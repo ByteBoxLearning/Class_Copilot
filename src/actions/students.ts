@@ -8,6 +8,7 @@ import { assertCanAccessStudent } from "@/lib/access";
 import { logActivity } from "@/lib/activity-log";
 import { studentSchema } from "@/lib/validations";
 import { generateInviteToken, INVITE_TTL_DAYS } from "@/lib/password";
+import { checkStudentEmailAllowed } from "@/lib/allowed-email";
 import type { ActionResult } from "./types";
 
 function formToObject(fd: FormData): Record<string, unknown> {
@@ -27,6 +28,10 @@ export async function createStudent(_prev: ActionResult, formData: FormData): Pr
     return { ok: false, error: "Please fix the highlighted fields.", fieldErrors };
   }
   const d = parsed.data;
+  if (d.email) {
+    const emailError = await checkStudentEmailAllowed(d.email);
+    if (emailError) return { ok: false, error: emailError, fieldErrors: { email: emailError } };
+  }
   const student = await prisma.student.create({
     data: {
       displayName: d.displayName,
@@ -54,6 +59,10 @@ export async function updateStudent(id: string, _prev: ActionResult, formData: F
     return { ok: false, error: "Please fix the highlighted fields.", fieldErrors };
   }
   const d = parsed.data;
+  if (d.email && d.email !== existing.email) {
+    const emailError = await checkStudentEmailAllowed(d.email);
+    if (emailError) return { ok: false, error: emailError, fieldErrors: { email: emailError } };
+  }
   await prisma.student.update({
     where: { id },
     data: {

@@ -2,9 +2,11 @@ import { Settings as SettingsIcon, ShieldCheck, SlidersHorizontal, Wand2, BarCha
 import { requireOwner } from "@/lib/auth";
 import {
   getKeyStatuses, getAiModelChoices, getAiTemps, getCommentsPrompt,
-  getAssignmentGeneratePrompt, getAssignmentImprovePrompt,
+  getAssignmentGeneratePrompt, getAssignmentImprovePrompt, getAiDisclosureAck, getCanvasBaseUrl,
 } from "@/lib/settings";
 import { getAssignmentUsageStats } from "@/lib/assignments/usage";
+import { allowedEmailDomain } from "@/lib/allowed-email";
+import { listAllowedEmails } from "@/actions/allowed-emails";
 import { PageHeader } from "@/components/layout/page-header";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ApiKeysForm } from "@/components/settings/api-keys-form";
@@ -13,12 +15,15 @@ import { AiTemperatureControl } from "@/components/settings/ai-temperature-contr
 import { CommentsPromptForm } from "@/components/settings/comments-prompt-form";
 import { AssignmentGeneratePromptForm, AssignmentImprovePromptForm } from "@/components/settings/assignment-prompt-forms";
 import { AiUsagePanel } from "@/components/settings/ai-usage-panel";
+import { RosterAllowlistForm } from "@/components/settings/roster-allowlist-form";
+import { AiDisclosureAck } from "@/components/settings/ai-disclosure-ack";
+import { CanvasBaseUrlForm } from "@/components/settings/canvas-base-url-form";
 
 export default async function AdminSettingsPage() {
   await requireOwner();
-  const [statuses, aiModels, aiTemps, commentsPrompt, assignmentGeneratePrompt, assignmentImprovePrompt, usageStats] = await Promise.all([
+  const [statuses, aiModels, aiTemps, commentsPrompt, assignmentGeneratePrompt, assignmentImprovePrompt, usageStats, allowedEmails, aiAck, canvasBaseUrl] = await Promise.all([
     getKeyStatuses(), getAiModelChoices(), getAiTemps(), getCommentsPrompt(),
-    getAssignmentGeneratePrompt(), getAssignmentImprovePrompt(), getAssignmentUsageStats(),
+    getAssignmentGeneratePrompt(), getAssignmentImprovePrompt(), getAssignmentUsageStats(), listAllowedEmails(), getAiDisclosureAck(), getCanvasBaseUrl(),
   ]);
 
   return (
@@ -31,11 +36,39 @@ export default async function AdminSettingsPage() {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <SettingsIcon className="h-4 w-4" /> API keys
+            <ShieldCheck className="h-4 w-4" /> Approved sign-up roster
+          </CardTitle>
+          <p className="text-xs text-slate-400">
+            Who's allowed to create a teacher account or link a student portal login via Google — see TODO.md's security section.
+          </p>
+        </CardHeader>
+        <CardContent>
+          <RosterAllowlistForm rows={allowedEmails} domain={allowedEmailDomain()} />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <ShieldCheck className="h-4 w-4" /> AI data-sharing disclosure
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <ApiKeysForm statuses={statuses} />
+          <AiDisclosureAck acknowledged={aiAck} />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <SettingsIcon className="h-4 w-4" /> API keys
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <CanvasBaseUrlForm baseUrl={canvasBaseUrl} />
+          <div className="border-t border-border pt-4">
+            <ApiKeysForm statuses={statuses} />
+          </div>
         </CardContent>
       </Card>
 

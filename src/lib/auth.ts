@@ -6,6 +6,7 @@ import bcrypt from "bcryptjs";
 import { prisma } from "./prisma";
 import { dashboardPathFor } from "./auth-paths";
 import { generateOpaqueSecret } from "./password";
+import { isGoogleStudentProvisioningAllowed } from "./allowed-email";
 
 const COOKIE_NAME = "crm_session";
 // Short TTL so role/deactivation changes take effect quickly. Combined with a
@@ -209,11 +210,22 @@ export async function sessionUserForEmail(email: string): Promise<SessionUser | 
 // `email` and no portal login yet, that Student.email itself is the
 // teacher's authorization — provision the login on the spot instead of
 // requiring a separate invite-link step.
+//
+// Student.email is globally unique (see prisma/schema.prisma), so at most
+// one Student row can ever match — the real safeguard against a rogue
+// account pre-claiming a real student's email is that Student.email itself
+// is now gated at write time against the preloaded roster (see
+// src/lib/allowed-email.ts, checked in src/actions/students.ts and the
+// roster-import path). isGoogleStudentProvisioningAllowed below is a
+// defense-in-depth re-check at the moment the login is actually minted, plus
+// a domain check independent of the roster.
 export async function provisionStudentFromGoogle(email: string): Promise<SessionUser | null> {
   const normalized = email.toLowerCase().trim();
+  if (!(await isGoogleStudentProvisioningAllowed(normalized))) return null;
+
   const student = await prisma.student.findFirst({
     where: { email: normalized, linkedUserId: null },
-    select: { id: true, displayName: true },
+    select: { id: true, displayName: true, createdByUserId: true },
   });
   if (!student) return null;
 
@@ -226,6 +238,19 @@ export async function provisionStudentFromGoogle(email: string): Promise<Session
     },
   });
   await prisma.student.update({ where: { id: student.id }, data: { linkedUserId: created.id } });
+
+  // Visible, auditable trail for the teacher whose workspace this student
+  // lives in — a first-time Google link is exactly the kind of event that
+  // should never be silent, given it mints portal access.
+  await prisma.notification.create({
+    data: {
+      userId: student.createdByUserId,
+      studentId: student.id,
+      title: "Student linked their Google account",
+      message: `${student.displayName} signed in with Google (${normalized}) and now has portal access. If this wasn't expected, revoke it from their student page.`,
+    },
+  }).catch(() => { /* notification failure shouldn't block the login itself */ });
+
   return toSessionUser({ ...created, studentAccount: { id: student.id } });
 }
 

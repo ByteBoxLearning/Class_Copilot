@@ -17,15 +17,19 @@ generator client {
 }
 
 datasource db {
-  // LOCAL-FIRST: SQLite for local development/review (no online services needed).
-  // To go online later, switch provider back to "postgresql" and restore the
-  // pooled url + directUrl below (the enums-as-String pattern keeps the schema
-  // portable, so this is the only change needed — then `prisma db push`).
-  provider = "sqlite"
-  url      = env("DATABASE_URL") // e.g. file:./dev.db locally
-  // provider  = "postgresql"
-  // url       = env("DATABASE_URL") // pooled connection (runtime on Vercel)
-  // directUrl = env("DIRECT_URL")   // direct connection (migrations / db push)
+  // Render-hosted Postgres — the enums-as-String pattern (see above) means
+  // switching providers was the only schema change needed. Unlike Supabase,
+  // Render's managed Postgres hands out a single connection string (no
+  // separate pooled/pgbouncer + direct split), so DATABASE_URL alone covers
+  // both runtime queries and `prisma db push`/migrations. If a pooler
+  // (PgBouncer, Prisma Accelerate) is ever added in front of it, add a
+  // `directUrl = env("DIRECT_URL")` line pointing at the unpooled connection
+  // for migrations, same as the old Supabase setup this replaced.
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  // Local dev previously used SQLite (provider = "sqlite", url = "file:./dev.db").
+  // That's still fine for offline/local-only work, but requires reverting this
+  // block — Prisma doesn't support switching provider per-environment.
 }
 
 model User {
@@ -80,6 +84,37 @@ model User {
   practiceProposalsReviewed   PracticeMasteryProposal[] @relation("PracticeProposalReviewedBy")
   dailyStandardFocusesSet     DailyStandardFocus[]
   studentsCreated             Student[]                 @relation("StudentCreatedBy")
+
+  // If this account's email matched a preloaded roster row, the row it claimed.
+  claimedAllowedEmail AllowedEmail? @relation("AllowedEmailClaimedBy")
+  allowedEmailsAdded  AllowedEmail[] @relation("AllowedEmailAddedBy")
+}
+
+// A preloaded, school-verified roster of email addresses allowed to sign up
+// (STAFF, via /signup) or be auto-provisioned a student portal login via
+// Google Sign-In (STUDENT, via provisionStudentFromGoogle in src/lib/auth.ts).
+// Closes two related risks: open signup letting anyone create a teacher
+// account, and a rogue teacher pre-claiming a real student's email (see
+// TODO.md's security section and CONTEXT.md for the incident this addresses).
+// Bootstrap-friendly: enforcement of each role only activates once at least
+// one row of that role exists — an empty table doesn't lock anyone out
+// before an admin has had a chance to preload it (see src/lib/allowed-email.ts).
+model AllowedEmail {
+  id    String @id @default(cuid())
+  email String @unique
+  role  String // STAFF | STUDENT
+
+  // Which account ended up claiming this row (informational/audit only — the
+  // real gate is the row's existence + role, checked at signup/provisioning
+  // time, not this field).
+  claimedByUserId String? @unique
+  claimedBy       User?   @relation("AllowedEmailClaimedBy", fields: [claimedByUserId], references: [id], onDelete: SetNull)
+
+  addedById String?
+  addedBy   User?    @relation("AllowedEmailAddedBy", fields: [addedById], references: [id], onDelete: SetNull)
+  createdAt DateTime @default(now())
+
+  @@index([role])
 }
 
 // The student a teacher tracks — a FIRST-CLASS entity. Everything (tasks,
@@ -156,6 +191,11 @@ model Class {
   archived     Boolean  @default(false)
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
+
+  // Which Canvas course this class corresponds to, if any (Canvas Outcomes
+  // sync — see src/lib/canvas/). Opt-in per class, same posture as Standard's
+  // externalUnitSource/externalUnitId below: null unless a teacher sets it.
+  canvasCourseId Int?
 
   enrollments              Enrollment[]
   coTeachers               ClassCoTeacher[]
@@ -320,6 +360,11 @@ model Standard {
   // becomes one evidence point counted toward every standard it's linked to,
   // not "double-counted" within any one standard's own average.
   externalQuestionIdsJson String?
+  // Canvas Learning Outcome this Standard was imported from/is kept in sync
+  // with (src/lib/canvas/outcomes.ts) — null for a teacher-authored Standard
+  // with no Canvas counterpart. Canvas outcome ids are globally unique on a
+  // given Canvas instance, so this alone is enough to match on re-sync.
+  canvasOutcomeId         Int?              @unique
   createdAt               DateTime          @default(now())
   updatedAt               DateTime          @updatedAt
 
@@ -348,11 +393,17 @@ model MasteryEvent {
   standardId   String
   standard     Standard @relation(fields: [standardId], references: [id], onDelete: Cascade)
   level        Int // 1-4: Beginning | Developing | Proficient | Advanced
-  evidenceType String   @default("OBSERVATION") // QUIZ | HOMEWORK | PROJECT | OBSERVATION | CONVERSATION | RETAKE | OTHER
+  evidenceType String   @default("OBSERVATION") // QUIZ | HOMEWORK | PROJECT | OBSERVATION | CONVERSATION | RETAKE | CANVAS_IMPORT | OTHER
   evidenceNote String?
   recordedById String
   recordedBy   User     @relation(fields: [recordedById], references: [id])
   recordedAt   DateTime @default(now())
+
+  // Set only for evidenceType CANVAS_IMPORT — the Canvas OutcomeResult id
+  // this event was imported from (src/lib/canvas/outcome-results.ts), so a
+  // re-sync updates/skips rather than duplicating. Null for every other
+  // evidence type.
+  canvasResultId Int? @unique
 
   feedback Feedback[]
 
@@ -684,6 +735,52 @@ model PracticeMasteryProposal {
 
   @@index([classId, status])
   @@index([studentId, status])
+}
+
+// A self-service practice-only account — deliberately NOT a User/Student.
+// No teacher created it, no roster/domain gate applies, and it never appears
+// in any teacher-facing query (a separate table, not just a new User role,
+// so a bug in a teacher-facing `prisma.user.findMany()` can't ever surface
+// one). Exists purely so someone outside any of this app's classes/rosters
+// can practice on their own, with progress that persists across visits —
+// see GuestPracticeAttempt below, which mirrors PracticeAttempt but with no
+// classId/Standard linkage at all (no class, no teacher, nothing to link to).
+model GuestUser {
+  id             String   @id @default(cuid())
+  name           String
+  email          String   @unique
+  passwordHash   String
+  active         Boolean  @default(true)
+  sessionVersion Int      @default(0)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  attempts GuestPracticeAttempt[]
+}
+
+// Same shape as PracticeAttempt's content columns, but no classId/studentId —
+// a guest isn't enrolled in anything. No PracticeMasteryProposal either:
+// there's no teacher to review one, so scores/coaching are shown directly,
+// with no "pending review" step.
+model GuestPracticeAttempt {
+  id          String    @id @default(cuid())
+  guestUserId String
+  guestUser   GuestUser @relation(fields: [guestUserId], references: [id], onDelete: Cascade)
+
+  configJson           String
+  practiceSetJson      String?
+  answersJson          String  @default("{}")
+  scoresJson           String  @default("{}")
+  chatHistoriesJson    String  @default("{}")
+  coachingFeedbackJson String?
+
+  status       String    @default("IN_PROGRESS") // IN_PROGRESS | SUBMITTED | ABANDONED
+  endTimestamp DateTime?
+  submittedAt  DateTime?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  @@index([guestUserId, status])
 }
 
 // Tracks completion of the user's daily checklist items (per user, per day).

@@ -10,7 +10,11 @@ import { prisma } from "@/lib/prisma";
 import { createSession, hashPassword } from "@/lib/auth";
 import { logActivity } from "@/lib/activity-log";
 import { acceptStudentInviteSchema } from "@/lib/validations";
+import { checkRateLimit } from "@/lib/rate-limit";
 import type { ActionResult } from "./types";
+
+const INVITE_ATTEMPT_MAX = 20;
+const INVITE_ATTEMPT_WINDOW_MS = 10 * 60 * 1000;
 
 function formToObject(fd: FormData): Record<string, unknown> {
   const obj: Record<string, unknown> = {};
@@ -34,6 +38,10 @@ export async function getInviteInfo(token: string): Promise<InviteInfo> {
 }
 
 export async function acceptStudentInvite(token: string, _prev: ActionResult, formData: FormData): Promise<ActionResult> {
+  if (!checkRateLimit(`invite-accept:${token}`, INVITE_ATTEMPT_MAX, INVITE_ATTEMPT_WINDOW_MS).ok) {
+    return { ok: false, error: "Too many attempts on this invite link. Please wait a few minutes and try again." };
+  }
+
   const invite = await prisma.studentInvite.findUnique({
     where: { token },
     include: { student: { select: { id: true, displayName: true, linkedUserId: true } } },

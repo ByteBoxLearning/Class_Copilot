@@ -6,6 +6,31 @@ export const loginSchema = z.object({
   password: z.string().min(1, "Password is required"),
 });
 
+// A newly CHOSEN password (signup, invite-accept, change-password) — at
+// least 8 characters plus one digit and one special character, on top of
+// bcrypt's own cost factor. Not applied to loginSchema.password above,
+// which just needs to be non-empty (an existing password may predate this
+// rule).
+export const newPassword = z
+  .string()
+  .min(8, "Password must be at least 8 characters")
+  .regex(/[0-9]/, "Password must include at least one number")
+  .regex(/[^A-Za-z0-9]/, "Password must include at least one special character");
+
+// A self-service guest account (src/lib/guest-auth.ts) — Practice Mode only,
+// no roster/domain gate, deliberately not a signupSchema/User at all.
+export const guestSignupSchema = z
+  .object({
+    name: z.string().min(1, "Name is required"),
+    email: z.string().email("Enter a valid email address"),
+    password: newPassword,
+    confirmPassword: z.string().min(1, "Please confirm your password"),
+  })
+  .refine((d) => d.password === d.confirmPassword, {
+    message: "Passwords do not match",
+    path: ["confirmPassword"],
+  });
+
 // A brand-new teacher creating their own independent workspace (OWNER
 // account) — see actions/signup.ts. Same password-choice shape as
 // acceptStudentInviteSchema below.
@@ -13,7 +38,7 @@ export const signupSchema = z
   .object({
     name: z.string().min(1, "Name is required"),
     email: z.string().email("Enter a valid email address"),
-    password: z.string().min(8, "Password must be at least 8 characters"),
+    password: newPassword,
     confirmPassword: z.string().min(1, "Please confirm your password"),
   })
   .refine((d) => d.password === d.confirmPassword, {
@@ -83,7 +108,7 @@ export type StudentInput = z.infer<typeof studentSchema>;
 export const acceptStudentInviteSchema = z
   .object({
     email: z.string().email("Enter a valid email address"),
-    password: z.string().min(8, "Password must be at least 8 characters"),
+    password: newPassword,
     confirmPassword: z.string().min(1, "Please confirm your password"),
   })
   .refine((d) => d.password === d.confirmPassword, {
@@ -176,7 +201,7 @@ export type GradingPolicyInput = z.infer<typeof gradingPolicySchema>;
 export const changePasswordSchema = z
   .object({
     currentPassword: z.string().optional(),
-    newPassword: z.string().min(8, "Password must be at least 8 characters"),
+    newPassword,
     confirmPassword: z.string().min(1, "Please confirm your password"),
   })
   .refine((d) => d.newPassword === d.confirmPassword, {

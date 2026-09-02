@@ -1,6 +1,7 @@
 import "server-only";
 import { runModel } from "@/lib/ai/run-model";
 import { DEFAULT_AI_MODEL } from "@/lib/ai/engines";
+import { redactStudentName } from "@/lib/comments/anonymize";
 
 export type DailyCheckDimensions = {
   engagement: string | null;
@@ -32,6 +33,13 @@ export function hasDisciplinaryFlag(dims: DailyCheckDimensions): boolean {
 // decides" posture as the practice-mode coaching feedback and the standards-
 // mapping suggestion). Tone is decided by hasDisciplinaryFlag above, not left
 // to the model to guess — the note text still grounds the specific content.
+// `studentFirstName` is accepted for backward compatibility with existing
+// callers but deliberately UNUSED in the prompt below — the output already
+// addresses the student in second person ("you"), so the AI never actually
+// needs a name to write it, and not sending one is one less piece of
+// student-identifying data reaching a third-party provider (see TODO.md's
+// security section / src/lib/comments/anonymize.ts for the same principle
+// applied to the End-of-Term Comments generator).
 export async function generateDailyCheckFeedback(
   studentFirstName: string,
   note: string,
@@ -39,13 +47,16 @@ export async function generateDailyCheckFeedback(
 ): Promise<string | null> {
   const assertive = hasDisciplinaryFlag(dims);
   const loggedDims = Object.entries(dims).filter(([, v]) => v).map(([k, v]) => `${k}: ${v}`);
+  // The note itself may casually mention the student by first name even
+  // though nothing else in this prompt does — scrub it before it goes out.
+  const redactedNote = redactStudentName(note, studentFirstName);
 
-  const prompt = `A teacher wrote this private note about a student, ${studentFirstName}, after today's class:
-"${note}"
+  const prompt = `A teacher wrote this private note about a student after today's class:
+"${redactedNote}"
 
-Other quick reads logged for ${studentFirstName} today: ${loggedDims.length > 0 ? loggedDims.join(", ") : "none"}.
+Other quick reads logged for this student today: ${loggedDims.length > 0 ? loggedDims.join(", ") : "none"}.
 
-Write short feedback (2-4 sentences) for ${studentFirstName} to read directly, addressed to them in second person ("you"). ${
+Write short feedback (2-4 sentences) for the student to read directly, addressed to them in second person ("you"). ${
     assertive
       ? "Today's record includes a discipline/behavior concern — write in a direct, assertive, and fair tone: name the specific behavior plainly and state the expectation going forward, without being harsh, sarcastic, or shaming."
       : "Write in a warm, encouraging, and supportive tone, even if the note mentions something to work on."

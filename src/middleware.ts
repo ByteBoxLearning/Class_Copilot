@@ -5,8 +5,23 @@ import { NextRequest, NextResponse } from "next/server";
 // (which can use Prisma / the full jose verify).
 const PROTECTED = ["/admin", "/assistant", "/portal", "/classes"];
 
+// Guest practice (src/lib/guest-auth.ts) uses a completely separate cookie —
+// /guest/login and /guest/signup stay public, only /guest/practice is gated.
+const GUEST_PROTECTED = ["/guest/practice"];
+
 export function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
+
+  const isGuestProtected = GUEST_PROTECTED.some((p) => pathname === p || pathname.startsWith(p + "/"));
+  if (isGuestProtected) {
+    if (!req.cookies.has("guest_session")) {
+      const url = req.nextUrl.clone();
+      url.pathname = "/guest/login";
+      return NextResponse.redirect(url);
+    }
+    return NextResponse.next();
+  }
+
   const isProtected = PROTECTED.some((p) => pathname === p || pathname.startsWith(p + "/"));
   if (!isProtected) return NextResponse.next();
 
@@ -25,5 +40,6 @@ export const config = {
     "/assistant/:path*",
     "/portal/:path*",
     "/classes/:path*",
+    "/guest/:path*",
   ],
 };

@@ -5,6 +5,7 @@
 // prompt text, and is directly importable from test scripts.
 
 import { COMMENTS_PROMPT_PLACEHOLDERS } from "./prompt-defaults";
+import { STUDENT_PLACEHOLDER, redactStudentName } from "./anonymize";
 
 export type DimensionKey = "engagement" | "empathy" | "discipline" | "collaboration" | "citizenship";
 export type DimensionTally = { positiveLabel: string; negativeLabel: string; positive: number; negative: number };
@@ -40,7 +41,10 @@ function formatDailyCheckSummary(summary: StudentTermSummary): string {
 
   if (summary.dailyNotes.length > 0) {
     lines.push("", "Teacher notes from specific days:");
-    for (const n of summary.dailyNotes) lines.push(`- ${n.date}: ${n.text}`);
+    // Scrub the student's own name out of free-text notes too — a teacher
+    // may well have typed it ("Ava was distracted today") even though the
+    // rest of this prompt never uses it.
+    for (const n of summary.dailyNotes) lines.push(`- ${n.date}: ${redactStudentName(n.text, summary.studentName)}`);
   }
   return lines.join("\n");
 }
@@ -56,9 +60,15 @@ function formatMasterySummary(summary: StudentTermSummary): string {
 // student's aggregated term data. No JSON involved anywhere in this pipeline
 // — the model's raw output IS the comment (see prompt-defaults.ts for why
 // that's deliberate).
+//
+// The student's real name is deliberately NEVER substituted in here — only
+// STUDENT_PLACEHOLDER ("the student") goes out to the AI provider. The real
+// name is substituted back into the AI's response afterward, locally (see
+// restoreStudentName in ./anonymize.ts, used by src/actions/comments.ts) —
+// it never needs to leave this server for the comment to come out right.
 export function buildCommentsPrompt(template: string, summary: StudentTermSummary): string {
   return template
-    .replaceAll(COMMENTS_PROMPT_PLACEHOLDERS.studentName, summary.studentName)
+    .replaceAll(COMMENTS_PROMPT_PLACEHOLDERS.studentName, STUDENT_PLACEHOLDER)
     .replaceAll(COMMENTS_PROMPT_PLACEHOLDERS.className, summary.className)
     .replaceAll(COMMENTS_PROMPT_PLACEHOLDERS.dateRange, summary.dateRange)
     .replaceAll(COMMENTS_PROMPT_PLACEHOLDERS.dailyCheckSummary, formatDailyCheckSummary(summary))

@@ -44,6 +44,7 @@ export const MANAGED_KEYS = [
   { name: "GOOGLE_CLIENT_SECRET", label: "Google OAuth — Client Secret", hint: "Powers 'Continue with Google' on the login page. Also reserved for the still-unbuilt Google Sheets roster import." },
   { name: "GMAIL_SMTP_USER", label: "Gmail address (invite emails)", hint: "The Gmail address bulk student-invite emails are sent from — needs the App Password below." },
   { name: "GMAIL_SMTP_APP_PASSWORD", label: "Gmail App Password", hint: "Requires 2-Step Verification on that Gmail account. Generate one at myaccount.google.com/apppasswords" },
+  { name: "CANVAS_API_TOKEN", label: "Canvas — API Access Token", hint: "Account → Settings → New Access Token in Canvas. Powers Outcomes sync (src/lib/canvas)." },
 ] as const;
 
 export type ManagedKeyName = (typeof MANAGED_KEYS)[number]["name"];
@@ -70,6 +71,24 @@ async function setPlainSetting(key: string, value: string, userId?: string): Pro
 // --- End-of-Term Comments prompt (admin-editable, stored plain) -------------
 export const getCommentsPrompt = () => getPlainSetting(COMMENTS_PROMPT_KEY, DEFAULT_COMMENTS_PROMPT);
 export const setCommentsPrompt = (v: string, userId?: string) => setPlainSetting(COMMENTS_PROMPT_KEY, v, userId);
+
+// --- FERPA data-sharing disclosure acknowledgment ---------------------------
+// Every AI feature sends some student data (a comment draft's aggregated term
+// summary, a daily-check note, a practice-session response) to a third-party
+// provider's API. That's real off-site sharing of student data an admin needs
+// to knowingly accept before ANY AI feature is allowed to actually run — see
+// src/lib/ai/run-model.ts, the single choke point that enforces this, and
+// model-guard.ts's validateAiModel, which surfaces a friendly version of the
+// same check to the teacher-facing engine picker.
+const AI_DISCLOSURE_ACK_KEY = "AI_DATA_DISCLOSURE_ACK";
+export const getAiDisclosureAck = async (): Promise<boolean> => (await getPlainSetting(AI_DISCLOSURE_ACK_KEY, "")) === "true";
+export const setAiDisclosureAck = (v: boolean, userId?: string) => setPlainSetting(AI_DISCLOSURE_ACK_KEY, v ? "true" : "false", userId);
+
+// --- Canvas base URL (plain — not a secret, unlike CANVAS_API_TOKEN above) --
+// e.g. "https://peddie.instructure.com" — no trailing slash.
+const CANVAS_BASE_URL_KEY = "CANVAS_BASE_URL";
+export const getCanvasBaseUrl = () => getPlainSetting(CANVAS_BASE_URL_KEY, "");
+export const setCanvasBaseUrl = (v: string, userId?: string) => setPlainSetting(CANVAS_BASE_URL_KEY, v.trim().replace(/\/+$/, ""), userId);
 
 // --- Assignment Builder prompts (admin-editable, stored plain) --------------
 // Two prompts, not one — generate-from-scratch and improve-existing-material

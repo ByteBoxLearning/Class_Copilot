@@ -45,8 +45,11 @@ export async function uploadAssignmentMaterial(assignmentId: string, _prev: Acti
 
   if (!file || file.size === 0) return { ok: false, error: "Choose a file to upload." };
   if (file.size > MAX_BYTES) return { ok: false, error: "File is too large (max 10 MB)." };
-  if (file.type && !ALLOWED.has(file.type)) {
-    return { ok: false, error: `File type not allowed (${file.type}). Use PDF, Word (.docx), text, or an image.` };
+  // Require a declared, allowed type — an EMPTY file.type (easy to send
+  // outside a browser, and not unheard of from one either) used to skip this
+  // check entirely, letting any file through with no validation at all.
+  if (!file.type || !ALLOWED.has(file.type)) {
+    return { ok: false, error: `File type not allowed${file.type ? ` (${file.type})` : ""}. Use PDF, Word (.docx), text, or an image.` };
   }
 
   const safeName = file.name.replace(/[^a-zA-Z0-9._-]/g, "_").slice(0, 120);
@@ -62,8 +65,9 @@ export async function uploadAssignmentMaterial(assignmentId: string, _prev: Acti
 
   try {
     await putObject(objectPath, buffer, file.type || undefined);
-  } catch (e) {
-    return { ok: false, error: e instanceof Error ? e.message : "Upload failed." };
+  } catch {
+    // Never echo the raw error (e.g. a local filesystem path) back to the client.
+    return { ok: false, error: "Upload failed. Please try again." };
   }
 
   await prisma.assignmentMaterial.create({

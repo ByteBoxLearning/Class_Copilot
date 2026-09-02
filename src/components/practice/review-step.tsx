@@ -20,6 +20,7 @@ export function ReviewStep({
   chatHistories,
   onChatSend,
   onRestart,
+  hasTeacher = true,
 }: {
   practiceSet: PracticeSet;
   mcqAnswers: Record<string, MCQAnswer>;
@@ -31,6 +32,10 @@ export function ReviewStep({
   chatHistories: Record<string, ChatMessage[]>;
   onChatSend: (itemId: string, message: string) => Promise<void>;
   onRestart: () => void;
+  // False for guest practice accounts (src/components/practice/guest-practice-app.tsx)
+  // — there's no teacher to review anything, so the low-confidence FRQ flag
+  // reads as "flagged for extra review" instead.
+  hasTeacher?: boolean;
 }) {
   return (
     <div className="space-y-4">
@@ -118,7 +123,7 @@ export function ReviewStep({
                 <div key={p.partLabel} className="rounded-md border border-border p-2">
                   <div className="flex items-center justify-between">
                     <p className="text-xs font-medium text-slate-600">Part ({p.partLabel})</p>
-                    <span className="text-xs text-slate-500">{p.pointsAwarded} / {p.maxPoints} pts{p.confidence === "low" ? " · flagged for your teacher's review" : ""}</span>
+                    <span className="text-xs text-slate-500">{p.pointsAwarded} / {p.maxPoints} pts{p.confidence === "low" ? (hasTeacher ? " · flagged for your teacher's review" : " · flagged for extra review") : ""}</span>
                   </div>
                   <p className="mt-1 text-xs text-slate-500"><ChemText text={p.reasoning} /></p>
                 </div>
