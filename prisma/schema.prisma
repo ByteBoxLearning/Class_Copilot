@@ -312,13 +312,13 @@ model Standard {
   // narrowing this Standard's practice evidence to just those questions
   // within externalUnitId instead of the whole unit. Null/empty = whole-unit
   // (the original Milestone K behavior, unchanged). Lets several Standards
-  // share one chapter/unit without double-counting evidence — see
-  // resolveStandardsForUnit in src/lib/practice/mastery-map.ts. A unit is
-  // either claimed whole by exactly one Standard, or split into
-  // non-overlapping question-id subsets across several — enforced in
-  // src/actions/standards.ts (checkUnitOverlap), not by a DB constraint,
-  // since "unique unless partial" isn't expressible portably in Prisma/
-  // SQLite (see the removed @@unique this replaced, below).
+  // share one chapter/unit — see resolveStandardsForUnit in
+  // src/lib/practice/mastery-map.ts. A single question CAN appear in more
+  // than one Standard's list (a question can legitimately assess two
+  // standards at once) — each Standard's score is computed independently
+  // over its own subset (see computeUnitResults), so a shared question
+  // becomes one evidence point counted toward every standard it's linked to,
+  // not "double-counted" within any one standard's own average.
   externalQuestionIdsJson String?
   createdAt               DateTime          @default(now())
   updatedAt               DateTime          @updatedAt

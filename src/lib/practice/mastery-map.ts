@@ -7,11 +7,12 @@ import { getUnit } from "./bank";
 
 // A Standard mapped to a unit — either the WHOLE unit (questionIds: null,
 // the original Milestone K shape) or a specific SUBSET of its bank questions
-// (questionIds: a Set of ids), letting several Standards share one chapter
-// without double-counting evidence. See Standard.externalQuestionIdsJson's
-// comment in schema.prisma and checkUnitOverlap in src/actions/standards.ts
-// for the invariant this relies on (never both a whole-unit AND a partial
-// standard on the same unit, never overlapping partials).
+// (questionIds: a Set of ids), letting several Standards share one chapter.
+// A question's subset CAN overlap with another Standard's — see
+// Standard.externalQuestionIdsJson's comment in schema.prisma — since
+// computeUnitResults below scores each Standard independently over its own
+// subset, a shared question just counts as evidence for every Standard it's
+// linked to, not double-counted within any single Standard's own average.
 export type UnitStandardMatch = { id: string; title: string; questionIds: Set<string> | null };
 
 // Resolves every Standard (0, 1, or many) a practiced unit maps to, scoped to
@@ -67,16 +68,17 @@ export function computeUnitScorePercent(
 //
 // A unit can now resolve to MORE than one result: one per partial (scoped)
 // Standard whose questions were actually practiced this session, plus (if
-// anything's left over) exactly one leftover result. The leftover result is
-// only attributed to a Standard when the unit resolves to EXACTLY one
-// Standard total and it's unscoped — today's original single-whole-unit
-// behavior, preserved as the common case. If a unit has an unscoped Standard
-// alongside others (e.g. freshly CSV-imported, not yet AI/manually mapped to
-// specific questions), that evidence stays unattributed (standardId: null)
-// rather than guessing which sibling it belongs to — it becomes real
-// evidence for that standard once someone scopes it (see checkUnitOverlap in
-// src/actions/standards.ts and the AI-assisted mapping in
-// src/actions/standards-mapping.ts).
+// anything's left over) exactly one leftover result. A question practiced
+// under two overlapping Standards produces a result row — and counts as
+// evidence — for EACH of them, by design (see UnitStandardMatch above). The
+// leftover result is only attributed to a Standard when the unit resolves to
+// EXACTLY one Standard total and it's unscoped — today's original
+// single-whole-unit behavior, preserved as the common case. If a unit has an
+// unscoped Standard alongside others (e.g. freshly CSV-imported, not yet
+// AI/manually mapped to specific questions), that evidence stays
+// unattributed (standardId: null) rather than guessing which sibling it
+// belongs to — it becomes real evidence for that standard once someone
+// scopes it (see the AI-assisted mapping in src/actions/standards-mapping.ts).
 export async function computeUnitResults(
   classId: string,
   unitSource: UnitSource,

@@ -23,7 +23,7 @@ import type { UnitSource } from "@/lib/practice/types";
 const JSON_RULES = `Respond with ONLY a single JSON object matching the shape described — no prose, no markdown code fences, no commentary before or after.`;
 
 const suggestionSchema = z.object({
-  assignments: z.array(z.object({ questionId: z.string(), standardId: z.string().nullable() })),
+  assignments: z.array(z.object({ questionId: z.string(), standardIds: z.array(z.string()) })),
 });
 type Suggestion = z.infer<typeof suggestionSchema>;
 
@@ -49,17 +49,17 @@ function buildPrompt(standards: MappingStandard[], questions: MappingCandidate[]
   const standardsList = standards.map((s) => `- id="${s.id}" title="${s.title}"${s.description ? ` description="${s.description}"` : ""}`).join("\n");
   const questionsList = questions.map((q) => `- id="${q.id}"${q.topicTag ? ` topicTag="${q.topicTag}"` : ""} stem="${q.stem.replace(/"/g, "'").slice(0, 300)}"`).join("\n");
   const retryNote = issues?.length ? `\nYour previous attempt had these issues: ${issues.join("; ")}. Fix them.\n` : "";
-  return `You are helping a teacher map practice questions to the specific learning standard each one assesses.
+  return `You are helping a teacher map practice questions to the learning standard(s) each one assesses.
 ${retryNote}
-STANDARDS (pick the single best match for each question, by id):
+STANDARDS (a question may match more than one — list every standard id it genuinely covers):
 ${standardsList}
 
 QUESTIONS:
 ${questionsList}
 
-For EVERY question id listed above, output exactly one assignment: the id of the single best-matching standard, or null if none of the standards fit that question. Every "standardId" you output must be one of the standard ids listed above, or null. Every question id listed above must appear exactly once in your output.
+For EVERY question id listed above, output exactly one assignment: "standardIds" is the list of every standard id (from the ids above) that question actually assesses — it can be empty if none fit, contain one id, or contain several if the question genuinely covers multiple standards at once. Don't pad the list with weak matches — only include a standard id when the question is real evidence for it. Every question id listed above must appear exactly once in your output.
 
-${JSON_RULES} Shape: { "assignments": [{ "questionId": string, "standardId": string | null }] }`;
+${JSON_RULES} Shape: { "assignments": [{ "questionId": string, "standardIds": string[] }] }`;
 }
 
 function validateSuggestion(raw: Suggestion, questionIds: Set<string>, standardIds: Set<string>): string[] {
@@ -67,7 +67,9 @@ function validateSuggestion(raw: Suggestion, questionIds: Set<string>, standardI
   const seen = new Set<string>();
   for (const a of raw.assignments) {
     if (!questionIds.has(a.questionId)) issues.push(`unknown question id "${a.questionId}"`);
-    if (a.standardId !== null && !standardIds.has(a.standardId)) issues.push(`unknown standard id "${a.standardId}" for question "${a.questionId}"`);
+    for (const sid of a.standardIds) {
+      if (!standardIds.has(sid)) issues.push(`unknown standard id "${sid}" for question "${a.questionId}"`);
+    }
     seen.add(a.questionId);
   }
   const missing = [...questionIds].filter((id) => !seen.has(id));
@@ -89,7 +91,7 @@ async function callForSuggestion(prompt: string): Promise<Suggestion | null> {
 }
 
 export type SuggestMappingResult =
-  | { ok: true; standards: MappingStandard[]; questions: MappingCandidate[]; assignments: { questionId: string; standardId: string | null }[] }
+  | { ok: true; standards: MappingStandard[]; questions: MappingCandidate[]; assignments: { questionId: string; standardIds: string[] }[] }
   // standards/questions are populated only when context loaded successfully
   // but the AI call itself failed — lets the caller still render a manual,
   // all-unassigned fallback table instead of a dead end. Omitted for the
@@ -150,15 +152,15 @@ export type SaveMappingResult = { ok: true } | { ok: false; error: string };
 // Applies a reviewed mapping: every standard linked to this unit gets its
 // externalQuestionIdsJson replaced with whatever this save says it covers
 // (including cleared to unscoped if it covers none) — the confirm screen the
-// teacher approved is treated as the complete picture, not a delta, so a
-// plain local duplicate check is enough (no need for checkUnitOverlap's
-// against-the-database check, which would race against this save's own
-// pending updates to sibling standards).
+// teacher approved is treated as the complete picture, not a delta. A
+// question can legitimately appear under more than one standard here — see
+// Standard.externalQuestionIdsJson's comment in schema.prisma — so this only
+// rejects an unknown standard id, never an overlap.
 export async function saveQuestionMapping(
   classId: string,
   unitSource: UnitSource,
   unitId: number,
-  assignments: { questionId: string; standardId: string | null }[],
+  assignments: { questionId: string; standardIds: string[] }[],
 ): Promise<SaveMappingResult> {
   const user = await requireStaff();
   try {
@@ -173,20 +175,18 @@ export async function saveQuestionMapping(
   });
   const validStandardIds = new Set(standards.map((s) => s.id));
 
-  const byStandard = new Map<string, string[]>();
-  const assignedTo = new Map<string, string>(); // questionId -> standardId, catches a question sent to two standards at once
+  const byStandard = new Map<string, Set<string>>();
   for (const a of assignments) {
-    if (a.standardId === null) continue;
-    if (!validStandardIds.has(a.standardId)) return { ok: false, error: "That mapping references a standard no longer linked to this unit — reload and try again." };
-    const prior = assignedTo.get(a.questionId);
-    if (prior && prior !== a.standardId) return { ok: false, error: `Question ${a.questionId} was assigned to two different standards in this save.` };
-    assignedTo.set(a.questionId, a.standardId);
-    byStandard.set(a.standardId, [...(byStandard.get(a.standardId) ?? []), a.questionId]);
+    for (const sid of a.standardIds) {
+      if (!validStandardIds.has(sid)) return { ok: false, error: "That mapping references a standard no longer linked to this unit — reload and try again." };
+      if (!byStandard.has(sid)) byStandard.set(sid, new Set());
+      byStandard.get(sid)!.add(a.questionId);
+    }
   }
 
   await prisma.$transaction(
     standards.map((s) => {
-      const ids = byStandard.get(s.id) ?? [];
+      const ids = [...(byStandard.get(s.id) ?? [])];
       return prisma.standard.update({
         where: { id: s.id },
         data: { externalQuestionIdsJson: ids.length > 0 ? JSON.stringify(ids) : null },

@@ -23,10 +23,9 @@ function cell(row: string[], mapping: ColumnMapping, key: string): string | null
 // number for that source), then dedupes against the database (code ->
 // case-insensitive title, scoped to the class) and against earlier rows in
 // the same file. No externalQuestionIds handling here — CSV import only
-// creates/updates UNSCOPED standards (see checkUnitOverlap in
-// src/actions/standards.ts); question-level scoping happens afterward via
-// the manual picker or the AI-assisted mapping. ALWAYS re-run server-side
-// from the raw sheet+mapping before committing — mirrors
+// creates/updates UNSCOPED standards; question-level scoping happens
+// afterward via the manual picker or the AI-assisted mapping. ALWAYS re-run
+// server-side from the raw sheet+mapping before committing — mirrors
 // src/lib/import/prepare.ts's roster-import precedent exactly.
 export async function buildStandardsPreview(
   sheet: ImportSheet,

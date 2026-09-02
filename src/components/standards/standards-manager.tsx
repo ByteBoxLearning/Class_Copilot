@@ -4,7 +4,6 @@ import { useActionState, useEffect, useState, useTransition } from "react";
 import { useFormStatus } from "react-dom";
 import Link from "next/link";
 import { Plus, Trash2, Pencil, Upload, Library } from "lucide-react";
-import { cn } from "@/lib/utils";
 import { Card, CardContent } from "@/components/ui/card";
 import { Field, Input, Textarea, Select } from "@/components/ui/field";
 import { Button } from "@/components/ui/button";
@@ -33,10 +32,10 @@ type StandardRow = {
 type CategoryOpt = { id: string; name: string };
 
 // The per-question checklist that lets several Standards share one unit/
-// chapter without double-counting evidence (see Standard.externalQuestionIdsJson
-// in schema.prisma). Computes conflicts against every OTHER standard already
-// linked to the same unit so a teacher sees why a question is unavailable
-// before they submit, not just after a server rejection.
+// chapter (see Standard.externalQuestionIdsJson in schema.prisma). A question
+// can be checked here even if another standard on the same unit already
+// covers it — that's a deliberate one-question-many-standards link, not a
+// conflict — so "also linked to" below is purely informational.
 function QuestionMappingPicker({
   unitSource,
   unitId,
@@ -51,9 +50,11 @@ function QuestionMappingPicker({
   otherStandardsOnThisUnit: { title: string; externalQuestionIds: string[] | null }[];
 }) {
   const unscopedSiblings = otherStandardsOnThisUnit.filter((s) => !s.externalQuestionIds || s.externalQuestionIds.length === 0);
-  const claimedElsewhere = new Map<string, string>();
+  const alsoLinkedElsewhere = new Map<string, string[]>();
   for (const s of otherStandardsOnThisUnit) {
-    for (const qid of s.externalQuestionIds ?? []) claimedElsewhere.set(qid, s.title);
+    for (const qid of s.externalQuestionIds ?? []) {
+      alsoLinkedElsewhere.set(qid, [...(alsoLinkedElsewhere.get(qid) ?? []), s.title]);
+    }
   }
 
   const num = Number(unitId);
@@ -88,26 +89,23 @@ function QuestionMappingPicker({
           <p className="px-1 py-1 text-xs text-slate-400">No bank questions found for this unit.</p>
         ) : (
           items.map((q) => {
-            const takenBy = claimedElsewhere.get(q.id);
+            const alsoLinkedTo = alsoLinkedElsewhere.get(q.id);
             return (
-              <label
-                key={q.id}
-                className={cn(
-                  "flex items-start gap-2 rounded px-1.5 py-1 text-xs",
-                  takenBy ? "text-slate-300" : "text-slate-600 hover:bg-accent",
-                )}
-              >
+              <label key={q.id} className="flex items-start gap-2 rounded px-1.5 py-1 text-xs text-slate-600 hover:bg-accent">
                 <input
                   type="checkbox"
                   className="mt-0.5"
-                  disabled={!!takenBy}
                   checked={selected.has(q.id)}
                   onChange={() => toggle(q.id)}
                 />
                 <span className="min-w-0">
                   {q.tag && <span className="mr-1 rounded bg-slate-100 px-1 py-0.5 text-[10px] text-slate-500">{q.tag}</span>}
                   {q.label}
-                  {takenBy && <span className="ml-1 italic">— already linked to &quot;{takenBy}&quot;</span>}
+                  {alsoLinkedTo && (
+                    <span className="ml-1 italic text-slate-400">
+                      — also linked to {alsoLinkedTo.map((t) => `"${t}"`).join(", ")}
+                    </span>
+                  )}
                 </span>
               </label>
             );

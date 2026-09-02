@@ -13,32 +13,6 @@ import { selectWithRetention } from "../src/lib/practice/bank";
 
 const prisma = new PrismaClient();
 
-// Mirrors checkUnitOverlap's exact logic (src/actions/standards.ts) — that
-// file transitively imports "server-only" via src/lib/auth.ts, the same
-// import-resolution limitation documented above for mastery-map.ts, so it's
-// re-implemented here rather than imported.
-async function checkUnitOverlap(
-  classId: string,
-  externalUnitSource: string,
-  externalUnitId: string,
-  questionIds: string[] | null,
-  excludeStandardId?: string,
-): Promise<string | null> {
-  if (!questionIds || questionIds.length === 0) return null;
-  const others = await prisma.standard.findMany({
-    where: { classId, externalUnitSource, externalUnitId, ...(excludeStandardId ? { id: { not: excludeStandardId } } : {}) },
-    select: { title: true, externalQuestionIdsJson: true },
-  });
-  const mine = new Set(questionIds);
-  for (const other of others) {
-    if (!other.externalQuestionIdsJson) continue;
-    const otherIds: string[] = JSON.parse(other.externalQuestionIdsJson);
-    const overlapCount = otherIds.filter((id) => mine.has(id)).length;
-    if (overlapCount > 0) return `${overlapCount} question${overlapCount === 1 ? "" : "s"} already assigned to "${other.title}".`;
-  }
-  return null;
-}
-
 let failures = 0;
 function check(name: string, cond: boolean) {
   console.log(`${cond ? "  ✓" : "  ✗ FAIL"} ${name}`);
@@ -202,8 +176,9 @@ async function main() {
 
   // The actual fix this milestone adds: two standards in the SAME class CAN
   // now both claim the same unit (unscoped by default) — this DB write must
-  // succeed, not throw. checkUnitOverlap (tested further below) is what
-  // guards against unsafe *overlapping question-id* claims instead.
+  // succeed, not throw. A shared bank QUESTION across two standards' scoped
+  // subsets is likewise allowed on purpose (tested further below) — one
+  // question can be real evidence for more than one standard at once.
   const duplicateMapping = await prisma.standard.create({
     data: { classId: cls.id, title: "[test fixture] duplicate mapping", externalUnitSource: "AP_CHEM", externalUnitId: "1" },
   });
@@ -279,19 +254,42 @@ async function main() {
   const ambiguousResult = computeUnitResultsInlineMCQOnly(items4, allCorrect, twoUnscoped);
   check("two unscoped standards on the same unit: evidence stays unattributed (standardId null) rather than guessing which one it belongs to", ambiguousResult.length === 1 && ambiguousResult[0].standardId === null);
 
-  console.log("checkUnitOverlap (the real write-path guard, src/actions/standards.ts):");
-  const standardA = await prisma.standard.create({
-    data: { classId: cls.id, title: "[test fixture] partial A", externalUnitSource: "AP_CHEM", externalUnitId: "2", externalQuestionIdsJson: JSON.stringify(["q1", "q2"]) },
-  });
-  check("a candidate with non-overlapping question ids is allowed", (await checkUnitOverlap(cls.id, "AP_CHEM", "2", ["q3", "q4"])) === null);
-  check("a candidate overlapping an existing partial standard's ids is rejected", typeof (await checkUnitOverlap(cls.id, "AP_CHEM", "2", ["q2", "q5"])) === "string");
-  check("an unscoped candidate never conflicts, even when a partial standard already claims part of the unit", (await checkUnitOverlap(cls.id, "AP_CHEM", "2", null)) === null);
-  check("an empty-array candidate ('unscoped') never conflicts either", (await checkUnitOverlap(cls.id, "AP_CHEM", "2", [])) === null);
+  console.log("Overlapping standard<->question links (one question can cover multiple standards):");
+  const partialF: InlineMatch = { id: "standardF", questionIds: new Set(["q1", "q2"]) };
+  const partialGSharingQ2: InlineMatch = { id: "standardG", questionIds: new Set(["q2", "q3"]) };
+  const overlappingResults = computeUnitResultsInlineMCQOnly(items4, allCorrect, [partialF, partialGSharingQ2]);
   check(
-    "checking a standard against itself (excludeStandardId) doesn't flag its own ids as a conflict",
-    (await checkUnitOverlap(cls.id, "AP_CHEM", "2", ["q1", "q2"], standardA.id)) === null,
+    "a shared question (q2) produces a result for BOTH standards that claim it, not just one",
+    overlappingResults.some((r) => r.standardId === "standardF") && overlappingResults.some((r) => r.standardId === "standardG"),
   );
-  await prisma.standard.delete({ where: { id: standardA.id } });
+  check(
+    "q2 counts fully toward BOTH standards' scores (100% each), not split or diluted between them",
+    overlappingResults.find((r) => r.standardId === "standardF")?.scorePercent === 100 &&
+      overlappingResults.find((r) => r.standardId === "standardG")?.scorePercent === 100,
+  );
+  check(
+    "q4 (claimed by neither standardF nor standardG) still becomes its own unattributed leftover result",
+    overlappingResults.length === 3 && overlappingResults.some((r) => r.standardId === null),
+  );
+
+  // Real DB write: two standards on the SAME unit whose externalQuestionIdsJson
+  // both list q2 — this must succeed. There is no server-side guard rejecting
+  // it (removed on purpose — see Standard.externalQuestionIdsJson's comment
+  // in schema.prisma), unlike the old checkUnitOverlap this replaces.
+  const standardF = await prisma.standard.create({
+    data: { classId: cls.id, title: "[test fixture] standard F", externalUnitSource: "AP_CHEM", externalUnitId: "2", externalQuestionIdsJson: JSON.stringify(["q1", "q2"]) },
+  });
+  let overlappingWriteOk = true;
+  let standardG: { id: string } | null = null;
+  try {
+    standardG = await prisma.standard.create({
+      data: { classId: cls.id, title: "[test fixture] standard G", externalUnitSource: "AP_CHEM", externalUnitId: "2", externalQuestionIdsJson: JSON.stringify(["q2", "q3"]) },
+    });
+  } catch {
+    overlappingWriteOk = false;
+  }
+  check("a standard can claim a question another standard on the same unit already claims", overlappingWriteOk);
+  await prisma.standard.deleteMany({ where: { id: { in: [standardF.id, ...(standardG ? [standardG.id] : [])] } } });
 
   // Cleanup — self-contained fixture, per this repo's established test-script convention.
   await prisma.masteryEvent.delete({ where: { id: event.id } });

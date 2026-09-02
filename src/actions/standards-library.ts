@@ -21,7 +21,6 @@ import { prisma } from "@/lib/prisma";
 import { requireStaff } from "@/lib/auth";
 import { assertCanAccessClass } from "@/lib/access";
 import { logActivity } from "@/lib/activity-log";
-import { checkUnitOverlap } from "./standards";
 import type { ActionResult } from "./types";
 
 export type LibraryStandard = {
@@ -81,10 +80,7 @@ export async function listLibraryStandards(
 // Creates an independent copy of `sourceStandardId` in `targetClassId` —
 // title/code/description and any Practice Mode unit link + question-id
 // mapping all carry over verbatim, so a teacher reusing another class's
-// already-scoped standard doesn't have to redo the AI-assisted mapping
-// work. Still runs checkUnitOverlap against the TARGET class (never assumed
-// safe just because the source class validated it), consistent with every
-// other write path that touches externalQuestionIdsJson.
+// already-scoped standard doesn't have to redo the AI-assisted mapping work.
 export async function copyStandardIntoClass(sourceStandardId: string, targetClassId: string): Promise<ActionResult> {
   const user = await requireStaff();
   try {
@@ -98,10 +94,6 @@ export async function copyStandardIntoClass(sourceStandardId: string, targetClas
   // No access check on the SOURCE class — copying FROM any teacher's class is
   // the whole point of the library (see the file header comment). Writing
   // INTO targetClassId (checked above) is the actual security boundary.
-
-  const questionIds: string[] | null = source.externalQuestionIdsJson ? JSON.parse(source.externalQuestionIdsJson) : null;
-  const overlapError = await checkUnitOverlap(targetClassId, source.externalUnitSource, source.externalUnitId, questionIds);
-  if (overlapError) return { ok: false, error: overlapError };
 
   const maxOrder = await prisma.standard.aggregate({ where: { classId: targetClassId }, _max: { order: true } });
   const created = await prisma.standard.create({

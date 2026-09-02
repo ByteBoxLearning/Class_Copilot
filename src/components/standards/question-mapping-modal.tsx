@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { Sparkles } from "lucide-react";
 import { Modal } from "@/components/ui/modal";
 import { Button } from "@/components/ui/button";
-import { Select } from "@/components/ui/field";
 import { useToast } from "@/components/ui/toast";
 import { suggestQuestionMapping, saveQuestionMapping, type MappingCandidate, type MappingStandard } from "@/actions/standards-mapping";
 import type { UnitSource } from "@/lib/practice/types";
@@ -35,7 +34,10 @@ export function QuestionMappingModal({
   const [saving, setSaving] = useState(false);
   const [standards, setStandards] = useState<MappingStandard[]>([]);
   const [questions, setQuestions] = useState<MappingCandidate[]>([]);
-  const [draft, setDraft] = useState<Record<string, string | null>>({});
+  // Multi-select: each question can be linked to zero, one, or several
+  // standards — see Standard.externalQuestionIdsJson's comment in
+  // schema.prisma for why overlap is allowed rather than exclusive.
+  const [draft, setDraft] = useState<Record<string, string[]>>({});
   const [notice, setNotice] = useState<string | null>(null);
 
   useEffect(() => {
@@ -47,7 +49,7 @@ export function QuestionMappingModal({
       setStandards(res.standards ?? []);
       setQuestions(res.questions ?? []);
       if (res.ok) {
-        setDraft(Object.fromEntries(res.assignments.map((a) => [a.questionId, a.standardId])));
+        setDraft(Object.fromEntries(res.assignments.map((a) => [a.questionId, a.standardIds])));
       } else {
         setDraft({});
         setNotice(res.error);
@@ -56,9 +58,17 @@ export function QuestionMappingModal({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [open, classId, unitSource, unitId]);
 
+  function toggleStandard(questionId: string, standardId: string) {
+    setDraft((prev) => {
+      const current = prev[questionId] ?? [];
+      const next = current.includes(standardId) ? current.filter((id) => id !== standardId) : [...current, standardId];
+      return { ...prev, [questionId]: next };
+    });
+  }
+
   async function save() {
     setSaving(true);
-    const assignments = Object.entries(draft).map(([questionId, standardId]) => ({ questionId, standardId }));
+    const assignments = questions.map((q) => ({ questionId: q.id, standardIds: draft[q.id] ?? [] }));
     const res = await saveQuestionMapping(classId, unitSource, Number(unitId), assignments);
     setSaving(false);
     if (res.ok) {
@@ -89,21 +99,34 @@ export function QuestionMappingModal({
             notice ? null : <p className="py-4 text-center text-sm text-slate-400">No bank questions found for this unit.</p>
           ) : (
             <div className="max-h-96 space-y-1.5 overflow-y-auto">
-              {questions.map((q) => (
-                <div key={q.id} className="grid grid-cols-1 items-center gap-2 rounded-md border border-border p-2.5 sm:grid-cols-3">
-                  <div className="min-w-0 sm:col-span-2">
-                    {q.topicTag && <span className="mr-1.5 rounded bg-slate-100 px-1 py-0.5 text-[10px] text-slate-500">{q.topicTag}</span>}
-                    <span className="text-xs text-slate-600">{q.stem}</span>
+              {questions.map((q) => {
+                const selected = draft[q.id] ?? [];
+                return (
+                  <div key={q.id} className="space-y-1.5 rounded-md border border-border p-2.5">
+                    <div className="min-w-0">
+                      {q.topicTag && <span className="mr-1.5 rounded bg-slate-100 px-1 py-0.5 text-[10px] text-slate-500">{q.topicTag}</span>}
+                      <span className="text-xs text-slate-600">{q.stem}</span>
+                    </div>
+                    <div className="flex flex-wrap gap-1.5">
+                      {standards.map((s) => {
+                        const on = selected.includes(s.id);
+                        return (
+                          <label
+                            key={s.id}
+                            className={`flex cursor-pointer items-center gap-1 rounded-full border px-2 py-0.5 text-[11px] ${
+                              on ? "border-primary bg-primary/10 text-primary" : "border-border text-slate-500 hover:bg-accent"
+                            }`}
+                          >
+                            <input type="checkbox" checked={on} onChange={() => toggleStandard(q.id, s.id)} className="sr-only" />
+                            {s.title}
+                          </label>
+                        );
+                      })}
+                      {selected.length === 0 && <span className="text-[11px] text-slate-400">— none —</span>}
+                    </div>
                   </div>
-                  <Select
-                    value={draft[q.id] ?? ""}
-                    onChange={(e) => setDraft((prev) => ({ ...prev, [q.id]: e.target.value || null }))}
-                  >
-                    <option value="">— none —</option>
-                    {standards.map((s) => <option key={s.id} value={s.id}>{s.title}</option>)}
-                  </Select>
-                </div>
-              ))}
+                );
+              })}
             </div>
           )}
           <div className="flex justify-end gap-2 pt-1">
