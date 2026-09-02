@@ -8,6 +8,8 @@ import { assertCanAccessClass, assertCanAccessStudent } from "@/lib/access";
 import { setCurrentClassId } from "@/lib/classes";
 import { logActivity } from "@/lib/activity-log";
 import { classSchema } from "@/lib/validations";
+import { generateInviteToken, INVITE_TTL_DAYS } from "@/lib/password";
+import { emailSendingConfigured, sendInviteEmail } from "@/lib/email";
 import type { ActionResult } from "./types";
 
 function formToObject(fd: FormData): Record<string, unknown> {
@@ -140,4 +142,74 @@ export async function unenrollStudent(classId: string, studentId: string): Promi
   await logActivity({ userId: user.id, studentId, actionType: "UNENROLLED", description: "Removed a student from class" });
   revalidatePath(`/admin/classes/${classId}`);
   return { ok: true };
+}
+
+// --- Bulk student-invite emails (teacher-only) -------------------------------
+// One button on the class roster: generate (or reuse) a self-service portal
+// invite for every enrolled student who has an email on file and no portal
+// login yet, then email each one via Gmail SMTP (see lib/email.ts). Students
+// who already have a login, or have no email on file, are skipped and
+// counted back rather than silently dropped — the button's toast reports
+// exactly what happened.
+
+export type BulkInviteResult =
+  | { ok: true; sent: number; skippedNoEmail: number; skippedAlreadyLinked: number; failed: number }
+  | { ok: false; error: string };
+
+function siteBaseUrl(): string {
+  return (process.env.NEXTAUTH_URL || "http://localhost:3000").replace(/\/$/, "");
+}
+
+export async function sendClassInvites(classId: string): Promise<BulkInviteResult> {
+  const user = await requireOwner();
+  await assertCanAccessClass(user, classId);
+
+  if (!(await emailSendingConfigured())) {
+    return { ok: false, error: "Email sending isn't set up yet — add a Gmail address and App Password in Settings." };
+  }
+
+  const cls = await prisma.class.findUnique({ where: { id: classId }, select: { name: true } });
+  if (!cls) return { ok: false, error: "Class not found." };
+
+  const enrollments = await prisma.enrollment.findMany({
+    where: { classId, status: "ACTIVE" },
+    include: { student: { select: { id: true, displayName: true, email: true, linkedUserId: true } } },
+  });
+
+  let sent = 0, skippedNoEmail = 0, skippedAlreadyLinked = 0, failed = 0;
+
+  for (const { student } of enrollments) {
+    if (student.linkedUserId) { skippedAlreadyLinked++; continue; }
+    if (!student.email) { skippedNoEmail++; continue; }
+
+    const token = generateInviteToken();
+    const expiresAt = new Date(Date.now() + INVITE_TTL_DAYS * 24 * 60 * 60 * 1000);
+    await prisma.studentInvite.upsert({
+      where: { studentId: student.id },
+      create: { studentId: student.id, token, expiresAt },
+      update: { token, expiresAt },
+    });
+
+    try {
+      await sendInviteEmail({
+        to: student.email,
+        studentName: student.displayName,
+        teacherName: user.name,
+        teacherEmail: user.email,
+        className: cls.name,
+        inviteUrl: `${siteBaseUrl()}/invite/${token}`,
+      });
+      sent++;
+      await logActivity({
+        userId: user.id, studentId: student.id, actionType: "STUDENT_INVITE_EMAIL_SENT",
+        description: `Emailed a portal invite link to ${student.displayName}`,
+      });
+    } catch (e) {
+      failed++;
+      console.error(`[sendClassInvites] failed to email ${student.email}`, e);
+    }
+  }
+
+  revalidatePath(`/admin/classes/${classId}`);
+  return { ok: true, sent, skippedNoEmail, skippedAlreadyLinked, failed };
 }

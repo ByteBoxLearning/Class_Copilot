@@ -30,6 +30,11 @@ import {
 // Google Sheets roster import (Milestone C.3). One Google Cloud OAuth client
 // can request both features' scopes (openid/email/profile for sign-in,
 // spreadsheets.readonly for Sheets), so there's no need for a second pair.
+//
+// GMAIL_SMTP_USER/APP_PASSWORD power bulk student-invite emails (see
+// src/lib/email.ts) — sent via Gmail SMTP with an App Password rather than
+// the Gmail API, so it works for any teacher regardless of whether they log
+// in with Google or a password, with no OAuth consent-screen review needed.
 export const MANAGED_KEYS = [
   { name: "GEMINI_API_KEY", label: "Google Gemini", hint: "Free tier. Get a key at aistudio.google.com/apikey" },
   { name: "OPENAI_API_KEY", label: "OpenAI (GPT)", hint: "Paid — one key unlocks all GPT models. platform.openai.com/api-keys" },
@@ -37,6 +42,8 @@ export const MANAGED_KEYS = [
   { name: "OPENROUTER_API_KEY", label: "OpenRouter", hint: "Optional free backup engine. openrouter.ai" },
   { name: "GOOGLE_CLIENT_ID", label: "Google OAuth — Client ID", hint: "Powers 'Continue with Google' on the login page. Also reserved for the still-unbuilt Google Sheets roster import." },
   { name: "GOOGLE_CLIENT_SECRET", label: "Google OAuth — Client Secret", hint: "Powers 'Continue with Google' on the login page. Also reserved for the still-unbuilt Google Sheets roster import." },
+  { name: "GMAIL_SMTP_USER", label: "Gmail address (invite emails)", hint: "The Gmail address bulk student-invite emails are sent from — needs the App Password below." },
+  { name: "GMAIL_SMTP_APP_PASSWORD", label: "Gmail App Password", hint: "Requires 2-Step Verification on that Gmail account. Generate one at myaccount.google.com/apppasswords" },
 ] as const;
 
 export type ManagedKeyName = (typeof MANAGED_KEYS)[number]["name"];

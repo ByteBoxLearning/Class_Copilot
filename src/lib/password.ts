@@ -29,6 +29,10 @@ export function generateInviteToken(): string {
   return randomBytes(32).toString("base64url");
 }
 
+// Shared by actions/students.ts (single invite) and actions/classes.ts (bulk
+// invite) — how long a generated invite link stays valid.
+export const INVITE_TTL_DAYS = 7;
+
 // Placeholder passwordHash input for accounts that only ever sign in via
 // Google (User.passwordHash is NOT NULL, but there's no real password to
 // hash) — never shown or usable to log in with, just filler for the column.

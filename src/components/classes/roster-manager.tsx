@@ -2,12 +2,12 @@
 
 import Link from "next/link";
 import { useState, useTransition } from "react";
-import { UserPlus, X, Upload, TrendingUp, TrendingDown, Minus } from "lucide-react";
+import { UserPlus, X, Upload, Send, TrendingUp, TrendingDown, Minus } from "lucide-react";
 import { Select } from "@/components/ui/field";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useToast } from "@/components/ui/toast";
-import { enrollStudent, unenrollStudent } from "@/actions/classes";
+import { enrollStudent, unenrollStudent, sendClassInvites } from "@/actions/classes";
 import { setStudentFlag } from "@/actions/students";
 import { BADGE_COLORS, labelOf, STUDENT_FLAGS } from "@/lib/enums";
 
@@ -50,6 +50,19 @@ export function RosterManager({
       if (!res.ok) toast(res.error ?? "Failed.", "error");
     });
   }
+  function sendInvites() {
+    start(async () => {
+      const res = await sendClassInvites(classId);
+      if (!res.ok) { toast(res.error, "error"); return; }
+      const parts: string[] = [];
+      if (res.sent) parts.push(`Sent ${res.sent} invite${res.sent === 1 ? "" : "s"}`);
+      if (res.skippedAlreadyLinked) parts.push(`${res.skippedAlreadyLinked} already had a login`);
+      if (res.skippedNoEmail) parts.push(`${res.skippedNoEmail} had no email on file`);
+      if (res.failed) parts.push(`${res.failed} failed to send`);
+      toast(parts.length ? parts.join(" · ") : "No students needed an invite.", res.failed ? "error" : "success");
+    });
+  }
+
   function applySuggestion(studentId: string, suggested: "EXCELLING" | "ON_TRACK" | "NEEDS_SUPPORT") {
     setFlags((prev) => ({ ...prev, [studentId]: suggested }));
     start(async () => {
@@ -64,11 +77,18 @@ export function RosterManager({
 
   return (
     <div className="space-y-3">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between gap-2">
         <p className="text-sm text-slate-500">{enrolled.length} student{enrolled.length === 1 ? "" : "s"}</p>
-        <Link href={`/admin/classes/${classId}/roster/import`}>
-          <Button variant="outline" size="sm"><Upload className="h-3.5 w-3.5" /> Import roster</Button>
-        </Link>
+        <div className="flex items-center gap-2">
+          {enrolled.length > 0 && (
+            <Button variant="outline" size="sm" onClick={sendInvites} disabled={pending} title="Emails a portal invite link to every enrolled student with an email on file who doesn't already have a login">
+              <Send className="h-3.5 w-3.5" /> {pending ? "Sending…" : "Send invite links to all"}
+            </Button>
+          )}
+          <Link href={`/admin/classes/${classId}/roster/import`}>
+            <Button variant="outline" size="sm"><Upload className="h-3.5 w-3.5" /> Import roster</Button>
+          </Link>
+        </div>
       </div>
 
       {enrolled.length === 0 ? (

@@ -7,10 +7,8 @@ import { requireOwner } from "@/lib/auth";
 import { assertCanAccessStudent } from "@/lib/access";
 import { logActivity } from "@/lib/activity-log";
 import { studentSchema } from "@/lib/validations";
-import { generateInviteToken } from "@/lib/password";
+import { generateInviteToken, INVITE_TTL_DAYS } from "@/lib/password";
 import type { ActionResult } from "./types";
-
-const INVITE_TTL_DAYS = 7;
 
 function formToObject(fd: FormData): Record<string, unknown> {
   const obj: Record<string, unknown> = {};
