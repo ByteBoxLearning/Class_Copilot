@@ -58,7 +58,7 @@ export function RosterManager({
       if (res.sent) parts.push(`Sent ${res.sent} invite${res.sent === 1 ? "" : "s"}`);
       if (res.skippedAlreadyLinked) parts.push(`${res.skippedAlreadyLinked} already had a login`);
       if (res.skippedNoEmail) parts.push(`${res.skippedNoEmail} had no email on file`);
-      if (res.failed) parts.push(`${res.failed} failed to send`);
+      if (res.failed) parts.push(`${res.failed} failed to send${res.firstError ? ` (${res.firstError})` : ""}`);
       toast(parts.length ? parts.join(" · ") : "No students needed an invite.", res.failed ? "error" : "success");
     });
   }

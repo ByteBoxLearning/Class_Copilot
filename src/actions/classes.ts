@@ -153,7 +153,7 @@ export async function unenrollStudent(classId: string, studentId: string): Promi
 // exactly what happened.
 
 export type BulkInviteResult =
-  | { ok: true; sent: number; skippedNoEmail: number; skippedAlreadyLinked: number; failed: number }
+  | { ok: true; sent: number; skippedNoEmail: number; skippedAlreadyLinked: number; failed: number; firstError: string | null }
   | { ok: false; error: string };
 
 function siteBaseUrl(): string {
@@ -177,10 +177,16 @@ export async function sendClassInvites(classId: string): Promise<BulkInviteResul
   });
 
   let sent = 0, skippedNoEmail = 0, skippedAlreadyLinked = 0, failed = 0;
+  let firstError: string | null = null;
+  let authFailed = false; // an SMTP auth failure fails identically for every remaining student
 
   for (const { student } of enrollments) {
     if (student.linkedUserId) { skippedAlreadyLinked++; continue; }
     if (!student.email) { skippedNoEmail++; continue; }
+    // Once the Gmail credentials themselves are confirmed bad, stop retrying
+    // them — every remaining send would fail the same way, and repeated
+    // failed SMTP logins risk Gmail temporarily blocking the account.
+    if (authFailed) { failed++; continue; }
 
     const token = generateInviteToken();
     const expiresAt = new Date(Date.now() + INVITE_TTL_DAYS * 24 * 60 * 60 * 1000);
@@ -206,10 +212,15 @@ export async function sendClassInvites(classId: string): Promise<BulkInviteResul
       });
     } catch (e) {
       failed++;
+      const message = e instanceof Error ? e.message : String(e);
+      firstError ??= message;
+      // Nodemailer sets code "EAUTH" for a rejected login (bad address/App
+      // Password) — a connection-level failure, not this one student's fault.
+      if ((e as { code?: string })?.code === "EAUTH") authFailed = true;
       console.error(`[sendClassInvites] failed to email ${student.email}`, e);
     }
   }
 
   revalidatePath(`/admin/classes/${classId}`);
-  return { ok: true, sent, skippedNoEmail, skippedAlreadyLinked, failed };
+  return { ok: true, sent, skippedNoEmail, skippedAlreadyLinked, failed, firstError };
 }
